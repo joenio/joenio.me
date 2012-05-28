@@ -3,7 +3,7 @@ joenio.me
 
 Site pessoal feito em HTML + Compass CSS Framework.
 
-Antes de iniciar o desenvolvimento local iniciar o compass com:
+Antes de iniciar o desenvolvimento local iniciar o compass:
 
 $ compass watch
 
