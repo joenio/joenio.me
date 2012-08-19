@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Joenio Costa</title>
+<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+  <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31348806-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<style type="text/css">
+   #spinner div { position: absolute; width: 120px; height: 120px; border: 1px solid #ccc; background: rgba(255,255,255,0.8); box-shadow: inset 0 0 20px rgba(0,0,0,0.2); text-align: center; line-height: 120px; font-size: 100px; }
+  
+   #spinner .face1 { -webkit-transform: translateZ(60px); }
+
+   #spinner .face2 { -webkit-transform: rotateY(90deg) translateZ(60px); }
+  
+   #spinner .face3 { -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(60px); }
+   
+   #spinner .face4 { -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px); }
+  
+   #spinner .face5 { -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px); }
+  
+   #spinner .face6 { -webkit-transform: rotateX(-90deg) translateZ(60px); }
+
+</style>
+
+<style type="text/css"> @-webkit-keyframes spincube { from,to { } 16% { -webkit-transform: rotateY(-90deg); } 33% { -webkit-transform: rotateY(-90deg) rotateZ(90deg); } 50% { -webkit-transform: rotateY(180deg) rotateZ(90deg); } 66% { -webkit-transform: rotateY(90deg) rotateX(90deg); } 83% { -webkit-transform: rotateX(90deg); } } #spinner { -webkit-animation-name: spincube; -webkit-animation-timing-function: ease-in-out; -webkit-animation-iteration-count: infinite; -webkit-animation-duration: 12s; -webkit-transform-style: preserve-3d; -webkit-transform-origin: 60px 60px 0; } </style>
+
+</head>
+<body class='bp'>
+
+<h1>Cubo 3D usando HTML5 + CSS3</h1>
+<em>para melhor experiencia use uma versao recende do Google Chrome</em>
+
+<p><br/></p>
+
+<div id="stage" style="width: 120px; height: 120px;"> <div id="spinner"> <div class="face1">1</div> <div class="face2">2</div> <div class="face3">3</div> <div class="face4">4</div> <div class="face5">5</div> <div class="face6">6</div> </div> </div>
+
+<p><br/></p>
+
+<p>
+Exemplo copiado de: http://www.the-art-of-web.com/css/3d-transforms/#section_6
+</p>
+
+</body>
+</html>
