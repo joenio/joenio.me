@@ -73,3 +73,40 @@ h1 {
   font-family: "Fredericka the Great";
   font-size: 5em;
 }
+
+@mixin background_and_hover($color) {
+  background-color: $color;
+  &:hover {
+    background-color: lighten($color, 5%);
+  }
+}
+
+#receitas {
+  overflow-y: scroll;
+  div {
+    display: none;
+    margin: 20px;
+  }
+  h2 {
+    color: white;
+    font-size: 36px;
+    font-weight: normal;
+    height: 80px;
+    margin: 0 auto;
+    cursor: pointer;
+    padding-top: 22px;
+
+    &.salgado {
+      @include background_and_hover(#018417);
+    }
+    &.doce {
+      @include background_and_hover(#840119);
+    }
+    &.bebida {
+      @include background_and_hover(#012484);
+    }
+    &.sopa {
+      @include background_and_hover(#847301);
+    }
+  }
+}
