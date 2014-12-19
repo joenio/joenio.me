@@ -30,6 +30,6 @@ para eu desenrolar as seguintes questões:
 E assim aqui está mais um blog nesse mundão virtual, pretendo falar de tudo um
 pouco, coisas da minha vida pessoal, questões técnicas relacionadas ao
 trabalho, um pouco da minha experiência no meio acadêmico, música, esportes,
-livros, etc...
+livros, etc... Espero que seja útil para mais alguém além de mim memsmo.
 
 Ahhh!!! [Dani](http://softwarelivre.org/dani), obrigado pelo _empurrãozinho_!
