@@ -1,53 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Joenio Costa</title>
-<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-<!--[if IE]>
-  <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-<![endif]-->
-<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
-<script type="text/javascript">
+---
+layout: default
+---
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-31348806-1']);
-  _gaq.push(['_trackPageview']);
+<div class="home">
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li class="post">
+        <header class="post-header">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <p class="meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.tags %} • {{ post.tags }}{% endif %}</p>
+        </header>
+        <article class="post-content">
+          {{ post.content }}
+        </article>
+        <hr/>
+      </li>
+    {% endfor %}
+  </ul>
 
-</script>
-</head>
-<body class='bp'>
-<h1>Joenio Costa</h1>
-<p><a href="http://gravatar.com/joenio"><img src='http://0.gravatar.com/avatar/5aff57c7238795d3b159d493ab071d6c?size=120' alt='Perfil Gravatar'/></a></p>
-<ul>
-<li><a href='https://github.com/joenio/curriculo/raw/master/curriculo.pdf'>Curriculo (PDF)</a></li>
-<li><a href='http://lattes.cnpq.br/6773346025855005'>Curriculo Lattes</a></li>
-<li><a href='http://softwarelivre.org/joenio'>Blog</a></li>
-<li><a href='http://colivre.coop.br/Colivre/QuemSomos#Joenio_Costa'>Colivre</a></li>
-<li><a href='http://identi.ca/joenio'>Identi.ca</a></li>
-<li><a href='http://twitter.com/#!/joenio'>Twitter</a></li>
-<li><a href='http://www.facebook.com/joenio'><del>Facebook</del></a></li>
-<li><a href='http://www.flickr.com/photos/joenio'>Flickr</a></li>
-<li><a href='http://www.ohloh.net/accounts/joenio'>Ohloh</a></li>
-<li><a href='http://gitorious.org/~joenio'>Gitorious</a></li>
-<li><a href='http://github.com/joenio'>Github</a></li>
-<li><a href='http://search.cpan.org/~joenio'>CPAN</a></li>
-<li><a href='http://qa.debian.org/developer.php?login=joenio@colivre.coop.br'>Debian</a></li>
-<li><a href='http://libre.fm/user/joenio'>LibreFM</a></li>
-<li><a href='http://www.lastfm.com.br/user/joenio'>LastFM</a></li>
-</ul>
-<p><a href="http://www.fsf.org/register_form?referrer=10846"><img src="http://static.fsf.org/nosvn/associate/fsf-10846.png" alt="[FSF Associate Member]" /></a></p>
-<p>
-<a href="http://www.greenpeace.com.br/cade/"><img src="http://greenpeace.org.br/p3/transportes/banners/banner_net_cade_250x250_4.jpg" /></a>
-</p>
-<p><a href="http://www.gnu.org/" title="The GNU Project"><img alt="GNU" src="images/gnu-alternative.jpg" /></a></p>
-<p><small><a href="http://www.gnu.org/philosophy/free-sw.html">O que é o software livre?</a></small></p>
-</body>
-</html>
+</div>

@@ -1,0 +1,19 @@
+# Site settings
+title: Joenio Costa
+email: joenio@colivre.coop.br
+baseurl: ""
+url: "http://joenio.me"
+twitter_username: joenio
+github_username:  joenio
+
+# Build settings
+markdown: kramdown
+permalink: ":title"
+
+# Configuracoes padrao para posts
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "post"
