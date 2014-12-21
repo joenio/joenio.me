@@ -262,6 +262,10 @@ a:visited { color: #205caa; }
 
 .post pre.terminal code { background-color: #444; }
 
+.post img {
+  border-radius: 5px;
+}
+
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/
 

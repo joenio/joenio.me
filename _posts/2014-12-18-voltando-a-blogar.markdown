@@ -1,7 +1,9 @@
 ---
-title: "Voltando a \"blogar\""
+title: Voltando a "blogar"
 tags: pessoal
 ---
+
+![Han Solo apontando uma arma para Chewbacca](/files/han-solo-e-chewbacca-blog.jpg)
 
 Hoje enquanto conversava com uma amiga no telefone surgiu a seguinte pergunta:
 
