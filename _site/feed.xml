@@ -5,9 +5,137 @@
     <description></description>
     <link>http://joenio.me/</link>
     <atom:link href="http://joenio.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 22 Dec 2014 12:49:53 -0300</pubDate>
-    <lastBuildDate>Mon, 22 Dec 2014 12:49:53 -0300</lastBuildDate>
+    <pubDate>Tue, 23 Dec 2014 02:43:59 -0300</pubDate>
+    <lastBuildDate>Tue, 23 Dec 2014 02:43:59 -0300</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Backup na nuvem com Tarsnap</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/files/chewbacca-nuvem.jpg&quot; alt=&quot;Chewbacca fazendo backup na nuvem&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Este post estava sendo escrito antes de eu abandonar meu blog, então onde
+estiver escrito &lt;strong&gt;recentemente, hoje, etc&lt;/strong&gt;, leia-se &lt;strong&gt;2 anos atrás&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Recentemente precisei implementar uma solução de backup para alguns servidores
+de internet, após uma pesquisa rápida optei pelo &lt;a href=&quot;http://tarsnap.com&quot;&gt;Tarsnap&lt;/a&gt;,
+uma solução de backup em nuvem baseado na infra-estrutura de armazenamento da
+&lt;a href=&quot;http://www.tarsnap.com/infrastructure.html&quot;&gt;Amazon&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Eu queria algo simples de implementar e manter, não queria ter mais um servidor
+nas mãos, nem queria ter que lidar com detalhes de ssh, rsync, ftp, etc.
+Em resumo:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Não queria manter um novo servidor (nem físico nem virtual)&lt;/li&gt;
+  &lt;li&gt;Não queria usar o &lt;a href=&quot;http://bacula.org&quot;&gt;Bacula&lt;/a&gt;, ótima ferramenta mas complicado&lt;/li&gt;
+  &lt;li&gt;A solução deveria ser simples de configurar e manter, do tipo “configure uma vez, contrate um serviço e funcione para o resto da vida”&lt;/li&gt;
+  &lt;li&gt;Não estava procurando apenas uma ferramenta, mas também um serviço de armazenamento para backup&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;O Tarsnap é uma ferramenta e também um serviço de armazenamento, o
+preço é bem razoável, $0.30 por GB de armazenamento mensal e $0.30 por cada GB
+transferido. A cobrança é pré-paga, e para começar a usar o serviço é
+necessário adicionar um crédito mínimo de $ 5.&lt;/p&gt;
+
+&lt;p&gt;Os créditos são consumidos diariamente, quando eles acabam o serviço continua
+funcionando por até 7 dias, isto dá tempo de pôr créditos novamente sem
+interrupção dos backups. Hoje, o backup dos meus servidores tem aproximadamente
+7 GB e isto consome um pouco menos de $ 5 mensal.&lt;/p&gt;
+
+&lt;p&gt;Infelizmente, o tarsnap não é &lt;a href=&quot;http://www.gnu.org/philosophy/free-sw.pt-br.html&quot;&gt;software-livre&lt;/a&gt;, o autor disponibiliza o código
+fonte, mas a licença não permite redistribuir o software com modificações.
+Apesar disso o autor afirma contribuir bastante com o
+&lt;a href=&quot;http://code.google.com/p/libarchive&quot;&gt;libarchive&lt;/a&gt;, uma biblioteca livre para
+compressão e arquivamento usada como base para o tarsnap.&lt;/p&gt;
+
+&lt;p&gt;Não vou detalhar o uso da ferramenta, darei apenas dois exemplos básicos:
+(1) como adicionar um servidor e (2) como criar backups.
+Considerando que você já tem o tarsnap instalado em seu servidor,
+&lt;a href=&quot;https://www.tarsnap.com/download.html&quot;&gt;veja as instruções de instalação aqui&lt;/a&gt;,
+gere uma chave para ele com o comando abaixo, &lt;a href=&quot;http://www.tarsnap.com/gettingstarted.html&quot;&gt;se tiver
+dificuldades consulte este link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+# tarsnap-keygen --keyfile /root/tarsnap.key --user me@example.com --machine mybox
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Substitua &lt;em&gt;me@example.com&lt;/em&gt; pelo email usado para criar a conta no Tarsnap, e
+&lt;em&gt;mybox&lt;/em&gt; pelo hostname do seu servidor. &lt;strong&gt;Faça uma cópia de seguança do
+arquivo &lt;code&gt;/root/tarsnap.key&lt;/code&gt;, sem ele não será possível acessar o backup!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Com isso já é possível criar um novo backup, o comando abaixo cria um backup do
+diretório &lt;code&gt;/home&lt;/code&gt; por exemplo, &lt;a href=&quot;http://www.tarsnap.com/usage.html&quot;&gt;veja outros comandos
+aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+# tarsnap -c -f mybackup-home /home
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;O tarsnap apenas cria, lê, apaga e restaura backups, ele não gerencia
+agendamento, política de retenção, periodicidade, etc. É necessário alguma
+outra ferramenta para essa tarefa, em uma rápida pesquisa encontrei o
+&lt;a href=&quot;http://github.com/miracle2k/tarsnapper&quot;&gt;tarsnapper&lt;/a&gt;, um agendador para o
+tarsnap, com ele é possível de maneira simples definir uma política de retenção
+usando um arquivo de configuração localizado em &lt;code&gt;/etc/tarsnapper.conf&lt;/code&gt;. Veja um
+exemplo:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# fazer backup diario e reter:&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# a cada semana (7 dias)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# a cada mes (30 dias)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# a cada semestre (180 dias)&lt;/span&gt;
+
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;deltas&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;1d 7d 30d 180d&lt;/span&gt;
+
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/mybox/$name-$date&lt;/span&gt;
+
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;etc&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/etc&lt;/span&gt;
+
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/var/backups/mysql&lt;/span&gt;
+    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;exec_before&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/usr/local/bin/dump-mysql&lt;/span&gt;
+
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;foswiki&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;sources&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/var/lib/foswiki/data&lt;/span&gt;
+      &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/var/lib/foswiki/pub&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;O tarsnapper deve ser agendado no cron, eu sugiro executar ele diariamente,
+para isso crie o arquivo &lt;code&gt;/etc/cron.daily/tarsnapper&lt;/code&gt; com o seguinte conteúdo:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Start in the root filesystem, make SElinux happy&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /
+
+tarsnapper -o configfile /etc/tarsnap.conf -c /etc/tarsnapper.conf make &amp;gt;&amp;gt; /var/log/tarsnapper.log 2&amp;gt;&lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Dê permissão de execução a este arquivo, isto vai fazer o cron vai rodar o
+tarsnapper diariamente executando o tarsnap para cada job presente no arquivo
+de configuração. Lembrando que todos os comandos foram testados no sistema
+operacional Debian GNU/Linux e não há garantias que funcionem corretamente em
+outros sistemas.&lt;/p&gt;
+
+&lt;p&gt;Com isso você tem um esquema de backup simples de implementar e manter.
+Espero que tenha sido útil de alguma forma, em caso de dúvidas, sugestões ou
+reclamações, por favor, entre em contato através do
+&lt;a href=&quot;mailto:joenio@colivre.coop.br&quot;&gt;email&lt;/a&gt;,
+&lt;a href=&quot;http://twitter.com/joenio&quot;&gt;twitter&lt;/a&gt;
+ou se preferir atrevés do meu perfil no
+&lt;a href=&quot;http://github.com/joenio&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 23 Dec 2014 00:00:00 -0300</pubDate>
+        <link>http://joenio.me/backup-na-nuvem-com-tarsnap</link>
+        <guid isPermaLink="true">http://joenio.me/backup-na-nuvem-com-tarsnap</guid>
+        
+        <category>tecnologia</category>
+        
+        
+      </item>
     
       <item>
         <title>Voltando a &quot;blogar&quot;</title>
