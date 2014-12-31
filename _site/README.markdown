@@ -1,8 +1,8 @@
 Joenio Costa Blog
 =================
 
-Código-fonte do meu blog pessoal hospedado em http://joenio.me implementado com
-base na ferramenta para criação de sites estáticos Jekyll.
+Código-fonte do blog pessoal http://joenio.me implementado usando Jekyll, uma
+ferramenta para criação de sites estáticos.
 
 Dicas de como escrever bons títulos para os posts
 -------------------------------------------------

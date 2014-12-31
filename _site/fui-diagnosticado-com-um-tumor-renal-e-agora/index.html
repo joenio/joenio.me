@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Backup na nuvem com Tarsnap | Joenio Costa</title>
+    <title>Fui diagnosticado com um tumor renal, e agora? | Joenio Costa</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
-    <link rel="canonical" href="http://joenio.me/backup-na-nuvem-com-tarsnap">
+    <link rel="canonical" href="http://joenio.me/fui-diagnosticado-com-um-tumor-renal-e-agora">
     <link rel="alternate" type="application/rss+xml" title="Joenio Costa | Feed" href="/feed.xml" />
 
     <!-- Custom CSS -->
@@ -58,130 +58,96 @@
       <div class="post">
 
   <header class="post-header">
-    <h1>Backup na nuvem com Tarsnap</h1>
+    <h1>Fui diagnosticado com um tumor renal, e agora?</h1>
     <p class="meta">
-    Dec 23, 2014
-     • tecnologia backup
+    Dec 31, 2014
+     • pessoal saude
     </p>
   </header>
 
   <article class="post-content">
-  <p><img src="/files/chewbacca-nuvem.jpg" alt="Chewbacca fazendo backup na nuvem" /></p>
+  <p><img src="/files/wall-e-tomografia.jpg" alt="Wall-e sob a tomografia computadorizada" /></p>
 
-<p><em>Este post estava sendo escrito antes de eu abandonar meu blog, então onde
-estiver escrito <strong>recentemente, hoje, etc</strong>, leia-se <strong>2 anos atrás</strong>.</em></p>
+<p>Em 2012 fui diagnosticado com um tumor no rim esquerdo, fiz uma cirurgia e a
+recuperação ocorreu muito rápida e tranquila. Na época fiz uma busca
+superficial na internet sobre o assunto e encontrei algumas opiniões bem
+assustadoras, falavam em quimioterapia, radioterapia e afins.  Como nada disso
+foi necessário em meu caso resolvi compartilhar minha experiência aqui, com o
+objetivo de deixar um relato positivo sobre o tratamento de tumor renal na
+esperança de que seja útil para alguém.</p>
 
-<p>Recentemente precisei implementar uma solução de backup para alguns servidores
-de internet, após uma pesquisa rápida optei pelo <a href="http://tarsnap.com">Tarsnap</a>,
-uma solução de backup em nuvem baseado na infra-estrutura de armazenamento da
-<a href="http://www.tarsnap.com/infrastructure.html">Amazon</a>.</p>
+<p>Bem, vamos lá… 2012, fazia algum tempo que sofria com pequenas dores de
+estômago, ao investigar a causa descobri que estava com uma gastrite, fiz o
+tratamento, resolvi o problema mas as dores continuaram, vários exames depois,
+dentre eles uma tomografia computadorizada de abdómen, identificou um pequeno
+ponto no rim esquerdo, este pequeno ponto era um tumor e precisava ser
+removido.</p>
 
-<p>Eu queria algo simples de implementar e manter, não queria ter mais um servidor
-nas mãos, nem queria ter que lidar com detalhes de ssh, rsync, ftp, etc.
-Em resumo:</p>
+<p>Neste momento o médico me explicou que o procedimento cirúrgico para remoção do
+tumor apresentava uma chance de cura de 95%, isto me deixou bastante tranquilo,
+me explicou que a cirurgia era simples, poderia ser feita por vídeo
+laparoscopia, e que a remoção do tumor no meu caso tinha grandes chances de
+preservar o rim, ou ao menos parte dele.</p>
 
-<ul>
-  <li>Não queria manter um novo servidor (nem físico nem virtual)</li>
-  <li>Não queria usar o <a href="http://bacula.org">Bacula</a>, ótima ferramenta mas complicado</li>
-  <li>A solução deveria ser simples de configurar e manter, do tipo “configure uma vez, contrate um serviço e funcione para o resto da vida”</li>
-  <li>Não estava procurando apenas uma ferramenta, mas também um serviço de armazenamento para backup</li>
-</ul>
+<p>Apesar da cirurgia ter sido um sucesso, fazer tudo isto pelo SUS não foi tarefa
+fácil, eu não tinha plano de saúde então o SUS era minha única alternativa. Por
+sorte e por ajuda de alguns médicos consegui chegar ao Hospital Aristides
+Maltez (HAM), ele é referência em tumores no estado Bahia e faz atendimentos
+100% pelo SUS.</p>
 
-<p>O Tarsnap é uma ferramenta e também um serviço de armazenamento, o
-preço é bem razoável, $0.30 por GB de armazenamento mensal e $0.30 por cada GB
-transferido. A cobrança é pré-paga, e para começar a usar o serviço é
-necessário adicionar um crédito mínimo de $ 5.</p>
+<p>O próximo passo foi conseguir marcar uma consulta, no HAM isto não é tão fácil,
+é muita gente para pouco “hospital”, consegui marcar a primeira consulta após
+esperar uma manhã inteira na fila. Consulta agendada, voltei ao hospital no dia
+marcado, mais um turno aguardando para ser atendido, fui atendido e a cirurgia
+foi marcada para um prazo de aproximadamente 15 dias.</p>
 
-<p>Os créditos são consumidos diariamente, quando eles acabam o serviço continua
-funcionando por até 7 dias, isto dá tempo de pôr créditos novamente sem
-interrupção dos backups. Hoje, o backup dos meus servidores tem aproximadamente
-7 GB e isto consome um pouco menos de $ 5 mensal.</p>
+<p>O grande dia chegou, em 31 de Janeiro de 2012 fui internado, a cirurgia ocorreu
+no dia seguinte, o nome exato do procedimento ao qual fui submetido é
+<strong>Ressecção de tumor retroperitoneal + linfadenectomia retroperitoneal</strong>, em
+algumas horas já estava de volta à enfermaria, um médico residente informou que
+ocorreu tudo bem e que a previsão de alta era em 48 horas. Dentro do prazo
+previsto recebi alta, me entregaram algumas amostras do tumor para que fosse
+solicitado biopsia, marquei a consulta de retorno para 2 semanas depois e fui
+para casa.</p>
 
-<p>Infelizmente, o tarsnap não é <a href="http://www.gnu.org/philosophy/free-sw.pt-br.html">software-livre</a>, o autor disponibiliza o código
-fonte, mas a licença não permite redistribuir o software com modificações.
-Apesar disso o autor afirma contribuir bastante com o
-<a href="http://code.google.com/p/libarchive">libarchive</a>, uma biblioteca livre para
-compressão e arquivamento usada como base para o tarsnap.</p>
+<p>Voltei para a consulta já com os resultados da biopsia em mãos, o médico disse
+que a cirurgia ocorreu da melhor forma possível, e que as chances de cura eram
+ótimas, mas o resultado da biopsia deu positivo para maligno, ou seja, o tumor
+era cancerígeno.</p>
 
-<p>Não vou detalhar o uso da ferramenta, darei apenas dois exemplos básicos:
-(1) como adicionar um servidor e (2) como criar backups.
-Considerando que você já tem o tarsnap instalado em seu servidor,
-<a href="https://www.tarsnap.com/download.html">veja as instruções de instalação aqui</a>,
-gere uma chave para ele com o comando abaixo, <a href="http://www.tarsnap.com/gettingstarted.html">se tiver
-dificuldades consulte este link</a>.</p>
+<p>Só neste momento eu me <em>toquei</em> de que tive um câncer. Adimito que sempre tive
+um certo medo, costumava pensar, não com tanta frequência, mas pensava o
+seguinte:</p>
 
-<pre class="terminal">
-<code>
-# tarsnap-keygen --keyfile /root/tarsnap.key --user me@example.com --machine mybox
-</code>
-</pre>
+<blockquote>
+  <p>Puts! Se um dia eu tiver algum tipo de câncer como é que vai ser, quimio,
+rádio, etc… Deve ser foda!</p>
+</blockquote>
 
-<p>Substitua <em>me@example.com</em> pelo email usado para criar a conta no Tarsnap, e
-<em>mybox</em> pelo hostname do seu servidor. <strong>Faça uma cópia de seguança do
-arquivo <code>/root/tarsnap.key</code>, sem ele não será possível acessar o backup!</strong></p>
+<p>E de repente eu tive um, fui curado, e <em>quase</em> nem percebi… Reflito sobre
+isto de uma maneira bem humorada e tranquila, afinal, ficar angustiado não
+resolveria o problema.</p>
 
-<p>Com isso já é possível criar um novo backup, o comando abaixo cria um backup do
-diretório <code>/home</code> por exemplo, <a href="http://www.tarsnap.com/usage.html">veja outros comandos
-aqui</a>.</p>
+<p>Apesar disso é importante ser disciplinado e seguir as orientações médicas,
+cumprir os prazos planejados, e não deixar para “depois”, “depois” e “depois”.
+O meu caso por exemplo requer acompanhamento anual, repito todo ano exames
+de sangue, tomografia computadorizada de abdómen e radiografia de tórax. Os
+médicos dizem que casos como o meu, tumor maligno, há chances do tumor voltar,
+então é necessário acompanhamento para o resto da vida.</p>
 
-<pre class="terminal">
-<code>
-# tarsnap -c -f mybackup-home /home
-</code>
-</pre>
+<p>E aqui termino este pequeno relato, desejo sorte para aqueles que estejam
+passando por situação parecida, tenham tranquilidade, paciência e acima de tudo
+fé na medicina moderna, ou em qualquer outra coisa que os tranquilize.</p>
 
-<p>O tarsnap apenas cria, lê, apaga e restaura backups, ele não gerencia
-agendamento, política de retenção, periodicidade, etc. É necessário alguma
-outra ferramenta para essa tarefa, em uma rápida pesquisa encontrei o
-<a href="http://github.com/miracle2k/tarsnapper">tarsnapper</a>, um agendador para o
-tarsnap, com ele é possível de maneira simples definir uma política de retenção
-usando um arquivo de configuração localizado em <code>/etc/tarsnapper.conf</code>. Veja um
-exemplo:</p>
+<p>Tenho certeza de que vibrações positivas ajudam bastante, e as vibrações dos
+meus amigos e familiares me ajudaram muito naquele momento, então aproveito
+este espaço para deixar registrado publicamente um agradecimento especial à
+todos aqueles que me desejaram sorte e que de alguma forma me enviaram suas
+boas vibrações.</p>
 
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1"># fazer backup diario e reter:</span>
-<span class="c1"># a cada semana (7 dias)</span>
-<span class="c1"># a cada mes (30 dias)</span>
-<span class="c1"># a cada semestre (180 dias)</span>
-
-<span class="l-Scalar-Plain">deltas</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">1d 7d 30d 180d</span>
-
-<span class="l-Scalar-Plain">target</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/mybox/$name-$date</span>
-
-<span class="l-Scalar-Plain">jobs</span><span class="p-Indicator">:</span>
-  <span class="l-Scalar-Plain">etc</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">source</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/etc</span>
-
-  <span class="l-Scalar-Plain">mysql</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">source</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/var/backups/mysql</span>
-    <span class="l-Scalar-Plain">exec_before</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/usr/local/bin/dump-mysql</span>
-
-  <span class="l-Scalar-Plain">foswiki</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">sources</span><span class="p-Indicator">:</span>
-      <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">/var/lib/foswiki/data</span>
-      <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">/var/lib/foswiki/pub</span></code></pre></div>
-
-<p>O tarsnapper deve ser agendado no cron, eu sugiro executar ele diariamente,
-para isso crie o arquivo <code>/etc/cron.daily/tarsnapper</code> com o seguinte conteúdo:</p>
-
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="c">#!/bin/sh</span>
-<span class="c"># Start in the root filesystem, make SElinux happy</span>
-<span class="nb">cd</span> /
-
-tarsnapper -o configfile /etc/tarsnap.conf -c /etc/tarsnapper.conf make &gt;&gt; /var/log/tarsnapper.log 2&gt;<span class="p">&amp;</span>1</code></pre></div>
-
-<p>Dê permissão de execução a este arquivo, isto vai fazer o cron vai rodar o
-tarsnapper diariamente executando o tarsnap para cada job presente no arquivo
-de configuração. Lembrando que todos os comandos foram testados no sistema
-operacional Debian GNU/Linux e não há garantias que funcionem corretamente em
-outros sistemas.</p>
-
-<p>Com isso você tem um esquema de backup simples de implementar e manter.
-Espero que tenha sido útil de alguma forma, em caso de dúvidas, sugestões ou
-reclamações, por favor, entre em contato através do
-<a href="mailto:joenio@colivre.coop.br">email</a>,
-<a href="http://twitter.com/joenio">twitter</a>
-ou se preferir atrevés do meu perfil no
-<a href="http://github.com/joenio">github</a>.</p>
+<blockquote>
+  <p>Obrigado!</p>
+</blockquote>
 
   </article>
 

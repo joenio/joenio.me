@@ -1,6 +1,6 @@
 ---
 title: Backup na nuvem com Tarsnap
-tags: tecnologia
+tags: tecnologia backup
 ---
 
 ![Chewbacca fazendo backup na nuvem](/files/chewbacca-nuvem.jpg)
