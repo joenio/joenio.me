@@ -1,6 +1,6 @@
 ---
 title: Criar pacotes Debian de módulos Perl
-tags: tecnologia
+tags: tecnologia debian perl
 ---
 
 Escrever um tutorial de como criar pacotes Debian, como submeter ao Debian,
@@ -8,19 +8,34 @@ como atualizar, corrigir, questoes de licenças, etc
 
 Usar como base um TXT que escrevi como referencia pessoal...
 
+01 - Instalar pacotes de desenvolvimento básicos
+------------------------------------------------
+
 0) Install devscripts, debhelper, svn-buildpackage, etc... (debuild), quilt (para trabalhar com patches)
 
+02 - Criar versão inicial do pacote
+-----------------------------------
+
 1) dh-make-perl --pkg-perl --cpan nome no cpan ou db-make-perl diretório dos fontes
+
+03 - Correções básicas da versão inicial
+----------------------------------------
 
 2) Corrigir copyright, control, changelog (unstable) fechar um bug # ITP
 
 Deve-se adicionar o ano em cada linha do copyright, ex: 2010-2012 ou 2011
+
+04 - Gerar pacote e verificar conformidade com lintian
+------------------------------------------------------
 
 3) debuild -us -uc ou git-buildpackage / corrigir lintian mensagens
 
 rodar lintian -I
 
 como corrigir mensagem de ter .git no diff???
+
+05 - Publicar pacote em algum repositório (não-oficial)
+-------------------------------------------------------
 
 4) dput para publicar num repositorio e testar instalacao (mostrar outro post sobre isso depois)
 
@@ -31,6 +46,9 @@ dput sede arquivo.changes
 (usar dpub + mini-dinstall)
 (ver http://upsilon.cc/~zack/blog/posts/2009/04/howto:_uploading_to_people.d.o_using_dput/)
 ( e  http://wiki.debian.org/HowToSetupADebianRepository)
+
+06 - Reportar bug do tipo ITP com reportbug
+-------------------------------------------
 
 5) Reportar bug com reportbug
 
@@ -50,6 +68,9 @@ Adicionar configs no .quiltrc:
 
 http://pkg-perl.alioth.debian.org/howto/quilt.html#tips_and_tricks
 
+07 - Verificar e corrigir alguns parametros
+-------------------------------------------
+
 6) Verificar
 
 Versao correta de "Standards-Version: 3.9.4"
@@ -65,6 +86,9 @@ Descrição curta deve iniciar com letra minuscula.
 Verificar as versões das dependencias, nem sempre as sugestões
 dos desenvolvedores no Makefile.PL está correta, ou o Debian
 possui versão mais antiga que esta.
+
+08 - Fazer upload do pacote no repositório git do grupo Debian pkg-perl
+-----------------------------------------------------------------------
 
 7) Fazer upload no repositório do grupo Debian pkg-perl
 
@@ -87,11 +111,17 @@ Antes de submeter sempre testar construir o pacote dentro de um chroot: sbuild, 
 
 $ pdebuild
 
+09 - Atualizar repositório git
+------------------------------
+
 8) Atualizar repositórios do grupo pkg-perl
 
 $ mr up
 
 (lembrar de configurar o mr atraves de ~/.mrconfig)
+
+10 - Atualizar pacote a partir do upstream
+------------------------------------------
 
 9) Atualizar pacote com nova versão no upstream
 
@@ -100,6 +130,7 @@ gbp-pull ou uscan
 $ git-import-orig --uscan --pristine-tar
 
 PROBLEMAS COMUNS
+----------------
 
 Sempre verificar o COPYRIGHT de cada arquivo com grep para ter certeza
 que o d/copyright está ok.
