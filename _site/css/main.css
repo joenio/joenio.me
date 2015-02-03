@@ -13,7 +13,7 @@ body {
   font-size: 20px;
   line-height: 1.5;
   font-weight: 300;
-  background-color: #fdfdfd;
+  background-color: #3d3d3d;
 }
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
@@ -42,7 +42,7 @@ a:visited { color: #205caa; }
 
 .site-header {
   min-height: 56px;
-  *background-color: white;
+  background-color: #fdfdfd;
 }
 
 .site-title,
@@ -56,7 +56,6 @@ a:visited { color: #205caa; }
   z-index: 1;
   text-align: center;
   font-variant: small-caps;
-  *text-shadow: 0px 1px 1px #DDD;
 }
 
 .site-nav {
@@ -75,7 +74,6 @@ a:visited { color: #205caa; }
 /* Site footer */
 
 .site-footer {
-  *border-top: 1px solid #e8e8e8;
   padding: 30px 0;
 }
 
@@ -89,38 +87,31 @@ a:visited { color: #205caa; }
 .site-footer .column { float: left; margin-bottom: 15px; }
 
 .footer-col-1 {
-  width: 270px; /*fallback*/
-  width: -webkit-calc(35% - 10px);
-  width: -moz-calc(35% - 10px);
-  width: -o-calc(35% - 10px);
-  width: calc(35% - 10px);
+  width: 115px; /*fallback*/
+  width: -webkit-calc(15% - 10px);
+  width: -moz-calc(15% - 10px);
+  width: -o-calc(15% - 10px);
+  width: calc(15% - 10px);
   margin-right: 10px
 }
 .footer-col-2 {
-  width: 175px; /*fallback*/
-  width: -webkit-calc(23.125% - 10px);
-  width: -moz-calc(23.125% - 10px);
-  width: -o-calc(23.125% - 10px);
-  width: calc(23.125% - 10px);
-  margin-right: 10px
-}
-.footer-col-3 {
-  width: 335px; /*fallback*/
-  width: -webkit-calc(41.875%);
-  width: -moz-calc(41.875%);
-  width: -o-calc(41.875%);
-  width: calc(41.875%);
+  width: 620px; /*fallback*/
+  width: -webkit-calc(80%);
+  width: -moz-calc(80%);
+  width: -o-calc(80%);
+  width: calc(80%);
 }
 
 .site-footer ul { list-style: none; }
 
 .site-footer li,
 .site-footer p {
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: -.3px;
-  color: #828282;
+  color: #D2D2D2;
 }
 
+.email-icon-svg,
 .github-icon-svg,
 .twitter-icon-svg,
 .rss-icon-svg {
@@ -131,6 +122,22 @@ a:visited { color: #205caa; }
   top: 3px;
 }
 
+#sobre a,
+#rss a {
+  color: #D2D2D2;
+  border-bottom: 1px dotted;
+}
+
+#rss {
+  text-align: center;
+}
+
+.site-footer hr {
+  border: 0;
+  border-bottom: 1px solid #4d4d4d;
+  width: 50%;
+  margin: 25px auto 15px auto;
+}
 
 /* Page Content styles */
 /* ----------------------------------------------------------*/
@@ -178,7 +185,6 @@ a:visited { color: #205caa; }
 }
 
 .post-header .meta {
-  *display: block;
   color: #818181;
   margin-top: 5px;
   font-size: 16px;
@@ -429,4 +435,15 @@ a:visited { color: #205caa; }
 abbr {
   border-bottom: 1px dotted black;
   cursor: help;
+}
+
+.hackergotchi {
+  border-radius: 45px;
+  width: 90px;
+  height: 90px;
+  background-color: dimgray;
+}
+
+.hackergotchi img {
+  margin: 5px 16px;
 }
