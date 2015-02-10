@@ -269,12 +269,12 @@ a:visited { color: #205caa; }
 
 .post pre.terminal code { background-color: #444; }
 
-.post-content > p:first-child > img {
+.post-content > p:first-child img {
   border-radius: 5px;
   width: 100%;
 }
 
-.post-content > p:not(:first-child) > img {
+.post-content > p:not(:first-child) img {
   border: 1px solid #AAA;
   box-shadow: 1px 1px 1px gray;
 }
