@@ -13,14 +13,15 @@ título deste post é uma provocação ao conselho pupular _"Não deixe pra aman
 que você pode fazer hoje"_, que vai totalmente de encontro à proposto feita
 pelo autor em seu livro.
 
-
+<!--
 Falar sobre gestão pessoal de tempo, como organizar atividades
 a fazer, como usar agenda, mapa mental para inspirar, ter disciplica
 com horário, etc...
+-->
 
-[![Livro Deixe para amanhã](/files/livro-deixe-para-amanha.jpg)](http://www.skoob.com.br/livro/141300ED157147-deixe-para-amanha)
-
-
+<a href="http://www.skoob.com.br/livro/141300ED157147-deixe-para-amanha" class="float-right">
+![Livro Deixe para amanhã](/files/livro-deixe-para-amanha.jpg)
+</a>
 Desde 2009 venho utilizando a técnica _DIT_ proposta no livro de _Mark
 Forster_, é uma técnica muito simples de usar e muito eficiente, tomei
 conhecimento dela através do post [3 alternativas para o GTD — 7 Hábitos, Deixe
@@ -30,21 +31,25 @@ de autoria de _Rafael Perrone_ em seu blog _fazendoAcontecer.net_.
 
 Neste post _Rafael Perrone_ cita algumas alternativas ao _Getting Things Done
 (GTD)_, uma técnica para organização pessoal de tempo bastante popular e também
-muito eficiente, ela propõe uma série de ferramentas diferentes, como lista
-disso, lista daquilo, e possui um workflow bem elaborado para que funcione bem,
-isso tudo faz o _GTD_ ter uma curva de aprendizado relativamente grande e exige
-um certo esforço de aprendizado antes de começar a ser efetiva, e foi
-exatamente isto me desmotivou à utilizá-la e me fez ir em busca de
-alternativas.
+muito eficiente, ela propõe uma série de ferramentas diferentes, como lista de
+coisas a fazer, lista de Algum dia / Talvez, lista de próximas ações, e algumas
+outras, possui também um workflow bem elaborado para que funcione bem, isso
+tudo faz o _GTD_ ter uma curva de aprendizado relativamente grande e exige um
+esforço mínimo de aprendizado antes de começar a ser efetiva, e foi exatamente
+isto que me desmotivou à utilizá-la e me fez ir em busca de alternativas, sim,
+como todo bom programador, eu sou um pouco preguiçoso!
 
-E foi assim que cheguei ao _DIT_, uma técnica extremamente simples e que serviu
-muito bem para mim, aqui é importante abrir um parenteses para falar sobre o meu
-trabalho, desde 2006 eu trabalho como autônomo e gerencio meu próprio tempo, sem
-patrão, sem relógio de ponto, sem fiscalização, e sem todas essas artimanhas que
-as empresas criam para fazer o trabalho das pessoas ser eficiente. Então eu precisava
-**de fato** ter algo que me fizesse usar meu tempo da melhor forma possível, caso
-contrário os cronogramas iriam furar, as atividades iriam ficar _para depois_, a
-procrastinação iria rolar solta, e isso iria destruir minha vida como autônomo.
+E foi assim que cheguei ao _DIT_, uma técnica extremamente simples, com praticamente
+zero esforço de aprendizado para iniciar a utilização, esta proposta de Mark Forster serviu
+muito bem para mim e desde então tenho utilizado ela para gerenciar minhas
+atividades. Aqui é importante abrir um pequeno parenteses para falar sobre o
+meu trabalho, desde 2006 eu trabalho como autônomo e gerencio meu próprio
+tempo, sem patrão, sem relógio de ponto, sem fiscalização, e sem todas essas
+artimanhas que as empresas criam para fazer o trabalho das pessoas ser
+eficiente. Então eu precisava **de fato** ter algo que me fizesse usar meu
+tempo da melhor forma possível, caso contrário os cronogramas iriam furar, as
+atividades iriam ficar _para depois_, a procrastinação iria rolar solta, e isso
+iria destruir minha vida como autônomo.
 
 
  preguiçosas como eu, que não querem investir muito tempo em aprendizado.  Do que é composta esta
