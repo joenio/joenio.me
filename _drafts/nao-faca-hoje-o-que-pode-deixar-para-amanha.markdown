@@ -1,6 +1,6 @@
 ---
 title: Não faça hoje o que pode deixar para amanhã
-tags: pessoal
+tags: pessoal gestao
 ---
 
 ![Default post image](/files/default-post-image.png)
@@ -36,100 +36,94 @@ Assim, em 2009, cheguei ao _DIT_, uma técnica extremamente simples, com
 praticamente zero esforço de aprendizado inicial, e desde então tenho utilizado
 ela para gerenciar todas as minhas atividades.
 
-> Mas... Por que eu estava à procura de técnicas para gerenciamento de tempo? 
+> Por que eu estava à procura de técnicas para gerenciamento de tempo? 
 
-Desde 2006 eu venho trabalhando como autônomo, gerenciando meu próprio tempo, sem
-patrão, sem relógio de ponto, sem fiscalização, e sem todas essas artimanhas
-que as empresas criam para tentar fazer seus funcionários serem eficientes. Eu
-precisava de algo que me tornasse **de fato** eficiente, algo que fizesse eu
-usar o tempo da melhor forma possível, caso contrário os cronogramas iriam
-furar, as atividades iriam ficar _para depois_, a procrastinação iria rolar
-solta, e isso iria inviabilizar minha vida como autônomo.
+Desde 2006 eu venho trabalhando como autônomo, gerenciando meu próprio tempo,
+sem patrão, sem relógio de ponto, sem fiscalização, e sem todas essas
+artimanhas que as empresas criam para tentar fazer seus funcionários serem
+eficientes. Eu precisava de algo que me tornasse **de fato** eficiente, algo
+que fizesse eu usar o tempo da melhor forma possível, caso contrário os
+cronogramas iriam furar, as atividades iriam ficar _para depois_, a
+procrastinação iria rolar solta, e isso iria inviabilizar minha vida como
+autônomo.
 
-Ao usar _DIT_ consegui a eficiencia que procurava, é importante destacar que
-nenhum método ou técnica irá fazer milagres, o importante é ter disciplina e se
-esforçar para pôr algo em prática, qualquer método que funcione para você, eu
-escolhi o _DIT_ pela simplicidade, apesar de simples é preciso ter muita
-disciplina, e isto será necessário para qualquer outro método. Ler o livro de
-_Mark Forster_ me ajudou muito neste sentido por exemplo.
+Ao usar _DIT_ consegui a eficiencia que procurava, mas é importante destacar
+que nenhum método ou técnica irá fazer milagres, o importante é ter disciplina
+e se esforçar para pôr algo em prática, qualquer método que funcione vale à
+pena, eu escolhi o _DIT_ pela simplicidade, apesar de simples é preciso ter
+disciplina, e isto será necessário para qualquer outro método. Ler sobre o
+assunto ajuda bastante, o livro de _Mark Forster_ me ajudou muito neste
+sentido.
 
 > Mas, como funciona esse método afinal?
 
 <span class='float-left'>
 ![Lista de coisas a fazer](/files/lista-de-coisas-a-fazer.jpg)
 </span>
-O autor do _DIT_ basicamente propõe uma modificação em algo
-já conhecido por todos nós, que é a famosa lista de coisas a fazer, é aquela
-listinha que fazemos num pedaço de papel com tudo que *precisamos* fazer. Ela se parece
-mais ou menos com a imagem ao lado.
+O autor do _DIT_ basicamente propõe uma modificação em algo já conhecido por
+todos nós, a famosa lista de coisas a fazer, é aquela listinha que fazemos num
+pedaço de papel com tudo que *precisamos* fazer. Ela se parece mais ou menos
+com a imagem ao lado.
 
 É uma listinha imensa, que nunca chega ao fim...
 
-Acredito que todos nós já fizemos uma lista semelhante à esta ao menos uma vez
+Acredito que todos nós já fizemos uma lista semelhante a esta ao menos uma vez
 na vida, _Mark Forster_ sugere que transformemos esta lista de **coisas a
 fazer** em uma lista de **coisas que serão feitas**, a lista de coisas a fazer
-tende a crescer eternamente e nunca conseguimos terminá-la, isto causa uma
-impressão de que o trabalho nunca é concluído, e isto não ajuda a manter ou
-melhorar nossa auto-estima.
+tende a crescer eternamente e nunca conseguimos terminá-la, isto causa a
+sensação de que o trabalho nunca é concluído, e esta sensação não ajuda a melhorar
+ou mesmo a manter a nossa auto-estima.
 
-Esta lista deve ser feita diariamente, e não deve ser alterada ao decorrer do dia,
-idealmente deve ser feita com antecedência, no dia anterior ou antes de começar
-o trabalho. É importante fazer isto antes de começar o trabalho pois fica difícil
-planejar algo depois.
-
-Não se deve adicionar itens de última hora, ou seja, aquela lista de
-terça-feira que eu planejei na segunda-feira à noite, não deve ser alterada
-durante o decorrer do dia (terça). É uma **lista fechada**, uma vez planejada,
-nada mais entra nela, se surgir algo novo, planeje para o dia seguinte, ou para
-a semana seguinte, isto vai depender do grau de urgencia dela.
+A lista de **coisas que serão feitas** deve ser feita diariamente, e não deve
+ser alterada ao decorrer do dia, idealmente deve ser feita com antecedência, ou
+ao menos antes de começar o trabalho. Não se deve adicionar itens de última
+hora, ou seja, aquela lista de terça-feira que planejei na segunda, não deve
+ser alterada durante o decorrer do dia. Ela é uma **lista fechada**, uma vez
+planejada, nada mais entra, se surgir algo novo, planeje para o dia seguinte,
+ou para a semana seguinte, isto vai depender da natureza da atividade e do seu
+planejamento pessoal.
 
 O objetivo é sempre começar o dia com uma lista de atividades previamente
-planejada, e ao final do dia ela deve estar concluída, ou seja, é uma lista por dia, nada
-de transferir a lista de hoje para amanhã, isto não vai funcionar! O que eu costumo
-fazer é usar uma agenda de papel, e a cada dia na data correta eu escrevo minhas
-atividades que serão feitas.
+planejada, ao final do dia ela deve estar concluída, uma lista por dia, nada de
+transferir a lista de hoje para amanhã, isto não vai funcionar! O que costumo
+fazer é usar uma agenda de papel, e a cada dia na data correspondente anoto as
+minhas atividades.
 
-Eu indico fortemente o uso de uma agenda de papel, com ela você pode anotar
-seus compromissos, que é o uso padrão de uma agenda, e também suas atividades
-planejadas na **lista fechada**, uma coisa está ligada à outra, pois se em um
-certo dia você tem anotado na sua agenda uma reunião que dura a metade do dia,
-saberá que não poderá planejar tantas atividades para este dia, ter tudo isto
-no mesmo lugar facilita a gestão deste tipo de informação.
+Eu indico fortemente o uso da agenda de papel, com ela você pode anotar seus
+compromissos, reuniões, etc, e também sua lista de atividades, uma coisa está
+ligada à outra, se num certo dia você tem anotado uma reunião que dura a metade
+do dia, saberá que não poderá planejar tantas atividades nesta data, ter estas
+informações num mesmo lugar facilita a gestão.
 
-Segue abaixo uma imagem da minha agenda com a lista de coisas a serem feitas
-(**lista fechada**) do dia 05 de Fevereiro de 2015.
+Veja por exemplo minha lista de atividades (**coisas a serem feitas**) do dia
+05 de Fevereiro de 2015.
 
 <span class='full-width'>
 ![Lista fechada](/files/lista-fechada.jpg)
 </span>
 
 Nesta lista eu marco um <span style='font-size:18; color:red; font-weight:bold;'>X</span>
-ao finalizar a tarefa, o objetivo de cada dia é marcar todas as tarefas como
-finalizadas, neste dia em particular eu consegui finalizar todas as minhas tarefas,
-o autor _Mark Forster_ fala dos benefícios emocionais relacionados quando conseguimos
-completar o dia, isto dá uma sensação de trabalho concluído, um sentimento de missão
-cumprida, bem diferente do que seria causado pela aquela enorme lista de coisas a
-fazer que nunca acaba.
+ao finalizar a atividade, o objetivo de cada dia é marcar todas as atividades
+como finalizadas, neste dia em particular eu consegui finalizar todas elas
+(ufa!), o autor _Mark Forster_ fala em seu livro dos benefícios emocionais
+relacionados à isto, quando conseguimos completar o dia, uma sensação de
+trabalho concluído, um sentimento de missão cumprida, bem diferente do que
+seria causado por aquela enorme lista de coisas a fazer que nunca termina.
 
-Nem sempre é possível finalizar todas as atividades planejadas para aquele dia,
-infelizmente, quando isto ocorre eu marco um <span style='font-size:18;
-color:red; font-weight:bold;'>N</span> na tarefa e replanejo ela imediatamente
-para outro dia, assim mesmo que eu não cumpra o planejamento do dia não perco
-aquela tarefa de vista. É importante enfatizar que isto deve ser evitado ao máximo,
-se você notar que está se tornando constante, procure descobrir porque isto está
-acontecendo, talves você esteja colocando muitas atividades no dia.
+Nem sempre é possível finalizar todas as atividades planejadas, quando isto
+ocorre marco um <span style='font-size:18; color:red; font-weight:bold;'>N</span>
+na atividade e planejo ela imediatamente para outro dia, assim, mesmo que não
+complete o planejamento diário, não perco a atividade de vista. É importante
+notar que isto deve ser evitado ao máximo, se perceber que está sendo constante
+replanejar atividades, procure descobrir o motivo, talvez você esteja colocando
+muitas atividades no dia, ou talvez você esteja procrastinando, se for a
+segunda opção, cuidado, isto é um problema sério!
 
-Ao final, é nisso que a proposta _Do It Tomorrow (DIT)_ se resumo, uma simples
-lista de coisas a serem feitas (**de fato**) por dia, o mais importante é a
-disciplina de seguir este método até ganhar o hábito de estar sempre planejando
-cada dia com o mínimo de antecedência de forma natural, e ter responsabilidade
-com seu próprio plano, ou seja, é importante finalizar as tarefas.
+Bem, é nisso que a proposta _Do It Tomorrow (DIT)_ se resume, uma simples lista
+de coisas a serem feitas (**de fato**) por dia, o mais importante é ter
+disciplina e praticar até ganhar o hábito de sempre planejar o seu dia de
+trabalho, e lógico, ter responsabilidade com o seu próprio planejamento e
+buscar cumpri-lo sempre.
 
-O autor _Mark Forster_ dá uma série de dicas para conseguir chegar lá, é
-importante ler o livro para ter um estímulo a mais, no livro ele cita diversos
-exemplos de como pôr em prática e como consegui disciplina, então leia o livro,
-universo em desencanto!
-
-kakakaka, não podia deixar de perder esta piada, não leia o livro universo em
-desencanto não, leia o livro "Deixe para amanhã" e aprenda a gerenciar melhor o
-seu tempo.
+O autor _Mark Forster_ dá uma série de dicas para conseguir chegar lá, sugiro
+que você leia o livro dele, mas faça isso hoje, não deixe para amanhã! rs
