@@ -46,19 +46,14 @@ usar o tempo da melhor forma possível, caso contrário os cronogramas iriam
 furar, as atividades iriam ficar _para depois_, a procrastinação iria rolar
 solta, e isso iria inviabilizar minha vida como autônomo.
 
-<!--
-Falar sobre gestão pessoal de tempo, como organizar atividades
-a fazer, como usar agenda, mapa mental para inspirar, ter disciplica
-com horário, etc...
--->
+Ao usar _DIT_ consegui a eficiencia que procurava, é importante destacar que
+nenhum método ou técnica irá fazer milagres, o importante é ter disciplina e se
+esforçar para pôr algo em prática, qualquer método que funcione para você, eu
+escolhi o _DIT_ pela simplicidade, apesar de simples é preciso ter muita
+disciplina, e isto será necessário para qualquer outro método. Ler o livro de
+_Mark Forster_ me ajudou muito neste sentido por exemplo.
 
-Ao usar _DIT_ consegui a eficiencia que procurava, é importante destacar que nenhum método ou técnica
-irá fazer milagres, o importante é ter disciplina e se esforçar para pôr em prática algum
-método que funcione para você, eu escolhi o _DIT_ pela simplicidade, apesar de simples
-logicamente é preciso ter muita disciplina para conseguir pôr em prática, e isto vai ser
-necessário para qualquer outro método.
-
-> Como funciona esse método afinal?
+> Mas, como funciona esse método afinal?
 
 <span class='float-left'>
 ![Lista de coisas a fazer](/files/lista-de-coisas-a-fazer.jpg)
@@ -68,27 +63,27 @@ já conhecido por todos nós, que é a famosa lista de coisas a fazer, é aquela
 listinha que fazemos num pedaço de papel com tudo que *precisamos* fazer. Ela se parece
 mais ou menos com a imagem ao lado.
 
+É uma listinha imensa, que nunca chega ao fim...
+
 Acredito que todos nós já fizemos uma lista semelhante à esta ao menos uma vez
-na vida, Mark Forster sugere que transformemos esta lista de coisas a fazer em
-uma lista de coisas que serão feitas, a lista de coisas a fazer tem uma
-tendência a crescer eternamente e nos causa angústia pois nunca conseguimos
-finalizar a lista e isto causa sentimento de não consegur terminar um trabalho.
+na vida, _Mark Forster_ sugere que transformemos esta lista de **coisas a
+fazer** em uma lista de **coisas que serão feitas**, a lista de coisas a fazer
+tende a crescer eternamente e nunca conseguimos terminá-la, isto causa uma
+impressão de que o trabalho nunca é concluído, e isto não ajuda a manter ou
+melhorar nossa auto-estima.
 
-Ele chama esta lista de coisas a fazer de **lista fechada**, e sugere que seja
-se planeje diariamente uma lista dessas, este é um ponto importante, é
-necessário que todos os dias tenha uma **lista fechada**, e esta lista deve ser
-preparada com antescedencia, geralmente você deve planejar o dia seguinte no
-final do dia corrente, ou seja, ao final da segunda-feira eu elaboro minha
-**lista fechada** da terça-feira.
+Esta lista deve ser feita diariamente, e não deve ser alterada ao decorrer do dia,
+idealmente deve ser feita com antecedência, no dia anterior ou antes de começar
+o trabalho. É importante fazer isto antes de começar o trabalho pois fica difícil
+planejar algo depois.
 
-Nesta lista não deve ser adicionados itens de última hora, ou seja, aquela lista
-de terça-feira que eu planejei na segunda-feira à noite, não deve ser alterada
-durante o decorrer do dia (terça). Por isto o autor dá o nome de **lista
-fechada**, uma vez que foi planejada, nada mais entra nela, se surgir algo
-novo, planeje para o dia seguinte, ou para a semana seguinte, isto vai depender do grau
-de urgencia dela.
+Não se deve adicionar itens de última hora, ou seja, aquela lista de
+terça-feira que eu planejei na segunda-feira à noite, não deve ser alterada
+durante o decorrer do dia (terça). É uma **lista fechada**, uma vez planejada,
+nada mais entra nela, se surgir algo novo, planeje para o dia seguinte, ou para
+a semana seguinte, isto vai depender do grau de urgencia dela.
 
-O objetivo é sempre começar o dia com uma **lista fechada** previamente
+O objetivo é sempre começar o dia com uma lista de atividades previamente
 planejada, e ao final do dia ela deve estar concluída, ou seja, é uma lista por dia, nada
 de transferir a lista de hoje para amanhã, isto não vai funcionar! O que eu costumo
 fazer é usar uma agenda de papel, e a cada dia na data correta eu escrevo minhas
@@ -130,9 +125,10 @@ disciplina de seguir este método até ganhar o hábito de estar sempre planejan
 cada dia com o mínimo de antecedência de forma natural, e ter responsabilidade
 com seu próprio plano, ou seja, é importante finalizar as tarefas.
 
-O autor _Mark Forster_ dá uma série de dicas para conseguir chegar lá, é importante
-ler o livro para ter um estímulo a mais, no livro ele cita diversos exemplos
-de como pôr em prática e como consegui disciplina, então leia o livro, universo em desencanto!
+O autor _Mark Forster_ dá uma série de dicas para conseguir chegar lá, é
+importante ler o livro para ter um estímulo a mais, no livro ele cita diversos
+exemplos de como pôr em prática e como consegui disciplina, então leia o livro,
+universo em desencanto!
 
 kakakaka, não podia deixar de perder esta piada, não leia o livro universo em
 desencanto não, leia o livro "Deixe para amanhã" e aprenda a gerenciar melhor o
