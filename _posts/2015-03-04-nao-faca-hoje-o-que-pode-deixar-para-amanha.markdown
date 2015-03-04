@@ -3,7 +3,7 @@ title: Não faça hoje o que pode deixar para amanhã
 tags: pessoal gestao
 ---
 
-![Default post image](/files/default-post-image.png)
+![Clone Trooper Deitado](/files/clone-trooper-deitado.jpg)
 
 Neste post irei falar sobre gestão pessoal de tempo usando a técnica _Do It
 Tomorrow (DIT)_, uma proposta de _Mark Forster_ publicada em seu livro de mesmo
@@ -52,7 +52,7 @@ que nenhum método ou técnica irá fazer milagres, o importante é ter discipli
 e se esforçar para pôr algo em prática, qualquer método que funcione vale à
 pena, eu escolhi o _DIT_ pela simplicidade, apesar de simples é preciso ter
 disciplina, e isto será necessário para qualquer outro método. Ler sobre o
-assunto ajuda bastante, o livro de _Mark Forster_ me ajudou muito neste
+assunto ajuda bastante, e o livro de _Mark Forster_ me ajudou muito neste
 sentido.
 
 > Mas, como funciona esse método afinal?
@@ -74,7 +74,7 @@ tende a crescer eternamente e nunca conseguimos terminá-la, isto causa a
 sensação de que o trabalho nunca é concluído, e esta sensação não ajuda a melhorar
 ou mesmo a manter a nossa auto-estima.
 
-A lista de **coisas que serão feitas** deve ser feita diariamente, e não deve
+A lista de **coisas que serão feitas** deve ser elaborada diariamente, e não deve
 ser alterada ao decorrer do dia, idealmente deve ser feita com antecedência, ou
 ao menos antes de começar o trabalho. Não se deve adicionar itens de última
 hora, ou seja, aquela lista de terça-feira que planejei na segunda, não deve
@@ -86,7 +86,7 @@ planejamento pessoal.
 O objetivo é sempre começar o dia com uma lista de atividades previamente
 planejada, ao final do dia ela deve estar concluída, uma lista por dia, nada de
 transferir a lista de hoje para amanhã, isto não vai funcionar! O que costumo
-fazer é usar uma agenda de papel, e a cada dia na data correspondente anoto as
+fazer é usar uma agenda de papel, e a cada dia na data correspondente eu anoto
 minhas atividades.
 
 Eu indico fortemente o uso da agenda de papel, com ela você pode anotar seus
