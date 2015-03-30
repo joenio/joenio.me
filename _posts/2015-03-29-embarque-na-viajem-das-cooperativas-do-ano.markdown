@@ -1,19 +1,19 @@
 ---
-title: Embarque na viajem das cooperativas do ano
+title: Embarque na viagem das cooperativas do ano
 tags: colivre
 ---
 
-![Desenho intercâmbio cooperativista](/files/post-viajem-premio-cooperativas.jpg)
+![Desenho intercâmbio cooperativista](/files/post-viagem-premio-cooperativas.jpg)
 
 Em Novembro de 2014 a Colivre, cooperativa de tecnologias livres, empresa na
 qual sou sócio [ganhou o prêmio de cooperativa do
 ano](http://softwarelivre.org/colivre/blog/colivre-e-vencedora-do-9o-premio-cooperativa-do-ano-na-categoria-inovacao-e-tecnologia)
 2014 na categoria de **Inovação e Tecnologia**, este prêmio nos deu o direito a uma
-[viajem de integração](http://softwarelivre.org/colivre/blog/colivre-participa-de-viagem-dos-vencedores-do-9o-premio-cooperativa-do-ano)
+[viagem de integração](http://softwarelivre.org/colivre/blog/colivre-participa-de-viagem-dos-vencedores-do-9o-premio-cooperativa-do-ano)
 entre as cooperativas vencedoras, nesta
-viajem a Colivre foi representada por mim e [Daniela
+viagem a Colivre foi representada por mim e [Daniela
 Feitosa](http://softwarelivre.org/dani), neste post faço um breve relato
-desta viajem.
+desta viagem.
 
 No dia 24 de Março chegamos a Brasília, lá visitamos a
 [OCB](http://ocb.org.br), fomos recepcionados por Fernanda Belisário e Gabriela
@@ -114,7 +114,7 @@ já que a Piá garante a compra de toda a produção.
   <img src="/files/fazenda-leite-pia.jpg" />
 </div>
 
-Dia seguinte, 27 de Março, último dia de viajem, visitamos o CAS, Centro
+Dia seguinte, 27 de Março, último dia de viagem, visitamos o CAS, Centro
 Admistrativo Sicredi, vimos o funcionamento da cooperativa, seus princípios e
 valores, conhecemos a Biblioteca do sistema e o Datacenter. O Datacenter
 ocupa um andar inteiro do prédio e tem uma infraestrutura impressionante,
@@ -125,7 +125,7 @@ mantida inteiramente pela equipe do Sicredi.
 </div>
 
 Ainda no Sicredi, seguimos para um almoço em grupo e partimos para o aeroporto
-de volta para casa chegando ao fim desta viajem ao mundo cooperativista na
+de volta para casa chegando ao fim desta viagem ao mundo cooperativista na
 presença de ótimas pessoas, dedicadas a criar um mundo melhor, mais humano,
 mais justo, mais cooperativo.
 
