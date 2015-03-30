@@ -17,7 +17,7 @@ e lindo de se usar! O Debian eh o melhor sistema operacional do mundo!
 
 mr (multiplo repositorios) e pkg-perl-tools
 
-# apt-get install devscripts debhelper git-buildpackage quilt mr
+# apt-get install devscripts debhelper git-buildpackage quilt mr pkg-perl-tools
 
 Referencia sobre git do grupo: http://pkg-perl.alioth.debian.org/git.html
 
@@ -162,6 +162,7 @@ $ mr up
 gbp-pull ou uscan
 
 $ git-import-orig --uscan --pristine-tar
+$ dch -v 2.000001
 
 PROBLEMAS COMUNS
 ----------------

@@ -36,3 +36,7 @@ no arquivo Makefile.PL para dar mensagem de aviso indicando dependencias faltand
 o pull-request foi enviado ao Neil Bowers por email em 22/02/15.
 
 * http://github.com/yappo/p5-Module-Setup/pull/4
+
+Site do desafio lançado em 04 de Março 2015 na lista
+http://cpan-prc.org/
+http://www.listbox.com/member/archive/256049/2015/03/sort/time_rev/page/1/entry/0:1/20150304075416:8981B218-C26D-11E4-85A7-F78B4B9D8EF2/
