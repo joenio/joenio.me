@@ -283,6 +283,10 @@ a:visited { color: #205caa; }
   list-style-type: circle;
 }
 
+.post-comments {
+  margin-top: 70px;
+}
+
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/
 
