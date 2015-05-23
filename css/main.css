@@ -417,3 +417,12 @@ abbr {
 .full-width img {
   width: 100%
 }
+
+table {
+  border-collapse: collapse;
+  empty-cells: show;
+}
+table td {
+  border: 1px solid #818181;
+  padding: 5px 10px;
+}
