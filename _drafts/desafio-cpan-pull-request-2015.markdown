@@ -40,3 +40,21 @@ o pull-request foi enviado ao Neil Bowers por email em 22/02/15.
 Site do desafio lançado em 04 de Março 2015 na lista
 http://cpan-prc.org/
 http://www.listbox.com/member/archive/256049/2015/03/sort/time_rev/page/1/entry/0:1/20150304075416:8981B218-C26D-11E4-85A7-F78B4B9D8EF2/
+
+Em março Neil sorteou o módulo libnet, tive pouco tempo no mês de março e
+fiz uma sugestão de nova funcionalidade no Net::FTP para listar arquivos
+ocultos, a ideia foi baseada no ticket do RT CPAN:
+
+* https://rt.cpan.org/Public/Bug/Display.html?id=101586
+* https://github.com/steve-m-hay/perl-libnet/pull/16
+
+Enviei atrasado o email "I'm done" em 1 de Abril de 2015. Aguardando novo módulo do
+mês de Abril...
+
+Em abril também sem tempo para algo mais elaborado enviei um pull-request bem pequeno
+para o módulo Data::Compare, enviei email para Neil dia 29/Abril.
+
+* https://metacpan.org/pod/Data::Compare
+* https://github.com/DrHyde/perl-modules-Data-Compare/pull/6
+
+

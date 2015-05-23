@@ -66,11 +66,7 @@ como corrigir mensagem de ter .git no diff???
 
 dput aceita como parametro o arquivo .changes do pacote já feito
 
-dput sede arquivo.changes
-
-(usar dpub + mini-dinstall)
-(ver http://upsilon.cc/~zack/blog/posts/2009/04/howto:_uploading_to_people.d.o_using_dput/)
-( e  http://wiki.debian.org/HowToSetupADebianRepository)
+dput debian.joenio.me <arquivo.changes>
 
 06 - Reportar bug do tipo ITP com reportbug
 -------------------------------------------
