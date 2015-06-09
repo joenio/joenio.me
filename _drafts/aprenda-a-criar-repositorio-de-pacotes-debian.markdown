@@ -1,16 +1,52 @@
 ---
-title: Aprenda a criar repositório de pacotes Debian
+title: Aprenda a criar repositórios de pacotes Debian
 tags: tecnologia debian
 ---
 
-Como criar um repositório privado de pacotes Debian "Private Package Archive (PPA)".
-Em um servidor VPS rodando Debian Wheezy com acesso shell e configurado com domínio
-_debian.joenio.me_.
+Neste post irei mostrar como configurar um repositório de pacotes [Debian][]
+GNU/Linux usando **dput** + **mini-dinstall** + **nginx**. O Debian é um
+sistema operacional [livre][] criado e mantido por um grupo independente de
+desenvolvedores espalhados pelo mundo, o projeto foi iniciado em 1993 e tem
+sido desenvolvido abertamente seguindo o espírito do [projeto GNU][GNU].
 
-Usando dput + mini-dinstall configurar um repositorio pessoal Debian, baseado no
-post de _Stefano Zacchiroli_:
+Uma das características mais interessantes do Debian é o seu [sistema de
+gerenciamento de pacotes][sistema-de-pacotes] e a enorme quantidade de
+softwares empacotados e disponíveis nos repositórios oficiais.
 
-* [howto: uploading to people.d.o using dput](http://upsilon.cc/~zack/blog/posts/2009/04/howto:_uploading_to_people.d.o_using_dput/)
+> "Um sistema de gerenciamento de pacotes é uma coleção de ferramentas que
+> oferece um método automático para instalar, atualizar, configurar e remover
+> pacotes de um sistema operacional. É tipicamente usado em sistemas
+> operacionais tipo Unix, que consistem de centenas de pacotes distintos, para
+> facilitar a identificação, instalação e atualização" (fonte: Wikipédia)
+
+[Repositórios][repositorio] são locais de armazenamento de pacotes de software
+normalmente disponibilizados via internet, são parte integrante do todo que
+compõe o _sistema de gerenciamento de pacotes_, juntamente com as ferramentas
+para instalação, atualização, configuração e remoção.
+
+Um pacote é isto e aquilo e é composto disso e disso, são disponibilizados nos
+repositórios oficiais do Debian através dos Desenvolvedores Debian (membros
+"oficiais" do projeto), existe um rígido controle de qualidade e uma preocupação
+grande com questões envolvendo licenciamento do software empacotado. Mas se você
+não é um Desenvolvedor Debian e quer disponibilizar seus pacotes em um repositório
+pessoal enquanto trabalha na inclusão dele nos repositórios oficiais, ou se
+o seu pacote é de um software que não está pronto ainda para entrar no Debian,
+ou existe algum impedimento legal, ou, existem mil motivos, neste caso você
+vai precisar criar seu próprio repositório, ou um _Private Package Archive_ (PPA).
+E é isto que irei mostrar como fazer aqui neste post.
+
+Todas as instruções a seguir serão dadas com base em minhas configurações, eu
+tenho um repositório Debian no endereço _debian.joenio.me_ e as instruções que
+se seguem irão usar este endereço sempre que for necessário, você deve adaptar
+para o seu próprio endereço. Parte das instruções são executadas em minha estação de
+trabalho, outra parte num servidor, ambos utilizando Debian, Debian Testing e Debian
+Wheezy respectivamente. É neste servidor que está rodando o domínio _debian.joenio.me_.
+
+O setup desenvolvido aqui foi fortemente baseado no post de _Stefano Zacchiroli_:
+
+* [howto: uploading to people.d.o using dput][zack]
+
+## Configurando o servidor
 
 Instalar `mini-dinstall` no servidor:
 
@@ -44,11 +80,13 @@ release_description = Unofficial Debian packages maintained by Joenio Costa
 verify_sigs = 0
 {% endhighlight %}
 
+## Configurando a estação de trabalho
+
 Instalar `dput` no computador local:
 
 <pre class="terminal">
 <code>
-# apt-get install mini-dinstall
+# apt-get install dput
 </code>
 </pre>
 
@@ -138,7 +176,7 @@ Habilite o arquivo de configuração e reinicie o `nginx`:
 
 Com isso o repositório estará disponível em [http://debian.joenio.me](http://debian.joenio.me).
 
-## Testando o repositório / instalando pacotes
+## Testando o repositório e instalando pacotes
 
 Para instalar os pacotes disponíveis no repositorio basta adicionar as
 seguintes entradas no `/etc/apt/sources.list`:
@@ -168,3 +206,11 @@ Baixe a lista de pacotes e teste a instalação de algum pacote disponível no r
 Referências:
 
 * [How to setup a Debian repository](http://wiki.debian.org/HowToSetupADebianRepository)
+
+
+[Debian]: http://debian.org
+[livre]: http://debian.org/intro/free
+[GNU]: http://www.gnu.org
+[sistema-de-pacotes]: https://pt.wikipedia.org/wiki/Sistema_gestor_de_pacotes
+[repositorio]: http://pt.wikipedia.org/wiki/Repositório
+[zack]: http://upsilon.cc/~zack/blog/posts/2009/04/howto:_uploading_to_people.d.o_using_dput

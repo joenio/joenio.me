@@ -57,4 +57,15 @@ para o módulo Data::Compare, enviei email para Neil dia 29/Abril.
 * https://metacpan.org/pod/Data::Compare
 * https://github.com/DrHyde/perl-modules-Data-Compare/pull/6
 
+O mês de maio eu atrasei mais que os outros, e pelo atraso e pela dificuldade
+em entender o módulo sorteado pra mim eu fiz um pull-request bem simples,
+um ";" faltando no código fonte. Email enviado "I'm done" para neil em 08/06.
 
+* https://metacpan.org/pod/Method::Signatures
+* https://github.com/evalEmpire/method-signatures/pull/118
+
+Para junho fui sorteado com o módulo PDF::Table
+
+* https://metacpan.org/pod/PDF::Table
+* https://github.com/kamenov/PDF-Table/pull/18
+* https://github.com/kamenov/PDF-Table/pull/19
