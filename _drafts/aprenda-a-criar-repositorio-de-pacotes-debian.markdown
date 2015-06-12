@@ -7,7 +7,8 @@ Neste post irei mostrar como configurar um repositório de pacotes [Debian][]
 GNU/Linux usando **dput** + **mini-dinstall** + **nginx**. O Debian é um
 sistema operacional [livre][] criado e mantido por um grupo independente de
 desenvolvedores espalhados pelo mundo, o projeto foi iniciado em 1993 e tem
-sido desenvolvido abertamente seguindo o espírito do [projeto GNU][GNU].
+sido desenvolvido abertamente desde então sempre seguindo o espírito do
+[projeto GNU][GNU].
 
 Uma das características mais interessantes do Debian é o seu [sistema de
 gerenciamento de pacotes][sistema-de-pacotes].
@@ -18,40 +19,43 @@ gerenciamento de pacotes][sistema-de-pacotes].
 > operacionais tipo Unix, que consistem de centenas de pacotes distintos, para
 > facilitar a identificação, instalação e atualização" (fonte: Wikipédia)
 
-O sistema de gerenciamento de pacotes do Debian é o [APT][APT],
-criado originalmente pelos desenvolvedores do projeto, lançado pela primeira
-vez em 9 Março de 1999 no Debian 2.1 (_Slink_), hoje 9 de Junho de 2015 o
-[repositório][repositorio] oficial do Debian 8.1 (_Jessie_) conta com um total de 44893
-pacotes (**44 mil !!!**), esta enorme quantidade de softwares empacotados
-disponíveis nos repositórios oficiais do projeto tornam a vida muito fácil,
-pois simplifica enormemente o processo de pesquisar, instalar, atualizar ou
-remover qualquer software do computador.
+O sistema de gerenciamento de pacotes do Debian é o [APT][APT], criado
+originalmente pelos desenvolvedores do projeto e lançado pela primeira vez em 9
+Março de 1999 no Debian 2.1 (_Slink_), hoje 9 de Junho de 2015 o
+[repositório][repositorio] oficial do Debian 8.1 (_Jessie_) conta com um total
+de 44893 pacotes (**44 mil !!!**), esta enorme quantidade de softwares
+disponíveis nos repositórios oficiais do projeto torna extremamente simples
+a tarefa de pesquisar, instalar, atualizar ou remover qualquer software do computador.
 
-Os pacotes disponibilizados nos repositórios oficiais do Debian pelos
-desenvolvedores Debian (integrantes oficiais do projeto) passam por um rígido
-controle de qualidade técnica e uma enorme preocupação com questões envolvendo
-licenciamento do software empacotado. Se você não é desenvolvedor Debian
-e deseja disponibilizar pacotes em um repositório então você vai precisar
-criar um _Private Package Archive_ (PPA), é isto que irei mostrar como fazer a
-partir daqui.
+Os pacotes disponibilizados nos repositórios oficiais do Debian passam por um
+rígido controle de qualidade técnica e uma enorme preocupação com licenças de
+software, o processo é liderado pelos desenvolvedores oficiais do projeto e
+aberto à contribuição de qualquer um interessado em ajudar, então se você está
+empacotando algo tente incluir ele nos repositórios oficiais, veja o [Guia do
+Novo Mantenedor Debian][maint-guide] para saber como.
+
+Se isso não for possível ou se não puder esperar o pacote entrar no Debian
+então você pode criar um _Private Package Archive_ (PPA) e disponibilizar seu
+pacote lá, é isto que irei mostrar como fazer a partir daqui. Esta solução foi
+fortemente baseado no post de _Stefano Zacchiroli_, [howto: uploading to
+people.d.o using dput][zack].
 
 <div class="alert alert-warning">
 <strong>Atenção!</strong>
-<em>Todas as instruções a seguir serão dadas com base em meu ambiente, isto
-inclui nome de usuário, domínio, caminho de diretórios, etc.  Você deve adaptar
-estas instruções com base em suas próprias configurações.</em>
+<em>Todas as instruções a seguir serão baseadas em meu próprio ambiente, isto
+inclui nomes de usuários, domínios, diretórios, etc. Você deve adaptar estas
+instruções com base em suas próprias configurações.</em>
 </div>
-
-O setup desenvolvido aqui foi fortemente baseado no post de _Stefano Zacchiroli_:
-
-* [howto: uploading to people.d.o using dput][zack]
 
 ## Configurando o servidor
 
-* Debian Wheezy 
-* Domínio: _debian.joenio.me_
+* Sistema Operacional: **Debian Wheezy**
+* Domínio: **debian.joenio.me**
 
-Instale o `mini-dinstall`:
+Acesse o servidor via `SSH` e instale o `mini-dinstall`:
+
+> mini-dinstall is a tool for installing Debian packages into a personal APT
+> repository
 
 <pre class="terminal">
 <code>
@@ -85,9 +89,11 @@ verify_sigs = 0
 
 ## Configurando a estação de trabalho
 
-* Debian Testing
+* Sistema Operacional: **Debian Testing**
 
 Instale o `dput`:
+
+> dput allows you to put one or more Debian packages into the archive
 
 <pre class="terminal">
 <code>
@@ -95,7 +101,7 @@ Instale o `dput`:
 </code>
 </pre>
 
-Exporte a chave pública GNUPG para para o arquivo `signing.asc`.
+Exporte sua chave pública GNUPG para para o arquivo `signing.asc`.
 
 <pre class="terminal">
 <code>
@@ -104,8 +110,8 @@ $ gpg --armor --output signing.asc --export D5609CBE
 </pre>
 
 <div class="alert alert-warning">
-<strong>D5609CBE</strong> é a minha chave pública GNUPG, substitua este valor
-pelo identificador da sua própria chave.
+<strong>D5609CBE</strong> é a minha chave, substitua este valor pelo
+identificador da sua própria chave.
 </div>
 
 Copie o arquivo `signing.asc` para o servidor:
@@ -128,15 +134,15 @@ allow_unsigned_uploads = 0
 post_upload_command = ssh debian.joenio.me mini-dinstall -b && sign-remote --no-batch debian.joenio.me:debian.joenio.me/unstable/Release
 {% endhighlight %}
 
-Os pacotes devem ser assinados com chave GNUPG, isto será feito pelo script
-[sign-remote][sign-remote], copie [este arquivo][sign-remote-script] para o seu
-computador local e adicione a localização dele ao seu **PATH**.
+Os pacotes serão assinados com chave GNUPG ao serem enviados pelo `dput` ao
+servidor, isto será feito pelo script `sign-remote`, disponível
+[aqui][sign-remote-script]. Copie este arquivo no seu computador e adicione a
+localização dele ao **PATH**, se você não sabe do que estou falando [leia
+isso][variables].
 
-Se o pacote deb foi gerado como **UNRELEASED** nao será possível fazer upload
-pois o dput não aceita, então é preciso ao menos mudar para **unstable** antes
-de fazer upload.
-
-Com tudo configurado basta executar o seguinte comando para enviar um pacote ao
+O `dput` irá reclamar se o pacote for **UNRELEASED**, lembre sempre de setar
+como **unstable** antes de fazer upload. Estando tudo configurado basta
+executar o comando abaixo para fazer upload de um pacote qualquer para o
 repositório:
 
 <pre class="terminal">
@@ -156,8 +162,7 @@ o primeiro passo é instalar ele no servidor:
 </code>
 </pre>
 
-Criar arquivo de configuração para o diretório onde os pacotes estão localizados:
-`/etc/nginx/sites-available/debian.joenio.me`:
+Crie o arquivo de configuração `/etc/nginx/sites-available/debian.joenio.me`:
 
 {% highlight nginx %}
 server {
@@ -170,7 +175,7 @@ server {
 }
 {% endhighlight %}
 
-Habilite o arquivo de configuração e reinicie o `nginx`:
+Habilite a configuração e reinicie o serviço:
 
 <pre class="terminal">
 <code>
@@ -222,3 +227,5 @@ Referências:
 [APT]: http://pt.wikipedia.org/wiki/Advanced_Packaging_Tool
 [sign-remote]: http://github.com/joenio/sign-remote
 [sign-remote-script]: http://github.com/joenio/sign-remote/blob/master/sign-remote
+[maint-guide]: http://www.debian.org/doc/manuals/maint-guide/
+[variables]: https://wiki.debian.net/EnvironmentVariables
