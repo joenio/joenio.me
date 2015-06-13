@@ -19,35 +19,34 @@ gerenciamento de pacotes][sistema-de-pacotes].
 > operacionais tipo Unix, que consistem de centenas de pacotes distintos, para
 > facilitar a identificação, instalação e atualização" (fonte: Wikipédia)
 
-O sistema de gerenciamento de pacotes do Debian é o [APT][APT], criado
+O sistema de gerenciamento de pacotes Debian chamado [APT][APT] foi criado
 originalmente pelos desenvolvedores do projeto e lançado pela primeira vez em 9
-Março de 1999 no Debian 2.1 (_Slink_), hoje 9 de Junho de 2015 o
-[repositório][repositorio] oficial do Debian 8.1 (_Jessie_) conta com um total
-de 44893 pacotes (**44 mil !!!**), esta enorme quantidade de softwares
-disponíveis nos repositórios oficiais do projeto torna extremamente simples
-a tarefa de pesquisar, instalar, atualizar ou remover qualquer software do computador.
+Março de 1999 no Debian 2.1 (_Slink_), conta hoje com com um total de 44893
+pacotes (**44 mil !!!**) em seus [repositórios][repositorio] oficiais, esta enorme
+quantidade de softwares disponíveis nos repositórios oficiais do projeto torna
+extremamente simples pesquisar, instalar, atualizar ou remover
+qualquer coisa do computador.
 
 Os pacotes disponibilizados nos repositórios oficiais do Debian passam por um
-rígido controle de qualidade técnica e uma enorme preocupação com licenças de
-software, o processo é liderado pelos desenvolvedores oficiais do projeto e
-aberto à contribuição de qualquer um interessado em ajudar, então se você está
-empacotando algo tente incluir ele nos repositórios oficiais, veja o [Guia do
+rígido controle de qualidade, o processo é liderado pelos desenvolvedores oficiais do projeto e
+aberto à contribuição de qualquer um, então se você está
+empacotando algo tente incluir isso nos repositórios oficiais, veja o [Guia do
 Novo Mantenedor Debian][maint-guide] para saber como.
 
-Se isso não for possível ou se não puder esperar o pacote entrar no Debian
-então você pode criar um _Private Package Archive_ (PPA) e disponibilizar seu
-pacote lá, é isto que irei mostrar como fazer a partir daqui. Esta solução foi
-fortemente baseado no post de _Stefano Zacchiroli_, [howto: uploading to
+Mas se isso não for possível ou se você não puder esperar o pacote entrar no Debian
+seja por que motivo for, então a solução será criar um repositório pessoal ou _Private Package Archive (PPA)_,
+e é isto que será descrito aqui a partir de uma solução proposta
+inicialmente por _Stefano Zacchiroli_ em seu blog no post [howto: uploading to
 people.d.o using dput][zack].
 
 <div class="alert alert-warning">
 <strong>Atenção!</strong>
-<em>Todas as instruções a seguir serão baseadas em meu próprio ambiente, isto
+<em>Todas as instruções a seguir são baseadas em meu próprio ambiente, isto
 inclui nomes de usuários, domínios, diretórios, etc. Você deve adaptar estas
-instruções com base em suas próprias configurações.</em>
+informações com base em sua realidade.</em>
 </div>
 
-## Configurando o servidor
+## Configurando o servidor para receber pacotes
 
 * Sistema Operacional: **Debian Wheezy**
 * Domínio: **debian.joenio.me**
@@ -87,11 +86,11 @@ release_description = Unofficial Debian packages maintained by Joenio Costa
 verify_sigs = 0
 {% endhighlight %}
 
-## Configurando a estação de trabalho
+## Preparando a estação de trabalho para enviar pacotes
 
 * Sistema Operacional: **Debian Testing**
 
-Instale o `dput`:
+Instale o `dput` em seu computador:
 
 > dput allows you to put one or more Debian packages into the archive
 
@@ -101,7 +100,7 @@ Instale o `dput`:
 </code>
 </pre>
 
-Exporte sua chave pública GNUPG para para o arquivo `signing.asc`.
+Exporte sua chave pública `GnuPG` para para o arquivo `signing.asc`.
 
 <pre class="terminal">
 <code>
@@ -122,7 +121,7 @@ $ scp signing.asc debian.joenio.me:~/debian.joenio.me/
 </code>
 </pre>
 
-Crie arquivo `~/.dput.cf`:
+Crie arquivo `~/.dput.cf` em seu `$HOME`:
 
 {% highlight ini %}
 [debian.joenio.me]
@@ -134,16 +133,17 @@ allow_unsigned_uploads = 0
 post_upload_command = ssh debian.joenio.me mini-dinstall -b && sign-remote --no-batch debian.joenio.me:debian.joenio.me/unstable/Release
 {% endhighlight %}
 
-Os pacotes serão assinados com a chave GNUPG ao serem enviados pelo `dput` ao
-servidor, isto será feito pelo script `sign-remote`, disponível
-[aqui][sign-remote-script]. Copie este arquivo no seu computador e adicione a
-localização ao **$PATH**, se não sabe do que estou falando [leia
+Os pacotes serão assinados com a chave `GnuPG` ao serem enviados pelo `dput` ao
+servidor, isto será feito pelo script `sign-remote` disponível
+[aqui][sign-remote-script]. Copie este arquivo em seu computador e adicione a
+localização dele ao `$PATH`, se não sabe do que estou falando [leia
 isso][variables].
 
-O `dput` irá reclamar se o pacote for **UNRELEASED**, lembre sempre de setar
-como **unstable** antes de fazer upload. Estando tudo configurado basta
-executar o comando abaixo para fazer upload de um pacote qualquer para o
-repositório:
+O `dput` irá reclamar se a distribuição do pacote não for **unstable**, isto é
+definido no arquivo `changelog` do pacote, veja o capítulo 4 _Required files under the debian directory_ no [Guia do Novo Mantenedor Debian][maint-guide] para entender como fazer isso.
+
+Bem, aqui já temos tudo pronto para fazer _upload_ dos nossos pacotes ao
+servidor, basta executar o seguinte comando:
 
 <pre class="terminal">
 <code>
@@ -151,13 +151,15 @@ $ dput debian.joenio.me &lt;pacote&gt;.changes
 </code>
 </pre>
 
-## Disponibilizando o repositório publicamente
+Isto irá copiar o pacote _.deb_ e o arquivo _.changes_ dele,
+irá atualizar os arquivos _Sources_ e _Packages_ com as informações do pacote e
+irá assinar o arquivo _Release_ com a chave pública `GnuPG`.
 
-Até aqui você já tem um repositório com pacotes hospedados nele, mas este
-repositório ainda não pode ser utilizado pois não está publicado de nenhuma
-forma, geralmente repositórios são disponibilizados por `HTTP` ou `FTP`,
-particularmente vejo como muito mais comum o uso do `HTTP`, portanto vamos ver
-como configurar acesso público ao repositório via `HTTP` usando o o servidor
+## Disponibilizando acesso ao repositório publicamente
+
+Até aqui já temos um repositório com pacotes hospedados, mas
+sem acesso público aos pacotes ninguém poderá utitilizá-lo, para resolver isto vamos configurar acesso via `HTTP`
+usando o servidor
 web [Nginx][nginx].
 
 Instale o `Nginx` no servidor:
@@ -191,13 +193,12 @@ Habilite o arquivo de configuração e reinicie o serviço:
 </code>
 </pre>
 
-
-## Testando o repositório e instalando pacotes
-
 Com o `Nginx` configurado e rodando já temos o repositório e seus pacotes
-disponíveis no endereço correspondente:
+disponíveis no seguinte endereço:
 
 * [http://debian.joenio.me](http://debian.joenio.me)
+
+## Testando o repositório e instalando pacotes
 
 Para usar este repositorio adicione as seguintes entradas no
 `/etc/apt/sources.list` do computador local:
@@ -225,14 +226,16 @@ repositório:
 </code>
 </pre>
 
-Se tiver dado tudo certo, agora você tem seu próprio repositório de pacotes
-Debian, se você for curioso pode verificar a página [How to setup a Debian
-repository][setup] na wiki do Debian, lá tem uma lista de ferramentas além do
-`mini-dinstall` para configuração de repositórios Debian, não usei a maioria
-das ferramentas listadas lá, mas lendo sobre elas me parece que uma boa opção é
-o `aptly`, então se você for curioso o suficiente e desejar testar algo meu
-palpite é que vá por aí... se você ... posta aqui um comentário relatando sua
-experiência.
+Pronto, temos o nosso próprio repositório de pacotes Debian disponível
+publicamente, você pode agora publicar qualquer pacote que esteja criando e divulgar
+o endereço do repositório para que outros usuários Debian possam instalar os
+seus pacotes mais facilmente.
+
+Na wiki do Debian em [How to setup a Debian repository][setup] tem uma lista de
+ferramentas para configuração de repositórios Debian, não usei a maioria das
+ferramentas listadas lá, mas dentre elas o [aptly][aptly] parece uma boa
+opção para criar repositório pessoal de pacotes Debian e pode ser uma boa
+alternativa para o setup descrito aqui neste post.
 
 [Debian]: http://debian.org
 [livre]: http://debian.org/intro/free
@@ -247,3 +250,4 @@ experiência.
 [variables]: https://wiki.debian.net/EnvironmentVariables
 [nginx]: http://nginx.org
 [setup]: http://wiki.debian.org/HowToSetupADebianRepository
+[aptly]: http://www.aptly.info
