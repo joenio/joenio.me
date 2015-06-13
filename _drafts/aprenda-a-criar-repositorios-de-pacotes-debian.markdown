@@ -3,6 +3,13 @@ title: Aprenda a criar repositórios de pacotes Debian
 tags: tecnologia debian
 ---
 
+![Default post image](/files/default-post-image.png)
+
+TODO:
+
+* Fazer uma imagem a partir de cubos de papel seguindo o seguinte tutorial:
+  * http://pt.wikihow.com/Fazer-um-Cubo-de-Origami
+
 Neste post irei mostrar como configurar um repositório de pacotes [Debian][]
 GNU/Linux usando **dput** + **mini-dinstall** + **nginx**. O Debian é um
 sistema operacional [livre][] criado e mantido por um grupo independente de
