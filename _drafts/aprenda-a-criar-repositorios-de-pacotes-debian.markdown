@@ -134,10 +134,10 @@ allow_unsigned_uploads = 0
 post_upload_command = ssh debian.joenio.me mini-dinstall -b && sign-remote --no-batch debian.joenio.me:debian.joenio.me/unstable/Release
 {% endhighlight %}
 
-Os pacotes serão assinados com chave GNUPG ao serem enviados pelo `dput` ao
+Os pacotes serão assinados com a chave GNUPG ao serem enviados pelo `dput` ao
 servidor, isto será feito pelo script `sign-remote`, disponível
 [aqui][sign-remote-script]. Copie este arquivo no seu computador e adicione a
-localização dele ao **PATH**, se você não sabe do que estou falando [leia
+localização ao **$PATH**, se não sabe do que estou falando [leia
 isso][variables].
 
 O `dput` irá reclamar se o pacote for **UNRELEASED**, lembre sempre de setar
@@ -153,8 +153,14 @@ $ dput debian.joenio.me &lt;pacote&gt;.changes
 
 ## Disponibilizando o repositório publicamente
 
-Para configurar acesso público ao repositório será utilizado o servidor web `nginx`, então
-o primeiro passo é instalar ele no servidor:
+Até aqui você já tem um repositório com pacotes hospedados nele, mas este
+repositório ainda não pode ser utilizado pois não está publicado de nenhuma
+forma, geralmente repositórios são disponibilizados por `HTTP` ou `FTP`,
+particularmente vejo como muito mais comum o uso do `HTTP`, portanto vamos ver
+como configurar acesso público ao repositório via `HTTP` usando o o servidor
+web [Nginx][nginx].
+
+Instale o `Nginx` no servidor:
 
 <pre class="terminal">
 <code>
@@ -175,7 +181,7 @@ server {
 }
 {% endhighlight %}
 
-Habilite a configuração e reinicie o serviço:
+Habilite o arquivo de configuração e reinicie o serviço:
 
 <pre class="terminal">
 <code>
@@ -185,19 +191,23 @@ Habilite a configuração e reinicie o serviço:
 </code>
 </pre>
 
-Com isso o repositório estará disponível em [http://debian.joenio.me](http://debian.joenio.me).
 
 ## Testando o repositório e instalando pacotes
 
-Para instalar os pacotes disponíveis no repositorio basta adicionar as
-seguintes entradas no `/etc/apt/sources.list`:
+Com o `Nginx` configurado e rodando já temos o repositório e seus pacotes
+disponíveis no endereço correspondente:
+
+* [http://debian.joenio.me](http://debian.joenio.me)
+
+Para usar este repositorio adicione as seguintes entradas no
+`/etc/apt/sources.list` do computador local:
 
 {% highlight sourceslist %}
 deb http://debian.joenio.me unstable/
 deb-src http://debian.joenio.me unstable/
 {% endhighlight %}
 
-Adicionar o chave de assinatura ao banco de dados de segurança do APT:
+Adicione a chave de assinatura ao banco de dados de segurança do `APT`:
 
 <pre class="terminal">
 <code>
@@ -205,7 +215,8 @@ Adicionar o chave de assinatura ao banco de dados de segurança do APT:
 </code>
 </pre>
 
-Baixe a lista de pacotes e teste a instalação de algum pacote disponível no repositório:
+Atualize a lista de pacotes e teste a instalação de algum pacote disponível no
+repositório:
 
 <pre class="terminal">
 <code>
@@ -214,9 +225,14 @@ Baixe a lista de pacotes e teste a instalação de algum pacote disponível no r
 </code>
 </pre>
 
-Referências:
-
-* [How to setup a Debian repository](http://wiki.debian.org/HowToSetupADebianRepository)
+Se tiver dado tudo certo, agora você tem seu próprio repositório de pacotes
+Debian, se você for curioso pode verificar a página [How to setup a Debian
+repository][setup] na wiki do Debian, lá tem uma lista de ferramentas além do
+`mini-dinstall` para configuração de repositórios Debian, não usei a maioria
+das ferramentas listadas lá, mas lendo sobre elas me parece que uma boa opção é
+o `aptly`, então se você for curioso o suficiente e desejar testar algo meu
+palpite é que vá por aí... se você ... posta aqui um comentário relatando sua
+experiência.
 
 [Debian]: http://debian.org
 [livre]: http://debian.org/intro/free
@@ -227,5 +243,7 @@ Referências:
 [APT]: http://pt.wikipedia.org/wiki/Advanced_Packaging_Tool
 [sign-remote]: http://github.com/joenio/sign-remote
 [sign-remote-script]: http://github.com/joenio/sign-remote/blob/master/sign-remote
-[maint-guide]: http://www.debian.org/doc/manuals/maint-guide/
+[maint-guide]: http://www.debian.org/doc/manuals/maint-guide
 [variables]: https://wiki.debian.net/EnvironmentVariables
+[nginx]: http://nginx.org
+[setup]: http://wiki.debian.org/HowToSetupADebianRepository
