@@ -21,23 +21,23 @@ gerenciamento de pacotes][sistema-de-pacotes].
 
 O sistema de gerenciamento de pacotes Debian chamado [APT][APT] foi criado
 originalmente pelos desenvolvedores do projeto e lançado pela primeira vez em 9
-Março de 1999 no Debian 2.1 (_Slink_), conta hoje com com um total de 44893
-pacotes (**44 mil !!!**) em seus [repositórios][repositorio] oficiais, esta
-enorme quantidade de softwares disponíveis nos repositórios oficiais do projeto
-torna extremamente simples pesquisar, instalar, atualizar ou remover qualquer
-coisa do computador.
+Março de 1999 no Debian 2.1 (_Slink_) e conta hoje com um total de 44893 pacotes
+(**44 mil !!!**) em seus [repositórios][repositorio] oficiais. Esta enorme
+quantidade de softwares disponíveis nos repositórios oficiais do projeto torna
+extremamente simple pesquisar, instalar, atualizar ou remover qualquer coisa do
+computador.
 
 Os pacotes disponibilizados nos repositórios oficiais do Debian passam por um
-rígido controle de qualidade, o processo é liderado pelos desenvolvedores
-oficiais do projeto e aberto à contribuição de qualquer um, então se você está
-empacotando algo tente incluir isso nos repositórios oficiais, veja o [Guia do
-Novo Mantenedor Debian][maint-guide] para saber como.
+rígido controle de qualidade liderado pelos desenvolvedores oficiais do projeto
+e aberto à contribuição de qualquer pessoa. Então se você está empacotando algo
+veja o [Guia do Novo Mantenedor Debian][maint-guide] para saber como incluir
+isso nos repositórios oficiais.
 
 Mas se isso não for possível ou se você não puder esperar o pacote entrar no
-Debian seja por que motivo for, então a solução será criar um repositório
-pessoal ou _Private Package Archive (PPA)_, e é isto que será descrito aqui a
-partir de uma solução proposta inicialmente por _Stefano Zacchiroli_ em seu
-blog no post [howto: uploading to people.d.o using dput][zack].
+Debian seja por qual motivo for, então a solução será criar um repositório
+pessoal ou _Private Package Archive (PPA)_. É isto que será descrito aqui a partir
+de uma solução proposta inicialmente por _Stefano Zacchiroli_ em seu blog no post
+[howto: uploading to people.d.o using dput][zack].
 
 <div class="alert alert-warning">
 <strong>Atenção!</strong>
@@ -134,7 +134,7 @@ post_upload_command = ssh debian.joenio.me mini-dinstall -b && sign-remote --no-
 {% endhighlight %}
 
 Os pacotes serão assinados com a chave `GnuPG` ao serem enviados pelo `dput` ao
-servidor, isto será feito pelo script `sign-remote` disponível
+servidor. Isso será feito pelo script `sign-remote` disponível
 [aqui][sign-remote-script]. Copie este arquivo em seu computador e adicione a
 localização dele ao `$PATH`, se não sabe do que estou falando [leia
 isso][variables].
@@ -160,7 +160,7 @@ arquivo _Release_ com a chave pública `GnuPG`.
 ## Disponibilizando acesso ao repositório publicamente
 
 Até aqui já temos um repositório com pacotes hospedados, mas sem acesso público
-aos pacotes ninguém poderá utitilizá-lo, para resolver isto vamos configurar
+aos pacotes ninguém poderá utilizá-lo. Para resolver isto vamos configurar
 acesso via `HTTP` usando o servidor web [Nginx][nginx].
 
 Instale o `Nginx` no servidor:
@@ -228,7 +228,7 @@ repositório:
 </pre>
 
 Pronto, temos o nosso próprio repositório de pacotes Debian disponível
-publicamente, você pode agora publicar qualquer pacote que esteja criando e
+publicamente. Você pode agora publicar qualquer pacote que esteja criando e
 divulgar o endereço do repositório para que outros usuários Debian possam
 instalar os seus pacotes mais facilmente.
 
