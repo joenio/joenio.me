@@ -22,22 +22,22 @@ gerenciamento de pacotes][sistema-de-pacotes].
 O sistema de gerenciamento de pacotes Debian chamado [APT][APT] foi criado
 originalmente pelos desenvolvedores do projeto e lançado pela primeira vez em 9
 Março de 1999 no Debian 2.1 (_Slink_), conta hoje com com um total de 44893
-pacotes (**44 mil !!!**) em seus [repositórios][repositorio] oficiais, esta enorme
-quantidade de softwares disponíveis nos repositórios oficiais do projeto torna
-extremamente simples pesquisar, instalar, atualizar ou remover
-qualquer coisa do computador.
+pacotes (**44 mil !!!**) em seus [repositórios][repositorio] oficiais, esta
+enorme quantidade de softwares disponíveis nos repositórios oficiais do projeto
+torna extremamente simples pesquisar, instalar, atualizar ou remover qualquer
+coisa do computador.
 
 Os pacotes disponibilizados nos repositórios oficiais do Debian passam por um
-rígido controle de qualidade, o processo é liderado pelos desenvolvedores oficiais do projeto e
-aberto à contribuição de qualquer um, então se você está
+rígido controle de qualidade, o processo é liderado pelos desenvolvedores
+oficiais do projeto e aberto à contribuição de qualquer um, então se você está
 empacotando algo tente incluir isso nos repositórios oficiais, veja o [Guia do
 Novo Mantenedor Debian][maint-guide] para saber como.
 
-Mas se isso não for possível ou se você não puder esperar o pacote entrar no Debian
-seja por que motivo for, então a solução será criar um repositório pessoal ou _Private Package Archive (PPA)_,
-e é isto que será descrito aqui a partir de uma solução proposta
-inicialmente por _Stefano Zacchiroli_ em seu blog no post [howto: uploading to
-people.d.o using dput][zack].
+Mas se isso não for possível ou se você não puder esperar o pacote entrar no
+Debian seja por que motivo for, então a solução será criar um repositório
+pessoal ou _Private Package Archive (PPA)_, e é isto que será descrito aqui a
+partir de uma solução proposta inicialmente por _Stefano Zacchiroli_ em seu
+blog no post [howto: uploading to people.d.o using dput][zack].
 
 <div class="alert alert-warning">
 <strong>Atenção!</strong>
@@ -140,7 +140,9 @@ localização dele ao `$PATH`, se não sabe do que estou falando [leia
 isso][variables].
 
 O `dput` irá reclamar se a distribuição do pacote não for **unstable**, isto é
-definido no arquivo `changelog` do pacote, veja o capítulo 4 _Required files under the debian directory_ no [Guia do Novo Mantenedor Debian][maint-guide] para entender como fazer isso.
+definido no arquivo `changelog` do pacote, veja o capítulo 4 _Required files
+under the debian directory_ no [Guia do Novo Mantenedor Debian][maint-guide]
+para entender como fazer isso.
 
 Bem, aqui já temos tudo pronto para fazer _upload_ dos nossos pacotes ao
 servidor, basta executar o seguinte comando:
@@ -151,16 +153,15 @@ $ dput debian.joenio.me &lt;pacote&gt;.changes
 </code>
 </pre>
 
-Isto irá copiar o pacote _.deb_ e o arquivo _.changes_ dele,
-irá atualizar os arquivos _Sources_ e _Packages_ com as informações do pacote e
-irá assinar o arquivo _Release_ com a chave pública `GnuPG`.
+Isto irá copiar o pacote _.deb_ e o arquivo _.changes_ dele, irá atualizar os
+arquivos _Sources_ e _Packages_ com as informações do pacote e irá assinar o
+arquivo _Release_ com a chave pública `GnuPG`.
 
 ## Disponibilizando acesso ao repositório publicamente
 
-Até aqui já temos um repositório com pacotes hospedados, mas
-sem acesso público aos pacotes ninguém poderá utitilizá-lo, para resolver isto vamos configurar acesso via `HTTP`
-usando o servidor
-web [Nginx][nginx].
+Até aqui já temos um repositório com pacotes hospedados, mas sem acesso público
+aos pacotes ninguém poderá utitilizá-lo, para resolver isto vamos configurar
+acesso via `HTTP` usando o servidor web [Nginx][nginx].
 
 Instale o `Nginx` no servidor:
 
@@ -227,15 +228,15 @@ repositório:
 </pre>
 
 Pronto, temos o nosso próprio repositório de pacotes Debian disponível
-publicamente, você pode agora publicar qualquer pacote que esteja criando e divulgar
-o endereço do repositório para que outros usuários Debian possam instalar os
-seus pacotes mais facilmente.
+publicamente, você pode agora publicar qualquer pacote que esteja criando e
+divulgar o endereço do repositório para que outros usuários Debian possam
+instalar os seus pacotes mais facilmente.
 
 Na wiki do Debian em [How to setup a Debian repository][setup] tem uma lista de
 ferramentas para configuração de repositórios Debian, não usei a maioria das
-ferramentas listadas lá, mas dentre elas o [aptly][aptly] parece uma boa
-opção para criar repositório pessoal de pacotes Debian e pode ser uma boa
-alternativa para o setup descrito aqui neste post.
+ferramentas listadas lá, mas dentre elas o [aptly][aptly] parece uma boa opção
+para criar repositório pessoal de pacotes Debian e pode ser uma boa alternativa
+para o setup descrito aqui neste post.
 
 [Debian]: http://debian.org
 [livre]: http://debian.org/intro/free
