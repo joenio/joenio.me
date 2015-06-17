@@ -1,15 +1,17 @@
 <div class="page-content latest-posts">
   <div class="wrap">
     <ul class="posts">
-      {% for post in site.posts offset:1 %}
+      {% assign _page = page %}
+      {% for page in site.posts offset:1 %}
       <li class="post">
         <header class="post-banner">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% include metadata.html %}
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.excerpt }}</a>
+          <a href="{{ page.url | prepend: site.baseurl }}">{{ page.excerpt }}</a>
         </header>
       </li>
       {% endfor %}
+      {% assign page = _page %}
     </ul>
   </div>
 </div>
