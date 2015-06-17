@@ -1,0 +1,17 @@
+<div class="page-content latest-posts">
+  <div class="wrap">
+    <ul class="posts">
+      {% for post in site.posts offset:1 %}
+      <li class="post">
+        <header class="post-banner">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <p class="meta">
+          {{ post.date | date: "%b %-d, %Y" }}
+          </p>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.excerpt }}</a>
+        </header>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
