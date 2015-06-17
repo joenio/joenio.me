@@ -5,9 +5,7 @@
       <li class="post">
         <header class="post-banner">
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          <p class="meta">
-          {{ post.date | date: "%b %-d, %Y" }}
-          </p>
+          {% include metadata.html %}
           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.excerpt }}</a>
         </header>
       </li>
