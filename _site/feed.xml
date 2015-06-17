@@ -5,9 +5,274 @@
     <description></description>
     <link>http://joenio.me/</link>
     <atom:link href="http://joenio.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 05 Apr 2015 23:14:54 -0300</pubDate>
-    <lastBuildDate>Sun, 05 Apr 2015 23:14:54 -0300</lastBuildDate>
+    <pubDate>Wed, 17 Jun 2015 00:36:06 -0300</pubDate>
+    <lastBuildDate>Wed, 17 Jun 2015 00:36:06 -0300</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Aprenda a criar repositórios de pacotes Debian</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/files/default-post-image.png&quot; alt=&quot;Default post image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;TODO:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fazer uma imagem a partir de cubos de papel seguindo o seguinte tutorial:
+    &lt;ul&gt;
+      &lt;li&gt;http://pt.wikihow.com/Fazer-um-Cubo-de-Origami&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Neste post irei mostrar como configurar um repositório de pacotes &lt;a href=&quot;http://debian.org&quot;&gt;Debian&lt;/a&gt;
+GNU/Linux usando &lt;strong&gt;dput&lt;/strong&gt; + &lt;strong&gt;mini-dinstall&lt;/strong&gt; + &lt;strong&gt;nginx&lt;/strong&gt;. O Debian é um
+sistema operacional &lt;a href=&quot;http://debian.org/intro/free&quot;&gt;livre&lt;/a&gt; criado e mantido por um grupo independente de
+desenvolvedores espalhados pelo mundo, o projeto foi iniciado em 1993 e tem
+sido desenvolvido abertamente desde então sempre seguindo o espírito do
+&lt;a href=&quot;http://www.gnu.org&quot;&gt;projeto GNU&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Uma das características mais interessantes do Debian é o seu &lt;a href=&quot;http://pt.wikipedia.org/wiki/Sistema_gestor_de_pacotes&quot;&gt;sistema de
+gerenciamento de pacotes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Um sistema de gerenciamento de pacotes é uma coleção de ferramentas que
+oferece um método automático para instalar, atualizar, configurar e remover
+pacotes de um sistema operacional. É tipicamente usado em sistemas
+operacionais tipo Unix, que consistem de centenas de pacotes distintos, para
+facilitar a identificação, instalação e atualização” (fonte: Wikipédia)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;O sistema de gerenciamento de pacotes Debian chamado &lt;a href=&quot;http://pt.wikipedia.org/wiki/Advanced_Packaging_Tool&quot;&gt;APT&lt;/a&gt; foi criado
+originalmente pelos desenvolvedores do projeto e lançado pela primeira vez em 9
+Março de 1999 no Debian 2.1 (&lt;em&gt;Slink&lt;/em&gt;) e conta hoje com um total de 44893 pacotes
+(&lt;strong&gt;44 mil !!!&lt;/strong&gt;) em seus &lt;a href=&quot;http://pt.wikipedia.org/wiki/Repositório&quot;&gt;repositórios&lt;/a&gt; oficiais. Esta enorme
+quantidade de softwares disponíveis nos repositórios oficiais do projeto torna
+extremamente simple pesquisar, instalar, atualizar ou remover qualquer coisa do
+computador.&lt;/p&gt;
+
+&lt;p&gt;Os pacotes disponibilizados nos repositórios oficiais do Debian passam por um
+rígido controle de qualidade liderado pelos desenvolvedores oficiais do projeto
+e aberto à contribuição de qualquer pessoa. Então se você está empacotando algo
+veja o &lt;a href=&quot;http://www.debian.org/doc/manuals/maint-guide&quot;&gt;Guia do Novo Mantenedor Debian&lt;/a&gt; para saber como incluir
+isso nos repositórios oficiais.&lt;/p&gt;
+
+&lt;p&gt;Mas se isso não for possível ou se você não puder esperar o pacote entrar no
+Debian seja por qual motivo for, então a solução será criar um repositório
+pessoal ou &lt;em&gt;Private Package Archive (PPA)&lt;/em&gt;. É isto que será descrito aqui a partir
+de uma solução proposta inicialmente por &lt;em&gt;Stefano Zacchiroli&lt;/em&gt; em seu blog no post
+&lt;a href=&quot;http://upsilon.cc/~zack/blog/posts/2009/04/howto:_uploading_to_people.d.o_using_dput&quot;&gt;howto: uploading to people.d.o using dput&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;alert alert-warning&quot;&gt;
+&lt;strong&gt;Atenção!&lt;/strong&gt;
+&lt;em&gt;Todas as instruções a seguir são baseadas em meu próprio ambiente, isto
+inclui nomes de usuários, domínios, diretórios, etc. Você deve adaptar estas
+informações com base em sua realidade.&lt;/em&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;configurando-o-servidor-para-receber-pacotes&quot;&gt;Configurando o servidor para receber pacotes&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sistema Operacional: &lt;strong&gt;Debian Wheezy&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Domínio: &lt;strong&gt;debian.joenio.me&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Acesse o servidor via &lt;code&gt;SSH&lt;/code&gt; e instale o &lt;code&gt;mini-dinstall&lt;/code&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;mini-dinstall is a tool for installing Debian packages into a personal APT
+repository&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+# apt-get install mini-dinstall
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Crie o diretório onde os pacotes serão copiados:&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+$ mkdir -p ~/debian.joenio.me/mini-dinstall/incoming
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Crie o arquivo &lt;code&gt;~/.mini-dinstall.conf&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span class=&quot;k&quot;&gt;[DEFAULT]&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;mail_on_success&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;incoming_permissions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0750&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;architectures&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;all, i386, amd64&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;archive_style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;flat&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;dynamic_reindex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;archivedir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/home/joenio/debian.joenio.me/&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;generate_release&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;release_label&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Joenio&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;release_description&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Unofficial Debian packages maintained by Joenio Costa&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;verify_sigs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;preparando-a-estao-de-trabalho-para-enviar-pacotes&quot;&gt;Preparando a estação de trabalho para enviar pacotes&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sistema Operacional: &lt;strong&gt;Debian Testing&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Instale o &lt;code&gt;dput&lt;/code&gt; em seu computador:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;dput allows you to put one or more Debian packages into the archive&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+# apt-get install dput
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Exporte sua chave pública &lt;code&gt;GnuPG&lt;/code&gt; para para o arquivo &lt;code&gt;signing.asc&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+$ gpg --armor --output signing.asc --export D5609CBE
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;div class=&quot;alert alert-warning&quot;&gt;
+&lt;strong&gt;D5609CBE&lt;/strong&gt; é a minha chave, substitua este valor pelo
+identificador da sua própria chave.
+&lt;/div&gt;
+
+&lt;p&gt;Copie o arquivo &lt;code&gt;signing.asc&lt;/code&gt; para o servidor:&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+$ scp signing.asc debian.joenio.me:~/debian.joenio.me/
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Crie arquivo &lt;code&gt;~/.dput.cf&lt;/code&gt; em seu &lt;code&gt;$HOME&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span class=&quot;k&quot;&gt;[debian.joenio.me]&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;fqdn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;debian.joenio.me&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;method&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;scp&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;login&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;incoming&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;~/debian.joenio.me/mini-dinstall/incoming&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;allow_unsigned_uploads&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;post_upload_command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ssh debian.joenio.me mini-dinstall -b &amp;amp;&amp;amp; sign-remote --no-batch debian.joenio.me:debian.joenio.me/unstable/Release&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Os pacotes serão assinados com a chave &lt;code&gt;GnuPG&lt;/code&gt; ao serem enviados pelo &lt;code&gt;dput&lt;/code&gt; ao
+servidor. Isso será feito pelo script &lt;code&gt;sign-remote&lt;/code&gt; disponível
+&lt;a href=&quot;http://github.com/joenio/sign-remote/blob/master/sign-remote&quot;&gt;aqui&lt;/a&gt;. Copie este arquivo em seu computador e adicione a
+localização dele ao &lt;code&gt;$PATH&lt;/code&gt;, se não sabe do que estou falando &lt;a href=&quot;https://wiki.debian.net/EnvironmentVariables&quot;&gt;leia
+isso&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;O &lt;code&gt;dput&lt;/code&gt; irá reclamar se a distribuição do pacote não for &lt;strong&gt;unstable&lt;/strong&gt;, isto é
+definido no arquivo &lt;code&gt;changelog&lt;/code&gt; do pacote, veja o capítulo 4 &lt;em&gt;Required files
+under the debian directory&lt;/em&gt; no &lt;a href=&quot;http://www.debian.org/doc/manuals/maint-guide&quot;&gt;Guia do Novo Mantenedor Debian&lt;/a&gt;
+para entender como fazer isso.&lt;/p&gt;
+
+&lt;p&gt;Bem, aqui já temos tudo pronto para fazer &lt;em&gt;upload&lt;/em&gt; dos nossos pacotes ao
+servidor, basta executar o seguinte comando:&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+$ dput debian.joenio.me &amp;lt;pacote&amp;gt;.changes
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Isto irá copiar o pacote &lt;em&gt;.deb&lt;/em&gt; e o arquivo &lt;em&gt;.changes&lt;/em&gt; dele, irá atualizar os
+arquivos &lt;em&gt;Sources&lt;/em&gt; e &lt;em&gt;Packages&lt;/em&gt; com as informações do pacote e irá assinar o
+arquivo &lt;em&gt;Release&lt;/em&gt; com a chave pública &lt;code&gt;GnuPG&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;disponibilizando-acesso-ao-repositrio-publicamente&quot;&gt;Disponibilizando acesso ao repositório publicamente&lt;/h2&gt;
+
+&lt;p&gt;Até aqui já temos um repositório com pacotes hospedados, mas sem acesso público
+aos pacotes ninguém poderá utilizá-lo. Para resolver isto vamos configurar
+acesso via &lt;code&gt;HTTP&lt;/code&gt; usando o servidor web &lt;a href=&quot;http://nginx.org&quot;&gt;Nginx&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Instale o &lt;code&gt;Nginx&lt;/code&gt; no servidor:&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+# apt-get install nginx
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Crie o arquivo de configuração &lt;code&gt;/etc/nginx/sites-available/debian.joenio.me&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-nginx&quot; data-lang=&quot;nginx&quot;&gt;&lt;span class=&quot;k&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kn&quot;&gt;server_name&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;debian.joenio.me&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kn&quot;&gt;access_log&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/var/log/nginx/debian.joenio.me.access.log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kn&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kn&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/home/joenio/debian.joenio.me&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kn&quot;&gt;autoindex&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Habilite o arquivo de configuração e reinicie o serviço:&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+# cd /etc/nginx/sites-enabled/
+# ln -s /etc/nginx/sites-available/debian.joenio.me
+# service nginx restart
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Com o &lt;code&gt;Nginx&lt;/code&gt; configurado e rodando já temos o repositório e seus pacotes
+disponíveis no seguinte endereço:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://debian.joenio.me&quot;&gt;http://debian.joenio.me&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;testando-o-repositrio-e-instalando-pacotes&quot;&gt;Testando o repositório e instalando pacotes&lt;/h2&gt;
+
+&lt;p&gt;Para usar este repositorio adicione as seguintes entradas no
+&lt;code&gt;/etc/apt/sources.list&lt;/code&gt; do computador local:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sourceslist&quot; data-lang=&quot;sourceslist&quot;&gt;&lt;span class=&quot;k&quot;&gt;deb&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://debian.joenio.me&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;unstable/&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;deb-src&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://debian.joenio.me&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;unstable/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Adicione a chave de assinatura ao banco de dados de segurança do &lt;code&gt;APT&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+# wget -O - http://debian.joenio.me/signing.asc | apt-key add -
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Atualize a lista de pacotes e teste a instalação de algum pacote disponível no
+repositório:&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+# apt-get update
+# apt-get install &amp;lt;pacote&amp;gt;
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Pronto, temos o nosso próprio repositório de pacotes Debian disponível
+publicamente. Você pode agora publicar qualquer pacote que esteja criando e
+divulgar o endereço do repositório para que outros usuários Debian possam
+instalar os seus pacotes mais facilmente.&lt;/p&gt;
+
+&lt;p&gt;Na wiki do Debian em &lt;a href=&quot;http://wiki.debian.org/HowToSetupADebianRepository&quot;&gt;How to setup a Debian repository&lt;/a&gt; tem uma lista de
+ferramentas para configuração de repositórios Debian, não usei a maioria das
+ferramentas listadas lá, mas dentre elas o &lt;a href=&quot;http://www.aptly.info&quot;&gt;aptly&lt;/a&gt; parece uma boa opção
+para criar repositório pessoal de pacotes Debian e pode ser uma boa alternativa
+para o setup descrito aqui neste post.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 15 Jun 2015 00:00:00 -0300</pubDate>
+        <link>http://joenio.me/aprenda-a-criar-repositorios-de-pacotes-debian</link>
+        <guid isPermaLink="true">http://joenio.me/aprenda-a-criar-repositorios-de-pacotes-debian</guid>
+        
+        <category>tecnologia</category>
+        
+        <category>debian</category>
+        
+        
+      </item>
     
       <item>
         <title>Embarque na viagem das cooperativas do ano</title>
@@ -401,7 +666,7 @@ boas vibrações.&lt;/p&gt;
   &lt;p&gt;Obrigado!&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>Wed, 31 Dec 2014 00:00:00 -0200</pubDate>
+        <pubDate>Wed, 31 Dec 2014 00:00:00 -0300</pubDate>
         <link>http://joenio.me/fui-diagnosticado-com-um-tumor-renal-e-agora</link>
         <guid isPermaLink="true">http://joenio.me/fui-diagnosticado-com-um-tumor-renal-e-agora</guid>
         
@@ -531,7 +796,7 @@ reclamações, por favor, entre em contato através do
 ou se preferir atrevés do meu perfil no
 &lt;a href=&quot;http://github.com/joenio&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 23 Dec 2014 00:00:00 -0200</pubDate>
+        <pubDate>Tue, 23 Dec 2014 00:00:00 -0300</pubDate>
         <link>http://joenio.me/backup-na-nuvem-com-tarsnap</link>
         <guid isPermaLink="true">http://joenio.me/backup-na-nuvem-com-tarsnap</guid>
         
@@ -583,7 +848,7 @@ livros, etc… Espero que seja útil para mais alguém além de mim mesmo.&lt;/p
 
 &lt;p&gt;Ahhh!!! &lt;a href=&quot;http://softwarelivre.org/dani&quot;&gt;Dani&lt;/a&gt;, obrigado pelo &lt;em&gt;empurrãozinho&lt;/em&gt;!&lt;/p&gt;
 </description>
-        <pubDate>Thu, 18 Dec 2014 00:00:00 -0200</pubDate>
+        <pubDate>Thu, 18 Dec 2014 00:00:00 -0300</pubDate>
         <link>http://joenio.me/voltando-a-blogar</link>
         <guid isPermaLink="true">http://joenio.me/voltando-a-blogar</guid>
         
