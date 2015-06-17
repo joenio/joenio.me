@@ -1,25 +1,33 @@
 ---
-layout: default
+layout:
 ---
+{% assign page = site.posts.first %}
 
-<div class="home">
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+  {% include header.html %}
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li class="post">
+  <div class="page-content index">
+    <div class="wrap">
+      {% unless page.empty? %}
+      <div class="post">
         <header class="post-header">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          <p class="meta">
-          {{ post.date | date: "%b %-d, %Y" }}
-          {% if post.tags != empty %} • {{ post.tags | join: " " }}{% endif %}
-          </p>
+          <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% include metadata.html %}
         </header>
         <article class="post-content">
-          {{ post.content }}
+        {{ page.content }}
         </article>
-        <hr/>
-      </li>
-    {% endfor %}
-  </ul>
+        {% include comments.html %}
+      </div>
+      {% endunless %}
+    </div>
+  </div>
 
-</div>
+  {% include footer.html %}
+  {% include latest_posts.html %}
+  {% include google_analytics_tracking.html %}
+  </body>
+</html>
