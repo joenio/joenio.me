@@ -241,7 +241,7 @@ para criar repositório pessoal de pacotes Debian e pode ser uma boa alternativa
 para o setup descrito aqui neste post.
 
 <div class="alert alert-info">
-<strong>Sobre a foto do título deste post:</strong>
+<strong>Sobre a foto no título deste post:</strong>
 <em>Os cubos (pacotes) de papel utilizados na imagem foram feitos seguindo o tutorial
 <a href="http://pt.wikihow.com/Fazer-um-Cubo-de-Origami">
 "Como Fazer um Cubo de Origami"

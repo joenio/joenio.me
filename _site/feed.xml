@@ -5,8 +5,8 @@
     <description></description>
     <link>http://joenio.me/</link>
     <atom:link href="http://joenio.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 29 Jun 2015 01:59:24 -0300</pubDate>
-    <lastBuildDate>Mon, 29 Jun 2015 01:59:24 -0300</lastBuildDate>
+    <pubDate>Mon, 29 Jun 2015 02:10:30 -0300</pubDate>
+    <lastBuildDate>Mon, 29 Jun 2015 02:10:30 -0300</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -253,7 +253,7 @@ para criar repositório pessoal de pacotes Debian e pode ser uma boa alternativa
 para o setup descrito aqui neste post.&lt;/p&gt;
 
 &lt;div class=&quot;alert alert-info&quot;&gt;
-&lt;strong&gt;Sobre a foto do título deste post:&lt;/strong&gt;
+&lt;strong&gt;Sobre a foto no título deste post:&lt;/strong&gt;
 &lt;em&gt;Os cubos (pacotes) de papel utilizados na imagem foram feitos seguindo o tutorial
 &lt;a href=&quot;http://pt.wikihow.com/Fazer-um-Cubo-de-Origami&quot;&gt;
 &quot;Como Fazer um Cubo de Origami&quot;
