@@ -162,6 +162,7 @@ a:visited { color: #205caa; }
 }
 .post-banner img {
   border-radius: 5px;
+  width: 100%;
 }
 .post-banner .meta {
   position: absolute;

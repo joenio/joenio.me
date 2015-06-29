@@ -3,12 +3,7 @@ title: Aprenda a criar repositórios de pacotes Debian
 tags: tecnologia debian
 ---
 
-![Default post image](/files/default-post-image.png)
-
-TODO:
-
-* Fazer uma imagem a partir de cubos de papel seguindo o seguinte tutorial:
-  * http://pt.wikihow.com/Fazer-um-Cubo-de-Origami
+![Clone trooper e wall-e empilhando pacotes](/files/clone-trooper-e-wall-e-pacotes.jpg)
 
 Neste post irei mostrar como configurar um repositório de pacotes [Debian][]
 GNU/Linux usando **dput** + **mini-dinstall** + **nginx**. O Debian é um
@@ -244,6 +239,14 @@ ferramentas para configuração de repositórios Debian, não usei a maioria das
 ferramentas listadas lá, mas dentre elas o [aptly][aptly] parece uma boa opção
 para criar repositório pessoal de pacotes Debian e pode ser uma boa alternativa
 para o setup descrito aqui neste post.
+
+<div class="alert alert-info">
+<strong>Sobre a foto do título deste post:</strong>
+<em>Os cubos (pacotes) de papel utilizados na imagem foram feitos seguindo o tutorial
+<a href="http://pt.wikihow.com/Fazer-um-Cubo-de-Origami">
+"Como Fazer um Cubo de Origami"
+</a>.</em>
+</div>
 
 [Debian]: http://debian.org
 [livre]: http://debian.org/intro/free

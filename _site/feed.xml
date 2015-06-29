@@ -5,23 +5,13 @@
     <description></description>
     <link>http://joenio.me/</link>
     <atom:link href="http://joenio.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 17 Jun 2015 00:36:06 -0300</pubDate>
-    <lastBuildDate>Wed, 17 Jun 2015 00:36:06 -0300</lastBuildDate>
+    <pubDate>Mon, 29 Jun 2015 01:59:24 -0300</pubDate>
+    <lastBuildDate>Mon, 29 Jun 2015 01:59:24 -0300</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
         <title>Aprenda a criar repositórios de pacotes Debian</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/files/default-post-image.png&quot; alt=&quot;Default post image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;TODO:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fazer uma imagem a partir de cubos de papel seguindo o seguinte tutorial:
-    &lt;ul&gt;
-      &lt;li&gt;http://pt.wikihow.com/Fazer-um-Cubo-de-Origami&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/files/clone-trooper-e-wall-e-pacotes.jpg&quot; alt=&quot;Clone trooper e wall-e empilhando pacotes&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Neste post irei mostrar como configurar um repositório de pacotes &lt;a href=&quot;http://debian.org&quot;&gt;Debian&lt;/a&gt;
 GNU/Linux usando &lt;strong&gt;dput&lt;/strong&gt; + &lt;strong&gt;mini-dinstall&lt;/strong&gt; + &lt;strong&gt;nginx&lt;/strong&gt;. O Debian é um
@@ -262,8 +252,16 @@ ferramentas listadas lá, mas dentre elas o &lt;a href=&quot;http://www.aptly.in
 para criar repositório pessoal de pacotes Debian e pode ser uma boa alternativa
 para o setup descrito aqui neste post.&lt;/p&gt;
 
+&lt;div class=&quot;alert alert-info&quot;&gt;
+&lt;strong&gt;Sobre a foto do título deste post:&lt;/strong&gt;
+&lt;em&gt;Os cubos (pacotes) de papel utilizados na imagem foram feitos seguindo o tutorial
+&lt;a href=&quot;http://pt.wikihow.com/Fazer-um-Cubo-de-Origami&quot;&gt;
+&quot;Como Fazer um Cubo de Origami&quot;
+&lt;/a&gt;.&lt;/em&gt;
+&lt;/div&gt;
+
 </description>
-        <pubDate>Mon, 15 Jun 2015 00:00:00 -0300</pubDate>
+        <pubDate>Mon, 29 Jun 2015 00:00:00 -0300</pubDate>
         <link>http://joenio.me/aprenda-a-criar-repositorios-de-pacotes-debian</link>
         <guid isPermaLink="true">http://joenio.me/aprenda-a-criar-repositorios-de-pacotes-debian</guid>
         
