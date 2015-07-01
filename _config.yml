@@ -17,3 +17,8 @@ defaults:
       path: ""
     values:
       layout: "post"
+  -
+    scope:
+      path: "pages"
+    values:
+      layout: "page"
