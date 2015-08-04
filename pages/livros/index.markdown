@@ -8,18 +8,42 @@ title: Livros
 
 ## Anthony Burgess
 
+<ul class="livros">
+  <li><img src="laranja-mecanica.jpg" /></li>
+</ul>
+<br style="clear:both"/>
+
 ## Arthur C. Clarke
 
 <ul class="livros">
-  <li><img src="NEUROMANCER_1228330964B.jpg" /></li>
-  <li>Livro 2</li>
-  <li>Livro 3</li>
-  <li><img src="NEUROMANCER_1228330964B.jpg" /></li>
-  <li>Livro 5</li>
+  <li><img src="a-cidade-e-as-estrelas.jpg" /></li>
 </ul>
 <br style="clear:both"/>
 
 ## Douglas Adams
+
+<ul class="livros">
+  <li><img src="praticamente-inofensiva.jpg" /></li>
+  <li><img src="ate-mais-e-obrigado-pelos-peixes.jpg" /></li>
+  <li><img src="a-vida-o-universo-e-tudo-mais.jpg" /></li>
+  <li><img src="o-restaurante-no-fim-do-universo.jpg" /></li>
+  <li><img src="o-guia-do-mochileiro-das-galaxias.jpg" /></li>
+</ul>
+<br style="clear:both"/>
+
+## Eoin Colfer
+
+<ul class="livros">
+  <li><img src="e-tem-outra-coisa.jpg" /></li>
+</ul>
+<br style="clear:both"/>
+
+## Frank Herbert
+
+<ul class="livros">
+  <li><img src="duna.jpg" /></li>
+</ul>
+<br style="clear:both"/>
 
 ## George Orwell
 
@@ -27,7 +51,26 @@ title: Livros
 
 ## Isaac Asimov
 
+<ul class="livros">
+  <li><img src="eu-robo.jpg" /></li>
+  <li><img src="o-sol-desvelado.jpg" /></li>
+  <li><img src="o-fim-da-eternidade.jpg" /></li>
+  <li><img src="as-cavernas-de-aco.jpg" /></li>
+  <li><img src="fundacao-e-a-terra.jpg" /></li>
+  <li><img src="limites-da-fundacao.jpg" /></li>
+  <li><img src="preludio-a-fundacao.jpg" /></li>
+  <li><img src="fundacao-e-imperio.jpg" /></li>
+  <li><img src="fundacao.jpg" /></li>
+  <li><img src="segunda-fundacao.jpg" /></li>
+</ul>
+<br style="clear:both"/>
+
 ## Philip K. Dick
+
+<ul class="livros">
+  <li><img src="blade-runner.jpg" /></li>
+</ul>
+<br style="clear:both"/>
 
 ## Stephen King
 
@@ -36,16 +79,6 @@ title: Livros
 ## William Gibson
 
 <ul class="livros">
-  <li><img src="NEUROMANCER_1228330964B.jpg" /></li>
-  <li><img src="NEUROMANCER_1228330964B.jpg" /></li>
-  <li><img src="NEUROMANCER_1228330964B.jpg" /></li>
-  <li><img src="NEUROMANCER_1228330964B.jpg" /></li>
-  <li>Livro 2</li>
-  <li>Livro 3</li>
-  <li>Livro 4</li>
-  <li><img src="NEUROMANCER_1228330964B.jpg" /></li>
-  <li><img src="NEUROMANCER_1228330964B.jpg" /></li>
-  <li><img src="NEUROMANCER_1228330964B.jpg" /></li>
-  <li>Livro 5</li>
+  <li><img src="count-zero.jpg" /></li>
 </ul>
 <br style="clear:both"/>

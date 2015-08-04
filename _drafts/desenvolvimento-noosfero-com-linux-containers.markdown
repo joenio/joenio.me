@@ -47,6 +47,7 @@ Inicie e entre no container:
  # lxc-start -n noosfero -d
  # lxc-console -n noosfero
 
+ # lxc-execute 
 Dentro do container:
  # addgroup --gid 1000 joenio
  # adduser --uid 1000 --gid 1000 --disabled-password joenio

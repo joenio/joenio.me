@@ -69,3 +69,8 @@ Para junho fui sorteado com o módulo PDF::Table
 * https://metacpan.org/pod/PDF::Table
 * https://github.com/kamenov/PDF-Table/pull/18
 * https://github.com/kamenov/PDF-Table/pull/19
+
+Em julho foi a vez do cpan-outdated, como sempre pouco tempo fiz um "pequeno" pull-request só para não ficar de fora:
+
+* https://metacpan.org/pod/cpan-outdated
+* https://github.com/tokuhirom/cpan-outdated/pull/30
