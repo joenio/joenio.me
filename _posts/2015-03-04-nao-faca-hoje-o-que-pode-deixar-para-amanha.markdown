@@ -9,7 +9,7 @@ Neste post irei falar sobre gestão pessoal de tempo usando a técnica _Do It
 Tomorrow (DIT)_, uma proposta de _Mark Forster_ publicada em seu livro de mesmo
 nome traduzido para o português como [_Deixe para
 amanhã_](http://www.skoob.com.br/livro/141300ED157147-deixe-para-amanha), o
-título deste post é uma provocação ao conselho pupular _"Não deixe pra amanhã o
+título deste post é uma provocação ao conselho popular _"Não deixe pra amanhã o
 que você pode fazer hoje"_, que vai totalmente de encontro à proposto feita
 pelo autor em seu livro.
 
