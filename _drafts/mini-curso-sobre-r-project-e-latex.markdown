@@ -61,6 +61,13 @@ ideologia"_.
 
 ### Princípios e questões filosóficas
 
+Por "software livre" devemos entender aquele software que respeita a liberdade
+e senso de comunidade dos usuários. Grosso modo, os usuários possuem a
+liberdade de executar, copiar, distribuir, estudar, mudar e melhorar o
+software. Assim sendo, “software livre” é uma questão de liberdade, não de
+preço. Para entender o conceito, pense em “liberdade de expressão”, não em
+“cerveja grátis”
+
 Softwares livres são programas de computador que permitem adaptações ou
 modificações de forma espontânea sem que haja necessidade de solicitar
 permissões ao seu autor original, ou proprietário. Oferecem aos usuários a
@@ -182,7 +189,7 @@ software baseado em princípios até então pouco ou nunca vistos, como:
 
 * Grandes equipes de desenvolvedores espalhados pelo globo
 * Equipes formadas por empresas ou desenvolvedores inividuais
-* Eventualmente contando con contribuição de voluntários
+* Eventualmente contando com contribuição de voluntários
 * Comunicação ocorrendo principalmente via Internet, emails, chat, etc
 * Repositórios de código-fonte distribuídos e descentralizados
 
@@ -213,51 +220,46 @@ ganhos sociais, como:
 
 ### Introdução
 
-LaTeX é um ambiente para diagramação de textos utilizado amplamente na produção de
-textos matemáticos e científicos, devido a sua alta qualidade tipográfica.
+O LaTeX é uma linguagem de marcação e um ambiente para diagramação de textos
+utilizado amplamente na produção de textos matemáticos e científicos devido a
+sua alta qualidade tipográfica.
 
-Possui abstrações para
-lidar com bibliografias, citações, formatos de páginas, referência cruzada e
-tudo mais que não seja relacionado ao conteúdo do documento em si.
-
-O LaTeX foi desenvolvido na década de 80, por Leslie Lamport.
-
-A ideia central do LaTeX é distanciar o autor o máximo possível da apresentação
-visual da informação, pois a constante preocupação com a formatação desvia o
-pensamento do conteúdo escrito.
+Foi desenvolvido na década de 80 por Leslie Lamport e possui abstrações para
+lidar facilmente com bibliografias, citações, formatos de páginas e referência
+cruzada. A ideia central do LaTeX é distanciar o autor o máximo possível da
+apresentação visual, pois a constante preocupação com a
+formatação desvia o pensamento do conteúdo escrito.
 
 Ao invés de trabalhar com ideias visuais, o usuário é encorajado a trabalhar
 com conceitos mais lógicos — e, consequentemente, mais independentes da
 apresentação — como capítulos, seções, ênfase e tabelas, sem contudo impedir o
 usuário da liberdade de indicar, expressamente, declarações de formatação.
 
-É uma linguagem de marcação
-
-Não é um editor WYSIWYG
-
-Facilita referencias bibliográficas
-
-Facilita trabalhar com índices
-
 ### Ambiente de trabalho e ferramentas para LaTeX
 
+<!--
 Para Windows: [Miktex][miktex] e [TeXnicCenter][texniccenter]
+-->
 
-Para GNU/Linux: [TeX Live][texlive] e qualquer editor de texto
+Em sistemas GNU/Linux o [TeX Live][texlive] fornece todas as ferramentas
+necessárias para trabalhar com elaboração de textos em LaTeX.
 
 <pre class="terminal">
 <code>
-# apt-get install texlive
+# apt-get install texlive texlive-lang-portuguese
 </code>
 </pre>
+
+Além do `texlive` é necessário ter algum editor de texto para escrever os
+documentos.
 
 ### Escrevendo um simples artigo científico seguindo regras ABNT
 
 O LaTeX tem a capacidade de formatar o documento final seguindo normas de
 formatação específicas através de classes, para as normas ABNT utiliza-se a
-suíte [abnTeX2][abntex], composta por uma classe, por pacotes de citação e de
-formatação de estilos bibliográficos.  Está disponível em versões recentes
-tanto do [TeX Live][texlive] quanto do [MiKTeX][miktex], em Debian ele esta
+suíte [abnTeX2][abntex], composta por classes e pacotes de citação para
+formatação de estilos bibliográficos. Está disponível em versões recentes tanto
+do [TeX Live][texlive] quanto do [MiKTeX][miktex], em Debian ele esta
 disponível no pacote `texlive-publishers`
 
 <pre class="terminal">
@@ -301,7 +303,13 @@ lobortis nisl a enim congue semper.
 \end{document}
 {% endhighlight %}
 
-Para gerar o documento PDF vamos utilizar o `make` para automatizar a sua construção:
+Para gerar o documento PDF vamos utilizar o `make` para automatizar a sua
+construção.
+
+Make é uma ferramenta para controlar criação de executáveis e outros arquivos
+de programas a partir de códigos fontes. Toda a informação de como construir
+programar é mantida em arquivos chamados `makefile`, este arquivo lista como
+construir programas seguindo passo-a-passo instruções previamente elaboradas.
 
 <pre class="terminal">
 <code>
@@ -330,45 +338,244 @@ $ make
 </code>
 </pre>
 
-Mostrar como criar:
+Vamos ver algumas das marcações mais comuns utilizadas no LaTeX:
 
-* Negrito
-* Itálico
-* Citar referência
-* Parágrafos
-* Listas
-* Tabelas
-* Imagens
+#### Como marcar fonte como negrito?
+
+<table>
+<tr>
+<td class='noborder'>
+{% highlight latex %}
+Use a marcação correta e seu {\bf texto ficará negrito}.
+{% endhighlight %}
+</td>
+<td class='noborder'>
+<img src='/samples/latex-exemplo/negrito.png' />
+</td>
+</tr>
+</table>
+
+#### Como marcar fonte como itálico?
+
+<table>
+<tr>
+<td class='noborder'>
+{% highlight latex %}
+Use a marcação correta e seu {\it texto ficará itálico}.
+{% endhighlight %}
+</td>
+<td class='noborder'>
+<img src='/samples/latex-exemplo/italico.png' />
+</td>
+</tr>
+</table>
+
+#### Como criar parágrafos?
+
+<table>
+<tr>
+<td class='noborder'>
+{% highlight latex %}
+Textos separados por linhas em branco.
+
+Serão interpretados como parágrafos.
+{% endhighlight %}
+</td>
+<td class='noborder'>
+</td>
+</tr>
+</table>
+
+#### Como criar lista de itens?
+
+<table>
+<tr>
+<td class='noborder'>
+{% highlight latex %}
+\begin{itemize}
+  \item Placerat erat, non tristique elit urna et turpis
+  \item Quisque mi metus, ornare sit amet fermentum et
+  \item Tincidunt et orci
+  \item Fusce eget orci a orci congue vestibulum
+\end{itemize}
+{% endhighlight %}
+</td>
+<td class='noborder'>
+<img src='/samples/latex-exemplo/itemize.png' />
+</td>
+</tr>
+</table>
+
+#### Como criar tabelas?
+
+<table>
+<tr>
+<td class='noborder'>
+{% highlight latex %}
+\begin{tabular}{ l c r }
+  1 & 2 & 3 \\
+  4 & 5 & 6 \\
+  7 & 8 & 9 \\
+\end{tabular}
+{% endhighlight %}
+</td>
+<td class='noborder'>
+<img src='/samples/latex-exemplo/tabular.png' />
+</td>
+</tr>
+</table>
+
+#### Como incluir imagens?
+
+<table>
+<tr>
+<td class='noborder'>
+{% highlight latex %}
+\begin{figure}[h]
+\center
+\includegraphics[scale=0.3]{heckert_gnu_small.png}
+\caption{GNU small}
+\end{figure}
+{% endhighlight %}
+</td>
+<td class='noborder'>
+<img src='/samples/graphics-exemplo/includegraphics.png' />
+</td>
+</tr>
+</table>
+
+#### Como citar referências bibliográficas?
+
+<table>
+<tr>
+<td class='noborder'>
+{% highlight latex %}
+\bibliographystyle{ieeetr}
+
+Lorem ipsum dolor\cite{Travassos2002} ...
+
+\bibliography{bibliografia}
+{% endhighlight %}
+</td>
+<td class='noborder'>
+<img src='/samples/biblatex-exemplo/bibliografia.png' />
+</td>
+</tr>
+</table>
+
+#### Codificação e acentuação
+
+<table>
+<tr>
+<td class='noborder'>
+{% highlight latex %}
+\documentclass{article}
+\usepackage[utf8]{inputenx}
+{% endhighlight %}
+</td>
+<td class='noborder'>
+</td>
+</tr>
+</table>
+
+#### Como criar um sumário?
+
+<table>
+<tr>
+<td class='noborder'>
+{% highlight latex %}
+\tableofcontents
+{% endhighlight %}
+</td>
+<td class='noborder'>
+<img src='/samples/latex-exemplo/tableofcontents.png' />
+</td>
+</tr>
+</table>
+
+#### Como gerar sumário com a lista de figuras?
+
+<table>
+<tr>
+<td class='noborder'>
+{% highlight latex %}
+\listoffigures
+{% endhighlight %}
+</td>
+<td class='noborder'>
+<img src='/samples/listof-exemplo/listoffigures.png' />
+</td>
+</tr>
+</table>
+
+#### Como gerar sumário com lista de tabelas?
+
+<table>
+<tr>
+<td class='noborder'>
+{% highlight latex %}
+\listoftables
+{% endhighlight %}
+</td>
+<td class='noborder'>
+<img src='/samples/listof-exemplo/listoftables.png' />
+</td>
+</tr>
+</table>
+
+#### Idioma e regras gramaticais em português
+
+<table>
+<tr>
+<td class='noborder'>
+{% highlight latex %}
+\usepackage[brazil]{babel}
+
+\tableofcontents
+\listoffigures
+\listoftables
+{% endhighlight %}
+</td>
+<td class='noborder'>
+<img src='/samples/babel-exemplo/babel.png' />
+</td>
+</tr>
+</table>
+
+#### Como elaborar fórmulas matemáticas?
+
+<table>
+<tr>
+<td class='noborder'>
+{% highlight latex %}
+$z=\sqrt{x^2+y^2}$
+{% endhighlight %}
+</td>
+<td class='noborder'>
+<img src='/samples/match-exemplo/match.png' />
+</td>
+</tr>
+</table>
 
 ## R-Project
 
 ### Introdução
 
-R é uma linguagem e um ambiente de desenvolvimento integrado, para cálculos estatísticos e gráficos.
-
+R é uma linguagem e um ambiente de desenvolvimento integrado para cálculos estatísticos e gráficos,
 Foi criada originalmente por Ross Ihaka e por Robert Gentleman no departamento de Estatística da universidade de Auckland, Nova Zelândia.
 
-R é uma linguagem e ambiente similar ao S - pode ser considerado uma implementação distinta do S; embora com importantes diferenças, muitos códigos escritos para o S rodam inalterados no R. A implementação comercial de S é S-PLUS.
-
-O código fonte do R está disponível sob a licença GNU GPL e as versões binárias pré-compiladas são fornecidas para Windows, Macintosh, e muitos sistemas operacionais Unix/Linux.
-
 R é também altamente expansível com o uso dos pacotes, que são bibliotecas para funções específicas ou áreas de estudo específicas.
-
 Um conjunto de pacotes é incluído com a instalação de R, com muito outros disponíveis na rede de distribuição do R (em inglês CRAN).
 
-A linguagem R é largamente usada entre estatísticos e data miners para desenvolver software de estatística6 7 e análise de dados.7 Inquéritos e levantamentos de data miners mostram que a popularidade do R aumentou substancialmente nos últimos anos.8 
+A linguagem R é largamente usada entre estatísticos e data miners para desenvolver software de estatística e análise de dados.
 
-Existem diversas GUI para R, incluindo JGR, RKWard, SciViews-R, Rcmdr e, mais recentemente, RStudio.
-
-Muitos editores oferecem recursos que facilitam o trabalho com o R: Emacs, Vim, jEdit, Kate, Tinn-R GUI/Editor, entre outros. Existem plug-ins para uso com a IDE Eclipse e Vim.
-
-Software construído de modo colaborativo, com novos pacotes e GUIs incluídos a cada intervalo de tempo, antecipando-se até a alguns outros pacotes proprietários, como o complemento com o teste de Scott-Knott para a Análise de Variâncias ANOVA.
+Existem diversas interfaces gráficas para R, incluindo JGR, RKWard, SciViews-R, Rcmdr e, mais recentemente, RStudio.
 
 ### Ambiente de trabalho e ferramentas para R-Project
 
-Instalação em Debian Linux:
-
-Pacote para R Project e suas dependencias `r-recommended`:
+Instalação em Debian GNU/Linux pode ser feito instalando o pacote
+`r-recommended`, este pacote fornece o R Project, suas dependencias e inúmeros
+pacotes adicionais.
 
 <pre class="terminal">
 <code>
@@ -376,13 +583,382 @@ Pacote para R Project e suas dependencias `r-recommended`:
 </code>
 </pre>
 
+<!--
 Instalação em Windows faça download em:
 
 * http://nbcgib.uesc.br/mirrors/cran/
+-->
 
 ### Análise estatística de dados científicos
 
 Seguir o [passo-a-passo][a-sample-session]...
+
+#### Iniciar o console R
+
+<pre class="terminal">
+<code>
+$ R
+</code>
+</pre>
+
+Isto disponibiliza o console do ambiente R para interagirmos com a linguagem
+através dos seus comandos.
+
+#### Documentação e ajuda
+
+{% highlight R %}
+> help.start()
+{% endhighlight %}
+
+Abre o navegador apontando para a documentação da linguagem.
+
+#### Gerando valores aleatórios
+
+{% highlight R %}
+> x <- rnorm(50)
+> y <- rnorm(x)
+{% endhighlight %}
+
+Gera dois "pseudo-aleatório" vetores normais.
+
+#### Gerar gráficos
+
+{% highlight R %}
+> plot(x, y)
+{% endhighlight %}
+
+Plota os pontos em um plano, uma janela com o gráfico abre automaticamente.
+
+#### Listar objetos
+
+{% highlight R %}
+> ls()
+{% endhighlight %}
+
+Exibe os objetos R na espaço de trabalho "workspace".
+
+#### Remover objetos do espaço de trabalho
+
+{% highlight R %}
+> rm(x, y)
+{% endhighlight %}
+
+Remove objetos não mais utilizados.
+
+#### Gerando lista de valores / vetores
+
+{% highlight R %}
+> x <- 1:20
+{% endhighlight %}
+
+Cria um vedor (1, 2, ..., 20) e armazena na variável x.
+
+#### Gera outro vetor alterando cada valor de x
+
+{% highlight R %}
+> w <- 1 + sqrt(x)/2
+{% endhighlight %}
+
+Um vetor 'peso' de desvios padrão.
+
+#### Visualizando os dados em colunas
+
+{% highlight R %}
+> dummy <- data.frame(x = x, y = x + rnorm(x) * w)
+> dummy
+{% endhighlight %}
+
+<!-- fix* -->
+
+Cria um quadro de dados de 2 colunas, x e y, e exibe na tela.
+
+#### Regressão linear simples
+
+{% highlight R %}
+> fm <- lm(y ~ x, data=dummy)
+> summary(fm)
+{% endhighlight %}
+
+Executa uma regressão linear simples e exibe a análise. Com Y à esquerda do til
+~, estamos modelando Y dependente X.
+
+#### Regressão ponderada
+
+{% highlight R %}
+> fm1 <- lm(y ~ x, data=dummy, weight=1/w^2)
+> summary(fm1)
+{% endhighlight %}
+
+Sabendo o desvio-padrão, podemos fazer uma regressão ponderada.
+
+<!--
+attach(dummy)
+Make the columns in the data frame visible as variables.
+-->
+
+#### Regressão local não-paramétrica
+
+{% highlight R %}
+> lrf <- lowess(x, y)
+{% endhighlight %}
+
+Executa uma função de regressão local não-paramétrica.
+
+
+#### Gráfico de pontos padrão
+
+{% highlight R %}
+> plot(x, y)
+{% endhighlight %}
+
+<!--
+lines(x, lrf$y)
+Add in the local regression.
+-->
+
+<!--
+abline(0, 1, lty=3)
+The true regression line: (intercept 0, slope 1).
+-->
+
+#### Linha de regressão não-ponderada
+
+_Sem fechar a janela do gráfico gerada pelo plot()_
+
+{% highlight R %}
+> abline(coef(fm))
+{% endhighlight %}
+
+#### Linha de regressão ponderada
+
+_Sem fechar a janela do gráfico gerada pelo plot()_
+
+{% highlight R %}
+> abline(coef(fm1), col = "red")
+{% endhighlight %}
+
+Weighted regression line.
+
+detach()
+Remove data frame from the search path.
+
+#### Checar se há heteroscedasticidade
+
+{% highlight R %}
+> plot(fitted(fm), resid(fm),
+     xlab="Fitted values",
+     ylab="Residuals",
+     main="Residuals vs Fitted")
+{% endhighlight %}
+
+Uma regressão padrão com gráfico para diagnóstico de heteroscedasticidade.
+
+_Heteroscedasticidade é o fenômeno estatístico que ocorre quando o modelo de
+hipótese matemático apresenta variâncias para Y e X(X1, X2, X3,..., Xn) não
+iguais para todas as observações_ (fonte: [Wikipédia][heteroscedasticidade])
+
+#### Verificar se há assimetrie
+
+{% highlight R %}
+> qqnorm(resid(fm), main="Residuals Rankit Plot")
+{% endhighlight %}
+
+Um gráfico para checar assimetria, curtose e valores discrepantes.
+
+#### Limpar workspace
+
+{% highlight R %}
+> rm(fm, fm1, lrf, x, dummy)
+{% endhighlight %}
+
+<!--
+
+#### Analisando conjunto de dados "morley"
+
+A próxima sessão irá analisar dados do experimento clássico de Michelson para
+medir a velocidade da luz. Este _dataset_ (conjunto de dados) está disponível no
+objeto `morley`, mas iremos ler manualmente para ilustrar a função `read.table`.
+
+{% highlight R %}
+> filepath <- system.file("data", "morley.tab" , package="datasets")
+> filepath
+{% endhighlight %}
+
+Pega o caminho completo do arquivo de dados.
+
+{% highlight R %}
+> file.show(filepath)
+{% endhighlight %}
+
+(opicional) Exibe o arquivo na tela.
+
+{% highlight R %}
+> mm <- read.table(filepath)
+> mm
+{% endhighlight %}
+
+Lê os dados do experimento de Michelson em uma tabela de dados, exibe isto na
+tela.
+
+Existem cinco experimentos (representado pela couma Expt) e cada experimento
+tem 20 execuções (coluna Run) e a coluna Speed representa a velocidade da luz,
+adequadamente codificada.
+
+{% highlight R %}
+> mm$Expt <- factor(mm$Expt)
+> mm$Run <- factor(mm$Run)
+{% endhighlight %}
+
+Altera Expt e Run em fatores e atribui às variáveis _mm$Expt_ e _mm$Run_.
+
+{% highlight R %}
+> attach(mm)
+{% endhighlight %}
+
+Make the data frame visible at position 3 (the default).
+
+{% highlight R %}
+> plot(Expt, Speed, main="Speed of Light Data", xlab="Experiment No.")
+{% endhighlight %}
+
+Compara os cinco experimentos usando _diagrama de caixas (box plot)_ simples.
+
+{% highlight R %}
+> fm <- aov(Speed ~ Run + Expt, data=mm)
+> summary(fm)
+{% endhighlight %}
+
+Analyze as a randomized block, with ‘runs’ and ‘experiments’ as factors.
+
+{% highlight R %}
+> fm0 <- update(fm, . ~ . - Run)
+> anova(fm0, fm)
+{% endhighlight %}
+
+Fit the sub-model omitting ‘runs’, and compare using a formal analysis of variance.
+
+{% highlight R %}
+> detach()
+> rm(fm, fm0)
+{% endhighlight %}
+
+Clean up before moving on.
+
+We now look at some more graphical features: contour and image plots.
+
+{% highlight R %}
+> x <- seq(-pi, pi, len=50)
+> y <- x
+{% endhighlight %}
+
+x is a vector of 50 equally spaced values in the interval [-pi\, pi]. y is the same.
+
+{% highlight R %}
+> f <- outer(x, y, function(x, y) cos(y)/(1 + x^2))
+{% endhighlight %}
+
+f is a square matrix, with rows and columns indexed by x and y respectively, of values of the function cos(y)/(1 + x^2).
+
+{% highlight R %}
+> oldpar <- par(no.readonly = TRUE)
+> par(pty="s")
+{% endhighlight %}
+
+Save the plotting parameters and set the plotting region to “square”.
+
+{% highlight R %}
+> contour(x, y, f)
+> contour(x, y, f, nlevels=15, add=TRUE)
+{% endhighlight %}
+
+Make a contour map of f; add in more lines for more detail.
+
+{% highlight R %}
+> fa <- (f-t(f))/2
+{% endhighlight %}
+
+fa is the “asymmetric part” of f. (t() is transpose).
+
+{% highlight R %}
+> contour(x, y, fa, nlevels=15)
+{% endhighlight %}
+
+Make a contour plot, …
+
+{% highlight R %}
+> par(oldpar)
+{% endhighlight %}
+
+… and restore the old graphics parameters.
+
+{% highlight R %}
+> image(x, y, f)
+{% endhighlight %}
+
+Make some high density image plots, (of which you can get hardcopies if you wish), …
+
+{% highlight R %}
+> objects(); rm(x, y, f, fa)
+{% endhighlight %}
+
+… and clean up before moving on.
+
+R can do complex arithmetic, also.
+
+{% highlight R %}
+> th <- seq(-pi, pi, len=100)
+> z <- exp(1i*th)
+{% endhighlight %}
+
+1i is used for the complex number i.
+
+{% highlight R %}
+> par(pty="s")
+> plot(z, type="l")
+{% endhighlight %}
+
+Plotting complex arguments means plot imaginary versus real parts. This should be a circle.
+
+{% highlight R %}
+> w <- rnorm(100) + rnorm(100)*1i
+{% endhighlight %}
+
+Suppose we want to sample points within the unit circle. One method would be to take complex numbers with standard normal real and imaginary parts …
+
+{% highlight R %}
+> w <- ifelse(Mod(w) > 1, 1/w, w)
+{% endhighlight %}
+
+… and to map any outside the circle onto their reciprocal.
+
+{% highlight R %}
+> plot(w, xlim=c(-1,1), ylim=c(-1,1), pch="+",xlab="x", ylab="y")
+> lines(z)
+{% endhighlight %}
+
+All points are inside the unit circle, but the distribution is not uniform.
+
+{% highlight R %}
+> w <- sqrt(runif(100))*exp(2*pi*runif(100)*1i)
+> plot(w, xlim=c(-1,1), ylim=c(-1,1), pch="+", xlab="x", ylab="y")
+> lines(z)
+{% endhighlight %}
+
+The second method uses the uniform distribution. The points should now look more evenly spaced over the disc.
+
+{% highlight R %}
+> rm(th, w, z)
+{% endhighlight %}
+
+Clean up again.
+
+{% highlight R %}
+> q()
+{% endhighlight %}
+
+Quit the R program. You will be asked if you want to save the R workspace, and for an exploratory session like this, you probably do not want to save it.
+
+-->
 
 ### Gerando gráficos com o R
 
@@ -392,6 +968,14 @@ Seguir o [passo-a-passo][a-sample-session]...
 
 ### Juntando o LaTeX com o R-Project
 
+O `knitr` é um pacote para o R com propósito de ser um motor transparente para
+gerar relatórios dinâmicos, isto significa que o usuário tem acesso total
+a todas as entradas e saídas disponívels no R (exemplo 1 + 2 produz 3 em um
+terminal R e o knitr permite usuário decidir como irá definir 1 + 2 em seu
+relatório). `knitr` tenta ser consistente com como funciona o terminal do R, ou
+seja, todo código executado no terminal R, será executado da mesma forma pelo
+`knitr`.
+
 Para instalar o `knitr` no Linux:
 
 <pre class="terminal">
@@ -400,11 +984,48 @@ Para instalar o `knitr` no Linux:
 </code>
 </pre>
 
+<!--
+* r-cran-codetools
+* r-cran-evaluate
+* r-cran-stringr
+* r-cran-digest
+-->
+
 {% highlight R %}
 > install.packages("knitr", dependencies = TRUE)
 {% endhighlight %}
 
 "a instalacao demora um pouco, compila um monte de coisas..."
+
+Crie um arquivo chamado `exemplo.Rnw` com o seguinte conteúdo:
+
+{% highlight latex %}
+\documentclass{article}
+\begin{document}
+\title{Exemplo de artigo com graficos R}
+\maketitle
+
+\section{Lorem ipsum dolor sit amet}
+
+We examine the relationship between speed and stopping
+distance using a linear regression model:
+
+$Y = \beta_0 + \beta_1 x + \epsilon$.
+
+\subsection{Vivamus fermentum semper porta}
+
+<<model-one, fig.width=4, fig.height=3, fig.align='center'>>=
+par(mar = c(4, 4, 1, 1), mgp = c(2, 1, 0), cex = 0.8)
+plot(cars, pch = 20, col = 'darkgray')
+fit <- lm(dist ~ speed, data = cars)
+abline(fit, lwd = 2)
+@
+
+\end{document}
+{% endhighlight %}
+
+A extensão Rnw é uma combinação de R + nw onde nw significa Noweb (= No + web).
+
 
 Carrega biblioteca "knitr" no ambiente R:
 
@@ -415,8 +1036,11 @@ Carrega biblioteca "knitr" no ambiente R:
 Gera arquivo `.tex` com figuras geradas pelo R:
 
 {% highlight R %}
-knit("knitr-exemplo.Rnw")
+knit("exemplo.Rnw")
 {% endhighlight %}
+
+O comando acima irá traduzir o código R para comandos nativos do LaTeX, de forma que
+o documento LaTeX poderá ser gerado normalmente como qualquer outro documento.
 
 ## Referências
 
@@ -461,3 +1085,4 @@ Referências utilizadas como base na preparação deste mini-curso:
 [gnu]: http://www.gnu.org
 [direito-autoral]: http://pt.wikipedia.org/wiki/Direito_autoral
 [getting-started-with-sweave]: http://www.r-bloggers.com/getting-started-with-sweave-r-latex-eclipse-statet-texlipse
+[heteroscedasticidade]: http://pt.wikipedia.org/wiki/Heteroscedasticidade
