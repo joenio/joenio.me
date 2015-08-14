@@ -1,4 +1,3 @@
-@import url("reset.css");
 @import url("impress.js/css/impress-demo.css");
 
 body {
@@ -7,7 +6,7 @@ body {
 
 #inicio img {
    position: absolute;
-   left: -150px;
+   left: -200px;
    top: 110px;
 }
 
@@ -25,10 +24,6 @@ body {
    font-family: Sans-serif;
    font-style: italic;
    font-size: 17px;
-}
-
-#inicio, #fim {
-   font-family: 'Revalia', cursive;
 }
 
 #fim {
@@ -63,4 +58,16 @@ h5 {
    font-size: 30px;
    padding: 10px;
    border: 1px solid #DDD;
+}
+
+ul {
+  list-style: disc;
+}
+
+.font32 {
+  font-size: 32px;
+}
+
+small {
+  font-size: 20px;
 }
