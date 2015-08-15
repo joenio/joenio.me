@@ -5,9 +5,58 @@
     <description></description>
     <link>http://joenio.me/</link>
     <atom:link href="http://joenio.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 29 Jun 2015 02:10:30 -0300</pubDate>
-    <lastBuildDate>Mon, 29 Jun 2015 02:10:30 -0300</lastBuildDate>
+    <pubDate>Sat, 15 Aug 2015 20:09:10 -0300</pubDate>
+    <lastBuildDate>Sat, 15 Aug 2015 20:09:10 -0300</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Como adicionar virtualhost aos logs do Varnish</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/files/trooper-segurando-caneta-fundo-verde.jpg&quot; alt=&quot;Clone trooper segurando caneta&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Há algum tempo atrás escrevi um post &lt;a href=&quot;http://softwarelivre.org/joenio/blog/awstats-varnish-e-virtualhosts&quot;&gt;mostrando como configurar o
+&lt;code&gt;Varnish&lt;/code&gt;&lt;/a&gt; para escrever logs num formato
+modificado do &lt;a href=&quot;http://httpd.apache.org/docs/2.4/logs.html#combined&quot;&gt;&lt;em&gt;Combined Log Format&lt;/em&gt;&lt;/a&gt; do &lt;code&gt;Apache&lt;/code&gt;, esta modificação
+foi feita para adicionar o &lt;em&gt;virtualhost&lt;/em&gt; &lt;code&gt;%v&lt;/code&gt; no início de cada registro do log
+e na sintaxe do &lt;code&gt;Apache&lt;/code&gt; se parece com o seguinte:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-apache&quot; data-lang=&quot;apache&quot;&gt;&lt;span class=&quot;nb&quot;&gt;LogFormat&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;%v %h %l %u %t \&amp;quot;%r\&amp;quot; %&amp;gt;s %O \&amp;quot;%{Referer}i\&amp;quot; \&amp;quot;%{User-Agent}i\&amp;quot;&amp;quot;&lt;/span&gt; vhost_combined&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Isto foi feito com o &lt;a href=&quot;http://github.com/joenio/varnishncsa-vhost&quot;&gt;varnishncsa-vhost&lt;/a&gt;, um script que faz
+o &lt;code&gt;Varnish&lt;/code&gt; armazenar logs seguindo o formato acima, este script deveria estar
+obsoleto já que versões recentes do &lt;code&gt;Varnish&lt;/code&gt; suportam customizar o formato dos
+logs através da opção &lt;code&gt;-F&lt;/code&gt;, mas um problema no pacote Debian impede de fazer
+isto do “jeito certo”™.&lt;/p&gt;
+
+&lt;p&gt;Este problema foi citado em &lt;a href=&quot;http://giantdorks.org/alain/workaround-for-broken-varnishncsa-logging-due-to-shell-mishandling-of-spaces-in-log_format-variables&quot;&gt;Workaround for broken varnishncsa logging due to
+shell mishandling of spaces in LOG_FORMAT variables&lt;/a&gt; e algumas
+soluções foram sugeridas, mas todas elas tem um “ar” de armengue. O problema já
+foi relatado no Debian em &lt;a href=&quot;http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=657449&quot;&gt;#657449 varnishncsa: please add a config option to
+allow a custom logging format (patch)&lt;/a&gt; mas ainda não foi
+solucionado.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Porque estou contando esse “blá blá blá”?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Recentemente precisei alterar o formato dos logs do &lt;code&gt;Varnish&lt;/code&gt; em um servidor de
+produção e acabei utilizando o &lt;code&gt;varnishncsa-vhost&lt;/code&gt; novamente e ele funcionou
+muito bem, isto me salvou dos sedutores “armengues que quebram na próxima
+atualização”.&lt;/p&gt;
+
+&lt;p&gt;Então se isto for útil para você de alguma forma utilize o repositório abaixo,
+eu subi uma nova versão do pacote Debian do &lt;code&gt;varnishncsa-vhost&lt;/code&gt; lá:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sourceslist&quot; data-lang=&quot;sourceslist&quot;&gt;&lt;span class=&quot;k&quot;&gt;deb&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://debian.joenio.me&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;unstable/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Sat, 15 Aug 2015 00:00:00 -0300</pubDate>
+        <link>http://joenio.me/como-adicionar-virtualhost-aos-logs-do-varnish</link>
+        <guid isPermaLink="true">http://joenio.me/como-adicionar-virtualhost-aos-logs-do-varnish</guid>
+        
+        <category>debian</category>
+        
+        
+      </item>
     
       <item>
         <title>Aprenda a criar repositórios de pacotes Debian</title>
@@ -445,7 +494,7 @@ evento.&lt;/p&gt;
 Tomorrow (DIT)&lt;/em&gt;, uma proposta de &lt;em&gt;Mark Forster&lt;/em&gt; publicada em seu livro de mesmo
 nome traduzido para o português como &lt;a href=&quot;http://www.skoob.com.br/livro/141300ED157147-deixe-para-amanha&quot;&gt;&lt;em&gt;Deixe para
 amanhã&lt;/em&gt;&lt;/a&gt;, o
-título deste post é uma provocação ao conselho pupular &lt;em&gt;“Não deixe pra amanhã o
+título deste post é uma provocação ao conselho popular &lt;em&gt;“Não deixe pra amanhã o
 que você pode fazer hoje”&lt;/em&gt;, que vai totalmente de encontro à proposto feita
 pelo autor em seu livro.&lt;/p&gt;
 
