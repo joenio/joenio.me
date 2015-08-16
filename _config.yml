@@ -16,6 +16,12 @@ exclude:
   - script
   - samples
 
+# Nao apague estes arquivos ao executar build
+keep_files:
+  - .git
+  - .svn
+  - javascript
+
 # Configuracoes padrao para posts
 defaults:
   -

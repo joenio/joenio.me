@@ -4,6 +4,8 @@ Joenio Costa Blog
 Código-fonte do blog pessoal http://joenio.me implementado usando [Jekyll][jekyll], uma
 ferramenta para criação de sites estáticos.
 
+Para os slides é necessário instalar o pacote `libjs-impress` no servidor.
+
 Dicas de como escrever bons títulos para os posts
 -------------------------------------------------
 
