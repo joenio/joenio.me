@@ -1,71 +1,67 @@
-@import url("impress.js/css/impress-demo.css");
+@import url("/usr/share/doc/libjs-impress/examples/css/impress-demo.css");
 
 body {
-   background: url("files/gplaypattern.png");
+  background: url("files/gplaypattern.png");
 }
 
 #inicio img {
-   position: absolute;
-   left: -200px;
-   top: 110px;
+  position: absolute;
+  left: -200px;
+  top: 110px;
 }
 
 #fim img {
-   position: absolute;
-   left: -210px;
-   top: 65px;
+  position: absolute;
+  left: -210px;
+  top: 65px;
 }
 
 #fim h4 {
-   margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #fim h5 {
-   font-family: Sans-serif;
-   font-style: italic;
-   font-size: 17px;
+  font-family: Sans-serif;
+  font-style: italic;
+  font-size: 17px;
 }
 
 #fim {
-   width: 700px;
+  width: 700px;
 }
 
 h1, h2, h3, h3, h4, h5 {
-   margin-top: 10px;
-   margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h2 {
-   font-size: 40px;
+  font-size: 40px;
 }
 h3 {
-   font-size: 32px;
+  font-size: 32px;
 }
 h4 {
-   font-size: 24px;
+  font-size: 24px;
 }
 h5 {
-   font-size: 16px;
+  font-size: 16px;
 }
 
 .step {
-   font-family: 'Averia Sans Libre', cursive;
+  font-family: 'Averia Sans Libre', cursive;
 }
 
 .step pre {
-   font-family: monospace;
-   background: white;
-   font-size: 30px;
-   padding: 10px;
-   border: 1px solid #DDD;
+  font-family: monospace;
+  background: white;
+  font-size: 30px;
+  padding: 10px;
+  border: 1px solid #DDD;
 }
 
 ul {
   list-style: disc;
-}
-
-.font32 {
-  font-size: 32px;
 }
 
 small {

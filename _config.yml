@@ -10,6 +10,12 @@ github_username:  joenio
 markdown: kramdown
 permalink: ":title"
 
+# Nao copie estes arquivos para _site
+exclude:
+  - README.markdown
+  - script
+  - samples
+
 # Configuracoes padrao para posts
 defaults:
   -
@@ -22,3 +28,8 @@ defaults:
       path: "pages"
     values:
       layout: "page"
+  -
+    scope:
+      path: "slides"
+    values:
+      layout: "slide"
