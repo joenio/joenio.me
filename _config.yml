@@ -10,6 +10,10 @@ github_username:  joenio
 markdown: kramdown
 permalink: ":title"
 
+# Opcoes para kramdown
+kramdown:
+  parse_block_html: true
+
 # Nao copie estes arquivos para _site
 exclude:
   - README.markdown
