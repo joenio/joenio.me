@@ -42,4 +42,4 @@ defaults:
     scope:
       path: "slides"
     values:
-      layout: "slide"
+      layout: "revealjs"
