@@ -7,6 +7,8 @@ http://bandhub.us/band/53b73c2bb9e2088d1c000596
 https://www.composrapp.com/
 http://www.mixbadger.com/
 
+http://ccmixter.org/ <- livre
+
 mais em:
 http://www.masternewmedia.org/online-music-collaboration-best-tools-and/
 
