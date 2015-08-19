@@ -10,6 +10,22 @@ github_username:  joenio
 markdown: kramdown
 permalink: ":title"
 
+# Opcoes para kramdown
+kramdown:
+  parse_block_html: true
+
+# Nao copie estes arquivos para _site
+exclude:
+  - README.markdown
+  - script
+  - samples
+
+# Nao apague estes arquivos ao executar build
+keep_files:
+  - .git
+  - .svn
+  - javascript
+
 # Configuracoes padrao para posts
 defaults:
   -
@@ -22,3 +38,8 @@ defaults:
       path: "pages"
     values:
       layout: "page"
+  -
+    scope:
+      path: "slides"
+    values:
+      layout: "revealjs"
