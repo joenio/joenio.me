@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Noosfero | Joenio Costa</title>
+  <meta name="author" content="Joenio Costa" />
+  <link rel="stylesheet" href="/javascript/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="/javascript/reveal.js/css/theme/black.css" id="theme">
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="/javascript/reveal.js/lib/css/zenburn.css">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '/javascript/reveal.js/css/print/pdf.css' : '/javascript/reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="/javascript/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section>
+  <h1 id="noosfero">Noosfero</h1>
+
+  <p><img src="files/noosfero.png" style="background:none;border:0;box-shadow:none" /></p>
+
+  <p>“Uma plataforma web livre para redes sociais e de economia solidária”</p>
+</section>
+
+<section>
+  <h2 id="o-noosfero-">O Noosfero é</h2>
+
+  <ul>
+    <li>Livre (Afero GPL)</li>
+    <li>Escrito em Ruby On Rails 3</li>
+    <li>Migrando para o Rails 4</li>
+    <li>Expansível (plugins)</li>
+    <li>Customizável (temas, blocos, etc)</li>
+  </ul>
+</section>
+
+<section>
+  <h2 id="o-desenvolvimento-ocorre-em-torno-do-gitlab">O desenvolvimento ocorre em torno do gitlab</h2>
+
+  <p>http://gitlab.com/noosfero/noosfero</p>
+
+  <ul>
+    <li>Issues</li>
+    <li>Milestones</li>
+    <li>Merge Requests</li>
+  </ul>
+
+  <p>A metologia de desenvolvimento das equipes baseia-se em métodos ágeis e TDD</p>
+</section>
+
+<section>
+  <h2 id="a-comunicao">A comunicação</h2>
+
+  <h3 id="bate-papo-via-irc-na-rede-freenode">Bate-papo via IRC na rede Freenode</h3>
+
+  <ul>
+    <li>#noosfero</li>
+    <li>#noosfero-br</li>
+  </ul>
+
+  <h3 id="listas-de-discusso">Listas de discussão</h3>
+
+  <ul>
+    <li>noosfero-dev@listas.softwarelivre.org </li>
+    <li>noosfero-br@listas.softwarelivre.org</li>
+  </ul>
+</section>
+
+<section>
+  <h1 id="verses">Versões</h1>
+
+  <h4 id="verses-de-funcionalidades-novas">Versões de funcionalidades novas</h4>
+
+  <h3 id="xx0">1.XX.0</h3>
+
+  <h4 id="verses-de-manuteno">Versões de manutenção</h4>
+
+  <h3 id="xx1-9">1.XX.(1-9)</h3>
+
+  <h4 id="verso-atual">Versão atual</h4>
+
+  <h3 id="section">1.2.0</h3>
+</section>
+
+<section data-background="#ffffff">
+  <p><img src="files/noosfero-development-cycle.svg" /></p>
+</section>
+
+<section>
+  <table><tr>
+<td style="vertical-align: top">
+
+<h2>Manutenção e desenvolvimento</h2>
+
+Dois branches:
+
+<ul>
+<li><b style="color:green">master</b> com o desenvolvimento de novas funcionalidades</li>
+<li><b style="color:yellow">stable</b> com correções de bugs</li>
+</ul>
+
+</td>
+<td><img src="files/git-tree.png" style="background:none;border:0;box-shadow:none" /></td>
+</tr></table>
+</section>
+
+<section>
+  <section>
+    <h2 id="verso-010">Versão 0.1.0</h2>
+
+    <h3 id="foi-a-primeira-verso-lanada-em-setembro-de-2007">Foi a primeira versão lançada em Setembro de 2007</h3>
+
+    <p>O Noosfero nasceu entre uma parceiria da Colivre com:</p>
+
+    <ul>
+      <li>Fórum Brasileiro de Economia Solidária</li>
+      <li>Ynternet.org Fondation (Suiça)</li>
+    </ul>
+
+    <p><img src="files/fbes.jpg" />
+<img src="files/ynternet-org.png" style="background: white" /></p>
+  </section>
+  <section>
+    <h2 id="cirandasnet">Cirandas.net</h2>
+
+    <h4 id="frum-brasileiro-de-economia-solidria">Fórum Brasileiro de Economia Solidária</h4>
+
+    <p>Objetivo: “Fortalecer os empreendimentos e divulgar a Economia Solidária”</p>
+
+    <h2 id="zen3net">Zen3.net</h2>
+
+    <h4 id="ynternetorg-fondation-suia">Ynternet.org Fondation (Suiça)</h4>
+
+    <p>Objetivo: “Plataforma para exercício pleno da ‘cidadania digital’ (netizenship)”</p>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2 id="muita-gua-rolou">Muita água rolou…</h2>
+
+    <h3 id="e-hoje-atende">E hoje atende</h3>
+
+    <p>ASL, USP, Serpro, SGPR, Blogoosfero, OCEB, UNB, Qualipso, IPF, Kliceo, UCSal, MPOG</p>
+  </section>
+
+  <section data-background="http://noosfero.org/pub/Development/Blogoosfero/blogoosfero.jpg">
+    <blockquote style="background: black">
+      <h1 id="blogoosfero">Blogoosfero</h1>
+
+      <p>http://blogoosfero.cc</p>
+    </blockquote>
+  </section>
+
+  <section data-background="http://noosfero.org/pub/Development/Cirandas/cirandas-home.jpg">
+    <blockquote style="background: black">
+      <h1 id="fbes">FBES</h1>
+
+      <p>http://cirandas.net</p>
+    </blockquote>
+  </section>
+
+  <section data-background="http://noosfero.org/pub/Development/Portal%2bUnB-FGA/portal-fga-home-mini.png">
+    <blockquote style="background: black">
+      <h1 id="unb">UNB</h1>
+
+      <p>http://fga.unb.br</p>
+    </blockquote>
+  </section>
+
+  <section data-background="http://noosfero.org/pub/Development/Stoa/stoa.jpg">
+    <blockquote style="background: black">
+      <h1 id="usp">USP</h1>
+
+      <p>https://social.stoa.usp.br</p>
+    </blockquote>
+  </section>
+
+  <section data-background="http://noosfero.org/pub/Development/SoftwareLivre/SoftwareLivre.png">
+    <blockquote style="background: black">
+      <h1 id="asl">ASL</h1>
+
+      <p>http://softwarelivre.org</p>
+    </blockquote>
+  </section>
+
+  <section data-background="http://noosfero.org/pub/Development/UCSal/ucsal-home.jpg">
+    <blockquote style="background: black">
+      <h1 id="ucsal">UCSAL</h1>
+
+      <p>http://www.ucsal.br</p>
+    </blockquote>
+  </section>
+</section>
+
+<section>
+  <h3 id="a-comunidade-noosfero-cresceu">A comunidade Noosfero cresceu</h3>
+
+  <p>“Estas instituições se tornam parceiras do projeto Noosfero e acabam
+parte da comunidade de usuários e desenvolvedores”</p>
+
+  <p><img src="files/noosfero-contributors-by-month.png" /></p>
+
+  <p><small>http://www.openhub.net/p/noosfero</small></p>
+</section>
+
+<section>
+  <h3 id="principais-funcionalidades-do-noosfero">Principais funcionalidades do Noosfero</h3>
+
+  <ul>
+    <li>Rede social
+      <ul>
+        <li>pessoas, comunidades e organizações</li>
+      </ul>
+    </li>
+    <li>CMS
+      <ul>
+        <li>pastas, artigos, RSS, imagens e arquivos</li>
+      </ul>
+    </li>
+    <li>Blog e notificação de comentários</li>
+    <li>Compartilhamento de interesses</li>
+    <li>Discussões temáticas</li>
+    <li>Agenda de eventos</li>
+    <li>Catálogo de serviços e produtos</li>
+  </ul>
+</section>
+
+<section>
+  <h2 id="arquitetura-do-noosfero">Arquitetura do Noosfero</h2>
+
+  <ul>
+    <li>Environment</li>
+    <li>Profile
+      <ul>
+        <li>Person</li>
+        <li>Community</li>
+        <li>Enterprise</li>
+      </ul>
+    </li>
+    <li>Article
+      <ul>
+        <li>TextileArticle</li>
+        <li>UploadedFile</li>
+        <li>Folder</li>
+        <li>Blog</li>
+      </ul>
+    </li>
+    <li>Block
+      <ul>
+        <li>MembersBlok</li>
+        <li>LinkListBlock
+<!-- TODO: criar diagrama --></li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section data-background="#ffffff">
+  <table><tr>
+<td style="vertical-align: top">
+<h2>Multitenancy</h2>
+
+Documentação sobre como instalar Noosfero com suporte a multitenancy:
+
+INSTALL.multitenancy.md
+</td>
+<td>
+<img src="http://noosfero.org/pub/Development/WebHome/noosfero-estrutura.svg" style="background:white; border:0; box-shadow:none" />
+</td>
+</tr></table>
+</section>
+
+<section>
+  <h3 id="criar-um-ambiente-de-denvolvimento">Criar um ambiente de denvolvimento</h3>
+
+  <pre><code class="bash">
+~$ git clone https://gitlab.com/noosfero/noosfero.git
+~$ cd noosfero
+~$ ./script/quick-start
+</code></pre>
+
+  <p>Esta forma de instalação é adequada para ambientes de desenvolvimento ou testes</p>
+
+  <h4 id="recomendao-utilizar-debian-wheezy">Recomendação utilizar Debian Wheezy</h4>
+</section>
+
+<section>
+  <section>
+    <h2 id="configurao-de-domnios">Configuração de domínios</h2>
+
+    <p>Edite o <code>/etc/hosts</code> e adicione a seguinte entrada:</p>
+
+    <p><code>127.0.0.1 noosfero.ufba</code></p>
+  </section>
+
+  <section>
+    <h2 id="configurao-de-domnios-1">Configuração de domínios</h2>
+
+    <p>Abra o console do Noosfero e execute o seguinte código:</p>
+
+    <pre><code class="ruby">
+$ rails console
+
+env = Environment.default
+domain = Domain.new(:name =&gt; 'noosfero.ufba', :is_default =&gt; true)
+env.domains &lt;&lt; domain
+</code></pre>
+  </section>
+
+  <section>
+    <h2 id="configurao-de-domnios-2">Configuração de domínios</h2>
+
+    <p>Reinicie o servidor de desenvolvimento</p>
+
+    <pre><code class="bash">
+$ ./script/development
+</code></pre>
+
+    <p>Este script inicia alguns serviços além do servidor Rails local:</p>
+
+    <ul>
+      <li>feed-updater</li>
+      <li>delayed_job</li>
+      <li>whenever</li>
+    </ul>
+  </section>
+
+</section>
+
+<section>
+  <section>
+    <h2 id="criar-usurio-administrador">Criar usuário administrador</h2>
+
+    <p>Abra o console do Noosfero e execute o seguinte código:</p>
+
+    <pre><code class="ruby">
+env = Environment.default
+admin = User.new({
+  :login =&gt; "adminuser",
+  :email =&gt; 'adminuser@localhost.localdomain',
+  :password =&gt; 'admin',
+  :password_confirmation =&gt; 'admin',
+  :environment =&gt; env,
+})
+admin.save
+admin.activate
+env.add_admin(admin.person)
+</code></pre>
+  </section>
+
+  <section>
+    <h2 id="criar-usurio-administrador-1">Criar usuário administrador</h2>
+
+    <p>Acesse http://localhost:3000</p>
+
+    <p><img src="files/screenshots/noosfero-login.png" /></p>
+  </section>
+</section>
+
+<section>
+  <h1 id="anlise-dos-logs">Análise dos logs</h1>
+
+  <ul>
+    <li>production.log</li>
+    <li>delayed_job.log</li>
+    <li>production_spammers.log</li>
+  </ul>
+
+  <pre><code class="bash">
+$ tail -f log/development.log
+</code></pre>
+</section>
+
+<section>
+  <p>Acompanhamento de excessões</p>
+
+  <p>gem install exception_notification -v 1.0.20090728</p>
+
+  <p>Em config/noosfero.yml
+production:
+  exception_recipients: [admin@example.com, you@example.com]</p>
+</section>
+
+<section>
+  <p>Awstats</p>
+
+  <p>Configuração do Awstats</p>
+</section>
+
+<!--
+
+Análise de logs rails log analizer
+
+Monitoramento com New Relic
+
+<div class="step slide" data-x="1000" data-y="0">
+1. Instalação;
+  * Instalação automatizada via pacote Debian, ambientes de produção
+    * Registro e configuração de domínios
+    * Definição e aplicação de temas de ambientes e comunidades
+    * Configurações para envio de emails
+</div>
+
+<div class="step slide" data-x="2000" data-y="0">
+1. Manutenção;
+  * Atualização do Noosfero via pacote Debian
+  * Atualização do Noosfero via repositório
+  * Scripts noosfero-console, noosfero-plugins
+</div>
+
+<div class="step slide" data-x="3000" data-y="0">
+1. Administração Noosfero;
+  * Painel de controle do ambiente
+  * Habilitar/desabilitar funcionalidades de ambiente
+  * Instalação e ativação de chat
+</div>
+
+<div class="step slide" data-x="4000" data-y="0">
+1. Monitoramento;
+  * Plugin Google Analytics
+  * Plugin Piwik
+  * Exception Notification
+</div>
+
+<div class="step slide" data-x="5000" data-y="0">
+1. Backup;
+  * Dump do banco de dados
+  * Arquivos de uploads de usuários
+</div>
+
+<div class="step slide" data-x="6000" data-y="0">
+1. Resolvendo problemas
+  * Pedindo ajuda da comunidade IRC Freenode #noosfero e #noosfero-br
+  * Listas de discussão noosfero-br e noosfero-dev (ingles)
+  * Comunidade Noosfero
+  * Contribuindo com o Noosfero, merge-request
+</div>
+
+<div id="fim" class="step slide" data-x="14000" data-y="0" data-scale="10">
+   <div class="centralizado">
+   <h1>obrigado!</h1>
+   <h3>http://joenio.me</h3>
+   <h4>joenio@colivre.coop.br</h4>
+   <h5>esta apresentação foi feita com o software livre impress.js</h5>
+   <h5>background utilizado: http://subtlepatterns.com</h5>
+   </div>
+</div>
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/tHJblnBnBg4" frameborder="0" allowfullscreen></iframe>
+
+Teaser do Noosfero exibido durante a cerimônia de entrega de troféus para os
+vencedores do 9º Prêmio Cooperativa do Ano promovido pelo Sistema OCB. 
+A Colivre foi a vencedora na categoria "Inovação e Tecnologia".
+
+Conheça o Cirandas.net: a rede social da Economia Solidári
+https://www.youtube.com/watch?v=RI3ZU6bPxiI
+
+Entrevista com o Professor Adriano Canabarro Teixeira sobre o Noosfero
+https://www.youtube.com/watch?v=RwSVqekyzpo
+-->
+
+    </div>
+  </div>
+  <script src="/javascript/reveal.js/lib/js/head.min.js"></script>
+  <script src="/javascript/reveal.js/js/reveal.js"></script>
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      fragments: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      // Optional reveal.js plugins
+      dependencies: [
+        { src: '/javascript/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: '/javascript/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: '/javascript/reveal.js/plugin/zoom-js/zoom.js', async: true },
+        { src: '/javascript/reveal.js/plugin/notes/notes.js', async: true }
+      ]
+    });
+  </script>
+</body>
+</html>

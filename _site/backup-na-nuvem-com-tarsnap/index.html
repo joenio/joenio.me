@@ -113,7 +113,8 @@ tarsnap, com ele é possível de maneira simples definir uma política de reten�
 usando um arquivo de configuração localizado em <code>/etc/tarsnapper.conf</code>. Veja um
 exemplo:</p>
 
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1"># fazer backup diario e reter:</span>
+<div class="highlight">
+  <pre><code class="language-yaml" data-lang="yaml"><span class="c1"># fazer backup diario e reter:</span>
 <span class="c1"># a cada semana (7 dias)</span>
 <span class="c1"># a cada mes (30 dias)</span>
 <span class="c1"># a cada semestre (180 dias)</span>
@@ -133,16 +134,19 @@ exemplo:</p>
   <span class="l-Scalar-Plain">foswiki</span><span class="p-Indicator">:</span>
     <span class="l-Scalar-Plain">sources</span><span class="p-Indicator">:</span>
       <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">/var/lib/foswiki/data</span>
-      <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">/var/lib/foswiki/pub</span></code></pre></div>
+      <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">/var/lib/foswiki/pub</span></code></pre>
+</div>
 
 <p>O tarsnapper deve ser agendado no cron, eu sugiro executar ele diariamente,
 para isso crie o arquivo <code>/etc/cron.daily/tarsnapper</code> com o seguinte conteúdo:</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="c">#!/bin/sh</span>
+<div class="highlight">
+  <pre><code class="language-sh" data-lang="sh"><span class="c">#!/bin/sh</span>
 <span class="c"># Start in the root filesystem, make SElinux happy</span>
 <span class="nb">cd</span> /
 
-tarsnapper -o configfile /etc/tarsnap.conf -c /etc/tarsnapper.conf make &gt;&gt; /var/log/tarsnapper.log 2&gt;<span class="p">&amp;</span>1</code></pre></div>
+tarsnapper -o configfile /etc/tarsnap.conf -c /etc/tarsnapper.conf make &gt;&gt; /var/log/tarsnapper.log 2&gt;<span class="p">&amp;</span>1</code></pre>
+</div>
 
 <p>Dê permissão de execução a este arquivo, isto vai fazer o cron vai rodar o
 tarsnapper diariamente executando o tarsnap para cada job presente no arquivo

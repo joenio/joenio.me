@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Debian GNU/Linux | Joenio Costa</title>
+  <meta name="author" content="Joenio Costa" />
+  <link rel="stylesheet" href="/javascript/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="/javascript/reveal.js/css/theme/black.css" id="theme">
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="/javascript/reveal.js/lib/css/zenburn.css">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '/javascript/reveal.js/css/print/pdf.css' : '/javascript/reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="/javascript/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section>
+  <h1 id="debian-gnulinux">Debian GNU/Linux</h1>
+  <p><img src="files/debian.png" style="background: white" /></p>
+
+  <p>O Sistema Operacional Universal</p>
+</section>
+
+<section data-background="/slides/files/backgrounds/debian-lines.png">
+  <h1 id="debian">Debian</h1>
+
+  <ul>
+    <li>Lançado em 1993</li>
+    <li>Criado para ser uma distribuição Linux a ser mantida de uma maneira aberta, segundo o espírito do Linux e do GNU</li>
+    <li>Em 1994 e 1995 o sistema dpkg ganhou notoriedade</li>
+    <li>O projeto tem uma enorme comunidade de desenvolvedores trabalhando sob um contrato social</li>
+  </ul>
+</section>
+
+<section data-background="/slides/files/backgrounds/debian-lines.png" data-theme="sky">
+  <h1 id="verses-do-debian">Versões do Debian</h1>
+
+  <p>O ciclo de desenvolvimento das versões do Debian tem três fases</p>
+
+  <ul>
+    <li><em>unstable</em> (instável) = Sid</li>
+    <li><em>testing</em> (teste) = Stretch</li>
+    <li><em>stable</em> (estável) = Jessie (8.0)</li>
+  </ul>
+</section>
+
+<section data-background="/slides/files/backgrounds/debian-lines.png">
+  <h1 id="sistema-de-pacotes">Sistema de pacotes</h1>
+
+  <ul>
+    <li>Desenvolvedor Debian mantém pacotes</li>
+    <li>“Upstream” é o desenvolvedor/autor do software</li>
+    <li>Cada novo upload entra na versão “unstable”</li>
+    <li>Após algum tempo de testes entra no “testing”</li>
+  </ul>
+</section>
+
+<section data-background="/slides/files/backgrounds/debian-lines.png">
+  <h1 id="ferramentas">Ferramentas</h1>
+
+  <ul>
+    <li>dpkg</li>
+    <li>Apt (apt-get, apt-cache, …)</li>
+    <li>Aptitude</li>
+    <li>Synaptic</li>
+  </ul>
+</section>
+
+<section data-background="/slides/files/backgrounds/debian-lines.png">
+  <h4 id="dpkg">dpkg</h4>
+
+  <pre><code class="bash">
+~# dpkg -i libjs-impress_0.5.3-1_all.deb
+</code></pre>
+
+  <h4 id="apt">apt</h4>
+
+  <pre><code class="bash">
+~# apt-cache search impress.js
+libjs-impress - JavaScript library to make animated presentations
+</code></pre>
+
+  <pre><code class="bash">
+~# apt-get install libjs-impress
+</code></pre>
+
+  <h4 id="aptitude">aptitude</h4>
+
+  <pre><code class="bash">
+~# aptitude search libjs-impress
+i libjs-impress - JavaScript library to make animated presentations
+</code></pre>
+
+  <pre><code class="bash">
+~# aptitude install libjs-impress
+</code></pre>
+
+</section>
+
+<section data-background="/slides/files/backgrounds/debian-lines.png">
+  <h2 id="repositrios-de-pacotes-debian">Repositórios de pacotes Debian</h2>
+
+  <pre><code class="bash">
+~# cat /etc/apt/sources.list
+
+deb http://ftp.debian.org/debian/ jessie main
+deb-src http://ftp.debian.org/debian/ jessie main
+</code></pre>
+
+  <h3 id="backports">Backports</h3>
+
+  <pre><code class="bash">
+~# cat /etc/apt/sources.list.d/wheezy-backports.list
+
+deb http://http.debian.net/debian wheezy-backports main
+</code></pre>
+
+  <h3 id="repositrio-do-noosfero">Repositório do Noosfero</h3>
+
+  <pre><code class="bash">
+~# cat /etc/apt/sources.list.d/noosfero.list
+
+deb http://download.noosfero.org/debian/wheezy-1.2 ./
+deb-src http://download.noosfero.org/debian/wheezy-1.2 ./
+</code></pre>
+</section>
+
+<section data-background="/slides/files/backgrounds/debian-lines.png">
+  <h2 id="anatomia-de-um-pacote-debian">Anatomia de um pacote Debian</h2>
+
+  <pre><code class="bash">
+~# vim libjs-impress_0.5.3-1_all.deb
+</code></pre>
+
+  <p><img src="files/screenshots/deb-vim.png" />
+<small>debPlugin.vim – a Vim plugin for browsing debian packages</small></p>
+</section>
+
+<section data-background="/slides/files/backgrounds/debian-lines.png">
+  <h2 id="control">* ./control</h2>
+
+  <p><img src="files/screenshots/libjs-impress-deb-control.png" /></p>
+</section>
+
+<section data-background="/slides/files/backgrounds/wheezy-packages-graph.png">
+  <h1 id="consistncia">Consistência</h1>
+
+  <table><tr>
+<td style="vertical-align: middle">
+<p class="fragment" style="background: black">Evite instalar qualquer .deb que você encontrar por aí</p>
+<p class="fragment" style="background: black">Não instale nada "na mão" usando `make` e `make install`</p>
+<p class="fragment" style="background: black">Mantenha seu sistema atualizado</p>
+</td>
+<td>
+<img src="/slides/files/stickers/screamin-jay-hawkins.png" style="border:0;background:none" />
+</td>
+</tr></table>
+</section>
+
+<section data-background="/slides/files/backgrounds/debian-lines.png">
+  <h2 id="servidor-web-apache">Servidor web, apache</h2>
+
+  <p>Processa pedidos HTTP e responde (usualmente) HTML</p>
+
+  <pre><code class="bash">
+~# apt-get install apache2
+</code></pre>
+</section>
+
+<section data-background="/slides/files/backgrounds/debian-lines.png">
+  <h2 id="servidor-de-aplicao-thin">Servidor de aplicação, thin</h2>
+
+  <p>Servidor web de aplicação Ruby</p>
+
+  <pre><code class="bash">
+~# apt-get install thin
+</code></pre>
+</section>
+
+<section data-background="/slides/files/backgrounds/debian-lines.png">
+  <h2 id="banco-de-dados-postgresql">Banco de dados, postgresql</h2>
+
+  <p>Banco de dados relacional</p>
+
+  <pre><code class="bash">
+~# apt-get install postgresql
+</code></pre>
+</section>
+
+<section data-background="/slides/files/backgrounds/debian-lines.png">
+  <h2 id="cache-de-pginas-varnish">Cache de páginas, varnish</h2>
+
+  <p>Cache HTML para sites com alto volume de tráfego</p>
+
+  <pre><code class="bash">
+~# apt-get install varnish
+</code></pre>
+</section>
+
+<section data-background="/slides/files/backgrounds/debian-lines.png">
+  <h2 id="cache-de-objetos-memcached">Cache de objetos, memcached</h2>
+
+  <p>Cache em memória de objetos de aplicação</p>
+
+  <pre><code class="bash">
+~# apt-get install memcached
+</code></pre>
+</section>
+
+<section data-background="/slides/files/backgrounds/debian-lines.png">
+  <h2 id="servidor-de-email-mta-exim4">Servidor de email (MTA), exim4</h2>
+
+  <p>Agente de transporte de e-mail</p>
+
+  <pre><code class="bash">
+~# apt-get install exim4
+</code></pre>
+</section>
+
+<section data-background="/slides/files/backgrounds/debian-lines.png">
+  <h2 id="servidor-de-chat-ejabberd">Servidor de chat, ejabberd</h2>
+
+  <p>Servidor de chat XMPP/Jabber escrito em Erlang</p>
+
+  <pre><code class="bash">
+~# apt-get install ejabberd
+</code></pre>
+</section>
+
+<section data-background="#c4a000">
+  <h3 id="obrigado">Obrigado!</h3>
+
+  <p>joenio@colivre.coop.br</p>
+
+  <p><strong>Dúvidas?</strong></p>
+</section>
+
+    </div>
+  </div>
+  <script src="/javascript/reveal.js/lib/js/head.min.js"></script>
+  <script src="/javascript/reveal.js/js/reveal.js"></script>
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      fragments: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      // Optional reveal.js plugins
+      dependencies: [
+        { src: '/javascript/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: '/javascript/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: '/javascript/reveal.js/plugin/zoom-js/zoom.js', async: true },
+        { src: '/javascript/reveal.js/plugin/notes/notes.js', async: true }
+      ]
+    });
+  </script>
+</body>
+</html>

@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Como adicionar virtualhost aos logs do Varnish | Joenio Costa</title>
+    <title>Slides | Joenio Costa</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
-    <link rel="canonical" href="http://joenio.me/como-adicionar-virtualhost-aos-logs-do-varnish">
+    <link rel="canonical" href="http://joenio.me/slides/">
     <link rel="alternate" type="application/rss+xml" title="Joenio Costa | Feed" href="/feed.xml" />
 
     <!-- Custom CSS -->
@@ -31,78 +31,23 @@
 
   <div class="page-content">
     <div class="wrap">
-      <div class="post">
-        <header class="post-header">
-          <h1>Como adicionar virtualhost aos logs do Varnish</h1>
-          <p class="meta">
-Aug 15, 2015
- • debian
-</p>
-
+      <div class="page">
+        <header class="page-header">
+          <h1>Slides</h1>
         </header>
-        <article class="post-content">
-        <p><img src="/files/trooper-segurando-caneta-fundo-verde.jpg" alt="Clone trooper segurando caneta" /></p>
+        <article class="page-inner-content">
+        <h2 id="meus-slides-e-apresentaes">Meus slides e apresentações</h2>
 
-<p>Há algum tempo atrás escrevi um post <a href="http://softwarelivre.org/joenio/blog/awstats-varnish-e-virtualhosts">mostrando como configurar o
-<code>Varnish</code></a> para escrever logs num formato
-modificado do <a href="http://httpd.apache.org/docs/2.4/logs.html#combined"><em>Combined Log Format</em></a> do <code>Apache</code>, esta modificação
-foi feita para adicionar o <em>virtualhost</em> <code>%v</code> no início de cada registro do log
-e na sintaxe do <code>Apache</code> se parece com o seguinte:</p>
-
-<div class="highlight">
-  <pre><code class="language-apache" data-lang="apache"><span class="nb">LogFormat</span> <span class="s2">&quot;%v %h %l %u %t \&quot;%r\&quot; %&gt;s %O \&quot;%{Referer}i\&quot; \&quot;%{User-Agent}i\&quot;&quot;</span> vhost_combined</code></pre>
-</div>
-
-<p>Isto foi feito com o <a href="http://github.com/joenio/varnishncsa-vhost">varnishncsa-vhost</a>, um script que faz
-o <code>Varnish</code> armazenar logs seguindo o formato acima, este script deveria estar
-obsoleto já que versões recentes do <code>Varnish</code> suportam customizar o formato dos
-logs através da opção <code>-F</code>, mas um problema no pacote Debian impede de fazer
-isto do “jeito certo”™.</p>
-
-<p>Este problema foi citado em <a href="http://giantdorks.org/alain/workaround-for-broken-varnishncsa-logging-due-to-shell-mishandling-of-spaces-in-log_format-variables">Workaround for broken varnishncsa logging due to
-shell mishandling of spaces in LOG_FORMAT variables</a> e algumas
-soluções foram sugeridas, mas todas elas tem um “ar” de armengue. O problema já
-foi relatado no Debian em <a href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=657449">#657449 varnishncsa: please add a config option to
-allow a custom logging format (patch)</a> mas ainda não foi
-solucionado.</p>
-
-<blockquote>
-  <p>Porque estou contando esse “blá blá blá”?</p>
-</blockquote>
-
-<p>Recentemente precisei alterar o formato dos logs do <code>Varnish</code> em um servidor de
-produção e acabei utilizando o <code>varnishncsa-vhost</code> novamente e ele funcionou
-muito bem, isto me salvou dos sedutores “armengues que quebram na próxima
-atualização”.</p>
-
-<p>Então se isto for útil para você de alguma forma utilize o repositório abaixo,
-eu subi uma nova versão do pacote Debian do <code>varnishncsa-vhost</code> lá:</p>
-
-<div class="highlight">
-  <pre><code class="language-sourceslist" data-lang="sourceslist"><span class="k">deb</span> <span class="s">http://debian.joenio.me</span> <span class="kp">unstable/</span></code></pre>
-</div>
-
+<ul>
+  <li><a href="/slides/colivre.html">Breve histórico da cooperativa Colivre</a></li>
+  <li><a href="/slides/debian.html">Debian, o sistema operacional universal</a></li>
+  <li><a href="/slides/noosfero.html">Mini-curso de Noosfero</a></li>
+  <li><a href="/slides/ruby-on-rails.html">Ruby On Rails</a></li>
+  <li><a href="/slides/software-livre.html">Software Livre</a></li>
+  <li><a href="/slides/integracao-r-project-latex.html">Mini-curso de integração entre R-Project e LaTeX</a></li>
+</ul>
 
         </article>
-          <footer class="post-comments">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-      /* * * CONFIGURATION VARIABLES * * */
-      var disqus_shortname = 'joenio';
-      var disqus_url = 'http://joenio.me/como-adicionar-virtualhost-aos-logs-do-varnish';
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-    </script>
-    <noscript>
-      Please enable JavaScript to view the
-      <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
-    </noscript>
-  </footer>
-
       </div>
     </div>
   </div>

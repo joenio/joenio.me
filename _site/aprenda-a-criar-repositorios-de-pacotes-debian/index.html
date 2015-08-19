@@ -82,10 +82,10 @@ de uma solução proposta inicialmente por <em>Stefano Zacchiroli</em> em seu bl
 <a href="http://upsilon.cc/~zack/blog/posts/2009/04/howto:_uploading_to_people.d.o_using_dput">howto: uploading to people.d.o using dput</a>.</p>
 
 <div class="alert alert-warning">
-<strong>Atenção!</strong>
+  <p><strong>Atenção!</strong>
 <em>Todas as instruções a seguir são baseadas em meu próprio ambiente, isto
 inclui nomes de usuários, domínios, diretórios, etc. Você deve adaptar estas
-informações com base em sua realidade.</em>
+informações com base em sua realidade.</em></p>
 </div>
 
 <h2 id="configurando-o-servidor-para-receber-pacotes">Configurando o servidor para receber pacotes</h2>
@@ -118,7 +118,8 @@ $ mkdir -p ~/debian.joenio.me/mini-dinstall/incoming
 
 <p>Crie o arquivo <code>~/.mini-dinstall.conf</code>:</p>
 
-<div class="highlight"><pre><code class="language-ini" data-lang="ini"><span class="k">[DEFAULT]</span>
+<div class="highlight">
+  <pre><code class="language-ini" data-lang="ini"><span class="k">[DEFAULT]</span>
 <span class="na">mail_on_success</span> <span class="o">=</span> <span class="s">false</span>
 <span class="na">incoming_permissions</span> <span class="o">=</span> <span class="s">0750</span>
 <span class="na">architectures</span> <span class="o">=</span> <span class="s">all, i386, amd64</span>
@@ -128,7 +129,8 @@ $ mkdir -p ~/debian.joenio.me/mini-dinstall/incoming
 <span class="na">generate_release</span> <span class="o">=</span> <span class="s">1</span>
 <span class="na">release_label</span> <span class="o">=</span> <span class="s">Joenio</span>
 <span class="na">release_description</span> <span class="o">=</span> <span class="s">Unofficial Debian packages maintained by Joenio Costa</span>
-<span class="na">verify_sigs</span> <span class="o">=</span> <span class="s">0</span></code></pre></div>
+<span class="na">verify_sigs</span> <span class="o">=</span> <span class="s">0</span></code></pre>
+</div>
 
 <h2 id="preparando-a-estao-de-trabalho-para-enviar-pacotes">Preparando a estação de trabalho para enviar pacotes</h2>
 
@@ -157,8 +159,8 @@ $ gpg --armor --output signing.asc --export D5609CBE
 </pre>
 
 <div class="alert alert-warning">
-<strong>D5609CBE</strong> é a minha chave, substitua este valor pelo
-identificador da sua própria chave.
+  <p><strong>D5609CBE</strong> é a minha chave, substitua este valor pelo
+identificador da sua própria chave.</p>
 </div>
 
 <p>Copie o arquivo <code>signing.asc</code> para o servidor:</p>
@@ -171,13 +173,15 @@ $ scp signing.asc debian.joenio.me:~/debian.joenio.me/
 
 <p>Crie arquivo <code>~/.dput.cf</code> em seu <code>$HOME</code>:</p>
 
-<div class="highlight"><pre><code class="language-ini" data-lang="ini"><span class="k">[debian.joenio.me]</span>
+<div class="highlight">
+  <pre><code class="language-ini" data-lang="ini"><span class="k">[debian.joenio.me]</span>
 <span class="na">fqdn</span> <span class="o">=</span> <span class="s">debian.joenio.me</span>
 <span class="na">method</span> <span class="o">=</span> <span class="s">scp</span>
 <span class="na">login</span> <span class="o">=</span> <span class="s">*</span>
 <span class="na">incoming</span> <span class="o">=</span> <span class="s">~/debian.joenio.me/mini-dinstall/incoming</span>
 <span class="na">allow_unsigned_uploads</span> <span class="o">=</span> <span class="s">0</span>
-<span class="na">post_upload_command</span> <span class="o">=</span> <span class="s">ssh debian.joenio.me mini-dinstall -b &amp;&amp; sign-remote --no-batch debian.joenio.me:debian.joenio.me/unstable/Release</span></code></pre></div>
+<span class="na">post_upload_command</span> <span class="o">=</span> <span class="s">ssh debian.joenio.me mini-dinstall -b &amp;&amp; sign-remote --no-batch debian.joenio.me:debian.joenio.me/unstable/Release</span></code></pre>
+</div>
 
 <p>Os pacotes serão assinados com a chave <code>GnuPG</code> ao serem enviados pelo <code>dput</code> ao
 servidor. Isso será feito pelo script <code>sign-remote</code> disponível
@@ -219,14 +223,16 @@ acesso via <code>HTTP</code> usando o servidor web <a href="http://nginx.org">Ng
 
 <p>Crie o arquivo de configuração <code>/etc/nginx/sites-available/debian.joenio.me</code>:</p>
 
-<div class="highlight"><pre><code class="language-nginx" data-lang="nginx"><span class="k">server</span> <span class="p">{</span>
+<div class="highlight">
+  <pre><code class="language-nginx" data-lang="nginx"><span class="k">server</span> <span class="p">{</span>
   <span class="kn">server_name</span> <span class="s">debian.joenio.me</span><span class="p">;</span>
   <span class="kn">access_log</span> <span class="s">/var/log/nginx/debian.joenio.me.access.log</span><span class="p">;</span>
   <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
     <span class="kn">root</span> <span class="s">/home/joenio/debian.joenio.me</span><span class="p">;</span>
     <span class="kn">autoindex</span> <span class="no">on</span><span class="p">;</span>
   <span class="p">}</span>
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span></code></pre>
+</div>
 
 <p>Habilite o arquivo de configuração e reinicie o serviço:</p>
 
@@ -250,8 +256,10 @@ disponíveis no seguinte endereço:</p>
 <p>Para usar este repositorio adicione as seguintes entradas no
 <code>/etc/apt/sources.list</code> do computador local:</p>
 
-<div class="highlight"><pre><code class="language-sourceslist" data-lang="sourceslist"><span class="k">deb</span> <span class="s">http://debian.joenio.me</span> <span class="kp">unstable/</span>
-<span class="k">deb-src</span> <span class="s">http://debian.joenio.me</span> <span class="kp">unstable/</span></code></pre></div>
+<div class="highlight">
+  <pre><code class="language-sourceslist" data-lang="sourceslist"><span class="k">deb</span> <span class="s">http://debian.joenio.me</span> <span class="kp">unstable/</span>
+<span class="k">deb-src</span> <span class="s">http://debian.joenio.me</span> <span class="kp">unstable/</span></code></pre>
+</div>
 
 <p>Adicione a chave de assinatura ao banco de dados de segurança do <code>APT</code>:</p>
 
@@ -283,11 +291,11 @@ para criar repositório pessoal de pacotes Debian e pode ser uma boa alternativa
 para o setup descrito aqui neste post.</p>
 
 <div class="alert alert-info">
-<strong>Sobre a foto no título deste post:</strong>
+  <p><strong>Sobre a foto no título deste post:</strong>
 <em>Os cubos (pacotes) de papel utilizados na imagem foram feitos seguindo o tutorial
 <a href="http://pt.wikihow.com/Fazer-um-Cubo-de-Origami">
-"Como Fazer um Cubo de Origami"
-</a>.</em>
+“Como Fazer um Cubo de Origami”
+</a>.</em></p>
 </div>
 
 
