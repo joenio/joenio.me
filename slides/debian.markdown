@@ -49,68 +49,68 @@ O ciclo de desenvolvimento das versões do Debian tem três fases
 <section data-background="/slides/files/backgrounds/debian-lines.png">
 #### dpkg
 
-{% highlight bash %}
+<pre><code class="bash">
 ~# dpkg -i libjs-impress_0.5.3-1_all.deb
-{% endhighlight %}
+</code></pre>
 
 #### apt
 
-{% highlight bash %}
+<pre><code class="bash">
 ~# apt-cache search impress.js
 libjs-impress - JavaScript library to make animated presentations
-{% endhighlight %}
+</code></pre>
 
-{% highlight bash %}
+<pre><code class="bash">
 ~# apt-get install libjs-impress
-{% endhighlight %}
+</code></pre>
 
 #### aptitude
 
-{% highlight bash %}
+<pre><code class="bash">
 ~# aptitude search libjs-impress
 i libjs-impress - JavaScript library to make animated presentations
-{% endhighlight %}
+</code></pre>
 
-{% highlight bash %}
+<pre><code class="bash">
 ~# aptitude install libjs-impress
-{% endhighlight %}
+</code></pre>
 
 </section>
 
 <section data-background="/slides/files/backgrounds/debian-lines.png">
 ## Repositórios de pacotes Debian
 
-{% highlight bash %}
+<pre><code class="bash">
 ~# cat /etc/apt/sources.list
 
 deb http://ftp.debian.org/debian/ jessie main
 deb-src http://ftp.debian.org/debian/ jessie main
-{% endhighlight %}
+</code></pre>
 
 ### Backports
 
-{% highlight bash %}
+<pre><code class="bash">
 ~# cat /etc/apt/sources.list.d/wheezy-backports.list
 
 deb http://http.debian.net/debian wheezy-backports main
-{% endhighlight %}
+</code></pre>
 
 ### Repositório do Noosfero
 
-{% highlight bash %}
+<pre><code class="bash">
 ~# cat /etc/apt/sources.list.d/noosfero.list
 
 deb http://download.noosfero.org/debian/wheezy-1.2 ./
 deb-src http://download.noosfero.org/debian/wheezy-1.2 ./
-{% endhighlight %}
+</code></pre>
 </section>
 
 <section data-background="/slides/files/backgrounds/debian-lines.png">
 ## Anatomia de um pacote Debian
 
-{% highlight bash %}
+<pre><code class="bash">
 ~# vim libjs-impress_0.5.3-1_all.deb
-{% endhighlight %}
+</code></pre>
 
 <img src="files/screenshots/deb-vim.png" />
 <small>debPlugin.vim -- a Vim plugin for browsing debian packages</small>
@@ -142,9 +142,9 @@ deb-src http://download.noosfero.org/debian/wheezy-1.2 ./
 
 Processa pedidos HTTP e responde (usualmente) HTML
 
-{% highlight bash %}
+<pre><code class="bash">
 ~# apt-get install apache2
-{% endhighlight %}
+</code></pre>
 </section>
 
 <section data-background="/slides/files/backgrounds/debian-lines.png">
@@ -152,9 +152,9 @@ Processa pedidos HTTP e responde (usualmente) HTML
 
 Servidor web de aplicação Ruby
 
-{% highlight bash %}
+<pre><code class="bash">
 ~# apt-get install thin
-{% endhighlight %}
+</code></pre>
 </section>
 
 <section data-background="/slides/files/backgrounds/debian-lines.png">
@@ -162,9 +162,9 @@ Servidor web de aplicação Ruby
 
 Banco de dados relacional
 
-{% highlight bash %}
+<pre><code class="bash">
 ~# apt-get install postgresql
-{% endhighlight %}
+</code></pre>
 </section>
 
 <section data-background="/slides/files/backgrounds/debian-lines.png">
@@ -172,9 +172,9 @@ Banco de dados relacional
 
 Cache HTML para sites com alto volume de tráfego
 
-{% highlight bash %}
+<pre><code class="bash">
 ~# apt-get install varnish
-{% endhighlight %}
+</code></pre>
 </section>
 
 <section data-background="/slides/files/backgrounds/debian-lines.png">
@@ -182,9 +182,9 @@ Cache HTML para sites com alto volume de tráfego
 
 Cache em memória de objetos de aplicação
 
-{% highlight bash %}
+<pre><code class="bash">
 ~# apt-get install memcached
-{% endhighlight %}
+</code></pre>
 </section>
 
 <section data-background="/slides/files/backgrounds/debian-lines.png">
@@ -192,9 +192,9 @@ Cache em memória de objetos de aplicação
 
 Agente de transporte de e-mail
 
-{% highlight bash %}
+<pre><code class="bash">
 ~# apt-get install exim4
-{% endhighlight %}
+</code></pre>
 </section>
 
 <section data-background="/slides/files/backgrounds/debian-lines.png">
@@ -202,9 +202,9 @@ Agente de transporte de e-mail
 
 Servidor de chat XMPP/Jabber escrito em Erlang
 
-{% highlight bash %}
+<pre><code class="bash">
 ~# apt-get install ejabberd
-{% endhighlight %}
+</code></pre>
 </section>
 
 <section data-background="#c4a000">

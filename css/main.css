@@ -257,8 +257,8 @@ a:visited { color: #205caa; }
   margin: 30px 0;
 }
 
-.post-content ul,
-.post-content ol { padding-left: 20px; }
+.page-content ul, .post-content ul,
+.page-content ol, .post-content ol { padding-left: 20px; }
 
 .post pre,
 .post code {

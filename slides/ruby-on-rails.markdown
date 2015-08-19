@@ -5,6 +5,8 @@ title: Ruby On Rails
 <section>
 # Ruby On Rails
 
+<img src="files/rails.png" style="background:none;border:0;box-shadow:none"/>
+
 "Um framework livre para desenvolvimento de sites orientados a banco de dados"
 </section>
 
@@ -20,10 +22,10 @@ title: Ruby On Rails
 <section>
 # Hello World
 
-{% highlight bash %}
+<pre><code class="bash">
 ~# rails new exemplo
 ~# cd exemplo
 ~# bundle install
 ~# rails server
-{% endhighlight %}
+</code></pre>
 </section>
