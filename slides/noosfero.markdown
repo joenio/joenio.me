@@ -2,10 +2,17 @@
 title: Noosfero
 ---
 
-<section>
+<!--
+
+http://jindra12.deviantart.com/art/Ocean-211965086
+
+http://sparklestarcat.deviantart.com/art/Monument-keyboard-358167802
+-->
+
+<section data-background="http://orig03.deviantart.net/4647/f/2011/157/9/5/ocean_by_jindra12-d3i75b2.jpg">
 # Noosfero
 
-<img src="files/noosfero.png" style="background:none;border:0;box-shadow:none" />
+<img src="files/noosfero.png" />
 
 "Uma plataforma web livre para redes sociais e de economia solidária"
 </section>
@@ -68,6 +75,10 @@ Dois branches:
 
 <section>
 <section>
+<!-- 
+<section data-background="http://orig06.deviantart.net/bb02/f/2014/171/5/e/transformation_v2_by_drazebot-d7n5x0h.jpg" data-background-size="100%">
+http://drazebot.deviantart.com/art/Transformation-02-462170465 -->
+
 # Versões
 
 #### Versões de funcionalidades novas
@@ -81,6 +92,7 @@ Dois branches:
 #### Versão atual
 
 ### 1.2.0
+
 </section>
 <section data-background="#ffffff">
 <img src="files/noosfero-development-cycle.svg" class="stretch" />
@@ -336,6 +348,7 @@ Os pacotes do Noosfero seguem, com um certo "delay", a versão estável do
 Debian, hoje está em Debian Wheezy
 
 <pre><code class="ruby">
+# apt-get install postgresql
 # apt-get install noosfero noosfero-apache
 </code></pre>
 </section>
@@ -592,7 +605,7 @@ reverso de cache HTTP
 
 <span style="color:blue">http://www.varnish-cache.org</span>
 
-Siga a documentação em `INSTALL.varnish.md`
+Siga a documentação em `INSTALL.varnish.md` nos fontes do Noosfero
 </div>
 <!-- fonte do background: http://ayudawordpress.com/varnish-como-servicio-en-wordpress -->
 </section>
@@ -613,6 +626,214 @@ Siga a documentação em `INSTALL.varnish.md`
 </section>
 
 <section>
+<section>
+# Multitenancy
+
+Multitenancy é um princípio em arquitetura de software onde um única instancia
+de software rodando num servidor serve várias organizações, chamado tenants
+(inquilino)
+
+Com esta arquitetura o Noosfero isola os seguintes dados para cada Environment
+
+* Uploaded files
+* Database
+* Solr index
+* ActiveRecord#cache_key
+* Feed updater
+* Delayed Job Workers
+</section>
+
+<section>
+## Vamos popular o banco com alguns dados de teste 
+
+<p style="color:red">mas antes desabilite o envio de emails</p>
+
+Adicione a linha abaixo ao arquivo `config/environments/production.rb`
+
+<pre><code class="ruby">
+  config.action_mailer.delivery_method = :file
+</code></pre>
+</section>
+
+<section>
+## Vamos popular o banco com alguns dados de teste 
+
+#### script/sample-data
+
+<pre><code class="bash">
+# su - noosfero
+$ RAILS_ENV=production ./script/sample-data
+
+Creating categories: .........E...F....... done!
+Creating regions: ........................ done!
+Creating users: EEEEE....EEEEE............ done!
+...
+</code></pre>
+
+Este script cria categorias, usuários, perfils de comunidades, empreendimentos,
+artigos, textos, blogs, etc... com dados "aleatórios"
+</section>
+
+<section>
+### Migrar uma instalação Noosfero para Multitenancy
+
+Altere o arquivo `/etc/noosfero/database.yml`
+
+<pre><code class="yaml">
+ufba_production: &DEFAULT
+  adapter: postgresql
+  database: noosfero
+  encoding: unicode
+  username: noosfero
+  password: 547fjsJA
+  schema_search_path: public
+  domains:
+    - noosfero.ufba
+
+production:
+  <<: *DEFAULT
+</code></pre>
+<!-- *fix -->
+
+</section>
+
+<section>
+### Migrar uma instalação Noosfero para Multitenancy
+
+Criar um 'ambiente Rails' baseado em 'production' para o novo 'tenant' 'ufba_production'
+
+<pre><code class="bash">
+# cd ~noosfero
+# RAILS_ENV=production rake multitenancy:create
+</code></pre>
+
+Mova os arquivos de usuários e uploads:
+
+<pre><code class="bash">
+# mkdir public/articles/public
+# mv public/articles/0000 public/articles/public/
+
+# mkdir public/image_uploads/public
+# mv public/image_uploads/0000 public/image_uploads/public/
+
+# mkdir public/thumbnails/public
+# mv public/thumbnails/0000 public/thumbnails/public/
+</code></pre>
+<!--
+ TODO/IDEIA: criar um script noosfero-rake para ser utilizado em produção,
+como um alias para "RAILS_ENV=production rake ..." com isto eu executaria
+
+noosfero-rake multinenancy:create
+-->
+
+</section>
+
+
+<section>
+## Evitando links quebrados
+
+É possível que existam referências para conteúdos estáticos armazenados no
+sistema de arquivos, então é importante configurar o servidor web para evitar
+problemas
+
+Adicione as seguintes linhas à configuração do Apache:
+
+<pre><code class="apache">
+RewriteRule ^/articles(.+) /articles/public$1
+RewriteRule ^/image_uploads(.+) /image_uploads/public$1
+RewriteRule ^/thumbnails(.+) /thumbnails/public$1
+</code></pre>
+</section>
+
+<section>
+## Adicionando novos inquilinos (tenants)
+
+Adicione as configurações abaixo ao arquivo `/etc/noosfero/database.yml`
+
+<pre><code class="yaml">
+ripe_production:
+  adapter: postgresql
+  database: noosfero
+  encoding: unicode
+  username: noosfero
+  password: 547fjsJA
+  schema_search_path: ripe
+  domains:
+    - ripe.ufba
+</code></pre>
+
+Crie o `schema` do banco de dados
+
+<pre><code class="yaml">
+# su - postgres
+$ psql noosfero -c "CREATE SCHEMA ripe AUTHORIZATION noosfero"
+</code></pre>
+</section>
+<section>
+Adicione o domínio ao Apache, edite o arquivo `/etc/apache2/sites-enabled/noosfero` e adicione o seguinte
+
+<pre><code class="apache">
+ServerAlias ripe.ufba
+</code></pre>
+
+Prepare o banco de dados
+
+<pre><code class="bash">
+# cd ~noosfero
+# RAILS_ENV=production rake multitenancy:create
+# RAILS_ENV=ripe_production rake db:schema:load
+# RAILS_ENV=production rake db:migrate
+</code></pre>
+</section>
+<section>
+## Atualize as configurações do pound
+
+Edite o arquivo `/etc/pound/pound.cfg`
+
+<pre><code class="pound">
+Service
+  HeadRequire "Host:.*noosfero.ufba.*"
+  Redirect "https://noosfero.ufba"
+End
+Service
+  HeadRequire "Host:.*ripe.ufba.*"
+  Redirect "https://ripe.ufba"
+End
+</code></pre>
+</section>
+
+<section>
+## Novo ambiente pronto para ir "ao ar"
+
+Remova os logs do novo ambiente para evitar problemas de permissão e reinicie o Noosfero, o Apache e o Pound
+
+<pre><code class="bash">
+# rm /usr/share/noosfero/log/ripe_*
+# service noosfero restart
+# service apache2 restart
+# service pound restart
+</code></pre>
+</section>
+
+<section>
+### Cadastrando o novo ambiente (Environment) no banco de dados
+
+<pre><code class="bash">
+RAILS_ENV=production NOOSFERO_DOMAIN=ripe.ufba rake db:data:minimal
+</code></pre>
+</section>
+</section>
+
+<section>
+## Recuperando backup em um novo ambiente com multitenancy
+
+http://ratz.joenio.me/backup.tgz
+
+</section>
+
+<!--
+
+<section>
 * Instalar Noosfero com multitenancy
 * Criar 3 ambientes diferentes, cada um com um domínio diferente
   * noosfero.ufba
@@ -627,7 +848,6 @@ Siga a documentação em `INSTALL.varnish.md`
 <section>
 </section>
 
-<!--
 
  * Definição e aplicação de temas de ambientes e comunidades
 
