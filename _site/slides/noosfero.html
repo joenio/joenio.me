@@ -22,6 +22,7 @@
   <!--[if lt IE 9]>
   <script src="/javascript/reveal.js/lib/js/html5shiv.js"></script>
   <![endif]-->
+  <link rel="stylesheet" href="/css/revealjs.css">
 </head>
 <body>
   <div class="reveal">
@@ -48,17 +49,37 @@
 </section>
 
 <section>
-  <h2 id="o-desenvolvimento-ocorre-em-torno-do-gitlab">O desenvolvimento ocorre em torno do gitlab</h2>
+  <section>
+    <h2 id="o-desenvolvimento-ocorre-em-torno-do-gitlab">O desenvolvimento ocorre em torno do gitlab</h2>
 
-  <p>http://gitlab.com/noosfero/noosfero</p>
+    <p>http://gitlab.com/noosfero/noosfero</p>
 
-  <ul>
-    <li>Issues</li>
-    <li>Milestones</li>
-    <li>Merge Requests</li>
-  </ul>
+    <ul>
+      <li>Issues</li>
+      <li>Milestones</li>
+      <li>Merge Requests</li>
+    </ul>
 
-  <p>A metologia de desenvolvimento das equipes baseia-se em métodos ágeis e TDD</p>
+    <p>A metologia de desenvolvimento das equipes baseia-se em métodos ágeis e TDD</p>
+  </section>
+  <section>
+    <table><tr>
+<td style="vertical-align: top">
+
+<h2>Manutenção e desenvolvimento</h2>
+
+Dois branches:
+
+<ul>
+<li><b style="color:green">master</b> com o desenvolvimento de novas funcionalidades</li>
+<li><b style="color:yellow">stable</b> com correções de bugs</li>
+</ul>
+
+</td>
+<td><img src="files/git-tree.png" style="background:none;border:0;box-shadow:none" /></td>
+</tr></table>
+  </section>
+
 </section>
 
 <section>
@@ -80,41 +101,24 @@
 </section>
 
 <section>
-  <h1 id="verses">Versões</h1>
+  <section>
+    <h1 id="verses">Versões</h1>
 
-  <h4 id="verses-de-funcionalidades-novas">Versões de funcionalidades novas</h4>
+    <h4 id="verses-de-funcionalidades-novas">Versões de funcionalidades novas</h4>
 
-  <h3 id="xx0">1.XX.0</h3>
+    <h3 id="xx0">1.XX.0</h3>
 
-  <h4 id="verses-de-manuteno">Versões de manutenção</h4>
+    <h4 id="verses-de-manuteno">Versões de manutenção</h4>
 
-  <h3 id="xx1-9">1.XX.(1-9)</h3>
+    <h3 id="xx1-9">1.XX.(1-9)</h3>
 
-  <h4 id="verso-atual">Versão atual</h4>
+    <h4 id="verso-atual">Versão atual</h4>
 
-  <h3 id="section">1.2.0</h3>
-</section>
-
-<section data-background="#ffffff">
-  <p><img src="files/noosfero-development-cycle.svg" /></p>
-</section>
-
-<section>
-  <table><tr>
-<td style="vertical-align: top">
-
-<h2>Manutenção e desenvolvimento</h2>
-
-Dois branches:
-
-<ul>
-<li><b style="color:green">master</b> com o desenvolvimento de novas funcionalidades</li>
-<li><b style="color:yellow">stable</b> com correções de bugs</li>
-</ul>
-
-</td>
-<td><img src="files/git-tree.png" style="background:none;border:0;box-shadow:none" /></td>
-</tr></table>
+    <h3 id="section">1.2.0</h3>
+  </section>
+  <section data-background="#ffffff">
+    <p><img src="files/noosfero-development-cycle.svg" class="stretch" /></p>
+  </section>
 </section>
 
 <section>
@@ -149,60 +153,64 @@ Dois branches:
 </section>
 
 <section>
-  <section>
-    <h2 id="muita-gua-rolou">Muita água rolou…</h2>
+  <section data-background="files/backgrounds/waterfall.gif">
+    <div class="box-green">
+      <h2 id="muita-gua-rolou">Muita água rolou…</h2>
 
-    <h3 id="e-hoje-atende">E hoje atende</h3>
+      <h3 id="e-hoje-atende">E hoje atende</h3>
 
-    <p>ASL, USP, Serpro, SGPR, Blogoosfero, OCEB, UNB, Qualipso, IPF, Kliceo, UCSal, MPOG</p>
+      <p>ASL, USP, Serpro, SGPR, Blogoosfero, OCEB, UNB, Qualipso, IPF, Kliceo, UCSal, MPOG</p>
+    </div>
+
+    <!-- fonte do background https://plus.google.com/+AkanshaGautam/posts/1ujxYtPgd3z -->
   </section>
 
-  <section data-background="http://noosfero.org/pub/Development/Blogoosfero/blogoosfero.jpg">
-    <blockquote style="background: black">
+  <section data-background="files/screenshots/blogoosfero.jpg" data-transition="convex">
+    <div class="box-gray">
       <h1 id="blogoosfero">Blogoosfero</h1>
 
       <p>http://blogoosfero.cc</p>
-    </blockquote>
+    </div>
   </section>
 
-  <section data-background="http://noosfero.org/pub/Development/Cirandas/cirandas-home.jpg">
-    <blockquote style="background: black">
+  <section data-background="files/screenshots/cirandas.jpg" data-transition="convex">
+    <div class="box-gray">
       <h1 id="fbes">FBES</h1>
 
       <p>http://cirandas.net</p>
-    </blockquote>
+    </div>
   </section>
 
-  <section data-background="http://noosfero.org/pub/Development/Portal%2bUnB-FGA/portal-fga-home-mini.png">
-    <blockquote style="background: black">
+  <section data-background="files/screenshots/fga-unb.png" data-transition="convex">
+    <div class="box-gray">
       <h1 id="unb">UNB</h1>
 
       <p>http://fga.unb.br</p>
-    </blockquote>
+    </div>
   </section>
 
-  <section data-background="http://noosfero.org/pub/Development/Stoa/stoa.jpg">
-    <blockquote style="background: black">
+  <section data-background="files/screenshots/stoa.jpg" data-transition="convex">
+    <div class="box-gray">
       <h1 id="usp">USP</h1>
 
       <p>https://social.stoa.usp.br</p>
-    </blockquote>
+    </div>
   </section>
 
-  <section data-background="http://noosfero.org/pub/Development/SoftwareLivre/SoftwareLivre.png">
-    <blockquote style="background: black">
+  <section data-background="files/screenshots/softwarelivre.png" data-transition="convex">
+    <div class="box-gray">
       <h1 id="asl">ASL</h1>
 
       <p>http://softwarelivre.org</p>
-    </blockquote>
+    </div>
   </section>
 
-  <section data-background="http://noosfero.org/pub/Development/UCSal/ucsal-home.jpg">
-    <blockquote style="background: black">
+  <section data-background="files/screenshots/ucsal.jpg" data-transition="convex">
+    <div class="box-gray">
       <h1 id="ucsal">UCSAL</h1>
 
       <p>http://www.ucsal.br</p>
-    </blockquote>
+    </div>
   </section>
 </section>
 
@@ -302,6 +310,8 @@ INSTALL.multitenancy.md
   <section>
     <h2 id="configurao-de-domnios">Configuração de domínios</h2>
 
+    <p class="fragment grow highlight-red">(em ambientes de desenvolvimento)</p>
+
     <p>Edite o <code>/etc/hosts</code> e adicione a seguinte entrada:</p>
 
     <p><code>127.0.0.1 noosfero.ufba</code></p>
@@ -372,96 +382,377 @@ env.add_admin(admin.person)
 </section>
 
 <section>
-  <h1 id="anlise-dos-logs">Análise dos logs</h1>
+  <section>
+    <h2 id="instalao-via-pacote-debian">Instalação via pacote Debian</h2>
 
-  <ul>
-    <li>production.log</li>
-    <li>delayed_job.log</li>
-    <li>production_spammers.log</li>
-  </ul>
+    <p>(recomendado para uso em ambientes de produção)</p>
 
-  <pre><code class="bash">
+    <p><span style="color:blue">http://download.noosfero.org/debian</span></p>
+
+    <p>Os pacotes do Noosfero seguem, com um certo “delay”, a versão estável do
+Debian, hoje está em Debian Wheezy</p>
+
+    <pre><code class="ruby">
+# apt-get install noosfero noosfero-apache
+</code></pre>
+  </section>
+
+  <section>
+    <h3 id="criao-do-banco-de-dados">Criação do banco de dados</h3>
+
+    <p><img src="files/screenshots/noosfero-dbconfig.png" /></p>
+
+    <p>Cria um banco postgresql chamado “noosfero”</p>
+  </section>
+
+  <section>
+    <h3 id="senha-do-postgresql">Senha do postgresql</h3>
+
+    <p><img src="files/screenshots/noosfero-postgresql-password.png" /></p>
+
+    <p><small>recomenda-se deixar em branco para que o sistema gere uma senha aleatória</small></p>
+  </section>
+
+  <section>
+    <h3 id="registro-e-configurao-de-domnios">Registro e configuração de domínios</h3>
+
+    <p><img src="files/screenshots/noosfero-domain.png" /></p>
+
+    <p>Digite: noosfero.ufba</p>
+  </section>
+
+  <section>
+    <h3 id="configurao-para-envio-de-emails">Configuração para envio de emails</h3>
+
+    <p><img src="files/screenshots/noosfero-mta.png" /></p>
+  </section>
+
+  <section>
+    <h3 id="teste-o-acesso">Teste o acesso</h3>
+
+    <p>Acesse: http://noosfero.ufba/</p>
+
+    <p><img src="files/screenshots/noosfero.png" /></p>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h1 id="anlise-de-logs">Análise de logs</h1>
+
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>Produção</strong></td>
+          <td><strong>Desenvolvimento</strong></td>
+        </tr>
+        <tr>
+          <td>production.log</td>
+          <td>development.log</td>
+        </tr>
+        <tr>
+          <td>delayed_job.log</td>
+          <td>development_delayed_job.log</td>
+        </tr>
+        <tr>
+          <td>production_spammers.log</td>
+          <td>development_spammers.log</td>
+        </tr>
+        <tr>
+          <td>cron.log</td>
+          <td>cron.log</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <section>
+    <h3 id="capturando-ocorrncias-ao-vivo">Capturando ocorrências ao-vivo</h3>
+
+    <h2 id="tail-grep-">tail, grep, …</h2>
+
+    <pre><code class="bash">
 $ tail -f log/development.log
 </code></pre>
+
+    <pre><code class="bash">
+$ tail -f log/development.log | grep POST
+</code></pre>
+  </section>
+
+  <section>
+    <h3 id="analisando-performance">Analisando performance</h3>
+
+    <h2 id="request-log-analyzer">request-log-analyzer</h2>
+
+    <p><span style="color:blue">http://request-log-analyzer.com</span></p>
+
+    <p>Ferramenta de linha de comando para gerar relatório de performance a partir da
+análise de logs, suporta vários formatos (Rails, Merb, DelayedJob, Apache,
+NGINX, …)
+<img src="files/screenshots/request-log-analyzer.png" /></p>
+  </section>
+
+  <section>
+    <h2 id="request-log-analyzer-1">request-log-analyzer</h2>
+
+    <h4 id="instalando">Instalando</h4>
+
+    <pre><code class="bash">
+$ gem install request-log-analyzer
+</code></pre>
+
+    <p>Caso isto não funcione faça download em http://rubygems.org/gems/request-log-analyzer</p>
+
+    <pre><code class="bash">
+$ gem install request-log-analyzer-1.13.4.gem
+</code></pre>
+
+    <h4 id="executando">Executando</h4>
+
+    <pre><code class="bash">
+$ request-log-analyzer log/production.log
+</code></pre>
+
+    <p><small>Para gerar o relatório em HTML utilize os parâmetros: <code>--output html --file
+production.html</code></small></p>
+  </section>
 </section>
 
 <section>
-  <p>Acompanhamento de excessões</p>
+  <section>
+    <h2 id="backup-e-restore">Backup e restore</h2>
 
-  <p>gem install exception_notification -v 1.0.20090728</p>
+    <p>Adicione <strong><code>host: localhost</code></strong> em /etc/noosfero/database.yml:</p>
 
-  <p>Em config/noosfero.yml
+    <pre><code class="yaml">
 production:
-  exception_recipients: [admin@example.com, you@example.com]</p>
-</section>
+  adapter: postgresql
+  database: noosfero
+  encoding: unicode
+  username: noosfero
+  password: rgF2j7vDbVUR
+  host: localhost
+</code></pre>
 
-<section>
-  <p>Awstats</p>
+    <p>Logue como ‘noosfero’ e execute a task para gerar o backup:</p>
 
-  <p>Configuração do Awstats</p>
+    <pre><code class="bash">
+# su - noosfero
+$ rake backup
+</code></pre>
+
+  </section>
+
+  <section>
+    <h3 id="rake-backup">rake backup</h3>
+
+    <pre><code class="bash">
+noosfero@noosfero-debian-wheezy:~$ rake backup
+
+mkdir -p tmp/backup
+pg_dump -h localhost noosfero &gt; tmp/backup/2015-08-19-12:12.sql
+Senha: 
+tar chaf tmp/backup/2015-08-19-12:12.tar.gz tmp/backup/2015-0...
+rm -f tmp/backup/2015-08-19-12:12.sql
+****************************************************
+Backup in tmp/backup/2015-08-19-12:13.tar.gz !
+
+To restore, use:
+$ rake restore BACKUP=tmp/backup/2015-08-19-12:13.tar.gz
+****************************************************
+</code></pre>
+
+    <!-- **fix* -->
+
+    <p>Isto cria um arquivo com o dump do banco e todos os arquivos do ambiente
+Noosfero</p>
+  </section>
+
+  <section>
+    <h3 id="rake-restore">rake restore</h3>
+
+    <pre><code class="bash">
+# su - noosfero
+$ rake restore BACKUP=tmp/backup/2015-08-19-12:12.tar.gz
+
+WARNING: backups should be restored to an empty database, otherwise
+data from the backup may not be loaded properly.
+
+You can remove the existing database and create a new one with:
+
+$ sudo -u postgres dropdb -h localhost noosfero
+$ sudo -u postgres createdb -h localhost noosfero --owner noosfero
+
+Are you sure you want to continue (y/N)? 
+</code></pre>
+
+    <p>Mas antes: destrua o banco!</p>
+
+    <pre><code class="bash">
+# su - postgres
+$ dropdb noosfero
+$ createdb noosfero --owner noosfero
+</code></pre>
+    <!-- rgF2j7vDbVUR -->
+  </section>
+
+  <section>
+    <h1 id="limitaes">Limitações</h1>
+
+    <ul>
+      <li>Só é possível importar 1 ambiente</li>
+      <li>Se a sua instancia Noosfero já possui ambientes não será possível restaurar outros</li>
+    </ul>
+
+    <p><br /></p>
+
+    <h3 id="ideia-para-superar-esta-limitao">Ideia para superar esta limitação</h3>
+
+    <p>“Usar <code>multitenancy</code> e evoluir a implementação das tasks <code>backup</code> e <code>restore</code>
+para entender isto, assim teríamos um isolamento maior”</p>
+  </section>
+
+  <section>
+    <h2 id="criando-backup-na-mo">Criando backup “na mão”</h2>
+
+    <ul>
+      <li>Crie um dump do banco de dados</li>
+      <li>Copie os arquivos
+        <ul>
+          <li>public/articles</li>
+          <li>public/image_uploads</li>
+          <li>public/thumbnails</li>
+        </ul>
+      </li>
+    </ul>
+
+    <pre><code class="bash">
+# su - postgres
+$ pg_dump noosfero &gt; noosfero_dump.sql
+</code></pre>
+  </section>
 </section>
 
 <!--
 
-Análise de logs rails log analizer
+faltando arquivo /usr/share/noosfero/etc/pound.cfg
+
+-->
+<section>
+  <h2 id="scripts-de-linha-de-comando">Scripts de linha de comando</h2>
+
+  <p>(para ambientes de produção)</p>
+
+  <h3 id="noosfero-console">noosfero-console</h3>
+
+  <pre><code class="bash">
+# noosfero-console
+</code></pre>
+
+  <h3 id="noosfero-runner">noosfero-runner</h3>
+
+  <pre><code class="bash">
+# noosfero-runner "puts Environment.default.name"
+</code></pre>
+
+  <h3 id="noosfero-plugins">noosfero-plugins</h3>
+
+  <pre><code class="bash">
+# noosfero-plugins list
+</code></pre>
+</section>
+
+<section>
+  <section data-background="files/backgrounds/varnish.png">
+    <div class="box-blue">
+
+      <h2 id="instalando-varnish">Instalando varnish</h2>
+
+      <p>Varnish Cache é um acelerador de aplicações web, também conhecido como proxy
+reverso de cache HTTP</p>
+
+      <p><span style="color:blue">http://www.varnish-cache.org</span></p>
+
+      <p>Siga a documentação em <code>INSTALL.varnish.md</code></p>
+    </div>
+    <!-- fonte do background: http://ayudawordpress.com/varnish-como-servicio-en-wordpress -->
+  </section>
+  <section data-background="files/backgrounds/varnish.png" data-transition="convex">
+    <div class="box-blue">
+
+      <h2 id="instalando-varnish-1">Instalando varnish</h2>
+
+      <pre><code class="bash">
+# apt-get install varnish
+# apt-get install libapache2-mod-rpaf
+</code></pre>
+
+      <ul>
+        <li>Configure o Apache para escutar na porta <code>8080</code></li>
+        <li>Configure o Varnish para escutar na porta <code>80</code></li>
+      </ul>
+    </div>
+  </section>
+</section>
+
+<section>
+  <ul>
+    <li>Instalar Noosfero com multitenancy</li>
+    <li>Criar 3 ambientes diferentes, cada um com um domínio diferente
+      <ul>
+        <li>noosfero.ufba</li>
+        <li>ripe.ufba</li>
+        <li>netica.ufba</li>
+      </ul>
+    </li>
+    <li>Definir temas diferentes para cada ambiente</li>
+    <li>Criar 1 usuário administrador em cada um dos ambientes</li>
+    <li>Habilitar Piwik Plugin no servidor</li>
+    <li>Habilitar o Piwik Plugin em cada um dos ambientes</li>
+  </ul>
+</section>
+
+<section></section>
+
+<!--
+
+ * Definição e aplicação de temas de ambientes e comunidades
+
+Acompanhamento de excessões
+
+gem install exception_notification -v 1.0.20090728
+
+Em config/noosfero.yml
+production:
+  exception_recipients: [admin@example.com, you@example.com]
+
+Awstats
+
+Configuração do Awstats
 
 Monitoramento com New Relic
 
-<div class="step slide" data-x="1000" data-y="0">
-1. Instalação;
-  * Instalação automatizada via pacote Debian, ambientes de produção
-    * Registro e configuração de domínios
-    * Definição e aplicação de temas de ambientes e comunidades
-    * Configurações para envio de emails
-</div>
-
-<div class="step slide" data-x="2000" data-y="0">
 1. Manutenção;
   * Atualização do Noosfero via pacote Debian
   * Atualização do Noosfero via repositório
-  * Scripts noosfero-console, noosfero-plugins
-</div>
-
-<div class="step slide" data-x="3000" data-y="0">
 1. Administração Noosfero;
   * Painel de controle do ambiente
   * Habilitar/desabilitar funcionalidades de ambiente
   * Instalação e ativação de chat
-</div>
-
-<div class="step slide" data-x="4000" data-y="0">
 1. Monitoramento;
   * Plugin Google Analytics
   * Plugin Piwik
+  * Ldap Plugin
   * Exception Notification
-</div>
-
-<div class="step slide" data-x="5000" data-y="0">
-1. Backup;
-  * Dump do banco de dados
-  * Arquivos de uploads de usuários
-</div>
-
-<div class="step slide" data-x="6000" data-y="0">
 1. Resolvendo problemas
   * Pedindo ajuda da comunidade IRC Freenode #noosfero e #noosfero-br
   * Listas de discussão noosfero-br e noosfero-dev (ingles)
   * Comunidade Noosfero
   * Contribuindo com o Noosfero, merge-request
-</div>
-
-<div id="fim" class="step slide" data-x="14000" data-y="0" data-scale="10">
-   <div class="centralizado">
-   <h1>obrigado!</h1>
-   <h3>http://joenio.me</h3>
-   <h4>joenio@colivre.coop.br</h4>
-   <h5>esta apresentação foi feita com o software livre impress.js</h5>
-   <h5>background utilizado: http://subtlepatterns.com</h5>
-   </div>
-</div>
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/tHJblnBnBg4" frameborder="0" allowfullscreen></iframe>
-
 Teaser do Noosfero exibido durante a cerimônia de entrega de troféus para os
 vencedores do 9º Prêmio Cooperativa do Ano promovido pelo Sistema OCB. 
 A Colivre foi a vencedora na categoria "Inovação e Tecnologia".
@@ -483,6 +774,7 @@ https://www.youtube.com/watch?v=RwSVqekyzpo
     Reveal.initialize({
       controls: true,
       progress: true,
+      slideNumber: true,
       history: true,
       center: true,
       fragments: true,

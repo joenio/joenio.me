@@ -1,0 +1,17 @@
+.box-blue {
+  background: url(/slides/files/backgrounds/RGB101133D8.svg);
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px #333;
+}
+
+.box-green {
+  background: url(/slides/files/backgrounds/RGB071707D8.svg);
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px #333;
+}
+
+.box-gray {
+  background: url(/slides/files/backgrounds/RGB2A2A2CD8.svg);
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px #333;
+}
