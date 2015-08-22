@@ -2,14 +2,7 @@
 title: Noosfero
 ---
 
-<!--
-
-http://jindra12.deviantart.com/art/Ocean-211965086
-
-http://sparklestarcat.deviantart.com/art/Monument-keyboard-358167802
--->
-
-<section data-background="http://orig03.deviantart.net/4647/f/2011/157/9/5/ocean_by_jindra12-d3i75b2.jpg">
+<section data-background="files/backgrounds/ocean.jpg">
 # Noosfero
 
 <img src="files/noosfero.png" />
@@ -17,190 +10,23 @@ http://sparklestarcat.deviantart.com/art/Monument-keyboard-358167802
 "Uma plataforma web livre para redes sociais e de economia solidária"
 </section>
 
+<!-- ********************************************************************** -->
+
+<section>
 <section>
 ## O Noosfero é
 
-* Livre (Afero GPL)
+* Software Livre (Afero GPL)
 * Escrito em Ruby On Rails 3
 * Migrando para o Rails 4
 * Expansível (plugins)
 * Customizável (temas, blocos, etc)
+
+<p class="fragment">
+Site <span class="url">http://noosfero.org</span><br/>
+Blog <span class="url">http://softwarelivre.org/noosfero</span>
+</p>
 </section>
-
-<section>
-<section>
-## O desenvolvimento ocorre em torno do gitlab
-
-http://gitlab.com/noosfero/noosfero
-
-* Issues
-* Milestones
-* Merge Requests
-
-A metologia de desenvolvimento das equipes baseia-se em métodos ágeis e TDD
-</section>
-<section>
-<table><tr>
-<td style="vertical-align: top">
-
-<h2>Manutenção e desenvolvimento</h2>
-
-Dois branches:
-
-<ul>
-<li><b style="color:green">master</b> com o desenvolvimento de novas funcionalidades</li>
-<li><b style="color:yellow">stable</b> com correções de bugs</li>
-</ul>
-
-</td>
-<td><img src="files/git-tree.png" style="background:none;border:0;box-shadow:none" /></td>
-</tr></table>
-</section>
-
-</section>
-
-<section>
-## A comunicação 
-
-### Bate-papo via IRC na rede Freenode
-
-* \#noosfero
-* \#noosfero-br
-
-### Listas de discussão
-
-* noosfero-dev@listas.softwarelivre.org 
-* noosfero-br@listas.softwarelivre.org
-</section>
-
-<section>
-<section>
-<!-- 
-<section data-background="http://orig06.deviantart.net/bb02/f/2014/171/5/e/transformation_v2_by_drazebot-d7n5x0h.jpg" data-background-size="100%">
-http://drazebot.deviantart.com/art/Transformation-02-462170465 -->
-
-# Versões
-
-#### Versões de funcionalidades novas
-
-### 1.XX.0
-
-#### Versões de manutenção
-
-### 1.XX.(1-9)
-
-#### Versão atual
-
-### 1.2.0
-
-</section>
-<section data-background="#ffffff">
-<img src="files/noosfero-development-cycle.svg" class="stretch" />
-</section>
-</section>
-
-<section>
-<section>
-## Versão 0.1.0
-
-### Foi a primeira versão lançada em Setembro de 2007
-
-O Noosfero nasceu entre uma parceiria da Colivre com:
-
-* Fórum Brasileiro de Economia Solidária
-* Ynternet.org Fondation (Suiça)
-
-<img src="files/fbes.jpg" />
-<img src="files/ynternet-org.png" style="background: white" />
-</section>
-<section>
-## Cirandas.net
-
-#### Fórum Brasileiro de Economia Solidária
-
-Objetivo: "Fortalecer os empreendimentos e divulgar a Economia Solidária"
-
-## Zen3.net
-
-#### Ynternet.org Fondation (Suiça)
-
-Objetivo: "Plataforma para exercício pleno da 'cidadania digital' (netizenship)"
-</section>
-</section>
-
-<section>
-<section data-background="files/backgrounds/waterfall.gif">
-<div class="box-green">
-## Muita água rolou...
-
-### E hoje atende
-
-ASL, USP, Serpro, SGPR, Blogoosfero, OCEB, UNB, Qualipso, IPF, Kliceo, UCSal, MPOG
-</div>
-
-<!-- fonte do background https://plus.google.com/+AkanshaGautam/posts/1ujxYtPgd3z -->
-</section>
-
-<section data-background="files/screenshots/blogoosfero.jpg" data-transition="convex">
-<div class="box-gray">
-# Blogoosfero
-
-http://blogoosfero.cc
-</div>
-</section>
-
-<section data-background="files/screenshots/cirandas.jpg" data-transition="convex">
-<div class="box-gray">
-# FBES
-
-http://cirandas.net
-</div>
-</section>
-
-<section data-background="files/screenshots/fga-unb.png" data-transition="convex">
-<div class="box-gray">
-# UNB
-
-http://fga.unb.br
-</div>
-</section>
-
-<section data-background="files/screenshots/stoa.jpg" data-transition="convex">
-<div class="box-gray">
-# USP
-
-https://social.stoa.usp.br
-</div>
-</section>
-
-<section data-background="files/screenshots/softwarelivre.png" data-transition="convex">
-<div class="box-gray">
-# ASL
-
-http://softwarelivre.org
-</div>
-</section>
-
-<section data-background="files/screenshots/ucsal.jpg" data-transition="convex">
-<div class="box-gray">
-# UCSAL
-
-http://www.ucsal.br
-</div>
-</section>
-</section>
-
-<section>
-### A comunidade Noosfero cresceu
-
-"Estas instituições se tornam parceiras do projeto Noosfero e acabam
-parte da comunidade de usuários e desenvolvedores"
-
-<img src="files/noosfero-contributors-by-month.png" />
-
-<small>http://www.openhub.net/p/noosfero</small>
-</section>
-
 <section>
 ### Principais funcionalidades do Noosfero
 
@@ -214,6 +40,278 @@ parte da comunidade de usuários e desenvolvedores"
 * Agenda de eventos
 * Catálogo de serviços e produtos
 </section>
+</section>
+
+<!-- ********************************************************************** -->
+
+<section data-background="files/backgrounds/people-working.jpg">
+<section data-transition="convex">
+<div class="box-gray">
+## O desenvolvimento ocorre em torno do gitlab
+
+http://gitlab.com/noosfero/noosfero
+
+* Issues
+* Milestones
+* Merge Requests
+
+A metologia de desenvolvimento das equipes baseia-se em métodos ágeis e TDD
+</div>
+</section>
+<section data-transition="convex">
+<div class="box-gray">
+<table><tr>
+<td style="vertical-align: top">
+
+<h2>Manutenção e desenvolvimento</h2>
+
+Dois branches:
+
+<ul>
+<li><b style="color:green">master</b> com o desenvolvimento de novas funcionalidades</li>
+<li><b style="color:yellow">stable</b> com correções de bugs</li>
+</ul>
+
+</td>
+<td><img src="files/git-tree.png" /></td>
+</tr></table>
+</div>
+</section>
+</section>
+
+<!-- ********************************************************************** -->
+
+<section>
+<section>
+# A comunicação
+
+## Bate-papo
+
+## E-mail
+
+## presencialmente
+
+</section>
+
+<section>
+## Comunicação via bate-papo
+
+Nos seguintes canais na rede IRC Freenode (<span class="url">freenode.net</span>)
+
+* \#noosfero <span class="fragment"><span style="color:red"><< em inglês</span></span>
+* \#noosfero-br <span class="fragment"><span style="color:red"><< em português</span></span>
+
+Você pode usar um cliente IRC web caso não queira instalar um em seu computador
+<span class="url">webchat.freenode.net</span>
+</section>
+<section>
+## Comunicação via e-mail
+
+Lista de discussão **noosfero-dev**
+
+<p class="url">http://listas.softwarelivre.org/listinfo/noosfero-dev</p>
+
+Lista de discussão **noosfero-br**
+
+<p class="url">http://listas.softwarelivre.org/listinfo/noosfero-br</p>
+</section>
+<section>
+## Comunicação presencial
+
+Anualmente ocorre o encontro comunitário no Fisl
+
+<p class="url">fisl.org.br</p>
+
+<p class="fragment">Mas se você está por perto e quer bater um papo com algum
+desenvolvedor Noosfero pode visitar a Colivre...</p>
+</section>
+</section>
+
+<!-- ********************************************************************** -->
+
+<section data-background="files/backgrounds/timeline.jpg">
+<section>
+<div class="box-yellow">
+## Histórico
+
+O Noosfero v0.1.0 nasceu em 2007 entre uma parceiria da Colivre com:
+
+* Fórum Brasileiro de Economia Solidária
+* Ynternet.org Fondation (Suiça)
+
+<img src="files/fbes.png" />
+<img src="files/ynternet-org.png" />
+</div>
+</section>
+<section>
+<div class="box-yellow">
+#### FBES
+
+## <span class="url">Cirandas.net</span>
+
+Objetivo: "Fortalecer os empreendimentos e divulgar a Economia Solidária"
+
+#### Ynternet.org
+
+## <span class="url">Zen3.net</span>
+
+Objetivo: "Plataforma para exercício pleno da 'cidadania digital' (netizenship)"
+</div>
+</section>
+<section>
+<div class="box-yellow">
+### Desde então surgiram muitos outros parceiros
+
+#### E o Noosfero hoje atende
+
+ASL, USP, Serpro, SGPR, Blogoosfero, OCEB, UNB, Qualipso, IPF, Kliceo, UCSal, MPOG
+
+<small>* Alguns são também clientes da Colivre</small> <!-- *fix -->
+</div>
+</section>
+<section>
+<p style="text-shadow:-2px -1px 3px #000;font-size:48px">E deste a primeira
+versão do Noosfero lançado em 2007 foram lançadas **156** versões</p>
+</section>
+<section>
+<div class="box-white">
+<img src="files/noosfero-development-cycle.svg" />
+</div>
+</section>
+<section>
+<div class="box-yellow">
+# Versões
+
+#### Versões de funcionalidades novas
+
+### 1.XX.0
+
+#### Versões de manutenção
+
+### 1.XX.(1-9)
+</div>
+</section>
+</section>
+
+<!-- ********************************************************************** -->
+
+<section>
+<section>
+#### Versão atual
+
+### 1.2.0
+</section>
+<section data-background="files/screenshots/blogoosfero.jpg" data-background-transition="slide">
+<div class="box-gray">
+# blogoosfero.cc
+</div>
+</section>
+<section data-background="files/screenshots/cirandas.jpg" data-background-transition="slide">
+<div class="box-gray">
+# cirandas.net
+</div>
+</section>
+<section data-background="files/screenshots/fga-unb.png" data-background-transition="slide">
+<div class="box-gray">
+# fga.unb.br
+</div>
+</section>
+<section data-background="files/screenshots/stoa.jpg" data-background-transition="slide">
+<div class="box-gray">
+# social.stoa.usp.br
+</div>
+</section>
+<section data-background="files/screenshots/softwarelivre.png" data-background-transition="slide">
+<div class="box-gray">
+# softwarelivre.org
+</div>
+</section>
+<section data-background="files/screenshots/ucsal.jpg" data-background-transition="slide">
+<div class="box-gray">
+# www.ucsal.br
+</div>
+</section>
+<section data-background="files/screenshots/participa-br.png" data-background-transition="slide">
+<div class="box-gray">
+# participa.br
+</div>
+</section>
+<section data-background="files/screenshots/participa-ma.png" data-background-transition="slide">
+<div class="box-gray">
+## participa.ma.gov.br
+</div>
+</section>
+<section data-background="files/screenshots/ripe.jpg" data-background-transition="slide">
+<div class="box-gray">
+# ripe.ufba.br
+</div>
+</section>
+<section data-background="files/screenshots/softwarepublico.png" data-background-transition="slide">
+<div class="box-gray">
+## softwarepublico.gov.br
+</div>
+</section>
+</section>
+
+<!-- ********************************************************************** -->
+
+<section>
+### A comunidade Noosfero cresceu
+
+"Estas instituições se tornam parceiras do projeto Noosfero e acabam
+parte da comunidade de usuários e desenvolvedores"
+
+<img src="files/noosfero-contributors-by-month.png" />
+
+<small>http://www.openhub.net/p/noosfero</small>
+</section>
+
+<!-- ********************************************************************** -->
+
+<section>
+<section>
+### O Noosfero é personalizável
+
+# Temas
+
+| header.html.erb     | elementos do cabeçalho |
+| footer.html.erb     | elementos do rodapé    |
+| navigation.html.erb | links do menu superior |
+| style.css           | né?!                   |
+| theme.yml           | configurações do tema  |
+
+</section>
+<section>
+# Temas
+
+Você pode alterar o tema do ambiente (Environment) pelo console:
+
+./script/console ou noosfero-console
+
+<pre><code class="ruby">
+e = Environment.default
+e.theme = "mytheme"
+e.save
+</code></pre>
+
+http://noosfero.org/Development/CreatingThemes
+
+`HACKING.themes.md`
+</section>
+<section>
+### O Noosfero é extensível
+
+# Plugins
+
+ldap, oauth, carrinho de compras, novos tipos de blocos, novos tipos de conteúdos, ...
+
+Os plugins estão todos junto ao código-fonte do noosfero na pasta 'plugins/'
+
+<p class="link">http://noosfero.org/Development/PluginsArchitecture</p>
+</section>
+</section>
+
+<!-- ********************************************************************** -->
 
 <section>
 ## Arquitetura do Noosfero
@@ -234,6 +332,8 @@ parte da comunidade de usuários e desenvolvedores"
 <!-- TODO: criar diagrama -->
 </section>
 
+<!-- ********************************************************************** -->
+
 <section data-background="#ffffff">
 <table><tr>
 <td style="vertical-align: top">
@@ -249,13 +349,15 @@ INSTALL.multitenancy.md
 </tr></table>
 </section>
 
+<!-- ********************************************************************** -->
+
 <section>
 ### Criar um ambiente de denvolvimento
 
 <pre><code class="bash">
-~$ git clone https://gitlab.com/noosfero/noosfero.git
-~$ cd noosfero
-~$ ./script/quick-start
+git clone https://gitlab.com/noosfero/noosfero.git
+cd noosfero
+./script/quick-start
 </code></pre>
 
 Esta forma de instalação é adequada para ambientes de desenvolvimento ou testes
@@ -273,7 +375,6 @@ Edite o `/etc/hosts` e adicione a seguinte entrada:
 
 `127.0.0.1 noosfero.ufba`
 </section>
-
 <section>
 ## Configuração de domínios
 
@@ -287,7 +388,6 @@ domain = Domain.new(:name => 'noosfero.ufba', :is_default => true)
 env.domains << domain
 </code></pre>
 </section>
-
 <section>
 ## Configuração de domínios
 
@@ -303,8 +403,9 @@ Este script inicia alguns serviços além do servidor Rails local:
 * delayed_job
 * whenever
 </section>
-
 </section>
+
+<!-- ********************************************************************** -->
 
 <section>
 <section>
@@ -326,7 +427,6 @@ admin.activate
 env.add_admin(admin.person)
 </code></pre>
 </section>
-
 <section>
 ## Criar usuário administrador
 
@@ -336,23 +436,34 @@ Acesse http://localhost:3000
 </section>
 </section>
 
+<!-- ********************************************************************** -->
+
 <section>
 <section>
 ## Instalação via pacote Debian
 
 (recomendado para uso em ambientes de produção)
 
-<span style="color:blue">http://download.noosfero.org/debian</span>
+<span class="url">download.noosfero.org/debian</span>
 
 Os pacotes do Noosfero seguem, com um certo "delay", a versão estável do
 Debian, hoje está em Debian Wheezy
+
+<!--
+/etc/apt/sources.list:
+
+deb http://download.noosfero.org/debian/wheezy-1.2 ./
+deb-src http://download.noosfero.org/debian/wheezy-1.2 ./
+Run the following command to add our archive signing key to your APT security database:
+
+$ wget -O - http://download.noosfero.org/debian/wheezy-1.2/signing-key.asc | sudo apt-key add -
+-->
 
 <pre><code class="ruby">
 # apt-get install postgresql
 # apt-get install noosfero noosfero-apache
 </code></pre>
 </section>
-
 <section>
 ### Criação do banco de dados
 
@@ -360,7 +471,6 @@ Debian, hoje está em Debian Wheezy
 
 Cria um banco postgresql chamado "noosfero"
 </section>
-
 <section>
 ### Senha do postgresql
 
@@ -368,7 +478,6 @@ Cria um banco postgresql chamado "noosfero"
 
 <small>recomenda-se deixar em branco para que o sistema gere uma senha aleatória</small>
 </section>
-
 <section>
 ### Registro e configuração de domínios
 
@@ -376,13 +485,11 @@ Cria um banco postgresql chamado "noosfero"
 
 Digite: noosfero.ufba
 </section>
-
 <section>
 ### Configuração para envio de emails
 
 <img src="files/screenshots/noosfero-mta.png" />
 </section>
-
 <section>
 ### Teste o acesso
 
@@ -391,6 +498,8 @@ Acesse: http://noosfero.ufba/
 <img src="files/screenshots/noosfero.png" />
 </section>
 </section>
+
+<!-- ********************************************************************** -->
 
 <section>
 <section>
@@ -417,20 +526,18 @@ $ tail -f log/development.log
 $ tail -f log/development.log | grep POST
 </code></pre>
 </section>
-
 <section>
 ### Analisando performance
 
 ## request-log-analyzer
 
-<span style="color:blue">http://request-log-analyzer.com</span>
+<span class="url">request-log-analyzer.com</span>
 
 Ferramenta de linha de comando para gerar relatório de performance a partir da
 análise de logs, suporta vários formatos (Rails, Merb, DelayedJob, Apache,
 NGINX, ...)
 <img src="files/screenshots/request-log-analyzer.png" />
 </section>
-
 <section>
 ## request-log-analyzer
 
@@ -457,6 +564,8 @@ production.html`</small>
 </section>
 </section>
 
+<!-- ********************************************************************** -->
+
 <section>
 <section>
 ## Backup e restore
@@ -481,7 +590,6 @@ $ rake backup
 </code></pre>
 
 </section>
-
 <section>
 ### rake backup
 
@@ -506,7 +614,6 @@ $ rake restore BACKUP=tmp/backup/2015-08-19-12:13.tar.gz
 Isto cria um arquivo com o dump do banco e todos os arquivos do ambiente
 Noosfero
 </section>
-
 <section>
 ### rake restore
 
@@ -534,7 +641,6 @@ $ createdb noosfero --owner noosfero
 </code></pre>
 <!-- rgF2j7vDbVUR -->
 </section>
-
 <section>
 # Limitações
 
@@ -565,11 +671,8 @@ $ pg_dump noosfero > noosfero_dump.sql
 </section>
 </section>
 
-<!--
+<!-- ********************************************************************** -->
 
-faltando arquivo /usr/share/noosfero/etc/pound.cfg
-
--->
 <section>
 ## Scripts de linha de comando
 
@@ -594,6 +697,8 @@ faltando arquivo /usr/share/noosfero/etc/pound.cfg
 </code></pre>
 </section>
 
+<!-- ********************************************************************** -->
+
 <section>
 <section data-background="files/backgrounds/varnish.png">
 <div class="box-blue">
@@ -603,11 +708,10 @@ faltando arquivo /usr/share/noosfero/etc/pound.cfg
 Varnish Cache é um acelerador de aplicações web, também conhecido como proxy
 reverso de cache HTTP
 
-<span style="color:blue">http://www.varnish-cache.org</span>
+<span class="url">www.varnish-cache.org</span>
 
 Siga a documentação em `INSTALL.varnish.md` nos fontes do Noosfero
 </div>
-<!-- fonte do background: http://ayudawordpress.com/varnish-como-servicio-en-wordpress -->
 </section>
 <section data-background="files/backgrounds/varnish.png" data-transition="convex">
 <div class="box-blue">
@@ -625,15 +729,17 @@ Siga a documentação em `INSTALL.varnish.md` nos fontes do Noosfero
 </section>
 </section>
 
+<!-- ********************************************************************** -->
+
 <section>
 <section>
 # Multitenancy
 
-Multitenancy é um princípio em arquitetura de software onde um única instancia
+Multitenancy é um princípio em arquitetura de software onde uma única instancia
 de software rodando num servidor serve várias organizações, chamado tenants
 (inquilino)
 
-Com esta arquitetura o Noosfero isola os seguintes dados para cada Environment
+<small>Com esta arquitetura o Noosfero isola os seguintes dados para cada Environment</small>
 
 * Uploaded files
 * Database
@@ -805,16 +911,17 @@ End
 <section>
 ## Novo ambiente pronto para ir "ao ar"
 
-Remova os logs do novo ambiente para evitar problemas de permissão e reinicie o Noosfero, o Apache e o Pound
+Remova os logs do novo ambiente para evitar problemas de permissão e reinicie o
+Noosfero, Apache e o Pound
 
 <pre><code class="bash">
-# rm /usr/share/noosfero/log/ripe_*
-# service noosfero restart
-# service apache2 restart
-# service pound restart
+rm /usr/share/noosfero/log/ripe_*
+service noosfero restart
+service apache2 restart
+service pound restart
 </code></pre>
 </section>
-
+<!-- _fix -->
 <section>
 ### Cadastrando o novo ambiente (Environment) no banco de dados
 
@@ -824,46 +931,125 @@ RAILS_ENV=production NOOSFERO_DOMAIN=ripe.ufba rake db:data:minimal
 </section>
 </section>
 
+<!-- ********************************************************************** -->
+
 <section>
 ## Recuperando backup em um novo ambiente com multitenancy
+</section>
 
-http://ratz.joenio.me/backup.tgz
+<section>
+<section>
+## Acompanhamento de excessões
 
+Notificar por email quando ocorrer algum erro no Noosfero
+
+<pre><code class="bash">
+gem install exception_notification -v 1.0.20090728
+</code></pre>
+
+Adicione os emails que serão notificados em `/etc/noosfero/noosfero.yml`
+
+<pre><code class="yaml">
+production:
+  exception_recipients: [admin@example.com, you@example.com]
+</code></pre>
+</section>
+<section>
+## Outras opções do `noosfero.yml`
+
+addthis, gravatar, tamanho máximo dos uploads, tempo para checar ativação dos
+usuários, ...
+
+Veja um exemplo deste arquivo em
+/usr/share/doc/noosfero/examples/noosfero.yml.dist ou config/noosfero.yml.dist
+</section>
+</section>
+
+<!-- ********************************************************************** -->
+
+<section data-background="files/backgrounds/monument-keyboard.png">
+<section data-transition="fade">
+<div class="box-gray">
+# Chat Noosfero
+
+O Noosfero possui suporte a chat, a infraestrutura do lado servidor é
+toda em cima do protocolo XMPP através do servidor `ejabberd`
+
+<p class="url">xmpp.org</p>
+<p class="url">www.ejabberd.im</p>
+</div>
+</section>
+<section data-transition="fade">
+<div class="box-gray">
+## Instalar chat
+
+A partir do Noosfero 1.2 o chat pode ser instalado via pacote Debian
+
+Mas antes de instalar o pacote é preciso editar o `database.yml` e remover a entrada `host: localhost`
+
+<p class="fragment grow highlight-red">bug com o multitenancy!</p>
+</div>
+</section>
+<section data-transition="fade">
+<div class="box-gray">
+## Instalar chat
+
+<pre><code class="bash">
+apt-get install noosfero-chat
+</code></pre>
+
+<img src="files/screenshots/noosfero-chat.png" />
+
+Edite novamente o `database.yml` e adicione o `host: localhost`
+
+Administrador -> Funcionalidades -> Bate-papo baseado em XMPP/Jabber
+</div>
+</section>
+</section>
+
+<!-- ********************************************************************** -->
+
+<section>
+<section>
+# Gerar pacote Debian
+
+Instale as dependencias
+
+<pre><code class="bash">
+apt-get install devscripts debhelper
+</code></pre>
+
+Informe ao git quem você é e gere o pacote Debian
+
+<pre><code class="bash">
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+</code></pre>
+
+Necessário ter uma chave GNUPG pois o processo assina os pacotes Debian gerados
+com sua chave
+
+</section>
+<section>
+# Gerar pacote Debian
+
+<pre><code class="bash">
+rake noosfero:release[stable]
+</code></pre>
+
+Ao ser questionado sobre a versão informe: 1.2+ufba1
+
+Este processo irá gerar os pacotes: noosfero, noosfero-apache e noosfero-chat
+
+Veja detalhes em `RELEASING.md`
+</section>
 </section>
 
 <!--
-
-<section>
-* Instalar Noosfero com multitenancy
-* Criar 3 ambientes diferentes, cada um com um domínio diferente
-  * noosfero.ufba
-  * ripe.ufba
-  * netica.ufba
-* Definir temas diferentes para cada ambiente
-* Criar 1 usuário administrador em cada um dos ambientes
-* Habilitar Piwik Plugin no servidor
-* Habilitar o Piwik Plugin em cada um dos ambientes
-</section>
-
-<section>
-</section>
-
-
- * Definição e aplicação de temas de ambientes e comunidades
-
-Acompanhamento de excessões
-
-gem install exception_notification -v 1.0.20090728
-
-Em config/noosfero.yml
-production:
-  exception_recipients: [admin@example.com, you@example.com]
-
-Awstats
-
-Configuração do Awstats
-
-Monitoramento com New Relic
+* Relatar bug faltando arquivo /usr/share/noosfero/etc/pound.cfg
+* Definição e aplicação de temas de ambientes e comunidades
+* Configuração do Awstats
+* Monitoramento com New Relic
 
 1. Manutenção;
   * Atualização do Noosfero via pacote Debian
@@ -871,16 +1057,11 @@ Monitoramento com New Relic
 1. Administração Noosfero;
   * Painel de controle do ambiente
   * Habilitar/desabilitar funcionalidades de ambiente
-  * Instalação e ativação de chat
 1. Monitoramento;
   * Plugin Google Analytics
   * Plugin Piwik
   * Ldap Plugin
-  * Exception Notification
 1. Resolvendo problemas
-  * Pedindo ajuda da comunidade IRC Freenode #noosfero e #noosfero-br
-  * Listas de discussão noosfero-br e noosfero-dev (ingles)
-  * Comunidade Noosfero
   * Contribuindo com o Noosfero, merge-request
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/tHJblnBnBg4" frameborder="0" allowfullscreen></iframe>
@@ -894,3 +1075,35 @@ https://www.youtube.com/watch?v=RI3ZU6bPxiI
 Entrevista com o Professor Adriano Canabarro Teixeira sobre o Noosfero
 https://www.youtube.com/watch?v=RwSVqekyzpo
 -->
+
+<!-- ********************************************************************** -->
+
+<section data-background="#c4a000">
+<section>
+#### Obrigado
+
+<img src="/files/hackergotchi.png" />
+
+Esta apresentação foi feita com o software livre **reveal.js** e está disponível
+sob os termos da licença CC BY-SA
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+
+http://joenio.me/slides/noosfero.html
+
+<small>(código-fonte em **http://github.com/joenio/joenio.me**)</small>
+</section>
+<section>
+### Créditos
+
+<small>Imagens utilizadas nesta apresentação</small>
+
+<ul style="font-size: 24px">
+  <li>http://jindra12.deviantart.com/art/Ocean-211965086</li>
+  <li>http://commons.wikimedia.org/wiki/File:Few_people_working_on_repairing_pond.jpg</li>
+  <li>http://realsaw.deviantart.com/art/timeline-138456373</li>
+  <li>http://ayudawordpress.com/varnish-como-servicio-en-wordpress</li>
+  <li>http://sparklestarcat.deviantart.com/art/Monument-keyboard-358167802</li>
+</ul>
+</section>
+</section>
