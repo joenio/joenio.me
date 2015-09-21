@@ -74,3 +74,7 @@ Em julho foi a vez do cpan-outdated, como sempre pouco tempo fiz um "pequeno" pu
 
 * https://metacpan.org/pod/cpan-outdated
 * https://github.com/tokuhirom/cpan-outdated/pull/30
+
+Agosto, atrasado em 09/09:
+
+* https://github.com/cpants/Module-CPANTS-Analyse/pull/25
