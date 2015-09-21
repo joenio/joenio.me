@@ -21,10 +21,32 @@ mr (multiplo repositorios) e pkg-perl-tools
 
 Referencia sobre git do grupo: http://pkg-perl.alioth.debian.org/git.html
 
+This guide describes the procedures that the Debian Perl Group contributors use to maintain packages in the Git repositories on git.debian.org.
+
+Rode atualize a base do apt-file para que o dh-make-perl possa descobrir qual pacote
+é de qual módulo:
+
+   apt-file update
+
 02 - Criar versão inicial do pacote
 -----------------------------------
 
 1) dh-make-perl --pkg-perl --cpan nome no cpan ou db-make-perl diretório dos fontes
+
+OBS: se você nunca rodou o cpan antes, execute antes do dh-make-perl o comando `cpan`
+para que ele crie as configurações básicas do seu cpan, responda "no" à pergunta:
+
+> Would you like to configure as much as possible automatically?
+
+E responda 'manual' para:
+
+> What approach do you want?  (Choose 'local::lib', 'sudo' or 'manual')
+
+Se é a primeira vez que usa o dh-make-perl para criar um pacote diga ao Git
+quem você é:
+
+   git config --global user.email "you@example.com"
+   git config --global user.name "Your Name"
 
 03 - Correções básicas da versão inicial
 ----------------------------------------
@@ -54,6 +76,8 @@ pelo gregor:
 ------------------------------------------------------
 
 3) debuild -us -uc ou git-buildpackage / corrigir lintian mensagens
+
+   gbp buildpackage -us -uc
 
 rodar lintian -I
 
