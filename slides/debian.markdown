@@ -208,9 +208,20 @@ Servidor de chat XMPP/Jabber escrito em Erlang
 </section>
 
 <section data-background="#c4a000">
+<section>
 ### Obrigado!
 
 joenio@colivre.coop.br
 
 **Dúvidas?**
+</section>
+<section>
+### Histórico de apresentações
+
+<small>Onde e quando esta apresentação foi realizada</small>
+
+<ul style="font-size: 24px">
+  <li>17 Agosto 2015, STI UFBA, treinamento de Noosfero avançado para sysadmins</li>
+</ul>
+</section>
 </section>
