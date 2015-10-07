@@ -28,6 +28,10 @@ Rode atualize a base do apt-file para que o dh-make-perl possa descobrir qual pa
 
    apt-file update
 
+para descobrir se um certo módulo já está empacotado execute
+
+$ dh-make-perl locate Math::Expression::Evaluator
+
 02 - Criar versão inicial do pacote
 -----------------------------------
 
