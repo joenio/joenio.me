@@ -49,7 +49,7 @@ Blog <span class="url">http://softwarelivre.org/noosfero</span>
 <div class="box-gray">
 ## O desenvolvimento ocorre em torno do gitlab
 
-http://gitlab.com/noosfero/noosfero
+<span class="url">http://gitlab.com/noosfero/noosfero</span>
 
 * Issues
 * Milestones
@@ -85,11 +85,13 @@ Dois branches:
 <section>
 # A comunicação
 
-## Bate-papo
+## ⇾ Bate-papo
 
-## E-mail
+## ⇾ E-mail
 
-## presencialmente
+## ⇾ Presencialmente
+
+## ⇾ Videoconferência
 
 </section>
 
@@ -107,11 +109,17 @@ Você pode usar um cliente IRC web caso não queira instalar um em seu computado
 <section>
 ## Comunicação via e-mail
 
+<p style="position: relative">
 Lista de discussão **noosfero-dev**
+<span class="fragment" style="position: absolute; right: 0; top: 0"><span style="color:red"><< em inglês</span></span>
+</p>
 
 <p class="url">http://listas.softwarelivre.org/listinfo/noosfero-dev</p>
 
+<p style="position: relative">
 Lista de discussão **noosfero-br**
+<span class="fragment" style="position: absolute; right: -30px; top: 0"><span style="color:red"><< em português</span></span>
+</p>
 
 <p class="url">http://listas.softwarelivre.org/listinfo/noosfero-br</p>
 </section>
@@ -122,8 +130,23 @@ Anualmente ocorre o encontro comunitário no Fisl
 
 <p class="url">fisl.org.br</p>
 
-<p class="fragment">Mas se você está por perto e quer bater um papo com algum
-desenvolvedor Noosfero pode visitar a Colivre...</p>
+Mas se você está perto pode fazer uma visita e bater um
+papo com algum desenvolvedor Noosfero
+
+* Colivre, Salvador-BA
+* Serpro, Salvador-BA
+* UnB Gama, Brasília
+</section>
+<section>
+## Videoconferência
+
+1º Encontro virtual de desenvolvedores Noosfero
+
+02 de Outubro de 2015 às 15h
+
+<p class="url">softwarelivre.org/noosfero/encontros</p>
+
+_este encontro deve ocorrer com alguma frequência, a cada 3 meses por exemplo_
 </section>
 </section>
 
@@ -164,14 +187,14 @@ Objetivo: "Plataforma para exercício pleno da 'cidadania digital' (netizenship)
 
 #### E o Noosfero hoje atende
 
-ASL, USP, Serpro, SGPR, Blogoosfero, OCEB, UNB, Qualipso, IPF, Kliceo, UCSal, MPOG
+ASL, USP, Serpro, SGPR, Blogoosfero, OCEB, UnB, Qualipso, IPF, Kliceo, UCSal, MPOG, UFBA
 
 <small>* Alguns são também clientes da Colivre</small> <!-- *fix -->
 </div>
 </section>
 <section>
 <p style="text-shadow:-2px -1px 3px #000;font-size:48px">E deste a primeira
-versão do Noosfero lançado em 2007 foram lançadas **156** versões</p>
+versão do Noosfero lançada em 2007 foram lançadas **156** versões</p>
 </section>
 <section>
 <div class="box-white">
@@ -258,8 +281,8 @@ versão do Noosfero lançado em 2007 foram lançadas **156** versões</p>
 <section>
 ### A comunidade Noosfero cresceu
 
-"Estas instituições se tornam parceiras do projeto Noosfero e acabam
-parte da comunidade de usuários e desenvolvedores"
+"Estas instituições se tornam parceiras do projeto Noosfero e hoje
+são parte da comunidade de usuários e desenvolvedores"
 
 <img src="files/noosfero-contributors-by-month.png" />
 
@@ -1080,18 +1103,7 @@ https://www.youtube.com/watch?v=RwSVqekyzpo
 
 <section data-background="#c4a000">
 <section>
-#### Obrigado
-
-<img src="/files/hackergotchi.png" />
-
-Esta apresentação foi feita com o software livre **reveal.js** e está disponível
-sob os termos da licença CC BY-SA
-
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
-
-http://joenio.me/slides/noosfero.html
-
-<small>(código-fonte em **http://github.com/joenio/joenio.me**)</small>
+{% include slides_obrigado.html %}
 </section>
 <section>
 ### Créditos
@@ -1112,7 +1124,8 @@ http://joenio.me/slides/noosfero.html
 <small>Onde e quando esta apresentação foi realizada</small>
 
 <ul style="font-size: 24px">
-  <li>17 Agosto 2015, STI UFBA, treinamento de Noosfero avançado para sysadmins</li>
+  <li>17 Ago 2015, STI UFBA - Salvador, treinamento de Noosfero avançado para sysadmins</li>
+  <li>23 Out 2015, Faculdade JK - Brasília, II Seminário de Educação e Novas Tecnologias</li>
 </ul>
 </section>
 </section>

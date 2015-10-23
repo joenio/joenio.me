@@ -338,11 +338,7 @@ Você pode simplesmente utilizar software livre
 
 <section data-background="#c4a000" data-background-transition="slide">
 <section>
-### Obrigado!
-
-joenio@colivre.coop.br
-
-**Dúvidas?**
+{% include slides_obrigado.html %}
 </section>
 <section>
 ### Histórico de apresentações
@@ -350,7 +346,8 @@ joenio@colivre.coop.br
 <small>Onde e quando esta apresentação foi realizada</small>
 
 <ul style="font-size: 24px">
-  <li>17 Agosto 2015, STI UFBA, treinamento de Noosfero avançado para sysadmins</li>
+  <li>17 Ago 2015, STI UFBA - Salvador, treinamento de Noosfero avançado para sysadmins</li>
+  <li>23 Out 2015, Faculdade JK - Brasília, II Seminário de Educação e Novas Tecnologias</li>
 </ul>
 </section>
 </section>
