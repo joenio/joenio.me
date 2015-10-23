@@ -78,3 +78,16 @@ Em julho foi a vez do cpan-outdated, como sempre pouco tempo fiz um "pequeno" pu
 Agosto, atrasado em 09/09:
 
 * https://github.com/cpants/Module-CPANTS-Analyse/pull/25
+
+Setembro, atrasado:
+
+(recuperar nos emails)
+
+Outubro é o Hacktoberfest da DigitalOcean
+
+https://hacktoberfest.digitalocean.com/
+
+(foram os 2 pull-req do mês de setembro + os abaixo)
+
+https://github.com/koorchik/Mojolicious-Plugin-ValidateTiny/pull/10
+https://github.com/koorchik/Mojolicious-Plugin-ValidateTiny/pull/11
