@@ -5,9 +5,201 @@
     <description></description>
     <link>http://joenio.me/</link>
     <atom:link href="http://joenio.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 15 Aug 2015 20:09:10 -0300</pubDate>
-    <lastBuildDate>Sat, 15 Aug 2015 20:09:10 -0300</lastBuildDate>
+    <pubDate>Fri, 29 Jan 2016 16:34:29 -0200</pubDate>
+    <lastBuildDate>Fri, 29 Jan 2016 16:34:29 -0200</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Contribuindo com projetos de software livre</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/files/hacktoberfest-2015.jpg&quot; alt=&quot;Camisa Hacktoberfest 2015&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Em 2015 participei do desafio &lt;a href=&quot;http://cpan-prc.org&quot;&gt;CPAN Pull Request&lt;/a&gt; (CPAN-PRC), uma
+iniciativa do &lt;a href=&quot;http://neilb.org&quot;&gt;Neil Bowers&lt;/a&gt; para promover maior contribuição da
+comunidade &lt;a href=&quot;http://perl.org&quot;&gt;Perl&lt;/a&gt; ao &lt;a href=&quot;http://cpan.org&quot;&gt;CPAN&lt;/a&gt;. CPAN ou &lt;em&gt;“Comprehensive Perl Archive
+Network”&lt;/em&gt; é o repositório central de módulos Perl, está no ar desde 1995 e
+conta hoje com aproximadamente 159 mil módulos.&lt;/p&gt;
+
+&lt;p&gt;O desafio foi lançado em dezembro de 2014, para mim foi uma forma de diversão
+contribuir com projetos de softwares livres escritos em Perl.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blogs.perl.org/users/neilb/2014/12/take-the-2015-cpan-pull-request-challenge.html&quot;&gt;Post do Neil Bowers em dezembro de 2014 lançando o desafio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blogs.perl.org/users/neilb/2015/01/more-details-on-the-cpan-pull-request-challenge.html&quot;&gt;Post do Neil dando mais detalhes sobre o desafio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://github.com/CPAN-PRC/resources&quot;&gt;Repositório no GitHub com dicas para os participantes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A comunidade Perl Brasileira, como sempre, bem antenada aos acontecimentos da
+comunidade internacional, traduziu grande parte do chamado ao desafio para o
+português e divulgou nas listas de discussão nacional, em especial no &lt;a href=&quot;http://brasil.pm.org&quot;&gt;Brasil
+Perl Mongers&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mail.pm.org/pipermail/brasil-pm/2014q4/000356.html&quot;&gt;Mensagem de Breno de Oliveira na lista Brasil Perl Mongers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Em resumo o desafio funcionou da seguinte forma:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;(1) Você fazia a inscrição por email com o Neil Bowers
+&amp;lt;neil@bowers.com&amp;gt;; (2) a cada início de mês um módulo do CPAN é
+sorteado para você; (3) até o final do mês é preciso enviar ao menos um Pull
+Request no Github para o módulo sorteado.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Este processo se repetia a cada mês entre Janeiro e Dezembro, eu perdi o prazo
+para inscrição em Janeiro e só comecei a participar do desafio em Fevereiro, a partir
+daí me mantive ativo até o final do ano e enviei ao todo 15 Pull Requests.&lt;/p&gt;
+
+&lt;h2 id=&quot;fevereiro&quot;&gt;Fevereiro&lt;/h2&gt;
+
+&lt;p&gt;Em meu primeiro desafio o módulo sorteado foi o &lt;a href=&quot;http://metacpan.org/pod/Module::Setup&quot;&gt;Module::Setup&lt;/a&gt;,
+fiz uma melhoria no &lt;code&gt;Makefile.PL&lt;/code&gt; para dar alertas de dependencias não
+satisfeitas.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://github.com/yappo/p5-Module-Setup/pull/4&quot;&gt;Pull Request #4 - declare building dependencies in Makefile.PL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Este modulo possuía algumas dependencias não empacotadas no Debian, aproveitei
+o &lt;em&gt;embalo&lt;/em&gt; empacotei e submeti eles ao Debian.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://metacpan.org/pod/Module::Install::TestBase&quot;&gt;Module::Install::TestBase&lt;/a&gt; - &lt;a href=&quot;http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=778806&quot;&gt;ITP #778806&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://metacpan.org/pod/Module::Install::Repository&quot;&gt;Module::Install::Repository&lt;/a&gt; - &lt;a href=&quot;http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=779000&quot;&gt;ITP #779000&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Também atualizei o &lt;a href=&quot;http://packages.debian.org/sid/libtest-base-perl&quot;&gt;pacote Test::Base&lt;/a&gt; para a última versão do upstream e &lt;a href=&quot;http://tracker.debian.org/news/680993&quot;&gt;submeti
+ao Debian&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;maro&quot;&gt;Março&lt;/h2&gt;
+
+&lt;p&gt;Em março Neil sorteou o módulo &lt;a href=&quot;http://metacpan.org/release/libnet&quot;&gt;libnet&lt;/a&gt;, fiz uma sugestão de nova
+funcionalidade para o &lt;code&gt;Net::FTP&lt;/code&gt; a partir de uma ideia registrada no &lt;a href=&quot;http://rt.cpan.org/Public/Bug/Display.html?id=101586&quot;&gt;ticket
+#101586 do RT&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://github.com/steve-m-hay/perl-libnet/pull/16&quot;&gt;Pull Request #16 - add ability to listen hidden files from a FTP server&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;abril&quot;&gt;Abril&lt;/h2&gt;
+
+&lt;p&gt;Em Abril fiz uma correção na documentação do módulo &lt;a href=&quot;http://metacpan.org/pod/Data::Compare&quot;&gt;Data::Compare&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://github.com/DrHyde/perl-modules-Data-Compare/pull/6&quot;&gt;Pull Request #6 - content of the TODO file moved to issue #5 in Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;maio&quot;&gt;Maio&lt;/h2&gt;
+
+&lt;p&gt;O mês de Maio foi a vez do &lt;a href=&quot;http://metacpan.org/pod/Method::Signatures&quot;&gt;Method::Signatures&lt;/a&gt;, fiz um
+pull-request bem simples, “;” faltando no código fonte.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://github.com/evalEmpire/method-signatures/pull/118&quot;&gt;Pull Request #118 - added missing semicolon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;junho&quot;&gt;Junho&lt;/h2&gt;
+
+&lt;p&gt;Em Junho foi a vez do &lt;a href=&quot;http://metacpan.org/pod/PDF::Table&quot;&gt;PDF::Table&lt;/a&gt; e pela primeira vez consegui
+mandar mais de 1 pull-request!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://github.com/kamenov/PDF-Table/pull/18&quot;&gt;Pull Request #18 - avoid warnind about use of greediness modifier&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://github.com/kamenov/PDF-Table/pull/19&quot;&gt;Pull Request #19 - Characters rendered wrong&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;julho&quot;&gt;Julho&lt;/h2&gt;
+
+&lt;p&gt;Em Julho fiz algo que considero bem divertido, adicionei testes unitários para
+funcionalidades sem cobertura no módulo &lt;a href=&quot;http://metacpan.org/pod/cpan-outdated&quot;&gt;cpan-outdated&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://github.com/tokuhirom/cpan-outdated/pull/30&quot;&gt;Pull Request #30 - add unit tests for permissive_filter function&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;agosto&quot;&gt;Agosto&lt;/h2&gt;
+
+&lt;p&gt;Em Agosto o tempo foi curto e me atrasei bastante, ainda assim consegui fazer
+uma pequena contribuição ao módulo
+&lt;a href=&quot;http://metacpan.org/pod/Module::CPANTS::Analyse&quot;&gt;Module::CPANTS::Analyse&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://github.com/cpants/Module-CPANTS-Analyse/pull/25&quot;&gt;Pull Request #25 - missing parenthesis in ‘has_changelog’ error msg&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;setembro&quot;&gt;Setembro&lt;/h2&gt;
+
+&lt;p&gt;Setembro foi a vez do &lt;a href=&quot;http://metacpan.org/pod/Unicode::LineBreak&quot;&gt;Unicode::LineBreak&lt;/a&gt;, me atrasei tanto
+e não consegui enviar o pull-request em tempo, mas o desafio permitia
+“esticar” o prazo e eu enviei 2 pull-requests.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://github.com/hatukanezumi/Unicode-LineBreak/pull/1&quot;&gt;Pull Request #1 - testing that GCString stringify numeric arguments&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://github.com/hatukanezumi/Unicode-LineBreak/pull/2&quot;&gt;Pull Request #2 - documenting wget as a testing dependency&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;outubro&quot;&gt;Outubro&lt;/h2&gt;
+
+&lt;p&gt;Em Outubro o módulo sorteado foi o
+&lt;a href=&quot;http://metacpan.org/pod/Mojolicious::Plugin::ValidateTiny&quot;&gt;Mojolicious::Plugin::ValidateTiny&lt;/a&gt;,
+Mojolicious é um &lt;em&gt;framework Web&lt;/em&gt; muito bom e eu sempre me empolgo para fazer
+qualquer coisa com ele.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://github.com/koorchik/Mojolicious-Plugin-ValidateTiny/pull/10&quot;&gt;Pull Request #10 - fix example in SYNOPSIS section of documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://github.com/koorchik/Mojolicious-Plugin-ValidateTiny/pull/11&quot;&gt;Pull Request #11 - indicating the need loading the “Validate::Tiny” module&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Outubro foi também o mês do &lt;a href=&quot;http://hacktoberfest.digitalocean.com&quot;&gt;Hacktoberfest&lt;/a&gt; da DigitalOcean, a
+imagem no topo deste post é da camisa e adesivos que ganhei ao completar os 4
+Pull Requests para projetos de software livre no Github.&lt;/p&gt;
+
+&lt;h2 id=&quot;novembro&quot;&gt;Novembro&lt;/h2&gt;
+
+&lt;p&gt;Em Novembro foi o módulo &lt;a href=&quot;http://metacpan.org/pod/XML::API&quot;&gt;XML::API&lt;/a&gt;, adicionei testes unitários e
+resolvi um bug registrado na &lt;a href=&quot;http://github.com/mlawren/xml-api/issues/1&quot;&gt;issue #1&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://github.com/mlawren/xml-api/pull/2&quot;&gt;Pull Request #2 - adding tests for _attrs()&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://github.com/mlawren/xml-api/pull/3&quot;&gt;Pull Request #3 - escape apostrophe/single quote&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;dezembro&quot;&gt;Dezembro&lt;/h2&gt;
+
+&lt;p&gt;Dezembro é sempre um mês apertado, mas deu tempo de fechar um bug do módulo
+&lt;a href=&quot;http://metacpan.org/pod/URI&quot;&gt;URI&lt;/a&gt; registrado na &lt;a href=&quot;http://github.com/libwww-perl/uri/issues/13&quot;&gt;issue #13&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://github.com/libwww-perl/uri/pull/31&quot;&gt;Pull Request #31 - remove colon from pair “user:pass” if has no password&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;–&lt;/p&gt;
+
+&lt;p&gt;E assim concluí minha participação no CPAN Pull Request Challenge 2015, Neil
+Bowers fez um post bem elaborado resumindo a experiência do desafio, nele
+apresenta números e gráficos da participação, além do resultado de um survey
+realizado entre todos os participantes.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://neilb.org/2016/01/05/cpan-prc-2015-review.html&quot;&gt;A review of the 2015 CPAN Pull Request Challenge&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ele fez também um post sobre os planos para o desafio de 2016, o qual já
+começou e eu já estou participando.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://neilb.org/2015/12/30/cpan-prc-2016.html&quot;&gt;The CPAN Pull Request Challenge for 2016&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Fri, 29 Jan 2016 00:00:00 -0200</pubDate>
+        <link>http://joenio.me/contribuindo-com-projetos-de-software-livre</link>
+        <guid isPermaLink="true">http://joenio.me/contribuindo-com-projetos-de-software-livre</guid>
+        
+        <category>perl</category>
+        
+        
+      </item>
     
       <item>
         <title>Como adicionar virtualhost aos logs do Varnish</title>
@@ -19,7 +211,9 @@ modificado do &lt;a href=&quot;http://httpd.apache.org/docs/2.4/logs.html#combin
 foi feita para adicionar o &lt;em&gt;virtualhost&lt;/em&gt; &lt;code&gt;%v&lt;/code&gt; no início de cada registro do log
 e na sintaxe do &lt;code&gt;Apache&lt;/code&gt; se parece com o seguinte:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-apache&quot; data-lang=&quot;apache&quot;&gt;&lt;span class=&quot;nb&quot;&gt;LogFormat&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;%v %h %l %u %t \&amp;quot;%r\&amp;quot; %&amp;gt;s %O \&amp;quot;%{Referer}i\&amp;quot; \&amp;quot;%{User-Agent}i\&amp;quot;&amp;quot;&lt;/span&gt; vhost_combined&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-apache&quot; data-lang=&quot;apache&quot;&gt;&lt;span class=&quot;nb&quot;&gt;LogFormat&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;%v %h %l %u %t \&amp;quot;%r\&amp;quot; %&amp;gt;s %O \&amp;quot;%{Referer}i\&amp;quot; \&amp;quot;%{User-Agent}i\&amp;quot;&amp;quot;&lt;/span&gt; vhost_combined&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Isto foi feito com o &lt;a href=&quot;http://github.com/joenio/varnishncsa-vhost&quot;&gt;varnishncsa-vhost&lt;/a&gt;, um script que faz
 o &lt;code&gt;Varnish&lt;/code&gt; armazenar logs seguindo o formato acima, este script deveria estar
@@ -46,7 +240,9 @@ atualização”.&lt;/p&gt;
 &lt;p&gt;Então se isto for útil para você de alguma forma utilize o repositório abaixo,
 eu subi uma nova versão do pacote Debian do &lt;code&gt;varnishncsa-vhost&lt;/code&gt; lá:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sourceslist&quot; data-lang=&quot;sourceslist&quot;&gt;&lt;span class=&quot;k&quot;&gt;deb&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://debian.joenio.me&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;unstable/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-sourceslist&quot; data-lang=&quot;sourceslist&quot;&gt;&lt;span class=&quot;k&quot;&gt;deb&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://debian.joenio.me&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;unstable/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 </description>
         <pubDate>Sat, 15 Aug 2015 00:00:00 -0300</pubDate>
@@ -101,10 +297,10 @@ de uma solução proposta inicialmente por &lt;em&gt;Stefano Zacchiroli&lt;/em&g
 &lt;a href=&quot;http://upsilon.cc/~zack/blog/posts/2009/04/howto:_uploading_to_people.d.o_using_dput&quot;&gt;howto: uploading to people.d.o using dput&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;alert alert-warning&quot;&gt;
-&lt;strong&gt;Atenção!&lt;/strong&gt;
+  &lt;p&gt;&lt;strong&gt;Atenção!&lt;/strong&gt;
 &lt;em&gt;Todas as instruções a seguir são baseadas em meu próprio ambiente, isto
 inclui nomes de usuários, domínios, diretórios, etc. Você deve adaptar estas
-informações com base em sua realidade.&lt;/em&gt;
+informações com base em sua realidade.&lt;/em&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;configurando-o-servidor-para-receber-pacotes&quot;&gt;Configurando o servidor para receber pacotes&lt;/h2&gt;
@@ -137,7 +333,8 @@ $ mkdir -p ~/debian.joenio.me/mini-dinstall/incoming
 
 &lt;p&gt;Crie o arquivo &lt;code&gt;~/.mini-dinstall.conf&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span class=&quot;k&quot;&gt;[DEFAULT]&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span class=&quot;k&quot;&gt;[DEFAULT]&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;mail_on_success&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;false&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;incoming_permissions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0750&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;architectures&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;all, i386, amd64&lt;/span&gt;
@@ -147,7 +344,8 @@ $ mkdir -p ~/debian.joenio.me/mini-dinstall/incoming
 &lt;span class=&quot;na&quot;&gt;generate_release&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;release_label&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Joenio&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;release_description&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Unofficial Debian packages maintained by Joenio Costa&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;verify_sigs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;na&quot;&gt;verify_sigs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;preparando-a-estao-de-trabalho-para-enviar-pacotes&quot;&gt;Preparando a estação de trabalho para enviar pacotes&lt;/h2&gt;
 
@@ -176,8 +374,8 @@ $ gpg --armor --output signing.asc --export D5609CBE
 &lt;/pre&gt;
 
 &lt;div class=&quot;alert alert-warning&quot;&gt;
-&lt;strong&gt;D5609CBE&lt;/strong&gt; é a minha chave, substitua este valor pelo
-identificador da sua própria chave.
+  &lt;p&gt;&lt;strong&gt;D5609CBE&lt;/strong&gt; é a minha chave, substitua este valor pelo
+identificador da sua própria chave.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Copie o arquivo &lt;code&gt;signing.asc&lt;/code&gt; para o servidor:&lt;/p&gt;
@@ -190,13 +388,15 @@ $ scp signing.asc debian.joenio.me:~/debian.joenio.me/
 
 &lt;p&gt;Crie arquivo &lt;code&gt;~/.dput.cf&lt;/code&gt; em seu &lt;code&gt;$HOME&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span class=&quot;k&quot;&gt;[debian.joenio.me]&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span class=&quot;k&quot;&gt;[debian.joenio.me]&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;fqdn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;debian.joenio.me&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;method&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;scp&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;login&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;*&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;incoming&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;~/debian.joenio.me/mini-dinstall/incoming&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;allow_unsigned_uploads&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;post_upload_command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ssh debian.joenio.me mini-dinstall -b &amp;amp;&amp;amp; sign-remote --no-batch debian.joenio.me:debian.joenio.me/unstable/Release&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;na&quot;&gt;post_upload_command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ssh debian.joenio.me mini-dinstall -b &amp;amp;&amp;amp; sign-remote --no-batch debian.joenio.me:debian.joenio.me/unstable/Release&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Os pacotes serão assinados com a chave &lt;code&gt;GnuPG&lt;/code&gt; ao serem enviados pelo &lt;code&gt;dput&lt;/code&gt; ao
 servidor. Isso será feito pelo script &lt;code&gt;sign-remote&lt;/code&gt; disponível
@@ -238,14 +438,16 @@ acesso via &lt;code&gt;HTTP&lt;/code&gt; usando o servidor web &lt;a href=&quot;
 
 &lt;p&gt;Crie o arquivo de configuração &lt;code&gt;/etc/nginx/sites-available/debian.joenio.me&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-nginx&quot; data-lang=&quot;nginx&quot;&gt;&lt;span class=&quot;k&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-nginx&quot; data-lang=&quot;nginx&quot;&gt;&lt;span class=&quot;k&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;kn&quot;&gt;server_name&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;debian.joenio.me&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;kn&quot;&gt;access_log&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/var/log/nginx/debian.joenio.me.access.log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;kn&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kn&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/home/joenio/debian.joenio.me&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;kn&quot;&gt;autoindex&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Habilite o arquivo de configuração e reinicie o serviço:&lt;/p&gt;
 
@@ -269,8 +471,10 @@ disponíveis no seguinte endereço:&lt;/p&gt;
 &lt;p&gt;Para usar este repositorio adicione as seguintes entradas no
 &lt;code&gt;/etc/apt/sources.list&lt;/code&gt; do computador local:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sourceslist&quot; data-lang=&quot;sourceslist&quot;&gt;&lt;span class=&quot;k&quot;&gt;deb&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://debian.joenio.me&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;unstable/&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;deb-src&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://debian.joenio.me&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;unstable/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-sourceslist&quot; data-lang=&quot;sourceslist&quot;&gt;&lt;span class=&quot;k&quot;&gt;deb&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://debian.joenio.me&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;unstable/&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;deb-src&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://debian.joenio.me&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;unstable/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Adicione a chave de assinatura ao banco de dados de segurança do &lt;code&gt;APT&lt;/code&gt;:&lt;/p&gt;
 
@@ -302,11 +506,11 @@ para criar repositório pessoal de pacotes Debian e pode ser uma boa alternativa
 para o setup descrito aqui neste post.&lt;/p&gt;
 
 &lt;div class=&quot;alert alert-info&quot;&gt;
-&lt;strong&gt;Sobre a foto no título deste post:&lt;/strong&gt;
+  &lt;p&gt;&lt;strong&gt;Sobre a foto no título deste post:&lt;/strong&gt;
 &lt;em&gt;Os cubos (pacotes) de papel utilizados na imagem foram feitos seguindo o tutorial
 &lt;a href=&quot;http://pt.wikihow.com/Fazer-um-Cubo-de-Origami&quot;&gt;
-&quot;Como Fazer um Cubo de Origami&quot;
-&lt;/a&gt;.&lt;/em&gt;
+“Como Fazer um Cubo de Origami”
+&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 </description>
@@ -344,7 +548,7 @@ de cuidar da sua marca, pegadas digitais, sombra e diversos outros conceitos de
 marketing.&lt;/p&gt;
 
 &lt;div class=&quot;full-width&quot;&gt;
-  &lt;img src=&quot;http://pbs.twimg.com/media/CA43lYZWoAIfRdf.jpg:large&quot; /&gt;
+  &lt;p&gt;&lt;img src=&quot;http://pbs.twimg.com/media/CA43lYZWoAIfRdf.jpg:large&quot; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;No mesmo dia, à noite, houve o &lt;a href=&quot;http://www.ocergs.coop.br/comunicacao/noticias/2101-movimento-cooperativista-lanca-agenda-institucional&quot;&gt;lançamento da Agenda Institucional do
@@ -357,7 +561,7 @@ poderes Legislativo, Executivo e Judiciário para o ano de 2015.&lt;/p&gt;
 &lt;!-- https://twitter.com/joenio/status/580517899670036481 --&gt;
 
 &lt;div class=&quot;full-width&quot;&gt;
-  &lt;img src=&quot;http://pbs.twimg.com/media/CA5p5ouWAAAk6cw.jpg:large&quot; /&gt;
+  &lt;p&gt;&lt;img src=&quot;http://pbs.twimg.com/media/CA5p5ouWAAAk6cw.jpg:large&quot; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;No dia 25, já em Porto Alegre, visitamos a &lt;a href=&quot;http://escoop.edu.br&quot;&gt;Escoop&lt;/a&gt; - Faculdade de Tecnologia
@@ -375,7 +579,7 @@ preocupada em produzir conhecimento inédito e de qualidade sobre cooperativismo
 no Brasil. Nossa visita foi &lt;a href=&quot;http://www.ocergs.coop.br/comunicacao/noticias/2100-sistema-recebe-comitiva-de-vencedoras-do-premio-cooperativo-do-ano&quot;&gt;noticiada no site da Ocergs/RS&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;full-width&quot;&gt;
-  &lt;img src=&quot;/files/visita-escoop-rs.jpg&quot; /&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/visita-escoop-rs.jpg&quot; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;No dia seguinte, 26 de Março, visitamos a &lt;a href=&quot;http://www.sicredipioneira.com.br&quot;&gt;Sicredi
@@ -388,7 +592,7 @@ iniciativa do Sicredi com o objetivo de promover práticas de educação focadas
 princípios da cooperação e cidadania.&lt;/p&gt;
 
 &lt;div class=&quot;full-width&quot;&gt;
-  &lt;img src=&quot;/files/mario-konzen-sicredi-rs.jpg&quot; /&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/mario-konzen-sicredi-rs.jpg&quot; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Em seguida, Mário Konza, nos convidou a conhecer a
@@ -401,7 +605,7 @@ determinação! O professor e coordernador do projeto, Everaldo Marini, faz um
 belo trabalho e merece todo o apoio possível para continuar com o projeto.&lt;/p&gt;
 
 &lt;div class=&quot;full-width&quot;&gt;
-  &lt;img src=&quot;/files/visita-cooebompa.jpg&quot; /&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/visita-cooebompa.jpg&quot; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Da lá seguimos ao Memorial &lt;a href=&quot;https://pt.wikipedia.org/wiki/Theodor_Amstad&quot;&gt;Padre
@@ -409,7 +613,7 @@ Amstad&lt;/a&gt;, o senhor Mário nos falou
 da vida desde padre, criador do sistema de crédito cooperativo no Brasil.&lt;/p&gt;
 
 &lt;div class=&quot;full-width&quot;&gt;
-  &lt;img src=&quot;/files/memorial-padre-amstad.jpg&quot; /&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/memorial-padre-amstad.jpg&quot; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Na sequência visitamos a &lt;a href=&quot;http://www.pia.com.br&quot;&gt;Cooperativa Piá&lt;/a&gt;, uma
@@ -422,7 +626,7 @@ Piá bem que poderia produzir algo à base de soja ou alguma alternativa ao
 leite.&lt;/p&gt;
 
 &lt;div class=&quot;full-width&quot;&gt;
-  &lt;img src=&quot;/files/visita-cooperativa-pia.jpg&quot; /&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/visita-cooperativa-pia.jpg&quot; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Saindo da Cooperativa Piá fomos conhecer um dos produtores associados,
@@ -431,7 +635,7 @@ parte da cooperativa facilita a vida pois não precisam se preocupar com a venda
 já que a Piá garante a compra de toda a produção.&lt;/p&gt;
 
 &lt;div class=&quot;full-width&quot;&gt;
-  &lt;img src=&quot;/files/fazenda-leite-pia.jpg&quot; /&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/fazenda-leite-pia.jpg&quot; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Dia seguinte, 27 de Março, último dia de viagem, visitamos o CAS, Centro
@@ -441,7 +645,7 @@ ocupa um andar inteiro do prédio e tem uma infraestrutura impressionante,
 mantida inteiramente pela equipe do Sicredi.&lt;/p&gt;
 
 &lt;div class=&quot;full-width&quot;&gt;
-  &lt;img src=&quot;/files/joenio-visita-sicredi.jpg&quot; /&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/joenio-visita-sicredi.jpg&quot; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Ainda no Sicredi, seguimos para um almoço em grupo e partimos para o aeroporto
@@ -522,7 +726,7 @@ praticamente zero esforço de aprendizado inicial, e desde então tenho utilizad
 ela para gerenciar todas as minhas atividades.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Por que eu estava à procura de técnicas para gerenciamento de tempo? &lt;/p&gt;
+  &lt;p&gt;Por que eu estava à procura de técnicas para gerenciamento de tempo?&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Desde 2006 eu venho trabalhando como autônomo, gerenciando meu próprio tempo,
@@ -713,7 +917,7 @@ boas vibrações.&lt;/p&gt;
   &lt;p&gt;Obrigado!&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>Wed, 31 Dec 2014 00:00:00 -0300</pubDate>
+        <pubDate>Wed, 31 Dec 2014 00:00:00 -0200</pubDate>
         <link>http://joenio.me/fui-diagnosticado-com-um-tumor-renal-e-agora</link>
         <guid isPermaLink="true">http://joenio.me/fui-diagnosticado-com-um-tumor-renal-e-agora</guid>
         
@@ -798,7 +1002,8 @@ tarsnap, com ele é possível de maneira simples definir uma política de reten�
 usando um arquivo de configuração localizado em &lt;code&gt;/etc/tarsnapper.conf&lt;/code&gt;. Veja um
 exemplo:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# fazer backup diario e reter:&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# fazer backup diario e reter:&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# a cada semana (7 dias)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# a cada mes (30 dias)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# a cada semestre (180 dias)&lt;/span&gt;
@@ -818,16 +1023,19 @@ exemplo:&lt;/p&gt;
   &lt;span class=&quot;l-Scalar-Plain&quot;&gt;foswiki&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;l-Scalar-Plain&quot;&gt;sources&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
       &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/var/lib/foswiki/data&lt;/span&gt;
-      &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/var/lib/foswiki/pub&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/var/lib/foswiki/pub&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;O tarsnapper deve ser agendado no cron, eu sugiro executar ele diariamente,
 para isso crie o arquivo &lt;code&gt;/etc/cron.daily/tarsnapper&lt;/code&gt; com o seguinte conteúdo:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# Start in the root filesystem, make SElinux happy&lt;/span&gt;
 &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /
 
-tarsnapper -o configfile /etc/tarsnap.conf -c /etc/tarsnapper.conf make &amp;gt;&amp;gt; /var/log/tarsnapper.log 2&amp;gt;&lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+tarsnapper -o configfile /etc/tarsnap.conf -c /etc/tarsnapper.conf make &amp;gt;&amp;gt; /var/log/tarsnapper.log 2&amp;gt;&lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt;1&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Dê permissão de execução a este arquivo, isto vai fazer o cron vai rodar o
 tarsnapper diariamente executando o tarsnap para cada job presente no arquivo
@@ -843,7 +1051,7 @@ reclamações, por favor, entre em contato através do
 ou se preferir atrevés do meu perfil no
 &lt;a href=&quot;http://github.com/joenio&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 23 Dec 2014 00:00:00 -0300</pubDate>
+        <pubDate>Tue, 23 Dec 2014 00:00:00 -0200</pubDate>
         <link>http://joenio.me/backup-na-nuvem-com-tarsnap</link>
         <guid isPermaLink="true">http://joenio.me/backup-na-nuvem-com-tarsnap</guid>
         
@@ -895,7 +1103,7 @@ livros, etc… Espero que seja útil para mais alguém além de mim mesmo.&lt;/p
 
 &lt;p&gt;Ahhh!!! &lt;a href=&quot;http://softwarelivre.org/dani&quot;&gt;Dani&lt;/a&gt;, obrigado pelo &lt;em&gt;empurrãozinho&lt;/em&gt;!&lt;/p&gt;
 </description>
-        <pubDate>Thu, 18 Dec 2014 00:00:00 -0300</pubDate>
+        <pubDate>Thu, 18 Dec 2014 00:00:00 -0200</pubDate>
         <link>http://joenio.me/voltando-a-blogar</link>
         <guid isPermaLink="true">http://joenio.me/voltando-a-blogar</guid>
         
