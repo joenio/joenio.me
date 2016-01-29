@@ -1,3 +1,29 @@
+Sou desenvolvedor do projeto Noosfero a algum tempo e desde meu primeiro commit
+em 2008 venho utilizando ambientes de desenvolvimento variados para isolar meu
+sistema real do sistems onde o Noosfero será executado, desde chroot e schroot,
+passando por VirtualBox e Vagrant, chegando mais recentemente ao Linux
+Containers (LXC), testei também o Docker mas não gostei.
+
+Como dito, recentemente cheguei ao LXC, ele atende à minha necessidade
+para desenvolvimento.
+
+* isolar a instalação de dependencias de desenvolvimento
+* fácil de criar, destuir e re-criar novos ambientes
+* mapeamento do código-fonte entre o sistema real e o ambiente "virtualizado"
+
+Para cada projeto eu quero um ambiente "virtual" isolado, de forma que não seja
+necessário instalar dependencias de desenvolvimento em seu sistema real nem que
+um ambiente "virtual" seja poluído com dependencias de outro projeto.
+
+Ou seja, além do projeto Noosfero, costumo desenvolver também para outros projetos,
+nestes outros projetos eu utilizo ambientes "virtuais" isolados. O que significa isto?
+Que para o Noosfero eu tenho um container específico, para o projeto-b eu tenho outro,
+e assim por diante.
+
+Estes ambientes "virtuais" são apenas ...
+
+=======================================================
+
 Em um Debian testing
 
 https://wiki.debian.org/LXC

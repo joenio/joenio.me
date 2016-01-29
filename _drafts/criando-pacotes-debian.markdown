@@ -178,6 +178,9 @@ $ mr up
 
 (lembrar de configurar o mr atraves de ~/.mrconfig)
 
+Também é pre-requisito ter uma conta no Alioth com sua chave SSH para conseguir
+acesso ao repositorio do grupo pkg-perl.
+
 10 - Atualizar pacote a partir do upstream
 ------------------------------------------
 

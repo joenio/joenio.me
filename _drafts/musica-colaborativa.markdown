@@ -116,3 +116,5 @@ http://www.ted.com/talks/eric_whitacre_a_virtual_choir_2_000_voices_strong
 
 Ele criou um projeto e continuou fazendo novos coros
 http://ericwhitacre.com/the-virtual-choir
+
+Recebi uma mensagem de um usuario do bandhub em um video da Los benzenos
