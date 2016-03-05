@@ -5,9 +5,120 @@
     <description></description>
     <link>http://joenio.me/</link>
     <atom:link href="http://joenio.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 29 Jan 2016 16:34:29 -0200</pubDate>
-    <lastBuildDate>Fri, 29 Jan 2016 16:34:29 -0200</lastBuildDate>
+    <pubDate>Sat, 05 Mar 2016 01:18:38 -0300</pubDate>
+    <lastBuildDate>Sat, 05 Mar 2016 01:18:38 -0300</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Desenvolvendo Noosfero usando containers LXC</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/files/noosfero-lxc.png&quot; alt=&quot;Noosfero LXC&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sou desenvolvedor do projeto &lt;a href=&quot;http://noosfero.org&quot;&gt;Noosfero&lt;/a&gt; a algum tempo e desde meu
+&lt;a href=&quot;http://gitlab.com/noosfero/noosfero/commit/dedffcc6a535cfe7a097770c1485e1658565e929&quot;&gt;primeiro commit&lt;/a&gt; em 2008 venho utilizando ambientes de
+desenvolvimento variados para isolar meu sistema real do sistema onde o
+Noosfero é executado, desde chroot e schroot, passando por VirtualBox e
+Vagrant, chegando mais recentemente ao Linux Containers (LXC), testei o Docker
+mas não gostei muito.&lt;/p&gt;
+
+&lt;p&gt;O que eu busco nestas soluções é o seguinte:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Isolar instalação de dependencias de desenvolvimento do meu sistema real&lt;/li&gt;
+  &lt;li&gt;Fácil de criar, destruir e recriar ambientes de desenvolvimento&lt;/li&gt;
+  &lt;li&gt;Mapear código-fonte entre meu sistema real e o ambiente virtual&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Isto quer dizer que para cada projeto tenho um ambiente “virtual” isolado, de
+forma que não é necessário instalar dependencias de desenvolvimento em meu
+sistema, ou que um ambiente “virtual” seja poluído com dependencias de outro
+projeto, ou seja, para cada projeto tenho um ambiente “virtual” isolado.&lt;/p&gt;
+
+&lt;p&gt;Nas aventuras com o &lt;a href=&quot;http://wiki.debian.org/LXC&quot;&gt;LXC&lt;/a&gt; senti necessidade de algo para simplificar e
+automatizar um pouco as coisas, então comecei a escrever um pequeno shell
+script e lhe dei o nome de &lt;code&gt;holodev&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;holodev&quot;&gt;holodev&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/files/holodeck.gif&quot; class=&quot;float-right&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;O nome &lt;a href=&quot;http://github.com/lappis-tools/holodev&quot;&gt;holodev&lt;/a&gt; é uma referência à tecnologia &lt;a href=&quot;http://en.wikipedia.org/wiki/Holodeck&quot;&gt;Holodeck&lt;/a&gt; do
+seriado Star Trek, nela é possível criar ambientes e cenários conhecidos com um
+alto nível de fidelidade e realidade a partir de um simples comando de voz.
+Basta dizer: “crie o estádio Fonte Nova antes de ser implodido em 2010 em algum
+jogo Bahia x Vitória” e o Holodeck cria toda a realidade, com objetos e
+personagens.&lt;/p&gt;
+
+&lt;p&gt;O &lt;code&gt;holodev&lt;/code&gt; é então um Holodeck para desenvolvedores de software, onde ambientes
+virtuais são criados com o mínimo de esforço. Vejamos como criar um ambiente de
+desenvolvimento &lt;a href=&quot;http://gitlab.com/noosfero/noosfero/&quot;&gt;Noosfero&lt;/a&gt; usando &lt;code&gt;holodev&lt;/code&gt; em um sistema
+Debian-like.&lt;/p&gt;
+
+&lt;p&gt;Adicione o seguinte repositório ao &lt;code&gt;/etc/apt/sources.list&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;deb http://debian.joenio.me unstable/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Baixe a chave do repositório e instale o pacote &lt;code&gt;holodev&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+# wget -O - http://debian.joenio.me/signing.asc | apt-key add -
+# apt-get update
+# apt-get install holodev
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Supondo que você já tem o código-fonte do Noosfero, entre no seu diretório e
+execute o seguinte comando. (&lt;em&gt;é preciso ter sudo&lt;/em&gt;)&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+~/src/noosfero$ holodev create --release jessie
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Isto vai (1) criar um container chamado ‘noosfero-master’ usando Debian Jessie,
+(2) criar seu usuário dentro do container com o mesmo UID e (3) mapear o
+código-fonte do Noosfero dentro do container. O próximo passo é entrar no
+container e instalar as dependencias de desenvolvimento do Noosfero.&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+~/src/noosfero$ holodev attach
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Dentro do container LXC ‘noosfero-master’ execute o seguinte:&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+~$ ./script/quick-start --force-install
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;O script &lt;code&gt;quick-start&lt;/code&gt; irá instalar todas as dependencias necessárias além de
+executar um setup inicial deixando tudo pronto para o Noosfero ser executado.&lt;/p&gt;
+
+&lt;p&gt;Pronto! Você tem um container LXC redonto para rodar o Noosfero, executar os
+testes, abrir o console Rails, etc… Agora é só meter a mão na massa e começar
+a &lt;em&gt;codar&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Não sabe o que fazer? &lt;a href=&quot;http://gitlab.com/noosfero/noosfero/issues?label_name=bug&quot;&gt;Comece resolvendo algum bug&lt;/a&gt;. Se precisar
+de ajuda pergunte na &lt;a href=&quot;http://listas.softwarelivre.org/cgi-bin/mailman/listinfo/noosfero-br&quot;&gt;lista de discussão da comunidade&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 05 Mar 2016 00:00:00 -0300</pubDate>
+        <link>http://joenio.me/desenvolvendo-noosfero-usando-containers-lxc</link>
+        <guid isPermaLink="true">http://joenio.me/desenvolvendo-noosfero-usando-containers-lxc</guid>
+        
+        <category>tecnologia</category>
+        
+        <category>lxc</category>
+        
+        <category>noosfero</category>
+        
+        
+      </item>
     
       <item>
         <title>Contribuindo com projetos de software livre</title>
@@ -726,7 +837,7 @@ praticamente zero esforço de aprendizado inicial, e desde então tenho utilizad
 ela para gerenciar todas as minhas atividades.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Por que eu estava à procura de técnicas para gerenciamento de tempo?&lt;/p&gt;
+  &lt;p&gt;Por que eu estava à procura de técnicas para gerenciamento de tempo? &lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Desde 2006 eu venho trabalhando como autônomo, gerenciando meu próprio tempo,

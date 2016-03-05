@@ -3,12 +3,12 @@ title: Desenvolvendo Noosfero usando containers LXC
 tags: tecnologia lxc noosfero
 ---
 
-![Default](/files/default-post-image.png)
+![Noosfero LXC](/files/noosfero-lxc.png)
 
 Sou desenvolvedor do projeto [Noosfero][noosfero] a algum tempo e desde meu
 [primeiro commit][primeiro-commit] em 2008 venho utilizando ambientes de
 desenvolvimento variados para isolar meu sistema real do sistema onde o
-Noosfero será executado, desde chroot e schroot, passando por VirtualBox e
+Noosfero é executado, desde chroot e schroot, passando por VirtualBox e
 Vagrant, chegando mais recentemente ao Linux Containers (LXC), testei o Docker
 mas não gostei muito.
 
@@ -57,7 +57,7 @@ Baixe a chave do repositório e instale o pacote `holodev`:
 </code>
 </pre>
 
-Supondo que você já tem o código-fonte do Noosfero entre no seu diretório e
+Supondo que você já tem o código-fonte do Noosfero, entre no seu diretório e
 execute o seguinte comando. (_é preciso ter sudo_)
 
 <pre class="terminal">
@@ -88,11 +88,12 @@ Dentro do container LXC 'noosfero-master' execute o seguinte:
 O script `quick-start` irá instalar todas as dependencias necessárias além de
 executar um setup inicial deixando tudo pronto para o Noosfero ser executado.
 
-Pronto! Você tem um container LXC com tudo pronto para rodar o Noosfero,
-executar os testes, abrir o console Rails, etc... Agora é só meter a mão na
-massa e começar a _codar_.
+Pronto! Você tem um container LXC redonto para rodar o Noosfero, executar os
+testes, abrir o console Rails, etc... Agora é só meter a mão na massa e começar
+a _codar_.
 
-Não sabe o que fazer? [Comece resolvendo algum bug][noosfero-bugs].
+Não sabe o que fazer? [Comece resolvendo algum bug][noosfero-bugs]. Se precisar
+de ajuda pergunte na [lista de discussão da comunidade][noosfero-br].
 
 [noosfero]: http://noosfero.org
 [primeiro-commit]: http://gitlab.com/noosfero/noosfero/commit/dedffcc6a535cfe7a097770c1485e1658565e929
@@ -101,3 +102,4 @@ Não sabe o que fazer? [Comece resolvendo algum bug][noosfero-bugs].
 [holodev]: http://github.com/lappis-tools/holodev
 [noosfero-gitlab]: http://gitlab.com/noosfero/noosfero/
 [noosfero-bugs]: http://gitlab.com/noosfero/noosfero/issues?label_name=bug
+[noosfero-br]: http://listas.softwarelivre.org/cgi-bin/mailman/listinfo/noosfero-br
