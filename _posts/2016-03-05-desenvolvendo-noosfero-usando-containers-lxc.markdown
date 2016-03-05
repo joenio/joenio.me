@@ -3,6 +3,8 @@ title: Desenvolvendo Noosfero usando containers LXC
 tags: tecnologia lxc noosfero
 ---
 
+![Default](/files/default-post-image.png)
+
 Sou desenvolvedor do projeto [Noosfero][noosfero] a algum tempo e desde meu
 [primeiro commit][primeiro-commit] em 2008 venho utilizando ambientes de
 desenvolvimento variados para isolar meu sistema real do sistema onde o
