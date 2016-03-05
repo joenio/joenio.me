@@ -1,97 +1,101 @@
-Sou desenvolvedor do projeto Noosfero a algum tempo e desde meu primeiro commit
-em 2008 venho utilizando ambientes de desenvolvimento variados para isolar meu
-sistema real do sistems onde o Noosfero será executado, desde chroot e schroot,
-passando por VirtualBox e Vagrant, chegando mais recentemente ao Linux
-Containers (LXC), testei também o Docker mas não gostei.
+---
+title: Desenvolvendo Noosfero usando containers LXC
+tags: tecnologia lxc noosfero
+---
 
-Como dito, recentemente cheguei ao LXC, ele atende à minha necessidade
-para desenvolvimento.
+Sou desenvolvedor do projeto [Noosfero][noosfero] a algum tempo e desde meu
+[primeiro commit][primeiro-commit] em 2008 venho utilizando ambientes de
+desenvolvimento variados para isolar meu sistema real do sistema onde o
+Noosfero será executado, desde chroot e schroot, passando por VirtualBox e
+Vagrant, chegando mais recentemente ao Linux Containers (LXC), testei o Docker
+mas não gostei muito.
 
-* isolar a instalação de dependencias de desenvolvimento
-* fácil de criar, destuir e re-criar novos ambientes
-* mapeamento do código-fonte entre o sistema real e o ambiente "virtualizado"
+O que eu busco nestas soluções é o seguinte:
 
-Para cada projeto eu quero um ambiente "virtual" isolado, de forma que não seja
-necessário instalar dependencias de desenvolvimento em seu sistema real nem que
-um ambiente "virtual" seja poluído com dependencias de outro projeto.
+1. Isolar instalação de dependencias de desenvolvimento do meu sistema real
+1. Fácil de criar, destruir e recriar ambientes de desenvolvimento
+1. Mapear código-fonte entre meu sistema real e o ambiente virtual
 
-Ou seja, além do projeto Noosfero, costumo desenvolver também para outros projetos,
-nestes outros projetos eu utilizo ambientes "virtuais" isolados. O que significa isto?
-Que para o Noosfero eu tenho um container específico, para o projeto-b eu tenho outro,
-e assim por diante.
+Isto quer dizer que para cada projeto tenho um ambiente "virtual" isolado, de
+forma que não é necessário instalar dependencias de desenvolvimento em meu
+sistema, ou que um ambiente "virtual" seja poluído com dependencias de outro
+projeto, ou seja, para cada projeto tenho um ambiente "virtual" isolado.
 
-Estes ambientes "virtuais" são apenas ...
+Nas aventuras com o [LXC][lxc] senti necessidade de algo para simplificar e
+automatizar um pouco as coisas, então comecei a escrever um pequeno shell
+script e lhe dei o nome de `holodev`.
 
-=======================================================
+## holodev
 
-Em um Debian testing
+<img src='/files/holodeck.gif' class='float-right' />
 
-https://wiki.debian.org/LXC
+O nome [holodev][holodev] é uma referência à tecnologia [Holodeck][holodeck] do
+seriado Star Trek, nela é possível criar ambientes e cenários conhecidos com um
+alto nível de fidelidade e realidade a partir de um simples comando de voz.
+Basta dizer: "crie o estádio Fonte Nova antes de ser implodido em 2010 em algum
+jogo Bahia x Vitória" e o Holodeck cria toda a realidade, com objetos e
+personagens.
 
-Instale:
- * bridge-utils libvirt-bin debootstrap lxctl
+O `holodev` é então um Holodeck para desenvolvedores de software, onde ambientes
+virtuais são criados com o mínimo de esforço. Vejamos como criar um ambiente de
+desenvolvimento [Noosfero][noosfero-gitlab] usando `holodev` em um sistema
+Debian-like.
 
-Teste:
- # lxc-checkconfig
+Adicione o seguinte repositório ao `/etc/apt/sources.list`:
 
-https://github.com/pixelb/scripts/blob/master/scripts/ansi2html.sh
+    deb http://debian.joenio.me unstable/
 
-Para funcionar rede:
+Baixe a chave do repositório e instale o pacote `holodev`:
 
-Execute:
- # virsh net-autostart default
+<pre class="terminal">
+<code>
+# wget -O - http://debian.joenio.me/signing.asc | apt-key add -
+# apt-get update
+# apt-get install holodev
+</code>
+</pre>
 
-Edite /etc/lxc/default.conf:
+Supondo que você já tem o código-fonte do Noosfero entre no seu diretório e
+execute o seguinte comando. (_é preciso ter sudo_)
 
-Remova a linha:
- lxc.network.type = empty
+<pre class="terminal">
+<code>
+~/src/noosfero$ holodev create --release jessie
+</code>
+</pre>
 
-E adicione:
- lxc.network.type = veth
- lxc.network.link = virbr0
+Isto vai (1) criar um container chamado 'noosfero-master' usando Debian Jessie,
+(2) criar seu usuário dentro do container com o mesmo UID e (3) mapear o
+código-fonte do Noosfero dentro do container. O próximo passo é entrar no
+container e instalar as dependencias de desenvolvimento do Noosfero.
 
+<pre class="terminal">
+<code>
+~/src/noosfero$ holodev attach
+</code>
+</pre>
 
-Crie sistema base:
- # lxc-create -n noosfero -t debian -- -r wheezy
+Dentro do container LXC 'noosfero-master' execute o seguinte:
 
--- noosfero: oe6NAobz
--- perl: Sh3nZatn
+<pre class="terminal">
+<code>
+~$ ./script/quick-start --force-install
+</code>
+</pre>
 
-Para montar o código fonte do Noosfero dentro do container basta
+O script `quick-start` irá instalar todas as dependencias necessárias além de
+executar um setup inicial deixando tudo pronto para o Noosfero ser executado.
 
-1 Criar o diretório dentro do container:
+Pronto! Você tem um container LXC com tudo pronto para rodar o Noosfero,
+executar os testes, abrir o console Rails, etc... Agora é só meter a mão na
+massa e começar a _codar_.
 
- # mkdir /var/lib/lxc/noosfero/rootsh/JOENIO
+Não sabe o que fazer? [Comece resolvendo algum bug][noosfero-bugs].
 
-2 Adicionar no fstab do container a seguinte linha
-
-/var/lib/lxc/noosfero/fstab:
-
-/home/joenio /var/lib/lxc/noosfero/rootfs/JOENIO none bind 0 0
-
-Inicie e entre no container:
- # lxc-start -n noosfero -d
- # lxc-console -n noosfero
-
- # lxc-execute 
-Dentro do container:
- # addgroup --gid 1000 joenio
- # adduser --uid 1000 --gid 1000 --disabled-password joenio
-
-Adicionar user joenio ao sudo:
- # apt-get update
- # apt-get install sudo
- # echo "%sudo ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/sudo-group-nopasswd
-
-Pacotes utilitarios basicos:
- # apt-get install aptitude bash-completion
-
-Instalando dependencias de denvolvimento Noosfero e setup básico:
- # su - joenio
- $ cd /JOENIO/src/noosfero
- $ ./script/quick-start
-
-Gerando pacotes:
- $ rake noosfero:debian\_packages
- $ debsign pkg/noosfero\_1.2\_amd64.changes
-
+[noosfero]: http://noosfero.org
+[primeiro-commit]: http://gitlab.com/noosfero/noosfero/commit/dedffcc6a535cfe7a097770c1485e1658565e929
+[lxc]: http://wiki.debian.org/LXC
+[holodeck]: http://en.wikipedia.org/wiki/Holodeck
+[holodev]: http://github.com/lappis-tools/holodev
+[noosfero-gitlab]: http://gitlab.com/noosfero/noosfero/
+[noosfero-bugs]: http://gitlab.com/noosfero/noosfero/issues?label_name=bug
