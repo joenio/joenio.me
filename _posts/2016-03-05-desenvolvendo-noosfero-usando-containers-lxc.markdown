@@ -88,7 +88,7 @@ Dentro do container LXC 'noosfero-master' execute o seguinte:
 O script `quick-start` irá instalar todas as dependencias necessárias além de
 executar um setup inicial deixando tudo pronto para o Noosfero ser executado.
 
-Pronto! Você tem um container LXC redonto para rodar o Noosfero, executar os
+Pronto! Você tem um container LXC redondo para rodar o Noosfero, executar os
 testes, abrir o console Rails, etc... Agora é só meter a mão na massa e começar
 a _codar_.
 

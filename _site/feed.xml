@@ -5,8 +5,8 @@
     <description></description>
     <link>http://joenio.me/</link>
     <atom:link href="http://joenio.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 05 Mar 2016 01:18:38 -0300</pubDate>
-    <lastBuildDate>Sat, 05 Mar 2016 01:18:38 -0300</lastBuildDate>
+    <pubDate>Mon, 07 Mar 2016 23:43:28 -0300</pubDate>
+    <lastBuildDate>Mon, 07 Mar 2016 23:43:28 -0300</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -99,7 +99,7 @@ container e instalar as dependencias de desenvolvimento do Noosfero.&lt;/p&gt;
 &lt;p&gt;O script &lt;code&gt;quick-start&lt;/code&gt; irá instalar todas as dependencias necessárias além de
 executar um setup inicial deixando tudo pronto para o Noosfero ser executado.&lt;/p&gt;
 
-&lt;p&gt;Pronto! Você tem um container LXC redonto para rodar o Noosfero, executar os
+&lt;p&gt;Pronto! Você tem um container LXC redondo para rodar o Noosfero, executar os
 testes, abrir o console Rails, etc… Agora é só meter a mão na massa e começar
 a &lt;em&gt;codar&lt;/em&gt;.&lt;/p&gt;
 
