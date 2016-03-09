@@ -58,7 +58,7 @@ faz de tais softwares um instrumento de poder injusto
 </section>
 
 <section>
-### História software livre
+### História do software livre
 
 * No início (década de 60) o software era livre por "natureza"
 * Em 1970 a IBM começou a vender seus softwares separados do hardware

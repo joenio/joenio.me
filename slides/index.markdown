@@ -11,3 +11,4 @@ layout: page
 * [Ruby On Rails](/slides/ruby-on-rails.html) (parcial)
 * [Software Livre](/slides/software-livre.html)
 * [Mini-curso de integração entre R-Project e LaTeX](/slides/integracao-r-project-latex.html) (rascunho)
+* [Como ficar rico com Software Livre](/slides/negocios-software-livre.html)

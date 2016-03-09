@@ -3,28 +3,29 @@ title: Colivre | Empreendedorismo com Tecnologias Livres
 ---
 
 <section>
-  <img src="files/ifba.png" width="150px" />
-  <h4>IFBA - Semana de Ciência e Tecnologia 2013</h4>
   <h2>Empreendedorismo com Tecnologias Livres</h2>
-  <h3>breve histórico da cooperativa Colivre e do projeto de software livre Noosfero</h3>
+  <h4>breve histórico da cooperativa Colivre</h4>
 </section>
 
-<section>
+<section data-background='white'>
   <img src="files/colivre.png" />
-  <p><strong>Colivre</strong></p>
-  <p><strong>Cooperativa de tecnologias livres</strong></p>
-  <p>&nbsp;</p>
-  <p>+ Software Livre<br/>+ Autogestão<br/>+ Cooperativismo</p>
-  <p>&nbsp;</p>
-  <p>2005 ~ 2013</p>
+  <p><strong>Colivre:</strong> Cooperativa de tecnologias livres</p>
+  <ul>
+    <li>Software Livre</li>
+    <li>Autogestão</li>
+    <li>Cooperativismo</li>
+  </ul>
+  <p>2005 ~ hoje</p>
 </section>
 
 <section>
   <p><strong>Como tudo começou?</strong></p>
-  <p>&nbsp;</p>
-  <p>+ Um grupo de "nerds" querendo viver de software livre</p>
-  <p>+ Planejamento, planejamento, planejamento...</p>
-  <p>&nbsp;</p>
+  <br/>
+  <ul>
+    <li>Um grupo de "nerds" querendo viver de software livre</li>
+    <li>Planejamento, planejamento, planejamento...</li>
+  </ul>
+  <br/>
   <p>2005 ~ 2006</p>
 </section>
 
@@ -37,7 +38,7 @@ title: Colivre | Empreendedorismo com Tecnologias Livres
 </section>
 
 <section>
-  <p><strong>Desafios</strong></p>
+  <h3>Desafios!</h3>
   <p>&nbsp;</p>
   <p>1. Se não tem dono, quem se responsabiliza se algo sair errado?</p>
   <p>&nbsp;</p>
@@ -45,9 +46,9 @@ title: Colivre | Empreendedorismo com Tecnologias Livres
 </section>
 
 <section>
-  <p><strong>Grande preconceito em relação às cooperativas</strong></p>
+  <p><strong>O mercado tem grande preconceito em relação às cooperativas</strong></p>
   <p>&nbsp;</p>
-  <p>O cliente sempre tem acesso ao dono do negócio, pois são todos donos</p>
+  <p>Mas o cliente sempre tem acesso ao dono do negócio, pois são todos sócios</p>
 </section>
 
 <section>
@@ -84,43 +85,42 @@ title: Colivre | Empreendedorismo com Tecnologias Livres
 <section>
   <p><strong>E hoje atende...</strong></p>
   <p>&nbsp;</p>
-  <p>ASL, USP, Serpro, Presidência, OCEB, UNB, Qualipso, IPF, Kliceo</p>
+  <p>ASL, USP, Serpro, Presidência, OCEB, UnB, Qualipso, SNJ, MJ, MPOG...</p>
   <p>&nbsp;</p>
-  <p>2007 .. 2013</p>
+  <p>2007 .. 2016</p>
 </section>
 
 <section>
-  <p>+ Desenvolvimento "bazaar"</p>
-  <p>+ Licença AGPL</p>
-  <p>+ Ruby on Rails</p>
+  <h3>Noosfero</h3>
+  <ul>
+    <li>Desenvolvimento "bazaar"</li>
+    <li>Licença AGPL</li>
+    <li>Ruby on Rails</li>
+  </ul>
 </section>
 
 <section>
-  <p>http://noosfero.org</p>
-  <p>&nbsp;</p>
-  <p>+ Documentação técnica</p>
-  <p>+ Documentação de usuário</p>
-  <p>+ Gestão do desenvolvimento</p>
-  <p>+ Informações sobre a comunidade</p>
-  <p>+ Plano de lançamentos/releases</p>
-  <p>+ Código fonte</p>
+## http://noosfero.org
+
+* Documentação técnica
+* Documentação de usuário
+* Gestão do desenvolvimento
+* Informações sobre a comunidade
+* Plano de lançamentos/releases
+* Código fonte
 </section>
 
 <section>
-  <p>Como ganhar $$$ com o Noosfero?</p>
-  <p>&nbsp;</p>
-  <p>+ Governo</p>
-  <p>+ Empresas</p>
-  <p>+ Instituições de ensino</p>
-  <p>+ ...</p>
+## Como ganhar $$$ com o Noosfero?
+
+* Governo
+* Empresas
+* Instituições de ensino
+* ...
 </section>
 
 <section>
-  <div class="centralizado">
   <h1>obrigado!</h1>
   <h3>http://joenio.me</h3>
   <h4>joenio@colivre.coop.br</h4>
-  <h5>esta apresentação foi feita com o software livre impress.js</h5>
-  <h5>background utilizado: http://subtlepatterns.com</h5>
-  </div>
 </section>
