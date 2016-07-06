@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <title>Caracterização de Ferramentas de Pesquisa no Contexto de Engenharia de Software Experimental | Joenio Costa</title>
+  <title>Caracterização da complexidade estrutural em ferramentas de análise estática de código-fonte | Joenio Costa</title>
   <meta name="author" content="Joenio Costa" />
   <link rel="stylesheet" href="/javascript/reveal.js/css/reveal.css">
   <link rel="stylesheet" href="/javascript/reveal.js/css/theme/black.css" id="theme">
@@ -29,92 +29,189 @@
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
       <section>
-  <h2 id="caracterizao-de-ferramentas-de-pesquisa-no-contexto-de-engenharia-de-software-experimental">Caracterização de Ferramentas de Pesquisa no Contexto de Engenharia de Software Experimental</h2>
-
-  <blockquote>
-    <p>Joenio Marques da Costa<br />
-Universidade Federal da Bahia (UFBA)</p>
-  </blockquote>
+  <h3 id="caracterizao-da-complexidade-estrutural-em-ferramentas-de-anlise-esttica-de-cdigo-fonte">Caracterização da complexidade estrutural em ferramentas de análise estática de código-fonte</h3>
 </section>
 
 <section>
-  <h1 id="objetivo">Objetivo</h1>
+  <p><em>Apresentação para banca de qualificação de mestrado do
+Programa de Pós-graduação em Ciência da Computação da
+Universidade Federal da Bahia</em></p>
 
-  <p>Melhorar a compreensão sobre as ferramentas de software desenvolvidas durante
-pesquisas em Engenharia de Software – aqui denominadas “ferramentas de
-pesquisa” – por meio de sua caracterização no contexto de estudos empíricos em
-Engenharia de Software</p>
+  <p>Salvador-Ba, 08 de Julho de 2016</p>
+
+  <p>Joenio Marques da Costa</p>
+
+  <p>Orientadora: Profa. Dra. <u>Christina von Flach G. Chavez</u><br />
+Co-orientador: Prof. Dr. <u>Paulo Roberto Miranda Meirelles</u></p>
 </section>
 
 <section>
-  <h2 id="objetivos-especficos">Objetivos específicos</h2>
+  <h2 id="objetivo">Objetivo</h2>
+
+  <p>compreender as ferramentas de software para análise estática de código-fonte do
+ponto de vista de sua manutenabilidade, a partir da análise de sua complexidade
+estrutural, discutindo quais características arquiteturais explicam seus
+atributos de qualidade interna</p>
+</section>
+
+<section>
+  <h3 id="motivao">Motivação</h3>
+
+  <p><em>compreender a fundo o domínio de análise estática de código-fonte, suas
+técnicas e limitações, compreender os aspectos de qualidade interna das
+ferramentas existentes na indústria e na academia, a fim de ter
+conhecimento suficiente para evoluir ferramentas deste domínio</em></p>
+</section>
+
+<section>
+  <h2 id="anlise-esttica">Análise estática</h2>
+
+  <p>análise estática de código-fonte é a atividade de obter informações acerca
+de um programa a partir do seu código-fonte</p>
+
+  <p>tem suas origens nos estudos e desenvolvimentos de compiladores</p>
+</section>
+
+<section>
+  <p>Análise estática de código-fonte costuma ser utilizada em diversas atividades
+da engenharia de software</p>
 
   <ul>
-    <li>Realizar revisão sistemática sobre “ferramentas de pesquisa”</li>
-    <li>Caracterizar “ferramentas de pesquisa” coletadas em termos de atributos relacionados a:
-      <ul>
-        <li>Desenvolvimento</li>
-        <li>Distribuição</li>
-        <li>Uso em estudos empíricos, sejam primários ou replicações</li>
-      </ul>
-    </li>
-    <li>Sintetizar informações sobre “ferramentas de pesquisa” coletadas</li>
+    <li>Análise de performance</li>
+    <li>Compreensão de programas</li>
+    <li>Localizaçao de falhas</li>
+    <li>Recuperação arquitetural</li>
+    <li>Testes</li>
   </ul>
 </section>
 
-<section>
-  <h2 id="fundamentao-terica">Fundamentação teórica</h2>
+<section data-background="white">
+  <h4 id="anatomia-da-anlise-esttica-de-cdigo-fonte">Anatomia da análise estática de código-fonte</h4>
 
-  <ul>
-    <li>Engenharia de Software</li>
-    <li>Engenharia de Software Experimental</li>
-    <li>Replicação de experimentos em Engenharia de Software</li>
-    <li>Ciência Aberta: open access, open data, open source, open reproducible research</li>
-    <li>Science Code Manifesto: “Without better software, science cannot progress”</li>
-    <li>Revisão sistemática e meta-análise</li>
-  </ul>
+  <p><img src="files/static-analysis-representation.png" /></p>
 </section>
 
 <section>
-  <section>
-    <h2 id="metodologia">Metodologia</h2>
+  <p><strong><u>Extração de dados</u></strong><br />
+<em>este componente converte a sintaxe de um programa em uma sintaxe mais adequada
+para análise posterior</em></p>
 
-    <ol>
-      <li>Revisão bibliográfica sobre estudos secundários (em especial, revisão sistemática)</li>
-      <li>Realizar revisão sistemática de literatura a partir de artigos da área de Engenharia de Software que tratam de publicação de “ferramentas de pesquisa”</li>
-      <li>Caracterizar atributos das “ferramentas de pesquisa” a partir de algumas questões</li>
-    </ol>
-  </section>
-  <section>
-    <ul>
-      <li>Quais são as ferramentas de pesquisa associadas a pesquisas em engenharia de software?</li>
-      <li>Como as ferramentas de pesquisa publicadas nestes estudos são licenciadas e distribuídas?</li>
-      <li>Como as ferramentas de pesquisa são desenvolvidas, em termos de métodos e processos recomendados pela engenharia de software?</li>
-      <li>Há colaboração entre pesquisadores de universidades distintas no desenvolvimento das ferramentas de pesquisa publicadas?</li>
-      <li>As ferramentas publicadas são avaliadas internamente e externamente?  Se sim, como são avaliadas?</li>
-    </ul>
-  </section>
+  <p><strong><u>Representação intermediária</u></strong><br />
+<em>este componente é responsável pela representação dos dados obtidos na etapa de
+extração</em></p>
+
+  <p><strong><u>Análise</u></strong><br />
+<em>componente responsável por interpretar os dados presentes na representação
+intermediária</em></p>
 </section>
 
 <section>
-  <h2 id="resultados-esperados">Resultados esperados</h2>
+  <h3 id="representao-intermediria">Representação intermediária</h3>
 
-  <ul>
-    <li>Caracterização dos atributos das ferramentas de software desenvolvidas durante pesquisas em engenharia de software, chamadas aqui de “ferramentas de pesquisa”</li>
-    <li>Síntese dos resultados e lições a respeito de temas recorrentes e problemas comuns no desenvolvimento e publicação de “ferramentas de pesquisa”</li>
-    <li>Publicação de artigos científicos</li>
-    <li>Dissertação de mestrado</li>
-  </ul>
+  <p>os formatos de representação intermediárias costumam ser aplicadas em fins
+específicos, por exemplo, ferramentas de análise estática para cálculo de
+métricas de código-fonte podem fazer uso do Grafo de Fluxo de Controle
+para calcular a métrica de complexidade ciclomática de McCabe</p>
+</section>
 
+<section>
+  <h3 id="mtricas-de-software">Métricas de software</h3>
+
+  <p>uma função cujas entradas são dados de software e cuja saı́da é um valor
+numérico, que pode ser interpretado como o grau em que um software possui um
+determinado atributo que afeta sua qualidade</p>
+</section>
+
+<section>
+  <h3 id="mtricas-de-cdigo-fonte">Métricas de código-fonte</h3>
+
+  <p>métricas de código-fonte cobrem aspectos de tamanho, complexidade e qualidade,
+e podem indicar aspectos relevantes à manutenibilidade de um programa</p>
+</section>
+
+<section>
+  <h3 id="complexidade-estrutural-de-programas">Complexidade estrutural de programas</h3>
+
+  <p>entre as inúmeras propostas para cálculo da complexidade estrutural, a
+medida feita através do acoplamento (CBO) e coesão (LCOM4) podem fornecer
+indicativos sobre o esforço necessário para atividades de manutenção</p>
+</section>
+
+<section>
+  <h3 id="metodologia-do-estudo">Metodologia do estudo</h3>
+
+  <p>Seleção de ferramentas de análise-estática</p>
+
+  <p>Coleta de métricas de código-fonte das ferramentas</p>
+
+  <p>Análise e interpretação dos valores de métricas</p>
+</section>
+
+<section>
+  <h3 id="seleo-e-coleta">Seleção e coleta</h3>
+
+  <p>a seleção de ferramentas será feita através de uma revisão estruturada
+e de uma busca livre em fontes de ferramentas da indústria</p>
+
+  <p>a análise de código-fonte e coleta de suas métricas será feita de forma
+automatizada utilizando a ferramenta Analizo</p>
+</section>
+
+<section>
+  <h3 id="interpretao-dos-valores-de-mtricas">Interpretação dos valores de métricas</h3>
+
+  <p>as métricas serão coletadas para cada módulo de cada ferramenta, estes
+valores serão distribuídos em percentis, a análise manual desta distribuição
+irá nos dar um valor único para cada ferramenta</p>
+</section>
+
+<section>
+  <h3 id="resultados-esperados">Resultados esperados</h3>
+
+  <p>Caracterização das ferramentas de análise estática selecionadas</p>
+
+  <p>Caracterização da complexidade estrutural de ferramentas neste domínio</p>
+
+  <p>Conjunto de intervalos de referência dos valores de métricas de código-fonte</p>
+
+  <p>Evolução de uma ferramenta de análise estática de código-fonte.</p>
+</section>
+
+<section>
+  <h3 id="evoluo-do-analizo">Evolução do Analizo</h3>
+
+  <p>a ferramenta Analizo será evoluída a fim de atender necessidades da nossa pesquisa,
+um resultado preliminar neste sentido é o lançamento da versão 1.19.0 desta ferramenta
+realizada no contexto deste estudo em 18 de Fevereiro de 2016</p>
+</section>
+
+<section>
+  <h3 id="resultados-preliminares">Resultados preliminares</h3>
+
+  <p>315 artigos da conferência SCAM foram avaliados e 9 ferramentas de análise estática de código-fonte foram selecionadas</p>
+
+  <p>54 ferramentas da indústria avaliada e destas 14 foram selecionadas para este estudo</p>
+
+  <p>23 ferramentas foram selecionadas e analisadas de forma automatizada para coleta de métricas de código-fonte</p>
+</section>
+
+<section>
+  <h3 id="prximos-passos">Próximos passos</h3>
+
+  <p>…</p>
+</section>
+
+<section data-background="white">
+  <h3 id="cronograma">Cronograma</h3>
+
+  <p><img src="files/cronograma-qualificacao.png" /></p>
 </section>
 
 <section data-background="#c4a000">
   <section>
     <h3 id="obrigado">Obrigado!</h3>
 
-    <p>joenio@colivre.coop.br</p>
-
-    <p><strong>Dúvidas?</strong></p>
+    <p>joenio@joenio.me</p>
   </section>
   <section>
     <h3 id="histrico-de-apresentaes">Histórico de apresentações</h3>
@@ -122,7 +219,7 @@ Engenharia de Software</p>
     <p><small>Onde e quando esta apresentação foi realizada</small></p>
 
     <ul style="font-size: 24px">
-  <li>01 Outubro 2015, IM UFBA, reunião do grupo de pesquisa</li>
+  <li>06 Julho 2016, FGA UnB, Brasília, prévia da apresentação no Lappis</li>
 </ul>
   </section>
 </section>
