@@ -8,7 +8,8 @@
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="author" content="Joenio Costa" />
   <link rel="stylesheet" href="/javascript/reveal.js/css/reveal.css">
-  <link rel="stylesheet" href="/javascript/reveal.js/css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="/javascript/reveal.js/css/theme/{% if page.theme %}{{ page.theme }}{% else %}black{% endif %}.css" id="theme">
+  
   <!-- Code syntax highlighting -->
   <link rel="stylesheet" href="/javascript/reveal.js/lib/css/zenburn.css">
   <!-- Printing and PDF exports -->

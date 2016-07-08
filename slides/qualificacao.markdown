@@ -1,5 +1,6 @@
 ---
 title: Caracterização da complexidade estrutural em ferramentas de análise estática de código-fonte
+theme: serif
 ---
 
 <section>
@@ -7,16 +8,18 @@ title: Caracterização da complexidade estrutural em ferramentas de análise es
 </section>
 
 <section>
-_Apresentação para banca de qualificação de mestrado do
+#### **Caracterização da complexidade estrutural em ferramentas de análise estática de código-fonte**
+
+_apresentação para banca de qualificação de mestrado do
 Programa de Pós-graduação em Ciência da Computação da
 Universidade Federal da Bahia_
 
-Salvador-Ba, 08 de Julho de 2016
+<span style="color:#777">Salvador-Ba, 08 de Julho de 2016</span>
 
 Joenio Marques da Costa
 
-Orientadora: Profa. Dra. <u>Christina von Flach G. Chavez</u><br/>
-Co-orientador: Prof. Dr. <u>Paulo Roberto Miranda Meirelles</u>
+<span style="color:#777">Orientadora:</span> <u>Christina von Flach G. Chavez</u><br/>
+<span style="color:#777">Co-orientador:</span> <u>Paulo Roberto Miranda Meirelles</u>
 </section>
 
 <section>
@@ -44,11 +47,6 @@ análise estática de código-fonte é a atividade de obter informações acerca
 de um programa a partir do seu código-fonte
 
 tem suas origens nos estudos e desenvolvimentos de compiladores
-</section>
-
-<section>
-Análise estática de código-fonte costuma ser utilizada em diversas atividades
-da engenharia de software
 
 * Análise de performance
 * Compreensão de programas
@@ -57,10 +55,10 @@ da engenharia de software
 * Testes
 </section>
 
-<section data-background='white'>
+<section>
 #### Anatomia da análise estática de código-fonte
 
-<img src="files/static-analysis-representation.png" />
+<img src="files/static-analysis-representation.png" style="box-shadow: 0px 0px 5px gray; background-color:white" />
 </section>
 
 <section>
@@ -80,33 +78,99 @@ intermediária_
 <section>
 ### Representação intermediária
 
-os formatos de representação intermediárias costumam ser aplicadas em fins
-específicos, por exemplo, ferramentas de análise estática para cálculo de
-métricas de código-fonte podem fazer uso do Grafo de Fluxo de Controle
-para calcular a métrica de complexidade ciclomática de McCabe
+os formatos de representação intermediárias costumam ser aplicados em fins
+específicos, por exemplo, a métrica de complexidade ciclomática de McCabe é
+calculada através do Grafo de Fluxo de Controle
 </section>
 
-<section>
-### Métricas de software
+<section data-background="files/backgrounds/tape.jpg">
+<div class="box-white" style="text-shadow: 0px 0px 2px white; color:black; font-weight:bolder">
+<h2 style="text-shadow: 0px 0px 2px white; color:black">Métricas de software</h2>
 
 uma função cujas entradas são dados de software e cuja saı́da é um valor
 numérico, que pode ser interpretado como o grau em que um software possui um
 determinado atributo que afeta sua qualidade
+</div>
 </section>
 
-<section>
-### Métricas de código-fonte
+<section data-background="files/backgrounds/tape.jpg">
+<div class="box-white" style="text-shadow: 0px 0px 2px white; color:black; font-weight:bolder">
+<h2 style="text-shadow: 0px 0px 2px white; color:black">Métricas de código-fonte</h2>
 
 métricas de código-fonte cobrem aspectos de tamanho, complexidade e qualidade,
 e podem indicar aspectos relevantes à manutenibilidade de um programa
+</div>
 </section>
 
 <section>
-### Complexidade estrutural de programas
+### ACC<br/>conexões aferentes de uma classe
 
-entre as inúmeras propostas para cálculo da complexidade estrutural, a
-medida feita através do acoplamento (CBO) e coesão (LCOM4) podem fornecer
-indicativos sobre o esforço necessário para atividades de manutenção
+_mede o número de classes que <abbr title="acessos à atributos ou métodos">acessam</abbr> a classe analisada_
+
+<img src="files/formula-acc.png" style="box-shadow:0px 0px 5px gray" />
+
+<img src="files/ci-cj.png" style="box-shadow:0px 0px 5px gray; background-color:white; padding:5px 5px 0; vertical-align:middle" /> <span style="color:#777">indica acesso à atributos ou métodos</span>
+</section>
+
+<section>
+# Complexidade
+
+quanto maior a complexidade de um sistema de software,
+maior é o esforço para compreendê-lo, modificá-lo e evoluí-lo
+</section>
+
+<section>
+## Sistemas complexos
+
+sistemas complexos são sistemas compostos de várias partes que
+interagem entre sí com a habilidade de gerar novas qualidades
+no comportamento coletivo
+</section>
+
+<section>
+## Complexidade estrutural
+
+uma medida da complexidade de software calculada em termos do acoplamento (CBO)
+e coesão (LCOM4) podem fornecer indicativos sobre o esforço necessário para
+atividades de manutenção de sistemas de software
+</section>
+
+<section>
+compreender o comportamento da complexidade estrutural em um certo domínio
+de aplicação pode ser útil para auxiliar a tomada de decisão em atividades
+de manutenção
+</section>
+
+<section>
+### CBO<br/>acoplamento entre objetos
+
+_mede o número classes <abbr title="acessos à atributos ou métodos">acessadas</abbr> pela classe analisada_
+
+<img src="files/formula-cbo.png" style="box-shadow: 0px 0px 5px gray" />
+
+<img src="files/ci-cj.png" style="box-shadow:0px 0px 5px gray; background-color:white; padding:5px 5px 0; vertical-align:middle" /> <span style="color:#777">indica acesso à atributos ou métodos</span>
+</section>
+
+<section>
+#### Métricas ACC e CBO no percentil 90
+
+<img src="files/tabela-metricas.png" style="box-shadow: 0px 0px 5px gray" />
+</section>
+
+<section>
+<img src="files/grafico-acc-cbo.png" style="box-shadow: 0px 0px 5px gray" />
+</section>
+
+<section>
+### Média não é representativa
+
+<img src="files/histograma-acc.png" style="box-shadow: 0px 0px 5px gray; width:60%" />
+</section>
+
+<section>
+### Exemplo de uma curva normal
+
+<img src="files/curva-normal.png" style="box-shadow: 0px 0px 5px gray" />
 </section>
 
 <section>
@@ -173,7 +237,7 @@ realizada no contexto deste estudo em 18 de Fevereiro de 2016
 ...
 </section>
 
-<section data-background='white'>
+<section>
 ### Cronograma
 
 <img src="files/cronograma-qualificacao.png" />
@@ -181,9 +245,16 @@ realizada no contexto deste estudo em 18 de Fevereiro de 2016
 
 <section data-background="#c4a000">
 <section>
-### Obrigado!
+{% include slides_obrigado.html %}
+</section>
+<section>
+### Créditos
 
-joenio@joenio.me
+<small>Imagens utilizadas nesta apresentação</small>
+
+<ul style="font-size: 24px">
+  <li>http://www.flickr.com/photos/odahumanity/4290838678</li>
+</ul>
 </section>
 <section>
 ### Histórico de apresentações
