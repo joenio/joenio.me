@@ -169,6 +169,18 @@ https://lists.debian.org/debian-perl/2014/09/msg00100.html
 Alguns pacotes marcados na whitelist são executados contra o autopkgtest no servidor CI
 http://ci.debian.net
 
+o pacote git-buildpackage oferece um wrapper para o pdebuild também, para usalo e evitar
+mensagens a respeito dos arquivos binarios existentes no repositorio .git basta executar
+da seguinte forma:
+
+$ BUILDER=pbuilder git-pbuilder
+
+passe a opção --force-sign para assinar os arquivos do pacote.
+
+--othermirror
+
+deb http://local/mirror stable main
+
 09 - Atualizar repositório git
 ------------------------------
 
