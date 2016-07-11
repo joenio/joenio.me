@@ -92,7 +92,7 @@ calculada através de um Grafo de Fluxo de Controle
 <img src="files/formula-cc.png" style="box-shadow: 0px 0px 5px gray" />
 </section>
 
-<section data-background="files/backgrounds/tape.jpg">
+<section data-background="files/backgrounds/tape.jpg" data-transition='zoom'>
 <div class="box-white" style="text-shadow: 0px 0px 2px white; color:black; font-weight:bolder">
 <h2 style="text-shadow: 0px 0px 2px white; color:black">Métricas de software</h2>
 
@@ -102,12 +102,20 @@ determinado atributo que afeta sua qualidade
 </div>
 </section>
 
-<section data-background="files/backgrounds/tape.jpg">
+<section data-background="files/backgrounds/tape.jpg" data-transition='zoom'>
 <div class="box-white" style="text-shadow: 0px 0px 2px white; color:black; font-weight:bolder">
 <h2 style="text-shadow: 0px 0px 2px white; color:black">Métricas de código-fonte</h2>
 
 métricas de código-fonte cobrem aspectos de tamanho, complexidade e qualidade,
 e podem indicar aspectos relevantes à manutenibilidade de um programa
+</div>
+</section>
+
+<section data-background="files/backgrounds/tape.jpg" data-transition='zoom'>
+<div class="box-white" style="text-shadow: 0px 0px 2px white; color:black; font-weight:bolder">
+<h3 style="text-shadow: 0px 0px 2px white; color:black">Métricas de código-fonte coletadas</h3>
+
+ACC, ACCM, AMLOC, ANPM, CBO, DIT, LCOM4, LOC, NOA, NOC, NOM, NPA, NPM, RFC, SC
 </div>
 </section>
 
@@ -206,8 +214,8 @@ _mede a complexidade estrutural média entre todos os módulos do sistema_
 <section>
 ### Seleção e coleta
 
-a seleção de ferramentas será feita através de uma revisão estruturada
-e de uma busca livre em fontes de ferramentas da indústria
+a seleção de ferramentas será feita através de uma revisão estruturada para
+ferramentas da academia e de uma busca livre para ferramentas da indústria
 
 a análise de código-fonte e coleta de suas métricas será feita de forma
 automatizada utilizando a ferramenta Analizo
@@ -252,9 +260,9 @@ nos dará um entendimento inicial sobre a natureza dos dados
 
 ✔ 23 ferramentas analisadas de forma automatizada para coleta de métricas de código-fonte
 
-✔ análise exploratória dos dados
+✔ início da análise exploratória dos dados
 
-✔ evolução da ferramenta Analizo
+✔ evolução inicial da ferramenta Analizo
 </section>
 
 <section>
@@ -274,6 +282,22 @@ nos dará um entendimento inicial sobre a natureza dos dados
 </section>
 
 <section>
+### Percentis da métrica ACC
+
+<img src="files/percentis-acc.png" style="box-shadow: 0px 0px 5px gray" />
+</section>
+
+<section>
+### Média não é representativa
+
+<table><tr><td>
+<img src="files/histograma-acc.png" style="box-shadow: 0px 0px 5px gray; width:100%" />
+</td><td>
+<img src="files/curva-normal.png" style="box-shadow: 0px 0px 5px gray" />
+</td></tr></table>
+</section>
+
+<section>
 #### Métricas ACC e CBO no percentil 90
 
 <img src="files/tabela-metricas.png" style="box-shadow: 0px 0px 5px gray" />
@@ -284,29 +308,10 @@ nos dará um entendimento inicial sobre a natureza dos dados
 </section>
 
 <section>
-### Média não é representativa
-
-<img src="files/histograma-acc.png" style="box-shadow: 0px 0px 5px gray; width:60%" />
-</section>
-
-<section>
-### Exemplo de uma curva normal
-
-<img src="files/curva-normal.png" style="box-shadow: 0px 0px 5px gray" />
-</section>
-
-<section>
 ### Evolução do Analizo
 
-a ferramenta Analizo será evoluída a fim de atender necessidades da nossa pesquisa,
-um resultado preliminar neste sentido é o lançamento da versão 1.19.0 desta ferramenta
-realizada no contexto deste estudo em 18 de Fevereiro de 2016
-</section>
-
-<section>
-### Próximos passos
-
-...
+em 18 de Fevereiro de 2016 lançamos, no contexto deste trabalho,
+a versão 1.19.0 da ferramenta Analizo
 </section>
 
 <section>
@@ -334,7 +339,7 @@ realizada no contexto deste estudo em 18 de Fevereiro de 2016
 <small>Onde e quando esta apresentação foi realizada</small>
 
 <ul style="font-size: 24px">
-  <li>06 Julho 2016, FGA UnB, Brasília, prévia da apresentação no Lappis</li>
+  <li>12 Julho 2016, UFBA DCC, Salvador, prévia da apresentação</li>
 </ul>
 </section>
 </section>
