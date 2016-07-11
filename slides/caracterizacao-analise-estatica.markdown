@@ -41,12 +41,19 @@ conhecimento suficiente para evoluir ferramentas deste domínio_
 </section>
 
 <section>
+## Questão de pesquisa
+
+**Q1:** Como a complexidade estrutural pode ser interpretada e explicada
+para ferramentas de software do domı́nio de aplicação de análise estática
+de código-fonte?
+</section>
+
+<section>
 ## Análise estática
 
-análise estática de código-fonte é a atividade de obter informações acerca
-de um programa a partir do seu código-fonte
-
-tem suas origens nos estudos e desenvolvimentos de compiladores
+análise estática de código-fonte é a atividade de obter informações acerca de
+um programa a partir do seu código-fonte, tem suas origens nos estudos e
+desenvolvimentos de compiladores
 
 * Análise de performance
 * Compreensão de programas
@@ -80,7 +87,9 @@ intermediária_
 
 os formatos de representação intermediárias costumam ser aplicados em fins
 específicos, por exemplo, a métrica de complexidade ciclomática de McCabe é
-calculada através do Grafo de Fluxo de Controle
+calculada através de um Grafo de Fluxo de Controle
+
+<img src="files/formula-cc.png" style="box-shadow: 0px 0px 5px gray" />
 </section>
 
 <section data-background="files/backgrounds/tape.jpg">
@@ -128,17 +137,17 @@ no comportamento coletivo
 </section>
 
 <section>
-## Complexidade estrutural
+### Sistemas de software como sistemas complexos
 
-uma medida da complexidade de software calculada em termos do acoplamento (CBO)
-e coesão (LCOM4) podem fornecer indicativos sobre o esforço necessário para
-atividades de manutenção de sistemas de software
+a partir da sua estrutura interna sistemas de software podem ser
+caracterizados como um sistema complexo artificial
 </section>
 
 <section>
-compreender o comportamento da complexidade estrutural em um certo domínio
-de aplicação pode ser útil para auxiliar a tomada de decisão em atividades
-de manutenção
+## Complexidade estrutural
+
+uma medida da complexidade de software calculada em termos do acoplamento (CBO)
+e coesão (LCOM4)
 </section>
 
 <section>
@@ -149,6 +158,119 @@ _mede o número classes <abbr title="acessos à atributos ou métodos">acessadas
 <img src="files/formula-cbo.png" style="box-shadow: 0px 0px 5px gray" />
 
 <img src="files/ci-cj.png" style="box-shadow:0px 0px 5px gray; background-color:white; padding:5px 5px 0; vertical-align:middle" /> <span style="color:#777">indica acesso à atributos ou métodos</span>
+</section>
+
+<section>
+### LCOM4<br/>ausência da coesão em métodos
+
+_mede os métodos e atributos acessados dentro de uma mesma classe_
+
+calculado através dos componentes fracamente conectados de um grafo não-orientado
+</section>
+
+<section>
+### SC<br/>complexidade estrutural
+
+_mede a complexidade estrutural média entre todos os módulos do sistema_
+
+<img src="files/formula-sc.png" style="box-shadow: 0px 0px 5px gray" />
+</section>
+
+<section>
+### Complexidade estrutural está associada a maior esforço de manutenção
+</section>
+
+<section>
+# Metodologia
+
+1. Seleção e caracterização de ferramentas
+1. Extração de métricas de código-fonte
+1. Análise e interpretação dos valores das métricas
+1. Cálculo do score de similaridade
+</section>
+
+<section>
+## Hipóteses
+
+* **H1:** _É possível calcular valores de referência de métricas
+    de código-fonte para ferramentas de análise estática a partir de um
+    conjunto de softwares da academia e da indústria_
+* **H2:** _Ferramentas de análise estática tendem a ter uma
+    maior complexidade estrutural do que ferramentas de outros domínios de
+    aplicação_
+* **H3:** _Dentre as ferramentas de análise estática de
+    código-fonte, aquelas desenvolvidas na indústria apresentam uma menor
+    complexidade estrutural_
+</section>
+
+<section>
+### Seleção e coleta
+
+a seleção de ferramentas será feita através de uma revisão estruturada
+e de uma busca livre em fontes de ferramentas da indústria
+
+a análise de código-fonte e coleta de suas métricas será feita de forma
+automatizada utilizando a ferramenta Analizo
+</section>
+
+<section>
+## Revisão estruturada
+
+um processo disciplinado para seleção de artigos a partir de
+critérios bem definidos com o objetivo de encontrar ferramentas
+de análise estática de código-fonte
+</section>
+
+<section>
+<img src="files/analizo.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
+<br/><span style="color:#555">http://analizo.org</span>
+</section>
+
+<section>
+### Interpretação dos valores de métricas
+
+as métricas serão coletadas para cada módulo de cada ferramenta, estes
+valores serão distribuídos em percentis, uma análise exploratória
+nos dará um entendimento inicial sobre a natureza dos dados
+</section>
+
+<section>
+### Resultados esperados
+
+1. Caracterização das ferramentas de análise estática selecionadas
+1. Caracterização da complexidade estrutural de ferramentas neste domínio
+1. Conjunto de intervalos de referência dos valores de métricas de código-fonte
+1. Evolução de uma ferramenta de análise estática de código-fonte.
+</section>
+
+<section>
+## Resultados preliminares
+
+✔ 315 artigos do SCAM avaliados e 9 ferramentas selecionadas
+
+✔ 54 ferramentas da indústria avaliadas e 14 selecionadas
+
+✔ 23 ferramentas analisadas de forma automatizada para coleta de métricas de código-fonte
+
+✔ análise exploratória dos dados
+
+✔ evolução da ferramenta Analizo
+</section>
+
+<section>
+### Revisão estruturada do SCAM
+
+<img src="files/revisao-estruturada-scam.png" style="box-shadow: 0px 0px 5px gray" />
+</section>
+
+<section>
+### 23 ferramentas selecionadas
+
+<img src="files/ferramentas-selecionadas.png" style="box-shadow: 0px 0px 5px gray" />
+</section>
+
+<section>
+# Análise exploratória
 </section>
 
 <section>
@@ -174,61 +296,11 @@ _mede o número classes <abbr title="acessos à atributos ou métodos">acessadas
 </section>
 
 <section>
-### Metodologia do estudo
-
-Seleção de ferramentas de análise-estática
-
-Coleta de métricas de código-fonte das ferramentas
-
-Análise e interpretação dos valores de métricas
-</section>
-
-<section>
-### Seleção e coleta
-
-a seleção de ferramentas será feita através de uma revisão estruturada
-e de uma busca livre em fontes de ferramentas da indústria
-
-a análise de código-fonte e coleta de suas métricas será feita de forma
-automatizada utilizando a ferramenta Analizo
-</section>
-
-<section>
-### Interpretação dos valores de métricas
-
-as métricas serão coletadas para cada módulo de cada ferramenta, estes
-valores serão distribuídos em percentis, a análise manual desta distribuição
-irá nos dar um valor único para cada ferramenta
-</section>
-
-<section>
-### Resultados esperados
-
-Caracterização das ferramentas de análise estática selecionadas
-
-Caracterização da complexidade estrutural de ferramentas neste domínio
-
-Conjunto de intervalos de referência dos valores de métricas de código-fonte
-
-Evolução de uma ferramenta de análise estática de código-fonte.
-</section>
-
-<section>
 ### Evolução do Analizo
 
 a ferramenta Analizo será evoluída a fim de atender necessidades da nossa pesquisa,
 um resultado preliminar neste sentido é o lançamento da versão 1.19.0 desta ferramenta
 realizada no contexto deste estudo em 18 de Fevereiro de 2016
-</section>
-
-<section>
-### Resultados preliminares
-
-315 artigos da conferência SCAM foram avaliados e 9 ferramentas de análise estática de código-fonte foram selecionadas
-
-54 ferramentas da indústria avaliada e destas 14 foram selecionadas para este estudo
-
-23 ferramentas foram selecionadas e analisadas de forma automatizada para coleta de métricas de código-fonte
 </section>
 
 <section>

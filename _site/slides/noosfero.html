@@ -9,6 +9,7 @@
   <meta name="author" content="Joenio Costa" />
   <link rel="stylesheet" href="/javascript/reveal.js/css/reveal.css">
   <link rel="stylesheet" href="/javascript/reveal.js/css/theme/black.css" id="theme">
+  
   <!-- Code syntax highlighting -->
   <link rel="stylesheet" href="/javascript/reveal.js/lib/css/zenburn.css">
   <!-- Printing and PDF exports -->
@@ -382,7 +383,7 @@ e.save
 
     <p>http://noosfero.org/Development/CreatingThemes</p>
 
-    <p><code>HACKING.themes.md</code></p>
+    <p><code class="highlighter-rouge">HACKING.themes.md</code></p>
   </section>
   <section>
     <h3 id="o-noosfero--extensvel">O Noosfero é extensível</h3>
@@ -468,9 +469,9 @@ cd noosfero
 
     <p class="fragment grow highlight-red">(em ambientes de desenvolvimento)</p>
 
-    <p>Edite o <code>/etc/hosts</code> e adicione a seguinte entrada:</p>
+    <p>Edite o <code class="highlighter-rouge">/etc/hosts</code> e adicione a seguinte entrada:</p>
 
-    <p><code>127.0.0.1 noosfero.ufba</code></p>
+    <p><code class="highlighter-rouge">127.0.0.1 noosfero.ufba</code></p>
   </section>
   <section>
     <h2 id="configurao-de-domnios-1">Configuração de domínios</h2>
@@ -677,7 +678,7 @@ $ gem install request-log-analyzer-1.13.4.gem
 $ request-log-analyzer log/production.log
 </code></pre>
 
-    <p><small>Para gerar o relatório em HTML utilize os parâmetros: <code>--output html --file
+    <p><small>Para gerar o relatório em HTML utilize os parâmetros: <code class="highlighter-rouge">--output html --file
 production.html</code></small></p>
   </section>
 </section>
@@ -688,7 +689,7 @@ production.html</code></small></p>
   <section>
     <h2 id="backup-e-restore">Backup e restore</h2>
 
-    <p>Adicione <strong><code>host: localhost</code></strong> em /etc/noosfero/database.yml:</p>
+    <p>Adicione <strong><code class="highlighter-rouge">host: localhost</code></strong> em /etc/noosfero/database.yml:</p>
 
     <pre><code class="yaml">
 production:
@@ -771,7 +772,7 @@ $ createdb noosfero --owner noosfero
 
     <h3 id="ideia-para-superar-esta-limitao">Ideia para superar esta limitação</h3>
 
-    <p>“Usar <code>multitenancy</code> e evoluir a implementação das tasks <code>backup</code> e <code>restore</code>
+    <p>“Usar <code class="highlighter-rouge">multitenancy</code> e evoluir a implementação das tasks <code class="highlighter-rouge">backup</code> e <code class="highlighter-rouge">restore</code>
 para entender isto, assim teríamos um isolamento maior”</p>
   </section>
 
@@ -835,7 +836,7 @@ reverso de cache HTTP</p>
 
       <p><span class="url">www.varnish-cache.org</span></p>
 
-      <p>Siga a documentação em <code>INSTALL.varnish.md</code> nos fontes do Noosfero</p>
+      <p>Siga a documentação em <code class="highlighter-rouge">INSTALL.varnish.md</code> nos fontes do Noosfero</p>
     </div>
   </section>
   <section data-background="files/backgrounds/varnish.png" data-transition="convex">
@@ -849,8 +850,8 @@ reverso de cache HTTP</p>
 </code></pre>
 
       <ul>
-        <li>Configure o Apache para escutar na porta <code>8080</code></li>
-        <li>Configure o Varnish para escutar na porta <code>80</code></li>
+        <li>Configure o Apache para escutar na porta <code class="highlighter-rouge">8080</code></li>
+        <li>Configure o Varnish para escutar na porta <code class="highlighter-rouge">80</code></li>
       </ul>
     </div>
   </section>
@@ -883,7 +884,7 @@ de software rodando num servidor serve várias organizações, chamado tenants
 
     <p style="color:red">mas antes desabilite o envio de emails</p>
 
-    <p>Adicione a linha abaixo ao arquivo <code>config/environments/production.rb</code></p>
+    <p>Adicione a linha abaixo ao arquivo <code class="highlighter-rouge">config/environments/production.rb</code></p>
 
     <pre><code class="ruby">
   config.action_mailer.delivery_method = :file
@@ -912,7 +913,7 @@ artigos, textos, blogs, etc… com dados “aleatórios”</p>
   <section>
     <h3 id="migrar-uma-instalao-noosfero-para-multitenancy">Migrar uma instalação Noosfero para Multitenancy</h3>
 
-    <p>Altere o arquivo <code>/etc/noosfero/database.yml</code></p>
+    <p>Altere o arquivo <code class="highlighter-rouge">/etc/noosfero/database.yml</code></p>
 
     <pre><code class="yaml">
 ufba_production: &amp;DEFAULT
@@ -982,7 +983,7 @@ RewriteRule ^/thumbnails(.+) /thumbnails/public$1
   <section>
     <h2 id="adicionando-novos-inquilinos-tenants">Adicionando novos inquilinos (tenants)</h2>
 
-    <p>Adicione as configurações abaixo ao arquivo <code>/etc/noosfero/database.yml</code></p>
+    <p>Adicione as configurações abaixo ao arquivo <code class="highlighter-rouge">/etc/noosfero/database.yml</code></p>
 
     <pre><code class="yaml">
 ripe_production:
@@ -996,7 +997,7 @@ ripe_production:
     - ripe.ufba
 </code></pre>
 
-    <p>Crie o <code>schema</code> do banco de dados</p>
+    <p>Crie o <code class="highlighter-rouge">schema</code> do banco de dados</p>
 
     <pre><code class="yaml">
 # su - postgres
@@ -1004,7 +1005,7 @@ $ psql noosfero -c "CREATE SCHEMA ripe AUTHORIZATION noosfero"
 </code></pre>
   </section>
   <section>
-    <p>Adicione o domínio ao Apache, edite o arquivo <code>/etc/apache2/sites-enabled/noosfero</code> e adicione o seguinte</p>
+    <p>Adicione o domínio ao Apache, edite o arquivo <code class="highlighter-rouge">/etc/apache2/sites-enabled/noosfero</code> e adicione o seguinte</p>
 
     <pre><code class="apache">
 ServerAlias ripe.ufba
@@ -1022,7 +1023,7 @@ ServerAlias ripe.ufba
   <section>
     <h2 id="atualize-as-configuraes-do-pound">Atualize as configurações do pound</h2>
 
-    <p>Edite o arquivo <code>/etc/pound/pound.cfg</code></p>
+    <p>Edite o arquivo <code class="highlighter-rouge">/etc/pound/pound.cfg</code></p>
 
     <pre><code class="pound">
 Service
@@ -1075,7 +1076,7 @@ RAILS_ENV=production NOOSFERO_DOMAIN=ripe.ufba rake db:data:minimal
 gem install exception_notification -v 1.0.20090728
 </code></pre>
 
-    <p>Adicione os emails que serão notificados em <code>/etc/noosfero/noosfero.yml</code></p>
+    <p>Adicione os emails que serão notificados em <code class="highlighter-rouge">/etc/noosfero/noosfero.yml</code></p>
 
     <pre><code class="yaml">
 production:
@@ -1083,7 +1084,7 @@ production:
 </code></pre>
   </section>
   <section>
-    <h2 id="outras-opes-do-noosferoyml">Outras opções do <code>noosfero.yml</code></h2>
+    <h2 id="outras-opes-do-noosferoyml">Outras opções do <code class="highlighter-rouge">noosfero.yml</code></h2>
 
     <p>addthis, gravatar, tamanho máximo dos uploads, tempo para checar ativação dos
 usuários, …</p>
@@ -1101,7 +1102,7 @@ usuários, …</p>
       <h1 id="chat-noosfero">Chat Noosfero</h1>
 
       <p>O Noosfero possui suporte a chat, a infraestrutura do lado servidor é
-toda em cima do protocolo XMPP através do servidor <code>ejabberd</code></p>
+toda em cima do protocolo XMPP através do servidor <code class="highlighter-rouge">ejabberd</code></p>
 
       <p class="url">xmpp.org</p>
       <p class="url">www.ejabberd.im</p>
@@ -1113,7 +1114,7 @@ toda em cima do protocolo XMPP através do servidor <code>ejabberd</code></p>
 
       <p>A partir do Noosfero 1.2 o chat pode ser instalado via pacote Debian</p>
 
-      <p>Mas antes de instalar o pacote é preciso editar o <code>database.yml</code> e remover a entrada <code>host: localhost</code></p>
+      <p>Mas antes de instalar o pacote é preciso editar o <code class="highlighter-rouge">database.yml</code> e remover a entrada <code class="highlighter-rouge">host: localhost</code></p>
 
       <p class="fragment grow highlight-red">bug com o multitenancy!</p>
     </div>
@@ -1128,7 +1129,7 @@ apt-get install noosfero-chat
 
       <p><img src="files/screenshots/noosfero-chat.png" /></p>
 
-      <p>Edite novamente o <code>database.yml</code> e adicione o <code>host: localhost</code></p>
+      <p>Edite novamente o <code class="highlighter-rouge">database.yml</code> e adicione o <code class="highlighter-rouge">host: localhost</code></p>
 
       <p>Administrador -&gt; Funcionalidades -&gt; Bate-papo baseado em XMPP/Jabber</p>
     </div>
@@ -1169,7 +1170,7 @@ rake noosfero:release[stable]
 
     <p>Este processo irá gerar os pacotes: noosfero, noosfero-apache e noosfero-chat</p>
 
-    <p>Veja detalhes em <code>RELEASING.md</code></p>
+    <p>Veja detalhes em <code class="highlighter-rouge">RELEASING.md</code></p>
   </section>
 </section>
 
@@ -1210,12 +1211,12 @@ https://www.youtube.com/watch?v=RwSVqekyzpo
   <section>
     <h3 id="obrigado">Obrigado!</h3>
 
-    <p><span class="url">joenio@colivre.coop.br</span></p>
+    <p><span class="url">joenio@joenio.me</span></p>
 
     <p><br />
 <em>Esta apresentação está disponível em:</em></p>
 
-    <p><span class="url">http://joenio.me/slides/noosfero.html</span></p>
+    <p><span class="url">http://joenio.me/slides/noosfero</span></p>
 
     <p><small>(código-fonte: <strong>http://github.com/joenio/joenio.me</strong>)</small></p>
 
