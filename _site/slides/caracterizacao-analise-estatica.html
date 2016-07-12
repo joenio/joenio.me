@@ -94,6 +94,15 @@ desenvolvimentos de compiladores</p>
   <h4 id="anatomia-da-anlise-esttica-de-cdigo-fonte">Anatomia da análise estática de código-fonte</h4>
 
   <p><img src="files/static-analysis-representation.png" style="box-shadow: 0px 0px 5px gray; background-color:white" /></p>
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><pre class="highlight"><code>Temos uma suposiçao que o
+componente "Model Extraction"
+apresenta maior complexidade
+que os demais
+</code></pre>
+    </div>
+  </aside>
 </section>
 
 <section>
@@ -118,6 +127,15 @@ específicos, por exemplo, a métrica de complexidade ciclomática de McCabe é
 calculada através de um Grafo de Fluxo de Controle</p>
 
   <p><img src="files/formula-cc.png" style="box-shadow: 0px 0px 5px gray" /></p>
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><pre class="highlight"><code>Onde: *e* é o número de arestas;
+*n* é o número de nós; e *p* é o
+número de componentes fortemente
+conectados no grafo
+</code></pre>
+    </div>
+  </aside>
 </section>
 
 <section data-background="files/backgrounds/tape.jpg" data-transition="zoom">
@@ -155,6 +173,15 @@ e podem indicar aspectos relevantes à manutenibilidade de um programa</p>
   <p><img src="files/formula-acc.png" style="box-shadow:0px 0px 5px gray" /></p>
 
   <p><img src="files/ci-cj.png" style="box-shadow:0px 0px 5px gray; background-color:white; padding:5px 5px 0; vertical-align:middle" /> <span style="color:#777">indica acesso à atributos ou métodos</span></p>
+  <aside class="notes">
+    <div class="highlighter-rouge"><pre class="highlight"><code>Se o valor dessa métrica for
+grande, uma mudança na classe
+tem potencialmente mais efeitos
+colaterais, tornando mais
+difícil a manutenção
+</code></pre>
+    </div>
+  </aside>
 </section>
 
 <section>
@@ -363,7 +390,7 @@ a versão 1.19.0 da ferramenta Analizo</p>
     <p><br />
 <em>Esta apresentação está disponível em:</em></p>
 
-    <p><span class="url">http://joenio.me/slides/caracterizacao-analise-estatica</span></p>
+    <p><span class="url">http://joenio.me/slides/caracterizacao-analise-estatica.html</span></p>
 
     <p><small>(código-fonte: <strong>http://github.com/joenio/joenio.me</strong>)</small></p>
 
@@ -385,7 +412,7 @@ a versão 1.19.0 da ferramenta Analizo</p>
     <p><small>Onde e quando esta apresentação foi realizada</small></p>
 
     <ul style="font-size: 24px">
-  <li>12 Julho 2016, UFBA DCC, Salvador, prévia da apresentação</li>
+  <li>12 Julho 2016, UFBA DCC, Salvador, prévia da qualificação</li>
 </ul>
   </section>
 </section>

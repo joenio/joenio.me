@@ -66,6 +66,13 @@ desenvolvimentos de compiladores
 #### Anatomia da análise estática de código-fonte
 
 <img src="files/static-analysis-representation.png" style="box-shadow: 0px 0px 5px gray; background-color:white" />
+
+  <aside class="notes">
+    Temos uma suposiçao que o
+    componente "Model Extraction"
+    apresenta maior complexidade
+    que os demais
+  </aside>
 </section>
 
 <section>
@@ -90,6 +97,13 @@ específicos, por exemplo, a métrica de complexidade ciclomática de McCabe é
 calculada através de um Grafo de Fluxo de Controle
 
 <img src="files/formula-cc.png" style="box-shadow: 0px 0px 5px gray" />
+
+  <aside class="notes">
+    Onde: *e* é o número de arestas;
+    *n* é o número de nós; e *p* é o
+    número de componentes fortemente
+    conectados no grafo
+  </aside>
 </section>
 
 <section data-background="files/backgrounds/tape.jpg" data-transition='zoom'>
@@ -127,6 +141,13 @@ _mede o número de classes que <abbr title="acessos à atributos ou métodos">ac
 <img src="files/formula-acc.png" style="box-shadow:0px 0px 5px gray" />
 
 <img src="files/ci-cj.png" style="box-shadow:0px 0px 5px gray; background-color:white; padding:5px 5px 0; vertical-align:middle" /> <span style="color:#777">indica acesso à atributos ou métodos</span>
+  <aside class="notes">
+    Se o valor dessa métrica for
+    grande, uma mudança na classe
+    tem potencialmente mais efeitos
+    colaterais, tornando mais
+    difícil a manutenção
+  </aside>
 </section>
 
 <section>
@@ -339,7 +360,7 @@ a versão 1.19.0 da ferramenta Analizo
 <small>Onde e quando esta apresentação foi realizada</small>
 
 <ul style="font-size: 24px">
-  <li>12 Julho 2016, UFBA DCC, Salvador, prévia da apresentação</li>
+  <li>12 Julho 2016, UFBA DCC, Salvador, prévia da qualificação</li>
 </ul>
 </section>
 </section>
