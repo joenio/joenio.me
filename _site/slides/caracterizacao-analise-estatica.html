@@ -49,21 +49,39 @@ Universidade Federal da Bahia</em></p>
 </section>
 
 <section>
+  <p>a tecnologia de análise estática tem se desenvolvido rapidamente, mas a comparação e avaliação de técnicas e ferramentas não tem acompanhado tal velocidade</p>
+
+  <p><small>
+LI, P.; CUI, B. A comparative study on software vulnerability static analysis
+techniques and tools. In: Information Theory and Information Security (ICITIS),
+2010 IEEE International Conference on. [S.l.: s.n.], 2010. p. 521–524.
+</small></p>
+
+  <p><small>
+HARMAN, M. Why source code analysis and manipulation will always be important. In:
+Source Code Analysis and Manipulation (SCAM), 2010 10th IEEE Working Conference
+on. [S.l.: s.n.], 2010. p. 7–19.
+</small></p>
+</section>
+
+<!--
+<section>
+### Motivação
+
+_compreender a fundo o domínio de análise estática de código-fonte, suas
+técnicas e limitações, compreender os aspectos de qualidade interna das
+ferramentas existentes na indústria e na academia, a fim de ter
+conhecimento suficiente para evoluir ferramentas deste domínio_
+</section>
+-->
+
+<section>
   <h2 id="objetivo">Objetivo</h2>
 
   <p>compreender as ferramentas de software para análise estática de código-fonte do
 ponto de vista de sua manutenabilidade, a partir da análise de sua complexidade
 estrutural, discutindo quais características arquiteturais explicam seus
 atributos de qualidade interna</p>
-</section>
-
-<section>
-  <h3 id="motivao">Motivação</h3>
-
-  <p><em>compreender a fundo o domínio de análise estática de código-fonte, suas
-técnicas e limitações, compreender os aspectos de qualidade interna das
-ferramentas existentes na indústria e na academia, a fim de ter
-conhecimento suficiente para evoluir ferramentas deste domínio</em></p>
 </section>
 
 <section>
@@ -88,6 +106,10 @@ desenvolvimentos de compiladores</p>
     <li>Recuperação arquitetural</li>
     <li>Testes</li>
   </ul>
+
+  <p><small>
+CRUZ, D. d.; HENRIQUES, P. R.; PINTO, J. S. Code analysis: Past and present. 2009.
+</small></p>
 </section>
 
 <section>
@@ -103,20 +125,6 @@ que os demais
 </code></pre>
     </div>
   </aside>
-</section>
-
-<section>
-  <p><strong><u>Extração de dados</u></strong><br />
-<em>este componente converte a sintaxe de um programa em uma sintaxe mais adequada
-para análise posterior</em></p>
-
-  <p><strong><u>Representação intermediária</u></strong><br />
-<em>este componente é responsável pela representação dos dados obtidos na etapa de
-extração</em></p>
-
-  <p><strong><u>Análise</u></strong><br />
-<em>componente responsável por interpretar os dados presentes na representação
-intermediária</em></p>
 </section>
 
 <section>
@@ -146,6 +154,11 @@ conectados no grafo
 numérico, que pode ser interpretado como o grau em que um software possui um
 determinado atributo que afeta sua qualidade</p>
   </div>
+
+  <p><small style="text-shadow: 0px 0px 1px #999; font-weight: bold; color:black">
+COMMITTEE, S. . S. E. S. et al. Ieee std 1061-1998—ieee standard for a software quality
+metrics methodology. IEEE Computer Society, Tech. Rep, 1998.
+</small></p>
 </section>
 
 <section data-background="files/backgrounds/tape.jpg" data-transition="zoom">
@@ -163,6 +176,11 @@ e podem indicar aspectos relevantes à manutenibilidade de um programa</p>
 
     <p>ACC, ACCM, AMLOC, ANPM, CBO, DIT, LCOM4, LOC, NOA, NOC, NOM, NPA, NPM, RFC, SC</p>
   </div>
+
+  <p><small style="text-shadow: 0px 0px 1px #999; font-weight: bold; color:black">
+MEIRELLES, P. R. M. Monitoramento de métricas de código-fonte em projetos de
+software livre. Tese (Doutorado) — Universidade de São Paulo, São Paulo, Brazil, 2013.
+</small></p>
 </section>
 
 <section>
@@ -189,14 +207,24 @@ difícil a manutenção
 
   <p>quanto maior a complexidade de um sistema de software,
 maior é o esforço para compreendê-lo, modificá-lo e evoluí-lo</p>
+
+  <p><small>
+Darcy, D. P. et al. The structural complexity of software: An experimental test. IEEE
+Transactions on Software Engineering, v. 31, n. 11, p. 982–995, Nov. 2005. ISSN 0098-
+5589.
+</small></p>
 </section>
 
 <section>
   <h2 id="sistemas-complexos">Sistemas complexos</h2>
 
   <p>sistemas complexos são sistemas compostos de várias partes que
-interagem entre sí com a habilidade de gerar novas qualidades
+interagem entre si com a habilidade de gerar novas qualidades
 no comportamento coletivo</p>
+
+  <p><small>
+Mitchell, M. Complexity - A Guided Tour. [S.l.]: Oxford University Press, 2009.
+</small></p>
 </section>
 
 <section>
@@ -209,8 +237,8 @@ caracterizados como um sistema complexo artificial</p>
 <section>
   <h2 id="complexidade-estrutural">Complexidade estrutural</h2>
 
-  <p>uma medida da complexidade de software calculada em termos do acoplamento (CBO)
-e coesão (LCOM4)</p>
+  <p>uma medida da complexidade de software calculada em termos
+do acoplamento (CBO) e coesão (LCOM4)</p>
 </section>
 
 <section>
@@ -234,13 +262,9 @@ e coesão (LCOM4)</p>
 <section>
   <h3 id="scbrcomplexidade-estrutural">SC<br />complexidade estrutural</h3>
 
-  <p><em>mede a complexidade estrutural média entre todos os módulos do sistema</em></p>
+  <p><em>mede a complexidade estrutural de uma classe</em></p>
 
   <p><img src="files/formula-sc.png" style="box-shadow: 0px 0px 5px gray" /></p>
-</section>
-
-<section>
-  <h3 id="complexidade-estrutural-est-associada-a-maior-esforo-de-manuteno">Complexidade estrutural está associada a maior esforço de manutenção</h3>
 </section>
 
 <section>
@@ -258,15 +282,15 @@ e coesão (LCOM4)</p>
   <h2 id="hipteses">Hipóteses</h2>
 
   <ul>
-    <li><strong>H1:</strong> <em>É possível calcular valores de referência de métricas
+    <li><strong>H1:</strong> É possível calcular valores de referência de métricas
   de código-fonte para ferramentas de análise estática a partir de um
-  conjunto de softwares da academia e da indústria</em></li>
-    <li><strong>H2:</strong> <em>Ferramentas de análise estática tendem a ter uma
+  conjunto de softwares da academia e da indústria</li>
+    <li><strong>H2:</strong> Ferramentas de análise estática tendem a ter uma
   maior complexidade estrutural do que ferramentas de outros domínios de
-  aplicação</em></li>
-    <li><strong>H3:</strong> <em>Dentre as ferramentas de análise estática de
+  aplicação</li>
+    <li><strong>H3:</strong> Dentre as ferramentas de análise estática de
   código-fonte, aquelas desenvolvidas na indústria apresentam uma menor
-  complexidade estrutural</em></li>
+  complexidade estrutural</li>
   </ul>
 </section>
 
@@ -281,6 +305,10 @@ automatizada utilizando a ferramenta Analizo</p>
 </section>
 
 <section>
+  <h2 id="samatenistgov">samate.nist.gov</h2>
+</section>
+
+<section>
   <h2 id="reviso-estruturada">Revisão estruturada</h2>
 
   <p>um processo disciplinado para seleção de artigos a partir de
@@ -289,27 +317,38 @@ de análise estática de código-fonte</p>
 </section>
 
 <section>
+  <h3 id="caracterizao-das-ferramentas">Caracterização das ferramentas</h3>
+
+  <ul>
+    <li>Entrada - quais tipos de arquivos podem ser carregados na ferramenta</li>
+    <li>Lançamentos (Releases) - quantos lançamentos por ano</li>
+    <li>Linguagens suportadas - quais linguagens de programação a ferramenta suporta</li>
+    <li>Tecnologia - quais tecnologias são usadas para procurar erros no código</li>
+    <li>…</li>
+  </ul>
+
+  <p><small>
+NOVAK, J.; KRAJNC, A. et al. Taxonomy of static code analysis tools. In: IEEE.
+MIPRO, 2010 Proceedings of the 33rd International Convention. [S.l.], 2010. p. 418–422.
+</small></p>
+</section>
+
+<section>
   <p><img src="files/analizo.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
 <br /><span style="color:#555">http://analizo.org</span></p>
+
+  <p><small>
+Terceiro, A. et al. Analizo: an extensible multi-language source code analysis and
+visualization toolkit. In: CBSOFT-Ferramentas. [S.l.: s.n.], 2010.
+</small></p>
 </section>
 
 <section>
   <h3 id="interpretao-dos-valores-de-mtricas">Interpretação dos valores de métricas</h3>
 
-  <p>as métricas serão coletadas para cada módulo de cada ferramenta, estes
-valores serão distribuídos em percentis, uma análise exploratória
-nos dará um entendimento inicial sobre a natureza dos dados</p>
-</section>
-
-<section>
-  <h3 id="resultados-esperados">Resultados esperados</h3>
-
-  <ol>
-    <li>Caracterização das ferramentas de análise estática selecionadas</li>
-    <li>Caracterização da complexidade estrutural de ferramentas neste domínio</li>
-    <li>Conjunto de intervalos de referência dos valores de métricas de código-fonte</li>
-    <li>Evolução de uma ferramenta de análise estática de código-fonte.</li>
-  </ol>
+  <p>as métricas serão coletadas para cada módulo de cada ferramenta,
+uma análise exploratória nos dará um entendimento inicial sobre
+a natureza dos dados</p>
 </section>
 
 <section>
@@ -356,6 +395,12 @@ nos dará um entendimento inicial sobre a natureza dos dados</p>
 </td><td>
 <img src="files/curva-normal.png" style="box-shadow: 0px 0px 5px gray" />
 </td></tr></table>
+
+  <p><small>
+Lanza e Marinescu(2006) Michele Lanza e Radu Marinescu. Object-Oriented Metrics in Practice:
+Using Software Metrics to Characterize, Evaluate and Improve the Design of Object-Oriented
+Systems. Hardcover.
+</small></p>
 </section>
 
 <section>
