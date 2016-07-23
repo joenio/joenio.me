@@ -28,7 +28,7 @@ a:visited { color: #205caa; }
 .wrap:after { content:""; display:table; }
 .wrap:after { clear: both; }
 .wrap {
-  max-width: 800px;
+  max-width: 802px;
   padding: 0 30px;
   margin: 0 auto;
   zoom: 1;
@@ -229,7 +229,6 @@ a:visited { color: #205caa; }
 .page-content h6, .post-content h6 {
   line-height: 1;
   font-weight: 300;
-  margin: 40px 0 20px;
 }
 
 .page-content h2, .post-content h2 {

@@ -1,6 +1,5 @@
 ---
 title: Desenvolvendo Noosfero usando containers LXC
-tags: tecnologia lxc noosfero
 ---
 
 ![Noosfero LXC](/files/noosfero-lxc.png)

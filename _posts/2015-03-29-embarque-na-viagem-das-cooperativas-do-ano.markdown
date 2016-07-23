@@ -1,6 +1,5 @@
 ---
 title: Embarque na viagem das cooperativas do ano
-tags: colivre
 ---
 
 ![Desenho intercâmbio cooperativista](/files/post-viagem-premio-cooperativas.jpg)

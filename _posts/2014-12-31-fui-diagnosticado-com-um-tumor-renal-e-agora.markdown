@@ -1,6 +1,5 @@
 ---
 title: Fui diagnosticado com um tumor renal, e agora?
-tags: pessoal saude
 ---
 
 ![Wall-e sob a tomografia computadorizada](/files/wall-e-tomografia.jpg)

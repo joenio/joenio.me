@@ -5,9 +5,9 @@
     <description></description>
     <link>http://joenio.me/</link>
     <atom:link href="http://joenio.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 07 Mar 2016 23:43:28 -0300</pubDate>
-    <lastBuildDate>Mon, 07 Mar 2016 23:43:28 -0300</lastBuildDate>
-    <generator>Jekyll v2.2.0</generator>
+    <pubDate>Sat, 23 Jul 2016 01:10:55 -0300</pubDate>
+    <lastBuildDate>Sat, 23 Jul 2016 01:10:55 -0300</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>Desenvolvendo Noosfero usando containers LXC</title>
@@ -35,7 +35,7 @@ projeto, ou seja, para cada projeto tenho um ambiente “virtual” isolado.&lt;
 
 &lt;p&gt;Nas aventuras com o &lt;a href=&quot;http://wiki.debian.org/LXC&quot;&gt;LXC&lt;/a&gt; senti necessidade de algo para simplificar e
 automatizar um pouco as coisas, então comecei a escrever um pequeno shell
-script e lhe dei o nome de &lt;code&gt;holodev&lt;/code&gt;.&lt;/p&gt;
+script e lhe dei o nome de &lt;code class=&quot;highlighter-rouge&quot;&gt;holodev&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;holodev&quot;&gt;holodev&lt;/h2&gt;
 
@@ -48,17 +48,18 @@ Basta dizer: “crie o estádio Fonte Nova antes de ser implodido em 2010 em alg
 jogo Bahia x Vitória” e o Holodeck cria toda a realidade, com objetos e
 personagens.&lt;/p&gt;
 
-&lt;p&gt;O &lt;code&gt;holodev&lt;/code&gt; é então um Holodeck para desenvolvedores de software, onde ambientes
+&lt;p&gt;O &lt;code class=&quot;highlighter-rouge&quot;&gt;holodev&lt;/code&gt; é então um Holodeck para desenvolvedores de software, onde ambientes
 virtuais são criados com o mínimo de esforço. Vejamos como criar um ambiente de
-desenvolvimento &lt;a href=&quot;http://gitlab.com/noosfero/noosfero/&quot;&gt;Noosfero&lt;/a&gt; usando &lt;code&gt;holodev&lt;/code&gt; em um sistema
+desenvolvimento &lt;a href=&quot;http://gitlab.com/noosfero/noosfero/&quot;&gt;Noosfero&lt;/a&gt; usando &lt;code class=&quot;highlighter-rouge&quot;&gt;holodev&lt;/code&gt; em um sistema
 Debian-like.&lt;/p&gt;
 
-&lt;p&gt;Adicione o seguinte repositório ao &lt;code&gt;/etc/apt/sources.list&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Adicione o seguinte repositório ao &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/apt/sources.list&lt;/code&gt;:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;deb http://debian.joenio.me unstable/
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;deb http://debian.joenio.me unstable/
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Baixe a chave do repositório e instale o pacote &lt;code&gt;holodev&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Baixe a chave do repositório e instale o pacote &lt;code class=&quot;highlighter-rouge&quot;&gt;holodev&lt;/code&gt;:&lt;/p&gt;
 
 &lt;pre class=&quot;terminal&quot;&gt;
 &lt;code&gt;
@@ -96,7 +97,7 @@ container e instalar as dependencias de desenvolvimento do Noosfero.&lt;/p&gt;
 &lt;/code&gt;
 &lt;/pre&gt;
 
-&lt;p&gt;O script &lt;code&gt;quick-start&lt;/code&gt; irá instalar todas as dependencias necessárias além de
+&lt;p&gt;O script &lt;code class=&quot;highlighter-rouge&quot;&gt;quick-start&lt;/code&gt; irá instalar todas as dependencias necessárias além de
 executar um setup inicial deixando tudo pronto para o Noosfero ser executado.&lt;/p&gt;
 
 &lt;p&gt;Pronto! Você tem um container LXC redondo para rodar o Noosfero, executar os
@@ -108,14 +109,8 @@ de ajuda pergunte na &lt;a href=&quot;http://listas.softwarelivre.org/cgi-bin/ma
 
 </description>
         <pubDate>Sat, 05 Mar 2016 00:00:00 -0300</pubDate>
-        <link>http://joenio.me/desenvolvendo-noosfero-usando-containers-lxc</link>
-        <guid isPermaLink="true">http://joenio.me/desenvolvendo-noosfero-usando-containers-lxc</guid>
-        
-        <category>tecnologia</category>
-        
-        <category>lxc</category>
-        
-        <category>noosfero</category>
+        <link>http://joenio.me/desenvolvendo-noosfero-usando-containers-lxc/index.html</link>
+        <guid isPermaLink="true">http://joenio.me/desenvolvendo-noosfero-usando-containers-lxc/index.html</guid>
         
         
       </item>
@@ -164,7 +159,7 @@ daí me mantive ativo até o final do ano e enviei ao todo 15 Pull Requests.&lt;
 &lt;h2 id=&quot;fevereiro&quot;&gt;Fevereiro&lt;/h2&gt;
 
 &lt;p&gt;Em meu primeiro desafio o módulo sorteado foi o &lt;a href=&quot;http://metacpan.org/pod/Module::Setup&quot;&gt;Module::Setup&lt;/a&gt;,
-fiz uma melhoria no &lt;code&gt;Makefile.PL&lt;/code&gt; para dar alertas de dependencias não
+fiz uma melhoria no &lt;code class=&quot;highlighter-rouge&quot;&gt;Makefile.PL&lt;/code&gt; para dar alertas de dependencias não
 satisfeitas.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -185,7 +180,7 @@ ao Debian&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;maro&quot;&gt;Março&lt;/h2&gt;
 
 &lt;p&gt;Em março Neil sorteou o módulo &lt;a href=&quot;http://metacpan.org/release/libnet&quot;&gt;libnet&lt;/a&gt;, fiz uma sugestão de nova
-funcionalidade para o &lt;code&gt;Net::FTP&lt;/code&gt; a partir de uma ideia registrada no &lt;a href=&quot;http://rt.cpan.org/Public/Bug/Display.html?id=101586&quot;&gt;ticket
+funcionalidade para o &lt;code class=&quot;highlighter-rouge&quot;&gt;Net::FTP&lt;/code&gt; a partir de uma ideia registrada no &lt;a href=&quot;http://rt.cpan.org/Public/Bug/Display.html?id=101586&quot;&gt;ticket
 #101586 do RT&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -304,10 +299,8 @@ começou e eu já estou participando.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 29 Jan 2016 00:00:00 -0200</pubDate>
-        <link>http://joenio.me/contribuindo-com-projetos-de-software-livre</link>
-        <guid isPermaLink="true">http://joenio.me/contribuindo-com-projetos-de-software-livre</guid>
-        
-        <category>perl</category>
+        <link>http://joenio.me/contribuindo-com-projetos-de-software-livre/index.html</link>
+        <guid isPermaLink="true">http://joenio.me/contribuindo-com-projetos-de-software-livre/index.html</guid>
         
         
       </item>
@@ -317,19 +310,19 @@ começou e eu já estou participando.&lt;/p&gt;
         <description>&lt;p&gt;&lt;img src=&quot;/files/trooper-segurando-caneta-fundo-verde.jpg&quot; alt=&quot;Clone trooper segurando caneta&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Há algum tempo atrás escrevi um post &lt;a href=&quot;http://softwarelivre.org/joenio/blog/awstats-varnish-e-virtualhosts&quot;&gt;mostrando como configurar o
-&lt;code&gt;Varnish&lt;/code&gt;&lt;/a&gt; para escrever logs num formato
-modificado do &lt;a href=&quot;http://httpd.apache.org/docs/2.4/logs.html#combined&quot;&gt;&lt;em&gt;Combined Log Format&lt;/em&gt;&lt;/a&gt; do &lt;code&gt;Apache&lt;/code&gt;, esta modificação
-foi feita para adicionar o &lt;em&gt;virtualhost&lt;/em&gt; &lt;code&gt;%v&lt;/code&gt; no início de cada registro do log
-e na sintaxe do &lt;code&gt;Apache&lt;/code&gt; se parece com o seguinte:&lt;/p&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Varnish&lt;/code&gt;&lt;/a&gt; para escrever logs num formato
+modificado do &lt;a href=&quot;http://httpd.apache.org/docs/2.4/logs.html#combined&quot;&gt;&lt;em&gt;Combined Log Format&lt;/em&gt;&lt;/a&gt; do &lt;code class=&quot;highlighter-rouge&quot;&gt;Apache&lt;/code&gt;, esta modificação
+foi feita para adicionar o &lt;em&gt;virtualhost&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;%v&lt;/code&gt; no início de cada registro do log
+e na sintaxe do &lt;code class=&quot;highlighter-rouge&quot;&gt;Apache&lt;/code&gt; se parece com o seguinte:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;
-  &lt;pre&gt;&lt;code class=&quot;language-apache&quot; data-lang=&quot;apache&quot;&gt;&lt;span class=&quot;nb&quot;&gt;LogFormat&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;%v %h %l %u %t \&amp;quot;%r\&amp;quot; %&amp;gt;s %O \&amp;quot;%{Referer}i\&amp;quot; \&amp;quot;%{User-Agent}i\&amp;quot;&amp;quot;&lt;/span&gt; vhost_combined&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-apache&quot; data-lang=&quot;apache&quot;&gt;&lt;span class=&quot;nc&quot;&gt;LogFormat&lt;/span&gt; &quot;%v %h %l %u %t \&quot;%r\&quot; %&amp;gt;s %O \&quot;%{Referer}i\&quot; \&quot;%{User-Agent}i\&quot;&quot; vhost_combined&lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;Isto foi feito com o &lt;a href=&quot;http://github.com/joenio/varnishncsa-vhost&quot;&gt;varnishncsa-vhost&lt;/a&gt;, um script que faz
-o &lt;code&gt;Varnish&lt;/code&gt; armazenar logs seguindo o formato acima, este script deveria estar
-obsoleto já que versões recentes do &lt;code&gt;Varnish&lt;/code&gt; suportam customizar o formato dos
-logs através da opção &lt;code&gt;-F&lt;/code&gt;, mas um problema no pacote Debian impede de fazer
+o &lt;code class=&quot;highlighter-rouge&quot;&gt;Varnish&lt;/code&gt; armazenar logs seguindo o formato acima, este script deveria estar
+obsoleto já que versões recentes do &lt;code class=&quot;highlighter-rouge&quot;&gt;Varnish&lt;/code&gt; suportam customizar o formato dos
+logs através da opção &lt;code class=&quot;highlighter-rouge&quot;&gt;-F&lt;/code&gt;, mas um problema no pacote Debian impede de fazer
 isto do “jeito certo”™.&lt;/p&gt;
 
 &lt;p&gt;Este problema foi citado em &lt;a href=&quot;http://giantdorks.org/alain/workaround-for-broken-varnishncsa-logging-due-to-shell-mishandling-of-spaces-in-log_format-variables&quot;&gt;Workaround for broken varnishncsa logging due to
@@ -343,24 +336,22 @@ solucionado.&lt;/p&gt;
   &lt;p&gt;Porque estou contando esse “blá blá blá”?&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Recentemente precisei alterar o formato dos logs do &lt;code&gt;Varnish&lt;/code&gt; em um servidor de
-produção e acabei utilizando o &lt;code&gt;varnishncsa-vhost&lt;/code&gt; novamente e ele funcionou
+&lt;p&gt;Recentemente precisei alterar o formato dos logs do &lt;code class=&quot;highlighter-rouge&quot;&gt;Varnish&lt;/code&gt; em um servidor de
+produção e acabei utilizando o &lt;code class=&quot;highlighter-rouge&quot;&gt;varnishncsa-vhost&lt;/code&gt; novamente e ele funcionou
 muito bem, isto me salvou dos sedutores “armengues que quebram na próxima
 atualização”.&lt;/p&gt;
 
 &lt;p&gt;Então se isto for útil para você de alguma forma utilize o repositório abaixo,
-eu subi uma nova versão do pacote Debian do &lt;code&gt;varnishncsa-vhost&lt;/code&gt; lá:&lt;/p&gt;
+eu subi uma nova versão do pacote Debian do &lt;code class=&quot;highlighter-rouge&quot;&gt;varnishncsa-vhost&lt;/code&gt; lá:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;
-  &lt;pre&gt;&lt;code class=&quot;language-sourceslist&quot; data-lang=&quot;sourceslist&quot;&gt;&lt;span class=&quot;k&quot;&gt;deb&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://debian.joenio.me&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;unstable/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-sourceslist&quot; data-lang=&quot;sourceslist&quot;&gt;deb http://debian.joenio.me unstable/&lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;
 
 </description>
         <pubDate>Sat, 15 Aug 2015 00:00:00 -0300</pubDate>
-        <link>http://joenio.me/como-adicionar-virtualhost-aos-logs-do-varnish</link>
-        <guid isPermaLink="true">http://joenio.me/como-adicionar-virtualhost-aos-logs-do-varnish</guid>
-        
-        <category>debian</category>
+        <link>http://joenio.me/como-adicionar-virtualhost-aos-logs-do-varnish/index.html</link>
+        <guid isPermaLink="true">http://joenio.me/como-adicionar-virtualhost-aos-logs-do-varnish/index.html</guid>
         
         
       </item>
@@ -421,7 +412,7 @@ informações com base em sua realidade.&lt;/em&gt;&lt;/p&gt;
   &lt;li&gt;Domínio: &lt;strong&gt;debian.joenio.me&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Acesse o servidor via &lt;code&gt;SSH&lt;/code&gt; e instale o &lt;code&gt;mini-dinstall&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Acesse o servidor via &lt;code class=&quot;highlighter-rouge&quot;&gt;SSH&lt;/code&gt; e instale o &lt;code class=&quot;highlighter-rouge&quot;&gt;mini-dinstall&lt;/code&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;mini-dinstall is a tool for installing Debian packages into a personal APT
@@ -442,21 +433,21 @@ $ mkdir -p ~/debian.joenio.me/mini-dinstall/incoming
 &lt;/code&gt;
 &lt;/pre&gt;
 
-&lt;p&gt;Crie o arquivo &lt;code&gt;~/.mini-dinstall.conf&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Crie o arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.mini-dinstall.conf&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;
-  &lt;pre&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span class=&quot;k&quot;&gt;[DEFAULT]&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;mail_on_success&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;false&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;incoming_permissions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0750&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;architectures&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;all, i386, amd64&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;archive_style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;flat&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;dynamic_reindex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;archivedir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/home/joenio/debian.joenio.me/&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;generate_release&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;release_label&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Joenio&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;release_description&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Unofficial Debian packages maintained by Joenio Costa&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;verify_sigs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span class=&quot;nn&quot;&gt;[DEFAULT]&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;mail_on_success&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;incoming_permissions&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0750&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;architectures&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;all, i386, amd64&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;archive_style&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;flat&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;dynamic_reindex&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;archivedir&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/home/joenio/debian.joenio.me/&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;generate_release&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;release_label&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Joenio&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;release_description&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Unofficial Debian packages maintained by Joenio Costa&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;verify_sigs&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;
 
 &lt;h2 id=&quot;preparando-a-estao-de-trabalho-para-enviar-pacotes&quot;&gt;Preparando a estação de trabalho para enviar pacotes&lt;/h2&gt;
 
@@ -464,7 +455,7 @@ $ mkdir -p ~/debian.joenio.me/mini-dinstall/incoming
   &lt;li&gt;Sistema Operacional: &lt;strong&gt;Debian Testing&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Instale o &lt;code&gt;dput&lt;/code&gt; em seu computador:&lt;/p&gt;
+&lt;p&gt;Instale o &lt;code class=&quot;highlighter-rouge&quot;&gt;dput&lt;/code&gt; em seu computador:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;dput allows you to put one or more Debian packages into the archive&lt;/p&gt;
@@ -476,7 +467,7 @@ $ mkdir -p ~/debian.joenio.me/mini-dinstall/incoming
 &lt;/code&gt;
 &lt;/pre&gt;
 
-&lt;p&gt;Exporte sua chave pública &lt;code&gt;GnuPG&lt;/code&gt; para para o arquivo &lt;code&gt;signing.asc&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Exporte sua chave pública &lt;code class=&quot;highlighter-rouge&quot;&gt;GnuPG&lt;/code&gt; para para o arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;signing.asc&lt;/code&gt;.&lt;/p&gt;
 
 &lt;pre class=&quot;terminal&quot;&gt;
 &lt;code&gt;
@@ -489,7 +480,7 @@ $ gpg --armor --output signing.asc --export D5609CBE
 identificador da sua própria chave.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Copie o arquivo &lt;code&gt;signing.asc&lt;/code&gt; para o servidor:&lt;/p&gt;
+&lt;p&gt;Copie o arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;signing.asc&lt;/code&gt; para o servidor:&lt;/p&gt;
 
 &lt;pre class=&quot;terminal&quot;&gt;
 &lt;code&gt;
@@ -497,26 +488,26 @@ $ scp signing.asc debian.joenio.me:~/debian.joenio.me/
 &lt;/code&gt;
 &lt;/pre&gt;
 
-&lt;p&gt;Crie arquivo &lt;code&gt;~/.dput.cf&lt;/code&gt; em seu &lt;code&gt;$HOME&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Crie arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.dput.cf&lt;/code&gt; em seu &lt;code class=&quot;highlighter-rouge&quot;&gt;$HOME&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;
-  &lt;pre&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span class=&quot;k&quot;&gt;[debian.joenio.me]&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;fqdn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;debian.joenio.me&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;method&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;scp&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;login&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;*&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;incoming&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;~/debian.joenio.me/mini-dinstall/incoming&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;allow_unsigned_uploads&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;post_upload_command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ssh debian.joenio.me mini-dinstall -b &amp;amp;&amp;amp; sign-remote --no-batch debian.joenio.me:debian.joenio.me/unstable/Release&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span class=&quot;nn&quot;&gt;[debian.joenio.me]&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;fqdn&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;debian.joenio.me&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;method&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;scp&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;login&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;incoming&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;~/debian.joenio.me/mini-dinstall/incoming&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;allow_unsigned_uploads&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;post_upload_command&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ssh debian.joenio.me mini-dinstall -b &amp;amp;&amp;amp; sign-remote --no-batch debian.joenio.me:debian.joenio.me/unstable/Release&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;
 
-&lt;p&gt;Os pacotes serão assinados com a chave &lt;code&gt;GnuPG&lt;/code&gt; ao serem enviados pelo &lt;code&gt;dput&lt;/code&gt; ao
-servidor. Isso será feito pelo script &lt;code&gt;sign-remote&lt;/code&gt; disponível
+&lt;p&gt;Os pacotes serão assinados com a chave &lt;code class=&quot;highlighter-rouge&quot;&gt;GnuPG&lt;/code&gt; ao serem enviados pelo &lt;code class=&quot;highlighter-rouge&quot;&gt;dput&lt;/code&gt; ao
+servidor. Isso será feito pelo script &lt;code class=&quot;highlighter-rouge&quot;&gt;sign-remote&lt;/code&gt; disponível
 &lt;a href=&quot;http://github.com/joenio/sign-remote/blob/master/sign-remote&quot;&gt;aqui&lt;/a&gt;. Copie este arquivo em seu computador e adicione a
-localização dele ao &lt;code&gt;$PATH&lt;/code&gt;, se não sabe do que estou falando &lt;a href=&quot;https://wiki.debian.net/EnvironmentVariables&quot;&gt;leia
+localização dele ao &lt;code class=&quot;highlighter-rouge&quot;&gt;$PATH&lt;/code&gt;, se não sabe do que estou falando &lt;a href=&quot;https://wiki.debian.net/EnvironmentVariables&quot;&gt;leia
 isso&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;O &lt;code&gt;dput&lt;/code&gt; irá reclamar se a distribuição do pacote não for &lt;strong&gt;unstable&lt;/strong&gt;, isto é
-definido no arquivo &lt;code&gt;changelog&lt;/code&gt; do pacote, veja o capítulo 4 &lt;em&gt;Required files
+&lt;p&gt;O &lt;code class=&quot;highlighter-rouge&quot;&gt;dput&lt;/code&gt; irá reclamar se a distribuição do pacote não for &lt;strong&gt;unstable&lt;/strong&gt;, isto é
+definido no arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;changelog&lt;/code&gt; do pacote, veja o capítulo 4 &lt;em&gt;Required files
 under the debian directory&lt;/em&gt; no &lt;a href=&quot;http://www.debian.org/doc/manuals/maint-guide&quot;&gt;Guia do Novo Mantenedor Debian&lt;/a&gt;
 para entender como fazer isso.&lt;/p&gt;
 
@@ -531,15 +522,15 @@ $ dput debian.joenio.me &amp;lt;pacote&amp;gt;.changes
 
 &lt;p&gt;Isto irá copiar o pacote &lt;em&gt;.deb&lt;/em&gt; e o arquivo &lt;em&gt;.changes&lt;/em&gt; dele, irá atualizar os
 arquivos &lt;em&gt;Sources&lt;/em&gt; e &lt;em&gt;Packages&lt;/em&gt; com as informações do pacote e irá assinar o
-arquivo &lt;em&gt;Release&lt;/em&gt; com a chave pública &lt;code&gt;GnuPG&lt;/code&gt;.&lt;/p&gt;
+arquivo &lt;em&gt;Release&lt;/em&gt; com a chave pública &lt;code class=&quot;highlighter-rouge&quot;&gt;GnuPG&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;disponibilizando-acesso-ao-repositrio-publicamente&quot;&gt;Disponibilizando acesso ao repositório publicamente&lt;/h2&gt;
 
 &lt;p&gt;Até aqui já temos um repositório com pacotes hospedados, mas sem acesso público
 aos pacotes ninguém poderá utilizá-lo. Para resolver isto vamos configurar
-acesso via &lt;code&gt;HTTP&lt;/code&gt; usando o servidor web &lt;a href=&quot;http://nginx.org&quot;&gt;Nginx&lt;/a&gt;.&lt;/p&gt;
+acesso via &lt;code class=&quot;highlighter-rouge&quot;&gt;HTTP&lt;/code&gt; usando o servidor web &lt;a href=&quot;http://nginx.org&quot;&gt;Nginx&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Instale o &lt;code&gt;Nginx&lt;/code&gt; no servidor:&lt;/p&gt;
+&lt;p&gt;Instale o &lt;code class=&quot;highlighter-rouge&quot;&gt;Nginx&lt;/code&gt; no servidor:&lt;/p&gt;
 
 &lt;pre class=&quot;terminal&quot;&gt;
 &lt;code&gt;
@@ -547,18 +538,18 @@ acesso via &lt;code&gt;HTTP&lt;/code&gt; usando o servidor web &lt;a href=&quot;
 &lt;/code&gt;
 &lt;/pre&gt;
 
-&lt;p&gt;Crie o arquivo de configuração &lt;code&gt;/etc/nginx/sites-available/debian.joenio.me&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Crie o arquivo de configuração &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx/sites-available/debian.joenio.me&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;
+&lt;figure class=&quot;highlight&quot;&gt;
   &lt;pre&gt;&lt;code class=&quot;language-nginx&quot; data-lang=&quot;nginx&quot;&gt;&lt;span class=&quot;k&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;kn&quot;&gt;server_name&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;debian.joenio.me&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;kn&quot;&gt;access_log&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/var/log/nginx/debian.joenio.me.access.log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;kn&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kn&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/home/joenio/debian.joenio.me&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kn&quot;&gt;access_log&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;/var/log/nginx/debian.joenio.me.access.log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kn&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kn&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;/home/joenio/debian.joenio.me&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;kn&quot;&gt;autoindex&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;Habilite o arquivo de configuração e reinicie o serviço:&lt;/p&gt;
 
@@ -570,7 +561,7 @@ acesso via &lt;code&gt;HTTP&lt;/code&gt; usando o servidor web &lt;a href=&quot;
 &lt;/code&gt;
 &lt;/pre&gt;
 
-&lt;p&gt;Com o &lt;code&gt;Nginx&lt;/code&gt; configurado e rodando já temos o repositório e seus pacotes
+&lt;p&gt;Com o &lt;code class=&quot;highlighter-rouge&quot;&gt;Nginx&lt;/code&gt; configurado e rodando já temos o repositório e seus pacotes
 disponíveis no seguinte endereço:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -580,14 +571,14 @@ disponíveis no seguinte endereço:&lt;/p&gt;
 &lt;h2 id=&quot;testando-o-repositrio-e-instalando-pacotes&quot;&gt;Testando o repositório e instalando pacotes&lt;/h2&gt;
 
 &lt;p&gt;Para usar este repositorio adicione as seguintes entradas no
-&lt;code&gt;/etc/apt/sources.list&lt;/code&gt; do computador local:&lt;/p&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/apt/sources.list&lt;/code&gt; do computador local:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;
-  &lt;pre&gt;&lt;code class=&quot;language-sourceslist&quot; data-lang=&quot;sourceslist&quot;&gt;&lt;span class=&quot;k&quot;&gt;deb&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://debian.joenio.me&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;unstable/&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;deb-src&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://debian.joenio.me&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;unstable/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-sourceslist&quot; data-lang=&quot;sourceslist&quot;&gt;deb http://debian.joenio.me unstable/
+deb-src http://debian.joenio.me unstable/&lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;
 
-&lt;p&gt;Adicione a chave de assinatura ao banco de dados de segurança do &lt;code&gt;APT&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Adicione a chave de assinatura ao banco de dados de segurança do &lt;code class=&quot;highlighter-rouge&quot;&gt;APT&lt;/code&gt;:&lt;/p&gt;
 
 &lt;pre class=&quot;terminal&quot;&gt;
 &lt;code&gt;
@@ -626,12 +617,8 @@ para o setup descrito aqui neste post.&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 29 Jun 2015 00:00:00 -0300</pubDate>
-        <link>http://joenio.me/aprenda-a-criar-repositorios-de-pacotes-debian</link>
-        <guid isPermaLink="true">http://joenio.me/aprenda-a-criar-repositorios-de-pacotes-debian</guid>
-        
-        <category>tecnologia</category>
-        
-        <category>debian</category>
+        <link>http://joenio.me/aprenda-a-criar-repositorios-de-pacotes-debian/index.html</link>
+        <guid isPermaLink="true">http://joenio.me/aprenda-a-criar-repositorios-de-pacotes-debian/index.html</guid>
         
         
       </item>
@@ -793,10 +780,8 @@ evento.&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
         <pubDate>Sun, 29 Mar 2015 00:00:00 -0300</pubDate>
-        <link>http://joenio.me/embarque-na-viagem-das-cooperativas-do-ano</link>
-        <guid isPermaLink="true">http://joenio.me/embarque-na-viagem-das-cooperativas-do-ano</guid>
-        
-        <category>colivre</category>
+        <link>http://joenio.me/embarque-na-viagem-das-cooperativas-do-ano/index.html</link>
+        <guid isPermaLink="true">http://joenio.me/embarque-na-viagem-das-cooperativas-do-ano/index.html</guid>
         
         
       </item>
@@ -837,7 +822,7 @@ praticamente zero esforço de aprendizado inicial, e desde então tenho utilizad
 ela para gerenciar todas as minhas atividades.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Por que eu estava à procura de técnicas para gerenciamento de tempo? &lt;/p&gt;
+  &lt;p&gt;Por que eu estava à procura de técnicas para gerenciamento de tempo?&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Desde 2006 eu venho trabalhando como autônomo, gerenciando meu próprio tempo,
@@ -933,12 +918,8 @@ buscar cumpri-lo sempre.&lt;/p&gt;
 que você leia o livro dele, mas faça isso hoje, não deixe para amanhã! rs&lt;/p&gt;
 </description>
         <pubDate>Wed, 04 Mar 2015 00:00:00 -0300</pubDate>
-        <link>http://joenio.me/nao-faca-hoje-o-que-pode-deixar-para-amanha</link>
-        <guid isPermaLink="true">http://joenio.me/nao-faca-hoje-o-que-pode-deixar-para-amanha</guid>
-        
-        <category>pessoal</category>
-        
-        <category>gestao</category>
+        <link>http://joenio.me/nao-faca-hoje-o-que-pode-deixar-para-amanha/index.html</link>
+        <guid isPermaLink="true">http://joenio.me/nao-faca-hoje-o-que-pode-deixar-para-amanha/index.html</guid>
         
         
       </item>
@@ -1029,12 +1010,8 @@ boas vibrações.&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
         <pubDate>Wed, 31 Dec 2014 00:00:00 -0200</pubDate>
-        <link>http://joenio.me/fui-diagnosticado-com-um-tumor-renal-e-agora</link>
-        <guid isPermaLink="true">http://joenio.me/fui-diagnosticado-com-um-tumor-renal-e-agora</guid>
-        
-        <category>pessoal</category>
-        
-        <category>saude</category>
+        <link>http://joenio.me/fui-diagnosticado-com-um-tumor-renal-e-agora/index.html</link>
+        <guid isPermaLink="true">http://joenio.me/fui-diagnosticado-com-um-tumor-renal-e-agora/index.html</guid>
         
         
       </item>
@@ -1093,10 +1070,10 @@ dificuldades consulte este link&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Substitua &lt;em&gt;me@example.com&lt;/em&gt; pelo email usado para criar a conta no Tarsnap, e
 &lt;em&gt;mybox&lt;/em&gt; pelo hostname do seu servidor. &lt;strong&gt;Faça uma cópia de seguança do
-arquivo &lt;code&gt;/root/tarsnap.key&lt;/code&gt;, sem ele não será possível acessar o backup!&lt;/strong&gt;&lt;/p&gt;
+arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;/root/tarsnap.key&lt;/code&gt;, sem ele não será possível acessar o backup!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Com isso já é possível criar um novo backup, o comando abaixo cria um backup do
-diretório &lt;code&gt;/home&lt;/code&gt; por exemplo, &lt;a href=&quot;http://www.tarsnap.com/usage.html&quot;&gt;veja outros comandos
+diretório &lt;code class=&quot;highlighter-rouge&quot;&gt;/home&lt;/code&gt; por exemplo, &lt;a href=&quot;http://www.tarsnap.com/usage.html&quot;&gt;veja outros comandos
 aqui&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre class=&quot;terminal&quot;&gt;
@@ -1110,43 +1087,43 @@ agendamento, política de retenção, periodicidade, etc. É necessário alguma
 outra ferramenta para essa tarefa, em uma rápida pesquisa encontrei o
 &lt;a href=&quot;http://github.com/miracle2k/tarsnapper&quot;&gt;tarsnapper&lt;/a&gt;, um agendador para o
 tarsnap, com ele é possível de maneira simples definir uma política de retenção
-usando um arquivo de configuração localizado em &lt;code&gt;/etc/tarsnapper.conf&lt;/code&gt;. Veja um
+usando um arquivo de configuração localizado em &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/tarsnapper.conf&lt;/code&gt;. Veja um
 exemplo:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;
+&lt;figure class=&quot;highlight&quot;&gt;
   &lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# fazer backup diario e reter:&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# a cada semana (7 dias)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# a cada mes (30 dias)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# a cada semestre (180 dias)&lt;/span&gt;
 
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;deltas&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;1d 7d 30d 180d&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;deltas&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1d 7d 30d 180d&lt;/span&gt;
 
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/mybox/$name-$date&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/mybox/$name-$date&lt;/span&gt;
 
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;etc&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/etc&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;etc&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/etc&lt;/span&gt;
 
-  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/var/backups/mysql&lt;/span&gt;
-    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;exec_before&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/usr/local/bin/dump-mysql&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/var/backups/mysql&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;exec_before&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/usr/local/bin/dump-mysql&lt;/span&gt;
 
-  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;foswiki&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;sources&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/var/lib/foswiki/data&lt;/span&gt;
-      &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/var/lib/foswiki/pub&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+  &lt;span class=&quot;s&quot;&gt;foswiki&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;sources&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/var/lib/foswiki/data&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/var/lib/foswiki/pub&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;O tarsnapper deve ser agendado no cron, eu sugiro executar ele diariamente,
-para isso crie o arquivo &lt;code&gt;/etc/cron.daily/tarsnapper&lt;/code&gt; com o seguinte conteúdo:&lt;/p&gt;
+para isso crie o arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/cron.daily/tarsnapper&lt;/code&gt; com o seguinte conteúdo:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;
+&lt;figure class=&quot;highlight&quot;&gt;
   &lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# Start in the root filesystem, make SElinux happy&lt;/span&gt;
 &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /
 
-tarsnapper -o configfile /etc/tarsnap.conf -c /etc/tarsnapper.conf make &amp;gt;&amp;gt; /var/log/tarsnapper.log 2&amp;gt;&lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt;1&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+tarsnapper -o configfile /etc/tarsnap.conf -c /etc/tarsnapper.conf make &amp;gt;&amp;gt; /var/log/tarsnapper.log 2&amp;gt;&amp;amp;1&lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;Dê permissão de execução a este arquivo, isto vai fazer o cron vai rodar o
 tarsnapper diariamente executando o tarsnap para cada job presente no arquivo
@@ -1163,12 +1140,8 @@ ou se preferir atrevés do meu perfil no
 &lt;a href=&quot;http://github.com/joenio&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 23 Dec 2014 00:00:00 -0200</pubDate>
-        <link>http://joenio.me/backup-na-nuvem-com-tarsnap</link>
-        <guid isPermaLink="true">http://joenio.me/backup-na-nuvem-com-tarsnap</guid>
-        
-        <category>tecnologia</category>
-        
-        <category>backup</category>
+        <link>http://joenio.me/backup-na-nuvem-com-tarsnap/index.html</link>
+        <guid isPermaLink="true">http://joenio.me/backup-na-nuvem-com-tarsnap/index.html</guid>
         
         
       </item>
@@ -1215,10 +1188,8 @@ livros, etc… Espero que seja útil para mais alguém além de mim mesmo.&lt;/p
 &lt;p&gt;Ahhh!!! &lt;a href=&quot;http://softwarelivre.org/dani&quot;&gt;Dani&lt;/a&gt;, obrigado pelo &lt;em&gt;empurrãozinho&lt;/em&gt;!&lt;/p&gt;
 </description>
         <pubDate>Thu, 18 Dec 2014 00:00:00 -0200</pubDate>
-        <link>http://joenio.me/voltando-a-blogar</link>
-        <guid isPermaLink="true">http://joenio.me/voltando-a-blogar</guid>
-        
-        <category>pessoal</category>
+        <link>http://joenio.me/voltando-a-blogar/index.html</link>
+        <guid isPermaLink="true">http://joenio.me/voltando-a-blogar/index.html</guid>
         
         
       </item>

@@ -6,7 +6,7 @@
     <title>Backup na nuvem com Tarsnap | Joenio Costa</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
-    <link rel="canonical" href="http://joenio.me/backup-na-nuvem-com-tarsnap">
+    <link rel="canonical" href="http://joenio.me/backup-na-nuvem-com-tarsnap/">
     <link rel="alternate" type="application/rss+xml" title="Joenio Costa | Feed" href="/feed.xml" />
 
     <!-- Custom CSS -->
@@ -19,11 +19,9 @@
 
   <body>
   <header class="site-header">
-
   <div class="wrap">
     <a class="site-title" href="/">Joenio Costa</a>
   </div>
-
 </header>
 
 
@@ -34,7 +32,6 @@
           <h1>Backup na nuvem com Tarsnap</h1>
           <p class="meta">
 Dec 23, 2014
- • tecnologia backup
 </p>
 
         </header>
@@ -91,10 +88,10 @@ dificuldades consulte este link</a>.</p>
 
 <p>Substitua <em>me@example.com</em> pelo email usado para criar a conta no Tarsnap, e
 <em>mybox</em> pelo hostname do seu servidor. <strong>Faça uma cópia de seguança do
-arquivo <code>/root/tarsnap.key</code>, sem ele não será possível acessar o backup!</strong></p>
+arquivo <code class="highlighter-rouge">/root/tarsnap.key</code>, sem ele não será possível acessar o backup!</strong></p>
 
 <p>Com isso já é possível criar um novo backup, o comando abaixo cria um backup do
-diretório <code>/home</code> por exemplo, <a href="http://www.tarsnap.com/usage.html">veja outros comandos
+diretório <code class="highlighter-rouge">/home</code> por exemplo, <a href="http://www.tarsnap.com/usage.html">veja outros comandos
 aqui</a>.</p>
 
 <pre class="terminal">
@@ -108,43 +105,43 @@ agendamento, política de retenção, periodicidade, etc. É necessário alguma
 outra ferramenta para essa tarefa, em uma rápida pesquisa encontrei o
 <a href="http://github.com/miracle2k/tarsnapper">tarsnapper</a>, um agendador para o
 tarsnap, com ele é possível de maneira simples definir uma política de retenção
-usando um arquivo de configuração localizado em <code>/etc/tarsnapper.conf</code>. Veja um
+usando um arquivo de configuração localizado em <code class="highlighter-rouge">/etc/tarsnapper.conf</code>. Veja um
 exemplo:</p>
 
-<div class="highlight">
+<figure class="highlight">
   <pre><code class="language-yaml" data-lang="yaml"><span class="c1"># fazer backup diario e reter:</span>
 <span class="c1"># a cada semana (7 dias)</span>
 <span class="c1"># a cada mes (30 dias)</span>
 <span class="c1"># a cada semestre (180 dias)</span>
 
-<span class="l-Scalar-Plain">deltas</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">1d 7d 30d 180d</span>
+<span class="s">deltas</span><span class="pi">:</span> <span class="s">1d 7d 30d 180d</span>
 
-<span class="l-Scalar-Plain">target</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/mybox/$name-$date</span>
+<span class="s">target</span><span class="pi">:</span> <span class="s">/mybox/$name-$date</span>
 
-<span class="l-Scalar-Plain">jobs</span><span class="p-Indicator">:</span>
-  <span class="l-Scalar-Plain">etc</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">source</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/etc</span>
+<span class="s">jobs</span><span class="pi">:</span>
+  <span class="s">etc</span><span class="pi">:</span>
+    <span class="s">source</span><span class="pi">:</span> <span class="s">/etc</span>
 
-  <span class="l-Scalar-Plain">mysql</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">source</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/var/backups/mysql</span>
-    <span class="l-Scalar-Plain">exec_before</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/usr/local/bin/dump-mysql</span>
+  <span class="s">mysql</span><span class="pi">:</span>
+    <span class="s">source</span><span class="pi">:</span> <span class="s">/var/backups/mysql</span>
+    <span class="s">exec_before</span><span class="pi">:</span> <span class="s">/usr/local/bin/dump-mysql</span>
 
-  <span class="l-Scalar-Plain">foswiki</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">sources</span><span class="p-Indicator">:</span>
-      <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">/var/lib/foswiki/data</span>
-      <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">/var/lib/foswiki/pub</span></code></pre>
-</div>
+  <span class="s">foswiki</span><span class="pi">:</span>
+    <span class="s">sources</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">/var/lib/foswiki/data</span>
+      <span class="pi">-</span> <span class="s">/var/lib/foswiki/pub</span></code></pre>
+</figure>
 
 <p>O tarsnapper deve ser agendado no cron, eu sugiro executar ele diariamente,
-para isso crie o arquivo <code>/etc/cron.daily/tarsnapper</code> com o seguinte conteúdo:</p>
+para isso crie o arquivo <code class="highlighter-rouge">/etc/cron.daily/tarsnapper</code> com o seguinte conteúdo:</p>
 
-<div class="highlight">
+<figure class="highlight">
   <pre><code class="language-sh" data-lang="sh"><span class="c">#!/bin/sh</span>
 <span class="c"># Start in the root filesystem, make SElinux happy</span>
 <span class="nb">cd</span> /
 
-tarsnapper -o configfile /etc/tarsnap.conf -c /etc/tarsnapper.conf make &gt;&gt; /var/log/tarsnapper.log 2&gt;<span class="p">&amp;</span>1</code></pre>
-</div>
+tarsnapper -o configfile /etc/tarsnap.conf -c /etc/tarsnapper.conf make &gt;&gt; /var/log/tarsnapper.log 2&gt;&amp;1</code></pre>
+</figure>
 
 <p>Dê permissão de execução a este arquivo, isto vai fazer o cron vai rodar o
 tarsnapper diariamente executando o tarsnap para cada job presente no arquivo
@@ -166,7 +163,7 @@ ou se preferir atrevés do meu perfil no
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES * * */
       var disqus_shortname = 'joenio';
-      var disqus_url = 'http://joenio.me/backup-na-nuvem-com-tarsnap';
+      var disqus_url = 'http://joenio.me/backup-na-nuvem-com-tarsnap/index.html';
       /* * * DON'T EDIT BELOW THIS LINE * * */
       (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -189,11 +186,9 @@ ou se preferir atrevés do meu perfil no
   <div class="wrap">
 
     <div class="footer-col-1 column">
-
       <div class="hackergotchi">
         <img src="/files/hackergotchi.png"/>
       </div>
-
     </div>
 
     <div class="footer-col-2 column">
@@ -274,7 +269,6 @@ ou se preferir atrevés do meu perfil no
 
   ga('create', 'UA-31348806-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 
   </body>

@@ -1,6 +1,5 @@
 ---
 title: Contribuindo com projetos de software livre
-tags: perl
 ---
 
 ![Camisa Hacktoberfest 2015](/files/hacktoberfest-2015.jpg)

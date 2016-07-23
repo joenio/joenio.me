@@ -6,7 +6,7 @@
     <title>Como adicionar virtualhost aos logs do Varnish | Joenio Costa</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
-    <link rel="canonical" href="http://joenio.me/como-adicionar-virtualhost-aos-logs-do-varnish">
+    <link rel="canonical" href="http://joenio.me/como-adicionar-virtualhost-aos-logs-do-varnish/">
     <link rel="alternate" type="application/rss+xml" title="Joenio Costa | Feed" href="/feed.xml" />
 
     <!-- Custom CSS -->
@@ -19,11 +19,9 @@
 
   <body>
   <header class="site-header">
-
   <div class="wrap">
     <a class="site-title" href="/">Joenio Costa</a>
   </div>
-
 </header>
 
 
@@ -34,7 +32,6 @@
           <h1>Como adicionar virtualhost aos logs do Varnish</h1>
           <p class="meta">
 Aug 15, 2015
- • debian
 </p>
 
         </header>
@@ -42,19 +39,19 @@ Aug 15, 2015
         <p><img src="/files/trooper-segurando-caneta-fundo-verde.jpg" alt="Clone trooper segurando caneta" /></p>
 
 <p>Há algum tempo atrás escrevi um post <a href="http://softwarelivre.org/joenio/blog/awstats-varnish-e-virtualhosts">mostrando como configurar o
-<code>Varnish</code></a> para escrever logs num formato
-modificado do <a href="http://httpd.apache.org/docs/2.4/logs.html#combined"><em>Combined Log Format</em></a> do <code>Apache</code>, esta modificação
-foi feita para adicionar o <em>virtualhost</em> <code>%v</code> no início de cada registro do log
-e na sintaxe do <code>Apache</code> se parece com o seguinte:</p>
+<code class="highlighter-rouge">Varnish</code></a> para escrever logs num formato
+modificado do <a href="http://httpd.apache.org/docs/2.4/logs.html#combined"><em>Combined Log Format</em></a> do <code class="highlighter-rouge">Apache</code>, esta modificação
+foi feita para adicionar o <em>virtualhost</em> <code class="highlighter-rouge">%v</code> no início de cada registro do log
+e na sintaxe do <code class="highlighter-rouge">Apache</code> se parece com o seguinte:</p>
 
-<div class="highlight">
-  <pre><code class="language-apache" data-lang="apache"><span class="nb">LogFormat</span> <span class="s2">&quot;%v %h %l %u %t \&quot;%r\&quot; %&gt;s %O \&quot;%{Referer}i\&quot; \&quot;%{User-Agent}i\&quot;&quot;</span> vhost_combined</code></pre>
-</div>
+<figure class="highlight">
+  <pre><code class="language-apache" data-lang="apache"><span class="nc">LogFormat</span> "%v %h %l %u %t \"%r\" %&gt;s %O \"%{Referer}i\" \"%{User-Agent}i\"" vhost_combined</code></pre>
+</figure>
 
 <p>Isto foi feito com o <a href="http://github.com/joenio/varnishncsa-vhost">varnishncsa-vhost</a>, um script que faz
-o <code>Varnish</code> armazenar logs seguindo o formato acima, este script deveria estar
-obsoleto já que versões recentes do <code>Varnish</code> suportam customizar o formato dos
-logs através da opção <code>-F</code>, mas um problema no pacote Debian impede de fazer
+o <code class="highlighter-rouge">Varnish</code> armazenar logs seguindo o formato acima, este script deveria estar
+obsoleto já que versões recentes do <code class="highlighter-rouge">Varnish</code> suportam customizar o formato dos
+logs através da opção <code class="highlighter-rouge">-F</code>, mas um problema no pacote Debian impede de fazer
 isto do “jeito certo”™.</p>
 
 <p>Este problema foi citado em <a href="http://giantdorks.org/alain/workaround-for-broken-varnishncsa-logging-due-to-shell-mishandling-of-spaces-in-log_format-variables">Workaround for broken varnishncsa logging due to
@@ -68,17 +65,17 @@ solucionado.</p>
   <p>Porque estou contando esse “blá blá blá”?</p>
 </blockquote>
 
-<p>Recentemente precisei alterar o formato dos logs do <code>Varnish</code> em um servidor de
-produção e acabei utilizando o <code>varnishncsa-vhost</code> novamente e ele funcionou
+<p>Recentemente precisei alterar o formato dos logs do <code class="highlighter-rouge">Varnish</code> em um servidor de
+produção e acabei utilizando o <code class="highlighter-rouge">varnishncsa-vhost</code> novamente e ele funcionou
 muito bem, isto me salvou dos sedutores “armengues que quebram na próxima
 atualização”.</p>
 
 <p>Então se isto for útil para você de alguma forma utilize o repositório abaixo,
-eu subi uma nova versão do pacote Debian do <code>varnishncsa-vhost</code> lá:</p>
+eu subi uma nova versão do pacote Debian do <code class="highlighter-rouge">varnishncsa-vhost</code> lá:</p>
 
-<div class="highlight">
-  <pre><code class="language-sourceslist" data-lang="sourceslist"><span class="k">deb</span> <span class="s">http://debian.joenio.me</span> <span class="kp">unstable/</span></code></pre>
-</div>
+<figure class="highlight">
+  <pre><code class="language-sourceslist" data-lang="sourceslist">deb http://debian.joenio.me unstable/</code></pre>
+</figure>
 
 
         </article>
@@ -87,7 +84,7 @@ eu subi uma nova versão do pacote Debian do <code>varnishncsa-vhost</code> lá:
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES * * */
       var disqus_shortname = 'joenio';
-      var disqus_url = 'http://joenio.me/como-adicionar-virtualhost-aos-logs-do-varnish';
+      var disqus_url = 'http://joenio.me/como-adicionar-virtualhost-aos-logs-do-varnish/index.html';
       /* * * DON'T EDIT BELOW THIS LINE * * */
       (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -110,11 +107,9 @@ eu subi uma nova versão do pacote Debian do <code>varnishncsa-vhost</code> lá:
   <div class="wrap">
 
     <div class="footer-col-1 column">
-
       <div class="hackergotchi">
         <img src="/files/hackergotchi.png"/>
       </div>
-
     </div>
 
     <div class="footer-col-2 column">
@@ -195,7 +190,6 @@ eu subi uma nova versão do pacote Debian do <code>varnishncsa-vhost</code> lá:
 
   ga('create', 'UA-31348806-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 
   </body>

@@ -1,6 +1,5 @@
 ---
 title: Não faça hoje o que pode deixar para amanhã
-tags: pessoal gestao
 ---
 
 ![Clone Trooper Deitado](/files/clone-trooper-deitado.jpg)

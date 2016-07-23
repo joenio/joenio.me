@@ -1,6 +1,5 @@
 ---
 title: Voltando a "blogar"
-tags: pessoal
 ---
 
 ![Han Solo apontando uma arma para Chewbacca](/files/han-solo-e-chewbacca-blog.jpg)

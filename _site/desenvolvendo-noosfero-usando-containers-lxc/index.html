@@ -6,7 +6,7 @@
     <title>Desenvolvendo Noosfero usando containers LXC | Joenio Costa</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
-    <link rel="canonical" href="http://joenio.me/desenvolvendo-noosfero-usando-containers-lxc">
+    <link rel="canonical" href="http://joenio.me/desenvolvendo-noosfero-usando-containers-lxc/">
     <link rel="alternate" type="application/rss+xml" title="Joenio Costa | Feed" href="/feed.xml" />
 
     <!-- Custom CSS -->
@@ -19,11 +19,9 @@
 
   <body>
   <header class="site-header">
-
   <div class="wrap">
     <a class="site-title" href="/">Joenio Costa</a>
   </div>
-
 </header>
 
 
@@ -34,7 +32,6 @@
           <h1>Desenvolvendo Noosfero usando containers LXC</h1>
           <p class="meta">
 Mar 5, 2016
- • tecnologia lxc noosfero
 </p>
 
         </header>
@@ -63,7 +60,7 @@ projeto, ou seja, para cada projeto tenho um ambiente “virtual” isolado.</p>
 
 <p>Nas aventuras com o <a href="http://wiki.debian.org/LXC">LXC</a> senti necessidade de algo para simplificar e
 automatizar um pouco as coisas, então comecei a escrever um pequeno shell
-script e lhe dei o nome de <code>holodev</code>.</p>
+script e lhe dei o nome de <code class="highlighter-rouge">holodev</code>.</p>
 
 <h2 id="holodev">holodev</h2>
 
@@ -76,17 +73,18 @@ Basta dizer: “crie o estádio Fonte Nova antes de ser implodido em 2010 em alg
 jogo Bahia x Vitória” e o Holodeck cria toda a realidade, com objetos e
 personagens.</p>
 
-<p>O <code>holodev</code> é então um Holodeck para desenvolvedores de software, onde ambientes
+<p>O <code class="highlighter-rouge">holodev</code> é então um Holodeck para desenvolvedores de software, onde ambientes
 virtuais são criados com o mínimo de esforço. Vejamos como criar um ambiente de
-desenvolvimento <a href="http://gitlab.com/noosfero/noosfero/">Noosfero</a> usando <code>holodev</code> em um sistema
+desenvolvimento <a href="http://gitlab.com/noosfero/noosfero/">Noosfero</a> usando <code class="highlighter-rouge">holodev</code> em um sistema
 Debian-like.</p>
 
-<p>Adicione o seguinte repositório ao <code>/etc/apt/sources.list</code>:</p>
+<p>Adicione o seguinte repositório ao <code class="highlighter-rouge">/etc/apt/sources.list</code>:</p>
 
-<pre><code>deb http://debian.joenio.me unstable/
+<div class="highlighter-rouge"><pre class="highlight"><code>deb http://debian.joenio.me unstable/
 </code></pre>
+</div>
 
-<p>Baixe a chave do repositório e instale o pacote <code>holodev</code>:</p>
+<p>Baixe a chave do repositório e instale o pacote <code class="highlighter-rouge">holodev</code>:</p>
 
 <pre class="terminal">
 <code>
@@ -124,7 +122,7 @@ container e instalar as dependencias de desenvolvimento do Noosfero.</p>
 </code>
 </pre>
 
-<p>O script <code>quick-start</code> irá instalar todas as dependencias necessárias além de
+<p>O script <code class="highlighter-rouge">quick-start</code> irá instalar todas as dependencias necessárias além de
 executar um setup inicial deixando tudo pronto para o Noosfero ser executado.</p>
 
 <p>Pronto! Você tem um container LXC redondo para rodar o Noosfero, executar os
@@ -141,7 +139,7 @@ de ajuda pergunte na <a href="http://listas.softwarelivre.org/cgi-bin/mailman/li
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES * * */
       var disqus_shortname = 'joenio';
-      var disqus_url = 'http://joenio.me/desenvolvendo-noosfero-usando-containers-lxc';
+      var disqus_url = 'http://joenio.me/desenvolvendo-noosfero-usando-containers-lxc/index.html';
       /* * * DON'T EDIT BELOW THIS LINE * * */
       (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -164,11 +162,9 @@ de ajuda pergunte na <a href="http://listas.softwarelivre.org/cgi-bin/mailman/li
   <div class="wrap">
 
     <div class="footer-col-1 column">
-
       <div class="hackergotchi">
         <img src="/files/hackergotchi.png"/>
       </div>
-
     </div>
 
     <div class="footer-col-2 column">
@@ -249,7 +245,6 @@ de ajuda pergunte na <a href="http://listas.softwarelivre.org/cgi-bin/mailman/li
 
   ga('create', 'UA-31348806-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 
   </body>

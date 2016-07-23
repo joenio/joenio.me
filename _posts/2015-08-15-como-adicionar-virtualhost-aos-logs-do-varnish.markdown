@@ -1,6 +1,5 @@
 ---
 title: Como adicionar virtualhost aos logs do Varnish
-tags: debian
 ---
 
 ![Clone trooper segurando caneta](/files/trooper-segurando-caneta-fundo-verde.jpg)

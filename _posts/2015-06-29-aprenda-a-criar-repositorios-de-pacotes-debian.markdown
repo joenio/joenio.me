@@ -1,6 +1,5 @@
 ---
 title: Aprenda a criar repositórios de pacotes Debian
-tags: tecnologia debian
 ---
 
 ![Clone trooper e wall-e empilhando pacotes](/files/clone-trooper-e-wall-e-pacotes.jpg)
