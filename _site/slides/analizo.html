@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Analizo | Joenio Costa</title>
+  <meta name="author" content="Joenio Costa" />
+  <link rel="stylesheet" href="/javascript/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="/javascript/reveal.js/css/theme/black.css" id="theme">
+  
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="/javascript/reveal.js/lib/css/zenburn.css">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '/javascript/reveal.js/css/print/pdf.css' : '/javascript/reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="/javascript/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/css/revealjs.css">
+</head>
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section>
+  <p><img src="/slides/files/analizo.png" /></p>
+
+  <p>uma ferramenta livre e extensível para análise estática de código-fonte</p>
+</section>
+
+<section>
+  <h1 id="introduo">Introdução</h1>
+
+  <ul>
+    <li>Suporte a múltiplas linguagens</li>
+    <li>Software livre</li>
+    <li>Extensível</li>
+    <li>Capacidade de lidar com código-fonte não-compilável</li>
+  </ul>
+</section>
+
+<section>
+  <section>
+    <h1 id="trabalhos-relacionados">Trabalhos relacionados</h1>
+  </section>
+
+  <section>
+    <p><small>
+AMARAL, V. Análise de evolucao de projetos de software livre através de
+matrizes de evolucao. Undergraduation course conclusion project, Universidade
+Federal da Bahia, 2009.
+</small></p>
+
+    <p><small>
+COSTA, J. Extração de informações de dependência entre módulos de
+programas c/c++. Undergraduation course conclusion project, Universidade
+Católica do Salvador, 2009.
+</small></p>
+
+    <p><small>
+JúNIOR, M. R. P. Estudo de métricas de código fonte no sistema android e
+seus aplicativos. p. 82, 2015. Disponı́vel em: hhttps://fga.unb.br/tcc/software/
+tcc-2015.1-engenharia-de-software/marcos-ronaldo-pereira-junior/v3-tcc.pdfi.</small></p>
+
+    <p><small>
+MEIRELLES, P. et al. A study of the relationships between source code
+metrics and attractiveness in free software projects. In: Software Engineering
+(SBES), 2010 Brazilian Symposium on. [S.l.: s.n.], 2010. p. 11–20.
+</small></p>
+
+    <p><small>
+MEIRELLES, P.; KON, F.; JR, C. S. Semi-automatic evaluation of free
+software projects: A source code perspective. Salvador, Brazil, p. 42, 2011.
+</small></p>
+  </section>
+
+  <section>
+    <p><small>
+MORAIS, C.; MEIRELLES, P.; KON, F. Kalibro: Uma ferramenta de
+configuraçao e interpretaçao de métricas de código-fonte. Undergraduation
+course conclusion project, Universidade de Sao Paulo, 2009.
+</small></p>
+
+    <p><small>
+TERCEIRO, A.; CHAVEZ, C. Structural complexity evolution in free software
+projects: A case study. In: QACOS-OSSPL 2009: Proceedings of the Joint
+Workshop on Quality and Architectural Concerns in Open Source Software
+(QACOS) and Open Source Software and Product Lines (OSSPL). [S.l.: s.n.],
+2009.
+</small></p>
+
+    <p><small>
+TERCEIRO, A. et al. Understanding structural complexity evolution: A
+quantitative analysis. In: Software Maintenance and Reengineering (CSMR),
+2012 16th European Conference on. [S.l.: s.n.], 2012. p. 85–94.
+</small></p>
+
+    <p><small>
+TERCEIRO, A.; RIOS, L. R.; CHAVEZ, C. An empirical study on the
+structural complexity introduced by core and peripheral developers in free
+software projects. In: IEEE. Software Engineering (SBES), 2010 Brazilian
+Symposium on. [S.l.], 2010. p. 21–29.
+</small></p>
+  </section>
+</section>
+
+<section>
+  <section>
+    <p><img src="/slides/files/analizo-architecture.png" /></p>
+  </section>
+
+  <section>
+    <p><img src="/slides/files/analizo-metrics-architecture.png" /></p>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h1 id="funcionalidades">Funcionalidades</h1>
+
+    <ul>
+      <li><code class="highlighter-rouge">metrics</code></li>
+      <li><code class="highlighter-rouge">metrics-batch</code></li>
+      <li><code class="highlighter-rouge">metrics-history</code></li>
+      <li><code class="highlighter-rouge">graph</code></li>
+      <li><code class="highlighter-rouge">tree-evolution</code></li>
+      <li><code class="highlighter-rouge">dsm</code></li>
+    </ul>
+  </section>
+
+  <section>
+    <p><code class="highlighter-rouge">analizo metrics --list</code></p>
+
+    <div class="highlighter-rouge"><pre class="codehilite"><code>acc - Afferent Connections per Class
+accm - Average Cyclomatic Complexity per Method
+amloc - Average Method Lines of Code
+anpm - Average Number of Parameters per Method
+cbo - Coupling Between Objects
+dit - Depth of Inheritance Tree
+lcom4 - Lack of Cohesion of Methods
+loc - Lines of Code
+mmloc - Max Method LOC
+noa - Number of Attributes
+noc - Number of Children
+nom - Number of Methods
+npa - Number of Public Attributes
+npm - Number of Public Methods
+sc - Structural Complexity
+</code></pre>    </div>
+  </section>
+
+  <section>
+    <p><code class="highlighter-rouge">analizo graph [...]</code></p>
+
+    <p><img src="/slides/files/analizo-graph.png" style="width: 60%; box-shadow: 0 0 6px gray" /></p>
+  </section>
+
+  <section>
+    <p><code class="highlighter-rouge">analizo dsm [...]</code></p>
+
+    <p><img src="/slides/files/analizo-dsm.png" style="width: 60%; box-shadow: 0 0 6px gray" /></p>
+  </section>
+
+  <section>
+    <p><code class="highlighter-rouge">analizo tree-evolution [...]</code></p>
+
+    <p><img src="/slides/files/analizo-evolution-matrix.png" style="width: 70%; box-shadow: 0 0 6px gray" /></p>
+  </section>
+</section>
+
+<section>
+  <p>http://www.analizo.org</p>
+
+  <p><img src="/slides/files/screenshots/analizo-site.png" style="box-shadow: 0 0 6px gray" /></p>
+</section>
+
+<section data-background="#c4a000">
+  <section>
+    <h3 id="obrigado">Obrigado!</h3>
+
+    <p><span class="url">joenio@joenio.me</span></p>
+
+    <p><br />
+<em>Esta apresentação está disponível em:</em></p>
+
+    <p><span class="url">http://joenio.me/slides/analizo.html</span></p>
+
+    <p><small>(código-fonte: <strong>http://github.com/joenio/joenio.me</strong>)</small></p>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></p>
+
+  </section>
+  <section>
+    <h3 id="histrico-de-apresentaes">Histórico de apresentações</h3>
+
+    <p><small>Onde e quando esta apresentação foi realizada</small></p>
+
+    <ul style="font-size: 24px">
+  <li>30 Setembro 2016, DCC UFBA, evento DCC Demo Day 2016</li>
+</ul>
+  </section>
+</section>
+
+    </div>
+  </div>
+  <script src="/javascript/reveal.js/lib/js/head.min.js"></script>
+  <script src="/javascript/reveal.js/js/reveal.js"></script>
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      slideNumber: true,
+      history: true,
+      center: true,
+      fragments: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      // Optional reveal.js plugins
+      dependencies: [
+        { src: '/javascript/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: '/javascript/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: '/javascript/reveal.js/plugin/zoom-js/zoom.js', async: true },
+        { src: '/javascript/reveal.js/plugin/notes/notes.js', async: true }
+      ]
+    });
+  </script>
+</body>
+</html>
