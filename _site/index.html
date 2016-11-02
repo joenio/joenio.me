@@ -31,109 +31,133 @@
       
       <div class="post">
         <header class="post-header">
-          <a class="post-link" href="/desenvolvendo-noosfero-usando-containers-lxc/index.html">Desenvolvendo Noosfero usando containers LXC</a>
+          <a class="post-link" href="/carta-de-despedida-da-colivre/index.html">Carta de despedida da Colivre</a>
           <p class="meta">
-Mar 5, 2016
+Nov 1, 2016
 </p>
 
         </header>
         <article class="post-content">
-        <p><img src="/files/noosfero-lxc.png" alt="Noosfero LXC" /></p>
+        <p><img src="/files/goodbye-baloon.jpg" alt="Default post image" /></p>
 
-<p>Sou desenvolvedor do projeto <a href="http://noosfero.org">Noosfero</a> a algum tempo e desde meu
-<a href="http://gitlab.com/noosfero/noosfero/commit/dedffcc6a535cfe7a097770c1485e1658565e929">primeiro commit</a> em 2008 venho utilizando ambientes de
-desenvolvimento variados para isolar meu sistema real do sistema onde o
-Noosfero é executado, desde chroot e schroot, passando por VirtualBox e
-Vagrant, chegando mais recentemente ao Linux Containers (LXC), testei o Docker
-mas não gostei muito.</p>
+<p>Este é um relato resumido da minha história na Colivre até o momento da minha
+saída em fevereiro de 2016.</p>
 
-<p>O que eu busco nestas soluções é o seguinte:</p>
+<p>A <a href="http://colivre.coop.br">Colivre</a> - Cooperativa de tecnologias livres é uma
+empresa cooperativa localizada em Salvador - Bahia especializada em
+desenvolvimento de soluções livres. A Colivre foi fundada formalmente em 2006 mas a
+ideia de criar a empresa nasceu em 2005 do encontro de pessoas que viviam e lutavam pelos
+princípios e ideais do software livre, cooperativismo e economia solidária.</p>
 
-<ol>
-  <li>Isolar instalação de dependencias de desenvolvimento do meu sistema real</li>
-  <li>Fácil de criar, destruir e recriar ambientes de desenvolvimento</li>
-  <li>Mapear código-fonte entre meu sistema real e o ambiente virtual</li>
-</ol>
+<p>Estas pessoas tinham o desejo de trabalhar com os princípios e ideais pelos
+quais lutavam, eu, por exemplo, sonhava em trabalhar com desenvolvimento de
+software livre e ao encontrar pessoas que queriam o mesmo que eu meus olhos
+brilharam, foi paixão à primeira vista!</p>
 
-<p>Isto quer dizer que para cada projeto tenho um ambiente “virtual” isolado, de
-forma que não é necessário instalar dependencias de desenvolvimento em meu
-sistema, ou que um ambiente “virtual” seja poluído com dependencias de outro
-projeto, ou seja, para cada projeto tenho um ambiente “virtual” isolado.</p>
+<p>Este encontro em 2005 resultou em inúmeros outros encontros ao longo de um ano de
+intenso planejamento, um processo de construção colaborativa para definir o que
+seria o empreendimento, ainda não tínhamos um nome, não sabíamos se seria uma
+associação, cooperativa, ONG, etc.</p>
 
-<p>Nas aventuras com o <a href="http://wiki.debian.org/LXC">LXC</a> senti necessidade de algo para simplificar e
-automatizar um pouco as coisas, então comecei a escrever um pequeno shell
-script e lhe dei o nome de <code class="highlighter-rouge">holodev</code>.</p>
+<p>Foi um ano inteiro de planejamento, onde definimos o formato jurídico, elaboramos missão, visão e
+valores, escrevemos estatuto, analizamos o mercado para descobrir oportunidades e
+ameaças, etc, etc, etc. Sempre com a participação de todos os envolvidos, de
+forma que em 2006 a Colivre foi formalmente criada e iniciou suas atividades a partir
+das bases definidas neste período de planejamento. Transcrevo abaixo a missão,
+visão e valores por considerar esta a construção mais importante de todo este
+período.</p>
 
-<h2 id="holodev">holodev</h2>
+<h2 id="misso">Missão</h2>
 
-<p><img src="/files/holodeck.gif" class="float-right" /></p>
+<blockquote>
+  <p>Ser uma organização autogerida e auto-sustentável que procure disseminar os
+ideais do Software Livre, fornecendo soluções tecnológicas para os diversos
+setores da sociedade; que proporcione o bem estar das(os) sócias(os) e
+parceiras(os); respeite o meio ambiente e vivencie os princípios do consumo
+responsável.</p>
+</blockquote>
 
-<p>O nome <a href="http://github.com/lappis-tools/holodev">holodev</a> é uma referência à tecnologia <a href="http://en.wikipedia.org/wiki/Holodeck">Holodeck</a> do
-seriado Star Trek, nela é possível criar ambientes e cenários conhecidos com um
-alto nível de fidelidade e realidade a partir de um simples comando de voz.
-Basta dizer: “crie o estádio Fonte Nova antes de ser implodido em 2010 em algum
-jogo Bahia x Vitória” e o Holodeck cria toda a realidade, com objetos e
-personagens.</p>
+<h2 id="viso">Visão</h2>
 
-<p>O <code class="highlighter-rouge">holodev</code> é então um Holodeck para desenvolvedores de software, onde ambientes
-virtuais são criados com o mínimo de esforço. Vejamos como criar um ambiente de
-desenvolvimento <a href="http://gitlab.com/noosfero/noosfero/">Noosfero</a> usando <code class="highlighter-rouge">holodev</code> em um sistema
-Debian-like.</p>
+<blockquote>
+  <p>Ser uma organização autogerida, referência no Brasil por mérito das soluções
+tecnológicas fornecidas de acordo com seus princípios, além de tornar-se uma
+fonte de sustentabilidade econômica para os seus membros.</p>
+</blockquote>
 
-<p>Adicione o seguinte repositório ao <code class="highlighter-rouge">/etc/apt/sources.list</code>:</p>
+<h2 id="valores">Valores</h2>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>deb http://debian.joenio.me unstable/
-</code></pre>
+<ul>
+  <li>Liberdade da informação, considerando que todo conhecimento deve estar disponível livremente para a sociedade.</li>
+  <li>Autogestão, enquanto um princípio democrático de construção coletiva.</li>
+  <li>Colaboração, enquanto uma prática de cooperação e ajuda mútua.</li>
+  <li>Meritocracia, enquanto valorização da experiência prática nas atividades realizadas de acordo com os princípios da organização.</li>
+  <li>Respeito e Tolerância: todos os envolvidos com a organização, atores internos ou externos, são pessoas com necessidades, sentimentos e diferenças, e assim devem ser vistos.</li>
+</ul>
+
+<p>Isto criou a base do que a Colivre foi nestes 10 anos de existência, o processo
+de construção colaborativo criou uma sintonia entre todos do grupo, havia um
+entendimento implícito do que estávamos buscando, isto foi fundamental para
+criar um ambiente de trabalho agradável, tranquilo e humano em todos estes anos.</p>
+
+<div class="full-width">
+  <p><img src="/files/colivre-2007.jpg" /></p>
 </div>
 
-<p>Baixe a chave do repositório e instale o pacote <code class="highlighter-rouge">holodev</code>:</p>
+<p>Nos primeiros anos quase todos estavam terminando a graduação e o tempo era
+dividido entre universidade e Colivre, além de iniciativas individuais.  Na
+época eu trabalhava no JáCotei, e por um breve período também fiz estágio na
+Safernet, tudo em paralelo, universidade, JáCotei, Safernet e Colivre.</p>
 
-<pre class="terminal">
-<code>
-# wget -O - http://debian.joenio.me/signing.asc | apt-key add -
-# apt-get update
-# apt-get install holodev
-</code>
-</pre>
+<p>Com o passar do tempo fomos aumentando a dedicação à Colivre, em 2009 eu estava
+com dedicação 100%, sempre tivemos a autogestão como uma prática
+indispensável, de forma que era fundamental aprender a trabalhar e gerenciar o
+próprio tempo, não tínhamos “patrão”, todos eram “o” patrão, trabalhador,
+empregado, empreendedor, etc. Este aprendizado me levou a conhecer o que
+escrevi em <a href="/nao-faca-hoje-o-que-pode-deixar-para-amanha/">Não faça hoje o que pode deixar para
+amanhã</a> e me fez ter maior
+disciplina e responsabilidade sobre o tempo e o trabalho.</p>
 
-<p>Supondo que você já tem o código-fonte do Noosfero, entre no seu diretório e
-execute o seguinte comando. (<em>é preciso ter sudo</em>)</p>
+<p>Todos os anos de trabalho na Colivre me proporcionaram muito aprendizado
+técnico, aprendi Ruby na Colivre, tive experiência com Ruby on Rails,
+com administração de servidores GNU/Linux, administração de banco de dados,
+amadureci meu conhecimento na linguagem de programação Perl colaborando com o
+projeto Foswiki ativamente durante anos.</p>
 
-<pre class="terminal">
-<code>
-~/src/noosfero$ holodev create --release jessie
-</code>
-</pre>
+<p>Enfim, foram 10 anos de aprendizado e muitos desafios, o contato com todas
+as pessoas que fizeram parte da Colivre também foi muito valioso, trabalhar
+com pessoas que compartilham alguns dos seus ideais é maravilhoso. O convívio
+com cada um me fez ser hoje uma pessoa melhor, com certeza.</p>
 
-<p>Isto vai (1) criar um container chamado ‘noosfero-master’ usando Debian Jessie,
-(2) criar seu usuário dentro do container com o mesmo UID e (3) mapear o
-código-fonte do Noosfero dentro do container. O próximo passo é entrar no
-container e instalar as dependencias de desenvolvimento do Noosfero.</p>
+<p>Mas apesar de toda esta experiência maravilhosa, de todo o aprendizado, minha
+relação de 10 anos com a Colivre chegou ao fim, em 2015 fui convidado à
+trabalhar num projeto que requeria minha mudança para Brasília. Morar em
+Brasília, dividir meu tempo entre a Colivre e outros projetos me distanciou
+bastante da empresa e me fez começar a aspirar novos caminhos.</p>
 
-<pre class="terminal">
-<code>
-~/src/noosfero$ holodev attach
-</code>
-</pre>
+<p>Assim, em fevereiro de 2016 eu saí da Colivre, isto me faz ver que tudo na vida
+é um processo, sem início ou fim, estamos sempre no caminho de algo, e o que
+vale é o caminho, os resultados nem sempre importam tanto,
+percorrer o caminho é muito mais importante do que
+chegar lá.</p>
 
-<p>Dentro do container LXC ‘noosfero-master’ execute o seguinte:</p>
+<p>E o caminho que percori na Colivre foi muito rico em diversos aspectos,
+aspectos técnicos, sociais, pessoais e políticos, mas agora sigo como ex-sócio
+da Colivre, sigo como alguém que ajudou a construir este belo empreendimento e
+que abre espaço para que ele continue o seu caminho.</p>
 
-<pre class="terminal">
-<code>
-~$ ./script/quick-start --force-install
-</code>
-</pre>
+<p>Bem, despeço-me aqui da Colivre e torço, como sempre, para que ela continue seu
+caminho da melhor forma possível, e desejo paz e força para aqueles que
+continuam levando este sonho adiante.</p>
 
-<p>O script <code class="highlighter-rouge">quick-start</code> irá instalar todas as dependencias necessárias além de
-executar um setup inicial deixando tudo pronto para o Noosfero ser executado.</p>
+<div style="font-size: xx-large; text-align: center">
+  <p>Vida longa e próspera à Colivre
+<img style="border: 0; box-shadow: none; height: 1em" src="/files/emoji-spock.png" /></p>
+</div>
 
-<p>Pronto! Você tem um container LXC redondo para rodar o Noosfero, executar os
-testes, abrir o console Rails, etc… Agora é só meter a mão na massa e começar
-a <em>codar</em>.</p>
-
-<p>Não sabe o que fazer? <a href="http://gitlab.com/noosfero/noosfero/issues?label_name=bug">Comece resolvendo algum bug</a>. Se precisar
-de ajuda pergunte na <a href="http://listas.softwarelivre.org/cgi-bin/mailman/listinfo/noosfero-br">lista de discussão da comunidade</a>.</p>
-
+<p><small>
+<em>a imagem do título é uma modificação do original em https://www.flickr.com/photos/marcelsebald/9246175529</em>
+</small></p>
 
         </article>
           <footer class="post-comments">
@@ -141,7 +165,7 @@ de ajuda pergunte na <a href="http://listas.softwarelivre.org/cgi-bin/mailman/li
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES * * */
       var disqus_shortname = 'joenio';
-      var disqus_url = 'http://joenio.me/desenvolvendo-noosfero-usando-containers-lxc/index.html';
+      var disqus_url = 'http://joenio.me/carta-de-despedida-da-colivre/index.html';
       /* * * DON'T EDIT BELOW THIS LINE * * */
       (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -180,22 +204,7 @@ de ajuda pergunte na <a href="http://listas.softwarelivre.org/cgi-bin/mailman/li
         Geral da Presidência da República e membro do grupo de pesquisa sobre design
         e evolução de software <a href="http://wiki.dcc.ufba.br/Aside/">aSide</a>.
 
-        Você pode me encontrar no email
-        <svg version="1.1" class="email-icon-svg" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <title/><desc/><defs/>
-        <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
-        <g fill="#929292" id="icon-6-mail-envelope-closed">
-        <path d="M25.9230769,21.0769231 L20,16 L25.9230769,10.9230769 L25.9230769,10.9230769 L25.1153846,10.1153846
-        L16.5,17.5 L7.88461538,10.1153846 L7.07692308,10.9230769 L7.07692308,10.9230769
-        L13,16 L7.07692308,21.0769231 L7.07692308,21.0769231 L7.88461538,21.8846154
-        L13.875,16.75 L16.5,19 L19.125,16.75 L25.1153846,21.8846154
-        L25.9230769,21.0769231 L25.9230769,21.0769231 Z M6.00359486,8 C4.89703997,8
-        4,8.89451376 4,9.99406028 L4,22.0059397 C4,23.1072288 4.88976324,24
-        6.00359486,24 L26.9964051,24 C28.10296,24 29,23.1054862 29,22.0059397
-        L29,9.99406028 C29,8.8927712 28.1102368,8 26.9964051,8 L6.00359486,8
-        L6.00359486,8 Z" id="mail-envelope-closed"/>
-        </g></g></svg>
-        <a href="mailto:joenio@colivre.coop.br">joenio@colivre.coop.br</a> ou no twitter
+        Você pode me encontrar no twitter
         <svg version="1.1" class="twitter-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
           <path fill="#C2C2C2" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
@@ -243,6 +252,19 @@ de ajuda pergunte na <a href="http://listas.softwarelivre.org/cgi-bin/mailman/li
   <div class="wrap">
     <ul class="posts">
       
+      
+      <li class="post">
+        <header class="post-banner">
+          <a class="post-link" href="/desenvolvendo-noosfero-usando-containers-lxc/index.html">Desenvolvendo Noosfero usando containers LXC</a>
+          <p class="meta">
+Mar 5, 2016
+</p>
+
+          <a href="/desenvolvendo-noosfero-usando-containers-lxc/index.html"><p><img src="/files/noosfero-lxc.png" alt="Noosfero LXC" /></p>
+
+</a>
+        </header>
+      </li>
       
       <li class="post">
         <header class="post-banner">
