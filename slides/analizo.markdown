@@ -9,8 +9,6 @@ uma ferramenta livre e extensível para análise estática de código-fonte
 </section>
 
 <section>
-<<<<<<< HEAD
-=======
 #### **Caracterização da complexidade estrutural em ferramentas de análise estática de código-fonte**
 
 Joenio Marques da Costa
@@ -20,7 +18,6 @@ Joenio Marques da Costa
 </section>
 
 <section>
->>>>>>> master
 # Introdução
 
 * Suporte a múltiplas linguagens
@@ -31,7 +28,6 @@ Joenio Marques da Costa
 
 <section>
 <section>
-<<<<<<< HEAD
 # Trabalhos relacionados
 </section>
 
@@ -93,61 +89,6 @@ software projects. In: IEEE. Software Engineering (SBES), 2010 Brazilian
 Symposium on. [S.l.], 2010. p. 21–29.
 </small>
 </section>
-=======
-## Histórico
-
-* TERCEIRO, A.; CHAVEZ, C. Structural complexity evolution in free software
-projects: A case study. In: QACOS-OSSPL 2009: Proceedings of the Joint
-Workshop on Quality and Architectural Concerns in Open Source Software
-(QACOS) and Open Source Software and Product Lines (OSSPL). [S.l.: s.n.],
-2009.
-
-</section>
-
-<section>
-* AMARAL, V. Análise de evolucao de projetos de software livre através de
-matrizes de evolucao. Undergraduation course conclusion project, Universidade
-Federal da Bahia, 2009.
-
-* COSTA, J. Extração de informações de dependência entre módulos de
-programas c/c++. Undergraduation course conclusion project, Universidade
-Católica do Salvador, 2009.
-</section>
-
-<section>
-* TERCEIRO, A.; RIOS, L. R.; CHAVEZ, C. An empirical study on the
-structural complexity introduced by core and peripheral developers in free
-software projects. In: IEEE. Software Engineering (SBES), 2010 Brazilian
-Symposium on. [S.l.], 2010. p. 21–29.
-
-* TERCEIRO, A. et al. Understanding structural complexity evolution: A
-quantitative analysis. In: Software Maintenance and Reengineering (CSMR),
-2012 16th European Conference on. [S.l.: s.n.], 2012. p. 85–94.
-</section>
-
-<section>
-* MORAIS, C.; MEIRELLES, P.; KON, F. Kalibro: Uma ferramenta de
-configuraçao e interpretaçao de métricas de código-fonte. Undergraduation
-course conclusion project, Universidade de Sao Paulo, 2009.
-
-* MEIRELLES, P. et al. A study of the relationships between source code
-metrics and attractiveness in free software projects. In: Software Engineering
-(SBES), 2010 Brazilian Symposium on. [S.l.: s.n.], 2010. p. 11–20.
-
-* MEIRELLES, P.; KON, F.; JR, C. S. Semi-automatic evaluation of free
-software projects: A source code perspective. Salvador, Brazil, p. 42, 2011.
-</section>
-
-<section>
-* JúNIOR, M. R. P. Estudo de métricas de código fonte no sistema android e
-seus aplicativos. p. 82, 2015. Disponı́vel em: hhttps://fga.unb.br/tcc/software/
-tcc-2015.1-engenharia-de-software/marcos-ronaldo-pereira-junior/v3-tcc.pdfi.
-</section>
-</section>
-
-<section>
-mostrar trends de commits, evolucao, numero de contribuidores, cobertura de testes, etc...
->>>>>>> master
 </section>
 
 <section>
@@ -161,13 +102,10 @@ mostrar trends de commits, evolucao, numero de contribuidores, cobertura de test
 </section>
 
 <section>
-<<<<<<< HEAD
-=======
 mostrar doxyparse, sloccount e comunicação entre eles e analizo
 </section>
 
 <section>
->>>>>>> master
 <section>
 # Funcionalidades
 
@@ -221,8 +159,6 @@ sc - Structural Complexity
 </section>
 
 <section>
-<<<<<<< HEAD
-=======
 como instalar?
 </section>
 
@@ -231,7 +167,6 @@ como utilizar? interface de linha de comando...
 </section>
 
 <section>
->>>>>>> master
 http://www.analizo.org
 
 <img src='/slides/files/screenshots/analizo-site.png' style='box-shadow: 0 0 6px gray' />
