@@ -5,9 +5,9 @@
       {% for page in site.posts offset:1 %}
       <li class="post">
         <header class="post-banner">
-          <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          <a class="post-link" href="{{ page.url | remove: '/index.html' | prepend: site.baseurl }}">{{ page.title }}</a>
           {% include metadata.html %}
-          <a href="{{ page.url | prepend: site.baseurl }}">{{ page.excerpt }}</a>
+          <a href="{{ page.url | remove: '/index.html' | prepend: site.baseurl }}">{{ page.excerpt }}</a>
         </header>
       </li>
       {% endfor %}

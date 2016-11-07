@@ -14,7 +14,7 @@ layout:
       {% unless page.empty? %}
       <div class="post">
         <header class="post-header">
-          <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          <a class="post-link" href="{{ page.url | remove: '/index.html' | prepend: site.baseurl }}">{{ page.title }}</a>
           {% include metadata.html %}
         </header>
         <article class="post-content">
