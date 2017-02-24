@@ -53,13 +53,11 @@ eletrônicos, e muita psicodelia, dentre os seus álbuns gostei bastante do
 
 ## Pio Lobato
 
-Pio Lobato é um músico Paraense, fera na guitarra, e um acadêmico também, ele
-pesquisou sobre ritmos do Pará e nos presenteou com um novo estilo musical
-chamado tecnoguitarrada, uma mistura da Guitarrada (expressão musical antiga do
-Pará que ele reapresentou ao Brasil através das descobertas em suas pesquisas)
-com o Tecnobrega. Dentre os álbuns dele que tive o prazer de ouvir me chamou
-atenção especial o `Tecnoguitarradas` e o `Pio Lobato`, ambos carregados do estilo
-tecnoguitarrada criado por ele.
+Pio Lobato é um músico Paraense, bom guitarrista, acadêmico, pesquisou sobre
+ritmos do Pará e nos presenteou com um novo estilo musical chamado
+tecnoguitarrada, uma mistura da Guitarrada (expressão musical do Pará quase
+esquecida) com o Tecnobrega. Dentre os álbuns que tive o prazer de ouvir me
+chamou atenção o `Tecnoguitarradas` e o `Pio Lobato`.
 
 | Álbum            | Ano  | Avaliação  |
 |------------------|------|------------|
@@ -77,12 +75,10 @@ tecnoguitarrada criado por ele.
 
 ## Lucas Estrela
 
-Lucas Estrela é um músico Paraense, e `Sal ou Moscou` é seu album de estréia,
-com certeza resultado do movimento iniciado por Pio Lobato ao criar a tecnoguitarrada,
-Lucas Estrela criou um belo álbum com elementos do tecnobrega, guitarrada e música
-eletrônica. Conheci o trabalho de Pio Lobato através deste álbum, apesar dele ser
-resultado do trabalho iniciado por Pio Lobato. Mas o fato é que adorei este disco,
-achei fantástico e não canso de ouvi-lo.
+Lucas Estrela é um músico Paraense, `Sal ou Moscou` é seu album de estréia, ele
+é resultado da influência de Pio Lobato com seu tecnoguitarrada, Lucas Estrela
+criou um belo álbum com elementos do tecnobrega, guitarrada e música
+eletrônica.
 
 | Álbum           | Ano  | Avaliação  |
 |-----------------|------|------------|
@@ -99,9 +95,9 @@ Sobre Lucas Estrela:
 
 ## Baiana System
 
-De Salvador - Bahia, Baiana System mistura guitarra baiana com uma infinidade de
-sons, mas está especialmente identificado com o afrobeat que tantos vêm experimentando
-mundo afora, dos 2 álbuns que escudei gostei muito do `Duas cidades`.
+De Salvador - Bahia, Baiana System mistura guitarra baiana com afrobeat, mas
+com a identidade do carnaval sempre presente em suas músicas, o álbum `Duas
+cidades` é foda!
 
 | Álbum           | Ano  | Avaliação  |
 |-----------------|------|------------|
@@ -116,11 +112,11 @@ mundo afora, dos 2 álbuns que escudei gostei muito do `Duas cidades`.
 
 ## I.F.Á. Afrobeat
 
-Ijexá, Funk e Afrobeat, ou I.F.Á. Afrobeat, de Salvador - Bahia mistura também
-muita coisa mas sempre com o pé em ritmos originados na cultura negra, os dois
-álbuns abaixo são ótimos, gostei especialmente do `I.F.Á. Afrobeat + Okwei V.
-Odili` que conta em algumas músicas com o lindo vocal da cantora e compositora
-nigeriana `Okwei V. Odili`, um disco para guardar para a eternidade.
+Ijexá, Funk e Afrobeat, ou I.F.Á. Afrobeat, de Salvador - Bahia, mistura muitos
+sons mas sempre com o pé em ritmos originados na cultura negra, os dois álbuns
+são ótimos, gostei especialmente do `I.F.Á. Afrobeat + Okwei V.  Odili` que
+conta em algumas músicas com o lindo vocal da cantora e compositora nigeriana
+`Okwei V. Odili`, um disco para guardar para a eternidade.
 
 | Álbum                            | Ano  | Avaliação  |
 |----------------------------------|------|------------|
@@ -129,16 +125,15 @@ nigeriana `Okwei V. Odili`, um disco para guardar para a eternidade.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FaGbBBIfg9Y?rel=0" frameborder="0" allowfullscreen></iframe>
 
-[Mais sobre I.F.Á. Afrobeat na Wikipédia.](https://pt.wikipedia.org/wiki/IFA_Afrobeat)
+[Mais sobre I.F.Á. Afrobeat no Facebook.](https://www.facebook.com/ifaijexafunkafrobeat)
 
 ---
 
 ## Antibalas
 
-Antibalas é uma banda de afrobeat do Brooklyn, dos álbuns que eu ouvi não teve um que não
-tenha gostado, são todos muito bons, o som dos caras tem um suingue muito bom, uma levada
-gostosa, e os metais da banda são fantásticos!!! Apesar de ter curtido todos os álbuns
-gostei especialmente do `Liberation Afrobeat Vol. 1`
+Antibalas é uma banda de afrobeat do Brooklyn, o som dos caras tem um suingue
+muito bom, uma levada gostosa, os metais da banda são fantásticos!!!  Gostei
+especialmente do álbum `Liberation Afrobeat Vol. 1`
 
 | Álbum                            | Ano  | Avaliação  |
 |----------------------------------|------|------------|
@@ -156,10 +151,9 @@ gostei especialmente do `Liberation Afrobeat Vol. 1`
 
 ## Gasoline
 
-Grupo Francês de hip hop experimental, admito que nunca tinha ouvido falar deste estilo
-antes de conhecer esse grupo, mas fiquei fã logo de início, um rap muito bom, cantado em
-francês fica algo lindo, bem só ouvindo para entender, os dois álbuns dos caras são
-fantásticos!
+Grupo Francês de hip hop experimental, nunca tinha ouvido falar deste estilo
+antes, fiquei fã logo de início, um rap muito bom, cantado em francês, lindo!
+Só ouvindo para entender...
 
 | Álbum                            | Ano  | Avaliação  |
 |----------------------------------|------|------------|
@@ -175,9 +169,9 @@ fantásticos!
 ## Ramiro Musotto
 
 Ramiro Musotto é um músico argentino radicado no Brasil, morou durante um bom
-tempo na Bahia, ele faz um som com misturas de ritmos baianos e africanos com
-música eletrônica, percussão, berimbau, echos e delays, uma mistura única! A
-música `M'bala` do álbum `Civilizacao & Barbarye` é uma pérola!
+tempo na Bahia, misturou ritmos baianos, africanos, música eletrônica,
+percussão, berimbau, reverbs e delays, uma mistura única! A música `M'bala` do
+álbum `Civilizacao & Barbarye` é uma pérola!
 
 | Álbum                            | Ano  | Avaliação  |
 |----------------------------------|------|------------|
@@ -192,13 +186,10 @@ música `M'bala` do álbum `Civilizacao & Barbarye` é uma pérola!
 
 ## Violeta de Outono
 
-Estava eu em busca de rock progressivo, psicodélico, uma pesquisa na internet me
-fez encontrar várias bandas nacionais, dentre todas esta banda me chamou atenção,
-Violeta de Outono me cativou na hora! Adorei o som, guitarras e lindas melodias,
-exatamente o que eu estava à procura.
-
-álbuns que mais me agradaram neste momento
-foram os mais antigos `Em toda parte` e `Violeta de outono`.
+Estava eu em busca de rock progressivo, psicodélico, uma pesquisa na internet
+me levou a várias bandas nacionais, dentre todas, Violeta de Outono mais me
+chamou atenção. Guitarras e lindas melodias, exatamente o que eu estava à
+procura.
 
 | Álbum                                          | Ano  | Avaliação  |
 |------------------------------------------------|------|------------|
@@ -218,12 +209,12 @@ foram os mais antigos `Em toda parte` e `Violeta de outono`.
 
 ## Júpiter Maçã
 
-Em minhas busca por rock nacional psicodélico encontrei o Júpiter Maçã, eu já conhecia
-o Cascavelletes, até fazia uma cover deles com minha banda [Los Benzenos](http://losbenzenos.org),
-mas nunca tinha escutado o Júpiter, por mais que meu grande amigo João Paulo (guitarrista
-na minha banda) tivesse falado neste cara eu ainda não o tinha escutado, mas foi bom,
-porque escutei no momento certo, no momento que estava procurando por ele. Se é psicodelia
-que eu queria encontrei de sobra em Júpiter Maçã, 
+Em minha curiosidade sobre rock nacional psicodélico encontrei o Júpiter Maçã,
+eu já conhecia o Cascavelletes, até fazia uma cover deles na "minha" banda [Los
+Benzenos](http://losbenzenos.org), mas nunca tinha escutado o Júpiter, João
+Paulo (guitarrista/vocal na Los Benzenos) tinha me falado dele mas eu ainda não
+tinha escutado. Se é psicodelia que se quer, Júpiter Maçã é a escolha, tá
+rebocado!
 
 | Álbum                                          | Ano  | Avaliação  |
 |------------------------------------------------|------|------------|
@@ -241,10 +232,9 @@ que eu queria encontrei de sobra em Júpiter Maçã,
 
 ## Los Sebozos Postizos
 
-Los Sebozos Postizos é praticamente a banda Nação Zumbi cantando versões de
-Jorge Ben Jor, a banda possui um único disco, `Los Sebosos Postizos interpretam
-Jorge Ben Jor` com clássicos do velho Jorge Ben com a pegada de Nação, muito
-bom, vale à pena conhecer! Ouvir Jorge Ben na voz de Du Peixe é um presentão!
+Los Sebozos Postizos é quase o Nação Zumbi cantando versões de Jorge Ben Jor, a
+banda possui um único disco `Los Sebosos Postizos interpretam Jorge Ben Jor`
+com clássicos do velho Jorge Ben na voz de Du Peixe, presentão!
 
 | Álbum                                          | Ano  | Avaliação  |
 |------------------------------------------------|------|------------|
@@ -258,11 +248,11 @@ bom, vale à pena conhecer! Ouvir Jorge Ben na voz de Du Peixe é um presentão!
 
 ## Boogarins
 
-Conheci o Boogarins no Porão do Rock 2016 em Brasília, fui ao evento para ver
-Nação Zumbi e Planet Hemp e por sorte conheci essa banda do Goiânia de rock
-psicodélico ... Boas melodias, vocal, e guitarras distorcidas na medida certa.
+Conheci Boogarins no Porão do Rock 2016 em Brasília, fui ao evento para ver
+Nação Zumbi e Planet Hemp, por sorte conheci essa banda do Goiânia. Rock
+psicodélico, boas melodias, vocal, e guitarras distorcidas na medida certa.
 Gostei muito do álbum `Manual, ou Guia Livre de Dissolução dos Sonhos`,
-especialmente a músicas `6000 Dias`, a minha preferida deste álbum.
+especialmente a música `6000 Dias`.
 
 | Álbum                                          | Ano  | Avaliação  |
 |------------------------------------------------|------|------------|
