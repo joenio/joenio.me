@@ -207,3 +207,4 @@ the score, gasoline, snap your neck back
 collector's inside collection, jupiter maca, plastic soda
 m bala, civilizacion y barbarie, ramiro musotto
 ah uh (onomatopeias), lurdez da luz, lurdez da luz (ep)
+beatle george, jupiter maca, uma tarde na fruteira

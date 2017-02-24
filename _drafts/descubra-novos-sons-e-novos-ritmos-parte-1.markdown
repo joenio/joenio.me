@@ -25,18 +25,17 @@ progressivo/psicodélico, não me importei muito com o rótulo, talvez nem todos
 sejam considerados como tal, mas foda-se, não você, leitor, mas sim essa
 necessidade de rotular tudo, isto não importa tanto, é tudo música!
 
-Alguns
-destes nomes eu conhecia mas não tinha dado a merecida atenção, outros são
-totalmente novos. Segue então uma breve descrição de cada artista e como cheguei até ele, em seguida a
-classificação de cada álbum a partir da escala de avaliação `--` `+-` `++`
-`+++`.
+Alguns destes nomes eu conhecia mas não tinha dado a merecida atenção, outros
+são totalmente novos para mim. Segue então uma breve descrição de cada artista,
+como cheguei até ele, em seguida a classificação de cada álbum a partir da
+escala de avaliação `--` `+-` `++` `+++`.
 
 ## Osamu Kitajima
 
-Osamu Kitajima (ou Justin Heathcliff) é um músico Japonês mistura elementos da
-música Japonesa com rock progressivo, elementos eletrônicos, e muita
-psicodelia, dentre os álbuns que ouvi curti bastante o `Benzaiten`, muito
-progressivo, com elementos e instrumentos de música tradicional Japonesa.
+Osamu Kitajima (ou Justin Heathcliff) é um músico Japonês, ele mistura
+elementos da música tradicional Japonesa com rock progressivo, elementos
+eletrônicos, e muita psicodelia, dentre os seus álbuns gostei bastante do
+`Benzaiten`.
 
 | Álbum              | Ano  | Avaliação  |
 |--------------------|------|------------|
@@ -232,7 +231,7 @@ que eu queria encontrei de sobra em Júpiter Maçã,
 | Plastic Soda                                   | 1999 | `+++`      |
 | Hisscivilization                               | 2002 | `+-`       |
 | Bitter                                         | 2007 |            |
-| Uma Tarde na Fruteira                          | 2008 |            |
+| Uma Tarde na Fruteira                          | 2008 | `++`       |
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XWtCN66ZFow?rel=0" frameborder="0" allowfullscreen></iframe>
 
