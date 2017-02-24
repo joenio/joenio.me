@@ -10,59 +10,75 @@ Começar o texto com uma introdução ao maravilhoso mundo dos pacotes Debian,
 resolucao de dependencias, compilacao para varias plataformas, simples, facil
 e lindo de se usar! O Debian eh o melhor sistema operacional do mundo!
 
-01 - Instalar pacotes de desenvolvimento básicos
-------------------------------------------------
+## Instalar dependências básicas para empacotamento
 
-0) Install devscripts, debhelper, svn-buildpackage, etc... (debuild), quilt (para trabalhar com patches)
+<pre class="terminal">
+<code>
+apt-get install devscripts debhelper git-buildpackage quilt mr pkg-perl-tools
+</code>
+</pre>
 
-mr (multiplo repositorios) e pkg-perl-tools
+[Guia com procedimentos do Debian Perl Group sobre uso do Git](http://pkg-perl.alioth.debian.org/git.html)
 
-# apt-get install devscripts debhelper git-buildpackage quilt mr pkg-perl-tools
+Atualize a base do `apt-file` para que o `dh-make-perl` possa descobrir qual
+pacote é de qual módulo:
 
-Referencia sobre git do grupo: http://pkg-perl.alioth.debian.org/git.html
+<pre class="terminal">
+<code>
+apt-file update
+</code>
+</pre>
 
-This guide describes the procedures that the Debian Perl Group contributors use to maintain packages in the Git repositories on git.debian.org.
+Para descobrir se um certo módulo já está empacotado execute:
 
-Rode atualize a base do apt-file para que o dh-make-perl possa descobrir qual pacote
-é de qual módulo:
+<pre class="terminal">
+<code>
+dh-make-perl locate Math::Expression::Evaluator
+</code>
+</pre>
 
-   apt-file update
+## Criar versão inicial do novo pacote
 
-para descobrir se um certo módulo já está empacotado execute
+Uma vez que sabemos que o módulo de interesse não está empacotado ainda
+basta usar o `dh-make-perl` para criar a versão inicial do pacote:
 
-$ dh-make-perl locate Math::Expression::Evaluator
+<pre class="terminal">
+<code>
+dh-make-perl --pkg-perl --cpan Math::Expression::Evaluator
+</code>
+</pre>
 
-02 - Criar versão inicial do pacote
------------------------------------
+OBS: se você nunca rodou o `cpan` antes, execute-o antes do `dh-make-perl` para
+que sejam criadas as configurações básicas do seu `cpan`. Se é a primeira vez
+que usa o `dh-make-perl` para criar um pacote infome antes ao Git quem você é:
 
-1) dh-make-perl --pkg-perl --cpan nome no cpan ou db-make-perl diretório dos fontes
+<pre class="terminal">
+<code>
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+</code>
+</pre>
 
-OBS: se você nunca rodou o cpan antes, execute antes do dh-make-perl o comando `cpan`
-para que ele crie as configurações básicas do seu cpan, responda "no" à pergunta:
+## Correções básicas da versão inicial
 
-> Would you like to configure as much as possible automatically?
-
-E responda 'manual' para:
-
-> What approach do you want?  (Choose 'local::lib', 'sudo' or 'manual')
-
-Se é a primeira vez que usa o dh-make-perl para criar um pacote diga ao Git
-quem você é:
-
-   git config --global user.email "you@example.com"
-   git config --global user.name "Your Name"
-
-03 - Correções básicas da versão inicial
-----------------------------------------
+O pacote criado pelo `dh-make-perl` precisa de algumas correções, o número de correções
+necessárias depende do módulo Perl sendo empacotado, mas as seguintes correções
+são necessárias em todos os pacotes geralmente.
 
 2) Corrigir copyright, control, changelog (unstable) fechar um bug # ITP
+
+### debian/copyright
 
 Deve-se adicionar o ano em cada linha do copyright, ex: 2010-2012 ou 2011
 
 Remover DISCLAIMER do copyright adicionado pelo dh-make-perl automaticamente
 
+### debian/control
+
 Escolher uma boa descricao curta e longa no d/control, isto eh importante,
 deve-se levar um tempo nisso, uma boa descricao eh algo importante no empacotamento.
+
+### debian/copyright
 
 Quando o author não deixa explícito o ano do copyright é importante
 documentar isso no d/copyright de alguma forma, uma opção é usar a dica
@@ -76,16 +92,22 @@ pelo gregor:
 
 (neste caso eu optei por usar a berne_convention)
 
-04 - Gerar pacote e verificar conformidade com lintian
-------------------------------------------------------
+## Gerar o pacote e verificar a conformidade com lintian
 
-3) debuild -us -uc ou git-buildpackage / corrigir lintian mensagens
+<pre class="terminal">
+<code>
+gbp buildpackage -us -uc
+</code>
+</pre>
 
-   gbp buildpackage -us -uc
+Corrigir os _warnings_ do `lintian`, re-gerar o pacote e verificar novamente com
+a flag `-I`.
 
-rodar lintian -I
-
-como corrigir mensagem de ter .git no diff???
+<pre class="terminal">
+<code>
+lintian -I
+</code>
+</pre>
 
 05 - Publicar pacote em algum repositório (não-oficial)
 -------------------------------------------------------

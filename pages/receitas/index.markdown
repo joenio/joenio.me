@@ -6,6 +6,10 @@ Links e referências de receitas sem carne (exceto peixe).
 
 ## Salgado
 
+### Abóbora recheada
+
+https://metidaagourmet.com/2014/02/05/abobora-recheada-carne-seca/
+
 ### Quiabo refogado
 
 <a href="http://cantinhovegetariano.blogspot.com/2010/09/quiabo-refogado.html">
