@@ -109,6 +109,7 @@ a:visited { color: #205caa; }
   top: 3px;
 }
 
+footer.site-footer div.wrap a,
 #sobre a,
 #rss a {
   color: #D2D2D2;
