@@ -17,6 +17,21 @@ antigos eu ainda não conhecia.
 | `++`       | Gostei e vou adicionar na minha lista para ouvir repetidas vezes                   |
 | `+++`      | Gostei muito e vou ouvir todos os dias até "enjoar", vai ser difícil               |
 
+## Violeta de Outono
+
+| Álbum                                          | Ano  | Avaliação  |
+|------------------------------------------------|------|------------|
+| Ilhas                                          | 2005 |            |
+| Volume 7                                       | 2007 |            |
+| Spaces                                         | 2016 |            |
+
+## Júpiter Maçã
+
+| Álbum                                          | Ano  | Avaliação  |
+|------------------------------------------------|------|------------|
+| Bitter                                         | 2007 |            |
+
+
 ---
 
 ## Jazz Jamaica All Star
