@@ -388,6 +388,12 @@ footer.site-footer div.wrap a,
 
 }
 
+
+iframe {
+  width: 560px;
+  height: 315px;
+}
+
 @media screen and (max-width: 600px) {
 
   .wrap { padding: 0 12px; }
@@ -411,6 +417,12 @@ footer.site-footer div.wrap a,
   .post-banner .meta {
     display: none;
   }
+
+  iframe {
+    width: auto;
+    height: auto;
+  }
+
 }
 
 abbr {

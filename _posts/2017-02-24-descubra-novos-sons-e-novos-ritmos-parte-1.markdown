@@ -45,7 +45,7 @@ eletrônicos, e muita psicodelia, dentre os seus álbuns gostei bastante do
 | Beyond The Circle  | 1996 | `--`       |
 | The Source         | 1986 | `--`       |
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/c87ARHzyO4k?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/c87ARHzyO4k?rel=0" frameborder="0" allowfullscreen></iframe>
 
 [Mais sobre Osamu Kitajima na Wikipédia.](https://pt.wikipedia.org/wiki/Osamu_Kitajima)
 
@@ -67,7 +67,7 @@ chamou atenção o `Tecnoguitarradas` e o `Pio Lobato`.
 | Café 2           | 2011 | `+-`       |
 | Pio Lobato       | 2015 | `+++`      |
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MIAYaqY-vtU?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/MIAYaqY-vtU?rel=0" frameborder="0" allowfullscreen></iframe>
 
 [Mais sobre Pio Lobato na Wikipédia.](https://pt.wikipedia.org/wiki/Pio_Lobato)
 
@@ -84,7 +84,7 @@ eletrônica.
 |-----------------|------|------------|
 | Sal ou Moscou   | 2016 | `+++`      |
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XWEs_MiutZ4?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/XWEs_MiutZ4?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Sobre Lucas Estrela:
 
@@ -104,7 +104,7 @@ cidades` é foda!
 | Baiana System   | 2010 | `++`       |
 | Duas cidades    | 2016 | `+++`      |
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/r9TgaoA3NhE?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/r9TgaoA3NhE?rel=0" frameborder="0" allowfullscreen></iframe>
 
 [Mais sobre Baiana System na Wikipédia.](https://pt.wikipedia.org/wiki/BaianaSystem)
 
@@ -123,7 +123,7 @@ conta em algumas músicas com o lindo vocal da cantora e compositora nigeriana
 | I.F.Á. Afrobeat + Okwei V. Odili | 2015 | `+++`      |
 | Ijexá Funk Afrobeat              | 2016 | `++`       |
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FaGbBBIfg9Y?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/FaGbBBIfg9Y?rel=0" frameborder="0" allowfullscreen></iframe>
 
 [Mais sobre I.F.Á. Afrobeat no Facebook.](https://www.facebook.com/ifaijexafunkafrobeat)
 
@@ -143,7 +143,7 @@ especialmente do álbum `Liberation Afrobeat Vol. 1`
 | Security                         | 2007 | `+-`       |
 | Antibalas                        | 2012 | `++`       |
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YdRFKlFKehM?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/YdRFKlFKehM?rel=0" frameborder="0" allowfullscreen></iframe>
 
 [Mais sobre Antibalas na Wikipédia.](https://pt.wikipedia.org/wiki/Antibalas)
 
@@ -160,7 +160,7 @@ Só ouvindo para entender...
 | A Journey Into Abstract Hip Hop  | 2002 | `+++`      |
 | Snap Your Neck Back              | 2005 | `+++`      |
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3q8nGnls1Ow?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/3q8nGnls1Ow?rel=0" frameborder="0" allowfullscreen></iframe>
 
 [Mais sobre Antibalas na Wikipédia (em francês).](https://fr.wikipedia.org/wiki/Gasoline_%28groupe%29)
 
@@ -178,7 +178,7 @@ percussão, berimbau, reverbs e delays, uma mistura única! A música `M'bala` d
 | Sudaka                           | 2001 | `++`       |
 | Civilizacao & Barbarye           | 2007 | `++`       |
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eI5PaeyrViA?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/eI5PaeyrViA?rel=0" frameborder="0" allowfullscreen></iframe>
 
 [Mais sobre Ramiro Musotto na Wikipédia.](https://pt.wikipedia.org/wiki/Ramiro_Musotto)
 
@@ -198,7 +198,7 @@ procura.
 | Em Toda Parte                                  | 1989 | `+++`      |
 | Mulher na Montanha                             | 1999 | `++`       |
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XsDcpMEHeOo?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/XsDcpMEHeOo?rel=0" frameborder="0" allowfullscreen></iframe>
 
 [Mais sobre Violeta de Outono na Wikipédia.](https://pt.wikipedia.org/wiki/Violeta_de_Outono)
 
@@ -219,7 +219,7 @@ tinha escutado. Se é psicodelia que se quer, Júpiter Maçã é a escolha!
 | Hisscivilization                               | 2002 | `+-`       |
 | Uma Tarde na Fruteira                          | 2008 | `++`       |
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XWtCN66ZFow?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/XWtCN66ZFow?rel=0" frameborder="0" allowfullscreen></iframe>
 
 [Mais sobre Júpiter Maçã na Wikipédia.](https://pt.wikipedia.org/wiki/J%C3%BApiter_Ma%C3%A7%C3%A3)
 
@@ -235,7 +235,7 @@ com clássicos do velho Jorge Ben na voz de Du Peixe, presentão!
 |------------------------------------------------|------|------------|
 | Los Sebosos Postizos interpretam Jorge Ben Jor | 2012 | `+++`      |
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aRyszaASP20?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/aRyszaASP20?rel=0" frameborder="0" allowfullscreen></iframe>
 
 [Mais sobre Los Sebozos Postizos na Wikipédia.](https://pt.wikipedia.org/wiki/Los_Sebozos_Postizos)
 
@@ -254,7 +254,7 @@ especialmente a música `6000 Dias`.
 | As Plantas que Curam                           | 2013 | `+-`       |
 | Manual, ou Guia Livre de Dissolução dos Sonhos | 2015 | `+++`      |
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Wjp_Cj3TKcw?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/Wjp_Cj3TKcw?rel=0" frameborder="0" allowfullscreen></iframe>
 
 [Mais sobre Boogarins na Wikipédia.](https://pt.wikipedia.org/wiki/Boogarins)
 
