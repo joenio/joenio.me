@@ -7,7 +7,7 @@ title: Descubra novos sons e novos ritmos (parte 1)
 
 De tempos em tempos costumo pesquisar novidades na música, geralmente
 direcionado ao que tô interessado no momento e sempre em órbita de algum estilo
-novo ou ritmos específicos. Nos últimos 2 anos ouvi muita coisa e como esqueço
+novo ou ritmos específicos. Nos últimos 2 anos ouvi bastante coisa e como esqueço
 fácil demais tive a brilhante idéia de documentar os álbuns e artistas que
 gostei.
 
@@ -54,7 +54,7 @@ eletrônicos, e muita psicodelia, dentre os seus álbuns gostei bastante do
 ## Pio Lobato
 
 Pio Lobato é um músico Paraense, bom guitarrista, acadêmico, pesquisou sobre
-ritmos do Pará e nos presenteou com um novo estilo musical chamado
+ritmos do Pará e nos presenteou com a
 tecnoguitarrada, uma mistura da Guitarrada (expressão musical do Pará quase
 esquecida) com o Tecnobrega. Dentre os álbuns que tive o prazer de ouvir me
 chamou atenção o `Tecnoguitarradas` e o `Pio Lobato`.
@@ -75,8 +75,8 @@ chamou atenção o `Tecnoguitarradas` e o `Pio Lobato`.
 
 ## Lucas Estrela
 
-Lucas Estrela é um músico Paraense, `Sal ou Moscou` é seu album de estréia, ele
-é resultado da influência de Pio Lobato com seu tecnoguitarrada, Lucas Estrela
+Lucas Estrela é um músico Paraense, `Sal ou Moscou` é seu album de estréia,
+é resultado da influência de Pio Lobato e seu tecnoguitarrada, Lucas Estrela
 criou um belo álbum com elementos do tecnobrega, guitarrada e música
 eletrônica.
 
@@ -175,8 +175,8 @@ percussão, berimbau, reverbs e delays, uma mistura única! A música `M'bala` d
 
 | Álbum                            | Ano  | Avaliação  |
 |----------------------------------|------|------------|
-| Sudaka                           | 2001 |            |
-| Civilizacao & Barbarye           | 2007 |            |
+| Sudaka                           | 2001 | `++`       |
+| Civilizacao & Barbarye           | 2007 | `++`       |
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eI5PaeyrViA?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -187,7 +187,7 @@ percussão, berimbau, reverbs e delays, uma mistura única! A música `M'bala` d
 ## Violeta de Outono
 
 Estava eu em busca de rock progressivo, psicodélico, uma pesquisa na internet
-me levou a várias bandas nacionais, dentre todas, Violeta de Outono mais me
+me levou a várias bandas nacionais, dentre todas, Violeta de Outono me
 chamou atenção. Guitarras e lindas melodias, exatamente o que eu estava à
 procura.
 
@@ -197,9 +197,6 @@ procura.
 | Violeta De Outono                              | 1987 | `+++`      |
 | Em Toda Parte                                  | 1989 | `+++`      |
 | Mulher na Montanha                             | 1999 | `++`       |
-| Ilhas                                          | 2005 |            |
-| Volume 7                                       | 2007 |            |
-| Spaces                                         | 2016 |            |
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XsDcpMEHeOo?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -213,15 +210,13 @@ Em minha curiosidade sobre rock nacional psicodélico encontrei o Júpiter Maç�
 eu já conhecia o Cascavelletes, até fazia uma cover deles na "minha" banda [Los
 Benzenos](http://losbenzenos.org), mas nunca tinha escutado o Júpiter, João
 Paulo (guitarrista/vocal na Los Benzenos) tinha me falado dele mas eu ainda não
-tinha escutado. Se é psicodelia que se quer, Júpiter Maçã é a escolha, tá
-rebocado!
+tinha escutado. Se é psicodelia que se quer, Júpiter Maçã é a escolha!
 
 | Álbum                                          | Ano  | Avaliação  |
 |------------------------------------------------|------|------------|
 | A Sétima Efervescência                         | 1997 | `++`       |
 | Plastic Soda                                   | 1999 | `+++`      |
 | Hisscivilization                               | 2002 | `+-`       |
-| Bitter                                         | 2007 |            |
 | Uma Tarde na Fruteira                          | 2008 | `++`       |
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XWtCN66ZFow?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -262,3 +257,7 @@ especialmente a música `6000 Dias`.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Wjp_Cj3TKcw?rel=0" frameborder="0" allowfullscreen></iframe>
 
 [Mais sobre Boogarins na Wikipédia.](https://pt.wikipedia.org/wiki/Boogarins)
+
+É isso, uma dica: se por acaso você tem um gosto parecido com o meu siga os
+álbuns marcados como `+++` e terá uma ótima viagem musical, sem surpresas
+desagradáveis...
