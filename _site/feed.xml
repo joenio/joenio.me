@@ -5,9 +5,547 @@
     <description></description>
     <link>http://joenio.me/</link>
     <atom:link href="http://joenio.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 06 Nov 2016 21:08:11 -0200</pubDate>
-    <lastBuildDate>Sun, 06 Nov 2016 21:08:11 -0200</lastBuildDate>
+    <pubDate>Mon, 27 Feb 2017 15:56:10 -0300</pubDate>
+    <lastBuildDate>Mon, 27 Feb 2017 15:56:10 -0300</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Descubra novos sons e novos ritmos (parte 1)</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/files/albuns.jpg&quot; alt=&quot;Capas de albuns&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;De tempos em tempos costumo pesquisar novidades na música, geralmente
+direcionado ao que tô interessado no momento e sempre em órbita de algum estilo
+novo ou ritmos específicos. Nos últimos 2 anos ouvi bastante coisa e como esqueço
+fácil demais tive a brilhante idéia de documentar os álbuns e artistas que
+gostei.&lt;/p&gt;
+
+&lt;p&gt;Para classificar o quanto gostei de cada álbum criei a seguinte escala:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Avaliação&lt;/th&gt;
+      &lt;th&gt;Descrição&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Não gostei e não quero nunca mais ouvir este álbum&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+-&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Não gostei tanto, mas merece uma segunda chance, pode virar &lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt; no futuro&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Gostei e vou adicionar na minha lista para ouvir repetidas vezes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+++&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Gostei muito e vou ouvir todos os dias até “enjoar”, vai ser difícil&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Dessa forma documentei um conjunto de álbuns de música experimental e rock
+progressivo/psicodélico, não me importei muito com o rótulo, talvez nem todos
+sejam considerados como tal, mas foda-se, não você, leitor, mas sim essa
+necessidade de rotular tudo, isto não importa tanto, é tudo música!&lt;/p&gt;
+
+&lt;p&gt;Alguns destes nomes eu conhecia mas não tinha dado a merecida atenção, outros
+são totalmente novos para mim. Segue então uma breve descrição de cada artista,
+como cheguei até ele, em seguida a classificação de cada álbum a partir da
+escala de avaliação &lt;code class=&quot;highlighter-rouge&quot;&gt;--&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;+-&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;+++&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;osamu-kitajima&quot;&gt;Osamu Kitajima&lt;/h2&gt;
+
+&lt;p&gt;Osamu Kitajima (ou Justin Heathcliff) é um músico Japonês, ele mistura
+elementos da música tradicional Japonesa com rock progressivo, elementos
+eletrônicos, e muita psicodelia, dentre os seus álbuns gostei bastante do
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Benzaiten&lt;/code&gt;.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Álbum&lt;/th&gt;
+      &lt;th&gt;Ano&lt;/th&gt;
+      &lt;th&gt;Avaliação&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Justin Heathcliff&lt;/td&gt;
+      &lt;td&gt;1970&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Benzaiten&lt;/td&gt;
+      &lt;td&gt;1974&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Behind the Light&lt;/td&gt;
+      &lt;td&gt;1992&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Beyond The Circle&lt;/td&gt;
+      &lt;td&gt;1996&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;The Source&lt;/td&gt;
+      &lt;td&gt;1986&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/c87ARHzyO4k?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/Osamu_Kitajima&quot;&gt;Mais sobre Osamu Kitajima na Wikipédia.&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;pio-lobato&quot;&gt;Pio Lobato&lt;/h2&gt;
+
+&lt;p&gt;Pio Lobato é um músico Paraense, bom guitarrista, acadêmico, pesquisou sobre
+ritmos do Pará e nos presenteou com a
+tecnoguitarrada, uma mistura da Guitarrada (expressão musical do Pará quase
+esquecida) com o Tecnobrega. Dentre os álbuns que tive o prazer de ouvir me
+chamou atenção o &lt;code class=&quot;highlighter-rouge&quot;&gt;Tecnoguitarradas&lt;/code&gt; e o &lt;code class=&quot;highlighter-rouge&quot;&gt;Pio Lobato&lt;/code&gt;.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Álbum&lt;/th&gt;
+      &lt;th&gt;Ano&lt;/th&gt;
+      &lt;th&gt;Avaliação&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Café&lt;/td&gt;
+      &lt;td&gt;2001&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+-&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Esboço&lt;/td&gt;
+      &lt;td&gt;2007&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+-&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Tecnoguitarradas&lt;/td&gt;
+      &lt;td&gt;2007&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Café 2&lt;/td&gt;
+      &lt;td&gt;2011&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+-&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Pio Lobato&lt;/td&gt;
+      &lt;td&gt;2015&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/MIAYaqY-vtU?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/Pio_Lobato&quot;&gt;Mais sobre Pio Lobato na Wikipédia.&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;lucas-estrela&quot;&gt;Lucas Estrela&lt;/h2&gt;
+
+&lt;p&gt;Lucas Estrela é um músico Paraense, &lt;code class=&quot;highlighter-rouge&quot;&gt;Sal ou Moscou&lt;/code&gt; é seu album de estréia,
+é resultado da influência de Pio Lobato e seu tecnoguitarrada, Lucas Estrela
+criou um belo álbum com elementos do tecnobrega, guitarrada e música
+eletrônica.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Álbum&lt;/th&gt;
+      &lt;th&gt;Ano&lt;/th&gt;
+      &lt;th&gt;Avaliação&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Sal ou Moscou&lt;/td&gt;
+      &lt;td&gt;2016&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/XWEs_MiutZ4?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Sobre Lucas Estrela:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://m.diarioonline.com.br/entretenimento/cultura/noticia-359540-lucas-estrela-guitarra-paraense-com-suingue.html&quot;&gt;Lucas Estrela: guitarra paraense com suingue&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://reportere.com/2016/02/17/saloumoscou&quot;&gt;Guitarrando em “Sal ou Moscou”, o primeiro disco de Lucas Estrela&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;baiana-system&quot;&gt;Baiana System&lt;/h2&gt;
+
+&lt;p&gt;De Salvador - Bahia, Baiana System mistura guitarra baiana com afrobeat, mas
+com a identidade do carnaval sempre presente em suas músicas, o álbum &lt;code class=&quot;highlighter-rouge&quot;&gt;Duas
+cidades&lt;/code&gt; é foda!&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Álbum&lt;/th&gt;
+      &lt;th&gt;Ano&lt;/th&gt;
+      &lt;th&gt;Avaliação&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Baiana System&lt;/td&gt;
+      &lt;td&gt;2010&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Duas cidades&lt;/td&gt;
+      &lt;td&gt;2016&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/r9TgaoA3NhE?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/BaianaSystem&quot;&gt;Mais sobre Baiana System na Wikipédia.&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;if-afrobeat&quot;&gt;I.F.Á. Afrobeat&lt;/h2&gt;
+
+&lt;p&gt;Ijexá, Funk e Afrobeat, ou I.F.Á. Afrobeat, de Salvador - Bahia, mistura muitos
+sons mas sempre com o pé em ritmos originados na cultura negra, os dois álbuns
+são ótimos, gostei especialmente do &lt;code class=&quot;highlighter-rouge&quot;&gt;I.F.Á. Afrobeat + Okwei V.  Odili&lt;/code&gt; que
+conta em algumas músicas com o lindo vocal da cantora e compositora nigeriana
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Okwei V. Odili&lt;/code&gt;, um disco para guardar para a eternidade.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Álbum&lt;/th&gt;
+      &lt;th&gt;Ano&lt;/th&gt;
+      &lt;th&gt;Avaliação&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;I.F.Á. Afrobeat + Okwei V. Odili&lt;/td&gt;
+      &lt;td&gt;2015&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ijexá Funk Afrobeat&lt;/td&gt;
+      &lt;td&gt;2016&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/FaGbBBIfg9Y?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.facebook.com/ifaijexafunkafrobeat&quot;&gt;Mais sobre I.F.Á. Afrobeat no Facebook.&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;antibalas&quot;&gt;Antibalas&lt;/h2&gt;
+
+&lt;p&gt;Antibalas é uma banda de afrobeat do Brooklyn, o som dos caras tem um suingue
+muito bom, uma levada gostosa, os metais da banda são fantásticos!!!  Gostei
+especialmente do álbum &lt;code class=&quot;highlighter-rouge&quot;&gt;Liberation Afrobeat Vol. 1&lt;/code&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Álbum&lt;/th&gt;
+      &lt;th&gt;Ano&lt;/th&gt;
+      &lt;th&gt;Avaliação&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Liberation Afrobeat Vol. 1&lt;/td&gt;
+      &lt;td&gt;2000&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Talkatif&lt;/td&gt;
+      &lt;td&gt;2002&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+-&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Who Is This America?&lt;/td&gt;
+      &lt;td&gt;2004&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+-&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Security&lt;/td&gt;
+      &lt;td&gt;2007&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+-&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Antibalas&lt;/td&gt;
+      &lt;td&gt;2012&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/YdRFKlFKehM?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/Antibalas&quot;&gt;Mais sobre Antibalas na Wikipédia.&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;gasoline&quot;&gt;Gasoline&lt;/h2&gt;
+
+&lt;p&gt;Grupo Francês de hip hop experimental, nunca tinha ouvido falar deste estilo
+antes, fiquei fã logo de início, um rap muito bom, cantado em francês, lindo!
+Só ouvindo para entender…&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Álbum&lt;/th&gt;
+      &lt;th&gt;Ano&lt;/th&gt;
+      &lt;th&gt;Avaliação&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;A Journey Into Abstract Hip Hop&lt;/td&gt;
+      &lt;td&gt;2002&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Snap Your Neck Back&lt;/td&gt;
+      &lt;td&gt;2005&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/3q8nGnls1Ow?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://fr.wikipedia.org/wiki/Gasoline_%28groupe%29&quot;&gt;Mais sobre Antibalas na Wikipédia (em francês).&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;ramiro-musotto&quot;&gt;Ramiro Musotto&lt;/h2&gt;
+
+&lt;p&gt;Ramiro Musotto é um músico argentino radicado no Brasil, morou durante um bom
+tempo na Bahia, misturou ritmos baianos, africanos, música eletrônica,
+percussão, berimbau, reverbs e delays, uma mistura única! A música &lt;code class=&quot;highlighter-rouge&quot;&gt;M&#39;bala&lt;/code&gt; do
+álbum &lt;code class=&quot;highlighter-rouge&quot;&gt;Civilizacao &amp;amp; Barbarye&lt;/code&gt; é uma pérola!&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Álbum&lt;/th&gt;
+      &lt;th&gt;Ano&lt;/th&gt;
+      &lt;th&gt;Avaliação&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Sudaka&lt;/td&gt;
+      &lt;td&gt;2001&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Civilizacao &amp;amp; Barbarye&lt;/td&gt;
+      &lt;td&gt;2007&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/eI5PaeyrViA?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/Ramiro_Musotto&quot;&gt;Mais sobre Ramiro Musotto na Wikipédia.&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;violeta-de-outono&quot;&gt;Violeta de Outono&lt;/h2&gt;
+
+&lt;p&gt;Estava eu em busca de rock progressivo, psicodélico, uma pesquisa na internet
+me levou a várias bandas nacionais, dentre todas, Violeta de Outono me
+chamou atenção. Guitarras e lindas melodias, exatamente o que eu estava à
+procura.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Álbum&lt;/th&gt;
+      &lt;th&gt;Ano&lt;/th&gt;
+      &lt;th&gt;Avaliação&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Reflexos da Noite&lt;/td&gt;
+      &lt;td&gt;1986&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Violeta De Outono&lt;/td&gt;
+      &lt;td&gt;1987&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Em Toda Parte&lt;/td&gt;
+      &lt;td&gt;1989&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Mulher na Montanha&lt;/td&gt;
+      &lt;td&gt;1999&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/XsDcpMEHeOo?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/Violeta_de_Outono&quot;&gt;Mais sobre Violeta de Outono na Wikipédia.&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;jpiter-ma&quot;&gt;Júpiter Maçã&lt;/h2&gt;
+
+&lt;p&gt;Em minha curiosidade sobre rock nacional psicodélico encontrei o Júpiter Maçã,
+eu já conhecia o Cascavelletes, até fazia uma cover deles na “minha” banda &lt;a href=&quot;http://losbenzenos.org&quot;&gt;Los
+Benzenos&lt;/a&gt;, mas nunca tinha escutado o Júpiter, João
+Paulo (guitarrista/vocal na Los Benzenos) tinha me falado dele mas eu ainda não
+tinha escutado. Se é psicodelia que se quer, Júpiter Maçã é a escolha!&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Álbum&lt;/th&gt;
+      &lt;th&gt;Ano&lt;/th&gt;
+      &lt;th&gt;Avaliação&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;A Sétima Efervescência&lt;/td&gt;
+      &lt;td&gt;1997&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Plastic Soda&lt;/td&gt;
+      &lt;td&gt;1999&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Hisscivilization&lt;/td&gt;
+      &lt;td&gt;2002&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+-&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Uma Tarde na Fruteira&lt;/td&gt;
+      &lt;td&gt;2008&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/XWtCN66ZFow?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/J%C3%BApiter_Ma%C3%A7%C3%A3&quot;&gt;Mais sobre Júpiter Maçã na Wikipédia.&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;los-sebozos-postizos&quot;&gt;Los Sebozos Postizos&lt;/h2&gt;
+
+&lt;p&gt;Los Sebozos Postizos é quase o Nação Zumbi cantando versões de Jorge Ben Jor, a
+banda possui um único disco &lt;code class=&quot;highlighter-rouge&quot;&gt;Los Sebosos Postizos interpretam Jorge Ben Jor&lt;/code&gt;
+com clássicos do velho Jorge Ben na voz de Du Peixe, presentão!&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Álbum&lt;/th&gt;
+      &lt;th&gt;Ano&lt;/th&gt;
+      &lt;th&gt;Avaliação&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Los Sebosos Postizos interpretam Jorge Ben Jor&lt;/td&gt;
+      &lt;td&gt;2012&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/aRyszaASP20?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/Los_Sebozos_Postizos&quot;&gt;Mais sobre Los Sebozos Postizos na Wikipédia.&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;boogarins&quot;&gt;Boogarins&lt;/h2&gt;
+
+&lt;p&gt;Conheci Boogarins no Porão do Rock 2016 em Brasília, fui ao evento para ver
+Nação Zumbi e Planet Hemp, por sorte conheci essa banda do Goiânia. Rock
+psicodélico, boas melodias, vocal, e guitarras distorcidas na medida certa.
+Gostei muito do álbum &lt;code class=&quot;highlighter-rouge&quot;&gt;Manual, ou Guia Livre de Dissolução dos Sonhos&lt;/code&gt;,
+especialmente a música &lt;code class=&quot;highlighter-rouge&quot;&gt;6000 Dias&lt;/code&gt;.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Álbum&lt;/th&gt;
+      &lt;th&gt;Ano&lt;/th&gt;
+      &lt;th&gt;Avaliação&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;As Plantas que Curam&lt;/td&gt;
+      &lt;td&gt;2013&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+-&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Manual, ou Guia Livre de Dissolução dos Sonhos&lt;/td&gt;
+      &lt;td&gt;2015&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+++&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Wjp_Cj3TKcw?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/Boogarins&quot;&gt;Mais sobre Boogarins na Wikipédia.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;É isso, uma dica: se por acaso você tem um gosto parecido com o meu siga os
+álbuns marcados como &lt;code class=&quot;highlighter-rouge&quot;&gt;+++&lt;/code&gt; e terá uma ótima viagem musical, sem surpresas
+desagradáveis…&lt;/p&gt;
+</description>
+        <pubDate>Fri, 24 Feb 2017 00:00:00 -0300</pubDate>
+        <link>http://joenio.me/descubra-novos-sons-e-novos-ritmos-parte-1/index.html</link>
+        <guid isPermaLink="true">http://joenio.me/descubra-novos-sons-e-novos-ritmos-parte-1/index.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Carta de despedida da Colivre</title>
@@ -1273,54 +1811,6 @@ ou se preferir atrevés do meu perfil no
         <pubDate>Tue, 23 Dec 2014 00:00:00 -0200</pubDate>
         <link>http://joenio.me/backup-na-nuvem-com-tarsnap/index.html</link>
         <guid isPermaLink="true">http://joenio.me/backup-na-nuvem-com-tarsnap/index.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Voltando a &quot;blogar&quot;</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/files/han-solo-e-chewbacca-blog.jpg&quot; alt=&quot;Han Solo apontando uma arma para Chewbacca&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Hoje enquanto conversava com uma amiga no telefone surgiu a seguinte pergunta:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“Por que a gente não posta mais em nossos blogues?”&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Ao ouvir isso pensei:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“Humn… Hâmmmn… É porque… Bem… É que…..”&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Nenhum argumento minimamente válido surgiu, ou seja, não há motivos, então aqui
-estou eu &lt;em&gt;“blogando”&lt;/em&gt; novamente…&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://softwarelivre.org/joenio&quot;&gt;Eu tinha um blog&lt;/a&gt; na rede &lt;a href=&quot;http://softwarelivre.org&quot;&gt;Software Livre
-Brasil&lt;/a&gt; que não via um post desde 2010, na verdade
-ainda tenho, ele funciona e continuará disponível, mas vou concentar os
-próximos posts aqui. Mas por que eu saí do Software Livre Brasil? Na verdade
-não saí, meu perfil continua lá, continarei usando a rede social, e talvez até
-replique os posts daqui por lá. O que aconteceu foi que a pergunta &lt;em&gt;“Por que a
-gente não posta mais em nossos blogues?”&lt;/em&gt; deu o &lt;em&gt;empurrãozinho&lt;/em&gt; que faltava
-para eu desenrolar as seguintes questões:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Vontade de testar algum &lt;a href=&quot;http://www.staticgen.com&quot;&gt;sistema gerador de site estático&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Necessidade de hospedar algo útil na VPS que eu já havia alugado no &lt;a href=&quot;http://www.digitalocean.com&quot;&gt;DigitalOcean&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Desejo de ter meu blog com domínio próprio, e eu já havia registrado &lt;em&gt;“joenio.me”&lt;/em&gt; no &lt;a href=&quot;http://gandi.net&quot;&gt;Gandi.net&lt;/a&gt; a algum tempo&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;E assim aqui está mais um blog nesse mundão virtual, pretendo falar de tudo um
-pouco, coisas da minha vida pessoal, questões técnicas relacionadas ao
-trabalho, um pouco da minha experiência no meio acadêmico, música, esportes,
-livros, etc… Espero que seja útil para mais alguém além de mim mesmo.&lt;/p&gt;
-
-&lt;p&gt;Ahhh!!! &lt;a href=&quot;http://softwarelivre.org/dani&quot;&gt;Dani&lt;/a&gt;, obrigado pelo &lt;em&gt;empurrãozinho&lt;/em&gt;!&lt;/p&gt;
-</description>
-        <pubDate>Thu, 18 Dec 2014 00:00:00 -0200</pubDate>
-        <link>http://joenio.me/voltando-a-blogar/index.html</link>
-        <guid isPermaLink="true">http://joenio.me/voltando-a-blogar/index.html</guid>
         
         
       </item>
