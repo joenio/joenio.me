@@ -1,5 +1,4 @@
 ---
-title: Conheça e viaje na bela música experimental
 title: Descubra novos sons e novos ritmos (parte 1)
 ---
 
