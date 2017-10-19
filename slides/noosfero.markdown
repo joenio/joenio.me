@@ -16,15 +16,14 @@ title: Noosfero
 <section>
 ## O Noosfero é
 
-* Software Livre (Afero GPL)
-* Escrito em Ruby On Rails 3
-* Migrando para o Rails 4
+* Software Livre (Affero GPL)
+* Escrito em Ruby On Rails
 * Expansível (plugins)
 * Customizável (temas, blocos, etc)
 
 <p class="fragment">
-Site <span class="url">http://noosfero.org</span><br/>
-Blog <span class="url">http://softwarelivre.org/noosfero</span>
+Site [http://noosfero.org](http://noosfero.org)<br/>
+Blog [http://softwarelivre.org/noosfero](http://softwarelivre.org/noosfero)
 </p>
 </section>
 <section>
@@ -49,7 +48,7 @@ Blog <span class="url">http://softwarelivre.org/noosfero</span>
 <div class="box-gray">
 ## O desenvolvimento ocorre em torno do gitlab
 
-<span class="url">http://gitlab.com/noosfero/noosfero</span>
+[http://gitlab.com/noosfero/noosfero](http://gitlab.com/noosfero/noosfero)
 
 * Issues
 * Milestones
@@ -73,7 +72,7 @@ Dois branches:
 </ul>
 
 </td>
-<td><img src="files/git-tree.png" /></td>
+<td style="height: 600px"><img src="files/git-tree.png" /></td>
 </tr></table>
 </div>
 </section>
@@ -146,7 +145,7 @@ papo com algum desenvolvedor Noosfero
 
 <p class="url">softwarelivre.org/noosfero/encontros</p>
 
-_este encontro deve ocorrer com alguma frequência, a cada 3 meses por exemplo_
+_este encontro ~~deve~~ deveria ocorrer com alguma frequência, a cada 3 meses por exemplo_
 </section>
 </section>
 
@@ -185,16 +184,15 @@ Objetivo: "Plataforma para exercício pleno da 'cidadania digital' (netizenship)
 <div class="box-yellow">
 ### Desde então surgiram muitos outros parceiros
 
-#### E o Noosfero hoje atende
+#### E o Noosfero hoje é utilizado por
 
 ASL, USP, Serpro, SGPR, Blogoosfero, OCEB, UnB, Qualipso, IPF, Kliceo, UCSal, MPOG, UFBA
 
-<small>* Alguns são também clientes da Colivre</small> <!-- *fix -->
 </div>
 </section>
 <section>
 <p style="text-shadow:-2px -1px 3px #000;font-size:48px">E deste a primeira
-versão do Noosfero lançada em 2007 foram lançadas **156** versões</p>
+versão do Noosfero lançada em 2007 foram lançadas mais de **200** versões</p>
 </section>
 <section>
 <div class="box-white">
@@ -207,11 +205,15 @@ versão do Noosfero lançada em 2007 foram lançadas **156** versões</p>
 
 #### Versões de funcionalidades novas
 
-### 1.XX.0
+* X.XX.**0**
+* 0.10.0
+* 1.12.0
 
 #### Versões de manutenção
 
-### 1.XX.(1-9)
+* X.XX.**N**
+* 0.10.2
+* 1.12.1
 </div>
 </section>
 </section>
@@ -222,7 +224,9 @@ versão do Noosfero lançada em 2007 foram lançadas **156** versões</p>
 <section>
 #### Versão atual
 
-### 1.2.0
+### 1.8.0
+
+lançada em 9 de março de 2017
 </section>
 <section data-background="files/screenshots/blogoosfero.jpg" data-background-transition="slide">
 <div class="box-gray">
@@ -279,14 +283,13 @@ versão do Noosfero lançada em 2007 foram lançadas **156** versões</p>
 <!-- ********************************************************************** -->
 
 <section>
-### A comunidade Noosfero cresceu
+### Desenvolvedores Noosfero
 
-"Estas instituições se tornam parceiras do projeto Noosfero e hoje
-são parte da comunidade de usuários e desenvolvedores"
+"instituições e usuários se tornam parte da comunidade"
 
-<img src="files/noosfero-contributors-by-month.png" />
+<img width="80%" src="files/noosfero-contributors-by-month.png" />
 
-<small>http://www.openhub.net/p/noosfero</small>
+<small>[http://www.openhub.net/p/noosfero](http://www.openhub.net/p/noosfero)</small>
 </section>
 
 <!-- ********************************************************************** -->
