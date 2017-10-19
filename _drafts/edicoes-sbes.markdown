@@ -36,3 +36,4 @@ Referências onde encontrei links para algumas edições do SBES:
 
 * http://jcspl.net/simposio-brasileiro-de-engenharia-de-software-sbes/
 * http://wiki.dcc.ufba.br/CEES/SBES
+* http://comissoes.sbc.org.br/ce-es/sbes.php?lang=pt-br
