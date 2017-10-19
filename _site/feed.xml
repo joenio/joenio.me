@@ -5,8 +5,8 @@
     <description></description>
     <link>http://joenio.me/</link>
     <atom:link href="http://joenio.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 18 Jun 2017 02:21:31 -0300</pubDate>
-    <lastBuildDate>Sun, 18 Jun 2017 02:21:31 -0300</lastBuildDate>
+    <pubDate>Thu, 19 Oct 2017 01:19:09 -0200</pubDate>
+    <lastBuildDate>Thu, 19 Oct 2017 01:19:09 -0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -243,7 +243,7 @@ um resumo dos álbuns que mais gostei até o momento.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/AmeriKKKa&#39;s_Most_Wanted&quot;&gt;Informações sobre o álbum AmeriKKKa’s Most Wanted na Wikipédia&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;mc-solaar---qui-sme-le-vent-rcolte-le-tempo&quot;&gt;MC Solaar - Qui Sème Le Vent Rècolte Le Tempo&lt;/h2&gt;
+&lt;h2 id=&quot;mc-solaar---qui-sème-le-vent-rècolte-le-tempo&quot;&gt;MC Solaar - Qui Sème Le Vent Rècolte Le Tempo&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;Página 660 do livro.&lt;/em&gt;&lt;/p&gt;
 
@@ -513,7 +513,7 @@ cidades&lt;/code&gt; é foda!&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;if-afrobeat&quot;&gt;I.F.Á. Afrobeat&lt;/h2&gt;
+&lt;h2 id=&quot;ifÁ-afrobeat&quot;&gt;I.F.Á. Afrobeat&lt;/h2&gt;
 
 &lt;p&gt;Ijexá, Funk e Afrobeat, ou I.F.Á. Afrobeat, de Salvador - Bahia, mistura muitos
 sons mas sempre com o pé em ritmos originados na cultura negra, os dois álbuns
@@ -712,7 +712,7 @@ procura.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;jpiter-ma&quot;&gt;Júpiter Maçã&lt;/h2&gt;
+&lt;h2 id=&quot;júpiter-maçã&quot;&gt;Júpiter Maçã&lt;/h2&gt;
 
 &lt;p&gt;Em minha curiosidade sobre rock nacional psicodélico encontrei o Júpiter Maçã,
 eu já conhecia o Cascavelletes, até fazia uma cover deles na “minha” banda &lt;a href=&quot;http://losbenzenos.org&quot;&gt;Los
@@ -864,7 +864,7 @@ iniciou suas atividades a partir das bases definidas nesse período de
 planejamento. Transcrevo abaixo a missão, visão e valores por considerar esta a
 construção mais importante de todo esse período.&lt;/p&gt;
 
-&lt;h2 id=&quot;misso&quot;&gt;Missão&lt;/h2&gt;
+&lt;h2 id=&quot;missão&quot;&gt;Missão&lt;/h2&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Ser uma organização autogerida e auto-sustentável que procure disseminar os
@@ -874,7 +874,7 @@ parceiras(os); respeite o meio ambiente e vivencie os princípios do consumo
 responsável.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;viso&quot;&gt;Visão&lt;/h2&gt;
+&lt;h2 id=&quot;visão&quot;&gt;Visão&lt;/h2&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Ser uma organização autogerida, referência no Brasil por mérito das soluções
@@ -1010,8 +1010,8 @@ Debian-like.&lt;/p&gt;
 
 &lt;p&gt;Adicione o seguinte repositório ao &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/apt/sources.list&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;deb http://debian.joenio.me unstable/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;deb http://debian.joenio.me unstable/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Baixe a chave do repositório e instale o pacote &lt;code class=&quot;highlighter-rouge&quot;&gt;holodev&lt;/code&gt;:&lt;/p&gt;
 
@@ -1131,7 +1131,7 @@ o &lt;em&gt;embalo&lt;/em&gt; empacotei e submeti eles ao Debian.&lt;/p&gt;
 &lt;p&gt;Também atualizei o &lt;a href=&quot;http://packages.debian.org/sid/libtest-base-perl&quot;&gt;pacote Test::Base&lt;/a&gt; para a última versão do upstream e &lt;a href=&quot;http://tracker.debian.org/news/680993&quot;&gt;submeti
 ao Debian&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;maro&quot;&gt;Março&lt;/h2&gt;
+&lt;h2 id=&quot;março&quot;&gt;Março&lt;/h2&gt;
 
 &lt;p&gt;Em março Neil sorteou o módulo &lt;a href=&quot;http://metacpan.org/release/libnet&quot;&gt;libnet&lt;/a&gt;, fiz uma sugestão de nova
 funcionalidade para o &lt;code class=&quot;highlighter-rouge&quot;&gt;Net::FTP&lt;/code&gt; a partir de uma ideia registrada no &lt;a href=&quot;http://rt.cpan.org/Public/Bug/Display.html?id=101586&quot;&gt;ticket
@@ -1403,7 +1403,7 @@ $ mkdir -p ~/debian.joenio.me/mini-dinstall/incoming
 &lt;span class=&quot;py&quot;&gt;verify_sigs&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/figure&gt;
 
-&lt;h2 id=&quot;preparando-a-estao-de-trabalho-para-enviar-pacotes&quot;&gt;Preparando a estação de trabalho para enviar pacotes&lt;/h2&gt;
+&lt;h2 id=&quot;preparando-a-estação-de-trabalho-para-enviar-pacotes&quot;&gt;Preparando a estação de trabalho para enviar pacotes&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Sistema Operacional: &lt;strong&gt;Debian Testing&lt;/strong&gt;&lt;/li&gt;
@@ -1478,7 +1478,7 @@ $ dput debian.joenio.me &amp;lt;pacote&amp;gt;.changes
 arquivos &lt;em&gt;Sources&lt;/em&gt; e &lt;em&gt;Packages&lt;/em&gt; com as informações do pacote e irá assinar o
 arquivo &lt;em&gt;Release&lt;/em&gt; com a chave pública &lt;code class=&quot;highlighter-rouge&quot;&gt;GnuPG&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;disponibilizando-acesso-ao-repositrio-publicamente&quot;&gt;Disponibilizando acesso ao repositório publicamente&lt;/h2&gt;
+&lt;h2 id=&quot;disponibilizando-acesso-ao-repositório-publicamente&quot;&gt;Disponibilizando acesso ao repositório publicamente&lt;/h2&gt;
 
 &lt;p&gt;Até aqui já temos um repositório com pacotes hospedados, mas sem acesso público
 aos pacotes ninguém poderá utilizá-lo. Para resolver isto vamos configurar
@@ -1522,7 +1522,7 @@ disponíveis no seguinte endereço:&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;http://debian.joenio.me&quot;&gt;http://debian.joenio.me&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;testando-o-repositrio-e-instalando-pacotes&quot;&gt;Testando o repositório e instalando pacotes&lt;/h2&gt;
+&lt;h2 id=&quot;testando-o-repositório-e-instalando-pacotes&quot;&gt;Testando o repositório e instalando pacotes&lt;/h2&gt;
 
 &lt;p&gt;Para usar este repositorio adicione as seguintes entradas no
 &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/apt/sources.list&lt;/code&gt; do computador local:&lt;/p&gt;

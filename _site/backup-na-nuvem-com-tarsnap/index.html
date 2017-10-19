@@ -114,20 +114,20 @@ exemplo:</p>
 <span class="c1"># a cada mes (30 dias)</span>
 <span class="c1"># a cada semestre (180 dias)</span>
 
-<span class="s">deltas</span><span class="pi">:</span> <span class="s">1d 7d 30d 180d</span>
+<span class="na">deltas</span><span class="pi">:</span> <span class="s">1d 7d 30d 180d</span>
 
-<span class="s">target</span><span class="pi">:</span> <span class="s">/mybox/$name-$date</span>
+<span class="na">target</span><span class="pi">:</span> <span class="s">/mybox/$name-$date</span>
 
-<span class="s">jobs</span><span class="pi">:</span>
-  <span class="s">etc</span><span class="pi">:</span>
-    <span class="s">source</span><span class="pi">:</span> <span class="s">/etc</span>
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">etc</span><span class="pi">:</span>
+    <span class="na">source</span><span class="pi">:</span> <span class="s">/etc</span>
 
-  <span class="s">mysql</span><span class="pi">:</span>
-    <span class="s">source</span><span class="pi">:</span> <span class="s">/var/backups/mysql</span>
-    <span class="s">exec_before</span><span class="pi">:</span> <span class="s">/usr/local/bin/dump-mysql</span>
+  <span class="na">mysql</span><span class="pi">:</span>
+    <span class="na">source</span><span class="pi">:</span> <span class="s">/var/backups/mysql</span>
+    <span class="na">exec_before</span><span class="pi">:</span> <span class="s">/usr/local/bin/dump-mysql</span>
 
-  <span class="s">foswiki</span><span class="pi">:</span>
-    <span class="s">sources</span><span class="pi">:</span>
+  <span class="na">foswiki</span><span class="pi">:</span>
+    <span class="na">sources</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s">/var/lib/foswiki/data</span>
       <span class="pi">-</span> <span class="s">/var/lib/foswiki/pub</span></code></pre>
 </figure>
@@ -140,7 +140,7 @@ para isso crie o arquivo <code class="highlighter-rouge">/etc/cron.daily/tarsnap
 <span class="c"># Start in the root filesystem, make SElinux happy</span>
 <span class="nb">cd</span> /
 
-tarsnapper -o configfile /etc/tarsnap.conf -c /etc/tarsnapper.conf make &gt;&gt; /var/log/tarsnapper.log 2&gt;&amp;1</code></pre>
+tarsnapper <span class="nt">-o</span> configfile /etc/tarsnap.conf <span class="nt">-c</span> /etc/tarsnapper.conf make <span class="o">&gt;&gt;</span> /var/log/tarsnapper.log 2&gt;&amp;1</code></pre>
 </figure>
 
 <p>Dê permissão de execução a este arquivo, isto vai fazer o cron vai rodar o
@@ -187,14 +187,14 @@ ou se preferir atrevés do meu perfil no
 
     <div class="footer-col-1 column">
       <div class="hackergotchi">
-        <img src="/files/hackergotchi.png"/>
+        <a href="/"><img src="/files/hackergotchi.png"/></a>
       </div>
     </div>
 
     <div class="footer-col-2 column">
 
       <p id="sobre">
-        <strong>Joenio Costa</strong>, 
+        <a href="/"><strong>Joenio Costa</strong></a>
         especialista em
         desenvolvimento de software e tecnologias livres, pesquisador do <a href="http://www.ibict.br">IBICT</a>
         como consultor do portal da <a href="http://juventude.gov.br">Juventude</a> e membro do grupo de
