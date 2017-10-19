@@ -118,3 +118,13 @@ Ele criou um projeto e continuou fazendo novos coros
 http://ericwhitacre.com/the-virtual-choir
 
 Recebi uma mensagem de um usuario do bandhub em um video da Los benzenos
+
+TydalCycles
+===========
+
+pacotes debian:
+* haskell-platform
+* sc3-plugins
+
+$ cabal update
+$ cabal install tidal
