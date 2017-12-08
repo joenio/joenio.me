@@ -26,6 +26,11 @@ keep_files:
   - .svn
   - javascript
 
+collections:
+  wiki:
+    output: true
+    permalink: "w/:title/index.html"
+
 # Configuracoes padrao para posts
 defaults:
   -
@@ -35,7 +40,8 @@ defaults:
       layout: "post"
   -
     scope:
-      path: "pages"
+      path: ""
+      type: "wiki"
     values:
       layout: "page"
   -

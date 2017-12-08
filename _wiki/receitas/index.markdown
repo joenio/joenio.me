@@ -6,6 +6,12 @@ Links e referências de receitas sem carne (exceto peixe).
 
 ## Salgado
 
+### Arroz
+
+ARROZ AO CURRY c LEITE DE COCO e CASTANHAS do CAJU
+
+http://entretemperos.blogspot.com.br/2013/11/arroz-ao-curry-c-leite-de-coco-e.html
+
 ### Abóbora recheada
 
 https://metidaagourmet.com/2014/02/05/abobora-recheada-carne-seca/
