@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Sustentabilidade técnica de software acadêmico - Uma reflexão sobre o domínio de análise estática | Joenio Costa</title>
+  <meta name="author" content="Joenio Costa" />
+  <link rel="stylesheet" href="/javascript/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="/javascript/reveal.js/css/theme/simple.css" id="theme">
+  
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="/javascript/reveal.js/lib/css/zenburn.css">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '/javascript/reveal.js/css/print/pdf.css' : '/javascript/reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="/javascript/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/css/revealjs.css">
+</head>
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section>
+  <h4 id="sustentabilidade-tcnica-de-software-acadmico">Sustentabilidade técnica de software acadêmico:</h4>
+
+  <h3 id="uma-reflexo-sobre-o-domnio-de-anlise-esttica">Uma reflexão sobre o domínio de análise estática</h3>
+
+</section>
+
+<section>
+  <h4 id="sustentabilidade-tcnica-de-software-acadmico-uma-reflexo-sobre-o-domnio-de-anlise-esttica">Sustentabilidade técnica de software acadêmico: Uma reflexão sobre o domínio de análise estática</h4>
+
+  <p><small>
+<em>Apresentação para banca examinadora da defesa de mestrado do Programa de
+Pós-graduação em Ciência da Computação da Universidade Federal da Bahia,
+Salvador-Bahia, 19 de Dezembro de 2017.</em>
+</small></p>
+
+  <p>Joenio Marques da Costa</p>
+
+  <p>Orientadora: Dra. Christina von Flach G. Chavez<br />
+Co-orientador: Dr. Paulo Roberto Miranda Meirelles</p>
+</section>
+
+<section>
+  <h3 id="a-cincia-depende-de-software">A Ciência depende de software</h3>
+
+  <p>À medida que o software se torna uma tecnologia generalizada em praticamente
+todos os aspectos da condição humana, também é inserido firmemente no meio
+acadêmico, software analisa dados, simula o mundo real, e visualiza resultados.</p>
+
+  <p><small>
+GOBLE, C. Better software, better research. IEEE Internet Computing, IEEE, v.
+18, n. 5, p. 4–8, 2014.
+</small></p>
+</section>
+
+<section>
+  <h3 id="motivao">Motivação</h3>
+
+  <p>O software acadêmico sofre de um fenômeno conhecido por desordem caótica disfuncional
+(<em>“dysfunctional chaotic churn”</em>) - DCD.</p>
+
+  <p><small>
+HOWISON, J. et al. Understanding the scientific software ecosystem and its
+impact: Current and future measures. Research Evaluation, v. 24, n. 4, p.
+454–470, 2015. Disponível em: http://dx.doi.org/10.1093/reseval/rvv014i.
+</small></p>
+</section>
+
+<section>
+  <h4 id="desordem-catica-disfuncional-dcd">Desordem caótica disfuncional (DCD):</h4>
+
+  <ul>
+    <li>Existência de muitos projetos com poucos usuários;</li>
+    <li>Projetos com ciclos de vida curtos que se encerram junto ao financiamento inicial;</li>
+    <li>Comunidades de usuários desconectadas e paralelas;</li>
+    <li>Incompatibilidades entre os projetos de maneira persistente e imutável;</li>
+    <li>Tentativas constantes e aparentemente não coordenadas de “reiniciar” tudo (<em>re-boots</em>).</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="objetivo">Objetivo</h3>
+
+  <p>Analisar os projetos de software acadêmico de análise estática e sua
+sustentabilidade técnica com o propósito de caracterizar com respeito a
+publicização, reconhecimento e ciclo de vida na perspectiva do cientista de
+software acadêmico no contexto das conferências de Engenharia de Software ASE e
+SCAM.</p>
+</section>
+
+<section>
+  <h3 id="questo-de-pesquisa">Questão de pesquisa</h3>
+
+  <p><strong>Questão:</strong> Como a desordem caótica disfuncional (DCD) pode explicar a
+sustentabilidade técnica dos projetos do ecossistema de software acadêmico de
+análise estática em termos de publicização, reconhecimento e estágio de
+evolução?</p>
+</section>
+
+<section>
+  <h3 id="software-acadmico">Software acadêmico</h3>
+
+  <p>Todo software usado para coletar, processar ou analisar resultados de pesquisas
+com intenção de publicação na literatura acadêmica, incluindo desde protótipos
+escritos pelos próprios cientistas, a produtos completos desenvolvidos
+profissionalmente.</p>
+
+  <p><small>
+ALLEN, A. et al. Engineering academic software (dagstuhl perspectives workshop
+16252). In: Dagstuhl Manifestos. [S.l.]: Schloss Dagstuhl-Leibniz-Zentrum fuer
+Informatik, 2017. v. 6, n. 1.
+</small></p>
+</section>
+
+<section>
+  <h3 id="anlise-esttica">Análise estática</h3>
+
+  <p>Análise estática é a atividade de obter informações acerca de um programa a
+partir do seu código-fonte, tem suas origens nos estudos e desenvolvimentos de
+compiladores.</p>
+
+  <!--* Análise de performance
+* Compreensão de programas
+* Localizaçao de falhas
+* Recuperação arquitetural
+* Testes-->
+
+  <p><small>
+CRUZ, D. d.; HENRIQUES, P. R.; PINTO, J. S. Code analysis: Past and present. 2009.
+</small></p>
+</section>
+
+<section>
+  <h3 id="sustentabilidade-de-software">Sustentabilidade de software</h3>
+
+  <p>Sustentabilidade é um tema multidisciplinar, sistêmico e com múltiplas
+dimensões:</p>
+
+  <ul>
+    <li>Individual</li>
+    <li>Social</li>
+    <li>Econômica</li>
+    <li>Ambiental</li>
+    <li>Técnica</li>
+  </ul>
+
+  <p><small>
+BECKER, C. et al. The karlskrona manifesto for sustainability design. CoRR,
+abs/1410.6968, 2014. Disponı́vel em: hhttp://arxiv.org/abs/1410.6968i.
+</small></p>
+</section>
+
+<section>
+  <h3 id="sustentabilidade-tcnica-de-software">Sustentabilidade técnica de software</h3>
+
+  <p>A dimensão técnica diz respeito a capacidade do software de perdurar e de
+continuar sendo suportado ao longo do tempo, implicando em qualidades de
+longevidade e manutenção.</p>
+
+  <p><small>
+VENTERS, C. C. et al. Software sustainability: The modern tower of babel. In:
+CEUR Workshop Proceedings. [S.l.: s.n.], 2014. v. 1216, p. 7–12.
+</small></p>
+</section>
+
+<section>
+  <h4 id="ecossistema-de-software-acadmico">Ecossistema de software acadêmico</h4>
+
+  <p><img src="files/scientific-reputation-diagram.png" style="box-shadow:0px 0px 2px gray;background:white;padding:10px" /></p>
+
+  <p><small>
+HOWISON, J.; HERBSLEB, J. D. Scientific software production: incentives and
+collaboration. In: Proceedings of the ACM 2011 conference on Computer supported
+cooperative work. [S.l.: s.n.], 2011. p. 513–522.
+</small></p>
+</section>
+
+<section>
+  <h3 id="estratgia-de-pesquisa">Estratégia de pesquisa</h3>
+
+  <p>Estudo de caso exploratório, trabalho de campo, em ambiente natural,
+características principais:</p>
+
+  <ul>
+    <li>Com o foco num fenômeno, organização ou sistema em particular;</li>
+    <li>Com um baixo nível de generalização e alto realismo do contexto;</li>
+    <li>Sem intervenção do pesquisador no ambiente.</li>
+  </ul>
+
+  <p><small>
+STOL, K.-J.; FITZGERALD, B. A holistic overview of software engineering
+research strategies. In: 3rd International Workshop on Conducting Empirical
+Studies in Industry.  [S.l.: s.n.], 2015. p. 8.
+</small></p>
+</section>
+
+<section>
+
+  <p><img src="files/estrategia-pesquisa.png" style="background:white;padding:10px" /></p>
+
+</section>
+
+<section>
+  <h3 id="estudo-1-publicizao">Estudo 1: Publicização</h3>
+
+  <ul>
+    <li>60 projetos de software acadêmico</li>
+    <li>40% indisponível para download</li>
+    <li>56% disponibiliza código fonte</li>
+    <li>35% utiliza licença de software livre</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="estudo-2-reconhecimento">Estudo 2: Reconhecimento</h3>
+
+  <ul>
+    <li>429 menções</li>
+    <li>46% Cita</li>
+    <li>29% Usa</li>
+    <li>25% Contribui
+      <ul>
+        <li>14% menções do paper inicial</li>
+        <li>10% menções posterior</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="estudo-3-ciclo-de-vida">Estudo 3: Ciclo de vida</h3>
+
+  <ul>
+    <li>206 lançamentos (releases) com código fonte foram analisados</li>
+    <li>…</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="sistemas-de-software-como-sistemas-complexos">Sistemas de software como sistemas complexos</h3>
+
+  <p>a partir da sua estrutura interna sistemas de software podem ser
+caracterizados como um sistema complexo artificial</p>
+</section>
+
+<section>
+  <h3 id="modularidade">Modularidade</h3>
+
+  <p>Uma medida do “número de arquivos” no código de um projeto, possui uma
+tendência de estabilizar ao longo do tempo. Utilizado como preditor de
+estágio de evolução de um projeto.</p>
+</section>
+
+<section>
+  <h3 id="fator-de-impacto">Fator de impacto</h3>
+
+  <p>…</p>
+</section>
+
+<section>
+  <p>…</p>
+</section>
+
+<section>
+  <h3 id="sccomplexidade-estrutural">SC<br />complexidade estrutural</h3>
+
+  <p><em>mede a complexidade estrutural de uma classe</em></p>
+
+  <p><img src="files/formula-sc.png" style="box-shadow: 0px 0px 5px gray" /></p>
+</section>
+
+<section>
+  <h1 id="metodologia">Metodologia</h1>
+
+  <ol>
+    <li>Seleção e caracterização de ferramentas</li>
+    <li>Extração de métricas de código-fonte</li>
+    <li>Análise e interpretação dos valores das métricas</li>
+    <li>Cálculo do score de similaridade</li>
+  </ol>
+</section>
+
+<section>
+  <h2 id="hipteses">Hipóteses</h2>
+
+  <ul>
+    <li><strong>H1:</strong> É possível calcular valores de referência de métricas
+  de código-fonte para ferramentas de análise estática a partir de um
+  conjunto de softwares da academia e da indústria</li>
+    <li><strong>H2:</strong> Ferramentas de análise estática tendem a ter uma
+  maior complexidade estrutural do que ferramentas de outros domínios de
+  aplicação</li>
+    <li><strong>H3:</strong> Dentre as ferramentas de análise estática de
+  código-fonte, aquelas desenvolvidas na indústria apresentam uma menor
+  complexidade estrutural</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="seleo-e-coleta">Seleção e coleta</h3>
+
+  <p>a seleção de ferramentas será feita através de uma revisão estruturada para
+ferramentas da academia e de uma busca livre para ferramentas da indústria</p>
+
+  <p>a análise de código-fonte e coleta de suas métricas será feita de forma
+automatizada utilizando a ferramenta Analizo</p>
+</section>
+
+<section>
+  <h2 id="samatenistgov">samate.nist.gov</h2>
+</section>
+
+<section>
+  <h2 id="reviso-estruturada">Revisão estruturada</h2>
+
+  <p>um processo disciplinado para seleção de artigos a partir de
+critérios bem definidos com o objetivo de encontrar ferramentas
+de análise estática de código-fonte</p>
+</section>
+
+<section>
+  <h3 id="caracterizao-das-ferramentas">Caracterização das ferramentas</h3>
+
+  <ul>
+    <li>Entrada - quais tipos de arquivos podem ser carregados na ferramenta</li>
+    <li>Lançamentos (Releases) - quantos lançamentos por ano</li>
+    <li>Linguagens suportadas - quais linguagens de programação a ferramenta suporta</li>
+    <li>Tecnologia - quais tecnologias são usadas para procurar erros no código</li>
+    <li>…</li>
+  </ul>
+
+  <p><small>
+NOVAK, J.; KRAJNC, A. et al. Taxonomy of static code analysis tools. In: IEEE.
+MIPRO, 2010 Proceedings of the 33rd International Convention. [S.l.], 2010. p. 418–422.
+</small></p>
+</section>
+
+<section>
+  <p><img src="files/analizo.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
+<br /><span style="color:#555">http://analizo.org</span></p>
+
+  <p><small>
+Terceiro, A. et al. Analizo: an extensible multi-language source code analysis and
+visualization toolkit. In: CBSOFT-Ferramentas. [S.l.: s.n.], 2010.
+</small></p>
+</section>
+
+<section>
+  <h3 id="interpretao-dos-valores-de-mtricas">Interpretação dos valores de métricas</h3>
+
+  <p>as métricas serão coletadas para cada módulo de cada ferramenta,
+uma análise exploratória nos dará um entendimento inicial sobre
+a natureza dos dados</p>
+</section>
+
+<section>
+  <h2 id="resultados-preliminares">Resultados preliminares</h2>
+
+  <p>✔ 315 artigos do SCAM avaliados e 9 ferramentas selecionadas</p>
+
+  <p>✔ 54 ferramentas da indústria avaliadas e 14 selecionadas</p>
+
+  <p>✔ 23 ferramentas analisadas de forma automatizada para coleta de métricas de código-fonte</p>
+
+  <p>✔ início da análise exploratória dos dados</p>
+
+  <p>✔ evolução inicial da ferramenta Analizo</p>
+</section>
+
+<section>
+  <h3 id="reviso-estruturada-do-scam">Revisão estruturada do SCAM</h3>
+
+  <p><img src="files/revisao-estruturada-scam.png" style="box-shadow: 0px 0px 5px gray" /></p>
+</section>
+
+<section>
+  <h3 id="ferramentas-selecionadas">23 ferramentas selecionadas</h3>
+
+  <p><img src="files/ferramentas-selecionadas.png" style="box-shadow: 0px 0px 5px gray" /></p>
+</section>
+
+<section>
+  <h1 id="anlise-exploratria">Análise exploratória</h1>
+</section>
+
+<section>
+  <h3 id="percentis-da-mtrica-acc">Percentis da métrica ACC</h3>
+
+  <p><img src="files/percentis-acc.png" style="box-shadow: 0px 0px 5px gray" /></p>
+</section>
+
+<section>
+  <h3 id="mdia-no--representativa">Média não é representativa</h3>
+
+  <table><tr><td>
+<img src="files/histograma-acc.png" style="box-shadow: 0px 0px 5px gray; width:100%" />
+</td><td>
+<img src="files/curva-normal.png" style="box-shadow: 0px 0px 5px gray" />
+</td></tr></table>
+
+  <p><small>
+Lanza e Marinescu(2006) Michele Lanza e Radu Marinescu. Object-Oriented Metrics in Practice:
+Using Software Metrics to Characterize, Evaluate and Improve the Design of Object-Oriented
+Systems. Hardcover.
+</small></p>
+</section>
+
+<section>
+  <h4 id="mtricas-acc-e-cbo-no-percentil-90">Métricas ACC e CBO no percentil 90</h4>
+
+  <p><img src="files/tabela-metricas.png" style="box-shadow: 0px 0px 5px gray" /></p>
+</section>
+
+<section>
+  <p><img src="files/grafico-acc-cbo.png" style="box-shadow: 0px 0px 5px gray" /></p>
+</section>
+
+<section>
+  <h3 id="evoluo-do-analizo">Evolução do Analizo</h3>
+
+  <p>em 18 de Fevereiro de 2016 lançamos, no contexto deste trabalho,
+a versão 1.19.0 da ferramenta Analizo</p>
+</section>
+
+<section>
+  <h3 id="cronograma">Cronograma</h3>
+
+  <p><img src="files/cronograma-qualificacao.png" /></p>
+</section>
+
+<section data-background="#c4a000">
+  <section>
+    <h3 id="obrigado">Obrigado!</h3>
+
+    <p><span class="url">joenio@joenio.me</span></p>
+
+    <p><br />
+<em>Esta apresentação está disponível em:</em></p>
+
+    <p><span class="url">http://joenio.me/slides/sustentabilidade-software-academico.html</span></p>
+
+    <p><small>(código-fonte: <strong>http://github.com/joenio/joenio.me</strong>)</small></p>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></p>
+
+  </section>
+  <section>
+    <h3 id="crditos">Créditos</h3>
+
+    <p><small>Imagens utilizadas nesta apresentação</small></p>
+
+    <ul style="font-size: 24px">
+  <li>http://www.flickr.com/photos/odahumanity/4290838678</li>
+</ul>
+  </section>
+  <section>
+    <h3 id="histrico-de-apresentaes">Histórico de apresentações</h3>
+
+    <p><small>Onde e quando esta apresentação foi realizada</small></p>
+
+    <ul style="font-size: 24px">
+  <li>12 Julho 2016, UFBA DCC, Salvador, prévia da qualificação</li>
+</ul>
+  </section>
+</section>
+
+    </div>
+  </div>
+  <script src="/javascript/reveal.js/lib/js/head.min.js"></script>
+  <script src="/javascript/reveal.js/js/reveal.js"></script>
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      slideNumber: true,
+      history: true,
+      center: true,
+      fragments: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      // Optional reveal.js plugins
+      dependencies: [
+        { src: '/javascript/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: '/javascript/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: '/javascript/reveal.js/plugin/zoom-js/zoom.js', async: true },
+        { src: '/javascript/reveal.js/plugin/notes/notes.js', async: true }
+      ]
+    });
+  </script>
+</body>
+</html>

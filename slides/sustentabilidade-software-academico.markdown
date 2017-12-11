@@ -1,7 +1,8 @@
 ---
 title: Sustentabilidade técnica de software acadêmico - Uma reflexão sobre o domínio de análise estática
-theme: serif
+theme: simple
 ---
+
 
 <section>
 #### Sustentabilidade técnica de software acadêmico:
@@ -13,14 +14,16 @@ theme: serif
 <section>
 #### Sustentabilidade técnica de software acadêmico: Uma reflexão sobre o domínio de análise estática
 
-<small>_apresentação para banca examinadora da defesa de mestrado do Programa de Pós-graduação em Ciência da Computação da Universidade Federal da Bahia - UFBA_</small>
+<small>
+_Apresentação para banca examinadora da defesa de mestrado do Programa de
+Pós-graduação em Ciência da Computação da Universidade Federal da Bahia,
+Salvador-Bahia, 19 de Dezembro de 2017._
+</small>
 
 Joenio Marques da Costa
 
-Orientadora: Profa. Dra. Christina von Flach G. Chavez<br/>
-Co-orientador: Prof. Dr. Paulo Roberto Miranda Meirelles
-
-<small>Salvador-Bahia, 19 de Dezembro de 2017</small>
+Orientadora: Dra. Christina von Flach G. Chavez<br/>
+Co-orientador: Dr. Paulo Roberto Miranda Meirelles
 </section>
 
 
@@ -41,14 +44,8 @@ GOBLE, C. Better software, better research. IEEE Internet Computing, IEEE, v.
 <section>
 ### Motivação
 
-O software acadêmico sofre de desordem caótica disfuncional
-(DCD):
-
-Existência de muitos projetos com poucos usuários;
-ciclos de vida curtos que terminam em paralelo ao financiamento inicial;
-comunidades desconectadas e paralelas;
-incompatibilidades entre projetos;
-tentativas aparentemente não coordenadas de "reiniciar" tudo (_re-boots_).
+O software acadêmico sofre de um fenômeno conhecido por desordem caótica disfuncional
+(_"dysfunctional chaotic churn"_) - DCD.
 
 <small>
 HOWISON, J. et al. Understanding the scientific software ecosystem and its
@@ -59,13 +56,24 @@ impact: Current and future measures. Research Evaluation, v. 24, n. 4, p.
 
 
 <section>
+#### Desordem caótica disfuncional (DCD):
+
+* Existência de muitos projetos com poucos usuários;
+* Projetos com ciclos de vida curtos que se encerram junto ao financiamento inicial;
+* Comunidades de usuários desconectadas e paralelas;
+* Incompatibilidades entre os projetos de maneira persistente e imutável;
+* Tentativas constantes e aparentemente não coordenadas de "reiniciar" tudo (_re-boots_).
+</section>
+
+
+<section>
 ### Objetivo
 
-Analisar os _projetos de software acadêmico de análise estática e sua sustentabilidade técnica_
-com o propósito de _caracterizar_
-com respeito a _publicização, reconhecimento e ciclo de vida_
-na perspectiva do _cientista -- desenvolvedor ou usuário -- de software acadêmico_
-no contexto das _conferências de Engenharia de Software ASE e SCAM_.
+Analisar os projetos de software acadêmico de análise estática e sua
+sustentabilidade técnica com o propósito de caracterizar com respeito a
+publicização, reconhecimento e ciclo de vida na perspectiva do cientista de
+software acadêmico no contexto das conferências de Engenharia de Software ASE e
+SCAM.
 </section>
 
 
@@ -82,11 +90,10 @@ evolução?
 <section>
 ### Software acadêmico
 
-Software acadêmico (_academic software_) é todo software usado para
-coletar, processar ou analisar resultados de pesquisas com intenção de
-publicação na literatura acadêmica (periódicos, revistas, conferências,
-monografias, livros ou teses), incluindo desde protótipos escritos pelos
-próprios cientistas, a produtos completos desenvolvidos profissionalmente.
+Todo software usado para coletar, processar ou analisar resultados de pesquisas
+com intenção de publicação na literatura acadêmica, incluindo desde protótipos
+escritos pelos próprios cientistas, a produtos completos desenvolvidos
+profissionalmente.
 
 <small>
 ALLEN, A. et al. Engineering academic software (dagstuhl perspectives workshop
@@ -101,13 +108,13 @@ Informatik, 2017. v. 6, n. 1.
 
 Análise estática é a atividade de obter informações acerca de um programa a
 partir do seu código-fonte, tem suas origens nos estudos e desenvolvimentos de
-compiladores
+compiladores.
 
-* Análise de performance
+<!--* Análise de performance
 * Compreensão de programas
 * Localizaçao de falhas
 * Recuperação arquitetural
-* Testes
+* Testes-->
 
 <small>
 CRUZ, D. d.; HENRIQUES, P. R.; PINTO, J. S. Code analysis: Past and present. 2009.
@@ -149,70 +156,66 @@ CEUR Workshop Proceedings. [S.l.: s.n.], 2014. v. 1216, p. 7–12.
 
 
 <section>
-### Ecossistema de software acadêmico
+#### Ecossistema de software acadêmico
 
-<img src="files/scientific-reputation-diagram.png" style="box-shadow:0px 0px 5px gray;background:white;padding:10px" />
+<img src="files/scientific-reputation-diagram.png" style="box-shadow:0px 0px 2px gray;background:white;padding:10px" />
 
 <small>
 HOWISON, J.; HERBSLEB, J. D. Scientific software production: incentives and
 collaboration. In: Proceedings of the ACM 2011 conference on Computer supported
 cooperative work. [S.l.: s.n.], 2011. p. 513–522.
-<small>
+</small>
 </section>
 
-<section data-background="files/backgrounds/tape.jpg" data-transition='zoom'>
-<div class="box-white" style="text-shadow: 0px 0px 2px white; color:black; font-weight:bolder">
-<h3 style="text-shadow: 0px 0px 2px white; color:black">Métricas de código-fonte coletadas</h3>
 
-ACC, ACCM, AMLOC, ANPM, CBO, DIT, LCOM4, LOC, NOA, NOC, NOM, NPA, NPM, RFC, SC
-</div>
+<section>
+### Estratégia de pesquisa
 
-<small style="text-shadow: 0px 0px 1px #999; font-weight: bold; color:black">
-MEIRELLES, P. R. M. Monitoramento de métricas de código-fonte em projetos de
-software livre. Tese (Doutorado) — Universidade de São Paulo, São Paulo, Brazil, 2013.
+Estudo de caso exploratório, trabalho de campo, em ambiente natural,
+características principais:
+
+* Com o foco num fenômeno, organização ou sistema em particular;
+* Com um baixo nível de generalização e alto realismo do contexto;
+* Sem intervenção do pesquisador no ambiente.
+
+<small>
+STOL, K.-J.; FITZGERALD, B. A holistic overview of software engineering
+research strategies. In: 3rd International Workshop on Conducting Empirical
+Studies in Industry.  [S.l.: s.n.], 2015. p. 8.
 </small>
 </section>
 
 <section>
-### ACC<br/>conexões aferentes de uma classe
 
-_mede o número de classes que <abbr title="acessos à atributos ou métodos">acessam</abbr> a classe analisada_
+<img src="files/estrategia-pesquisa.png" style="background:white;padding:10px" />
 
-<img src="files/formula-acc.png" style="box-shadow:0px 0px 5px gray" />
-
-<img src="files/ci-cj.png" style="box-shadow:0px 0px 5px gray; background-color:white; padding:5px 5px 0; vertical-align:middle" /> <span style="color:#777">indica acesso à atributos ou métodos</span>
-  <aside class="notes">
-    Se o valor dessa métrica for
-    grande, uma mudança na classe
-    tem potencialmente mais efeitos
-    colaterais, tornando mais
-    difícil a manutenção
-  </aside>
 </section>
 
 <section>
-# Complexidade
+### Estudo 1: Publicização
 
-quanto maior a complexidade de um sistema de software,
-maior é o esforço para compreendê-lo, modificá-lo e evoluí-lo
-
-<small>
-Darcy, D. P. et al. The structural complexity of software: An experimental test. IEEE
-Transactions on Software Engineering, v. 31, n. 11, p. 982–995, Nov. 2005. ISSN 0098-
-5589.
-</small>
+* 60 projetos de software acadêmico
+* 40% indisponível para download
+* 56% disponibiliza código fonte
+* 35% utiliza licença de software livre
 </section>
 
 <section>
-## Sistemas complexos
+### Estudo 2: Reconhecimento
 
-sistemas complexos são sistemas compostos de várias partes que
-interagem entre si com a habilidade de gerar novas qualidades
-no comportamento coletivo
+* 429 menções
+* 46% Cita
+* 29% Usa
+* 25% Contribui
+  * 14% menções do paper inicial
+  * 10% menções posterior
+</section>
 
-<small>
-Mitchell, M. Complexity - A Guided Tour. [S.l.]: Oxford University Press, 2009.
-</small>
+<section>
+### Estudo 3: Ciclo de vida
+
+* 206 lançamentos (releases) com código fonte foram analisados
+* ...
 </section>
 
 <section>
@@ -223,28 +226,21 @@ caracterizados como um sistema complexo artificial
 </section>
 
 <section>
-## Complexidade estrutural
+### Modularidade
 
-uma medida da complexidade de software calculada em termos
-do acoplamento (CBO) e coesão (LCOM4)
+Uma medida do "número de arquivos" no código de um projeto, possui uma
+tendência de estabilizar ao longo do tempo. Utilizado como preditor de
+estágio de evolução de um projeto.
 </section>
 
 <section>
-### CBO<br/>acoplamento entre objetos
+### Fator de impacto
 
-_mede o número classes <abbr title="acessos à atributos ou métodos">acessadas</abbr> pela classe analisada_
-
-<img src="files/formula-cbo.png" style="box-shadow: 0px 0px 5px gray" />
-
-<img src="files/ci-cj.png" style="box-shadow:0px 0px 5px gray; background-color:white; padding:5px 5px 0; vertical-align:middle" /> <span style="color:#777">indica acesso à atributos ou métodos</span>
+...
 </section>
 
 <section>
-### LCOM4<br/>ausência da coesão em métodos
-
-_mede os métodos e atributos acessados dentro de uma mesma classe_
-
-calculado através dos componentes fracamente conectados de um grafo não-orientado
+...
 </section>
 
 <section>
