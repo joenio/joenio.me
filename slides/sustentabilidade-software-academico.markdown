@@ -1,18 +1,17 @@
 ---
-title: Sustentabilidade técnica de software acadêmico - Uma reflexão sobre o domínio de análise estática
+title: Sustentabilidade técnica de software acadêmico
 theme: simple
 ---
 
 
 <section>
-#### Sustentabilidade técnica de software acadêmico:
-
-### Uma reflexão sobre o domínio de análise estática
+### Sustentabilidade técnica de software acadêmico no domínio de ferramentas de análise estática de código-fonte
 
 </section>
 
+
 <section>
-#### Sustentabilidade técnica de software acadêmico: Uma reflexão sobre o domínio de análise estática
+#### Sustentabilidade técnica de software acadêmico no domínio de ferramentas de análise estática de código-fonte
 
 <small>
 _Apresentação para banca examinadora da defesa de mestrado do Programa de
@@ -28,11 +27,17 @@ Co-orientador: Dr. Paulo Roberto Miranda Meirelles
 
 
 <section>
-### A Ciência depende de software
+<!-- ### A Ciência depende de software -->
 
-À medida que o software se torna uma tecnologia generalizada em praticamente
+<img src="files/code-is-science-model-1.png" style=";background:white;margin:0" />
+<br/>
+[http://www.codeisscience.com](http://www.codeisscience.com)
+
+<small>[http://sciencecodemanifesto.org](http://sciencecodemanifesto.org)</small>
+
+<!--À medida que o software se torna uma tecnologia generalizada em praticamente
 todos os aspectos da condição humana, também é inserido firmemente no meio
-acadêmico, software analisa dados, simula o mundo real, e visualiza resultados.
+acadêmico, software analisa dados, simula o mundo real, e visualiza resultados.-->
 
 <small>
 GOBLE, C. Better software, better research. IEEE Internet Computing, IEEE, v.
@@ -88,6 +93,44 @@ evolução?
 
 
 <section>
+### Métricas
+
+* Publicização: ...
+* Reconhecimento: ...
+* Ciclo de vida: ...
+</section>
+
+
+<section>
+### Estratégia de pesquisa
+
+Estudo de caso exploratório, características:
+
+* Foco num fenômeno, organização ou sistema em particular;
+* Baixo nível de generalização e alto realismo do contexto;
+* Sem intervenção do pesquisador no ambiente.
+
+<small>
+STOL, K.-J.; FITZGERALD, B. A holistic overview of software engineering
+research strategies. In: 3rd International Workshop on Conducting Empirical
+Studies in Industry.  [S.l.: s.n.], 2015. p. 8.
+</small>
+</section>
+
+<!--
+<section>
+<img src="files/research-strategies.png" />
+</section>
+-->
+
+<section>
+
+<img src="files/estrategia-pesquisa.png" style="background:white;padding:10px" />
+
+</section>
+
+
+<section>
 ### Software acadêmico
 
 Todo software usado para coletar, processar ou analisar resultados de pesquisas
@@ -104,20 +147,27 @@ Informatik, 2017. v. 6, n. 1.
 
 
 <section>
-### Análise estática
+#### Modelo de processo de software acadêmico
 
-Análise estática é a atividade de obter informações acerca de um programa a
-partir do seu código-fonte, tem suas origens nos estudos e desenvolvimentos de
-compiladores.
-
-<!--* Análise de performance
-* Compreensão de programas
-* Localizaçao de falhas
-* Recuperação arquitetural
-* Testes-->
+<img src="files/process-model-scientific-software.png" style="box-shadow: 0px 0px 5px gray" />
 
 <small>
-CRUZ, D. d.; HENRIQUES, P. R.; PINTO, J. S. Code analysis: Past and present. 2009.
+HOWISON, J. et al. Understanding the scientific software ecosystem and its
+impact: Current and future measures. Research Evaluation, v. 24, n. 4, p.
+454–470, 2015. Disponível em: http://dx.doi.org/10.1093/reseval/rvv014i.
+</small>
+</section>
+
+
+<section>
+#### Visão dos incentivos de reputação e práticas de software acadêmico
+
+<img src="files/scientific-reputation-diagram.png" style="box-shadow:0px 0px 2px gray;background:white;padding:10px" />
+
+<small>
+HOWISON, J.; HERBSLEB, J. D. Scientific software production: incentives and
+collaboration. In: Proceedings of the ACM 2011 conference on Computer supported
+cooperative work. [S.l.: s.n.], 2011. p. 513–522.
 </small>
 </section>
 
@@ -156,43 +206,47 @@ CEUR Workshop Proceedings. [S.l.: s.n.], 2014. v. 1216, p. 7–12.
 
 
 <section>
-#### Ecossistema de software acadêmico
+#### Ciclo de vida de software
 
-<img src="files/scientific-reputation-diagram.png" style="box-shadow:0px 0px 2px gray;background:white;padding:10px" />
+<img src="files/staged-model-foss-cycle.png" style="box-shadow:0px 0px 2px gray;background:white" />
 
 <small>
-HOWISON, J.; HERBSLEB, J. D. Scientific software production: incentives and
-collaboration. In: Proceedings of the ACM 2011 conference on Computer supported
-cooperative work. [S.l.: s.n.], 2011. p. 513–522.
+CAPILUPPI, A. et al. Adapting the staged model for software evolution to
+free/libre/open source software. In: Ninth international workshop on Principles
+of software evolution: in conjunction with the 6th ESEC/FSE joint meeting.
+[S.l.: s.n.], 2007. p. 79–82.
 </small>
 </section>
 
 
 <section>
-### Estratégia de pesquisa
+### Análise estática
 
-Estudo de caso exploratório, trabalho de campo, em ambiente natural,
-características principais:
+Análise estática é a atividade de obter informações acerca de um programa a
+partir do seu código-fonte, tem suas origens nos estudos e desenvolvimentos de
+compiladores.
 
-* Com o foco num fenômeno, organização ou sistema em particular;
-* Com um baixo nível de generalização e alto realismo do contexto;
-* Sem intervenção do pesquisador no ambiente.
+<!--* Análise de performance
+* Compreensão de programas
+* Localizaçao de falhas
+* Recuperação arquitetural
+* Testes-->
 
 <small>
-STOL, K.-J.; FITZGERALD, B. A holistic overview of software engineering
-research strategies. In: 3rd International Workshop on Conducting Empirical
-Studies in Industry.  [S.l.: s.n.], 2015. p. 8.
+CRUZ, D. d.; HENRIQUES, P. R.; PINTO, J. S. Code analysis: Past and present. 2009.
 </small>
 </section>
 
-<section>
-
-<img src="files/estrategia-pesquisa.png" style="background:white;padding:10px" />
-
-</section>
 
 <section>
 ### Estudo 1: Publicização
+
+<img src="files/estudo1-etapas.png" width="70%" style="background:white" />
+</section>
+
+
+<section>
+### Resultados do estudo 1
 
 * 60 projetos de software acadêmico
 * 40% indisponível para download
@@ -200,8 +254,16 @@ Studies in Industry.  [S.l.: s.n.], 2015. p. 8.
 * 35% utiliza licença de software livre
 </section>
 
+
 <section>
 ### Estudo 2: Reconhecimento
+
+<img src="files/estudo2-revisao-literatura.png" style="background:white" />
+</section>
+
+
+<section>
+### Resultados do estudo 2
 
 * 429 menções
 * 46% Cita
@@ -211,105 +273,13 @@ Studies in Industry.  [S.l.: s.n.], 2015. p. 8.
   * 10% menções posterior
 </section>
 
+
 <section>
 ### Estudo 3: Ciclo de vida
 
-* 206 lançamentos (releases) com código fonte foram analisados
-* ...
-</section>
-
-<section>
-### Sistemas de software como sistemas complexos
-
-a partir da sua estrutura interna sistemas de software podem ser
-caracterizados como um sistema complexo artificial
-</section>
-
-<section>
-### Modularidade
-
-Uma medida do "número de arquivos" no código de um projeto, possui uma
-tendência de estabilizar ao longo do tempo. Utilizado como preditor de
-estágio de evolução de um projeto.
-</section>
-
-<section>
-### Fator de impacto
-
 ...
 </section>
 
-<section>
-...
-</section>
-
-<section>
-### SC<br/>complexidade estrutural
-
-_mede a complexidade estrutural de uma classe_
-
-<img src="files/formula-sc.png" style="box-shadow: 0px 0px 5px gray" />
-</section>
-
-<section>
-# Metodologia
-
-1. Seleção e caracterização de ferramentas
-1. Extração de métricas de código-fonte
-1. Análise e interpretação dos valores das métricas
-1. Cálculo do score de similaridade
-</section>
-
-<section>
-## Hipóteses
-
-* **H1:** É possível calcular valores de referência de métricas
-    de código-fonte para ferramentas de análise estática a partir de um
-    conjunto de softwares da academia e da indústria
-* **H2:** Ferramentas de análise estática tendem a ter uma
-    maior complexidade estrutural do que ferramentas de outros domínios de
-    aplicação
-* **H3:** Dentre as ferramentas de análise estática de
-    código-fonte, aquelas desenvolvidas na indústria apresentam uma menor
-    complexidade estrutural
-</section>
-
-<section>
-### Seleção e coleta
-
-a seleção de ferramentas será feita através de uma revisão estruturada para
-ferramentas da academia e de uma busca livre para ferramentas da indústria
-
-a análise de código-fonte e coleta de suas métricas será feita de forma
-automatizada utilizando a ferramenta Analizo
-</section>
-
-<section>
-## samate.nist.gov
-</section>
-
-<section>
-## Revisão estruturada
-
-um processo disciplinado para seleção de artigos a partir de
-critérios bem definidos com o objetivo de encontrar ferramentas
-de análise estática de código-fonte
-</section>
-
-<section>
-### Caracterização das ferramentas
-
-* Entrada - quais tipos de arquivos podem ser carregados na ferramenta
-* Lançamentos (Releases) - quantos lançamentos por ano
-* Linguagens suportadas - quais linguagens de programação a ferramenta suporta
-* Tecnologia - quais tecnologias são usadas para procurar erros no código
-* ...
-
-<small>
-NOVAK, J.; KRAJNC, A. et al. Taxonomy of static code analysis tools. In: IEEE.
-MIPRO, 2010 Proceedings of the 33rd International Convention. [S.l.], 2010. p. 418–422.
-</small>
-</section>
 
 <section>
 <img src="files/analizo.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
@@ -321,75 +291,73 @@ visualization toolkit. In: CBSOFT-Ferramentas. [S.l.: s.n.], 2010.
 </small>
 </section>
 
-<section>
-### Interpretação dos valores de métricas
-
-as métricas serão coletadas para cada módulo de cada ferramenta,
-uma análise exploratória nos dará um entendimento inicial sobre
-a natureza dos dados
-</section>
 
 <section>
-## Resultados preliminares
+### Resultados do estudo 3
 
-✔ 315 artigos do SCAM avaliados e 9 ferramentas selecionadas
-
-✔ 54 ferramentas da indústria avaliadas e 14 selecionadas
-
-✔ 23 ferramentas analisadas de forma automatizada para coleta de métricas de código-fonte
-
-✔ início da análise exploratória dos dados
-
-✔ evolução inicial da ferramenta Analizo
+* 206 lançamentos (releases) com código fonte foram analisados
+* ...
 </section>
+
 
 <section>
-### Revisão estruturada do SCAM
+### Síntese de resultados
 
-<img src="files/revisao-estruturada-scam.png" style="box-shadow: 0px 0px 5px gray" />
+...
 </section>
+
 
 <section>
-### 23 ferramentas selecionadas
-
-<img src="files/ferramentas-selecionadas.png" style="box-shadow: 0px 0px 5px gray" />
+...
 </section>
+
 
 <section>
-# Análise exploratória
+### Recomendações
+
+...
 </section>
+
 
 <section>
-### Percentis da métrica ACC
+### Conclusões
 
-<img src="files/percentis-acc.png" style="box-shadow: 0px 0px 5px gray" />
+...
 </section>
+
 
 <section>
-### Média não é representativa
+## DCD C1
 
-<table><tr><td>
-<img src="files/histograma-acc.png" style="box-shadow: 0px 0px 5px gray; width:100%" />
-</td><td>
-<img src="files/curva-normal.png" style="box-shadow: 0px 0px 5px gray" />
-</td></tr></table>
-
-<small>
-Lanza e Marinescu(2006) Michele Lanza e Radu Marinescu. Object-Oriented Metrics in Practice:
-Using Software Metrics to Characterize, Evaluate and Improve the Design of Object-Oriented
-Systems. Hardcover.
-</small>
+...
 </section>
+
 
 <section>
-#### Métricas ACC e CBO no percentil 90
+## DCD C2
 
-<img src="files/tabela-metricas.png" style="box-shadow: 0px 0px 5px gray" />
+...
 </section>
+
 
 <section>
-<img src="files/grafico-acc-cbo.png" style="box-shadow: 0px 0px 5px gray" />
+### Contribuições
+
+...
 </section>
+
+
+<section>
+### Trabalhos futuros
+
+...
+</section>
+
+
+<section>
+...
+</section>
+
 
 <section>
 ### Evolução do Analizo
@@ -398,24 +366,10 @@ em 18 de Fevereiro de 2016 lançamos, no contexto deste trabalho,
 a versão 1.19.0 da ferramenta Analizo
 </section>
 
-<section>
-### Cronograma
-
-<img src="files/cronograma-qualificacao.png" />
-</section>
 
 <section data-background="#c4a000">
 <section>
 {% include slides_obrigado.html %}
-</section>
-<section>
-### Créditos
-
-<small>Imagens utilizadas nesta apresentação</small>
-
-<ul style="font-size: 24px">
-  <li>http://www.flickr.com/photos/odahumanity/4290838678</li>
-</ul>
 </section>
 <section>
 ### Histórico de apresentações
@@ -423,7 +377,7 @@ a versão 1.19.0 da ferramenta Analizo
 <small>Onde e quando esta apresentação foi realizada</small>
 
 <ul style="font-size: 24px">
-  <li>12 Julho 2016, UFBA DCC, Salvador, prévia da qualificação</li>
+  <li>19 Dezembro 2017, UFBA DCC, Salvador, defesa</li>
 </ul>
 </section>
 </section>
