@@ -27,17 +27,11 @@ Co-orientador: Dr. Paulo Roberto Miranda Meirelles
 
 
 <section>
-<!-- ### A Ciência depende de software -->
-
 <img src="files/code-is-science-model-1.png" style=";background:white;margin:0" />
 <br/>
-[http://www.codeisscience.com](http://www.codeisscience.com)
+[www.codeisscience.com](http://www.codeisscience.com)
 
-<small>[http://sciencecodemanifesto.org](http://sciencecodemanifesto.org)</small>
-
-<!--À medida que o software se torna uma tecnologia generalizada em praticamente
-todos os aspectos da condição humana, também é inserido firmemente no meio
-acadêmico, software analisa dados, simula o mundo real, e visualiza resultados.-->
+<small>[sciencecodemanifesto.org](http://sciencecodemanifesto.org)</small>
 
 <small>
 GOBLE, C. Better software, better research. IEEE Internet Computing, IEEE, v.
@@ -95,9 +89,9 @@ evolução?
 <section>
 ### Métricas
 
-* Publicização: ...
-* Reconhecimento: ...
-* Ciclo de vida: ...
+* **Publicização:** número de projetos disponíveis para download, com código fonte disponível, tipo de licença
+* **Reconhecimento:** número de citações, número de menções, número de usos e contribuições
+* **Ciclo de vida:** número total de lançamentos, data e número de versão de cada lançamento, variação no número de módulos do código fonte
 </section>
 
 
@@ -117,16 +111,9 @@ Studies in Industry.  [S.l.: s.n.], 2015. p. 8.
 </small>
 </section>
 
-<!--
-<section>
-<img src="files/research-strategies.png" />
-</section>
--->
 
 <section>
-
 <img src="files/estrategia-pesquisa.png" style="background:white;padding:10px" />
-
 </section>
 
 
@@ -160,7 +147,7 @@ impact: Current and future measures. Research Evaluation, v. 24, n. 4, p.
 
 
 <section>
-#### Visão dos incentivos de reputação e práticas de software acadêmico
+#### Incentivos de reputação e práticas de software acadêmico
 
 <img src="files/scientific-reputation-diagram.png" style="box-shadow:0px 0px 2px gray;background:white;padding:10px" />
 
@@ -239,9 +226,18 @@ CRUZ, D. d.; HENRIQUES, P. R.; PINTO, J. S. Code analysis: Past and present. 200
 
 
 <section>
-### Estudo 1: Publicização
+#### Estudo 1:
 
-<img src="files/estudo1-etapas.png" width="70%" style="background:white" />
+### Publicização de software acadêmico de análise estática
+
+<img src="files/estudo1-etapas.png" width="60%" style="background:white" />
+</section>
+
+
+<section>
+Revisão de literatura nas conferências ASE e SCAM
+
+<img src="files/revisao-literatura.png"  width="80%" style="background:white" />
 </section>
 
 
@@ -256,34 +252,49 @@ CRUZ, D. d.; HENRIQUES, P. R.; PINTO, J. S. Code analysis: Past and present. 200
 
 
 <section>
-### Estudo 2: Reconhecimento
+#### Estudo 2:
+
+### Reconhecimento de software acadêmico de análise estática
 
 <img src="files/estudo2-revisao-literatura.png" style="background:white" />
 </section>
 
 
 <section>
+<img width="90%" src="files/estudo2-revisao-literatura-resultados.png" style="background:white" />
+</section>
+
+
+<section>
 ### Resultados do estudo 2
 
+* 21% (13) são mencionados na literatura apenas na publicação inicial
+* 28% (17) dos projetos recebem contribuição além da publicação inicial
+* 43% (26) são utilizados em outras pesquisas além da publicação inicial
+
+<!--
 * 429 menções
 * 46% Cita
 * 29% Usa
 * 25% Contribui
   * 14% menções do paper inicial
   * 10% menções posterior
+-->
 </section>
 
 
 <section>
-### Estudo 3: Ciclo de vida
+#### Estudo 3:
 
-...
+### Ciclo de vida de software acadêmico de análise estática
+
 </section>
 
 
 <section>
 <img src="files/analizo.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
-<br/><span style="color:#555">http://analizo.org</span>
+<br/>
+[analizo.org](http://analizo.org)
 
 <small>
 Terceiro, A. et al. Analizo: an extensible multi-language source code analysis and
@@ -295,8 +306,15 @@ visualization toolkit. In: CBSOFT-Ferramentas. [S.l.: s.n.], 2010.
 <section>
 ### Resultados do estudo 3
 
+<img src="files/estagios-evolucao-ciclo-de-vida.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
+</section>
+
+
+<section>
+### Resultados do estudo 3
+
 * 206 lançamentos (releases) com código fonte foram analisados
-* ...
+* 76% dos projetos encontram-se em estado inicial de desenvolvimento ou encerrado
 </section>
 
 
@@ -308,62 +326,109 @@ visualization toolkit. In: CBSOFT-Ferramentas. [S.l.: s.n.], 2010.
 
 
 <section>
+O reconhecimento ao software acadêmico de análise estática vem crescendo
+
+<img src="files/mentions-trend.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
+</section>
+
+
+<section>
+Os projetos com licenças de software livre possuem maior reconhecimento
+
+<img src="files/license-vs-mentions.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
+</section>
+
+
+<section>
 ...
+
+<img src="files/modules-evolution-average.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
+</section>
+
+
+<section>
+80 artigos apresentam fortes indícios de serem impossíveis de reproduzir uma vez que
+fazem menção (usando ou contribuindo) a projetos de software acadêmico de análise
+estática em estágio _Closedown_.
 </section>
 
 
 <section>
 ### Recomendações
 
-...
+* Tornar o código fonte do software público o mais cedo possível
+* Fazer o software fácil de ser encontrado e citado fornecendo metadados
+* Adotar uma licença de software e respeitar as licenças dos outros projetos
+* Definir processos claros e transparentes de contribuição, governança e comunicação
+
+<small>
+JIMéNEZ, R. C. et al. Four simple recommendations to encourage best practices
+in research software. F1000Research, v. 6, p. 876, jun. 2017. ISSN 2046-1402.
+Disponı́vel em: https://f1000research.com/articles/6-876/v1i.
+</small>
 </section>
 
 
 <section>
 ### Conclusões
 
+* 3% (61) artigos, entre 1873, publicam software acadêmico de análise estática com indicação de URL
+* entre os 61 artigos encontramos 60 projetos de software acadêmico de análise estática
+* 33% (20) dos projetos encontram-se em estágio inicial de desenvolvimento
+* 40% (24) dos projetos encontram-se encerrados e não estão disponíveis para download
+</section>
+
+
+<section>
+**Questão:** Como a desordem caótica disfuncional (DCD) pode explicar a
+sustentabilidade técnica dos projetos do ecossistema de software acadêmico de
+análise estática em termos de publicização, reconhecimento e estágio de
+evolução?
+</section>
+
+
+<section>
+### DCD C1:
+
+## Existência de muitos projetos com poucos usuários
+
 ...
 </section>
 
 
 <section>
-## DCD C1
+### DCD C2:
+
+## Projetos com ciclos de vida curtos que se encerram junto ao ~~financiamento~~ inicial
 
 ...
 </section>
-
 
 <section>
-## DCD C2
+As características **C3**, **C4** e **C5** de DCD estão fora do escopo deste estudo.
 
-...
+* **C3:** Comunidades de usuários desconectadas e paralelas;
+* **C4:** Incompatibilidades entre os projetos de maneira persistente e imutável;
+* **C5:** Tentativas constantes e aparentemente não coordenadas de "reiniciar" tudo (_re-boots_).
 </section>
-
 
 <section>
 ### Contribuições
 
-...
+* Um catálogo de projetos de software acadêmico para serem utilizados em outras pesquisas
+* Amadurecimento no debate sobre sustentabilidade de software
+* Alerta sobre os problemas causados pela indisponibilidade dos códigos produzidos nas pesquisas
+* Um framework para avaliação do fenômeno DCD em um domínio de aplicação específico
 </section>
 
 
 <section>
 ### Trabalhos futuros
 
-...
-</section>
-
-
-<section>
-...
-</section>
-
-
-<section>
-### Evolução do Analizo
-
-em 18 de Fevereiro de 2016 lançamos, no contexto deste trabalho,
-a versão 1.19.0 da ferramenta Analizo
+* Atualizar o perído da revisão de literatura do estudo 1 para seleção de projetos
+* Selecionar projetos de software acadêmico em outras conferências importantes
+* Caracterizar outras dimensões do software na visão de usuário e engenheiros de software
+* Incluir na revisão de literatura jornais específicos para software, exemplos, JOSS, JORS e SoftwareX
 </section>
 
 

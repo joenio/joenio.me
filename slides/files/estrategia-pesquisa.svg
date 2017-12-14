@@ -37,38 +37,6 @@
          inkscape:connector-curvature="0" />
     </marker>
     <marker
-       inkscape:stockid="Arrow1Mend"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="marker4138"
-       style="overflow:visible"
-       inkscape:isstock="true"
-       inkscape:collect="always">
-      <path
-         id="path4136"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
-         transform="matrix(-0.4,0,0,-0.4,-4,0)"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker3560"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow1Mend"
-       inkscape:collect="always">
-      <path
-         inkscape:connector-curvature="0"
-         transform="matrix(-0.4,0,0,-0.4,-4,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="path3558" />
-    </marker>
-    <marker
        inkscape:isstock="true"
        style="overflow:visible"
        id="marker1159"
@@ -91,9 +59,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.42"
-     inkscape:cx="620.61765"
-     inkscape:cy="314.17221"
+     inkscape:zoom="0.38"
+     inkscape:cx="1369.9973"
+     inkscape:cy="562.71292"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -115,7 +83,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -124,204 +92,148 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(206.91541,2.0166366)">
-    <rect
-       y="-0.4291366"
-       x="-205.32791"
-       height="142.65231"
-       width="168.57924"
+    <path
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="M -205.32791,-0.4291366 H -36.748672 V 126.87735 H -205.32791 Z"
        id="rect876"
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.86247921px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.61640495px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-142.36829"
-       y="19.971027"
+       x="-147.21584"
+       y="22.616863"
        id="text12"><tspan
          sodipodi:role="line"
          id="tspan10"
-         x="-142.36829"
-         y="19.971027"
-         style="stroke-width:0.61640495px">Estudo 1</tspan></text>
+         x="-147.21584"
+         y="22.616863"
+         style="font-size:14.11111069px;stroke-width:0.61640495px">Estudo 1</tspan></text>
     <text
        id="text868"
-       y="48.989681"
-       x="-123.47659"
+       y="64.335526"
+       x="-121.46185"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.86247921px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.61640495px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         style="text-align:center;text-anchor:middle;stroke-width:0.61640495px"
-         y="48.989681"
-         x="-123.47659"
+         style="font-size:14.11111069px;text-align:center;text-anchor:middle;stroke-width:0.61640495px"
+         y="64.335526"
+         x="-121.46185"
          id="tspan866"
-         sodipodi:role="line">Revisão de literatura das</tspan><tspan
-         style="text-align:center;text-anchor:middle;stroke-width:0.61640495px"
-         y="61.31778"
-         x="-123.47659"
+         sodipodi:role="line">Revisão de literatura</tspan><tspan
+         style="font-size:14.11111069px;text-align:center;text-anchor:middle;stroke-width:0.61640495px"
+         y="77.938217"
+         x="-121.46185"
          sodipodi:role="line"
-         id="tspan3544">conferências ASE e SCAM</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.86247921px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.61640495px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-123.78971"
-       y="96.085503"
-       id="text874"><tspan
+         id="tspan3544">das conferências</tspan><tspan
+         style="font-size:14.11111069px;text-align:center;text-anchor:middle;stroke-width:0.61640495px"
+         y="91.540909"
+         x="-121.46185"
          sodipodi:role="line"
-         id="tspan872"
-         x="-123.78971"
-         y="96.085503"
-         style="text-align:center;text-anchor:middle;stroke-width:0.61640495px">Selecionou e caracterizou</tspan><tspan
-         sodipodi:role="line"
-         x="-123.78972"
-         y="108.4136"
-         style="text-align:center;text-anchor:middle;stroke-width:0.61640495px"
-         id="tspan3546">60 projetos de software acadêmico</tspan><tspan
-         sodipodi:role="line"
-         x="-123.78971"
-         y="120.7417"
-         style="text-align:center;text-anchor:middle;stroke-width:0.61640495px"
-         id="tspan3548">de análise estática</tspan></text>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.00000006, 2.00000006;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker4138)"
-       d="M -123.7217,67.624952 V 82.970785"
-       id="path3550"
-       inkscape:connector-curvature="0" />
+         id="tspan60">ASE e SCAM</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.79374995, 0.79374995;stroke-dashoffset:0;stroke-opacity:1"
-       d="m -166.81122,30.054118 h 85.72501"
+       d="m -166.81122,38.52079 h 85.72501"
        id="path4018"
        inkscape:connector-curvature="0" />
-    <rect
+    <path
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="M -25.411158,-0.4291366 H 143.16808 V 126.87735 H -25.411158 Z"
        id="rect4020"
-       width="168.57924"
-       height="142.65231"
-       x="-25.411158"
-       y="-0.4291366" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
     <text
        id="text4024"
-       y="19.971027"
-       x="37.548374"
+       y="22.616863"
+       x="31.543806"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.86247921px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.61640495px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         style="stroke-width:0.61640495px"
-         y="19.971027"
-         x="37.548374"
+         style="font-size:14.11111069px;stroke-width:0.61640495px"
+         y="22.616863"
+         x="31.543806"
          id="tspan4022"
          sodipodi:role="line">Estudo 2</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.86247921px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.61640495px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="56.440048"
-       y="48.989681"
+       x="58.454906"
+       y="64.335526"
        id="text4030"><tspan
          sodipodi:role="line"
          id="tspan4026"
-         x="56.440048"
-         y="48.989681"
-         style="text-align:center;text-anchor:middle;stroke-width:0.61640495px">Revisão de literatura nas</tspan><tspan
+         x="58.454906"
+         y="64.335526"
+         style="font-size:14.11111069px;text-align:center;text-anchor:middle;stroke-width:0.61640495px">Revisão de literatura</tspan><tspan
          id="tspan4028"
          sodipodi:role="line"
-         x="56.440048"
-         y="61.31778"
-         style="text-align:center;text-anchor:middle;stroke-width:0.61640495px">bases ACM e IEEE</tspan></text>
-    <text
-       id="text4038"
-       y="96.085503"
-       x="56.126923"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.86247921px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.61640495px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         style="text-align:center;text-anchor:middle;stroke-width:0.61640495px"
-         y="96.085503"
-         x="56.126923"
-         id="tspan4032"
-         sodipodi:role="line">Encontrou e classificou</tspan><tspan
-         style="text-align:center;text-anchor:middle;stroke-width:0.61640495px"
-         y="108.4136"
-         x="56.126923"
+         x="58.454906"
+         y="77.938217"
+         style="font-size:14.11111069px;text-align:center;text-anchor:middle;stroke-width:0.61640495px">nas bases</tspan><tspan
          sodipodi:role="line"
-         id="tspan4096">429 menções aos 60 projetos</tspan></text>
-    <path
-       inkscape:connector-curvature="0"
-       id="path4040"
-       d="M 56.194987,67.624952 V 82.970785"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.00000006, 2.00000006;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker3560)" />
+         x="58.454906"
+         y="91.540909"
+         style="font-size:14.11111069px;text-align:center;text-anchor:middle;stroke-width:0.61640495px"
+         id="tspan73">ACM e IEEE</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path4042"
-       d="M 13.105491,30.054118 H 98.830463"
+       d="M 16.015976,38.52079 H 101.74095"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.79374995, 0.79374995;stroke-dashoffset:0;stroke-opacity:1" />
-    <rect
-       y="-0.4291366"
-       x="154.50552"
-       height="142.65231"
-       width="168.57924"
+    <path
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="M 154.50552,-0.4291366 H 323.08476 V 126.87735 H 154.50552 Z"
        id="rect4112"
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.86247921px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.61640495px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="217.4651"
-       y="19.971027"
+       x="211.49577"
+       y="22.616863"
        id="text4116"><tspan
          sodipodi:role="line"
          id="tspan4114"
-         x="217.4651"
-         y="19.971027"
-         style="stroke-width:0.61640495px">Estudo 3</tspan></text>
+         x="211.49577"
+         y="22.616863"
+         style="font-size:14.11111069px;stroke-width:0.61640495px">Estudo 3</tspan></text>
     <text
        id="text4122"
-       y="48.989681"
-       x="236.35678"
+       y="64.490746"
+       x="238.54257"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.86247921px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.61640495px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         style="text-align:center;text-anchor:middle;stroke-width:0.61640495px"
-         y="48.989681"
-         x="236.35678"
+         style="font-size:14.11111069px;text-align:center;text-anchor:middle;stroke-width:0.61640495px"
+         y="64.490746"
+         x="238.54257"
          id="tspan4118"
-         sodipodi:role="line">Coletou métricas de código</tspan><tspan
-         style="text-align:center;text-anchor:middle;stroke-width:0.61640495px"
-         y="61.31778"
-         x="236.35678"
+         sodipodi:role="line">Análise de código</tspan><tspan
+         style="font-size:14.11111069px;text-align:center;text-anchor:middle;stroke-width:0.61640495px"
+         y="78.093437"
+         x="238.54257"
          sodipodi:role="line"
-         id="tspan4120">fonte de 221 versões dos proetos</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.86247921px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.61640495px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="236.04367"
-       y="96.085503"
-       id="text4128"><tspan
+         id="tspan4120">fonte e coleta de</tspan><tspan
+         style="font-size:14.11111069px;text-align:center;text-anchor:middle;stroke-width:0.61640495px"
+         y="91.696129"
+         x="238.54257"
          sodipodi:role="line"
-         id="tspan4124"
-         x="236.04367"
-         y="96.085503"
-         style="text-align:center;text-anchor:middle;stroke-width:0.61640495px">Caracterizou os projetos em</tspan><tspan
+         id="tspan75">informações sobre</tspan><tspan
+         style="font-size:14.11111069px;text-align:center;text-anchor:middle;stroke-width:0.61640495px"
+         y="105.29881"
+         x="238.54257"
          sodipodi:role="line"
-         x="236.04367"
-         y="108.4136"
-         style="text-align:center;text-anchor:middle;stroke-width:0.61640495px"
-         id="tspan4134">relação ao estágio de evolução</tspan><tspan
-         id="tspan4126"
-         sodipodi:role="line"
-         x="236.04367"
-         y="120.7417"
-         style="text-align:center;text-anchor:middle;stroke-width:0.61640495px">no ciclo de vida</tspan></text>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.00000006, 2.00000006;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker3560)"
-       d="M 236.11174,67.624952 V 82.970785"
-       id="path4130"
-       inkscape:connector-curvature="0" />
+         id="tspan77">lançamentos</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.79374995, 0.79374995;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 193.02222,30.054118 h 85.72502"
+       d="m 195.93263,38.52079 h 85.72502"
        id="path4132"
        inkscape:connector-curvature="0" />
     <path
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.5875, 1.5875;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       d="m -204.92564,149.5906 h 527.01127 l -200.025,45.55996 H -8.6047857 Z"
+       d="M -199.63397,133.18639 H 316.79396 L 122.06063,178.74635 H -8.6047857 Z"
        id="rect4726"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <rect
-       y="201.79404"
+       y="185.38994"
        x="-9.0855484"
        height="42.538048"
        width="133.81136"
@@ -330,23 +242,23 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.86247921px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.61640495px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="42.388031"
-       y="175.91121"
+       x="35.413105"
+       y="159.50711"
        id="text4740"><tspan
          sodipodi:role="line"
          id="tspan4738"
-         x="42.388031"
-         y="175.91121"
-         style="stroke-width:0.61640495px">Síntese</tspan></text>
+         x="35.413105"
+         y="159.50711"
+         style="font-size:14.11111069px;stroke-width:0.61640495px">Síntese</tspan></text>
     <text
        id="text4746"
-       y="226.60368"
-       x="32.696926"
+       y="210.19958"
+       x="21.874168"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.86247921px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.61640495px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         style="stroke-width:0.61640495px"
-         y="226.60368"
-         x="32.696926"
+         style="font-size:14.11111069px;stroke-width:0.61640495px"
+         y="210.19958"
+         x="21.874168"
          id="tspan4744"
          sodipodi:role="line">Conclusões</tspan></text>
   </g>
