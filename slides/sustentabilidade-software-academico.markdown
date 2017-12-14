@@ -136,7 +136,7 @@ Informatik, 2017. v. 6, n. 1.
 <section>
 #### Modelo de processo de software acadêmico
 
-<img src="files/process-model-scientific-software.png" style="box-shadow: 0px 0px 5px gray" />
+<img src="files/process-model-scientific-software.png" />
 
 <small>
 HOWISON, J. et al. Understanding the scientific software ecosystem and its
@@ -149,7 +149,7 @@ impact: Current and future measures. Research Evaluation, v. 24, n. 4, p.
 <section>
 #### Incentivos de reputação e práticas de software acadêmico
 
-<img src="files/scientific-reputation-diagram.png" style="box-shadow:0px 0px 2px gray;background:white;padding:10px" />
+<img src="files/scientific-reputation-diagram.png" style="background: white" />
 
 <small>
 HOWISON, J.; HERBSLEB, J. D. Scientific software production: incentives and
@@ -306,7 +306,7 @@ visualization toolkit. In: CBSOFT-Ferramentas. [S.l.: s.n.], 2010.
 <section>
 ### Resultados do estudo 3
 
-<img src="files/estagios-evolucao-ciclo-de-vida.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
+<img src="files/estagios-evolucao-ciclo-de-vida.png" width="80%" style="box-shadow: 0px 0px 5px gray; border-radius: 5px; padding: 10px" />
 </section>
 
 
@@ -328,21 +328,21 @@ visualization toolkit. In: CBSOFT-Ferramentas. [S.l.: s.n.], 2010.
 <section>
 O reconhecimento ao software acadêmico de análise estática vem crescendo
 
-<img src="files/mentions-trend.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
+<img src="files/mentions-trend.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px; padding: 10px" />
 </section>
 
 
 <section>
 Os projetos com licenças de software livre possuem maior reconhecimento
 
-<img src="files/license-vs-mentions.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
+<img width="80%" src="files/license-vs-mentions.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px; padding: 15px" />
 </section>
 
 
 <section>
-...
+O crescimento médio no número de módulos confirma a lei de "Crescimento Contínuo" do software
 
-<img src="files/modules-evolution-average.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
+<img width="65%" src="files/modules-evolution-average.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
 </section>
 
 
