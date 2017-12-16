@@ -32,3 +32,18 @@ section .box-white {
   border: 0;
   box-shadow: none;
 }
+
+.reveal .slide-number {
+  font-size: 26px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.reveal .cite {
+  font-size: 22px;
+  margin-top: 15px;
+  color: #222;
+}
+
+.reveal .progress {
+  color: red;
+}

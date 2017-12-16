@@ -25,37 +25,139 @@ Orientadora: Dra. Christina von Flach G. Chavez<br/>
 Co-orientador: Dr. Paulo Roberto Miranda Meirelles
 </section>
 
+<section>
+### Agenda
+
+1. Conceitos, motivação e contextualização
+1. Objetivos, estratégia e questão de pesquisa
+1. Estudos realizados e seus resultados
+1. Síntese de resultados e conclusões
+1. Recomendações aos desenvolvedores de software acadêmico
+</section>
+
 
 <section>
-<img src="files/code-is-science-model-1.png" style=";background:white;margin:0" />
-<br/>
-[www.codeisscience.com](http://www.codeisscience.com)
+### Software acadêmico
 
-<small>[sciencecodemanifesto.org](http://sciencecodemanifesto.org)</small>
+Todo software usado para coletar, processar ou analisar resultados de pesquisas
+com intenção de publicação na literatura acadêmica, incluindo desde protótipos
+escritos pelos próprios cientistas, a produtos completos desenvolvidos
+profissionalmente.
 
-<small>
-GOBLE, C. Better software, better research. IEEE Internet Computing, IEEE, v.
-18, n. 5, p. 4–8, 2014.
+<small class="cite">
+ALLEN, A. et al. **Engineering academic software (dagstuhl perspectives workshop
+16252)**. In: Dagstuhl Manifestos. [S.l.]: Schloss Dagstuhl-Leibniz-Zentrum fuer
+Informatik, 2017.
+</small>
+</section>
+
+<section>
+#### Modelos de desenvolvimento de software acadêmico
+
+* Software como serviço de suporte
+* Software para crédito acadêmico
+  * Software Incidental
+  * Prática de software paralela
+  * Um subcampo de software
+
+<small class="cite">
+HOWISON, J.; HERBSLEB, J. D. **Scientific software production: incentives and
+collaboration**. In: Proceedings of the ACM 2011 conference on Computer supported
+cooperative work. [S.l.: s.n.], 2011.
 </small>
 </section>
 
 
 <section>
-### Motivação
+#### Modelo de processo de software acadêmico
 
-O software acadêmico sofre de um fenômeno conhecido por desordem caótica disfuncional
+<img src="files/process-model-scientific-software.png" />
+
+<small class="cite">
+HOWISON, J. et al. **Understanding the scientific software ecosystem and its
+impact: Current and future measures**. Research Evaluation, v. 24, n. 4, p.
+454–470, 2015.
+</small>
+</section>
+
+
+
+<section>
+#### Incentivos de reputação e práticas de software acadêmico
+
+<img src="files/scientific-reputation-diagram.png" style="background: white" />
+
+<small class="cite">
+HOWISON, J.; HERBSLEB, J. D. **Scientific software production: incentives and
+collaboration**. In: Proceedings of the ACM 2011 conference on Computer supported
+cooperative work. [S.l.: s.n.], 2011.
+</small>
+</section>
+
+
+<section>
+**Ecossistema de Software** (_Software Ecosystem_) - SECO é interação entre
+diversos atores numa plataforma tecnológica comum, resultando em novas soluções
+de software ou novos serviços.
+
+<small class="cite">
+MANIKAS, K.; HANSEN, K. M. **Software ecosystems–a systematic literature
+review**. Journal of Systems and Software, Elsevier, v. 86, n. 5, p.
+1294–1306, 2013.
+</small>
+</section>
+
+
+<section>
+
+<section>
+> 56% dos pesquisadores de todas as áreas do Reino Unido desenvolvem software acadêmico.
+<small class="cite">
+HETTRICK, S. et al. **UK Research Software Survey 2014**. 2014.
+</small>
+</section>
+
+<section>
+> 90% dos pesquisadores na astronomia desenvolvem suas próprias ferramentas de software.
+<small class="cite">
+MOMCHEVA, I.; TOLLERUD, E. **Software use in astronomy: an informal
+survey**. arXiv preprint arXiv:1507.03989, 2015.
+</small>
+</section>
+
+<section>
+> Muitas pesquisas não mencionam sequer o uso de software acadêmico em suas publicações.
+<small class="cite">
+HOWISON, J.; BULLARD, J. **Software in the scientific literature: Problems with
+seeing, finding, and using software mentioned in the biology literature**.
+Journal of the Association for Information Science and Technology, v. 67, n. 9,
+p. 2137–2155, 2016.
+</section>
+
+<section>
+> Grande parte dos pesquisadores não sabem o quão confiável seus projetos de software são.
+<small class="cite">
+MERALI, Z. **Computational science: Error, why scientific programming does not
+compute**. Nature, Nature Publishing Group, v. 467, n. 7317, p. 775–777, oct
+2010.
+</section>
+
+</section>
+
+<section>
+O software acadêmico sofre de um fenômeno conhecido por **Desordem Caótica Disfuncional**
 (_"dysfunctional chaotic churn"_) - DCD.
 
-<small>
-HOWISON, J. et al. Understanding the scientific software ecosystem and its
-impact: Current and future measures. Research Evaluation, v. 24, n. 4, p.
-454–470, 2015. Disponível em: http://dx.doi.org/10.1093/reseval/rvv014i.
+<small class="cite">
+HOWISON, J. et al. **Understanding the scientific software ecosystem and its
+impact: Current and future measures**. Research Evaluation, v. 24, n. 4, p.
+454–470, 2015.
 </small>
 </section>
 
 
 <section>
-#### Desordem caótica disfuncional (DCD):
+#### Desordem Caótica Disfuncional (DCD):
 
 * Existência de muitos projetos com poucos usuários;
 * Projetos com ciclos de vida curtos que se encerram junto ao financiamento inicial;
@@ -65,6 +167,47 @@ impact: Current and future measures. Research Evaluation, v. 24, n. 4, p.
 </section>
 
 
+
+<section>
+# Sustentabilidade
+
+<span class="fragment">individual</span>
+<span class="fragment">+ social</span>
+<span class="fragment">+ econômica</span>
+<span class="fragment">+ ambiental</span>
+<span class="fragment">+ técnica</span>
+
+<small class="cite">
+BECKER, C. et al. **The karlskrona manifesto for sustainability design**. CoRR,
+abs/1410.6968, 2014.
+</small>
+</section>
+
+
+<section>
+## Como medir sustentabilidade de software?
+
+## Qual perspectiva usar?
+
+<!-- sustentabilidade como um princípio a ser seguido, um requisito não-funcional, como uma propriedade emergente -->
+<small class="cite">
+VENTERS, C. C. et al. **Software sustainability: The modern tower of babel**. In:
+CEUR Workshop Proceedings. [S.l.: s.n.], 2014.
+</small>
+</section>
+
+
+<section>
+### Sustentabilidade técnica de software
+
+A dimensão técnica diz respeito a capacidade do software de perdurar e de
+continuar sendo suportado ao longo do tempo, implicando em qualidades de
+longevidade e manutenção.
+
+</section>
+
+
+<!--
 <section>
 ### Objetivo
 
@@ -74,6 +217,7 @@ publicização, reconhecimento e ciclo de vida na perspectiva do cientista de
 software acadêmico no contexto das conferências de Engenharia de Software ASE e
 SCAM.
 </section>
+-->
 
 
 <section>
@@ -89,9 +233,9 @@ evolução?
 <section>
 ### Métricas
 
-* **Publicização:** número de projetos disponíveis para download, com código fonte disponível, tipo de licença
-* **Reconhecimento:** número de citações, número de menções, número de usos e contribuições
-* **Ciclo de vida:** número total de lançamentos, data e número de versão de cada lançamento, variação no número de módulos do código fonte
+* **Publicização:** número de projetos disponíveis para download, com código fonte disponível, tipo de licença.
+* **Reconhecimento:** número de citações, número de menções, número de usos e contribuições.
+* **Ciclo de vida:** número total de lançamentos, data e número de versão de cada lançamento, variação no número de módulos do código fonte.
 </section>
 
 
@@ -104,105 +248,16 @@ Estudo de caso exploratório, características:
 * Baixo nível de generalização e alto realismo do contexto;
 * Sem intervenção do pesquisador no ambiente.
 
-<small>
-STOL, K.-J.; FITZGERALD, B. A holistic overview of software engineering
-research strategies. In: 3rd International Workshop on Conducting Empirical
-Studies in Industry.  [S.l.: s.n.], 2015. p. 8.
+<small class="cite">
+STOL, K.-J.; FITZGERALD, B. **A holistic overview of software engineering
+research strategies**. In: 3rd International Workshop on Conducting Empirical
+Studies in Industry.  [S.l.: s.n.], 2015.
 </small>
 </section>
 
 
 <section>
 <img src="files/estrategia-pesquisa.png" style="background:white;padding:10px" />
-</section>
-
-
-<section>
-### Software acadêmico
-
-Todo software usado para coletar, processar ou analisar resultados de pesquisas
-com intenção de publicação na literatura acadêmica, incluindo desde protótipos
-escritos pelos próprios cientistas, a produtos completos desenvolvidos
-profissionalmente.
-
-<small>
-ALLEN, A. et al. Engineering academic software (dagstuhl perspectives workshop
-16252). In: Dagstuhl Manifestos. [S.l.]: Schloss Dagstuhl-Leibniz-Zentrum fuer
-Informatik, 2017. v. 6, n. 1.
-</small>
-</section>
-
-
-<section>
-#### Modelo de processo de software acadêmico
-
-<img src="files/process-model-scientific-software.png" />
-
-<small>
-HOWISON, J. et al. Understanding the scientific software ecosystem and its
-impact: Current and future measures. Research Evaluation, v. 24, n. 4, p.
-454–470, 2015. Disponível em: http://dx.doi.org/10.1093/reseval/rvv014i.
-</small>
-</section>
-
-
-<section>
-#### Incentivos de reputação e práticas de software acadêmico
-
-<img src="files/scientific-reputation-diagram.png" style="background: white" />
-
-<small>
-HOWISON, J.; HERBSLEB, J. D. Scientific software production: incentives and
-collaboration. In: Proceedings of the ACM 2011 conference on Computer supported
-cooperative work. [S.l.: s.n.], 2011. p. 513–522.
-</small>
-</section>
-
-
-<section>
-### Sustentabilidade de software
-
-Sustentabilidade é um tema multidisciplinar, sistêmico e com múltiplas
-dimensões:
-
-* Individual
-* Social
-* Econômica
-* Ambiental
-* Técnica
-
-<small>
-BECKER, C. et al. The karlskrona manifesto for sustainability design. CoRR,
-abs/1410.6968, 2014. Disponı́vel em: hhttp://arxiv.org/abs/1410.6968i.
-</small>
-</section>
-
-
-<section>
-### Sustentabilidade técnica de software
-
-A dimensão técnica diz respeito a capacidade do software de perdurar e de
-continuar sendo suportado ao longo do tempo, implicando em qualidades de
-longevidade e manutenção.
-
-<small>
-VENTERS, C. C. et al. Software sustainability: The modern tower of babel. In:
-CEUR Workshop Proceedings. [S.l.: s.n.], 2014. v. 1216, p. 7–12.
-</small>
-</section>
-
-
-<section>
-#### Ciclo de vida de software
-
-<img src="files/staged-model-foss-cycle.png" style="box-shadow:0px 0px 2px gray;background:white" />
-
-<small>
-CAPILUPPI, A. et al. Adapting the staged model for software evolution to
-free/libre/open source software. In: Ninth international workshop on Principles
-of software evolution: in conjunction with the 6th ESEC/FSE joint meeting.
-[S.l.: s.n.], 2007. p. 79–82.
-</small>
 </section>
 
 
@@ -291,14 +346,30 @@ Revisão de literatura nas conferências ASE e SCAM
 </section>
 
 
+
+<section>
+#### Ciclo de vida de software
+
+<img src="files/staged-model-foss-cycle.png" style="box-shadow:0px 0px 2px gray;background:white" />
+
+<small>
+CAPILUPPI, A. et al. Adapting the staged model for software evolution to
+free/libre/open source software. In: Ninth international workshop on Principles
+of software evolution: in conjunction with the 6th ESEC/FSE joint meeting.
+[S.l.: s.n.], 2007. p. 79–82.
+</small>
+</section>
+
+
 <section>
 <img src="files/analizo.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
 <br/>
 [analizo.org](http://analizo.org)
 
-<small>
-Terceiro, A. et al. Analizo: an extensible multi-language source code analysis and
-visualization toolkit. In: CBSOFT-Ferramentas. [S.l.: s.n.], 2010.
+<small class="cite">
+Terceiro, A. et al. **Analizo: an extensible multi-language source code
+analysis and visualization toolkit**. In: CBSOFT-Ferramentas. [S.l.: s.n.],
+2010.
 </small>
 </section>
 
@@ -321,7 +392,6 @@ visualization toolkit. In: CBSOFT-Ferramentas. [S.l.: s.n.], 2010.
 <section>
 ### Síntese de resultados
 
-...
 </section>
 
 
@@ -354,22 +424,6 @@ estática em estágio _Closedown_.
 
 
 <section>
-### Recomendações
-
-* Tornar o código fonte do software público o mais cedo possível
-* Fazer o software fácil de ser encontrado e citado fornecendo metadados
-* Adotar uma licença de software e respeitar as licenças dos outros projetos
-* Definir processos claros e transparentes de contribuição, governança e comunicação
-
-<small>
-JIMéNEZ, R. C. et al. Four simple recommendations to encourage best practices
-in research software. F1000Research, v. 6, p. 876, jun. 2017. ISSN 2046-1402.
-Disponı́vel em: https://f1000research.com/articles/6-876/v1i.
-</small>
-</section>
-
-
-<section>
 ### Conclusões
 
 * 3% (61) artigos, entre 1873, publicam software acadêmico de análise estática com indicação de URL
@@ -392,7 +446,6 @@ evolução?
 
 ## Existência de muitos projetos com poucos usuários
 
-...
 </section>
 
 
@@ -401,7 +454,6 @@ evolução?
 
 ## Projetos com ciclos de vida curtos que se encerram junto ao ~~financiamento~~ inicial
 
-...
 </section>
 
 <section>
@@ -430,6 +482,37 @@ As características **C3**, **C4** e **C5** de DCD estão fora do escopo deste e
 * Caracterizar outras dimensões do software na visão de usuário e engenheiros de software
 * Incluir na revisão de literatura jornais específicos para software, exemplos, JOSS, JORS e SoftwareX
 </section>
+
+
+<section>
+<img src="files/code-is-science-model-1.png" style=";background:white;margin:0" />
+<br/>
+[www.codeisscience.com](http://www.codeisscience.com)
+
+<small>[sciencecodemanifesto.org](http://sciencecodemanifesto.org)</small>
+
+<small>
+GOBLE, C. Better software, better research. IEEE Internet Computing, IEEE, v.
+18, n. 5, p. 4–8, 2014.
+</small>
+</section>
+
+
+<section>
+### Recomendações
+
+* Tornar o código fonte do software público o mais cedo possível
+* Fazer o software fácil de ser encontrado e citado fornecendo metadados
+* Adotar uma licença de software e respeitar as licenças dos outros projetos
+* Definir processos claros e transparentes de contribuição, governança e comunicação
+
+<small>
+JIMéNEZ, R. C. et al. Four simple recommendations to encourage best practices
+in research software. F1000Research, v. 6, p. 876, jun. 2017. ISSN 2046-1402.
+Disponı́vel em: https://f1000research.com/articles/6-876/v1i.
+</small>
+</section>
+
 
 
 <section data-background="#c4a000">
