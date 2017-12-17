@@ -109,8 +109,6 @@ review**. Journal of Systems and Software, Elsevier, v. 86, n. 5, p.
 
 
 <section>
-
-<section>
 > 56% dos pesquisadores de todas as áreas do Reino Unido desenvolvem software acadêmico.
 <small class="cite">
 HETTRICK, S. et al. **UK Research Software Survey 2014**. 2014.
@@ -142,7 +140,7 @@ compute**. Nature, Nature Publishing Group, v. 467, n. 7317, p. 775–777, oct
 2010.
 </section>
 
-</section>
+
 
 <section>
 O software acadêmico sofre de um fenômeno conhecido por **Desordem Caótica Disfuncional**
@@ -159,23 +157,44 @@ impact: Current and future measures**. Research Evaluation, v. 24, n. 4, p.
 <section>
 #### Desordem Caótica Disfuncional (DCD):
 
-* Existência de muitos projetos com poucos usuários;
-* Projetos com ciclos de vida curtos que se encerram junto ao financiamento inicial;
-* Comunidades de usuários desconectadas e paralelas;
-* Incompatibilidades entre os projetos de maneira persistente e imutável;
-* Tentativas constantes e aparentemente não coordenadas de "reiniciar" tudo (_re-boots_).
+1. Existência de muitos projetos com poucos usuários;
+1. Projetos com ciclos de vida curtos que se encerram junto ao financiamento inicial;
+1. Comunidades de usuários desconectadas e paralelas;
+1. Incompatibilidades entre os projetos de maneira persistente e imutável;
+1. Tentativas constantes e aparentemente não coordenadas de "reiniciar" tudo (_re-boots_).
 </section>
 
 
+<section>
+### Questão de pesquisa
+
+Como a DCD pode explicar a **sustentabilidade** técnica dos projetos do
+ecossistema de software acadêmico de análise estática em termos de
+publicização, reconhecimento e estágio de evolução?
+</section>
+
+<section>
+---
+
+#### Manifesto from Dagstuhl Perspectives Workshop 16252
+
+### Engineering Academic Software
+
+---
+
+> "A qualidade e a **sustentabilidade** do software acadêmico deve ser avaliado tanto à _priori_ quanto à _posteriori_."
+
+<small class="cite">
+ALLEN, A. et al. **Engineering academic software (dagstuhl perspectives workshop
+16252)**. In: Dagstuhl Manifestos. [S.l.]: Schloss Dagstuhl-Leibniz-Zentrum fuer
+Informatik, 2017.
+</small>
+</section>
 
 <section>
 # Sustentabilidade
 
-<span class="fragment">individual</span>
-<span class="fragment">+ social</span>
-<span class="fragment">+ econômica</span>
-<span class="fragment">+ ambiental</span>
-<span class="fragment">+ técnica</span>
+individual - social - econômica - ambiental - **técnica**
 
 <small class="cite">
 BECKER, C. et al. **The karlskrona manifesto for sustainability design**. CoRR,
@@ -183,6 +202,16 @@ abs/1410.6968, 2014.
 </small>
 </section>
 
+
+
+<section>
+### Sustentabilidade técnica de software
+
+A dimensão técnica diz respeito a capacidade do software de perdurar e de
+continuar sendo suportado ao longo do tempo, implicando em qualidades de
+longevidade e manutenção.
+
+</section>
 
 <section>
 ## Como medir sustentabilidade de software?
@@ -197,16 +226,6 @@ CEUR Workshop Proceedings. [S.l.: s.n.], 2014.
 </section>
 
 
-<section>
-### Sustentabilidade técnica de software
-
-A dimensão técnica diz respeito a capacidade do software de perdurar e de
-continuar sendo suportado ao longo do tempo, implicando em qualidades de
-longevidade e manutenção.
-
-</section>
-
-
 <!--
 <section>
 ### Objetivo
@@ -218,25 +237,6 @@ software acadêmico no contexto das conferências de Engenharia de Software ASE 
 SCAM.
 </section>
 -->
-
-
-<section>
-### Questão de pesquisa
-
-**Questão:** Como a desordem caótica disfuncional (DCD) pode explicar a
-sustentabilidade técnica dos projetos do ecossistema de software acadêmico de
-análise estática em termos de publicização, reconhecimento e estágio de
-evolução?
-</section>
-
-
-<section>
-### Métricas
-
-* **Publicização:** número de projetos disponíveis para download, com código fonte disponível, tipo de licença.
-* **Reconhecimento:** número de citações, número de menções, número de usos e contribuições.
-* **Ciclo de vida:** número total de lançamentos, data e número de versão de cada lançamento, variação no número de módulos do código fonte.
-</section>
 
 
 <section>
@@ -255,11 +255,25 @@ Studies in Industry.  [S.l.: s.n.], 2015.
 </small>
 </section>
 
+<!--
+<section>
+### Métricas
+
+* **Publicização:** número de projetos disponíveis para download, com código fonte disponível, tipo de licença.
+* **Reconhecimento:** número de citações, número de menções, número de usos e contribuições.
+* **Ciclo de vida:** número total de lançamentos, data e número de versão de cada lançamento, variação no número de módulos do código fonte.
+</section>
+-->
 
 <section>
 <img src="files/estrategia-pesquisa.png" style="background:white;padding:10px" />
 </section>
 
+<section>
+#### Estudo 1:
+
+### Publicização de software acadêmico de análise estática
+</section>
 
 <section>
 ### Análise estática
@@ -268,23 +282,14 @@ Análise estática é a atividade de obter informações acerca de um programa a
 partir do seu código-fonte, tem suas origens nos estudos e desenvolvimentos de
 compiladores.
 
-<!--* Análise de performance
-* Compreensão de programas
-* Localizaçao de falhas
-* Recuperação arquitetural
-* Testes-->
-
-<small>
-CRUZ, D. d.; HENRIQUES, P. R.; PINTO, J. S. Code analysis: Past and present. 2009.
+<small class="cite">
+CRUZ, D. d.; HENRIQUES, P. R.; PINTO, J. S. **Code analysis: Past and present**. 2009.
 </small>
 </section>
 
 
+
 <section>
-#### Estudo 1:
-
-### Publicização de software acadêmico de análise estática
-
 <img src="files/estudo1-etapas.png" width="60%" style="background:white" />
 </section>
 
@@ -297,12 +302,96 @@ Revisão de literatura nas conferências ASE e SCAM
 
 
 <section>
-### Resultados do estudo 1
+Escopo
 
-* 60 projetos de software acadêmico
-* 40% indisponível para download
-* 56% disponibiliza código fonte
-* 35% utiliza licença de software livre
+* Publicações das conferências ASE e SCAM
+* Incluindo todas as ediçoes até 2015
+  * 25 edições da conferência ASE
+  * 15 edições da conferência SCAM
+</section>
+
+
+<section>
+Triagem automática
+
+| Critério               | String                    |
+| ---------------------- | ------------------------- |
+| Menciona projeto       | _tool_ ou _framework_     |
+| Disponibiliza download | _download_ ou _available_ |
+| Análise estática       | _http_, _https_ ou _ftp_  |
+
+</section>
+
+
+<section>
+Extração
+
+| Critério      | Explicação                                                        |
+| ------------- | ----------------------------------------------------------------- |
+| Identificável | É possível identificar software entre as contribuições do artigo? |
+| Disponível    | Podemos encontrar menção a URL do software para download?         |
+
+</section>
+
+
+<section>
+#### Resultados da revisão de literatura do estudo 1
+
+<img src="files/artigos-com-software-por-ano.png" />
+
+**61 artigos** com publicação de **60 projetos** de software acadêmico de análise estática.
+</section>
+
+
+<section>
+* ✓ Nome
+ ✓ URL
+ ✓ Artigo
+ ✓ Conferência
+ ✓ Ano
+
+* ✗ Descrição
+✗ Acesso
+✗ Distribuição
+✗ Licença
+</section>
+
+
+<section>
+Caracterização dos **60** projetos em relação a disponibilidade de download.
+
+| Disponibilidade            | Número | Proporção |
+| -------------------------- | ------ | --------- |
+| Disponível para download   | 36     | 60%       |
+| Indisponível para download | 24     | 40%       |
+
+</section>
+
+<section>
+Caracterização dos **36** projetos disponíveis para download em relação à disponibilidade de código fonte.
+
+| Disponibilidade                | Número | Proporção |
+| ------------------------------ | ------ | --------- |
+| Disponibiliza código fonte     | 34     | ~94%      |
+| Não disponibiliza código fonte | 2      | ~6%       |
+
+</section>
+
+<section>
+Caracterização dos **34** projetos com código fonte disponível em relação ao uso de licenças de software livre.
+
+| Uso de licenças livres            | Número | Proporção |
+| --------------------------------- | ------ | --------- |
+| Não adota licença alguma          | 13     | ~38%      |
+| Utiliza licença de software livre | 21     | ~62%      |
+
+</section>
+
+
+<section>
+Caracterização em relação à linguagem de programação.
+
+<img src="files/linguagens.png" />
 </section>
 
 
@@ -310,8 +399,55 @@ Revisão de literatura nas conferências ASE e SCAM
 #### Estudo 2:
 
 ### Reconhecimento de software acadêmico de análise estática
+</section>
 
-<img src="files/estudo2-revisao-literatura.png" style="background:white" />
+
+<section>
+### Menção
+
+O número e tipo de menção foi utilizado como _proxy_ para medir o grau
+de reconhecimento ao software acadêmico.
+</section>
+
+<section>
+Revisão de literatura nas bases ACM e IEEE
+
+<img width="90%" src="files/estudo2-revisao-literatura.png" style="background:white" />
+</section>
+
+<section>
+Busca
+
+| String de busca para o software s6                       |
+| -------------------------------------------------------- |
+| content.ftsec:(+civl +concurrency +intermediate +verification +language) |
+| ('concurrency intermediate verification') AND CIVL |
+
+...
+</section>
+
+<section>
+Triagem
+
+Inspeção manual dos artigos em busca de ocorrências ao nome do projeto (menção) em todo o conteúdo.
+</section>
+
+<section>
+Keywording
+
+| ID | Artigo | Anotação                           |
+| -- | ------ | ---------------------------------- |
+| s3 | p250   | Cita o software como exemplo de ferramenta para recomendação de API numa tabela comparativa. |
+| s3 | p546   | Nenhuma referência ao nome do software encontrado no texto. |
+| s3 | p799   | Cita o software como trabalho relacionado. |
+
+</section>
+
+
+<section>
+Extração
+
+Cada menção foi classificada a partir do esquema para classificação de menções elaborado na fase de Keywording.
 </section>
 
 
@@ -323,20 +459,24 @@ Revisão de literatura nas conferências ASE e SCAM
 <section>
 ### Resultados do estudo 2
 
-* 21% (13) são mencionados na literatura apenas na publicação inicial
-* 28% (17) dos projetos recebem contribuição além da publicação inicial
-* 43% (26) são utilizados em outras pesquisas além da publicação inicial
+| Como os projetos são mencionados        | Número | Proporção |
+| --------------------------------------- | ------ | --------- |
+| Mencionado apenas na publicação inicial | 13     | ~22%      |
+| Mencionado em outros estudos            | 47     | ~78%      |
 
-<!--
-* 429 menções
-* 46% Cita
-* 29% Usa
-* 25% Contribui
-  * 14% menções do paper inicial
-  * 10% menções posterior
--->
 </section>
 
+
+<section>
+Como os **47 projetos** encontrados em menções além da publicação inicial...
+
+| Como os projetos são mencionados        | Número | Proporção |
+| --------------------------------------- | ------ | --------- |
+| Recebe contribuição                     | 17     | ~36%      |
+| São utilizados                          | 22     | ~47%      |
+| ...                                     |        |           |
+
+</section>
 
 <section>
 #### Estudo 3:
@@ -346,18 +486,25 @@ Revisão de literatura nas conferências ASE e SCAM
 </section>
 
 
-
 <section>
 #### Ciclo de vida de software
 
 <img src="files/staged-model-foss-cycle.png" style="box-shadow:0px 0px 2px gray;background:white" />
 
-<small>
-CAPILUPPI, A. et al. Adapting the staged model for software evolution to
-free/libre/open source software. In: Ninth international workshop on Principles
+<small class="cite">
+CAPILUPPI, A. et al. **Adapting the staged model for software evolution to
+free/libre/open source software**. In: Ninth international workshop on Principles
 of software evolution: in conjunction with the 6th ESEC/FSE joint meeting.
-[S.l.: s.n.], 2007. p. 79–82.
+[S.l.: s.n.], 2007.
 </small>
+</section>
+
+
+<section>
+* Número de lançamentos de cada projeto
+* Número de versão, data e URL para código fonte de cada lançamento
+* Download de todos(*) os lançamentos com código fonte disponível
+  * (*) Apenas aqueles escritos em C, C++ ou Java
 </section>
 
 
@@ -374,18 +521,41 @@ analysis and visualization toolkit**. In: CBSOFT-Ferramentas. [S.l.: s.n.],
 </section>
 
 
+<!--
 <section>
-### Resultados do estudo 3
-
 <img src="files/estagios-evolucao-ciclo-de-vida.png" width="80%" style="box-shadow: 0px 0px 5px gray; border-radius: 5px; padding: 10px" />
 </section>
+-->
 
 
 <section>
-### Resultados do estudo 3
+<!-- 206 lançamentos (releases) com código fonte foram analisados -->
 
-* 206 lançamentos (releases) com código fonte foram analisados
-* 76% dos projetos encontram-se em estado inicial de desenvolvimento ou encerrado
+| Sem informação sobre lançamentos | Inicial de desenvolvimento |
+| Apenas um lançamento             | Inicial de desenvolvimento |
+| Indisponível para download       | Encerrado                  |
+| Tornaram-se indisponíveis durante a realização da pesquisa | Encerrando |
+
+</section>
+
+<section>
+Os demais projetos com informações sobre lançamento e código fonte disponível
+foram analisados e tiveram métricas de número de módulos e tamanho em número de
+linhas de código fonte (eloc).
+</section>
+
+<section>
+Resultados do estudo 3 sobre o ciclo de vida dos projetos de software acadêmico de análise estática.
+
+<!--* 3% (61) artigos, entre 1873, publicam software acadêmico de análise estática com indicação de URL-->
+<!--* entre os 61 artigos encontramos 60 projetos de software acadêmico de análise estática-->
+
+| Estágio de evolução                                | Número | Proporção |
+| -------------------------------------------------- | ------ | --------- |
+| Inicial, encerrando ou encerrado                   | 47     | 78%       |
+| Evolução ou serviço                                | 8      | 14%       |
+| Indícios de estágio inicial, evoluçao ou serviço   | 5      | 8%        |
+
 </section>
 
 
@@ -420,16 +590,6 @@ O crescimento médio no número de módulos confirma a lei de "Crescimento Cont�
 80 artigos apresentam fortes indícios de serem impossíveis de reproduzir uma vez que
 fazem menção (usando ou contribuindo) a projetos de software acadêmico de análise
 estática em estágio _Closedown_.
-</section>
-
-
-<section>
-### Conclusões
-
-* 3% (61) artigos, entre 1873, publicam software acadêmico de análise estática com indicação de URL
-* entre os 61 artigos encontramos 60 projetos de software acadêmico de análise estática
-* 33% (20) dos projetos encontram-se em estágio inicial de desenvolvimento
-* 40% (24) dos projetos encontram-se encerrados e não estão disponíveis para download
 </section>
 
 
