@@ -227,7 +227,7 @@ longevidade e manutenção.
 <!-- -------------------------------- -->
 
 <section>
-## Como medir sustentabilidade de software?
+### Como medir sustentabilidade de software?
 
 ## Qual perspectiva usar?
 
