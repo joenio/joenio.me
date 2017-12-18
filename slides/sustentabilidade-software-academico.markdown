@@ -3,6 +3,7 @@ title: Sustentabilidade técnica de software acadêmico
 theme: simple
 ---
 
+<!-- -------------------------------- -->
 
 <section>
 ### Sustentabilidade técnica de software acadêmico no domínio de ferramentas de análise estática de código-fonte
@@ -240,20 +241,6 @@ CEUR Workshop Proceedings. [S.l.: s.n.], 2014.
 
 <!-- -------------------------------- -->
 
-<!--
-
-<section>
-### Objetivo
-
-Analisar os projetos de software acadêmico de análise estática e sua
-sustentabilidade técnica com o propósito de caracterizar com respeito a
-publicização, reconhecimento e ciclo de vida na perspectiva do cientista de
-software acadêmico no contexto das conferências de Engenharia de Software ASE e
-SCAM.
-</section>
--->
-
-
 <section>
 ### Questão de pesquisa
 
@@ -281,16 +268,6 @@ Studies in Industry.  [S.l.: s.n.], 2015.
 </section>
 
 <!-- -------------------------------- -->
-
-<!--
-<section>
-### Métricas
-
-* **Publicização:** número de projetos disponíveis para download, com código fonte disponível, tipo de licença.
-* **Reconhecimento:** número de citações, número de menções, número de usos e contribuições.
-* **Ciclo de vida:** número total de lançamentos, data e número de versão de cada lançamento, variação no número de módulos do código fonte.
-</section>
--->
 
 <section>
 <img src="files/estrategia-pesquisa.png" style="background:white;padding:10px" />
@@ -505,20 +482,6 @@ Cada menção foi classificada a partir do esquema para classificação de menç
 
 <!-- -------------------------------- -->
 
-<!--
-<section>
-### Resultados do estudo 2
-
-| Como os projetos são mencionados        | Número | Proporção |
-| --------------------------------------- | ------ | --------- |
-| Mencionado apenas na publicação inicial | 13     | ~22%      |
-| Mencionado em outros estudos            | 47     | ~78%      |
-
-</section>
--->
-
-<!-- -------------------------------- -->
-
 <section>
 | Tipo de menção                          | Número | Proporção |
 | --------------------------------------- | ------ | --------- |
@@ -578,16 +541,7 @@ analysis and visualization toolkit**. In: CBSOFT-Ferramentas. [S.l.: s.n.],
 
 <!-- -------------------------------- -->
 
-<!--
 <section>
-<img src="files/estagios-evolucao-ciclo-de-vida.png" width="80%" style="box-shadow: 0px 0px 5px gray; border-radius: 5px; padding: 10px" />
-</section>
--->
-
-
-<section>
-<!-- 206 lançamentos (releases) com código fonte foram analisados -->
-
 | Projetos                                                   | Estágio                 |
 | ------------------------------------------------------ --- | ----------------------- |
 | Sem informação sobre lançamentos                           | Desenvolvimento inicial |
@@ -610,11 +564,6 @@ foram analisados para coleta das seguintes métricas:
 <!-- -------------------------------- -->
 
 <section>
-Resultados do estudo 3 sobre o ciclo de vida dos projetos de software acadêmico de análise estática.
-
-<!--* 3% (61) artigos, entre 1873, publicam software acadêmico de análise estática com indicação de URL-->
-<!--* entre os 61 artigos encontramos 60 projetos de software acadêmico de análise estática-->
-
 | Estágio de evolução                                 | Número | Proporção |
 | --------------------------------------------------- | ------ | --------- |
 | Inicial, descontinuado ou encerrado                 | 47     | 78%       |
@@ -657,14 +606,6 @@ O crescimento médio no número de módulos confirma a lei de "Crescimento Cont�
 <!-- -------------------------------- -->
 
 <section>
-**80 artigos** apresentam fortes indícios de serem impossíveis de reproduzir
-uma vez que fazem menção (**uso ou contribuição**) a projetos em estágio
-**Encerrado**.
-</section>
-
-<!-- -------------------------------- -->
-
-<section>
 **Questão:** Como a desordem caótica disfuncional (DCD) pode explicar a
 sustentabilidade técnica dos projetos do ecossistema de software acadêmico de
 análise estática em termos de publicização, reconhecimento e estágio de
@@ -674,11 +615,13 @@ evolução?
 <!-- -------------------------------- -->
 
 <section>
-* **C1:** Existência de muitos projetos com poucos usuários;
-* **C2:** Projetos com ciclos de vida curtos que se encerram junto ao financiamento inicial;
-* **C3:** Comunidades de usuários desconectadas e paralelas;
-* **C4:** Incompatibilidades entre os projetos de maneira persistente e imutável;
-* **C5:** Tentativas constantes e aparentemente não coordenadas de "reiniciar" tudo (_re-boots_).
+<ul style="list-style-type: none">
+  <li><b>C1:</b> Existência de muitos projetos com poucos usuários;</li>
+  <li><b>C2:</b> Projetos com ciclos de vida curtos que se encerram junto ao financiamento inicial;</li>
+  <li><b>C3:</b> Comunidades de usuários desconectadas e paralelas;</li>
+  <li><b>C4:</b> Incompatibilidades entre os projetos de maneira persistente e imutável;</li>
+  <li><b>C5:</b> Tentativas constantes e aparentemente não coordenadas de "reiniciar" tudo (<i>re-boots</i>).</li>
+</ul>
 </section>
 
 <!-- -------------------------------- -->
@@ -703,43 +646,44 @@ evolução?
 
 <!-- -------------------------------- -->
 
-<!--
 <section>
-### Contribuições
-
-* Um catálogo de projetos de software acadêmico para serem utilizados em outras pesquisas
-* Amadurecimento no debate sobre sustentabilidade de software
-* Alerta sobre os problemas causados pela indisponibilidade dos códigos produzidos nas pesquisas
-* Um framework para avaliação do fenômeno DCD em um domínio de aplicação específico
+**80 artigos** apresentam fortes indícios de serem impossíveis de reproduzir
+uma vez que fazem menção (**uso ou contribuição**) a projetos em estágio
+**Encerrado**.
 </section>
--->
 
 <!-- -------------------------------- -->
 
-<!--
 <section>
-### Trabalhos futuros
+---
 
-* Atualizar o perído da revisão de literatura do estudo 1 para seleção de projetos
-* Selecionar projetos de software acadêmico em outras conferências importantes
-* Caracterizar outras dimensões do software na visão de usuário e engenheiros de software
-* Incluir na revisão de literatura jornais específicos para software, exemplos, JOSS, JORS e SoftwareX
+### Better Software, Better Research
+
+---
+
+> "Devemos reconhecer o software como instrumento experimental de primeira-classe na Ciência."
+
+<small class="cite">
+GOBLE, C. **Better software, better research**. IEEE Internet Computing, IEEE, v.
+18, n. 5, p. 4–8, 2014.
+</small>
 </section>
--->
 
 <!-- -------------------------------- -->
 
 <section>
 <img src="files/code-is-science-model-1.png" style=";background:white;margin:0" />
-<br/>
-[www.codeisscience.com](http://www.codeisscience.com)
 
-<small>[sciencecodemanifesto.org](http://sciencecodemanifesto.org)</small>
+[CodeIsScience.com](http://www.codeisscience.com)
 
-<small>
-GOBLE, C. **Better software, better research**. IEEE Internet Computing, IEEE, v.
-18, n. 5, p. 4–8, 2014.
-</small>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+<img width="60%" src="files/software-carpentry-logo-shirt.png" style=";background:white;margin:0" />
+
+[Software-Carpentry.org](https://software-carpentry.org)
 </section>
 
 <!-- -------------------------------- -->
@@ -757,6 +701,40 @@ JIMéNEZ, R. C. et al. **Four simple recommendations to encourage best practices
 in research software**. F1000Research, v. 6, p. 876, jun. 2017.
 </small>
 </section>
+
+<!-- -------------------------------- -->
+
+<section>
+<ul style="list-style-type: none">
+  <li><b>✓ C1:</b> Existência de muitos projetos com poucos usuários;</li>
+  <li><b>✓ C2:</b> Projetos com ciclos de vida curtos que se encerram junto ao financiamento inicial;</li>
+  <li><b>✗ C3:</b> Comunidades de usuários desconectadas e paralelas;</li>
+  <li><b>✗ C4:</b> Incompatibilidades entre os projetos de maneira persistente e imutável;</li>
+  <li><b>✗ C5:</b> Tentativas constantes e aparentemente não coordenadas de "reiniciar" tudo (<i>re-boots</i>).</li>
+</ul>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+### Trabalhos futuros
+
+* Incluir 2017 na revisão de literatura para seleção de projetos
+* Adicionar conferências ICSE, ICSME, SANER e SBES
+* Caracterizar dimensões do software na visão de engenheiros de software
+* Coletar dados dos jornais JOSS, JORS e SoftwareX
+</section>
+
+<!--
+<section>
+### Contribuições
+
+* Um catálogo de projetos de software acadêmico para serem utilizados em outras pesquisas
+* Amadurecimento no debate sobre sustentabilidade de software
+* Alerta sobre os problemas causados pela indisponibilidade dos códigos produzidos nas pesquisas
+* Um framework para avaliação do fenômeno DCD em um domínio de aplicação específico
+</section>
+-->
 
 <!-- -------------------------------- -->
 
