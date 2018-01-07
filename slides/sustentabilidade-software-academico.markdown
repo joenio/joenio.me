@@ -36,7 +36,7 @@ Co-orientador: Dr. Paulo Roberto Miranda Meirelles
 1. Objetivos, estratégia e questão de pesquisa
 1. Estudos realizados e seus resultados
 1. Síntese de resultados e conclusões
-1. Recomendações aos desenvolvedores de software acadêmico
+1. Recomendações e trabalhos futuros
 </section>
 
 <!-- -------------------------------- -->
@@ -204,7 +204,7 @@ Informatik, 2017.
 <!-- -------------------------------- -->
 
 <section>
-# Sustentabilidade
+## Sustentabilidade
 
 individual - social - econômica - ambiental - **técnica**
 
@@ -329,7 +329,8 @@ Triagem automática
 | ---------------------- | ------------------------- |
 | Menciona projeto       | _tool_ ou _framework_     |
 | Disponibiliza download | _download_ ou _available_ |
-| Análise estática       | _http_, _https_ ou _ftp_  |
+| Informa URL            | _http_, _https_ ou _ftp_  |
+| Análise estática       | _static analysis_ ou _parser_ |
 
 </section>
 
@@ -368,7 +369,7 @@ Extração
 <section>
 Caracterização dos **60** projetos em relação a disponibilidade de download.
 
-| Disponibilidade            | Número | Proporção |
+| Download                   | Número | Proporção |
 | -------------------------- | ------ | --------- |
 | Disponível para download   | 36     | 60%       |
 | Indisponível para download | 24     | 40%       |
@@ -380,7 +381,7 @@ Caracterização dos **60** projetos em relação a disponibilidade de download.
 <section>
 Caracterização dos **36** projetos disponíveis para download em relação à disponibilidade de código fonte.
 
-| Disponibilidade                | Número | Proporção |
+| Código fonte                   | Número | Proporção |
 | ------------------------------ | ------ | --------- |
 | Disponibiliza código fonte     | 34     | ~94%      |
 | Não disponibiliza código fonte | 2      | ~6%       |
@@ -696,7 +697,7 @@ GOBLE, C. **Better software, better research**. IEEE Internet Computing, IEEE, v
 * Adotar uma licença de software e respeitar as licenças dos outros projetos
 * Definir processos claros e transparentes de contribuição, governança e comunicação
 
-<small>
+<small class="cite">
 JIMéNEZ, R. C. et al. **Four simple recommendations to encourage best practices
 in research software**. F1000Research, v. 6, p. 876, jun. 2017.
 </small>
@@ -704,6 +705,7 @@ in research software**. F1000Research, v. 6, p. 876, jun. 2017.
 
 <!-- -------------------------------- -->
 
+<!--
 <section>
 <ul style="list-style-type: none">
   <li><b>✓ C1:</b> Existência de muitos projetos com poucos usuários;</li>
@@ -713,6 +715,7 @@ in research software**. F1000Research, v. 6, p. 876, jun. 2017.
   <li><b>✗ C5:</b> Tentativas constantes e aparentemente não coordenadas de "reiniciar" tudo (<i>re-boots</i>).</li>
 </ul>
 </section>
+-->
 
 <!-- -------------------------------- -->
 
