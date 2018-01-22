@@ -13,3 +13,4 @@ layout: page
 * [Mini-curso de integração entre R-Project e LaTeX](/slides/integracao-r-project-latex.html) (rascunho)
 * [Caracterização da complexidade estrutural em ferramentas de análise estática de código-fonte](/slides/caracterizacao-analise-estatica.html)
 * [Sustentabilidade técnica de software acadêmico no domínio de ferramentas de análise estática de código-fonte](/slides/sustentabilidade-software-academico.html)
+* [Live Coding](/slides/live-coding.html)
