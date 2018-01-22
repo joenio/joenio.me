@@ -7,19 +7,19 @@ section .box-white {
 }
 
 section .box-blue {
-  background: url(/slides/files/backgrounds/RGB101133D8.svg);
+  background: url(/files/backgrounds/RGB101133D8.svg);
 }
 section .box-green {
-  background: url(/slides/files/backgrounds/RGB071707D8.svg);
+  background: url(/files/backgrounds/RGB071707D8.svg);
 }
 section .box-gray {
-  background: url(/slides/files/backgrounds/RGB2A2A2CD8.svg);
+  background: url(/files/backgrounds/RGB2A2A2CD8.svg);
 }
 section .box-yellow {
-  background: url(/slides/files/backgrounds/RGB37371AC1.svg);
+  background: url(/files/backgrounds/RGB37371AC1.svg);
 }
 section .box-white {
-  background: url(/slides/files/backgrounds/RGBE6E6E645.svg);
+  background: url(/files/backgrounds/RGBE6E6E645.svg);
 }
 
 .url {

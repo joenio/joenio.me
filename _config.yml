@@ -27,9 +27,12 @@ keep_files:
   - javascript
 
 collections:
-  wiki:
+  pages:
     output: true
-    permalink: "w/:title/index.html"
+    permalink: ":title/index.html"
+  slides:
+    output: true
+    permalink: ":title/index.html"
 
 # Configuracoes padrao para posts
 defaults:
@@ -41,11 +44,12 @@ defaults:
   -
     scope:
       path: ""
-      type: "wiki"
+      type: "pages"
     values:
       layout: "page"
   -
     scope:
-      path: "slides"
+      path: ""
+      type: "slides"
     values:
       layout: "revealjs"
