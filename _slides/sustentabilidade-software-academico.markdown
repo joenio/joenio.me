@@ -79,7 +79,7 @@ cooperative work. [S.l.: s.n.], 2011.
 <section>
 #### Modelo de processo de software acadêmico
 
-<img src="files/process-model-scientific-software.png" />
+<img src="/files/process-model-scientific-software.png" />
 
 <small class="cite">
 HOWISON, J. et al. **Understanding the scientific software ecosystem and its
@@ -93,7 +93,7 @@ impact: Current and future measures**. Research Evaluation, v. 24, n. 4, p.
 <section>
 #### Incentivos de reputação e práticas de software acadêmico
 
-<img src="files/scientific-reputation-diagram.png" style="background: white" />
+<img src="/files/scientific-reputation-diagram.png" style="background: white" />
 
 <small class="cite">
 HOWISON, J.; HERBSLEB, J. D. **Scientific software production: incentives and
@@ -270,7 +270,7 @@ Studies in Industry.  [S.l.: s.n.], 2015.
 <!-- -------------------------------- -->
 
 <section>
-<img src="files/estrategia-pesquisa.png" style="background:white;padding:10px" />
+<img src="/files/estrategia-pesquisa.png" style="background:white;padding:10px" />
 </section>
 
 <!-- -------------------------------- -->
@@ -298,7 +298,7 @@ CRUZ, D. d.; HENRIQUES, P. R.; PINTO, J. S. **Code analysis: Past and present**.
 <!-- -------------------------------- -->
 
 <section>
-<img src="files/estudo1-etapas.png" width="60%" style="background:white" />
+<img src="/files/estudo1-etapas.png" width="60%" style="background:white" />
 </section>
 
 <!-- -------------------------------- -->
@@ -306,7 +306,7 @@ CRUZ, D. d.; HENRIQUES, P. R.; PINTO, J. S. **Code analysis: Past and present**.
 <section>
 Revisão de literatura nas conferências ASE e SCAM
 
-<img src="files/revisao-literatura.png"  width="80%" style="background:white" />
+<img src="/files/revisao-literatura.png"  width="80%" style="background:white" />
 </section>
 
 <!-- -------------------------------- -->
@@ -351,7 +351,7 @@ Extração
 <section>
 #### Resultados da revisão de literatura do estudo 1
 
-<img src="files/artigos-com-software-por-ano.png" />
+<img src="/files/artigos-com-software-por-ano.png" />
 
 **61 artigos** com publicação de **60 projetos** de software acadêmico de análise estática.
 </section>
@@ -405,7 +405,7 @@ Caracterização dos **34** projetos com código fonte disponível em relação 
 <section>
 Caracterização em relação à linguagem de programação.
 
-<img src="files/linguagens.png" />
+<img src="/files/linguagens.png" />
 </section>
 
 <!-- -------------------------------- -->
@@ -430,7 +430,7 @@ de reconhecimento ao software acadêmico.
 <section>
 Revisão de literatura nas bases ACM e IEEE
 
-<img width="90%" src="files/estudo2-revisao-literatura.png" style="background:white" />
+<img width="90%" src="/files/estudo2-revisao-literatura.png" style="background:white" />
 </section>
 
 <!-- -------------------------------- -->
@@ -478,7 +478,7 @@ Cada menção foi classificada a partir do esquema para classificação de menç
 <!-- -------------------------------- -->
 
 <section>
-<img width="100%" src="files/estudo2-revisao-literatura-resultados.png" style="background:white" />
+<img width="100%" src="/files/estudo2-revisao-literatura-resultados.png" style="background:white" />
 </section>
 
 <!-- -------------------------------- -->
@@ -507,7 +507,7 @@ Cada menção foi classificada a partir do esquema para classificação de menç
 <section>
 #### Ciclo de vida de software
 
-<img src="files/staged-model-foss-cycle.png" style="box-shadow:0px 0px 2px gray;background:white" />
+<img src="/files/staged-model-foss-cycle.png" style="box-shadow:0px 0px 2px gray;background:white" />
 
 <small class="cite">
 CAPILUPPI, A. et al. **Adapting the staged model for software evolution to
@@ -529,7 +529,7 @@ of software evolution: in conjunction with the 6th ESEC/FSE joint meeting.
 <!-- -------------------------------- -->
 
 <section>
-<img src="files/analizo.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
+<img src="/files/analizo.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
 <br/>
 [analizo.org](http://analizo.org)
 
@@ -585,7 +585,7 @@ foram analisados para coleta das seguintes métricas:
 <section>
 O reconhecimento ao software acadêmico de análise estática vem crescendo
 
-<img src="files/mentions-trend.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px; padding: 10px" />
+<img src="/files/mentions-trend.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px; padding: 10px" />
 </section>
 
 <!-- -------------------------------- -->
@@ -593,7 +593,7 @@ O reconhecimento ao software acadêmico de análise estática vem crescendo
 <section>
 Os projetos com licenças de software livre possuem maior reconhecimento
 
-<img width="80%" src="files/license-vs-mentions.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px; padding: 15px" />
+<img width="80%" src="/files/license-vs-mentions.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px; padding: 15px" />
 </section>
 
 <!-- -------------------------------- -->
@@ -601,7 +601,7 @@ Os projetos com licenças de software livre possuem maior reconhecimento
 <section>
 O crescimento médio no número de módulos confirma a lei de "Crescimento Contínuo" do software
 
-<img width="65%" src="files/modules-evolution-average.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
+<img width="65%" src="/files/modules-evolution-average.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px" />
 </section>
 
 <!-- -------------------------------- -->
@@ -673,7 +673,7 @@ GOBLE, C. **Better software, better research**. IEEE Internet Computing, IEEE, v
 <!-- -------------------------------- -->
 
 <section>
-<img src="files/code-is-science-model-1.png" style=";background:white;margin:0" />
+<img src="/files/code-is-science-model-1.png" style=";background:white;margin:0" />
 
 [CodeIsScience.com](http://www.codeisscience.com)
 
@@ -682,7 +682,7 @@ GOBLE, C. **Better software, better research**. IEEE Internet Computing, IEEE, v
 <!-- -------------------------------- -->
 
 <section>
-<img width="60%" src="files/software-carpentry-logo-shirt.png" style=";background:white;margin:0" />
+<img width="60%" src="/files/software-carpentry-logo-shirt.png" style=";background:white;margin:0" />
 
 [Software-Carpentry.org](https://software-carpentry.org)
 </section>
