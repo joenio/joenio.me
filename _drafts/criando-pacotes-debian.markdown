@@ -4,6 +4,16 @@ modulo: Devel::FindPerl
 pacote: libdevel-findperl-perl
 ---
 
+==========================
+ 
+cpantesters: instalar zlib dev / libssl-dev / make / build-essential
+
+cpan
+>> o conf make install _commant = sudo make
+          build install _command = sudo ./Build    
+
+==========================
+
 Neste post irei demonstrar como criar pacotes para o sistema operacional livre
 [Debian][] [GNU/Linux][linux], submeter esses pacotes ao projeto oficial,
 atualizar, corrigir bugs, resolver e documentar questoes sobre licenças, e uma
