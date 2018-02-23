@@ -93,17 +93,15 @@ a:visited { color: #205caa; }
 
 .site-footer li,
 .site-footer p {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: -.3px;
   color: #D2D2D2;
 }
 
 .email-icon-svg,
-.github-icon-svg,
-.twitter-icon-svg,
 .rss-icon-svg {
   display: inline-block;
-  width: 16px;
+  width: 18px;
   height: 16px;
   position: relative;
   top: 3px;
@@ -113,7 +111,6 @@ footer.site-footer div.wrap a,
 #sobre a,
 #rss a {
   color: #D2D2D2;
-  border-bottom: 1px dotted;
 }
 
 #rss {
@@ -388,7 +385,6 @@ footer.site-footer div.wrap a,
 
 }
 
-
 iframe {
   width: 560px;
   height: 315px;
@@ -434,17 +430,6 @@ abbr {
   text-align: center;
 }
 
-.hackergotchi {
-  border-radius: 45px;
-  width: 90px;
-  height: 90px;
-  background-color: dimgray;
-}
-
-.hackergotchi img {
-  margin: 5px 6px;
-}
-
 .float-right {
   display: block;
   float: right;
@@ -461,6 +446,12 @@ abbr {
 
 .full-width img {
   width: 100%
+}
+
+img.photo-profile {
+  float: left;
+  margin-right: 15px;
+  margin-top: 5px;
 }
 
 table {

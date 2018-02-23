@@ -1,10 +1,8 @@
 # Site settings
-title: Joenio Costa
-email: joenio@colivre.coop.br
+title: Joenio Marques da Costa
+email: joenio@joenio.me
 baseurl: ""
 url: "http://joenio.me"
-twitter_username: joenio
-github_username: joenio
 
 # Build settings
 markdown: kramdown
