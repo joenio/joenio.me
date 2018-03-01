@@ -4,22 +4,43 @@ title: &nbsp;
 
 <img class="photo-profile" src="/files/joenio-profile.jpg"/>
 
-Especialista em
-desenvolvimento de software e tecnologias livres, pesquisador do <a href="http://www.ibict.br">IBICT</a>
-como consultor do portal da <a href="http://juventude.gov.br">Juventude</a> e membro do grupo de
-pesquisa sobre design e evolução de software <a href="http://wiki.dcc.ufba.br/Aside/">aSide</a>.
+Joenio Marques da Costa, Engenheiro de Software, ativista e desenvolvedor de
+software livre, mestre em Ciência da Computação, com interesse em pesquisas
+sobre software acadêmico, sustentabilidade de software,
+ciência aberta, filosofia da computação e reprodutibilidade científica.
 
 <br/>
 
-Joenio Marques da Costa, engenheiro de software, pesquisador de novas
+Pesquisador de novas
 tecnologias e plataformas para participação social no Instituto Brasileiro de
-Informação em Ciência e Tecnologia (IBICT). Ativista e desenvolvedor de
-software livre, hoje, cursando mestrado na Universidade Federal da Bahia (UFBA)
-com interesse em pesquisas sobre qualidade e evolução de software, foi
-sócio-fundador da cooperativa Colivre desenvolvendo e contribuindo com os
-projetos livres Noosfero, Foswiki e Debian. Contribuiu entre 2014 e 2016, como
+Informação em Ciência e Tecnologia (IBICT). Consultor e líder técnico do
+projeto "Ecossistemas de Software Livre" do Ministério da Cultura em parceiria
+com o laboratório Lappis da Universidade Federal de Brasília.
+
+<!--
+Contribuiu entre 2014 e 2016, como
 líder técnico e consultor, com os projetos Participa.br e com o portal do
 Software Público Brasileiro.
+-->
+
+<br/>
+
+Fundador da cooperativa de tecnologias livres Colivre onde atuou na criação e
+desenvolvimento do projeto de software livre para redes sociais Noosfero. É
+contribuidor do projeto Debian e membro do time de empacotamento Perl.
+Desenvolvedor e mantenedor do projeto Analizo, um conjunto de ferramentas
+livres para análise estática de código-fonte e cálculo de métricas.
+
+<br/>
+
+Além da Computação, possui grande interesse em música em todas as suas formas,
+cores e sabores, e sua relação com tecnologia, tem realizado palestras e
+pequenas performances de "live coding" usando especialmente a linguagem de
+programação TidalCycles.
+
+<br/>
+
+### Contatos, rede social e currículo:
 
 <br/>
 
