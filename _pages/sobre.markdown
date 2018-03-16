@@ -11,17 +11,11 @@ ciência aberta, filosofia da computação e reprodutibilidade científica.
 
 <br/>
 
-Pesquisador de novas
-tecnologias e plataformas para participação social no Instituto Brasileiro de
-Informação em Ciência e Tecnologia (IBICT). Consultor e líder técnico do
-projeto "Ecossistemas de Software Livre" do Ministério da Cultura em parceiria
-com o laboratório Lappis da Universidade Federal de Brasília.
-
-<!--
-Contribuiu entre 2014 e 2016, como
-líder técnico e consultor, com os projetos Participa.br e com o portal do
-Software Público Brasileiro.
--->
+Pesquisador de novas tecnologias e plataformas para participação social no
+Instituto Brasileiro de Informação em Ciência e Tecnologia (IBICT). Consultor e
+líder técnico do projeto "Ecossistemas de Software Livre" do Ministério da
+Cultura em parceiria com o laboratório Lappis da Universidade Federal de
+Brasília.
 
 <br/>
 
@@ -33,14 +27,15 @@ livres para análise estática de código-fonte e cálculo de métricas.
 
 <br/>
 
-Além da Computação, possui grande interesse em música em todas as suas formas,
-cores e sabores, e sua relação com tecnologia, tem realizado palestras e
-pequenas performances de "live coding" usando especialmente a linguagem de
-programação TidalCycles.
+Foi consultor e líder técnico entre 2014 e 2016 dos projetos Participa.br e do
+portal do Software Público Brasileiro. Além da Computação, possui grande
+interesse em música em todas as suas formas, cores e sabores, e sua relação com
+tecnologia, tem realizado palestras e pequenas performances de "live coding"
+usando especialmente a linguagem de programação TidalCycles.
 
 <br/>
 
-### Contatos, rede social e currículo:
+### Contatos, redes sociais e currículo:
 
 <br/>
 
