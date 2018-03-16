@@ -141,26 +141,43 @@ footer.site-footer div.wrap a,
 .posts {
   list-style-type: none;
 }
-.latest-posts {
-  background-color: black;
-  padding-top: 60px;
+.latest-posts .post {
+  height: 200px;
+  overflow-y: hidden;
+  clear: both;
+}
+.latest-posts .post a {
+  text-decoration: none;
+  color: #555;
+}
+.latest-posts .post:hover a {
+  color: #111;
+}
+.latest-posts .post:first-child {
+  margin-top: 0px;
 }
 .post-banner {
   position: relative;
+  display: block;
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-right: 20px;
+  overflow: hidden;
 }
 .latest-posts .post-link {
-  position: absolute;
   display: block;
-  width: 100%;
-  text-align: center;
-  background-color: #111;
-  color: white;
-  padding: 10px 0 15px 0;
+  color: #222;
+  padding: 0 0 10px 0;
   opacity: 0.9;
+  text-decoration: none;
+}
+.latest-posts .post-link:hover {
+  text-decoration: underline;
 }
 .post-banner img {
-  border-radius: 5px;
-  width: 100%;
+  height: 200px;
+  margin-left: -150px;
 }
 .post-banner .meta {
   position: absolute;
@@ -176,9 +193,9 @@ footer.site-footer div.wrap a,
 
 .posts .post-link,
 .index .post-link {
-  font-size: 38px;
+  font-size: 1em;
   letter-spacing: -1.75px;
-  line-height: 1;
+  line-height: 0.8em;
 }
 
 .posts hr {
@@ -266,7 +283,7 @@ footer.site-footer div.wrap a,
   -moz-border-radius: 3px;
   border-radius: 3px;
   font-size: 15px;
-  overflow:scroll;
+  overflow: scroll;
 }
 
 .post code { padding: 1px 5px; }
@@ -452,6 +469,7 @@ img.photo-profile {
   float: left;
   margin-right: 15px;
   margin-top: 10px;
+  margin-left: 5px;
 }
 
 table {

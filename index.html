@@ -5,29 +5,10 @@ layout:
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  {% assign page = site.posts.first %}
   <body>
   {% include header.html %}
-
-  <div class="page-content index">
-    <div class="wrap">
-      {% unless page.empty? %}
-      <div class="post">
-        <header class="post-header">
-          <a class="post-link" href="{{ page.url | remove: '/index.html' | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% include metadata.html %}
-        </header>
-        <article class="post-content">
-        {{ page.content }}
-        </article>
-        {% include comments.html %}
-      </div>
-      {% endunless %}
-    </div>
-  </div>
-
-  {% include footer.html %}
   {% include latest_posts.html %}
+  {% include footer.html %}
   {% include google_analytics_tracking.html %}
   </body>
 </html>
