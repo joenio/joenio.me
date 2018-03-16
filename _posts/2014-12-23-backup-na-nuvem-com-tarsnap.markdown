@@ -1,5 +1,10 @@
 ---
 title: Backup na nuvem com Tarsnap
+lead: >
+  Recentemente precisei implementar uma solução de backup para alguns
+  servidores de internet, após uma pesquisa rápida optei pelo Tarsnap, uma
+  solução de backup em nuvem baseado na infra-estrutura de armazenamento da
+  Amazon...
 ---
 
 ![Chewbacca fazendo backup na nuvem](/files/chewbacca-nuvem.jpg)

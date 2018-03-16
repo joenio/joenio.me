@@ -1,5 +1,9 @@
 ---
 title: Não faça hoje o que pode deixar para amanhã
+lead: >
+  Neste post irei falar sobre gestão pessoal de tempo usando a técnica Do It
+  Tomorrow (DIT), uma proposta de Mark Forster publicada em seu livro de mesmo
+  nome traduzido para o português como Deixe para amanhã, o título...
 ---
 
 ![Clone Trooper Deitado](/files/clone-trooper-deitado.jpg)

@@ -1,5 +1,9 @@
 ---
 title: Aprenda a criar repositórios de pacotes Debian
+lead: >
+  Neste post irei mostrar como configurar um repositório de pacotes Debian
+  GNU/Linux usando dput + mini-dinstall + nginx. O Debian é um
+  sistema operacional livre criado e mantido por um grupo independente...
 ---
 
 ![Clone trooper e wall-e empilhando pacotes](/files/clone-trooper-e-wall-e-pacotes.jpg)

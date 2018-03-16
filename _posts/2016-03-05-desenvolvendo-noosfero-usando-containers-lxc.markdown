@@ -1,5 +1,10 @@
 ---
 title: Desenvolvendo Noosfero usando containers LXC
+lead: >
+  Sou desenvolvedor do projeto Noosfero a algum tempo e desde meu primeiro
+  commit em 2008 venho utilizando ambientes de desenvolvimento variados para
+  isolar meu sistema real do sistema onde o Noosfero é executado, desde chroot
+  e schroot, passando por VirtualBox...
 ---
 
 ![Noosfero LXC](/files/noosfero-lxc.png)

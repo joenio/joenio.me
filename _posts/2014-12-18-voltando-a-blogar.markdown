@@ -1,5 +1,9 @@
 ---
 title: Voltando a "blogar"
+lead: >
+  Hoje enquanto conversava com uma amiga no telefone surgiu a seguinte
+  pergunta: "Por que a gente não posta mais em nossos blogues?".  Ao ouvir isso
+  pensei: "Humn... Hâmmmn... É porque... Bem... É que....."
 ---
 
 ![Han Solo apontando uma arma para Chewbacca](/files/han-solo-e-chewbacca-blog.jpg)

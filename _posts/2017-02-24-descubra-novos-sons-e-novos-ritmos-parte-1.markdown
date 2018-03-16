@@ -1,5 +1,10 @@
 ---
 title: Descubra novos sons e novos ritmos (parte 1)
+lead: >
+  De tempos em tempos costumo pesquisar novidades na música, geralmente
+  direcionado ao que tô interessado no momento e sempre em órbita de algum
+  estilo novo ou ritmos específicos. Nos últimos 2 anos ouvi bastante coisa e
+  como esqueço fácil demais tive...
 ---
 
 ![Capas de albuns](/files/albuns.jpg)

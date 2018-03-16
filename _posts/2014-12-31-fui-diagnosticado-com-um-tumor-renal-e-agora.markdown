@@ -1,5 +1,9 @@
 ---
 title: Fui diagnosticado com um tumor renal, e agora?
+lead: >
+  Em 2012 fui diagnosticado com um tumor no rim esquerdo, fiz uma cirurgia e a
+  recuperação ocorreu muito rápida e tranquila. Na época fiz uma busca
+  superficial na internet sobre o assunto e encontrei algumas opiniões bem...
 ---
 
 ![Wall-e sob a tomografia computadorizada](/files/wall-e-tomografia.jpg)

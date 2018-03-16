@@ -1,5 +1,9 @@
 ---
 title: Como adicionar virtualhost aos logs do Varnish
+lead: >
+  Há algum tempo atrás escrevi um post mostrando como configurar o Varnish para
+  escrever logs num formato modificado do Combined Log Format do Apache, esta
+  modificação foi feita para adicionar o...
 ---
 
 ![Clone trooper segurando caneta](/files/trooper-segurando-caneta-fundo-verde.jpg)

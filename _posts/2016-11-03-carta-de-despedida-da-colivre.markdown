@@ -1,5 +1,8 @@
 ---
 title: Carta de despedida da Colivre
+lead: >
+  Este é um relato resumido da minha história na Colivre até o momento da minha
+  saída em fevereiro de 2016.
 ---
 
 ![Default post image](/files/goodbye-baloon.jpg)

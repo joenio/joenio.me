@@ -1,5 +1,9 @@
 ---
 title: Contribuindo com projetos de software livre
+lead: >
+  Em 2015 participei do desafio CPAN Pull Request (CPAN-PRC), uma iniciativa do
+  Neil Bowers para promover maior contribuição da comunidade Perl ao CPAN. CPAN
+  ou "Comprehensive Perl Archive Network" é o...
 ---
 
 ![Camisa Hacktoberfest 2015](/files/hacktoberfest-2015.jpg)

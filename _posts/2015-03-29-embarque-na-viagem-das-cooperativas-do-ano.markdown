@@ -1,5 +1,9 @@
 ---
 title: Embarque na viagem das cooperativas do ano
+lead: >
+  Em Novembro de 2014 a Colivre, cooperativa de tecnologias livres, empresa na
+  qual sou sócio ganhou o prêmio de cooperativa do ano 2014 na categoria de
+  Inovação e Tecnologia, este prêmio nos deu o direito a uma viagem de...
 ---
 
 ![Desenho intercâmbio cooperativista](/files/post-viagem-premio-cooperativas.jpg)
