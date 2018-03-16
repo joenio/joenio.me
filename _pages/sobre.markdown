@@ -1,5 +1,5 @@
 ---
-title: &nbsp;
+title: Um pouco sobre mim
 ---
 
 <img class="photo-profile" src="/files/joenio-profile.jpg"/>

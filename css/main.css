@@ -64,13 +64,6 @@ a:visited { color: #205caa; }
   padding: 56px 0 30px 0;
 }
 
-.footer-heading {
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: -.5px;
-  margin-bottom: 15px;
-}
-
 .site-footer .column { float: left; margin-bottom: 15px; }
 
 .footer-col-1 {
@@ -93,16 +86,14 @@ a:visited { color: #205caa; }
 
 .site-footer li,
 .site-footer p {
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: -.3px;
   color: #D2D2D2;
 }
 
-.email-icon-svg,
 .rss-icon-svg {
   display: inline-block;
-  width: 18px;
-  height: 16px;
+  height: 18px;
   position: relative;
   top: 3px;
 }
