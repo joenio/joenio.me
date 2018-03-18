@@ -1,5 +1,10 @@
 ---
 title: Caixa Mágica na Vivência Amazônica 2016
+lead: >
+  A Caixa Mágica é uma plataforma física e digital personalizável de
+  raqueamento cívico, projetado originalmente com ferramentas capazes de
+  simplificar o processo de diagnóstico e deliberação dentro de um exercício
+  participativo de tomada de decisões coletivas.
 ---
 
 ![Logotipo do projeto Caixa Mágica](/files/caixa-magica.png)

@@ -1,5 +1,11 @@
 ---
 title: Discos para ouvir antes de morrer (parte 1)
+lead: >
+  De tempos em tempos busco conhecer artistas ou álbuns novos pesquisando no
+  livro _1001 discos para ouvir antes de morrer_, seleciono uma página do livro
+  ao acaso e ponho o disco na vitrola, quer dizer, dou o play no YouTube.
+  Assim, vou descobrindo músicas, algumas eu curto, outras nem tanto, mas
+  sempre tomo nota sobre o quanto gostei.
 ---
 
 ![Livro 1001 discos para ouvir antes de morrer](/files/1001-discos.jpg)
