@@ -5,9 +5,93 @@
     <description></description>
     <link>http://joenio.me/</link>
     <atom:link href="http://joenio.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 15 Mar 2018 23:03:22 -0300</pubDate>
-    <lastBuildDate>Thu, 15 Mar 2018 23:03:22 -0300</lastBuildDate>
+    <pubDate>Sun, 18 Mar 2018 15:00:37 -0300</pubDate>
+    <lastBuildDate>Sun, 18 Mar 2018 15:00:37 -0300</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Caixa Mágica na Vivência Amazônica 2016</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/files/caixa-magica.png&quot; alt=&quot;Logotipo do projeto Caixa Mágica&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A &lt;a href=&quot;http://caixamagi.ca&quot;&gt;Caixa Mágica&lt;/a&gt; é uma plataforma física e digital personalizável de
+raqueamento cívico, projetado originalmente com ferramentas capazes de
+simplificar o processo de diagnóstico e deliberação dentro de um exercício
+participativo de tomada de decisões coletivas.&lt;/p&gt;
+
+&lt;p&gt;A caixa é uma porta de entrada ao universo da participação cidadã, permitindo
+que pessoas se conectem diretamente a um processo real e imediato de
+participação. Mais do que uma máquina, a Caixa Mágica é um legado do processo
+de participação social e inclusão digital para o empoderamento cidadão.&lt;/p&gt;
+
+&lt;p&gt;Fisicamente, é um objeto modular, auto armável, possibilitando que seu exterior
+seja personalizável, o interior contém um hardware de baixo custo (Raspberry Pi
+ou Cubeboard). Em Dezembro de 2016 a Caixa Mágica projetada num &lt;a href=&quot;https://www.raspberrypi.org/products/raspberry-pi-2-model-b&quot;&gt;Raspberry
+Pi&lt;/a&gt; embarcou na Vivência Amazônica organizada pelo &lt;a href=&quot;http://neaz.unb.br&quot;&gt;Núcleo de
+Estudos da Amazônia da Universidade de Brasília (NEAz/CEAM)&lt;/a&gt;. Mais
+detalhes sobre o projeto da Vivência Amazônica pode ser encontro nos links
+abaixo:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://noticias.unb.br/publicacoes/112-extensao-e-comunidade/1234-expedicao-da-unb-vai-a-amazonia&quot;&gt;Expedição da UnB vai à Amazônia - UnB Notícias&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://prezi.com/opuxkfyo9h-n/vivencia-amazonica&quot;&gt;Vivência Amazônica - Prezi&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ufmt.br/ufmt/site/noticia/visualizar/33692/Cuiaba&quot;&gt;Estudantes da UnB iniciam expedição rumo à floresta amazônica - UFMT&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;full-width&quot;&gt;
+  &lt;p&gt;&lt;img width=&quot;100%&quot; src=&quot;/files/foto-caixa-magica-no-onibus.jpg&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Nesta Vivência a Caixa Mágica viajou de ônibus durante duas semanas por cerca
+de 11 mil quilômetros entre os estados de Mato Grosso, Roraima e Acre. Grande
+parte do tempo da viagem se passando em locais sem conexão com a Internet onde
+a Caixa Mágica proporcionou conexão numa rede local sem fio, estimulando e
+possibilitando comunicação e compartilhamento de conteúdo entre todos os
+participantes da viagem.&lt;/p&gt;
+
+&lt;p&gt;Nesta experiência foi utilizado um &lt;a href=&quot;https://www.raspberrypi.org/products/raspberry-pi-2-model-b&quot;&gt;Raspberry Pi 2B&lt;/a&gt; com o sistema
+operacional livre &lt;a href=&quot;https://www.raspbian.org&quot;&gt;Raspbian&lt;/a&gt; e um dongle wireless usb, transformado
+num access point simples sem necessidade de senha para conexão ou autenticação,
+foi instalado um software chamado &lt;a href=&quot;https://withknown.com&quot;&gt;Known&lt;/a&gt; para publicação e
+compartilhamento de conteúdo.&lt;/p&gt;
+
+&lt;p&gt;O &lt;a href=&quot;https://withknown.com&quot;&gt;Known&lt;/a&gt; é uma plataforma para aprendizagem social voltada para a
+criação de comunidades educacionais e empoderamento de estudantes, estimulando
+publicação de trabalhos, feedbacks, comunicação e compartilhamento através de
+mídias sociais. É software livre escrito em PHP, com interface simples e
+intuitiva, boa usabilidade e setup simples e funcional.&lt;/p&gt;
+
+&lt;p&gt;Durante a viagem a Caixa Mágica foi especialmente útil nos momentos sem conexão
+com Internet, num contexto onde praticamente todos possuem smartphones com
+capacidade de conexão sem fio, o software &lt;a href=&quot;https://withknown.com&quot;&gt;Known&lt;/a&gt; foi extremamente útil por
+possibilitar que conteúdos de texto, fotos e vídeos fossem compartilhados,
+estimulando a troca de informações e olhares diversos sobre a viagem em tempo
+real, incluindo e envolvendo todos os participantes da Vivência.&lt;/p&gt;
+
+&lt;p&gt;O Raspberry Pi com o dongle wifi servindo como access point local suportou
+conexão simultânea de ao menos 40 pessoas trocando conteúdos entre sí, como
+fonte de energia foi utilizado diversas baterias externas com conexão mini-usb,
+nos pontos de paradas as baterias eram recarregadas para suportar longos
+trajetos de estrada, além de proporcionar conexão em pontos remotos e sem
+conexão.&lt;/p&gt;
+
+&lt;p&gt;Foi uma experiência muito interessante, especialmente por proporcionar troca de
+saberes sobre a tecnologia empregada na Caixa Mágica, proveniente de conhecimentos da
+Ciência da Computação, com os participantes da Vivência, em sua maioria alunos
+das áreas de conhecimento das Ciências Biológicas e Agrárias.&lt;/p&gt;
+
+&lt;p&gt;Para saber mais sobre o desenvolvimento e evolução do projeto Caixa Mágica acesse:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/caixamagica&quot;&gt;https://github.com/caixamagica&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sun, 18 Mar 2018 00:00:00 -0300</pubDate>
+        <link>http://joenio.me/caixa-magica-na-vivencia-amazonica-2016/index.html</link>
+        <guid isPermaLink="true">http://joenio.me/caixa-magica-na-vivencia-amazonica-2016/index.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Discos para ouvir antes de morrer (parte 1)</title>
@@ -1874,98 +1958,6 @@ que você leia o livro dele, mas faça isso hoje, não deixe para amanhã! rs&lt
         <pubDate>Wed, 04 Mar 2015 00:00:00 -0300</pubDate>
         <link>http://joenio.me/nao-faca-hoje-o-que-pode-deixar-para-amanha/index.html</link>
         <guid isPermaLink="true">http://joenio.me/nao-faca-hoje-o-que-pode-deixar-para-amanha/index.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Fui diagnosticado com um tumor renal, e agora?</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/files/wall-e-tomografia.jpg&quot; alt=&quot;Wall-e sob a tomografia computadorizada&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Em 2012 fui diagnosticado com um tumor no rim esquerdo, fiz uma cirurgia e a
-recuperação ocorreu muito rápida e tranquila. Na época fiz uma busca
-superficial na internet sobre o assunto e encontrei algumas opiniões bem
-assustadoras, falavam em quimioterapia, radioterapia e afins.  Como nada disso
-foi necessário em meu caso resolvi compartilhar minha experiência aqui, com o
-objetivo de deixar um relato positivo sobre o tratamento de tumor renal na
-esperança de que seja útil para alguém.&lt;/p&gt;
-
-&lt;p&gt;Bem, vamos lá… 2012, fazia algum tempo que sofria com pequenas dores de
-estômago, ao investigar a causa descobri que estava com uma gastrite, fiz o
-tratamento, resolvi o problema mas as dores continuaram, vários exames depois,
-dentre eles uma tomografia computadorizada de abdómen, identificou um pequeno
-ponto no rim esquerdo, este pequeno ponto era um tumor e precisava ser
-removido.&lt;/p&gt;
-
-&lt;p&gt;Neste momento o médico me explicou que o procedimento cirúrgico para remoção do
-tumor apresentava uma chance de cura de 95%, isto me deixou bastante tranquilo,
-me explicou que a cirurgia era simples, poderia ser feita por vídeo
-laparoscopia, e que a remoção do tumor no meu caso tinha grandes chances de
-preservar o rim, ou ao menos parte dele.&lt;/p&gt;
-
-&lt;p&gt;Apesar da cirurgia ter sido um sucesso, fazer tudo isto pelo SUS não foi tarefa
-fácil, eu não tinha plano de saúde então o SUS era minha única alternativa. Por
-sorte e por ajuda de alguns médicos consegui chegar ao Hospital Aristides
-Maltez (HAM), ele é referência em tumores no estado Bahia e faz atendimentos
-100% pelo SUS.&lt;/p&gt;
-
-&lt;p&gt;O próximo passo foi conseguir marcar uma consulta, no HAM isto não é tão fácil,
-é muita gente para pouco “hospital”, consegui marcar a primeira consulta após
-esperar uma manhã inteira na fila. Consulta agendada, voltei ao hospital no dia
-marcado, mais um turno aguardando para ser atendido, fui atendido e a cirurgia
-foi marcada para um prazo de aproximadamente 15 dias.&lt;/p&gt;
-
-&lt;p&gt;O grande dia chegou, em 31 de Janeiro de 2012 fui internado, a cirurgia ocorreu
-no dia seguinte, o nome exato do procedimento ao qual fui submetido é
-&lt;strong&gt;Ressecção de tumor retroperitoneal + linfadenectomia retroperitoneal&lt;/strong&gt;, em
-algumas horas já estava de volta à enfermaria, um médico residente informou que
-ocorreu tudo bem e que a previsão de alta era em 48 horas. Dentro do prazo
-previsto recebi alta, me entregaram algumas amostras do tumor para que fosse
-solicitado biopsia, marquei a consulta de retorno para 2 semanas depois e fui
-para casa.&lt;/p&gt;
-
-&lt;p&gt;Voltei para a consulta já com os resultados da biopsia em mãos, o médico disse
-que a cirurgia ocorreu da melhor forma possível, e que as chances de cura eram
-ótimas, mas o resultado da biopsia deu positivo para maligno, ou seja, o tumor
-era cancerígeno.&lt;/p&gt;
-
-&lt;p&gt;Só neste momento eu me &lt;em&gt;toquei&lt;/em&gt; de que tive um câncer. Adimito que sempre tive
-um certo medo, costumava pensar, não com tanta frequência, mas pensava o
-seguinte:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Puts! Se um dia eu tiver algum tipo de câncer como é que vai ser, quimio,
-rádio, etc… Deve ser foda!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;E de repente eu tive um, fui curado, e &lt;em&gt;quase&lt;/em&gt; nem percebi… Reflito sobre
-isto de uma maneira bem humorada e tranquila, afinal, ficar angustiado não
-resolveria o problema.&lt;/p&gt;
-
-&lt;p&gt;Apesar disso é importante ser disciplinado e seguir as orientações médicas,
-cumprir os prazos planejados, e não deixar para “depois”, “depois” e “depois”.
-O meu caso por exemplo requer acompanhamento anual, repito todo ano exames
-de sangue, tomografia computadorizada de abdómen e radiografia de tórax. Os
-médicos dizem que casos como o meu, tumor maligno, há chances do tumor voltar,
-então é necessário acompanhamento para o resto da vida.&lt;/p&gt;
-
-&lt;p&gt;E aqui termino este pequeno relato, desejo sorte para aqueles que estejam
-passando por situação parecida, tenham tranquilidade, paciência e acima de tudo
-fé na medicina moderna, ou em qualquer outra coisa que os tranquilize.&lt;/p&gt;
-
-&lt;p&gt;Tenho certeza de que vibrações positivas ajudam bastante, e as vibrações dos
-meus amigos e familiares me ajudaram muito naquele momento, então aproveito
-este espaço para deixar registrado publicamente um agradecimento especial à
-todos aqueles que me desejaram sorte e que de alguma forma me enviaram suas
-boas vibrações.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Obrigado!&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Wed, 31 Dec 2014 00:00:00 -0200</pubDate>
-        <link>http://joenio.me/fui-diagnosticado-com-um-tumor-renal-e-agora/index.html</link>
-        <guid isPermaLink="true">http://joenio.me/fui-diagnosticado-com-um-tumor-renal-e-agora/index.html</guid>
         
         
       </item>
