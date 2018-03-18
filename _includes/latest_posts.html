@@ -1,8 +1,7 @@
 <div class="page-content latest-posts">
   <div class="wrap">
     <ul class="posts">
-      {% assign _page = page %}
-      {% for page in site.posts offset:1 %}
+      {% for page in site.posts %}
       <li class="post">
         <header class="post-banner">
           {% include metadata.html %}
@@ -16,7 +15,6 @@
         </article>
       </li>
       {% endfor %}
-      {% assign page = _page %}
     </ul>
   </div>
 </div>
