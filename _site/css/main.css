@@ -133,49 +133,11 @@ footer.site-footer div.wrap a,
 .posts {
   list-style-type: none;
 }
-.latest-posts .post {
-  height: 200px;
-  overflow-y: hidden;
-  clear: both;
+.latest-posts .post-header {
+  margin-bottom: 10px;
 }
-.latest-posts .post a {
-  text-decoration: none;
-  color: #555;
-}
-.latest-posts .post:hover a {
-  color: #111;
-}
-.latest-posts .post:first-child {
-  margin-top: 0px;
-}
-.post-banner {
-  position: relative;
-  display: block;
-  width: 200px;
-  height: 200px;
-  float: left;
-  margin-right: 20px;
-  overflow: hidden;
-}
-.latest-posts .post a.post-link {
-  display: block;
-  color: #205caa;
-  padding: 0 0 10px 0;
-  text-decoration: none;
-}
-.post-banner img {
-  height: 200px;
-  margin-left: -150px;
-}
-.post-banner .meta {
-  position: absolute;
-  right: 10px;
-  bottom: 16px;
-  color: white;
-  background-color: #111;
-  padding: 2px 14px 4px 14px;
-  border-radius: 5px;
-  opacity: 0.9;
+.post-lead {
+  padding-bottom: 20px;
 }
 .posts > li { margin-bottom: 30px; }
 
@@ -184,12 +146,6 @@ footer.site-footer div.wrap a,
   font-size: 1em;
   letter-spacing: -1.75px;
   line-height: 0.8em;
-}
-
-.posts hr {
-  border: 0;
-  border-bottom: 1px solid #e8e8e8;
-  margin-bottom: 50px;
 }
 
 /* Post styles */
@@ -222,7 +178,6 @@ footer.site-footer div.wrap a,
 .post-content { margin: 0 0 30px; }
 
 .post-content > * { margin: 20px 0; }
-
 
 .page-content h1, .post-content h1,
 .page-content h2, .post-content h2,
@@ -414,10 +369,6 @@ iframe {
     margin: 0 0 15px; }
 
   .footer-col-1 { display: none; }
-
-  .post-banner {
-    display: none;
-  }
 
   iframe {
     width: auto;
