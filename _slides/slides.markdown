@@ -15,3 +15,4 @@ layout: page
 * [Sustentabilidade técnica de software acadêmico no domínio de ferramentas de análise estática de código-fonte](/sustentabilidade-software-academico)
 * [Live Coding](/live-coding) (incompleto)
 * [Modelo de negócio com Software Livre](/negocios-com-software-livre) (rascunho)
+* [Jogos FPS livres](/jogos-fps-livres)
