@@ -8,9 +8,11 @@ title: Jogos FPS livres
 ### (First-person shooter)
 </section>
 
-
-
-
+<!-- ******************
+     *                *
+     *      DOOM      *
+     *                *
+     ****************** -->
 
 <section>
 <section>
@@ -60,9 +62,11 @@ GPLv2
 </section>
 </section>
 
-
-
-
+<!-- ******************
+     *                *
+     *    HEXEN II    *
+     *                *
+     ****************** -->
 
 <section>
 <section>
@@ -103,9 +107,11 @@ GPLv2
 </section>
 </section>
 
-
-
-
+<!-- ******************
+     *                *
+     *    QUAKE 1     *
+     *                *
+     ****************** -->
 
 <section>
 <section>
@@ -167,9 +173,11 @@ GPLv2
 </section>
 </section>
 
-
-
-
+<!-- ******************
+     *                *
+     *    QUAKE 2     *
+     *                *
+     ****************** -->
 
 <section>
 <section>
@@ -213,9 +221,11 @@ GPLv2
 </section>
 </section>
 
-
-
-
+<!-- ******************
+     *                *
+     *   OPEN ARENA   *
+     *                *
+     ****************** -->
 
 <section>
 <section>
@@ -253,9 +263,11 @@ GPLv2
 </section>
 </section>
 
-
-
-
+<!-- ******************
+     *                *
+     *   ALIEN ARENA  *
+     *                *
+     ****************** -->
 
 <section>
 <section>
@@ -296,9 +308,11 @@ GPLv2
 </section>
 </section>
 
-
-
-
+<!-- *******************
+     *                 *
+     *TERMINAL OVERLOAD*
+     *                 *
+     ******************* -->
 
 <section>
 <section>
@@ -332,15 +346,25 @@ Terminal Overload = MIT
 </section>
 </section>
 
-
-
-
+<!-- ******************
+     *                *
+     *   TREMULOUS    *
+     *                *
+     ****************** -->
 
 <section>
 <section>
 Tremulous = GPL
 
 <iframe width="800" height="400" src="https://www.youtube.com/embed/tb1m0OvXK8U?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+[tremulous.net](http://tremulous.net)
+</section>
+<section>
+Tremulous = GPL
+
+## Install
+<small>Não está empacotado no Debian, binários disponíveis para download no site do jogo.</small>
 
 [tremulous.net](http://tremulous.net)
 </section>
@@ -361,9 +385,11 @@ GPLv2
 </section>
 </section>
 
-
-
-
+<!-- ******************
+     *                *
+     *     NEXUIZ     *
+     *                *
+     ****************** -->
 
 <section>
 <section>
@@ -398,9 +424,11 @@ found Xonotic.</small>
 </section>
 </section>
 
-
-
-
+<!-- ******************
+     *                *
+     *    XONOTIC     *
+     *                *
+     ****************** -->
 
 <section>
 <section>
@@ -435,8 +463,11 @@ GPLv2
 </section>
 </section>
 
-
-
+<!-- ******************
+     *                *
+     *     WARSOW     *
+     *                *
+     ****************** -->
 
 <section>
 <section>
@@ -475,9 +506,11 @@ GPLv2
 </section>
 </section>
 
-
-
-
+<!-- ******************
+     *                *
+     *  UNVANQUISHED  *
+     *                *
+     ****************** -->
 
 <section>
 <section>
@@ -515,10 +548,13 @@ GPLv3
 </section>
 </section>
 
+<!-- ******************
+     *                *
+     *    CUBE 1 e 2  *
+     *                *
+     ****************** -->
 
-
-
-
+<section>
 <section>
 Cube = ZLIB
 
@@ -526,13 +562,8 @@ Cube = ZLIB
 
 [cubeengine.com/cube.php](http://cubeengine.com/cube.php)
 </section>
-
-
-
-
 <section>
-<section>
-Cube 2 = ZLIB
+Cube 2 (Sauerbraten) = ZLIB
 <img src="/files/debian.png" width="4%" style="vertical-align: middle" />
 
 <iframe width="800" height="400" src="https://www.youtube.com/embed/fX7o-1OH-WM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -540,7 +571,7 @@ Cube 2 = ZLIB
 [sauerbraten.org](http://sauerbraten.org)
 </section>
 <section>
-Cube 2 = ZLIB
+Cube 2 (Sauerbraten) = ZLIB
 <img src="/files/debian.png" width="4%" style="vertical-align: middle" />
 
 ## Install
@@ -566,8 +597,11 @@ ZLIB
 </section>
 </section>
 
-
-
+<!-- ******************
+     *                *
+     *  ASSAULT CUBE  *
+     *                *
+     ****************** -->
 
 <section>
 <section>
@@ -601,9 +635,11 @@ ZLIB-like
 </section>
 </section>
 
-
-
-
+<!-- ******************
+     *                *
+     *  RED ECLIPSE   *
+     *                *
+     ****************** -->
 
 <section>
 <section>
@@ -623,9 +659,33 @@ Red Eclipse = ZLIB
 sudo apt install redeclipse
 </code></pre>
 </section>
+<section data-background="https://www.redeclipse.net/bits/images/005.jpg">
+### Red Eclipse
+
+<div class="box-green">
+<small>The project is a Free and Open Source game, built on Cube Engine 2 using
+SDL and OpenGL which allows it to be ported to many platforms.</small>
+
+<small>Red Eclipse itself and the Cube Engine 2 are under the zlib
+License.</small>
+
+<small>All content in the game is Free, and no more strict than the Creative
+Commons CC-BY-SA license.</small>
+
+ZLIB
+
+[github.com/red-eclipse](https://github.com/red-eclipse)
+</div>
+</section>
 </section>
 
+<!-- ******************
+     *                *
+     *  OPEN SPADES   *
+     *                *
+     ****************** -->
 
+<section>
 <section>
 OpenSpades = GPL
 
@@ -633,16 +693,75 @@ OpenSpades = GPL
 
 [openspades.yvt.jp](http://openspades.yvt.jp)
 </section>
+<section>
+OpenSpades = GPL
 
+## Install
+
+<small>Binários para GNU/Linux não encontrados no site do jogo.</small>
+</section>
+<section data-background="http://openspades.yvt.jp/media/images/ss1.jpg">
+### OpenSpades (Ace of Spades client)
+
+<div class="box-green">
+<small>Audio files included with the releases cannot be modified nor
+redistributed separately from the OpenSpades releases based on the official
+release.</small>
+
+<small>Other contents included in the "pak" files and not included in the
+OpenSpades git repository are put into the public domain.</small>
+
+GPLv3
+
+[github.com/yvt/openspades](https://github.com/yvt/openspades)
+</div>
+</section>
+</section>
+
+<!-- *******************
+     *                 *
+     * WORLD OF PADMAN *
+     *                 *
+     ******************* -->
 
 <section>
-World of Padman = non-free
+<section>
+World of Padman = GPL
 
 <iframe width="800" height="400" src="https://www.youtube.com/embed/OhaOJsksHGE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 [worldofpadman.net](https://worldofpadman.net)
 </section>
+<section>
+World of Padman = GPL
 
+## Install
+
+<small>Não está empacotado no Debian, binários disponíveis para download no site do jogo.</small>
+
+[worldofpadman.net](https://worldofpadman.net)
+</section>
+<section data-background="https://worldofpadman.net/wp-content/uploads/wopaction_008.jpg">
+### World of Padman
+<div class="box-green">
+<small>WoP is based upon Quake 3 gamecode and uses a modfied version of the
+ioquake3 engine.</small>
+
+<small>Textures, models, sounds etc. in World of Padman is property of
+respective authors which owns the copyrights.</small>
+
+GPLv2
+
+[github.com/PadWorld-Entertainment/wop-engine](https://github.com/PadWorld-Entertainment/wop-engine)
+</div>
+</section>
+</section>
+
+<!-- *******************
+     *                 *
+     *   ET: LEGACY    *
+     *                 *
+     ******************* -->
 
 <section>
 <section>
@@ -660,8 +779,28 @@ Enemy Territory: Legacy = GPL
 
 [www.etlegacy.com](https://www.etlegacy.com)
 </section>
+<section data-background="https://www.etlegacy.com/images/slider/slider_1.jpg">
+### Enemy Territory: Legacy
+<div class="box-green">
+<small>An open source project that aims to create a fully compatible client and
+server for the popular online FPS game Wolfenstein: Enemy Territory.</small>
+
+<small>The source release contains only the engine and mod code but not any
+game data, which is still covered by the original EULA and must be obeyed as
+usual.</small>
+
+GPLv3
+
+[github.com/etlegacy/etlegacy](https://github.com/etlegacy/etlegacy)
+</div>
+</section>
 </section>
 
+<!-- *******************
+     *                 *
+     *     QUETOO      *
+     *                 *
+     ******************* -->
 
 <section>
 <section>
@@ -677,7 +816,24 @@ Quetoo = GPL
 ## Install
 <small>Não está empacotado no Debian, binários disponível para download no site do jogo.</small>
 
-[www.etlegacy.com](https://www.etlegacy.com)
+[quetoo.org](http://quetoo.org)
+</section>
+<section data-background="https://camo.githubusercontent.com/02afc262051cfeae3ce85de8e5b46733f25d72b5/687474703a2f2f717565746f6f2e6f72672f66696c65732f31353338353336395f313234353030313632323231323032345f373938383133373030323530333932333932335f6f2e6a7067">
+### Quetoo
+<div class="box-green">
+<small>Quetoo is a Free, standalone first person shooter video game based on id
+Tech2.</small>
+
+<small>Source code is licensed under the GNU General Public License Version
+2.0.</small>
+
+<small>Artwork and media are provided under the Creative Commons
+Attribution-ShareAlike (CC-BY-SA) 4.0.</small>
+
+GPLv2
+
+[github.com/jdolan/quetoo](https://github.com/jdolan/quetoo)
+</div>
 </section>
 </section>
 
