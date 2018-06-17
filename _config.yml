@@ -31,6 +31,9 @@ collections:
   slides:
     output: true
     permalink: ":title/index.html"
+  ascii:
+    output: true
+    permalink: ":path"
 
 # Configuracoes padrao para posts
 defaults:
@@ -51,3 +54,9 @@ defaults:
       type: "slides"
     values:
       layout: "revealjs"
+  -
+    scope:
+      path: ""
+      type: "ascii"
+    values:
+      layout: null
