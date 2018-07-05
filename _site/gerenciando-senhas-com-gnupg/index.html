@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Gerenciando senhas com GnuPG | Joenio Marques da Costa</title>
+  <meta name="author" content="Joenio Costa" />
+  <link rel="stylesheet" href="/javascript/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="/javascript/reveal.js/css/theme/sky.css" id="theme">
+  
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="/javascript/reveal.js/lib/css/zenburn.css">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '/javascript/reveal.js/css/print/pdf.css' : '/javascript/reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="/javascript/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/css/revealjs.css">
+</head>
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section>
+
+  <p><img style="width: 30%" src="/files/gnupg_twitter_400x400.png" /></p>
+
+  <p>Gerenciando senhas com GnuPG</p>
+</section>
+
+<section>
+  <p>GnuPG é uma implementação livre do padrão OpenPGP definido pela <a href="https://tools.ietf.org/html/rfc4880">RFC4880</a></p>
+
+  <p><a href="https://www.gnupg.org">www.gnupg.org</a></p>
+</section>
+
+<section>
+  <p>OpenPGP é um protocolo não-proprietário para comunicação encriptada por email usando chaves públicas criptográficas.</p>
+
+  <p>O protocolo OpenPGP define formatos padrão para mensagens encriptadas, assinaturas e certificados para troca de chaves públicas.</p>
+
+  <p><a href="https://www.openpgp.org">www.openpgp.org</a></p>
+</section>
+
+<section>
+  <p><img src="/files/OpenPGP.png" /></p>
+
+  <p><small>fonte: <a href="http://www.articpost.com/openpgp-key-email-security">http://www.articpost.com/openpgp-key-email-security</a></small></p>
+</section>
+
+<section>
+  <p>GnuPG criptografa mensagens utilizando a criptografia de chaves assimétricas.</p>
+
+  <p>Criptografia assimétrica é uma classe de protocolos de criptografia baseados em
+algoritmos que requerem duas chaves, uma delas sendo secreta (ou privada) e a
+outra delas sendo pública.</p>
+</section>
+
+<section>
+  <ul>
+    <li>Cada usuário gera um par de chaves correspondentes: uma pública e uma secreta.</li>
+    <li>A chave pública é distribuída livremente.</li>
+    <li>A chave secreta criptografa, descriptografa e assina dados.</li>
+  </ul>
+</section>
+
+<section>
+  <p><img src="/files/GoAnywhereMFT_OpenPGP-Diagram_web.png" /></p>
+
+  <p><small>fonte: <a href="https://www.goanywhere.com/managed-file-transfer/encryption/open-pgp">https://www.goanywhere.com/managed-file-transfer/encryption/open-pgp</a></small></p>
+</section>
+
+<section>
+  <h3 id="criando-chaves">Criando chaves</h3>
+
+  <p><code class="highlighter-rouge">gpg --gen-key</code></p>
+
+  <ul>
+    <li>Crie sua chave com <a href="https://wiki.gnupg.org/LargeKeys">2048 bits</a></li>
+    <li>Cria uma senha (passphrase) com as seguintes características:
+      <ul>
+        <li>deve ser longa</li>
+        <li>deve ter caracteres especiais</li>
+        <li>não deve ser um nome conhecido</li>
+        <li>deve ser muito difícil de adivinhar</li>
+      </ul>
+    </li>
+    <li><a href="https://riseup.net/en/security/message-security/openpgp/best-practices">Não inclua “Comment” em seu User ID</a></li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="exportando-chaves">Exportando chaves</h3>
+
+  <p><code class="highlighter-rouge">gpg -a --export [ID] &gt; [FILENAME]</code></p>
+
+  <h3 id="importando-chaves">Importando chaves</h3>
+
+  <p><code class="highlighter-rouge">gpg --import [FILENAME]</code></p>
+</section>
+
+<section>
+  <h3 id="servidores-de-chaves">Servidores de chaves</h3>
+
+  <p>Os grandes servidores sincronizam chaves entre si,
+exemplos de servidores:</p>
+
+  <ul>
+    <li><a href="http://pgp.mit.edu">http://pgp.mit.edu</a></li>
+    <li><a href="http://pgp.surfnet.nl">http://pgp.surfnet.nl</a></li>
+    <li><a href="http://pgp.uni-mainz.de">http://pgp.uni-mainz.de</a></li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="publicando-chave-pblica">Publicando chave pública</h3>
+
+  <p><code class="highlighter-rouge">gpg --send-keys [ID]</code></p>
+</section>
+
+<section>
+  <h3 id="importando-chaves-1">Importando chaves</h3>
+
+  <p><code class="highlighter-rouge">gpg --recv-keys [ID]</code></p>
+
+  <p><code class="highlighter-rouge">gpg --search-keys [NAME]</code></p>
+</section>
+
+<section>
+  <p><img src="/files/weboftrust.png" /></p>
+
+  <p><small>
+fonte:
+<a href="https://cran.r-project.org/web/packages/gpg/vignettes/intro.html">https://cran.r-project.org/web/packages/gpg/vignettes/intro.html</a>
+<br />
+slides sobre <strong>web of trust</strong>: <a href="http://slides.com/mricon/pgp-web-of-trust">http://slides.com/mricon/pgp-web-of-trust</a>
+</small></p>
+</section>
+
+<section>
+  <p><em>You should only sign a key as being authentic when you are ABSOLUTELY SURE that the key is really authentic!!!. So if you are positive you got the key yourself (like on a key signing party) or you got the key through other means and checked it (for instance by phone) using the fingerprint-mechanism. You should never sign a key based on any assumption.</em></p>
+
+  <p><small>fonte: <a href="https://www.dewinter.com/gnupg_howto/english/GPGMiniHowto-3.html">https://www.dewinter.com/gnupg_howto/english/GPGMiniHowto-3.html</a></small></p>
+</section>
+
+<section>
+  <h3 id="assinando-chaves">Assinando chaves</h3>
+
+  <p>Após importar uma chave para o chaveiro local é possível
+determinar o grau de confiabilidade que temos no dono dela.</p>
+
+  <p><code class="highlighter-rouge">gpg --edit-key [ID]</code></p>
+</section>
+
+<section>
+  <h4 id="exemplo">Exemplo</h4>
+  <p>Você pode dizer que confia plenamente nas chaves que <b style="color:red">Ana</b> assina.
+Assim, quando você receber a chave de <b style="color:green">Beto</b>,
+que foi assinada por <b style="color:red">Ana</b>,
+terá motivos para confiar nessa chave, mesmo não conhecendo <b style="color:green">Beto</b>.</p>
+
+  <p><small>
+fonte:
+<a href="http://eriberto.pro.br/wiki/index.php?title=Usando_o_GnuPG">http://eriberto.pro.br/wiki/index.php?title=Usando_o_GnuPG</a>
+</small></p>
+</section>
+
+<section>
+  <h4 id="nveis-de-confiabilidade">Níveis de confiabilidade</h4>
+
+  <ul>
+    <li>
+      <p><small><strong>Unknown</strong>: Não se sabe como a pessoa em questão procede ao assinar uma chave. Não se deve confiar nas assinaturas dessa pessoa em chaves alheias.</small></p>
+    </li>
+    <li>
+      <p><small><strong>None</strong>: Esta pessoa costuma assinar chaves sem certificar-se de que elas realmente são da pessoa que diz possuí-las. Não se deve confiar nas assinaturas dessa pessoa em chaves alheias.</small></p>
+    </li>
+    <li>
+      <p><small><strong>Marginal</strong>: Esta pessoa assina chaves de forma correta (faz as verificações físicas necessárias). É possível confiar nessa pessoa, caso seja extremamente necessário.</small></p>
+    </li>
+    <li>
+      <p><small><strong>Full</strong>: O usuário conhece muito bem sistemas criptográficos, é extremamente confiável e responsável. É possível pensar em aceitar algo de outras chaves que tenham sido assinadas por essa pessoa.</small></p>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <p><strong>gnupg.vim</strong>: Plugin for transparent editing of gpg encrypted files</p>
+
+  <p><small><em>arquivos com extensão “.gpg”, “.pgp” ou “.asc” serão automaticamente reconhecidos</em></small></p>
+
+  <p><small>
+fonte:
+<a href="https://www.vim.org/scripts/script.php?script_id=3645">https://www.vim.org/scripts/script.php?script_id=3645</a>
+</small></p>
+
+  <h4 id="instalao">Instalação</h4>
+
+  <ol>
+    <li><code class="highlighter-rouge">sudo apt install vim-scripts</code></li>
+    <li><code class="highlighter-rouge">sudo apt install vim-addon-manager</code></li>
+    <li><code class="highlighter-rouge">vim-addons install gnupg</code></li>
+  </ol>
+</section>
+
+<section>
+  <h2 id="festa">Festa</h2>
+  <p><img style="width: 60%; box-shadow: 0 0 15px black" src="https://i.imgur.com/YGpRUrY.gif" /></p>
+
+  <p><strong>key signing party</strong></p>
+</section>
+
+<section>
+  <p>Antes da festa de assinatura de chaves:</p>
+
+  <ol>
+    <li>Criar um par de chaves e publicar a chave pública</li>
+    <li>Documento com nome e foto, idealmente documento oficial</li>
+    <li>Impressão com nome completo, email e fingerprint, ou cartão de visita</li>
+  </ol>
+
+  <p><small>
+The Keysigning Party HOWTO: 
+<a href="http://www.cryptnet.net/fdp/crypto/keysigning_party/en/keysigning_party.html">http://www.cryptnet.net/fdp/crypto/keysigning_party/en/keysigning_party.html</a>
+</small></p>
+</section>
+
+<section>
+  <p>Durante a festa de assinatura de chaves:</p>
+
+  <ul>
+    <li>Verificar as informações pessoais, nome, documentos, fingerprint, etc</li>
+    <li>Garantir que a pessoa é realmente dona da chave</li>
+  </ul>
+
+  <p><small>os servidores de chaves sabem lidar com varios envios da mesma chave somando as assinaturas</small></p>
+</section>
+
+<section>
+  <p>Após a festa de assinatura de chaves:</p>
+
+  <ul>
+    <li>De posse da impressão contendo nome, email e fingerprint importar a chave</li>
+    <li>Assinar a chave pública</li>
+    <li>Enviar a chave pública assinada de cada pessoa para o servidor de chaves</li>
+  </ul>
+</section>
+
+<section>
+  <p>Palestra: <br />
+Criptografia e assinatura digital com GnuPG</p>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/JYJRbyH0YI8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+  <p><small>
+Boa referência sobre
+criptografia simétrica,
+criptografia assimétrica,
+assinatura digital,
+autoridade certificadora e
+exemplos práticos com o GnuPG.
+</small></p>
+
+  <p><a href="https://www.youtube.com/watch?v=JYJRbyH0YI8">https://www.youtube.com/watch?v=JYJRbyH0YI8</a></p>
+</section>
+
+<section>
+  <p>Palestra: <br />
+Assinatura de chaves na MiniDebConf</p>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/d4Zkg3o4jj0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+  <p><small>
+Exemplo de festa de assinatura de chaves realizada pela comunidade Debian na MiniDebConf Curitiba 2018.
+</small></p>
+
+  <p><a href="https://www.youtube.com/watch?v=d4Zkg3o4jj0">https://www.youtube.com/watch?v=d4Zkg3o4jj0</a></p>
+</section>
+
+<section data-background="#c4a000">
+  <section>
+    <h3 id="obrigado">Obrigado!</h3>
+
+    <p><span class="url">joenio@joenio.me</span></p>
+
+    <p><br />
+<em>Esta apresentação está disponível em:</em></p>
+
+    <p><span class="url">http://joenio.me/gerenciando-senhas-com-gnupg</span></p>
+
+    <p><small>(código-fonte: <strong>http://github.com/joenio/joenio.me</strong>)</small></p>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></p>
+
+  </section>
+  <section>
+    <h3 id="histrico-de-apresentaes">Histórico de apresentações</h3>
+
+    <p><small>Onde e quando esta apresentação foi realizada</small></p>
+
+    <ul style="font-size: 24px">
+  <li>23 Julho 2018, UnG Gama - FGA, MiniLappisConf</li>
+</ul>
+  </section>
+</section>
+
+    </div>
+  </div>
+  <script src="/javascript/reveal.js/lib/js/head.min.js"></script>
+  <script src="/javascript/reveal.js/js/reveal.js"></script>
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      slideNumber: 'c/t',
+      history: true,
+      center: true,
+      fragments: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      // Optional reveal.js plugins
+      dependencies: [
+        { src: '/javascript/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: '/javascript/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: '/javascript/reveal.js/plugin/zoom-js/zoom.js', async: true },
+        { src: '/javascript/reveal.js/plugin/notes/notes.js', async: true }
+      ]
+    });
+  </script>
+</body>
+</html>
