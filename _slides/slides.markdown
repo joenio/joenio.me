@@ -16,3 +16,4 @@ layout: page
 * [Live Coding](/live-coding) (incompleto)
 * [Modelo de negócio com Software Livre](/negocios-com-software-livre) (rascunho)
 * [Jogos FPS livres](/jogos-fps-livres)
+* [Primeiros passos com Git](/git)

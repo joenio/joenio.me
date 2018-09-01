@@ -95,6 +95,45 @@ emission of a succession of repetitive conditionals".
 </section>
 
 <section>
+<img src="/files/tidalcycles-id-mono.png" />
 
+[tidalcycles.org](https://tidalcycles.org)
+</section>
+
+<section>
+TidalCycles (or Tidal for short) is a language for live coding patterns.
+
+[tidalcycles.org](https://tidalcycles.org)
+</section>
+
+<section>
+
+Tidal does not make sound itself, but is designed for use with the SuperDirt synth, and can control other synths over Open Sound Control or MIDI.
+
+[github.com/musikinformatik/SuperDirt](https://github.com/musikinformatik/SuperDirt)
+</section>
+
+<section>
+SuperDirt
+
+SuperCollider implementation of the Dirt sampler for the Tidal programming language.
+
+[github.com/musikinformatik/SuperDirt](https://github.com/musikinformatik/SuperDirt)
+</section>
+
+<section>
+
+### What is a Cycle?
+
+A cycle is the main “loop” of time in Tidal.
+The cycle repeats forever in the background.
+
+The cycle’s duration always stays the same unless you modify it with `cps`.
+By default, there is one cycle per second.
 
 </section>
+
+<section>
+</section>
+
+

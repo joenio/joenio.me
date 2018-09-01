@@ -4,20 +4,15 @@ title: Software Livre
 
 <section data-background="#ffffff" data-background-transition="slide">
 # Software Livre
-<img src="files/gnu.png" />
+<img src="/files/gnu.png" />
 
 "conhecimento deve estar sempre disponível para permitir a evolução da humanidade"
 </section>
 
 <section>
-# Joenio Costa
+# Joenio Marques da Costa
 
--- http://joenio.me
-
-* Desenvolvedor de software (livre)
-* Sócio/fundador da cooperativa Colivre
-* Graduado em informática pela UCSal
-* Mestrando na UFBA pelo PGCOMP
+[http://joenio.me](http://joenio.me)
 </section>
 
 <section data-background="#4e9a06" data-background-transition="slide">
@@ -28,7 +23,7 @@ title: Software Livre
 > "Por _software livre_ devemos entender aquele software que
 > respeita a liberdade e senso de comunidade dos usuários"
 
--- http://www.gnu.org/philosophy/free-sw.html
+[http://www.gnu.org/philosophy/free-sw.html](http://www.gnu.org/philosophy/free-sw.html)
 </section>
 
 <section data-background="#4e9a06" data-background-transition="slide">
@@ -70,7 +65,7 @@ faz de tais softwares um instrumento de poder injusto
 
 <table style="text-align: center"><tr>
   <td style="width: 360px; text-align: center">
-    <img src="files/gnu.png" style="background: white" />
+    <img src="/files/gnu.png" style="background: white" />
     1983, GNU
   </td>
   <td style="font-size: 32px; vertical-align: top">
@@ -78,7 +73,7 @@ faz de tais softwares um instrumento de poder injusto
     prevalecia na comunidade de computação nos seus
     primórdios"</em></p>
 
-    -- http://gnu.org/gnu/gnu-history.html
+    <a href="http://gnu.org/gnu/gnu-history.html">http://gnu.org/gnu/gnu-history.html</a>
   </td>
 </tr></table>
 </section>
@@ -88,13 +83,15 @@ faz de tais softwares um instrumento de poder injusto
 
 <table style="text-align: center"><tr>
   <td style="width: 360px; text-align: center">
-    <img src="files/fsf.png" style="background: white" />
+    <img src="/files/fsf.png" style="background: white" />
     <p>1985, FSF</p>
   </td>
   <td style="font-size: 32px; vertical-align: top">
     <p><em>"Fundação sem fins lucrativos criada para institucionalizar o
     Projeto GNU, bem como obter fundos para desenvolver e proteger o
     software livre"</em></p>
+
+    <a href="http://fsf.org">http://fsf.org</a>
   </td>
 </tr></table>
 </section>
@@ -124,7 +121,7 @@ proibidas a respeito do uso do software
 <section>
 ## Licenças do Projeto GNU
 
-<img src="files/gpl.png" style="background: white" />
+<img src="/files/gpl.png" style="background: white" />
 
 * GNU GPL - General Public License
 * GNU LGPL - Lesser General Public License
@@ -133,20 +130,20 @@ proibidas a respeito do uso do software
 </section>
 
 <section>
-## Só o GNU tem licenças livres?
+## Só o GNU tem licenças livres? Não
 
 * A licença do Perl
 * A Licença do X11
 * A licença modificada do BSD
 * A licença da Zlib
 
--- http://gnu.org/licenses/license-list.html
+[http://gnu.org/licenses/license-list.html](http://gnu.org/licenses/license-list.html)
 </section>
 
 <section>
 ## Copyright - all rights reserved
 
-<img src="files/copyright.png" style="background: white" />
+<img src="/files/copyright.png" style="background: white" />
 
 <ul style="font-size: 38px">
   <li>O "direito de autor" ou copyright é a proteção de obras literárias e
@@ -159,13 +156,13 @@ proibidas a respeito do uso do software
 <section>
 ## Copyleft - all rights reversed
 
-<img src="files/copyleft.png" style="background: white" />
+<img src="/files/copyleft.png" style="background: white" />
 
 Copyleft é uma forma de usar a legislação de proteção dos direitos autorais com
 o objetivo de retirar barreiras à utilização, difusão e modificação de uma obra
 criativa
 
--- http://pt.wikipedia.org/wiki/Copyleft
+[http://pt.wikipedia.org/wiki/Copyleft](http://pt.wikipedia.org/wiki/Copyleft)
 <br/>
 -- http://copyleft.org
 </section>
@@ -256,25 +253,25 @@ criativa
 
 <ul style="list-style: none; font-size: 32px; text-align: center; color: black">
   <li style="height: 240px; width: 170px; float: left; border: 1px solid #DDD; display: block; margin: 5px; background: white; position: relative">
-    <img width="150px" src="files/linux.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">Linux</p></li>
+    <img width="150px" src="/files/linux.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">Linux</p></li>
   <li style="height: 240px; width: 170px; float: left; border: 1px solid #DDD; display: block; margin: 5px; background: white; position: relative">
-    <img width="140px" src="files/debian.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">Debian</p></li>
+    <img width="140px" src="/files/debian.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">Debian</p></li>
   <li style="height: 240px; width: 170px; float: left; border: 1px solid #DDD; display: block; margin: 5px; background: white; position: relative">
-    <img width="130px" src="files/libreoffice.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">LibreOffice</p></li>
+    <img width="130px" src="/files/libreoffice.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">LibreOffice</p></li>
   <li style="height: 240px; width: 170px; float: left; border: 1px solid #DDD; display: block; margin: 5px; background: white; position: relative">
-    <img width="150px" src="files/firefox.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">Firefox</p></li>
+    <img width="150px" src="/files/firefox.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">Firefox</p></li>
   <li style="height: 240px; width: 170px; float: left; border: 1px solid #DDD; display: block; margin: 5px; background: white; position: relative">
-    <img width="150px" src="files/inkscape.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">Inkscape</p></li>
+    <img width="150px" src="/files/inkscape.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">Inkscape</p></li>
   <li style="height: 240px; width: 170px; float: left; border: 1px solid #DDD; display: block; margin: 5px; background: white; position: relative">
-    <img width="150px" src="files/gimp.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">Gimp</p></li>
+    <img width="150px" src="/files/gimp.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">Gimp</p></li>
   <li style="height: 240px; width: 170px; float: left; border: 1px solid #DDD; display: block; margin: 5px; background: white; position: relative">
-    <img width="150px" src="files/ardour.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">Ardour</p></li>
+    <img width="150px" src="/files/ardour.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">Ardour</p></li>
   <li style="height: 240px; width: 170px; float: left; border: 1px solid #DDD; display: block; margin: 5px; background: white; position: relative">
-    <img width="150px" src="files/vlc.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">VLC</p></li>
+    <img width="150px" src="/files/vlc.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">VLC</p></li>
   <li style="height: 240px; width: 170px; float: left; border: 1px solid #DDD; display: block; margin: 5px; background: white; position: relative">
-    <img width="150px" src="files/noosfero.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">Noosfero</p></li>
+    <img width="150px" src="/files/noosfero.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">Noosfero</p></li>
   <li style="height: 240px; width: 170px; float: left; border: 1px solid #DDD; display: block; margin: 5px; background: white; position: relative">
-    <img width="150px" src="files/vim.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">Vim</p></li>
+    <img width="150px" src="/files/vim.png" /><p style="position: absolute; bottom: 0; width: 100%; margin: 0">Vim</p></li>
 </ul>
 </section>
 
@@ -301,7 +298,9 @@ criativa
 
 ## #comofaz
 
-<span style="font-size: 48px">http://whatcanidoformozilla.org</span>
+<span style="font-size: 48px">
+[http://whatcanidoformozilla.org](http://whatcanidoformozilla.org)
+</span>
 </section>
 
 <section>
@@ -309,7 +308,9 @@ criativa
 
 ## #comofaz
 
-<span style="font-size: 48px">http://wiki.debian.org/HelpDebian</span>
+<span style="font-size: 48px">
+[http://wiki.debian.org/HelpDebian](http://wiki.debian.org/HelpDebian)
+</span>
 </section>
 
 <section>
