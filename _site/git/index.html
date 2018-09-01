@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Git | Joenio Marques da Costa</title>
+  <meta name="author" content="Joenio Costa" />
+  <link rel="stylesheet" href="/javascript/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="/javascript/reveal.js/css/theme/black.css" id="theme">
+  
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="/javascript/reveal.js/lib/css/zenburn.css">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '/javascript/reveal.js/css/print/pdf.css' : '/javascript/reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="/javascript/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/css/revealjs.css">
+</head>
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <!--
+TODO conteudos para adicionar:
+
+  * O que é git
+  * Primeiros passos com git
+  * Conceitos
+  * Commits
+  * Merges
+  * Forks
+  * Branches
+-->
+
+<section>
+  <p><img src="/files/git-goodness.gif" /></p>
+</section>
+
+<section>
+  <p><strong>Git</strong> é um sistema de controle de versões distribuído, usado principalmente no
+desenvolvimento de software, mas pode ser usado para registrar o histórico de
+edições de qualquer tipo de arquivo.</p>
+
+  <p><a href="http://git-scm.com">http://git-scm.com</a></p>
+</section>
+
+<section>
+  <p><strong>Sistema de controle de versões</strong> na função prática da Ciência da Computação e da Engenharia de Software, é um software que tem a finalidade de gerenciar diferentes versões no desenvolvimento de um documento qualquer.</p>
+
+  <p><a href="http://pt.wikipedia.org/wiki/Sistema_de_controle_de_versões">http://pt.wikipedia.org/wiki/Sistema_de_controle_de_versões</a></p>
+</section>
+
+<section data-background="white">
+  <table>
+  <tr>
+    <td style="vertical-align: middle"><b>Versões?</b></td>
+    <td><img src="/files/Revision_controlled_project_visualization-2010-24-02.svg" /></td>
+  </tr>
+</table>
+</section>
+
+<section>
+  <p><code class="highlighter-rouge">git init .</code></p>
+</section>
+
+<section>
+  <p>crie um arquivo texto com o nome <code class="highlighter-rouge">participantes.txt</code></p>
+</section>
+
+<section>
+  <p><code class="highlighter-rouge">git add participantes.txt</code></p>
+</section>
+
+<section>
+  <p><code class="highlighter-rouge">git commit</code></p>
+</section>
+
+<section>
+  <p><code class="highlighter-rouge">git log</code></p>
+</section>
+
+<section>
+  <p>modifique e salve o arquivo <code class="highlighter-rouge">participantes.txt</code></p>
+</section>
+
+<section>
+  <p><code class="highlighter-rouge">git status</code></p>
+
+  <p><code class="highlighter-rouge">git diff</code></p>
+</section>
+
+<section>
+  <p><code class="highlighter-rouge">git add participantes.txt</code></p>
+</section>
+
+<section>
+  <p><code class="highlighter-rouge">git commit -m "fulano adicionado"</code></p>
+</section>
+
+<section>
+  <p><code class="highlighter-rouge">git log</code></p>
+</section>
+
+    </div>
+  </div>
+  <script src="/javascript/reveal.js/lib/js/head.min.js"></script>
+  <script src="/javascript/reveal.js/js/reveal.js"></script>
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      slideNumber: 'c/t',
+      history: true,
+      center: true,
+      fragments: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      // Optional reveal.js plugins
+      dependencies: [
+        { src: '/javascript/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: '/javascript/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: '/javascript/reveal.js/plugin/zoom-js/zoom.js', async: true },
+        { src: '/javascript/reveal.js/plugin/notes/notes.js', async: true }
+      ]
+    });
+  </script>
+</body>
+</html>
