@@ -12,6 +12,11 @@ TODO conteudos para adicionar:
   * Merges
   * Forks
   * Branches
+
+bons links em pt-br com git para nao-devs:
+
+  * https://blog.rocketseat.com.br/iniciando-com-git-github/
+  * https://br.udacity.com/blog/post/tutorial-iniciantes-git-github
 -->
 
 <section>
