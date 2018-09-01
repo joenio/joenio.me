@@ -1,6 +1,24 @@
 ---
-title: Oficina de Gitlab
+title: Oficina de Gitlab para iniciantes
 ---
+
+<br/>
+
+Nesta oficina iremos explorar os recursos básicos do Gitlab dando uma visão
+inicial para quem nunca usou os recursos dessa plataforma, iremos aprender a
+criar repositórios, usar issues para gerenciar atividades, merge-requests,
+milestones, demonstrar os recursos de integração e deploy contínuo e outros
+recursos disponívels no Gitlab.com.
+
+<br/>
+
+Importante! **Não é necessário ter conhecimento prévio sobre Git ou Gitlab.**
+
+<br/>
+
+Agenda:
+
+<br/>
 
 * [Breve introdução ao software livre](/software-livre): 15 min
 * [Primeiros passos com Git](/git): 30 min
