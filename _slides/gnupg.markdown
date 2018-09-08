@@ -1,5 +1,5 @@
 ---
-title: Gerenciando senhas com GnuPG
+title: Chaves GnuPG
 theme: sky
 ---
 
@@ -7,7 +7,7 @@ theme: sky
 
 <img style="width: 30%" src="/files/gnupg_twitter_400x400.png" />
 
-Gerenciando senhas com GnuPG
+Chaves GnuPG
 </section>
 
 <section>
@@ -50,6 +50,12 @@ outra delas sendo pública.
 <img src="/files/GoAnywhereMFT_OpenPGP-Diagram_web.png" />
 
 <small>fonte: [https://www.goanywhere.com/managed-file-transfer/encryption/open-pgp](https://www.goanywhere.com/managed-file-transfer/encryption/open-pgp)</small>
+</section>
+
+<section>
+## Quero, #comofaz
+
+`apt install gnupg`
 </section>
 
 <section>
@@ -152,6 +158,16 @@ fonte:
 * <small>**Marginal**: Esta pessoa assina chaves de forma correta (faz as verificações físicas necessárias). É possível confiar nessa pessoa, caso seja extremamente necessário.</small>
 
 * <small>**Full**: O usuário conhece muito bem sistemas criptográficos, é extremamente confiável e responsável. É possível pensar em aceitar algo de outras chaves que tenham sido assinadas por essa pessoa.</small>
+</section>
+
+<section>
+### mão na massa
+
+Demonstração prática usando `gnupg` via linha de comando
+
+#### rtfm (leia o manual)
+
+`man gpg`
 </section>
 
 <section>
