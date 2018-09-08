@@ -266,6 +266,7 @@ Exemplo de festa de assinatura de chaves realizada pela comunidade Debian na Min
 
 <ul style="font-size: 24px">
   <li>23 Julho 2018, UnG Gama - FGA, MiniLappisConf</li>
+  <li>08 Setembro 2018, UnG Gama - FGA, MicroDebConf Brasília 2018</li>
 </ul>
 </section>
 </section>
