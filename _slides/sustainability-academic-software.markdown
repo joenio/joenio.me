@@ -82,9 +82,10 @@ James Howison and James D. Herbsleb. 2011.
 <!-- -------------------------------- -->
 
 <section>
-Three studies:
+Three exploratory studies:
+
 1. Publicization
-1. Stage in software life cycle
+1. Life cycle
 1. Recognition
 </section>
 
@@ -100,6 +101,7 @@ _url, license, source code, and download availability_
 
 <!-- -------------------------------- -->
 
+<section>
 <section>
 <img src="/files/revisao-literatura-big.png" />
 
@@ -130,6 +132,7 @@ Inclusion criterion for extraction
 | Identifiable  | Is it possible to identify a software project among the outputs of the article? |
 | Available     | Can we find mention to the URL for download the software project? |
 
+</section>
 </section>
 
 <!-- -------------------------------- -->
@@ -278,8 +281,13 @@ from 60 academic software projects of static analysis studied, 13 projects
 (22%) did not have academic recognition
 </section>
 
+<!-- -------------------------------- -->
+
 <section>
 Influence of the life cycle stage on the recognition of academic software
+
+large number of mentions for close-down projects -- ESBMC, PARSEWeb, and
+TestEra -- including recent publications between 2016 and 2017
 </section>
 
 <!-- -------------------------------- -->
