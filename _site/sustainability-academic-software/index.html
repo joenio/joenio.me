@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>On the Sustainability of Academic Software - The Case of Static Analysis Tools | Joenio Marques da Costa</title>
+  <meta name="author" content="Joenio Costa" />
+  <link rel="stylesheet" href="/javascript/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="/javascript/reveal.js/css/theme/simple.css" id="theme">
+  
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="/javascript/reveal.js/lib/css/zenburn.css">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '/javascript/reveal.js/css/print/pdf.css' : '/javascript/reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="/javascript/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/css/revealjs.css">
+</head>
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <!-- -------------------------------- -->
+
+<section>
+  <h3 id="on-the-sustainability-of-academic-software-the-case-of-static-analysis-tools">On the Sustainability of Academic Software: The Case of Static Analysis Tools</h3>
+
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <h4 id="on-the-sustainability-of-academic-software-the-case-of-static-analysis-tools-1">On the Sustainability of Academic Software: The Case of Static Analysis Tools</h4>
+
+  <h5 id="sbes-2018-september-1721-2018-sao-carlos-brazil">SBES 2018, September 17–21, 2018, Sao Carlos, Brazil</h5>
+
+  <p>Joenio Marques da Costa<br />
+Dra. Christina von Flach G. Chavez<br />
+Dr. Paulo Roberto Miranda Meirelles</p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <h2 id="software-sustainability">Software Sustainability</h2>
+
+  <p>human, social, economic, environmental, <strong>technical</strong></p>
+
+  <p><small class="cite">
+Robert Goodland. 2002. <strong>Sustainability: Human, Social, Economic and Environmental</strong>.
+</small></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <h3 id="software-technical-sustainability">Software Technical Sustainability</h3>
+
+  <p>Concerned with the long-term usage of software and its capacity to evolve with
+changing conditions and requirements.</p>
+
+  <p><small class="cite">
+B. Penzenstadler and H. Femmer. 2013.
+<strong>A Generic Model for Sustainability with Process- and Product-specific Instances</strong>.
+</small></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <h3 id="academic-software">Academic Software</h3>
+
+  <p>Software developed to collect, process, or analyze research results published
+in the academic literature.</p>
+
+  <p><small class="cite">
+ALLEN, A. et al. 2017.
+<strong>Engineering academic software (dagstuhl perspectives workshop 16252)</strong>.
+</small></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><img src="/files/scientific-reputation-diagram-en.png" style="background: white" /></p>
+
+  <p><small class="cite">
+James Howison and James D. Herbsleb. 2011.
+<strong>Scientific software production: incentives and collaboration</strong>.
+</small></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <h2 id="how-measure-academic-software-sustainability">How measure Academic Software Sustainability?</h2>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p>Three studies:</p>
+  <ol>
+    <li>Publicization</li>
+    <li>Stage in software life cycle</li>
+    <li>Recognition</li>
+  </ol>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <h4 id="study-1">Study 1</h4>
+
+  <h3 id="publicization-of-academic-software">Publicization of Academic Software</h3>
+
+  <p><em>url, license, source code, and download availability</em></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <ul>
+    <li>1873 papers from ASE and SCAM published until 2015</li>
+    <li>61 software publications</li>
+    <li>60 academic software projects of static analysis</li>
+  </ul>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p>Inclusion criterion and keywords</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Criteria</th>
+        <th>Keywords</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mentions the project, software or tool</td>
+        <td><em>tool</em> or <em>framework</em></td>
+      </tr>
+      <tr>
+        <td>Makes software available for download</td>
+        <td><em>download</em> or <em>available</em></td>
+      </tr>
+      <tr>
+        <td>Identifies project URL</td>
+        <td><em>http</em>, <em>https</em> or <em>ftp</em></td>
+      </tr>
+      <tr>
+        <td>Static analysis domain</td>
+        <td><em>static analysis</em> or <em>parser</em></td>
+      </tr>
+    </tbody>
+  </table>
+
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p>Inclusion criterion for extraction</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Criteria</th>
+        <th>Explanation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Identifiable</td>
+        <td>Is it possible to identify a software project among the outputs of the article?</td>
+      </tr>
+      <tr>
+        <td>Available</td>
+        <td>Can we find mention to the URL for download the software project?</td>
+      </tr>
+    </tbody>
+  </table>
+
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p>found 60 academic software projects among 61 software publications</p>
+
+  <p><img src="/files/papers-and-tool-papers-selected-by-year-2axis.png" /></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><strong>Official online presence (RQ1.1)</strong></p>
+
+  <p>from 60 academic software for static analysis, 15 projects (25%) do not have an official online presence</p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><strong>Sofware available for download (RQ1.2)</strong></p>
+
+  <!-- Caracterização dos **60** projetos em relação a disponibilidade de download. 
+
+
+| Download                   | Número | Proporção |
+| -------------------------- | ------ | --------- |
+| Disponível para download   | 36     | 60%       |
+| Indisponível para download | 24     | 40%       |
+-->
+
+  <p>from 60 selected projects, 24 projects (40%) are not available for download</p>
+
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><strong>Source code available (RQ1.3)</strong></p>
+
+  <p>from 36 projects available for download, 34 projects has their source code available</p>
+
+  <!--
+Caracterização dos **36** projetos disponíveis para download em relação à disponibilidade de código fonte.
+
+| Código fonte                   | Número | Proporção |
+| ------------------------------ | ------ | --------- |
+| Disponibiliza código fonte     | 34     | ~94%      |
+| Não disponibiliza código fonte | 2      | ~6%       |
+-->
+
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><strong>Software license available (RQ1.4)</strong></p>
+
+  <p>from 34 projects with the source code available, 13 did not provide any
+software license, and 21 used free software license</p>
+
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <h4 id="study-2">Study 2</h4>
+
+  <h3 id="life-cycle-of-academic-software">Life cycle of Academic Software</h3>
+
+  <p><em>evolution stage</em></p>
+
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><img src="/files/staged-model-foss-cycle-en.png" style="box-shadow:0px 0px 2px gray;background:white" /></p>
+
+  <p><small class="cite">
+CAPILUPPI, A. et al. 2007.
+<strong>Adapting the staged model for software evolution to free/libre/open source software</strong>.
+</small></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <ul>
+    <li>Número de lançamentos de cada projeto</li>
+    <li>Número de versão, data e URL para código fonte de cada lançamento</li>
+    <li>Download de todos(*) os lançamentos com código fonte disponível
+      <ul>
+        <li>(*) Apenas aqueles escritos em C, C++ ou Java</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><strong>Evolution stage of academic software (RQ2.1)</strong></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Estágio de evolução</th>
+        <th>Número</th>
+        <th>Proporção</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Inicial, descontinuado ou encerrado</td>
+        <td>47</td>
+        <td>78%</td>
+      </tr>
+      <tr>
+        <td>Evolução ou manutenção</td>
+        <td>8</td>
+        <td>14%</td>
+      </tr>
+      <tr>
+        <td>Indícios de estágio inicial, evoluçao ou manutenção</td>
+        <td>5</td>
+        <td>8%</td>
+      </tr>
+    </tbody>
+  </table>
+
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <h4 id="study-3">Study 3</h4>
+
+  <h3 id="recognition-of-academic-software">Recognition of Academic Software</h3>
+
+  <p><em>number and types of mentions</em></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p>A mention means any occurrence of the name of the academic software in a
+scientific publication</p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><img width="100%" src="/files/study2-literature-review-big.png" style="background:white" /></p>
+</section>
+
+<!-- -------------------------------- -->
+<section>
+  <p><strong>Mentions to academic software</strong></p>
+
+  <p>only 2 projects – GUIZMO and protopurity – were not found in searches carried
+out in ACM and IEEE</p>
+</section>
+
+<section>
+  <p><strong>Uses of academic software</strong></p>
+
+  <p>there are 124 “usage” mentions to a set of 26 projects</p>
+</section>
+
+<section>
+  <p><strong>Contributions to academic software</strong></p>
+
+  <p>there are 43 “contribute” mentions to a set of 17 projects, that is, only 28%
+of projects received source code contributions from studies after its initial
+publication</p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p>Evolution of the recognition of academic software for static analysis published in ASE and SCAM</p>
+
+  <p><img src="/files/mentions-type-by-year.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px; padding: 10px" /></p>
+</section>
+
+<section>
+  <p>Growth of 38% per year in the number of mentions</p>
+
+  <p><img src="/files/mentions-trend-en.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px; padding: 10px; display: inline" /></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p>Influence of the life cycle stage on the recognition of academic software</p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p>Academic software projects are not yet recognized by Science
+as first-class citizens,</p>
+</section>
+
+<section>
+  <hr />
+
+  <h3 id="better-software-better-research">Better Software, Better Research</h3>
+
+  <hr />
+
+  <blockquote>
+    <p>“Devemos reconhecer o software como instrumento experimental de primeira-classe na Ciência.”</p>
+  </blockquote>
+
+  <p><small class="cite">
+GOBLE, C. <strong>Better software, better research</strong>. IEEE Internet Computing, IEEE, v.
+18, n. 5, p. 4–8, 2014.
+</small></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <h3 id="future-work">Future Work</h3>
+
+  <ul>
+    <li>Why some tools in closedown stage continue to be cited?</li>
+    <li>The results found regarding academic software recognition are similar to general software engineering publications?</li>
+  </ul>
+</section>
+
+<section data-background="#c4a000">
+  <section>
+    <h3 id="obrigado">Obrigado!</h3>
+
+    <p><span class="url">joenio@joenio.me</span></p>
+
+    <p><br />
+<em>Esta apresentação está disponível em:</em></p>
+
+    <p><span class="url">http://joenio.me/sustainability-academic-software</span></p>
+
+    <p><small>(código-fonte: <strong>http://github.com/joenio/joenio.me</strong>)</small></p>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></p>
+
+  </section>
+  <section>
+    <h3 id="histrico-de-apresentaes">Histórico de apresentações</h3>
+
+    <p><small>Onde e quando esta apresentação foi realizada</small></p>
+
+    <ul style="font-size: 24px">
+  <li>21 Setembro 2018, USP-ICMS, São Carlos, SP, CBSOFT SBES 2018</li>
+</ul>
+  </section>
+</section>
+
+    </div>
+  </div>
+  <script src="/javascript/reveal.js/lib/js/head.min.js"></script>
+  <script src="/javascript/reveal.js/js/reveal.js"></script>
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      slideNumber: 'c/t',
+      history: true,
+      center: true,
+      fragments: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      // Optional reveal.js plugins
+      dependencies: [
+        { src: '/javascript/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: '/javascript/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: '/javascript/reveal.js/plugin/zoom-js/zoom.js', async: true },
+        { src: '/javascript/reveal.js/plugin/notes/notes.js', async: true }
+      ]
+    });
+  </script>
+</body>
+</html>
