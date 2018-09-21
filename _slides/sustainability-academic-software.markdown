@@ -6,20 +6,23 @@ theme: simple
 <!-- -------------------------------- -->
 
 <section>
+<img style="position:absolute;left:-220px;top:-130px" src="/files/LogoEng.png" />
 ### On the Sustainability of Academic Software: The Case of Static Analysis Tools
 
-</section>
-
-<!-- -------------------------------- -->
-
-<section>
-#### On the Sustainability of Academic Software: The Case of Static Analysis Tools
-
-##### SBES 2018, September 17–21, 2018, Sao Carlos, Brazil
-
-Joenio Marques da Costa<br/>
-Dra. Christina von Flach G. Chavez<br/>
-Dr. Paulo Roberto Miranda Meirelles
+<table style="font-size:0.8em"><tr>
+<td style="text-align: center">
+Joenio Costa<br/>
+Federal University of Bahia
+</td>
+<td style="text-align:center">
+Christina Chavez<br/>
+Federal University of Bahia
+</td>
+<td style="text-align:center">
+Paulo Meirelles<br/>
+Federal University of São Paulo
+</td>
+</tr></table>
 </section>
 
 <!-- -------------------------------- -->
@@ -75,7 +78,7 @@ James Howison and James D. Herbsleb. 2011.
 
 <!-- -------------------------------- -->
 
-<section>
+<section data-background="orange" data-background-transition="slide">
 ## How measure Academic Software Sustainability?
 </section>
 
@@ -91,7 +94,7 @@ Three exploratory studies:
 
 <!-- -------------------------------- -->
 
-<section>
+<section data-background="http://vidracariashowglass.com.br/wp-content/gallery/vitrine-para-loja/vitrine_1.jpg">
 #### Study 1
 
 ### Publicization of Academic Software
@@ -101,7 +104,7 @@ _url, license, source code, and download availability_
 
 <!-- -------------------------------- -->
 
-<section>
+<section data-transition="zoom">
 <section>
 <img src="/files/revisao-literatura-big.png" />
 
@@ -167,17 +170,19 @@ software license, and 21 used free software license
 
 <!-- -------------------------------- -->
 
-<section>
+<section data-background="https://upliftconnect.com/wp-content/uploads/2016/05/Gowing-.jpg" data-background-color="black">
+<div class="box-green">
 #### Study 2
 
 ### Life cycle of Academic Software
 
 _evolution stage_
+</div>
 </section>
 
 <!-- -------------------------------- -->
 
-<section>
+<section data-transition="zoom">
 <img src="/files/staged-model-foss-cycle-en.png" style="box-shadow:0px 0px 2px gray;background:white" />
 
 <small class="cite">
@@ -204,7 +209,7 @@ CAPILUPPI, A. et al. 2007.
 
 <!-- -------------------------------- -->
 
-<section>
+<section data-background="https://cdn-images-1.medium.com/max/2000/1*4d4rFBB97fgjZLetKypzxA.jpeg">
 #### Study 3
 
 ### Recognition of Academic Software
@@ -254,7 +259,7 @@ publication
 
 <!-- -------------------------------- -->
 
-<section>
+<section data-background="#00bfff" data-background-transition="slide">
 ## Discussion and Conclusions
 </section>
 
