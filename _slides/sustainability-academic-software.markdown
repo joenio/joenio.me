@@ -6,7 +6,7 @@ theme: simple
 <!-- -------------------------------- -->
 
 <section>
-<img style="position:absolute;left:-220px;top:-130px" src="/files/LogoEng.png" />
+<img style="position:absolute;left:-220px;top:-80px" src="/files/LogoEng.png" />
 ### On the Sustainability of Academic Software: The Case of Static Analysis Tools
 
 <table style="font-size:0.8em"><tr>
@@ -23,6 +23,10 @@ Paulo Meirelles<br/>
 Federal University of São Paulo
 </td>
 </tr></table>
+
+<small style="font-size: 0.5em">
+[https://doi.org/10.1145/3266237.3266243](https://doi.org/10.1145/3266237.3266243)
+</small>
 </section>
 
 <!-- -------------------------------- -->
@@ -94,7 +98,8 @@ Three exploratory studies:
 
 <!-- -------------------------------- -->
 
-<section data-background="http://vidracariashowglass.com.br/wp-content/gallery/vitrine-para-loja/vitrine_1.jpg">
+<!-- image source: http://vidracariashowglass.com.br/wp-content/gallery/vitrine-para-loja/vitrine_1.jpg -->
+<section data-background="/files/vitrine_1.jpg">
 #### Study 1
 
 ### Publicization of Academic Software
@@ -170,7 +175,8 @@ software license, and 21 used free software license
 
 <!-- -------------------------------- -->
 
-<section data-background="https://upliftconnect.com/wp-content/uploads/2016/05/Gowing-.jpg" data-background-color="black">
+<!-- image source: https://upliftconnect.com/wp-content/uploads/2016/05/Gowing-.jpg -->
+<section data-background="/files/Gowing-.jpg" data-background-color="black">
 <div class="box-green">
 #### Study 2
 
@@ -209,7 +215,8 @@ CAPILUPPI, A. et al. 2007.
 
 <!-- -------------------------------- -->
 
-<section data-background="https://cdn-images-1.medium.com/max/2000/1*4d4rFBB97fgjZLetKypzxA.jpeg">
+<!-- image source: https://cdn-images-1.medium.com/max/2000/1*4d4rFBB97fgjZLetKypzxA.jpeg -->
+<section data-background="/files/1_4d4rFBB97fgjZLetKypzxA.jpeg">
 #### Study 3
 
 ### Recognition of Academic Software
