@@ -30,11 +30,25 @@ title: Colivre | Empreendedorismo com Tecnologias Livres
 </section>
 
 <section>
+<section>
   <p><strong>Primeiros passos</strong></p>
   <p>&nbsp;</p>
   <p><em>"Fazemos qualquer negócio"</em></p>
   <p>&nbsp;</p>
   <p>2006 ~ 2008</p>
+</section>
+<section>
+* Metareciclagem
+* Cursos
+* Sites
+* Sistemas desktop
+* Sistemas web
+* Sistemas de controle financeiro
+* Sistemas de marketing multi-nível
+* Serviços de rede
+* Infraestrutura de servidores
+* etc etc etc ...
+</section>
 </section>
 
 <section>
@@ -52,9 +66,13 @@ title: Colivre | Empreendedorismo com Tecnologias Livres
 </section>
 
 <section>
+<section>
   <p><strong>Como ganhamos dinheiro?</strong></p>
   <p>&nbsp;</p>
   <p>Somos uma empresa de prestação de serviços com <strong>softwares livres</strong></p>
+</section>
+<section>
+</section>
 </section>
 
 <section>
