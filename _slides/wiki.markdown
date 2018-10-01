@@ -82,6 +82,15 @@ Visualização do trabalho colaborativo no projeto [Mathe für Nicht-Freaks](htt
 </section>
 
 <section>
+## MediaWiki
+
+Software livre do tipo Wiki escrito na linguagem de programação PHP, utiliza
+banco de dados MySQL.
+
+[http://www.mediawiki.org](http://www.mediawiki.org)
+</section>
+
+<section>
 #### 2016-2017 Fundraising Report:
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/FY1617_WMF_Fundraising_Totals_%26_Averages_Change_Over_Time.png/840px-FY1617_WMF_Fundraising_Totals_%26_Averages_Change_Over_Time.png" />
 
