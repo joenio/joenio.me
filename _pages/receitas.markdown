@@ -1,22 +1,18 @@
 ---
-title: Receitas
+title: Receitas favoritas
 ---
 
-Links e referências de receitas sem carne (exceto peixe).
-
-## Salgado
-
-### Arroz
+## Arroz
 
 ARROZ AO CURRY c LEITE DE COCO e CASTANHAS do CAJU
 
 http://entretemperos.blogspot.com.br/2013/11/arroz-ao-curry-c-leite-de-coco-e.html
 
-### Abóbora recheada
+## Abóbora recheada
 
 https://metidaagourmet.com/2014/02/05/abobora-recheada-carne-seca/
 
-### Quiabo refogado
+## Quiabo refogado
 
 <a href="http://cantinhovegetariano.blogspot.com/2010/09/quiabo-refogado.html">
    http://cantinhovegetariano.blogspot.com/2010/09/quiabo-refogado.html
@@ -24,7 +20,7 @@ https://metidaagourmet.com/2014/02/05/abobora-recheada-carne-seca/
 
 Tempo aproximado de cozimento do quiabo: 15 min
 
-### Farofa de Manteiga
+## Farofa de Manteiga
 
 <a href="http://www.culinaria-receitas.com.br/salgados/farofa-basica-de-manteiga.html">
    http://www.culinaria-receitas.com.br/salgados/farofa-basica-de-manteiga.html
@@ -34,7 +30,7 @@ Tempo aproximado de cozimento do quiabo: 15 min
    http://tudogostoso.uol.com.br/receita/52326-farofa-de-manteiga.html
 </a>
 
-### Macarrão Alho e Óleo
+## Macarrão Alho e Óleo
 
 <a href="http://cybercook.terra.com.br/macarrao-alho-e-oleo.html?codigo=3886">
    http://cybercook.terra.com.br/macarrao-alho-e-oleo.html?codigo=3886
@@ -50,7 +46,7 @@ Tempo aproximado de cozimento do quiabo: 15 min
 
 3 dentes de alho picado por porção
 
-### Molho de Tomate com Manjericão
+## Molho de Tomate com Manjericão
 
 <a href="http://www.receitas.com/molho-de-tomate-com-manjericao-4d50d36252e0b252bc007786">
    http://www.receitas.com/molho-de-tomate-com-manjericao-4d50d36252e0b252bc007786
@@ -62,7 +58,7 @@ Tempo aproximado de cozimento do quiabo: 15 min
 
 Média de 3 tomates por pessoa.
 
-### Batata Cozida ao Molho Shoyu
+## Batata Cozida ao Molho Shoyu
 
 <a href="http://tudogostoso.uol.com.br/receita/107272-batata-cozida-ao-molho-shoyu.html">
    http://tudogostoso.uol.com.br/receita/107272-batata-cozida-ao-molho-shoyu.html
@@ -74,7 +70,7 @@ Média de 3 tomates por pessoa.
 
 Tempo de cozimento de uma batata média com casca: 40min
 
-### Arroz com Gorgonzola e Nozes
+## Arroz com Gorgonzola e Nozes
 
 <a href="http://tudogostoso.uol.com.br/receita/88803-arroz-com-gorgonzola-e-nozes.html">
    http://tudogostoso.uol.com.br/receita/88803-arroz-com-gorgonzola-e-nozes.html
@@ -84,7 +80,7 @@ Tempo de cozimento de uma batata média com casca: 40min
    http://www.tavolacalda.com.br/?p=10995
 </a>
 
-### Vagem Refogada
+## Vagem Refogada
 
 <a href="http://superdicasss.blogspot.com/2008/02/vagem-refogada.html">
    http://superdicasss.blogspot.com/2008/02/vagem-refogada.html
@@ -94,7 +90,7 @@ Tempo de cozimento de uma batata média com casca: 40min
    http://www.nestle.com.br/site/cozinha/receitas/vagem_refogada.aspx
 </a>
 
-### Lasanha de milho e ervilha
+## Lasanha de milho e ervilha
 
 <a href="http://www.wikireceitas.com.br/Lasanha_de_milho_e_ervilha">
    http://www.wikireceitas.com.br/Lasanha_de_milho_e_ervilha
@@ -106,7 +102,7 @@ Tempo de cozimento de uma batata média com casca: 40min
 
 _pode-se usar provolone no lugar da mussarela._
 
-### Creme de Milho ao Forno Com Queijo
+## Creme de Milho ao Forno Com Queijo
 
 <a href="http://www.receitas.com/creme-de-milho-ao-forno-com-queijo-4d50b93e52e0b252bc005b52">
    http://www.receitas.com/creme-de-milho-ao-forno-com-queijo-4d50b93e52e0b252bc005b52
@@ -116,19 +112,19 @@ _pode-se usar provolone no lugar da mussarela._
    http://allrecipes.com.br/receita/6098/creme-de-milho-ao-forno.aspx
 </a>
 
-### Abobrinhas Recheadas
+## Abobrinhas Recheadas
 
 <a href="http://www.youtube.com/watch?v=hBi1sjLiSPg">
    http://www.youtube.com/watch?v=hBi1sjLiSPg
 </a>
 
-### Purê de Batata
+## Purê de Batata
 
 <a href="http://cybercook.terra.com.br/pure-de-batata.html?codigo=2973">
    http://cybercook.terra.com.br/pure-de-batata.html?codigo=2973
 </a>
 
-### Salmão com Molho de Alcaparras
+## Salmão com Molho de Alcaparras
 
 <a href="http://www.capixabao.com/v3/guia-gourmet/receita/304/peixes-frutos-do-mar-moqueca-mariscos/salmao-com-molho-de-alcaparras-gastronomia-cozinha/">
    http://www.capixabao.com/v3/guia-gourmet/receita/304/peixes-frutos-do-mar-moqueca-mariscos/salmao-com-molho-de-alcaparras-gastronomia-cozinha/
@@ -142,7 +138,7 @@ _pode-se usar provolone no lugar da mussarela._
    http://tudogostoso.uol.com.br/receita/34001-salmao-com-molho-de-alcaparras.html
 </a>
 
-### Strogonoff de cogumelos
+## Strogonoff de cogumelos
 
 <a href="http://www.docaminhante.com/receita-strogonoff-de-cogumelos/">
    http://www.docaminhante.com/receita-strogonoff-de-cogumelos/
@@ -156,19 +152,19 @@ _pode-se usar provolone no lugar da mussarela._
    http://liguedesgourmands.blogspot.com/2007/06/mais-receita-strogonoff-de-cogumelos.html
 </a>
 
-### Strogonoff de berinjela
+## Strogonoff de berinjela
 
 <a href="http://cybercook.terra.com.br/receita-de-estrogonofe-de-berinjelas.html?codigo=10617">
    http://cybercook.terra.com.br/receita-de-estrogonofe-de-berinjelas.html?codigo=10617
 </a>
 
-### Shiitake desidratado na manteiga
+## Shiitake desidratado na manteiga
 
 <a href="http://tudogostoso.uol.com.br/receita/94798-shiitake-na-manteiga.html">
    http://tudogostoso.uol.com.br/receita/94798-shiitake-na-manteiga.html
 </a>
 
-### Massa de pizza
+## Massa de pizza
 
 <a href="http://tudogostoso.uol.com.br/receita/324-massa-de-pizza.html">
    http://tudogostoso.uol.com.br/receita/324-massa-de-pizza.html
@@ -182,13 +178,13 @@ _pode-se usar provolone no lugar da mussarela._
    http://www.weblaranja.com/receitas/receita_basica/111322,001.htm
 </a>
 
-### Sanduiche de forno
+## Sanduiche de forno
 
 <a href="http://tudogostoso.uol.com.br/receita/10580-sanduiche-de-forno.html">
    http://tudogostoso.uol.com.br/receita/10580-sanduiche-de-forno.html
 </a>
 
-### Lasanha Aos Quatro Queijos
+## Lasanha Aos Quatro Queijos
 
 <a href="http://tudogostoso.uol.com.br/receita/32058-lasanha-aos-4-queijos.html">
    http://tudogostoso.uol.com.br/receita/32058-lasanha-aos-4-queijos.html
@@ -202,38 +198,31 @@ _pode-se usar provolone no lugar da mussarela._
    (Molho branco) http://tudogostoso.uol.com.br/receita/38-molho-branco.html
 </a>
 
-## Bebida
-
-### Café
+## Café
 
 <a href="http://www.mexidodeideias.com.br/index.php/manual-da-cozinha-simples/como-preparar-cafe-na-cafeteira-italiana-moka/">
    http://www.mexidodeideias.com.br/index.php/manual-da-cozinha-simples/como-preparar-cafe-na-cafeteira-italiana-moka/
 </a>
 
-### Leite cremoso
+## Leite cremoso
 
 <a href="http://www.mexidodeideias.com.br/index.php/manual-da-cozinha-simples/como-vaporizar-leite-em-casa/">
    http://www.mexidodeideias.com.br/index.php/manual-da-cozinha-simples/como-vaporizar-leite-em-casa/
 </a>
 
-### Chocolate quente com Nutella
+## Chocolate quente com Nutella
 
 <a href="http://gordelicias.biz/index.php/2011/04/14/chocolate-quente-com-nutella/">
    http://gordelicias.biz/index.php/2011/04/14/chocolate-quente-com-nutella/
 </a>
 
-
-## Doce
-
-### Pavê de chocolate
+## Pavê de chocolate
 
 <a href="http://tudogostoso.uol.com.br/receita/15939-pave-de-chocolate.html">
    http://tudogostoso.uol.com.br/receita/15939-pave-de-chocolate.html
 </a>
 
-## Sopa
-
-### Sopa de legumes
+## Sopa de legumes
 
 <a href="http://pt.petitchef.com/receitas/sopa-de-legumes-e-verduras-fid-175616">
    http://pt.petitchef.com/receitas/sopa-de-legumes-e-verduras-fid-175616

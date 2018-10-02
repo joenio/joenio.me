@@ -9,15 +9,11 @@ software livre, mestre em Ciência da Computação, com interesse em pesquisas
 sobre software acadêmico, sustentabilidade de software,
 ciência aberta, filosofia da computação e reprodutibilidade científica.
 
-<br/>
-
 Pesquisador de novas tecnologias e plataformas para participação social no
 Instituto Brasileiro de Informação em Ciência e Tecnologia (IBICT). Consultor e
 líder técnico do projeto "Ecossistemas de Software Livre" do Ministério da
 Cultura em parceiria com o laboratório Lappis da Universidade Federal de
 Brasília.
-
-<br/>
 
 Fundador da cooperativa de tecnologias livres Colivre onde atuou na criação e
 desenvolvimento do projeto de software livre para redes sociais Noosfero. É
@@ -25,19 +21,13 @@ contribuidor do projeto Debian e membro do time de empacotamento Perl.
 Desenvolvedor e mantenedor do projeto Analizo, um conjunto de ferramentas
 livres para análise estática de código-fonte e cálculo de métricas.
 
-<br/>
-
 Foi consultor e líder técnico entre 2014 e 2016 dos projetos Participa.br e do
 portal do Software Público Brasileiro. Além da Computação, possui grande
 interesse em música em todas as suas formas, cores e sabores, e sua relação com
 tecnologia, tem realizado palestras e pequenas performances de "live coding"
 usando especialmente a linguagem de programação TidalCycles.
 
-<br/>
-
 ### Contatos, redes sociais e currículo:
-
-<br/>
 
 * Email: <a href="mailto:joenio@joenio.me">joenio@joenio.me</a>
 * Twitter: <a href="https://twitter.com/joenio">https://twitter.com/joenio</a>

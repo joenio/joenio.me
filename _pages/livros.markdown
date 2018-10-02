@@ -1,5 +1,5 @@
 ---
-title: Livros
+title: Coleção de livros distópicos por autor
 ---
 
 ## Alan Moore
