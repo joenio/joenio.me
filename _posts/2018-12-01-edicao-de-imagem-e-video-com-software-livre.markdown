@@ -6,7 +6,7 @@ lead: >
   em Brasília no Calango Hacker Clube às 14h.
 ---
 
-![Inkscape, Gimp, Kdenline, Blender](/files/oficina-edicao-imagem.png)
+![Inkscape, Gimp, Kdenline, Blender](/files/oficina-edicao-imagem-video.png)
 
 O ecossistema de software livre possui ótimas ferramentas para edição de imagem
 e vídeo, no próximo sábado dia 08/12/2018 às 14h algumas destas ferramentas
