@@ -5,9 +5,40 @@
     <description></description>
     <link>http://joenio.me/</link>
     <atom:link href="http://joenio.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 08 Sep 2018 10:35:12 -0300</pubDate>
-    <lastBuildDate>Sat, 08 Sep 2018 10:35:12 -0300</lastBuildDate>
-    <generator>Jekyll v3.1.6</generator>
+    <pubDate>Sat, 01 Dec 2018 21:26:50 -0200</pubDate>
+    <lastBuildDate>Sat, 01 Dec 2018 21:26:50 -0200</lastBuildDate>
+    <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>Edição de imagem e vídeo com Software Livre</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/files/oficina-edicao-imagem.png&quot; alt=&quot;Inkscape, Gimp, Kdenline, Blender&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;O ecossistema de software livre possui ótimas ferramentas para edição de imagem
+e vídeo, no próximo sábado dia 08/12/2018 às 14h algumas destas ferramentas
+serão apresentadas numa oficina introdutória no &lt;a href=&quot;http://calango.club&quot;&gt;Calango Hacker
+Clube&lt;/a&gt; para quem quer aprender o básico deste tema, nesta
+oficina serão apresentadas as seguintes ferramentas através de atividades
+práticas dadas voluntariamente por pessoas da comunidade de software livre do
+DF.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;14h - &lt;a href=&quot;http://inkscape.org&quot;&gt;Inkscape&lt;/a&gt; por &lt;a href=&quot;http://brunanayara.github.io&quot;&gt;Bruna Moreira&lt;/a&gt; e Luiz Felipe Sousa&lt;/li&gt;
+  &lt;li&gt;15h - &lt;a href=&quot;http://gimp.org&quot;&gt;Gimp&lt;/a&gt; por &lt;a href=&quot;http://valessiobrito.com.br&quot;&gt;Valéssio Brito&lt;/a&gt; e Luiz Felipe Sousa&lt;/li&gt;
+  &lt;li&gt;16h - &lt;a href=&quot;http://kdenlive.org&quot;&gt;Kdenlive&lt;/a&gt; por Farid (&lt;em&gt;à confirmar&lt;/em&gt;), &lt;a href=&quot;http://calango.club/membros/paulo_barros&quot;&gt;Paulo Henrique Barros&lt;/a&gt; (&lt;em&gt;à confirmar&lt;/em&gt;) e Luiz Felipe Sousa&lt;/li&gt;
+  &lt;li&gt;17h - &lt;a href=&quot;http://www.blender.org&quot;&gt;Blender&lt;/a&gt; por &lt;em&gt;nome à confirmar&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As vagas são limitadas a apenas 10 pessoas, se você tem interesse em participar
+entre em contato diretamente comigo pelo email joenio@joenio.me e confirme a
+sua presença. Se houver mais interessados do que vagas repetiremos a oficina no
+futuro.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Dec 2018 00:00:00 -0200</pubDate>
+        <link>http://joenio.me/edicao-de-imagem-e-video-com-software-livre/index.html</link>
+        <guid isPermaLink="true">http://joenio.me/edicao-de-imagem-e-video-com-software-livre/index.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Caixa Mágica na Vivência Amazônica 2016</title>
@@ -192,7 +223,7 @@ um resumo dos álbuns que mais gostei até o momento.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/Mercury_Rev&quot;&gt;Mais sobre Mercury Rev na Wikipédia&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Deserter&#39;s_Songs&quot;&gt;Informações sobre o álbum Deserter’s Songs na Wikipédia (em inglês)&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Deserter's_Songs&quot;&gt;Informações sobre o álbum Deserter’s Songs na Wikipédia (em inglês)&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;the-sonics---here-are-the-sonics---1965&quot;&gt;The Sonics - Here Are the Sonics - 1965&lt;/h2&gt;
@@ -214,7 +245,7 @@ um resumo dos álbuns que mais gostei até o momento.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/The_Rascals&quot;&gt;Mais sobre The Young Rascals na Wikipédia (em inglês)&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Groovin&#39;&quot;&gt;Informações sobre o álbum Groovin’ na Wikipédia (em inglês)&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Groovin'&quot;&gt;Informações sobre o álbum Groovin’ na Wikipédia (em inglês)&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;jefferson-airplane---surrealistic-pillow---1967&quot;&gt;Jefferson Airplane - Surrealistic Pillow - 1967&lt;/h2&gt;
@@ -247,7 +278,7 @@ um resumo dos álbuns que mais gostei até o momento.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/The_Mothers_of_Invention&quot;&gt;Mais sobre The Mothers of Invention na Wikipédia&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/We&#39;re_Only_in_It_for_the_Money&quot;&gt;Informações sobre o álbum We’re Only in it for the Money na Wikipédia&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/We're_Only_in_It_for_the_Money&quot;&gt;Informações sobre o álbum We’re Only in it for the Money na Wikipédia&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;the-grateful-dead---livedead---1969&quot;&gt;The Grateful Dead - Live/Dead - 1969&lt;/h2&gt;
@@ -302,7 +333,7 @@ um resumo dos álbuns que mais gostei até o momento.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/The_Fall_%28banda%29&quot;&gt;Mais sobre The Fall na Wikipédia&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/This_Nation&#39;s_Saving_Grace&quot;&gt;Informações sobre o álbum This Nation’s Saving Grace na Wikipédia (em inglês)&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/This_Nation's_Saving_Grace&quot;&gt;Informações sobre o álbum This Nation’s Saving Grace na Wikipédia (em inglês)&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;the-sisters-of-mercy---floodland---1987&quot;&gt;The Sisters of Mercy - Floodland - 1987&lt;/h2&gt;
@@ -324,7 +355,7 @@ um resumo dos álbuns que mais gostei até o momento.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/Ice_Cube&quot;&gt;Mais sobre Ice Cube na Wikipédia&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/AmeriKKKa&#39;s_Most_Wanted&quot;&gt;Informações sobre o álbum AmeriKKKa’s Most Wanted na Wikipédia&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/AmeriKKKa's_Most_Wanted&quot;&gt;Informações sobre o álbum AmeriKKKa’s Most Wanted na Wikipédia&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;mc-solaar---qui-sème-le-vent-rècolte-le-tempo&quot;&gt;MC Solaar - Qui Sème Le Vent Rècolte Le Tempo&lt;/h2&gt;
@@ -720,7 +751,7 @@ Só ouvindo para entender…&lt;/p&gt;
 
 &lt;p&gt;Ramiro Musotto é um músico argentino radicado no Brasil, morou durante um bom
 tempo na Bahia, misturou ritmos baianos, africanos, música eletrônica,
-percussão, berimbau, reverbs e delays, uma mistura única! A música &lt;code class=&quot;highlighter-rouge&quot;&gt;M&#39;bala&lt;/code&gt; do
+percussão, berimbau, reverbs e delays, uma mistura única! A música &lt;code class=&quot;highlighter-rouge&quot;&gt;M'bala&lt;/code&gt; do
 álbum &lt;code class=&quot;highlighter-rouge&quot;&gt;Civilizacao &amp;amp; Barbarye&lt;/code&gt; é uma pérola!&lt;/p&gt;
 
 &lt;table&gt;
@@ -1820,144 +1851,6 @@ evento.&lt;/p&gt;
         <pubDate>Sun, 29 Mar 2015 00:00:00 -0300</pubDate>
         <link>http://joenio.me/embarque-na-viagem-das-cooperativas-do-ano/index.html</link>
         <guid isPermaLink="true">http://joenio.me/embarque-na-viagem-das-cooperativas-do-ano/index.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Não faça hoje o que pode deixar para amanhã</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/files/clone-trooper-deitado.jpg&quot; alt=&quot;Clone Trooper Deitado&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Neste post irei falar sobre gestão pessoal de tempo usando a técnica &lt;em&gt;Do It
-Tomorrow (DIT)&lt;/em&gt;, uma proposta de &lt;em&gt;Mark Forster&lt;/em&gt; publicada em seu livro de mesmo
-nome traduzido para o português como &lt;a href=&quot;http://www.skoob.com.br/livro/141300ED157147-deixe-para-amanha&quot;&gt;&lt;em&gt;Deixe para
-amanhã&lt;/em&gt;&lt;/a&gt;, o
-título deste post é uma provocação ao conselho popular &lt;em&gt;“Não deixe pra amanhã o
-que você pode fazer hoje”&lt;/em&gt;, que vai totalmente de encontro à proposto feita
-pelo autor em seu livro.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.skoob.com.br/livro/141300ED157147-deixe-para-amanha&quot; class=&quot;float-right&quot;&gt;
-&lt;img src=&quot;/files/livro-deixe-para-amanha.jpg&quot; alt=&quot;Livro Deixe para amanhã&quot; /&gt;
-&lt;/a&gt;
-Desde 2009 venho utilizando a técnica &lt;em&gt;DIT&lt;/em&gt; proposta no livro de &lt;em&gt;Mark
-Forster&lt;/em&gt;, é uma técnica muito simples e eficiente, tomei
-conhecimento dela através do post &lt;a href=&quot;http://fazendoacontecer.net/2009/07/15/3-alternativas-para-o-gtd-%E2%80%94-7-habitos-deixe-para-amanha-e-zen-to-done/&quot;&gt;3 alternativas para o GTD — 7 Hábitos, Deixe
-para amanhã e Zen To
-Done&lt;/a&gt;
-de autoria de &lt;em&gt;Rafael Perrone&lt;/em&gt; em seu blog &lt;em&gt;fazendoAcontecer.net&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Neste post &lt;em&gt;Rafael Perrone&lt;/em&gt; cita algumas alternativas ao &lt;em&gt;Getting Things Done
-(GTD)&lt;/em&gt;, uma técnica para organização pessoal de tempo bastante popular e também
-muito eficiente, ela propõe uma série de ferramentas diferentes, como lista de
-coisas a fazer, lista de algum dia/talvez, lista de próximas ações, e algumas
-outras, possui também um workflow bem elaborado para que funcione bem, isso
-tudo faz o &lt;em&gt;GTD&lt;/em&gt; ter uma curva de aprendizado relativamente grande e exige um
-esforço mínimo de aprendizado antes de começar a ser efetiva, e foi exatamente
-isto que me desmotivou à utilizá-la e me fez ir em busca de alternativas.&lt;/p&gt;
-
-&lt;p&gt;Assim, em 2009, cheguei ao &lt;em&gt;DIT&lt;/em&gt;, uma técnica extremamente simples, com
-praticamente zero esforço de aprendizado inicial, e desde então tenho utilizado
-ela para gerenciar todas as minhas atividades.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Por que eu estava à procura de técnicas para gerenciamento de tempo?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Desde 2006 eu venho trabalhando como autônomo, gerenciando meu próprio tempo,
-sem patrão, sem relógio de ponto, sem fiscalização, e sem todas essas
-artimanhas que as empresas criam para tentar fazer seus funcionários serem
-eficientes. Eu precisava de algo que me tornasse &lt;strong&gt;de fato&lt;/strong&gt; eficiente, algo
-que fizesse eu usar o tempo da melhor forma possível, caso contrário os
-cronogramas iriam furar, as atividades iriam ficar &lt;em&gt;para depois&lt;/em&gt;, a
-procrastinação iria rolar solta, e isso iria inviabilizar minha vida como
-autônomo.&lt;/p&gt;
-
-&lt;p&gt;Ao usar &lt;em&gt;DIT&lt;/em&gt; consegui a eficiencia que procurava, mas é importante destacar
-que nenhum método ou técnica irá fazer milagres, o importante é ter disciplina
-e se esforçar para pôr algo em prática, qualquer método que funcione vale à
-pena, eu escolhi o &lt;em&gt;DIT&lt;/em&gt; pela simplicidade, apesar de simples é preciso ter
-disciplina, e isto será necessário para qualquer outro método. Ler sobre o
-assunto ajuda bastante, e o livro de &lt;em&gt;Mark Forster&lt;/em&gt; me ajudou muito neste
-sentido.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Mas, como funciona esse método afinal?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span class=&quot;float-left&quot;&gt;
-&lt;img src=&quot;/files/lista-de-coisas-a-fazer.jpg&quot; alt=&quot;Lista de coisas a fazer&quot; /&gt;
-&lt;/span&gt;
-O autor do &lt;em&gt;DIT&lt;/em&gt; basicamente propõe uma modificação em algo já conhecido por
-todos nós, a famosa lista de coisas a fazer, é aquela listinha que fazemos num
-pedaço de papel com tudo que &lt;em&gt;precisamos&lt;/em&gt; fazer. Ela se parece mais ou menos
-com a imagem ao lado.&lt;/p&gt;
-
-&lt;p&gt;É uma listinha imensa, que nunca chega ao fim…&lt;/p&gt;
-
-&lt;p&gt;Acredito que todos nós já fizemos uma lista semelhante a esta ao menos uma vez
-na vida, &lt;em&gt;Mark Forster&lt;/em&gt; sugere que transformemos esta lista de &lt;strong&gt;coisas a
-fazer&lt;/strong&gt; em uma lista de &lt;strong&gt;coisas que serão feitas&lt;/strong&gt;, a lista de coisas a fazer
-tende a crescer eternamente e nunca conseguimos terminá-la, isto causa a
-sensação de que o trabalho nunca é concluído, e esta sensação não ajuda a melhorar
-ou mesmo a manter a nossa auto-estima.&lt;/p&gt;
-
-&lt;p&gt;A lista de &lt;strong&gt;coisas que serão feitas&lt;/strong&gt; deve ser elaborada diariamente, e não deve
-ser alterada ao decorrer do dia, idealmente deve ser feita com antecedência, ou
-ao menos antes de começar o trabalho. Não se deve adicionar itens de última
-hora, ou seja, aquela lista de terça-feira que planejei na segunda, não deve
-ser alterada durante o decorrer do dia. Ela é uma &lt;strong&gt;lista fechada&lt;/strong&gt;, uma vez
-planejada, nada mais entra, se surgir algo novo, planeje para o dia seguinte,
-ou para a semana seguinte, isto vai depender da natureza da atividade e do seu
-planejamento pessoal.&lt;/p&gt;
-
-&lt;p&gt;O objetivo é sempre começar o dia com uma lista de atividades previamente
-planejada, ao final do dia ela deve estar concluída, uma lista por dia, nada de
-transferir a lista de hoje para amanhã, isto não vai funcionar! O que costumo
-fazer é usar uma agenda de papel, e a cada dia na data correspondente eu anoto
-minhas atividades.&lt;/p&gt;
-
-&lt;p&gt;Eu indico fortemente o uso da agenda de papel, com ela você pode anotar seus
-compromissos, reuniões, etc, e também sua lista de atividades, uma coisa está
-ligada à outra, se num certo dia você tem anotado uma reunião que dura a metade
-do dia, saberá que não poderá planejar tantas atividades nesta data, ter estas
-informações num mesmo lugar facilita a gestão.&lt;/p&gt;
-
-&lt;p&gt;Veja por exemplo minha lista de atividades (&lt;strong&gt;coisas a serem feitas&lt;/strong&gt;) do dia
-05 de Fevereiro de 2015.&lt;/p&gt;
-
-&lt;p&gt;&lt;span class=&quot;full-width&quot;&gt;
-&lt;img src=&quot;/files/lista-fechada.jpg&quot; alt=&quot;Lista fechada&quot; /&gt;
-&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Nesta lista eu marco um &lt;span style=&quot;font-size:18; color:red; font-weight:bold;&quot;&gt;X&lt;/span&gt;
-ao finalizar a atividade, o objetivo de cada dia é marcar todas as atividades
-como finalizadas, neste dia em particular eu consegui finalizar todas elas
-(ufa!), o autor &lt;em&gt;Mark Forster&lt;/em&gt; fala em seu livro dos benefícios emocionais
-relacionados à isto, quando conseguimos completar o dia, uma sensação de
-trabalho concluído, um sentimento de missão cumprida, bem diferente do que
-seria causado por aquela enorme lista de coisas a fazer que nunca termina.&lt;/p&gt;
-
-&lt;p&gt;Nem sempre é possível finalizar todas as atividades planejadas, quando isto
-ocorre marco um &lt;span style=&quot;font-size:18; color:red; font-weight:bold;&quot;&gt;N&lt;/span&gt;
-na atividade e planejo ela imediatamente para outro dia, assim, mesmo que não
-complete o planejamento diário, não perco a atividade de vista. É importante
-notar que isto deve ser evitado ao máximo, se perceber que está sendo constante
-replanejar atividades, procure descobrir o motivo, talvez você esteja colocando
-muitas atividades no dia, ou talvez você esteja procrastinando, se for a
-segunda opção, cuidado, isto é um problema sério!&lt;/p&gt;
-
-&lt;p&gt;Bem, é nisso que a proposta &lt;em&gt;Do It Tomorrow (DIT)&lt;/em&gt; se resume, uma simples lista
-de coisas a serem feitas (&lt;strong&gt;de fato&lt;/strong&gt;) por dia, o mais importante é ter
-disciplina e praticar até ganhar o hábito de sempre planejar o seu dia de
-trabalho, e lógico, ter responsabilidade com o seu próprio planejamento e
-buscar cumpri-lo sempre.&lt;/p&gt;
-
-&lt;p&gt;O autor &lt;em&gt;Mark Forster&lt;/em&gt; dá uma série de dicas para conseguir chegar lá, sugiro
-que você leia o livro dele, mas faça isso hoje, não deixe para amanhã! rs&lt;/p&gt;
-</description>
-        <pubDate>Wed, 04 Mar 2015 00:00:00 -0300</pubDate>
-        <link>http://joenio.me/nao-faca-hoje-o-que-pode-deixar-para-amanha/index.html</link>
-        <guid isPermaLink="true">http://joenio.me/nao-faca-hoje-o-que-pode-deixar-para-amanha/index.html</guid>
         
         
       </item>
