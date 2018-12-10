@@ -5,13 +5,13 @@
     <description></description>
     <link>http://joenio.me/</link>
     <atom:link href="http://joenio.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 01 Dec 2018 21:26:50 -0200</pubDate>
-    <lastBuildDate>Sat, 01 Dec 2018 21:26:50 -0200</lastBuildDate>
+    <pubDate>Sun, 09 Dec 2018 23:11:18 -0200</pubDate>
+    <lastBuildDate>Sun, 09 Dec 2018 23:11:18 -0200</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
       <item>
         <title>Edição de imagem e vídeo com Software Livre</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/files/oficina-edicao-imagem.png&quot; alt=&quot;Inkscape, Gimp, Kdenline, Blender&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/files/oficina-edicao-imagem-video.png&quot; alt=&quot;Inkscape, Gimp, Kdenline, Blender&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;O ecossistema de software livre possui ótimas ferramentas para edição de imagem
 e vídeo, no próximo sábado dia 08/12/2018 às 14h algumas destas ferramentas
@@ -24,14 +24,95 @@ DF.&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;14h - &lt;a href=&quot;http://inkscape.org&quot;&gt;Inkscape&lt;/a&gt; por &lt;a href=&quot;http://brunanayara.github.io&quot;&gt;Bruna Moreira&lt;/a&gt; e Luiz Felipe Sousa&lt;/li&gt;
   &lt;li&gt;15h - &lt;a href=&quot;http://gimp.org&quot;&gt;Gimp&lt;/a&gt; por &lt;a href=&quot;http://valessiobrito.com.br&quot;&gt;Valéssio Brito&lt;/a&gt; e Luiz Felipe Sousa&lt;/li&gt;
-  &lt;li&gt;16h - &lt;a href=&quot;http://kdenlive.org&quot;&gt;Kdenlive&lt;/a&gt; por Farid (&lt;em&gt;à confirmar&lt;/em&gt;), &lt;a href=&quot;http://calango.club/membros/paulo_barros&quot;&gt;Paulo Henrique Barros&lt;/a&gt; (&lt;em&gt;à confirmar&lt;/em&gt;) e Luiz Felipe Sousa&lt;/li&gt;
-  &lt;li&gt;17h - &lt;a href=&quot;http://www.blender.org&quot;&gt;Blender&lt;/a&gt; por &lt;em&gt;nome à confirmar&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;16h - &lt;a href=&quot;http://kdenlive.org&quot;&gt;Kdenlive&lt;/a&gt; por Farid e Luiz Felipe Sousa&lt;/li&gt;
+  &lt;li&gt;17h - &lt;a href=&quot;http://www.blender.org&quot;&gt;Blender&lt;/a&gt; por Matheus Faria&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;As vagas são limitadas a apenas 10 pessoas, se você tem interesse em participar
 entre em contato diretamente comigo pelo email joenio@joenio.me e confirme a
 sua presença. Se houver mais interessados do que vagas repetiremos a oficina no
 futuro.&lt;/p&gt;
+
+&lt;h2 id=&quot;relato-sobre-a-realização-da-oficina&quot;&gt;Relato sobre a realização da oficina&lt;/h2&gt;
+
+&lt;p&gt;A oficina aconteceu no dia e horário agendado e foi um sucesso, tivemos a
+presença da comunidade Calango em peso, todas as oficinas foram realizadas e o
+objetivo inicial de fornecer o caminho das pedras para edição de imagem e vídeo
+em cada software livre foi conquistado.&lt;/p&gt;
+
+&lt;p&gt;Segue algumas fotos do evento e de alguns momentos de preparação antes e depois
+das oficinas.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/edicao-imagem-video-sl/IMG_20181208_114152.jpg&quot; alt=&quot;Eu e valéssio a caminho do Calango&quot; /&gt;&lt;/p&gt;
+  &lt;legend&gt;Eu e valéssio a caminho do Calango&lt;/legend&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/edicao-imagem-video-sl/IMG_20181208_122646.jpg&quot; alt=&quot;Valéssio e Spark preparando os laptops do Calango&quot; /&gt;&lt;/p&gt;
+  &lt;legend&gt;Valéssio e Spark preparando os laptops do Calango&lt;/legend&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/edicao-imagem-video-sl/IMG_20181208_132823.jpg&quot; alt=&quot;Quase tudo pronto&quot; /&gt;&lt;/p&gt;
+  &lt;legend&gt;Quase tudo pronto&lt;/legend&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/edicao-imagem-video-sl/IMG_20181208_143718.jpg&quot; alt=&quot;Apresentando o Calango e dando início a oficina&quot; /&gt;&lt;/p&gt;
+  &lt;legend&gt;Apresentando o Calango e dando início a oficina&lt;/legend&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/edicao-imagem-video-sl/IMG_20181208_145341.jpg&quot; alt=&quot;Oficina de Inkscape com Bruna&quot; /&gt;&lt;/p&gt;
+  &lt;legend&gt;Oficina de Inkscape com Bruna&lt;/legend&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/edicao-imagem-video-sl/IMG_20181208_145709.jpg&quot; alt=&quot;Valéssio e Spark, amigos de longa data&quot; /&gt;&lt;/p&gt;
+  &lt;legend&gt;Valéssio e Spark, amigos de longa data&lt;/legend&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/edicao-imagem-video-sl/IMG_20181208_154224.jpg&quot; alt=&quot;Farid no intervalo explicando o desenvolvimento do Kdenlive&quot; /&gt;&lt;/p&gt;
+  &lt;legend&gt;Farid no intervalo explicando o desenvolvimento do Kdenlive&lt;/legend&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/edicao-imagem-video-sl/IMG_20181208_161742.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;legend&gt;Oficina de Kdenlive com Farid&lt;/legend&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/edicao-imagem-video-sl/IMG_20181208_164736.jpg&quot; alt=&quot;Mais edição de vídeo com Kdenlive&quot; /&gt;&lt;/p&gt;
+  &lt;legend&gt;Mais edição de vídeo com Kdenlive&lt;/legend&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/edicao-imagem-video-sl/IMG_20181208_164821.jpg&quot; alt=&quot;Ainda mais edição de vídeo com Kdenlive&quot; /&gt;&lt;/p&gt;
+  &lt;legend&gt;Ainda mais edição de vídeo com Kdenlive&lt;/legend&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/edicao-imagem-video-sl/IMG_20181208_164904.jpg&quot; alt=&quot;Oficina de Kdenlive sendo registrada em vídeo por Otávio&quot; /&gt;&lt;/p&gt;
+  &lt;legend&gt;Oficina de Kdenlive sendo registrada em vídeo por Otávio&lt;/legend&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/edicao-imagem-video-sl/IMG_20181208_185426.jpg&quot; alt=&quot;E ainda deu tempo de fazer faxina no Calango no final&quot; /&gt;&lt;/p&gt;
+  &lt;legend&gt;E ainda deu tempo de fazer faxina no Calango ao final&lt;/legend&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;p&gt;&lt;img src=&quot;/files/edicao-imagem-video-sl/IMG_20181208_200716.jpg&quot; alt=&quot;E para fechar o dia aquele gorduroso no Sky's Burger&quot; /&gt;&lt;/p&gt;
+  &lt;legend&gt;E para fechar o dia aquele gorduroso no Sky’s Burger&lt;/legend&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;próximos-eventos&quot;&gt;Próximos eventos&lt;/h2&gt;
+
+&lt;p&gt;Se você gostaria de ter participado mas não pôde estar presente deixe um
+comentário abaixo com seu nome e alguma forma de contato, ou se preferir envie um email
+diretamente para mim informando o interesse na oficina em joenio@joenio.me.&lt;/p&gt;
 </description>
         <pubDate>Sat, 01 Dec 2018 00:00:00 -0200</pubDate>
         <link>http://joenio.me/edicao-de-imagem-e-video-com-software-livre/index.html</link>
