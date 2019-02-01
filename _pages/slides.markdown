@@ -19,3 +19,4 @@ layout: page
 * [Primeiros passos com Git](/git)
 * [On the Sustainability of Academic Software: The Case of Static Analysis Tools](/sustainability-academic-software)
 * [Oficina de Wiki](/wiki)
+* [Chaves com GnuPG](/gnupg)
