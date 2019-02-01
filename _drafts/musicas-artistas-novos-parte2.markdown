@@ -17,8 +17,6 @@ antigos eu ainda não conhecia.
 | `++`       | Gostei e vou adicionar na minha lista para ouvir repetidas vezes                   |
 | `+++`      | Gostei muito e vou ouvir todos os dias até "enjoar", vai ser difícil               |
 
-
-
 ## Jazz Jamaica
 
 Jazz com Reggae
@@ -424,3 +422,19 @@ Entrevista com Lucas estrela em seu novo album citas algumas bandas preferidas:
 Tortoise, sem dúvida, é uma das maiores influências. Foi a banda que fez eu me
 apaixonar pela música instrumental. Escuto muito até hoje. Mas também poderia
 citar Hamilton de Holanda, Radiohead, Ratatat, Hurtmold, Avishai Cohen
+
+## T.Y.P.E
+
++++
+
+Live Coding.
+
+https://twitter.com/typeensemble
+https://soundcloud.com/typeensemble
+
+https://en.wikipedia.org/wiki/Bruce_Haack
+https://www.youtube.com/watch?v=O9KW8hWDs-8 Haackula (ultima musica)
+pioneiro da musica eletronica desde anos 60, o album acima tem umas texturas que lembra kraftwerk
+Bruce Haack - Electric Lucifer: Book II (1979) [Full Album] +++
+Bruce Haack - Electric to Me Turn +++
+The Electric Lucifer  https://en.wikipedia.org/wiki/The_Electric_Lucifer  +++ album doido, eletronico + rock progressivo
