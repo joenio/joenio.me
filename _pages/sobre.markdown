@@ -1,13 +1,12 @@
 ---
 title: Um pouco sobre mim
 ---
-
-<img class="photo-profile" src="/files/joenio-profile.jpg"/>
-
 Joenio Marques da Costa, Engenheiro de Software, ativista e desenvolvedor de
 software livre, mestre em Ciência da Computação, com interesse em pesquisas
 sobre software acadêmico, sustentabilidade de software,
 ciência aberta, filosofia da computação e reprodutibilidade científica.
+
+<img class="photo-profile" src="/files/joenio-profile.jpg"/>
 
 Pesquisador de novas tecnologias e plataformas para participação social no
 Instituto Brasileiro de Informação em Ciência e Tecnologia (IBICT). Consultor e
