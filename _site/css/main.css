@@ -171,7 +171,10 @@ footer.site-footer div.wrap a,
   font-size: 16px;
 }
 
-.post-content { margin: 0 0 30px; }
+.post-content,
+.page-inner-content {
+  margin: 0 0 30px;
+}
 
 .post-content > *,
 .page-content .page > *,
@@ -260,11 +263,13 @@ footer.site-footer div.wrap a,
 
 .post pre.terminal code { background-color: #444; }
 
+.page-inner-content > p:first-child img,
 .post-content > p:first-child img {
   border-radius: 5px;
   width: 100%;
 }
 
+.page-inner-content > p:not(:first-child) img,
 .post-content > p:not(:first-child) img {
   border: 1px solid #AAA;
   box-shadow: 1px 1px 1px gray;
