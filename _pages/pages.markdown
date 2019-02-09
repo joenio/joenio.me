@@ -9,3 +9,4 @@ layout: page
 * [Plano de oficina sobre Shell Script](/oficina-shellscript)
 * [Slides](/slides)
 * [Sobre mim](/sobre)
+* [djalgoritmo](/djalgoritmo)
