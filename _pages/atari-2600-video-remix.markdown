@@ -10,6 +10,8 @@ que remetem a Brasília em sua época de construção e primeiros anos da cidade
 os vídeos possuem trilha sonora produzida com samples (amostras) de sons dos
 próprios jogos composta com programação algorítmica e live coding.
 
+[Colabore financiando o trabalho de djalgoritmo](#financie-o-trabalho-artístico-de-djalgoritmo).
+
 ## Vídeo 1: brasilia-pitfall (remix)
 
 <video width="500" controls>
@@ -169,6 +171,13 @@ iniciado.
   <img src="/files/atari-2600-video-remix/tv-sony-fundo.jpg" alt="Fundo TV de tubo Sony">
   <legend>Fundo TV de tubo Sony</legend>
 </figure>
+
+## Financie o trabalho artístico de djalgoritmo
+
+Contribua no link abaixo através de transferência bancária Nubank do
+djalgoritmo (a.k.a. Joenio Marques da Costa):
+
+* [https://nubank.com.br/pagar/7z7a/SOq9YIYhey](https://nubank.com.br/pagar/7z7a/SOq9YIYhey)
 
 [1]: https://pt.wikipedia.org/wiki/Pitfall!
 [2]: https://www.archdaily.com.br/br/01-81125/brasilia-em-construcao-por-marcel-gautherot/81125_81127
