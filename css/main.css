@@ -177,9 +177,13 @@ footer.site-footer div.wrap a,
 }
 
 .post-content > *,
-.page-content .page > *,
+.page-content .page-inner-content > *,
 .page-content .page p {
   margin: 20px 0;
+}
+
+.page-content .page-inner-content figure p {
+  margin: 0;
 }
 
 .page-content .page h1, .post-content h1,
