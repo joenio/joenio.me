@@ -83,6 +83,93 @@ que os acompanham:
 Por fim e não menos importante, agradeço a [Atari][atari] e a todas as empresas
 e pessoas que desenvolveram jogos para plataforma Atari 2600.
 
+## Desenvolvimento e instalação
+
+Documento aqui detalhes técnicos e decisões de projeto durante a criação e
+instalação da obra.
+
+### Reprodução automática dos vídeos em loop
+
+Foi utilizado para reprodução dos vídeos um [Raspberry Pi 3 B+][raspberry] com
+o sistema de media center [OSMC][osmc] configurado com um shell script para
+play automático dos vídeos em loop. O shell script foi configurado como serviço
+através do [systemd][systemd] seguindo o tutorial fornecido na wiki do próprio
+OSMC: [Running scripts on startup and shutdown][osmc-wiki].
+
+Arquivo `/home/osmc/.config/systemd/user/play.service`:
+
+```ini
+[Unit]
+Description=play
+After=graphical-session.target
+
+[Service]
+Type=forking
+PIDFile=/var/run/play.pid
+ExecStart=/home/osmc/play.sh
+
+[Install]
+WantedBy=multi-user.target
+```
+
+O script `/home/osmc/play.sh` executa [funções internas do player
+Kodi][kodi-wiki] usando o comando `kodi-send`, [Kodi][kodi] é o software
+utilizado no OSMC como player de mídia.
+
+Arquivo `/home/osmc/play.sh`:
+
+```shell
+#!/bin/sh
+kodi-send --action="PlayMedia(/media/atari2600/, isdir)"
+kodi-send --action="PlayerControl(RandomOn)"
+kodi-send --action="PlayerControl(RepeatAll)"
+```
+
+O serviço via `systemd` deve ser habilitado executando os seguintes comandos no
+terminal do OSMC:
+
+```console
+systemctl --user daemon-reload
+systemctl --user enable play
+```
+
+Feito isso os vídeos serão tocados em loop sempre que o Raspberry Pi for
+iniciado.
+
+## Instalaçao e equipamentos
+
+### Fotos
+
+<figure>
+  <img src="/files/atari-2600-video-remix/distribuidor-rca.jpg" alt="Distribuidor RCA">
+  <legend>Distribuidor RCA</legend>
+</figure>
+
+<figure>
+  <img src="/files/atari-2600-video-remix/hdmi-rca.jpeg" alt="Conversor HDMI-RCA">
+  <legend>Conversor HDMI-RCA</legend>
+</figure>
+
+<figure>
+  <img src="/files/atari-2600-video-remix/pilha-tvs.jpeg" alt="TVs de tubo empilhadas">
+  <legend>TVs de tubo empilhadas</legend>
+</figure>
+
+<figure>
+  <img src="/files/atari-2600-video-remix/pilha-tvs-ligada.jpeg" alt="TVs de tubo ligadas">
+  <legend>TVs de tubo ligadas</legend>
+</figure>
+
+<figure>
+  <img src="/files/atari-2600-video-remix/tv-sony-frente.jpg" alt="TV de tubo Sony">
+  <legend>TV de tudo Sony</legend>
+</figure>
+
+<figure>
+  <img src="/files/atari-2600-video-remix/tv-sony-fundo.jpg" alt="Fundo TV de tubo Sony">
+  <legend>Fundo TV de tubo Sony</legend>
+</figure>
+
 [1]: https://pt.wikipedia.org/wiki/Pitfall!
 [2]: https://www.archdaily.com.br/br/01-81125/brasilia-em-construcao-por-marcel-gautherot/81125_81127
 [3]: https://casavogue.globo.com/MostrasExpos/Fotografia/noticia/2015/10/fotos-ineditas-retratam-construcao-de-brasilia.html
@@ -100,3 +187,9 @@ e pessoas que desenvolveram jogos para plataforma Atari 2600.
 [biophillick]: https://biophillick.com
 [prezi]: https://www.instagram.com/garotodeprogramanutella
 [ze]: https://www.instagram.com/jotaffmaciel
+[raspberry]: https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus
+[osmc]: https://osmc.tv
+[osmc-wiki]: https://osmc.tv/wiki/general/running-scripts-on-startup-and-shutdown
+[kodi-wiki]: https://kodi.wiki/view/List_of_built-in_functions
+[kodi]: https://kodi.tv
+[systemd]: https://pt.wikipedia.org/wiki/Systemd
