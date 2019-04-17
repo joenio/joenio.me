@@ -132,44 +132,19 @@ instalação da obra.</p>
 <h3 id="reprodução-automática-dos-vídeos-em-loop">Reprodução automática dos vídeos em loop</h3>
 
 <p>Foi utilizado para reprodução dos vídeos um <a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus">Raspberry Pi 3 B+</a> com
-o sistema de media center <a href="https://osmc.tv">OSMC</a> configurado com um shell script para
-play automático dos vídeos em loop. O shell script foi configurado como serviço
-através do <a href="https://pt.wikipedia.org/wiki/Systemd">systemd</a> seguindo o tutorial fornecido na wiki do próprio
-OSMC: <a href="https://osmc.tv/wiki/general/running-scripts-on-startup-and-shutdown">Running scripts on startup and shutdown</a>.</p>
+o sistema de media center <a href="https://osmc.tv">OSMC</a> configurado com o script
+<a href="https://kodi.wiki/view/Autoexec.py"><code class="highlighter-rouge">autoexec.py</code></a> para play automático dos vídeos em loop. O script
+Python <code class="highlighter-rouge">autoexec.py</code> fica no <a href="https://kodi.wiki/view/Userdata"><code class="highlighter-rouge">userdata</code></a> e usa a biblioteca <code class="highlighter-rouge">xbmc</code>
+para executar <a href="https://kodi.wiki/view/List_of_built-in_functions">funções internas do player Kodi</a>, <a href="https://kodi.tv">Kodi</a> é o
+software utilizado no OSMC como player de mídia.</p>
 
-<p>Arquivo <code class="highlighter-rouge">/home/osmc/.config/systemd/user/play.service</code>:</p>
+<p>Arquivo <code class="highlighter-rouge">/home/osmc/.kodi/userdata/autoexec.py</code>:</p>
 
-<div class="language-ini highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">[Unit]</span>
-<span class="py">Description</span><span class="p">=</span><span class="s">play</span>
-<span class="py">After</span><span class="p">=</span><span class="s">graphical-session.target</span>
-
-<span class="nn">[Service]</span>
-<span class="py">Type</span><span class="p">=</span><span class="s">forking</span>
-<span class="py">PIDFile</span><span class="p">=</span><span class="s">/var/run/play.pid</span>
-<span class="py">ExecStart</span><span class="p">=</span><span class="s">/home/osmc/play.sh</span>
-
-<span class="nn">[Install]</span>
-<span class="py">WantedBy</span><span class="p">=</span><span class="s">multi-user.target</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">xbmc</span>
+<span class="n">xbmc</span><span class="o">.</span><span class="n">executebuiltin</span><span class="p">(</span><span class="s">"PlayerControl(RepeatAll)"</span><span class="p">)</span>
+<span class="n">xbmc</span><span class="o">.</span><span class="n">executebuiltin</span><span class="p">(</span><span class="s">"PlayerControl(RandomOn)"</span><span class="p">)</span>
+<span class="n">xbmc</span><span class="o">.</span><span class="n">executebuiltin</span><span class="p">(</span><span class="s">"PlayMedia(/media/atari2600, isdir)"</span><span class="p">)</span>
 </code></pre></div></div>
-
-<p>O script <code class="highlighter-rouge">/home/osmc/play.sh</code> executa <a href="https://kodi.wiki/view/List_of_built-in_functions">funções internas do player
-Kodi</a> usando o comando <code class="highlighter-rouge">kodi-send</code>, <a href="https://kodi.tv">Kodi</a> é o software
-utilizado no OSMC como player de mídia.</p>
-
-<p>Arquivo <code class="highlighter-rouge">/home/osmc/play.sh</code>:</p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/sh</span>
-kodi-send <span class="nt">--action</span><span class="o">=</span><span class="s2">"PlayMedia(/media/atari2600/, isdir)"</span>
-kodi-send <span class="nt">--action</span><span class="o">=</span><span class="s2">"PlayerControl(RandomOn)"</span>
-kodi-send <span class="nt">--action</span><span class="o">=</span><span class="s2">"PlayerControl(RepeatAll)"</span>
-</code></pre></div></div>
-
-<p>O serviço via <code class="highlighter-rouge">systemd</code> deve ser habilitado executando os seguintes comandos no
-terminal do OSMC:</p>
-
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">systemctl --user daemon-reload
-systemctl --user enable play
-</span></code></pre></div></div>
 
 <p>Feito isso os vídeos serão tocados em loop sempre que o Raspberry Pi for
 iniciado.</p>

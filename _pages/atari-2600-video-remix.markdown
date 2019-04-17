@@ -93,46 +93,19 @@ instalação da obra.
 ### Reprodução automática dos vídeos em loop
 
 Foi utilizado para reprodução dos vídeos um [Raspberry Pi 3 B+][raspberry] com
-o sistema de media center [OSMC][osmc] configurado com um shell script para
-play automático dos vídeos em loop. O shell script foi configurado como serviço
-através do [systemd][systemd] seguindo o tutorial fornecido na wiki do próprio
-OSMC: [Running scripts on startup and shutdown][osmc-wiki].
+o sistema de media center [OSMC][osmc] configurado com o script
+[`autoexec.py`][autoexec] para play automático dos vídeos em loop. O script
+Python `autoexec.py` fica no [`userdata`][userdata] e usa a biblioteca `xbmc`
+para executar [funções internas do player Kodi][kodi-wiki], [Kodi][kodi] é o
+software utilizado no OSMC como player de mídia.
 
-Arquivo `/home/osmc/.config/systemd/user/play.service`:
+Arquivo `/home/osmc/.kodi/userdata/autoexec.py`:
 
-```ini
-[Unit]
-Description=play
-After=graphical-session.target
-
-[Service]
-Type=forking
-PIDFile=/var/run/play.pid
-ExecStart=/home/osmc/play.sh
-
-[Install]
-WantedBy=multi-user.target
-```
-
-O script `/home/osmc/play.sh` executa [funções internas do player
-Kodi][kodi-wiki] usando o comando `kodi-send`, [Kodi][kodi] é o software
-utilizado no OSMC como player de mídia.
-
-Arquivo `/home/osmc/play.sh`:
-
-```shell
-#!/bin/sh
-kodi-send --action="PlayMedia(/media/atari2600/, isdir)"
-kodi-send --action="PlayerControl(RandomOn)"
-kodi-send --action="PlayerControl(RepeatAll)"
-```
-
-O serviço via `systemd` deve ser habilitado executando os seguintes comandos no
-terminal do OSMC:
-
-```console
-systemctl --user daemon-reload
-systemctl --user enable play
+```python
+import xbmc
+xbmc.executebuiltin("PlayerControl(RepeatAll)")
+xbmc.executebuiltin("PlayerControl(RandomOn)")
+xbmc.executebuiltin("PlayMedia(/media/atari2600, isdir)")
 ```
 
 Feito isso os vídeos serão tocados em loop sempre que o Raspberry Pi for
@@ -198,7 +171,8 @@ djalgoritmo (a.k.a. Joenio Marques da Costa):
 [ze]: https://www.instagram.com/jotaffmaciel
 [raspberry]: https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus
 [osmc]: https://osmc.tv
-[osmc-wiki]: https://osmc.tv/wiki/general/running-scripts-on-startup-and-shutdown
 [kodi-wiki]: https://kodi.wiki/view/List_of_built-in_functions
 [kodi]: https://kodi.tv
 [systemd]: https://pt.wikipedia.org/wiki/Systemd
+[autoexec]: https://kodi.wiki/view/Autoexec.py
+[userdata]: https://kodi.wiki/view/Userdata
