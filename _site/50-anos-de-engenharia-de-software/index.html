@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>50 anos de Engenharia de Software | Joenio Marques da Costa</title>
+  <meta name="author" content="Joenio Costa" />
+  <link rel="stylesheet" href="/javascript/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="/javascript/reveal.js/css/theme/black.css" id="theme">
+  
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="/javascript/reveal.js/lib/css/zenburn.css">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '/javascript/reveal.js/css/print/pdf.css' : '/javascript/reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="/javascript/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/css/revealjs.css">
+</head>
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section>
+  <p><code>
+Randell, Brian.
+<strong>"Fifty Years of Software Engineering -or- The View from Garmisch."</strong>
+(2018).
+</code></p>
+
+  <p><a href="https://arxiv.org/abs/1805.02742">https://arxiv.org/abs/1805.02742</a></p>
+</section>
+
+<section>
+  <h3 id="quem--brian-randell">Quem é Brian Randell?</h3>
+
+  <p>Cientista da computação, professor na Newcastle University, nos anos 60 esteve
+envolvido na <em>NATO Software Engineering Conferences</em>, conferência que
+popularizou o termo <strong>Engenharia de Software</strong>.</p>
+
+  <p><a href="https://en.wikipedia.org/wiki/Brian_Randell">https://en.wikipedia.org/wiki/Brian_Randell</a></p>
+</section>
+
+<section>
+  <h3 id="nato-software-engineering-conference">NATO Software Engineering Conference</h3>
+
+  <p>Aconteceu em 68 e 69, contou com a participação de experts do software
+que aceitaram o desafio de definir as melhores práticas de software.</p>
+
+  <p><a href="https://en.wikipedia.org/wiki/NATO_Software_Engineering_Conferences">https://en.wikipedia.org/wiki/NATO_Software_Engineering_Conferences</a></p>
+</section>
+
+<section>
+  <p>Em seu artigo, apresentado no ICSE 2018, Brian Randell faz uma revisão
+histórica da Engenharia de Software partindo dessas duas edições da NATO.</p>
+
+  <p><img src="/files/randell-paper.png" /></p>
+</section>
+
+<section>
+  <p>Randell começa o artigo lembrando que foi convidado a relembrar as conferências
+NATO e o surgimento da Engenharia de Software ainda em 79 no ICSE em homenagem
+ao 10º aniversário da conferência NATO.</p>
+
+</section>
+
+<section>
+  <p>Esta foi a primeira ocasião onde aceitou falar no tema Engenharia de Software
+pois ficou tão desiludido com a NATO 69 que por anos evitou o uso do termo.</p>
+</section>
+
+<section>
+  <p>O artigo apresentado na conferência ICSE 79 tinha o título “Software
+Engineering As It Was In 1968” com foco na primeira edição da NATO 68.</p>
+
+  <p><code>
+Randell, B.: "Software Engineering: As It Was": "4th International Conference on
+Software Engineering. Munich, Germany" (IEEE Computer Society, 1979), pp. 1-10.
+</code></p>
+</section>
+
+<section>
+  <p>Entre os outros autores convidados para esta mesma edição do
+ICSE 1979 estavam:</p>
+
+  <ul>
+    <li>Barry Boehm: “Software Engineering As It Is”</li>
+    <li>Edsger Dijkstra: “Software Engineering As It Should Be”</li>
+    <li>Wlad Turski: “Software Engineering As It Will Be”</li>
+  </ul>
+</section>
+
+<section>
+  <p>O mundo da computação no final dos anos 60:</p>
+
+  <ul>
+    <li>Computadores do tamanho de salas, caros</li>
+    <li>Os primeiros mini-computadores começam a aparecer</li>
+    <li>A idéia de computadores pessoais ainda não tinha surgido</li>
+    <li>Redes locais ainda eram desconhecidas</li>
+    <li>Surge o termo “software”</li>
+    <li>Software era desenvolvido específicamente para o hardware, mudar o hardware significava reescrever todo o software</li>
+  </ul>
+</section>
+
+<section>
+  <p>Esses vários projetos de software eram quase todos projetos sob encomenda,
+desenvolvidos para clientes específicos, e muitos dos maiores projetos eram
+caracterizados por “subestimativas e excessivas expectativas”, como disse
+Licklider.</p>
+
+  <p><code>
+Licklider, J.C.R.: <strong>"Underestimates and Overexpectations"</strong>: "ABM: An Evaluation
+of the Decision to Deploy an Antiballistic Missile System" (Harper and Row,
+1969), pp. 118-129.
+</code></p>
+</section>
+
+<section>
+  <p>Foi apenas em 1969 quando a IBM “separou” seu software do hardware,
+precificando-o separadamente, que o software se tornou uma commodity e uma
+indústria de software e a noção de software de pacotes começou a existir.</p>
+</section>
+
+<section>
+  <p>Nesta época o termo <strong>Engenharia de Software</strong> era praticamente desconhecido e
+a escolha do nome para a primeira conferência NATO foi usado muito mais como
+uma provocação (uma necessidade) do que uma realidade.</p>
+</section>
+
+<section>
+  <p>Muitos participantes tem dito sobre a primeira conferência NATO como uma das
+mais estimulantes conferências que eles já participaram.</p>
+
+  <p>Muito do estímulo se deve a atmosfera empolgante que se desenvolveu na
+conferência quando os participantes perceberam o grau de preocupação comum com
+o que alguns estavam dispostos a chamar de <strong>“crise de software”</strong>.</p>
+</section>
+
+<section>
+  <p>Depois da conferência ICSE 1979 Brian Randell voltou ao seu auto-embargo de não
+falar sobre Engenharia de Software até 1996 quando Schloss Dagstuhl o convidou
+para falar sobre o tema.</p>
+
+  <p><code>
+Randell, B.: <strong>"The 1968/69 NATO Software Engineering Reports"</strong>,
+IEEE Annals of the History of Computing, 1998, 20, (1), pp. 51-64.
+</code></p>
+</section>
+
+<section>
+  <p>Diferentemente da primeira conferência em 68 onde o termo Engenharia de
+Software foi posto como uma provocação e necessidade, em 69 havia uma tendência
+de alguns participantes em falar no termo como se já fosse uma realidade.</p>
+
+</section>
+
+<section>
+  <p>Um outro grande contraste entre 68 e 69
+foi o enorme abismo entre os cientistas e praticantes.</p>
+
+  <p>E ficou claro durante a conferência que os organizadores tinham uma agenda
+secreta que era ter o apoio da NATO na criação de uma entidade chamada:</p>
+
+  <p><strong>International Software Engineering Institute</strong></p>
+</section>
+
+<section>
+  <p>Mas o plano não deu certo e a conferência foi marcada por muitas discussões, o
+que levou um dos participantes, Tom Simpson da IBM, a escrever e apresentar uma
+explêndida sátira.</p>
+
+  <p><img src="/files/masterpiece-engineering.png" /></p>
+</section>
+
+<section>
+  <h3 id="masterpiece-engineering-engenharia-de-obra-prima">Masterpiece Engineering (Engenharia de Obra-prima)</h3>
+
+  <p>Lamentavelmente, nenhum dos avanços parecia ter qualquer impacto na produção de
+obras-primas e, por isso, o grupo decidiu que a dificuldade básica era
+claramente um problema de gestão. Um dos alunos mais brilhantes (com o nome L.
+da Vinci) foi imediatamente promovido a gerente do projeto, encarregando-o da
+aquisição de tintas, telas e pincéis para o restante da organização.</p>
+</section>
+
+<section>
+  <p>Alguns tipos distintos de indústria de software vieram a existência em
+particular, aqueles que projetam ou adaptam software “sob medida”, e aqueles
+que produzem pacotes de software “off-the-peg” (de prateleira)</p>
+</section>
+
+<section>
+  <p>O primeiro tipo de software (sob medida) ainda está sujeito a muitos dos mesmos
+desafios relativos ao custo de implementação, cronograma, desempenho e
+(especialmente) confiabilidade.</p>
+
+  <p>O segundo tipo (de prateleira) oferece um mercado maravilhoso de sistemas de
+software, utilitários e aplicativos utilizáveis e úteis.</p>
+</section>
+
+<section>
+  <p>Ian Sommerville define Engenharia de Software como:</p>
+
+  <p>Engenharia de software é uma disciplina de engenharia que está preocupada com
+todos os aspectos da produção de software desde os estágios iniciais da
+especificação até a manutenção do sistema após a sua implantação.</p>
+
+  <p><code>
+Sommerville, I.: <strong>"Software Engineering (10th ed.)"</strong>
+Pearson (2016) 810 pp. [ISBN 13:978-1-292-09613-1].
+</code></p>
+</section>
+
+<section>
+  <p>Quando o termo “Engenharia de Software” foi introduzido muitos
+fizeram uma pergunta simples:</p>
+
+  <p><strong>“De que forma “Engenharia de Software é diferente de Programação?”</strong></p>
+
+</section>
+
+<section>
+  <p>Engenharia de Software é:</p>
+
+  <p>“O desenvolvimento realizado por múltiplas-pessoas de programas com múltiplas-versões.”</p>
+</section>
+
+<section>
+  <p>O projeto NPfIT de 2005 do <em>UK National Health Service</em> consumiu <span style="color:red">£20 bilhões</span> e foi um fracasso!</p>
+
+  <p>O projeto foi o maior fiasco dos contratos do setor publico até então.</p>
+</section>
+
+<section>
+  <p>Aquilo que Licklider chamou de subestimativas e expectativas excessivas” quase
+quarenta anos antes ainda ocorre (às vezes de forma espetacular) hoje!</p>
+</section>
+
+<section>
+  <p>Outra preocupação expressada há dez anos atrás na COMPSAC sobre o mundo da
+engenharia de software é a multiplicidade de “padrões”, algo que leva a uma
+enorme fragmentação de tecnologias, linguagens e ferramentas.</p>
+
+</section>
+
+<section>
+  <p>Artigo de Les Hatton:</p>
+
+  <p>“Nós incentivamos ativamente os estudantes a trabalhar em projetos reais para a
+indústria e, como resultado, um dos meus colegas este ano teve estudantes
+submetendo projetos em C, C#, C++, Java, PHP, MySQL, XML, HTML, XHTML, VB.Net
+em XP, Mac OS X, Linux e até Vista com Eclipse, Netbeans, Ant, JWSDP,
+Glassfish, DreamWeaver, Developer Studio, .Net e talvez alguns em Etruscan.”</p>
+
+  <!--
+<code>
+Hatton, L.: <strong>"Professionalism in IT"</strong>,
+Safety Critical Systems Club, 2008, 17, (2).
+[http://www.leshatton.org/Documents/Professionalism_2007.pdf (Accessed 16 April 2018)].
+</code>
+-->
+</section>
+
+<section>
+  <h3 id="online-historical-encyclopaedia-of-programming-languages">Online Historical Encyclopaedia of Programming Languages</h3>
+
+  <p>8945 linguagens de programação diferentes</p>
+
+  <p><a href="http://hopl.info">http://hopl.info</a></p>
+</section>
+
+<section>
+  <p>Ian Sommerville:</p>
+
+  <p>“Não existem métodos e técnicas universais de engenharia de software que sejam
+adequados para todos os sistemas e para todas as empresas. Em vez disso, um
+conjunto diversificado de métodos e ferramentas de engenharia de software
+evoluiu nos últimos 50 anos.”</p>
+</section>
+
+<section>
+  <p>Geoffrey Elton, historiador de Cambridge:</p>
+
+  <p>“O futuro é sombrio, o presente é penoso. Apenas o passado, morto e acabado,
+traz contemplação. Aqueles que olham sobre ele sobrevivem; estes são seu
+resultado e seus vencedores. Não é de admirar, portanto, que os homens se
+preocupem com a história”.</p>
+</section>
+
+<section>
+  <p>George Santayana:</p>
+
+  <p>“Aqueles que não conseguem lembrar do passado estão condenados a repeti-lo”.</p>
+</section>
+
+<section>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/YdEGNpbD8FY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+  <p><a href="https://youtu.be/YdEGNpbD8FY">https://youtu.be/YdEGNpbD8FY</a></p>
+</section>
+
+    </div>
+  </div>
+  <script src="/javascript/reveal.js/lib/js/head.min.js"></script>
+  <script src="/javascript/reveal.js/js/reveal.js"></script>
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      slideNumber: 'c/t',
+      history: true,
+      center: true,
+      fragments: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      // Optional reveal.js plugins
+      dependencies: [
+        { src: '/javascript/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: '/javascript/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: '/javascript/reveal.js/plugin/zoom-js/zoom.js', async: true },
+        { src: '/javascript/reveal.js/plugin/notes/notes.js', async: true }
+      ]
+    });
+  </script>
+</body>
+</html>
