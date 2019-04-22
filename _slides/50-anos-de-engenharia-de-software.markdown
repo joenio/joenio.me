@@ -43,6 +43,7 @@ Randell começa o artigo lembrando que foi convidado a relembrar as conferência
 NATO e o surgimento da Engenharia de Software ainda em 79 no ICSE em homenagem
 ao 10º aniversário da conferência NATO.
 
+[http://www.icse-conferences.org](http://www.icse-conferences.org)
 </section>
 
 
@@ -82,7 +83,7 @@ O mundo da computação no final dos anos 60:
 </section>
 
 <section>
-Esses vários projetos de software eram quase todos projetos sob encomenda,
+Os projetos de software eram quase todos projetos sob encomenda,
 desenvolvidos para clientes específicos, e muitos dos maiores projetos eram
 caracterizados por “subestimativas e excessivas expectativas”, como disse
 Licklider.
@@ -139,18 +140,20 @@ de alguns participantes em falar no termo como se já fosse uma realidade.
 Um outro grande contraste entre 68 e 69
 foi o enorme abismo entre os cientistas e praticantes.
 
-E ficou claro durante a conferência que os organizadores tinham uma agenda
-secreta que era ter o apoio da NATO na criação de uma entidade chamada:
+Ficou claro durante a conferência que os organizadores tinham uma agenda
+secreta de ter o apoio da NATO na criação de uma entidade chamada:
 
 **International Software Engineering Institute**
 </section>
 
 <section>
-Mas o plano não deu certo e a conferência foi marcada por muitas discussões, o
+O plano não deu certo e a conferência foi marcada por muitas discussões, o
 que levou um dos participantes, Tom Simpson da IBM, a escrever e apresentar uma
 explêndida sátira.
 
 <img src="/files/masterpiece-engineering.png" />
+
+[http://homepages.cs.ncl.ac.uk/brian.randell/NATO/NATOReports/index.html#Appendix](http://homepages.cs.ncl.ac.uk/brian.randell/NATO/NATOReports/index.html#Appendix)
 </section>
 
 <section>
@@ -164,8 +167,8 @@ aquisição de tintas, telas e pincéis para o restante da organização.
 </section>
 
 <section>
-Alguns tipos distintos de indústria de software vieram a existência em
-particular, aqueles que projetam ou adaptam software "sob medida", e aqueles
+Alguns tipos distintos de indústria de software surgiram,
+em particular, aqueles que projetam ou adaptam software "sob medida", e aqueles
 que produzem pacotes de software "off-the-peg" (de prateleira)
 </section>
 
@@ -202,7 +205,7 @@ fizeram uma pergunta simples:
 <section>
 Engenharia de Software é:
 
-"O desenvolvimento realizado por múltiplas-pessoas de programas com múltiplas-versões."
+"O desenvolvimento de programas com múltiplas-versões realizado por múltiplas-pessoas."
 </section>
 
 <section>
@@ -213,7 +216,7 @@ O projeto foi o maior fiasco dos contratos do setor publico até então.
 </section>
 
 <section>
-Aquilo que Licklider chamou de subestimativas e expectativas excessivas" quase
+Aquilo que Licklider chamou de "subestimativas e expectativas excessivas" quase
 quarenta anos antes ainda ocorre (às vezes de forma espetacular) hoje!
 </section>
 
