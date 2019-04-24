@@ -20,3 +20,4 @@ layout: page
 * [On the Sustainability of Academic Software: The Case of Static Analysis Tools](/sustainability-academic-software)
 * [Oficina de Wiki](/wiki)
 * [Chaves com GnuPG](/gnupg)
+* [50 anos de Engenharia de Software](/50-anos-de-engenharia-de-software)

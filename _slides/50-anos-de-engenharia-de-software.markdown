@@ -285,3 +285,18 @@ George Santayana:
 
 [https://youtu.be/YdEGNpbD8FY](https://youtu.be/YdEGNpbD8FY)
 </section>
+
+<section data-background="#c4a000" data-background-transition="slide">
+<section>
+{% include slides_obrigado.html %}
+</section>
+<section>
+### Histórico de apresentações
+
+<small>Onde e quando esta apresentação foi realizada</small>
+
+<ul style="font-size: 24px">
+  <li>22 de Abr 2019, UnB Gama - Brasília, apresentação na MiniLappisConf</li>
+</ul>
+</section>
+</section>
