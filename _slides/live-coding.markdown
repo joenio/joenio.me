@@ -136,4 +136,17 @@ By default, there is one cycle per second.
 <section>
 </section>
 
+<section data-background="#c4a000" data-background-transition="slide">
+<section>
+{% include slides_obrigado.html %}
+</section>
+<section>
+### Histórico de apresentações
 
+<small>Onde e quando esta apresentação foi realizada</small>
+
+<ul style="font-size: 24px">
+  <li>22 de Abr 2019, Calango Hacker Clube - Brasília, <a href="https://www.youtube.com/watch?v=mXW13ccuMIo">Music Hacking #27</a></li>
+</ul>
+</section>
+</section>
