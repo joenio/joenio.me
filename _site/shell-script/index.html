@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Shell Script | Joenio Marques da Costa</title>
+  <meta name="author" content="Joenio Costa" />
+  <link rel="stylesheet" href="/javascript/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="/javascript/reveal.js/css/theme/night.css" id="theme">
+  
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="/javascript/reveal.js/lib/css/zenburn.css">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '/javascript/reveal.js/css/print/pdf.css' : '/javascript/reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="/javascript/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/css/revealjs.css">
+</head>
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section>
+  <p><code style="font-family: mono; font-size: 3em">#!/bin/sh</code></p>
+</section>
+
+<section data-background-image="https://i.ytimg.com/vi/VQPb5YQ2RGw/hqdefault.jpg" data-background-color="black">
+
+  <section></section>
+
+  <section>
+    <div class="box-yellow">
+      <h1 id="unix">Unix</h1>
+
+      <p>Sistema operacional multitarefa e multiusuário</p>
+
+      <p>Anos 70</p>
+
+      <ul>
+        <li>Centro de pesquisa da Bell Labs</li>
+        <li>Ken Thompson e Dennis Ritchie</li>
+      </ul>
+    </div>
+
+    <p><a href="https://en.wikipedia.org/wiki/Unix">https://en.wikipedia.org/wiki/Unix</a></p>
+  </section>
+
+  <section data-background="https://upload.wikimedia.org/wikipedia/commons/8/8f/Ken_Thompson_%28sitting%29_and_Dennis_Ritchie_at_PDP-11_%282876612463%29.jpg">
+    <p><img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Ken_Thompson_%28sitting%29_and_Dennis_Ritchie_at_PDP-11_%282876612463%29.jpg" width="60%" /></p>
+
+    <p>Ken Thompson (sentado) e Dennis Ritchie num PDP-11</p>
+  </section>
+
+  <section data-background="https://upload.wikimedia.org/wikipedia/commons/1/1b/Ken_Thompson_and_Dennis_Ritchie--1973.jpg">
+    <p><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Ken_Thompson_and_Dennis_Ritchie--1973.jpg" width="70%" /></p>
+
+    <p>Ken Thompson e Dennis Ritchie (1973)</p>
+  </section>
+
+  <section>
+    <h3 id="byte-magazine-volume-08-number-10---unix-1983"><a href="https://archive.org/stream/byte-magazine-1983-10/1983_10_BYTE_08-10_UNIX#page/n187/mode/2up">Byte Magazine Volume 08 Number 10 - UNIX (1983)</a></h3>
+
+    <p><img src="/files/the-unix-shell-revista.png" /></p>
+
+  </section>
+
+  <section>
+    <h1 id="command-line-interface">Command Line Interface</h1>
+  </section>
+
+  <section>
+    <h1 id="interface-de-linha-de-comando">Interface de Linha de Comando</h1>
+  </section>
+
+  <section>
+    <h1 id="cli">CLI</h1>
+
+    <div class="box-gray">
+      <p>é um meio de interagir com o computador usando comandos em forma de linhas de
+texto, o programa que captura e interpreta esses comandos é chamado <strong>shell</strong></p>
+    </div>
+
+    <p><a href="https://en.wikipedia.org/wiki/Command-line_interface">https://en.wikipedia.org/wiki/Command-line_interface</a></p>
+  </section>
+
+</section>
+
+<section>
+  <section>
+    <p><img src="https://qph.fs.quoracdn.net/main-qimg-49f643449ca249e7c6cdc8079135e4b5-c" /></p>
+
+    <p><a href="https://www.quora.com/What-is-the-difference-between-a-kernel-drivers-and-shell">What is the difference between a kernel, drivers, and shell?</a></p>
+  </section>
+  <section>
+    <h1 id="linux">Linux</h1>
+
+    <p><img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" width="20%" /></p>
+
+    <p>1991 por Linus Torvalds</p>
+
+    <p><a href="https://en.wikipedia.org/wiki/Linux">https://en.wikipedia.org/wiki/Linux</a></p>
+  </section>
+  <section>
+    <p><img width="200%" src="/files/linux-layers.png" /></p>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h1 id="shebang">shebang</h1>
+
+    <p><a href="https://pt.wikipedia.org/wiki/Shebang">https://pt.wikipedia.org/wiki/Shebang</a></p>
+  </section>
+  <section class="box-gray">
+    <p><code style="font-family: mono; font-size: 3em">#!/bin/sh</code></p>
+  </section>
+</section>
+
+<section>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>Bourne shell</td>
+        <td><code class="highlighter-rouge">sh</code></td>
+      </tr>
+      <tr>
+        <td>KornShell</td>
+        <td><code class="highlighter-rouge">ksh</code></td>
+      </tr>
+      <tr>
+        <td>C shell</td>
+        <td><code class="highlighter-rouge">csh</code></td>
+      </tr>
+      <tr>
+        <td>tee-see-shell</td>
+        <td><code class="highlighter-rouge">tcsh</code></td>
+      </tr>
+      <tr>
+        <td>Bash</td>
+        <td><code class="highlighter-rouge">bash</code></td>
+      </tr>
+      <tr>
+        <td>Z shell</td>
+        <td><code class="highlighter-rouge">Zsh</code></td>
+      </tr>
+      <tr>
+        <td>friendly interactive shell</td>
+        <td><code class="highlighter-rouge">fish</code></td>
+      </tr>
+      <tr>
+        <td>PowerShell</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>Scheme shell</td>
+        <td>scsh</td>
+      </tr>
+    </tbody>
+  </table>
+
+</section>
+
+<section>
+
+  <ul>
+    <li>interpretadores shell (sh, bash, etc)</li>
+    <li>comandos builtin do shell</li>
+    <li>binários e caminho PATH</li>
+    <li>arquivos shell .sh</li>
+    <li>comando find</li>
+    <li>comando sed</li>
+    <li>comando grep</li>
+    <li>pipes e redirecionamentos</li>
+    <li>loops e condicionais</li>
+  </ul>
+</section>
+
+<section>
+  <p><a href="https://calango.club/temas/linux/command_line">https://calango.club/temas/linux/command_line</a></p>
+</section>
+
+<section data-background="#c4a000" data-background-transition="slide">
+  <section>
+    <h3 id="obrigado">Obrigado!</h3>
+
+    <p><span class="url">joenio@joenio.me</span></p>
+
+    <p><br />
+<em>Esta apresentação está disponível em:</em></p>
+
+    <p><span class="url">http://joenio.me/shell-script</span></p>
+
+    <p><small>(código-fonte: <strong>http://github.com/joenio/joenio.me</strong>)</small></p>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></p>
+
+  </section>
+  <section>
+    <h3 id="histrico-de-apresentaes">Histórico de apresentações</h3>
+
+    <p><small>Onde e quando esta apresentação foi realizada</small></p>
+
+    <ul style="font-size: 24px">
+  <li>03 de Mai 2019, Calango Hacker Clube - Brasília, oficina de Shell Script</li>
+</ul>
+  </section>
+</section>
+
+    </div>
+  </div>
+  <script src="/javascript/reveal.js/lib/js/head.min.js"></script>
+  <script src="/javascript/reveal.js/js/reveal.js"></script>
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      slideNumber: 'c/t',
+      history: true,
+      center: true,
+      fragments: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      // Optional reveal.js plugins
+      dependencies: [
+        { src: '/javascript/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: '/javascript/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: '/javascript/reveal.js/plugin/zoom-js/zoom.js', async: true },
+        { src: '/javascript/reveal.js/plugin/notes/notes.js', async: true }
+      ]
+    });
+  </script>
+</body>
+</html>
