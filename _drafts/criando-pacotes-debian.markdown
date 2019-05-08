@@ -4,6 +4,10 @@ modulo: Devel::FindPerl
 pacote: libdevel-findperl-perl
 ---
 
+![descricao imagem aqui](/files/default-post-image.png)
+
+
+<!--
 ==========================
  
 cpantesters: instalar zlib dev / libssl-dev / make / build-essential
@@ -13,6 +17,7 @@ cpan
           build install _command = sudo ./Build    
 
 ==========================
+-->
 
 Neste post irei demonstrar como criar pacotes para o sistema operacional livre
 [Debian][] [GNU/Linux][linux], submeter esses pacotes ao projeto oficial,
@@ -35,7 +40,8 @@ Debian][plataformas]. Contribuir com o empacotamento de novos softwares ou com
 a manutenção dos pacotes existentes é uma forma muito simples e útil de
 melhorar a qualidade geral deste sistema operacional universal.
 
-Vamos lá!
+Vamos lá! Iremos empacotar o módulo [{{ page.modulo }}][modulo-url] que na data
+de publicação deste post ainda não está empacotado no Debian.
 
 ## Instalar as dependências para empacotamento
 
@@ -44,12 +50,12 @@ _unstable_ e ter os seguintes pacotes instalados:
 
 <pre class="terminal">
 <code>
-apt-get install devscripts debhelper git-buildpackage quilt mr pkg-perl-tools
+apt install devscripts debhelper git-buildpackage quilt mr pkg-perl-tools
 </code>
 </pre>
 
 Consulte o [guia do Debian Perl Group sobre uso do
-Git](http://pkg-perl.alioth.debian.org/git.html) para mais detalhes sobre
+Git][pkg-perl-git] para mais detalhes sobre
 os pacotes necessários.
 
 Instale também o `apt-file` e atualize a sua base de dados para que o `dh-make-perl`
@@ -57,7 +63,7 @@ possa descobrir qual pacote é de qual módulo:
 
 <pre class="terminal">
 <code>
-apt-get install apt-file
+apt install apt-file
 apt-file update
 </code>
 </pre>
@@ -86,7 +92,25 @@ Using cached Contents from Sun Jul 16 19:21:00 2017
 
 ## Criar a versão inicial do pacote
 
-Já sabendo que o módulo `{{ page.modulo }}` não está empacotado ainda
+Infome ao Git quem você é para que o `dh-make-perl` gere o template
+inicial do pacote com as informações corretas:
+
+<pre class="terminal">
+<code>
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+</code>
+</pre>
+
+Crie também as variáveis de ambiente abaixo com seu nome e email, isso ajuda a
+criar os arquivos em `debian/` com seus dados corretamente.
+
+```shell
+export EMAIL=joenio@joenio.me
+export DEBFULLNAME="Joenio Costa"
+```
+
+Já sabendo que o módulo `{{ page.modulo }}` não está empacotado
 basta usar o comando `dh-make-perl` para criar a versão inicial do pacote:
 
 <pre class="terminal">
@@ -101,16 +125,6 @@ dh-make-perl --pkg-perl --cpan {{ page.modulo }}
 sejam criadas as configurações básicas.</em>
 </div>
 
-Infome também ao Git quem você é para que o `dh-make-perl` gere o template
-inicial do pacote com as informações corretas:
-
-<pre class="terminal">
-<code>
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
-</code>
-</pre>
-
 O `dh-make-perl` criará um repositório Git local com a cópia da última versão
 do módulo `{{ page.modulo }}` já com os arquivos necessários para o pacote
 Debian, o nome dado ao pacote será `{{ page.pacote }}`, este é o padrão
@@ -119,9 +133,9 @@ Group_.
 
 ## Correções básicas no template inicial
 
-O template inicial do pacote criado pelo `dh-make-perl` é muito bom mas não é
-ideal, muitas alterações serão necessárias até o pacote estar pronto para entrar nos
-repositórios oficiais do projeto Debian, mas geralmente é necessário
+O template inicial do pacote criado pelo `dh-make-perl` é bom mas não é
+ideal, muitas alterações são necessárias até o pacote estar pronto para entrar nos
+repositórios oficiais do projeto Debian, geralmente é necessário
 alterar ao menos os seguintes arquivos:
 
 ### debian/copyright
@@ -136,17 +150,10 @@ Copyright: 2006, Florian Ragwitz <rafl@debian.org>
 License: Artistic or GPL-1+
 ```
 
-Remover DISCLAIMER do copyright adicionado pelo dh-make-perl automaticamente
+Remover **DISCLAIMER** do copyright adicionado pelo `dh-make-perl`
+automaticamente.
 
-### debian/control
-
-Escolher uma boa descrição é fundamental, deve-se levar um bom tempo nisso,
-tanto para a descrição curta, quanto para a descrição longa do pacote.
-
-Consulte a [política para descrição de pacotes][description-policy] no manual de
-políticas do Debian.
-
-### debian/copyright
+#### O que fazer quando o upstream não informa corretamente o ano do copyright?
 
 Se o upstream não informar o ano nas notas de copyright do código fonte então
 será necessário documentar isso de alguma forma, as opções são (1) fazer um
@@ -155,6 +162,24 @@ comentário como feito no
 ou (2) utilizar o padrão [Berne Convention Comment][berne-convention], eu
 prefiro a segunda opção.
 
+(1) liblog-dispatch-config-perl:
+
+```yaml
+Comment: Rationale from the author was:
+  All of my modules available at http://search.cpan.org/~miyagawa/ with the
+  statement "AUTHOR: Tatsuhiko Miyagawa" are, unless otherwise noted,
+  Copyright (c) Tatsuhiko Miyagawa.
+```
+
+(2) Berne Convention:
+
+```yaml
+Comment: The upstream distribution does not contain an explicit statement of
+ copyright ownership. Pursuant to the Berne Convention for the Protection of
+ Literary and Artistic Works, it is assumed that all content is copyright by
+ its respective authors unless otherwise stated.
+```
+
 <!--
   - d/copyright: no years of upstream copyright, and more important: the
     upstream source doesn't contain and copyright information. please add a
@@ -162,11 +187,39 @@ prefiro a segunda opção.
     default Berne Convention Comment from
     http://pkg-perl.alioth.debian.org/copyright.html#berne_convention
 
-(neste caso eu optei por usar a berne_convention)
 -->
 
-[liblog-dispatch-config-perl/copyright]:https://anonscm.debian.org/cgit/pkg-perl/packages/liblog-dispatch-config-perl.git/tree/debian/copyright?h=debian/1.04-1
-[berne-convention]: http://pkg-perl.alioth.debian.org/copyright.html#Berne_Convention
+Eu, geralmente, prefiro usar o comentário no formato **Berne Convention**.
+
+### debian/control
+
+Escolher uma boa descrição é fundamental, deve-se levar um bom tempo nisso,
+tanto para a descrição curta, quanto para a descrição longa do pacote.
+
+Consulte a [política para descrição de pacotes][description-policy] no manual de
+políticas do Debian para mais detalhes sobre como descrever os pacotes de forma
+adequada.
+
+No caso do pacote {{ page.modulo }} eu alterei a descrição gerada pelo
+`dh-make-perl` para o seguinte.
+
+#### single line synopsis:
+
+```yaml
+Description: Perl module to find the path to the currently running perl
+```
+
+#### extended description:
+
+```yaml
+ The Devel::FindPerl module tries to find the path to the currently running
+ perl. It implements a function to try (really really hard) to find the path to
+ the perl running your program and another function to test if the perl in
+ `$path` is the same perl as the currently running one.
+ .
+ SECURITY ALERT: This module by default does things that are not particularly
+ secure (run programs based on external input).
+```
 
 ### debian/changelog
 
@@ -175,7 +228,125 @@ fechamendo de um bug do tipo [ITP][] e o pacote deve ser indicado como
 `unstable`, isto significa que os pacotes sempre entram na distribuição
 `unstable`, a partir disso segue seu fluxo até chegar na versão `stable`.
 
+#### Reportar bug do tipo ITP com reportbug
+
+`reportbug` é uma ferramenta de linha de comando para reportar bugs do sistema
+Debian. Ao empacotar um software é importante registrar que temos a intenção de
+empacotar este software para que a comunidade Debian tenha conhecimento de que
+alguém está trabalhando nisso e assim evitar re-trabalho e sobreposição, um
+pseudo-pacote chamado `wnpp` ([Work-Needing and Prospective Packages][wnpp])
+é utilizado para concentrar os bugreports relativos a novos pacotes.
+
+Os bugs reportados neste pseudo-pacote recebem tags indicando o tipo de "bug",
+neste caso queremos reportar um bug indicando que estamos trabalhando (ou
+iremos trabalhar), num novo pacote, a tag para isso é a tag **ITP** (Intent To
+Package).
+
+Consulte a [documentação oficial do `reportbug`][reportbug] para saber como
+configurá-lo.
+
+<pre class="terminal">
+<code>
+reportbug wnpp
+</code>
+</pre>
+
+Selecione _1 ITP_. Informe o nome do pacote como _{{ page.pacote }}_. Informe a
+descrição do pacote, você pode usar a mesma descrição curta utilizada do
+arquivo `debian/control`. Após isso o _reportbug_ abrirá um editor de texto com
+o template da mensagem de bug a ser enviada, edite este arquivo e adicione:
+
+1. versão do pacote = _0.015_
+1. nome do upstream = _Leon Timmermans <leont@cpan.org>, Randy Sims <randys@thepierianspring.org>_
+1. url do upstream = _https://metacpan.org/release/Devel-FindPerl_
+1. licença = _Artistic or GPL-1+_
+1. linguagem = _Perl_
+1. inclua a descrição longa (use o mesmo do arquivo `debian/control`) no corpo da mensagem
+
+Apague as mensagens adicionadas pelo template do reportbug, salve e feche o
+arquivo para retornar ao reportbug, ele irá solicitar confirmação se você quer
+enviar o email para o sistema de bugs do Debian, responda `yes`.
+
+No exemplo seguido aqui a partir do pacote {{ page.modulo }} a mensagem do reportbug ficou da seguinte forma:
+
+```
+Subject: ITP: libdevel-findperl-perl -- Perl module to find the path to the currently running perl
+Package: wnpp
+Owner: Joenio Costa <joenio@joenio.me>
+Severity: wishlist
+
+* Package name    : libdevel-findperl-perl
+  Version         : 0.015
+  Upstream Author : Leon Timmermans <leont@cpan.org>
+                    Randy Sims <randys@thepierianspring.org>
+* URL             : https://metacpan.org/release/Devel-FindPerl
+* License         : Artistic or GPL-1+
+  Programming Lang: Perl
+  Description     : Perl module to find the path to the currently running perl
+
+The Devel::FindPerl module tries to find the path to the currently running
+perl. It implements a function to try (really really hard) to find the path to
+the perl running your program and another function to test if the perl in
+`$path` is the same perl as the currently running one.
+
+SECURITY ALERT: This module by default does things that are not particularly
+secure (run programs based on external input).
+```
+
+Verifique a mensagem do bug nos servidores do Debian, você deve receber uma
+cópia do email, esta mensagem contém o número do bug, adicione o número do bug
+no arquivo `debian/changelog` com a mensagem _(Closes #<numero do bug>)_. Veja
+abaixo como ficou o changelog:
+
+```
+libdevel-findperl-perl (0.015-1) unstable; urgency=low
+
+  * Initial release. (Closes #928632)
+
+ -- Joenio Costa <joenio@joenio.me>  Tue, 7 May 2019 12:21:30 -0300
+```
+
+Mensagem automática com o número do bug recebida dos servidores do Debian:
+
+```
+Subject: Bug#928632: Acknowledgement (ITP: libdevel-findperl-perl -- Perl module to find the path to the currently running perl)
+
+Thank you for filing a new Bug report with Debian.
+
+You can follow progress on this Bug here: 928632: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=928632.
+
+This is an automatically generated reply to let you know your message
+has been received.
+
+Your message is being forwarded to the package maintainers and other
+interested parties for their attention; they will reply in due course.
+
+As you requested using X-Debbugs-CC, your message was also forwarded to
+  debian-devel@lists.debian.org
+(after having been given a Bug report number, if it did not have one).
+
+Your message has been sent to the package maintainer(s):
+ wnpp@debian.org
+
+If you wish to submit further information on this problem, please
+send it to 928632@bugs.debian.org.
+
+Please do not send mail to owner@bugs.debian.org unless you wish
+to report a problem with the Bug-tracking system.
+
+-- 
+928632: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=928632
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+```
+
+Neste ponto já temos o pacote minimamente pronto, vamos testar e usar o
+`lintian` para debugar possíveis problemas.
+
 ## Gerar o pacote e verificar a conformidade com lintian
+
+Commite as mudanças realizadas nos arquivos em `debian/` e use o
+`git-buildpackage` para gerar o pacote.
 
 <pre class="terminal">
 <code>
@@ -183,8 +354,47 @@ gbp buildpackage -us -uc
 </code>
 </pre>
 
-Corrigir os _warnings_ do `lintian`, re-gerar o pacote e verificar novamente com
-a flag `-I`.
+As flags `-us` e `-uc` informa ao processo de build que não queremos assinar o
+pacote ao final do processo, usamos estas flags apenas enquanto estamos
+testando, ao final quando for o momento de submeter o pacote ao Debian iremos
+gerar o pacote e assinar ele com o GnuPG.
+
+O lingian encontrou alguns problemas:
+
+```
+Now running lintian libdevel-findperl-perl_0.015-1_amd64.changes ...
+W: libdevel-findperl-perl: new-package-should-close-itp-bug
+E: libdevel-findperl-perl: possible-missing-colon-in-closes Closes #928632
+W: libdevel-findperl-perl: spelling-error-in-description really really (duplicate word) really
+```
+
+Faltou adicionar dois pontos (:) após a palavra _Closes_, o diff da mudança necessária para resolver
+o warning _new-package-should-close-itp-bug_ e o erro _possible-missing-colon-in-closes_ é o seguinte:
+
+```diff
+diff --git a/debian/changelog b/debian/changelog
+index 914b680..8e8e6f6 100644
+--- a/debian/changelog
++++ b/debian/changelog
+@@ -1,5 +1,5 @@
+ libdevel-findperl-perl (0.015-1) unstable; urgency=low
+ 
+-  * Initial release. (Closes #928632)
++  * Initial release. (Closes: #928632)
+ 
+  -- Joenio Costa <joenio@joenio.me>  Tue, 7 May 2019 12:21:30 -0300
+```
+
+O terceiro warning do lintian _spelling-error-in-description_ é um falso
+negativo pois a palavra _really_ duplicada está assim de propósito, a descrição
+do upstream usa dessa forma para enfatizar a mensagem que quer passar, neste
+caso podemos criar um arquivo no pacote para fazer o lintian não mais reclamar
+sobre esse falso warning. Para isso criamos um [_Override_][lintian-override] no lintian
+
+debian/libdevel-findperl-perl.lintian-overrides
+
+Vamos corrigir os _warnings_ do `lintian`, re-gerar o pacote e verificar novamente com
+a flag `-I` para obter mensagens mais descritivas do lintian.
 
 <pre class="terminal">
 <code>
@@ -192,8 +402,7 @@ lintian -I
 </code>
 </pre>
 
-05 - Publicar pacote em algum repositório (não-oficial)
--------------------------------------------------------
+### Publicar o pacote em repositório (não-oficial)
 
 4) dput para publicar num repositorio e testar instalacao (mostrar outro post sobre isso depois)
 
@@ -201,12 +410,8 @@ dput aceita como parametro o arquivo .changes do pacote já feito
 
 dput debian.joenio.me <arquivo.changes>
 
-06 - Reportar bug do tipo ITP com reportbug
--------------------------------------------
-
-$ reportbug wnpp
-
-seleciona 1 ITP
+quilt
+-----
 
 Uso do quilt: http://pkg-perl.alioth.debian.org/howto/quilt.html
 
@@ -345,6 +550,12 @@ o gnupg não consegue abrir o agente para solicitar a frase de segurança,
 [perl]: http://perl.org
 [plataformas]: http://www.debian.org/ports
 [modulo-url]: http://metacpan.org/pod/{{ page.modulo }}
-[naming-policy]: http://pkg-perl.alioth.debian.org/policy.html#Package_Naming_Policy
+[naming-policy]: http://perl-team.pages.debian.net/policy.html#Package_Naming_Policy
 [description-policy]: https://www.debian.org/doc/debian-policy/ch-binary.html#s-descriptions
 [ITP]: https://wiki.debian.org/ITP
+[pkg-perl-git]: http://perl-team.pages.debian.net/git.html
+[liblog-dispatch-config-perl/copyright]: https://salsa.debian.org/perl-team/modules/packages/liblog-dispatch-config-perl/blob/debian/1.04-1/debian/copyright
+[berne-convention]: http://perl-team.pages.debian.net/copyright.html#Berne_Convention
+[wnpp]: https://wiki.debian.org/WNPP
+[reportbug]: https://wiki.debian.org/reportbug
+[lintian-override]: https://lintian.debian.org/manual/section-2.4.html
