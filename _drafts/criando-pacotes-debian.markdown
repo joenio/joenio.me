@@ -199,6 +199,13 @@ tanto para a descrição curta, quanto para a descrição longa do pacote.
 Consulte a [política para descrição de pacotes][description-policy] no manual de
 políticas do Debian para mais detalhes sobre como descrever os pacotes de forma
 adequada.
+A descrição curta deve, usualmente, iniciar com letra minúscula e
+deve ser uma "noum phrase" (substantivo).
+
+<!-- 
+, nunca sei o que é isso mas gregor sempre me corrije sobre isso: 
+aconteceu com: libmodule-install-repository e libmodule-install-testbase também
+-->
 
 No caso do pacote {{ page.modulo }} eu alterei a descrição gerada pelo
 `dh-make-perl` para o seguinte.
@@ -208,6 +215,9 @@ No caso do pacote {{ page.modulo }} eu alterei a descrição gerada pelo
 ```yaml
 Description: Perl module to find the path to the currently running perl
 ```
+
+Usei descrição curta iniciando com maiúscula por se tratar de um nome próprio
+neste caso, a linguagem de programação é Perl, perl é o interpretador.
 
 #### extended description:
 
@@ -340,6 +350,15 @@ Debian Bug Tracking System
 Contact owner@bugs.debian.org with problems
 ```
 
+#### Atenção sobre dependendências declaradas no `debian/control`
+
+Não se deve incluir dependencias para os pacotes `perl-modules` ou `perl-base`,
+apenas para `perl`, lembrar que `perl` é fornecido por `${perl:Depends}`.
+
+Verifique a versão das dependências, nem sempre as sugestões dos
+desenvolvedores no `Makefile.PL` está correta, ou pode ocorrer do Debian não
+possuir versão mais antiga que as versões no `Makefile.PL`.
+
 Neste ponto já temos o pacote minimamente pronto, vamos testar e usar o
 `lintian` para debugar possíveis problemas.
 
@@ -359,7 +378,7 @@ pacote ao final do processo, usamos estas flags apenas enquanto estamos
 testando, ao final quando for o momento de submeter o pacote ao Debian iremos
 gerar o pacote e assinar ele com o GnuPG.
 
-O lingian encontrou alguns problemas:
+O `lintian` encontrou alguns problemas:
 
 ```
 Now running lintian libdevel-findperl-perl_0.015-1_amd64.changes ...
@@ -368,8 +387,10 @@ E: libdevel-findperl-perl: possible-missing-colon-in-closes Closes #928632
 W: libdevel-findperl-perl: spelling-error-in-description really really (duplicate word) really
 ```
 
-Faltou adicionar dois pontos (:) após a palavra _Closes_, o diff da mudança necessária para resolver
-o warning _new-package-should-close-itp-bug_ e o erro _possible-missing-colon-in-closes_ é o seguinte:
+Dois dos três problemas relatados pelo `lintian` indica que faltou adicionar
+dois pontos (`:`) após a palavra _Closes_, o diff da mudança necessária para
+resolver o warning _new-package-should-close-itp-bug_ e o erro
+_possible-missing-colon-in-closes_ é o seguinte:
 
 ```diff
 diff --git a/debian/changelog b/debian/changelog
@@ -385,16 +406,23 @@ index 914b680..8e8e6f6 100644
   -- Joenio Costa <joenio@joenio.me>  Tue, 7 May 2019 12:21:30 -0300
 ```
 
-O terceiro warning do lintian _spelling-error-in-description_ é um falso
-negativo pois a palavra _really_ duplicada está assim de propósito, a descrição
-do upstream usa dessa forma para enfatizar a mensagem que quer passar, neste
-caso podemos criar um arquivo no pacote para fazer o lintian não mais reclamar
-sobre esse falso warning. Para isso criamos um [_Override_][lintian-override] no lintian
+O terceiro warning do `lintian` _spelling-error-in-description_ é um falso
+positivo pois a palavra _really_ duplicada está assim de propósito, a descrição
+do upstream usa dessa forma para enfatizar a mensagem, e usei na descrição do
+pacote essa mesma mensagem do upstream, neste caso podemos criar um arquivo no
+pacote para fazer o lintian não mais reclamar sobre esse falso warning, para
+isso usamos o `lintian` [_Override_][lintian-override] criando o arquivo
+`debian/libdevel-findperl-perl.lintian-overrides` com o seguinte conteúdo:
 
-debian/libdevel-findperl-perl.lintian-overrides
+```yaml
+# The package long description duplicate the word "really" on purpose
+libdevel-findperl-perl binary: spelling-error-in-description
+```
 
-Vamos corrigir os _warnings_ do `lintian`, re-gerar o pacote e verificar novamente com
-a flag `-I` para obter mensagens mais descritivas do lintian.
+Após corrigir os _warnings_ do `lintian` vamos re-gerar o pacote e verificar
+novamente usando a flag `-I` para obter mensagens mais descritivas do lintian.
+Commite as mudanças realizadas no código do pacote (arquivo em `debian/`),
+execute novamente `gbp buildpackage -us -uc` e rode o `lintian`.
 
 <pre class="terminal">
 <code>
@@ -402,13 +430,117 @@ lintian -I
 </code>
 </pre>
 
-### Publicar o pacote em repositório (não-oficial)
+Uma vez que temos uma versão inicial do pacote pronta é interessante publicar
+em algum repositório para testar a sua distribuição e instalação, claro que
+você pode instalar o pacote localmente usando o `dpkg` diretamente.
 
-4) dput para publicar num repositorio e testar instalacao (mostrar outro post sobre isso depois)
+## Publicar o pacote em repositório (não-oficial)
 
-dput aceita como parametro o arquivo .changes do pacote já feito
+Veja no post [Aprenda a criar repositórios de pacotes
+Debian](/aprenda-a-criar-repositorios-de-pacotes-debian) como criar seu próprio
+repositório de pacotes Debian usando `dput` + `mini-dinstall` + `nginx`.
 
-dput debian.joenio.me <arquivo.changes>
+É necessário gerar o pacote novamente sem o uso das flags `-us` e `-uc` para
+assinar o pacote com [GnuPG][], o upload para o repositório via `dput` requer que o
+pacote esteja assinado.
+
+Irei publicar no repositório [http://debian.joenio.me](http://debian.joenio.me)
+usando o `dput` para testar a publicação do pacote e na sequência testar a
+instalação via APT. O `dput` aceita como parâmetro o arquivo `.changes` do
+pacote, para o pacote `{{ page.pacote }}` vamos executar o seguinte:
+
+<pre class="terminal">
+<code>
+dput debian.joenio.me ../{{ page.pacote }}_0.015-1_amd64.changes
+</code>
+</pre>
+
+Altere o endereço do repositório `debian.joenio.me` pelo seu próprio
+repositório ou por qualquer outro repositório onde você tenha permissão de
+escrita.
+
+Teste a instalação do pacote e garanta que instala corretamente, caso encontre
+problemas resolva e só então submeta o pacote ao Debian. Mas antes é boa
+prática construir o pacote novamente num ambiente limpo.
+
+## Construir o pacote num ambiente chroot isolado
+
+Existem diversas ferramentas para criar um ambiente Debian limpo voltado para
+construção de pacotes, geralmente usando `chroot`, entre os mais comuns estão o
+`sbuild`, `pbuilder` e `cowbuilder`.
+
+<!--
+## testar build do pacote num ambiente limpo
+Antes de submeter sempre testar construir o pacote dentro de um chroot "limpo": 
+
+(se for usar pbuilder esse passo n eh necessário)
+
+<!-- sudo mk-build-deps --install --remove --tool 'apt-get --yes --force-yes' ->
+-->
+
+Aqui vou mostrar o uso do `pbuilder` por ser o que costumo utilizar no meu
+fluxo de empacotamento. Execute os comandos abaixo a partir do diretório
+do pacote.
+
+<pre class="terminal">
+<code>
+sudo pbuilder create
+sudo pbuilder update
+pdebuild
+</code>
+</pre>
+
+O `git-buildpackage` oferece um wrapper para o `pdebuild`, para usar ele e
+evitar alertas a respeito dos arquivos binários existentes no diretório `.git`
+basta executar o `pdebuild` da seguinte forma:
+
+<pre class="terminal">
+<code>
+BUILDER=pbuilder git-pbuilder
+</code>
+</pre>
+
+Passe a opção `--force-sign` para assinar os arquivos do pacote.  Se desejar
+informar um mirror alternativo passe o parâmetro `--othermirror "deb
+http://local/mirror stable main"`
+
+<!--
+O comando `pbuilder create` cria o `base.tgz` com a distribuição Debian Sid, 
+`pbuilder update` atualiza o sistema chroot base com as atualizacoes do sid,
+para executar pdebuild (é preciso estar no sudo)
+-->
+
+Verificar se o pacote funciona bem após os testes autopkgtest, ver documentacao abaixo:
+http://pkg-perl.alioth.debian.org/autopkgtest.html
+https://lists.debian.org/debian-perl/2014/09/msg00100.html
+
+Alguns pacotes marcados na whitelist são executados contra o autopkgtest no servidor CI
+http://ci.debian.net
+
+## Fazer upload do pacote no repositório do grupo Debian pkg-perl
+
+É necessário solicitar acesso ao [Salsa do time Perl do Debian][perl-team]
+enviando um email com uma curta apresentação para o seguinte email
+<a href="mailto:debian-perl@lists.debian.org">debian-perl@lists.debian.org</a>.
+
+Após ter acesso permitido ao repositório do grupo Perl é hora de fazer upload
+do pacote no repositório do grupo, antes disso garanta que o pacote segue
+
+* Alterar o status do pacote em `debian/changelog` de UNRELEASED para unstable.
+* Garantir que há uma mensagem `(Closes: #NNNNNN)` no `debian/changelog` indicando o número do bug ITP
+* Verificar a versão correta de "Standards-Version: 3.9.4"
+* Usar o formato correto para o `debian/copyright`, atualmente usar DEP-5
+* Verificar o COPYRIGHT de cada arquivo (usar grep ou ack) para buscar a quem pertence o copyright de cada arquivo
+
+packages/lib...-perl$ dpt alioth-repo
+
+http://pkg-perl.alioth.debian.org/git.html#pushing_to_git_debian_org
+
+Após algum tempo o pacote entra no PET se o status no changelog for unstable
+(nao UNRELEASED)
+
+http://pet.debian.net/pkg-perl/pet.cgi
+
 
 quilt
 -----
@@ -425,80 +557,6 @@ Adicionar configs no .quiltrc:
 
 http://pkg-perl.alioth.debian.org/howto/quilt.html#tips_and_tricks
 
-07 - Verificar e corrigir alguns parametros
--------------------------------------------
-
-6) Verificar
-
-Versao correta de "Standards-Version: 3.9.4"
-Formato do copyright, atualmente usar DEP-5
-Verificar o COPYRIGHT de cada arquivo (usar grep ou ack)
-
-$ ack COPYRIGHT -a
-
-Não incluir dependencias para 'perl-modules' ou 'perl-base', apenas para
-'perl'. 'perl' é fornecido por ${perl:Depends}.
-
-Descrição curta deve iniciar com letra minuscula.
-
-"deve ser a 'noum phrase'", nunca sei o que é isso mas gregor sempre me corrije sobre isso:
-aconteceu com: libmodule-install-repository e libmodule-install-testbase também
-
-Verificar as versões das dependencias, nem sempre as sugestões
-dos desenvolvedores no Makefile.PL está correta, ou o Debian
-possui versão mais antiga que esta.
-
-## instalar dependencias de build
-
-(se for usar pbuilder esse passo n eh necessário)
-
-sudo mk-build-deps --install --remove --tool 'apt-get --yes --force-yes'
-
-## testar build do pacote num ambiente limpo
-
-Antes de submeter sempre testar construir o pacote dentro de um chroot "limpo": sbuild, pbuilder ou cowbuilder
-
-com o pbuilder faça o seguinte
-
-$ sudo pbuilder create (cria base.tgz com sid)
-$ sudo pbuilder update (atualiza o sistema chroot base com as atualizacoes do sid)
-$ pdebuild (é preciso estar no sudo)
-
-Verificar se o pacote funciona bem após os testes autopkgtest, ver documentacao abaixo:
-http://pkg-perl.alioth.debian.org/autopkgtest.html
-https://lists.debian.org/debian-perl/2014/09/msg00100.html
-
-Alguns pacotes marcados na whitelist são executados contra o autopkgtest no servidor CI
-http://ci.debian.net
-
-o pacote git-buildpackage oferece um wrapper para o pdebuild também, para usalo e evitar
-mensagens a respeito dos arquivos binarios existentes no repositorio .git basta executar
-da seguinte forma:
-
-$ BUILDER=pbuilder git-pbuilder
-
-passe a opção --force-sign para assinar os arquivos do pacote.
-
---othermirror
-
-deb http://local/mirror stable main
-
-
-08 - Fazer upload do pacote no repositório git do grupo Debian pkg-perl
------------------------------------------------------------------------
-
-Alterar debian/changelog: UNRELEASED -> unstable
-
-Adicionar mensagem: (Closes: #NNNNNN)
-
-packages/lib...-perl$ dpt alioth-repo
-
-http://pkg-perl.alioth.debian.org/git.html#pushing_to_git_debian_org
-
-Após algum tempo o pacote entra no PET se o status no changelog for unstable
-(nao UNRELEASED)
-
-http://pet.debian.net/pkg-perl/pet.cgi
 
 09 - Atualizar repositório git
 ------------------------------
@@ -559,3 +617,5 @@ o gnupg não consegue abrir o agente para solicitar a frase de segurança,
 [wnpp]: https://wiki.debian.org/WNPP
 [reportbug]: https://wiki.debian.org/reportbug
 [lintian-override]: https://lintian.debian.org/manual/section-2.4.html
+[gnupg]: https://www.gnupg.org
+[perl-team]: https://salsa.debian.org/perl-team
