@@ -495,3 +495,7 @@ figure legend {
   font-family: sans-serif;
   text-shadow: 0 0 1px cyan;
 }
+
+figure pre {
+  text-align: left;
+}
