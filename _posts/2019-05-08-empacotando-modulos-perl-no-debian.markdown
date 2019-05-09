@@ -3,12 +3,13 @@ title: Empacotando módulos Perl no Debian
 modulo: Devel::FindPerl
 pacote: libdevel-findperl-perl
 lead: >
-  Oficina gratuíta de edição de imagem e vídeo com as ferramentas de Software
-  Livre Inkscape, Gimp, Kdenlive e Blender no dia 08 de Dezembro de 2018
-  em Brasília no Calango Hacker Clube às 14h.
+  Neste post demonstro como criar pacotes para o sistema operacional livre
+  Debian GNU/Linux, submeter o pacote ao projeto oficial, resolver e documentar
+  questões sobre licenças, e uma série de outras informações relacionadas ao
+  processo de empacotamento de módulos Perl no Debian.
 ---
 
-![descricao imagem aqui](/files/default-post-image.png)
+![descricao imagem aqui](/files/clone-trooper-e-wall-e-pacotes-perl.jpg)
 
 Neste post irei demonstrar como criar pacotes para o sistema operacional livre
 [Debian][] [GNU/Linux][linux], submeter esses pacotes ao projeto oficial,
@@ -37,9 +38,8 @@ publicação ainda não estava empacotado no Debian.
 
 ## Instalar as dependências para empacotamento
 
-Primeiro, primeiro antes de tudo o mais, você precisa utilizar alguma versão do
-Debian, _stable_, _testing_, ou _unstable_ e ter os seguintes pacotes
-instalados:
+Primeiro, antes de tudo, é necessário utilizar alguma versão do Debian,
+_stable_, _testing_, ou _unstable_ e ter os seguintes pacotes instalados.
 
 <pre class="terminal">
 <code>
@@ -50,7 +50,7 @@ apt install devscripts debhelper git-buildpackage pkg-perl-tools
 Consulte o [guia do Debian Perl Group sobre uso do Git][pkg-perl-git] para mais
 detalhes sobre os pacotes necessários. Instale também o `apt-file` e atualize a
 sua base de dados para que o `dh-make-perl` possa descobrir qual pacote é de
-qual módulo:
+qual módulo.
 
 <pre class="terminal">
 <code>
@@ -60,9 +60,8 @@ apt-file update
 </pre>
 
 Assim é possível descobrir quando um certo módulo Perl já está empacotado no
-Debian, por exemplo, execute o comando abaixo para descobrir se o módulo [{{
-page.modulo }}][modulo-url] está empacotado e qual é o nome do pacote em caso
-afirmativo.
+Debian, execute o comando abaixo para descobrir se o módulo [{{ page.modulo
+}}][modulo-url] está empacotado e qual é o nome do pacote em caso afirmativo.
 
 <pre class="terminal">
 <code>
@@ -70,8 +69,8 @@ dh-make-perl locate {{ page.modulo }}
 </code>
 </pre>
 
-Até o momento da escrita deste post o módulo {{ page.modulo }} não está
-empacotado no Debian então o `dh-make-perl` reporta o seguinte:
+Até o momento da escrita deste post o módulo `{{ page.modulo }}` não está
+empacotado no Debian então o `dh-make-perl` reporta o seguinte.
 
 <pre class="terminal">
 <code>
@@ -84,7 +83,7 @@ Using cached Contents from Sun Jul 16 19:21:00 2017
 ## Criar a versão inicial do pacote
 
 Infome ao Git quem você é para que o `dh-make-perl` gere o template
-inicial do pacote com as informações corretas:
+inicial do pacote com as informações corretas.
 
 <pre class="terminal">
 <code>
@@ -102,7 +101,7 @@ export EMAIL=you@example.com
 export DEBFULLNAME="Your Name"
 ```
 
-Crie a versão inicial do pacote:
+Crie a versão inicial do pacote.
 
 <pre class="terminal">
 <code>
@@ -180,8 +179,8 @@ tanto para a descrição curta, quanto para a descrição longa do pacote.
 Consulte a [política para descrição de pacotes][description-policy] no manual
 de políticas do Debian para mais detalhes sobre como descrever os pacotes de
 forma adequada. A descrição curta deve, usualmente, iniciar com letra minúscula
-e deve ser uma "noum phrase" (substantivo). No caso do pacote {{ page.modulo }}
-eu alterei a descrição gerada pelo `dh-make-perl` para o seguinte.
+e deve ser uma "noum phrase" (substantivo). No caso do pacote `{{ page.modulo }}`
+alterei a descrição gerada pelo `dh-make-perl` para o seguinte.
 
 #### single line synopsis:
 
@@ -222,11 +221,12 @@ alguém está trabalhando nisso e assim evitar re-trabalho e sobreposição, um
 pseudo-pacote chamado `wnpp` ([Work-Needing and Prospective Packages][wnpp])
 é utilizado para concentrar os bugreports relativos a novos pacotes.
 
-Os bugs reportados no pseudo-pacote `wnpp` recebem tags indicando o tipo do "bug",
-neste caso queremos reportar um bug indicando que estamos trabalhando (ou
-iremos trabalhar) num novo pacote, a tag para isso é a **ITP** (Intent To
-Package). Consulte a [documentação oficial do `reportbug`][reportbug] para
-saber como configurá-lo e execute o seguinte comando para registrar o bug ITP:
+Os bugs reportados no pseudo-pacote `wnpp` recebem tags indicando o tipo do
+"bug", neste caso queremos reportar um bug indicando que estamos trabalhando
+(ou iremos trabalhar) num novo pacote, a tag para isso é a **ITP** (Intent To
+Package), consulte a [documentação oficial do `reportbug`][reportbug] para
+saber como configurá-lo e execute o seguinte comando para registrar um bug do
+tipo ITP.
 
 <pre class="terminal">
 <code>
@@ -248,9 +248,9 @@ bug a ser enviada, adicione as seguintes informações:
 
 Apague as mensagens adicionadas pelo template do reportbug, salve e feche o
 arquivo para retornar ao reportbug, ele solicitará confirmação para o envio do
-email no sistema de bugs do Debian, responda `Y`. No exemplo seguido aqui a
-partir do pacote {{ page.modulo }} a mensagem do reportbug ficou da seguinte
-forma:
+email ao sistema de bugs do Debian, responda `Y`. No exemplo seguido aqui
+para o pacote `{{ page.modulo }}` a mensagem do reportbug ficou da seguinte
+forma.
 
 ```
 Subject: ITP: libdevel-findperl-perl -- Perl module to find the path to the currently running perl
@@ -279,7 +279,7 @@ secure (run programs based on external input).
 Verifique a mensagem nos servidores do Debian, você deve receber uma
 cópia do email, esta mensagem contém o número do bug, adicione o número do bug
 no arquivo `debian/changelog` com a mensagem "(Closes #&lt;numero do bug&gt;)", veja
-como ficou o changelog do {{ page.pacote }}:
+como ficou o changelog do `{{ page.pacote }}`.
 
 ```
 libdevel-findperl-perl (0.015-1) unstable; urgency=low
@@ -290,7 +290,7 @@ libdevel-findperl-perl (0.015-1) unstable; urgency=low
 ```
 
 A mensagem automática com o número do bug ITP criado para o pacote `{{
-page.pacote }}` recebida dos servidores do Debian foi a seguinte:
+page.pacote }}` recebida dos servidores do Debian foi a seguinte.
 
 ```
 Subject: Bug#928632: Acknowledgement (ITP: libdevel-findperl-perl -- Perl module to find the path to the currently running perl)
@@ -347,7 +347,7 @@ gbp buildpackage -us -uc
 </code>
 </pre>
 
-As flags `-us` e `-uc` informa ao processo de build que não queremos assinar o
+As flags `-us` e `-uc` informam ao processo de build para não assinar o
 pacote ao final do processo, usamos estas flags apenas enquanto estamos
 testando, ao final quando for o momento de submeter o pacote ao Debian iremos
 gerar o pacote e assinar ele com o GnuPG.
@@ -363,7 +363,7 @@ W: libdevel-findperl-perl: spelling-error-in-description really really (duplicat
 
 Dois dos três problemas relatados pelo `lintian` indica que faltou adicionar
 dois pontos (`:`) após a palavra _Closes_, o diff da mudança necessária para
-resolver esses problemas é o seguinte:
+resolver esse problema é o seguinte.
 
 ```diff
 diff --git a/debian/changelog b/debian/changelog
@@ -381,11 +381,11 @@ index 914b680..8e8e6f6 100644
 
 O terceiro warning do `lintian` _spelling-error-in-description_ é um falso
 positivo pois a palavra _really_ duplicada está assim de propósito, a descrição
-do upstream usa dessa forma para enfatizar a mensagem, usei a mesma descrição
+do upstream usa essa forma para enfatizar a mensagem, usei a mesma descrição
 do upstream, neste caso podemos criar um arquivo no pacote para fazer o
 `lintian` não mais reclamar desse falso warning, para isso usamos o `lintian`
 [_Override_][lintian-override] criando o arquivo
-`debian/libdevel-findperl-perl.lintian-overrides` com o seguinte conteúdo:
+`debian/libdevel-findperl-perl.lintian-overrides` com o seguinte conteúdo.
 
 ```yaml
 # The package long description duplicate the word "really" on purpose
@@ -419,7 +419,7 @@ que o pacote esteja assinado.
 Irei publicar no repositório [http://debian.joenio.me](http://debian.joenio.me)
 usando o `dput` para testar a publicação do pacote e na sequência testar a
 instalação via APT. O `dput` aceita como parâmetro o arquivo `.changes` do
-pacote, para o pacote `{{ page.pacote }}` vamos executar o seguinte:
+pacote, para o pacote `{{ page.pacote }}` vamos executar o seguinte.
 
 <pre class="terminal">
 <code>
@@ -428,10 +428,10 @@ dput debian.joenio.me ../{{ page.pacote }}_0.015-1_amd64.changes
 </pre>
 
 Altere o endereço do repositório `debian.joenio.me` pelo seu próprio
-repositório ou por qualquer outro repositório onde você tenha permissão de
-escrita. Teste a instalação do pacote e garanta que instala corretamente, caso
-encontre problemas resolva e só então submeta o pacote ao Debian. É uma boa
-prática testar a construção do pacote num ambiente `chroot` limpo.
+repositório ou por qualquer outro repositório onde você tem permissão de
+escrita. Teste a instalação do pacote e garanta que ele instala corretamente,
+caso encontre problemas resolva e só então submeta o pacote ao Debian. É uma
+boa prática testar também a construção do pacote num ambiente `chroot` limpo.
 
 ## Construir o pacote num ambiente chroot isolado
 
@@ -478,7 +478,7 @@ no repositório do grupo, mas antes faça uma revisão final no pacote:
 * Verificar o COPYRIGHT de cada arquivo (usar grep ou ack) para buscar a quem pertence o copyright de cada arquivo
 
 Feito as verificações finais, use o comando abaixo para criar e configurar um
-novo projeto no Salsa para subir o repositório local do nosso novo pacote `{{
+novo projeto no Salsa, e subir o repositório local do nosso novo pacote `{{
 page.pacote }}`.
 
 <pre class="terminal">
@@ -508,6 +508,11 @@ mas apenas caso nenhum revisor solicite alterações mudando o status em
 `debian/changelog` para `UNRELEASED`. Além disso, alguns pacotes marcados na
 whitelist são executados contra o [autopkgtest][] no servidor CI do Debian e
 podem ser consultados em [ci.debian.net](http://ci.debian.net).
+
+O módulo `{{ page.modulo }}` empacotado para `{{ page.pacote }}` durante a escrita
+deste post foi submetido ao repositório do Debian Perl Group e pode ser visualizado em:
+
+* [https://salsa.debian.org/perl-team/modules/packages/libdevel-findperl-perl](https://salsa.debian.org/perl-team/modules/packages/libdevel-findperl-perl)
 
 [Debian]: http://debian.org
 [livre]: http://debian.org/intro/free
