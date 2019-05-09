@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Empacotando módulos Perl no Debian | Joenio Marques da Costa</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <link rel="canonical" href="http://joenio.me/empacotando-modulos-perl-no-debian/">
+    <link rel="alternate" type="application/rss+xml" title="Joenio Marques da Costa | Feed" href="/feed.xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/hanken" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/phennig" rel="stylesheet" type="text/css"/>
+</head>
+
+  <body>
+  <header class="site-header">
+  <div class="wrap">
+    <a class="site-title" href="/">Joenio Marques da Costa</a>
+  </div>
+</header>
+
+
+  <div class="page-content">
+    <div class="wrap">
+      <div class="post">
+        <header class="post-header">
+          <h1>Empacotando módulos Perl no Debian</h1>
+          <p class="meta">
+May 8, 2019
+</p>
+
+        </header>
+        <article class="post-content">
+        <p><img src="/files/clone-trooper-e-wall-e-pacotes-perl.jpg" alt="descricao imagem aqui" /></p>
+
+<p>Neste post irei demonstrar como criar pacotes para o sistema operacional livre
+<a href="http://debian.org">Debian</a> <a href="http://www.kernel.org">GNU/Linux</a>, submeter esses pacotes ao projeto oficial,
+resolver e documentar questões sobre licenças, e uma série de outras
+informações relacionadas ao processo de empacotamento Debian, especialmente
+sobre o empacotamento de <a href="http://metacpan.org">módulos</a> <a href="http://perl.org">Perl</a>.</p>
+
+<p>O Debian é um sistema operacional <a href="http://debian.org/intro/free">livre</a> criado e mantido por um grupo
+independente de desenvolvedores espalhados ao redor do mundo, o projeto foi
+iniciado em 1993 e tem sido desenvolvido abertamente desde então, sempre
+seguindo o espírito livre do <a href="http://www.gnu.org">projeto GNU</a>. O sistema de gerenciamento de
+pacotes Debian, chamado <a href="http://pt.wikipedia.org/wiki/Advanced_Packaging_Tool">APT</a>, foi criado originalmente pelos
+desenvolvedores do projeto e conta hoje com 51 mil pacotes em seus
+<a href="http://www.debian.org/releases/stable/amd64/release-notes/ch-whats-new.pt-br.html#newdistro">repositórios</a> oficiais.</p>
+
+<p>A enorme quantidade de pacotes disponíveis torna extremamente simples
+pesquisar, instalar, atualizar ou remover qualquer software em seu computador,
+seja desktop, servidor ou qualquer outra <a href="http://www.debian.org/ports">plataforma suportada pelo
+Debian</a>. Contribuir com o empacotamento de novos projetos de
+software ou com a manutenção dos pacotes existentes é uma forma muito simples e
+útil de melhorar a qualidade geral deste sistema operacional universal.</p>
+
+<p>Vamos lá! Os exemplos relatados aqui serão com o módulo <a href="http://metacpan.org/pod/Devel::FindPerl">Devel::FindPerl</a>, empacotado durante a escrita deste post e que até a data de
+publicação ainda não estava empacotado no Debian.</p>
+
+<h2 id="instalar-as-dependências-para-empacotamento">Instalar as dependências para empacotamento</h2>
+
+<p>Primeiro, antes de tudo, é necessário utilizar alguma versão do Debian,
+<em>stable</em>, <em>testing</em>, ou <em>unstable</em> e ter os seguintes pacotes instalados.</p>
+
+<pre class="terminal">
+<code>
+apt install devscripts debhelper git-buildpackage pkg-perl-tools
+</code>
+</pre>
+
+<p>Consulte o <a href="http://perl-team.pages.debian.net/git.html">guia do Debian Perl Group sobre uso do Git</a> para mais
+detalhes sobre os pacotes necessários. Instale também o <code class="highlighter-rouge">apt-file</code> e atualize a
+sua base de dados para que o <code class="highlighter-rouge">dh-make-perl</code> possa descobrir qual pacote é de
+qual módulo.</p>
+
+<pre class="terminal">
+<code>
+apt install apt-file
+apt-file update
+</code>
+</pre>
+
+<p>Assim é possível descobrir quando um certo módulo Perl já está empacotado no
+Debian, execute o comando abaixo para descobrir se o módulo <a href="http://metacpan.org/pod/Devel::FindPerl">Devel::FindPerl</a> está empacotado e qual é o nome do pacote em caso afirmativo.</p>
+
+<pre class="terminal">
+<code>
+dh-make-perl locate Devel::FindPerl
+</code>
+</pre>
+
+<p>Até o momento da escrita deste post o módulo <code class="highlighter-rouge">Devel::FindPerl</code> não está
+empacotado no Debian então o <code class="highlighter-rouge">dh-make-perl</code> reporta o seguinte.</p>
+
+<pre class="terminal">
+<code>
+== dh-make-perl 0.95 ==
+Using cached Contents from Sun Jul 16 19:21:00 2017
+Devel::FindPerl is not found in any Debian package
+</code>
+</pre>
+
+<h2 id="criar-a-versão-inicial-do-pacote">Criar a versão inicial do pacote</h2>
+
+<p>Infome ao Git quem você é para que o <code class="highlighter-rouge">dh-make-perl</code> gere o template
+inicial do pacote com as informações corretas.</p>
+
+<pre class="terminal">
+<code>
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+</code>
+</pre>
+
+<p>Crie também as variáveis de ambiente abaixo com seu nome e email, isso ajuda o
+<code class="highlighter-rouge">dh-make-perl</code> a criar os arquivos do pacote em <code class="highlighter-rouge">debian/</code> com seus dados
+corretamente.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">EMAIL</span><span class="o">=</span>you@example.com
+<span class="nb">export </span><span class="nv">DEBFULLNAME</span><span class="o">=</span><span class="s2">"Your Name"</span>
+</code></pre></div></div>
+
+<p>Crie a versão inicial do pacote.</p>
+
+<pre class="terminal">
+<code>
+dh-make-perl --pkg-perl --cpan Devel::FindPerl
+</code>
+</pre>
+
+<div class="alert alert-warning">
+  <p><strong>Atenção!</strong>
+<em>Se o <code class="highlighter-rouge">cpan</code> nunca foi utilizado execute-o antes do <code class="highlighter-rouge">dh-make-perl</code> para que
+sejam criadas as configurações básicas.</em></p>
+</div>
+
+<p>O <code class="highlighter-rouge">dh-make-perl</code> criará um repositório Git local com a cópia da última versão
+do módulo <code class="highlighter-rouge">Devel::FindPerl</code> já com os arquivos necessários para o pacote
+Debian, o nome dado ao pacote será <code class="highlighter-rouge">libdevel-findperl-perl</code>, este é o padrão
+definido pela <a href="http://perl-team.pages.debian.net/policy.html#Package_Naming_Policy">política de nomes para pacotes</a> do <em>Debian Perl
+Group</em>.</p>
+
+<h2 id="correções-básicas-no-template-inicial">Correções básicas no template inicial</h2>
+
+<p>O template inicial do pacote criado pelo <code class="highlighter-rouge">dh-make-perl</code> é bom mas não é
+ideal, muitas alterações são necessárias até o pacote estar pronto para entrar nos
+repositórios oficiais do projeto Debian, geralmente é necessário
+alterar ao menos os seguintes arquivos:</p>
+
+<h3 id="debiancopyright">debian/copyright</h3>
+
+<p>Adicionar o ano em cada linha do copyright, exemplo:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Files: debian/*
+Copyright: 2006, Florian Ragwitz &lt;rafl@debian.org&gt;
+ 2008-2014, gregor herrmann &lt;gregoa@debian.org&gt;
+ 2008, Damyan Ivanov &lt;dmn@debian.org&gt;
+License: Artistic or GPL-1+
+</code></pre></div></div>
+
+<p>Remover <strong>DISCLAIMER</strong> do copyright adicionado pelo <code class="highlighter-rouge">dh-make-perl</code>
+automaticamente.</p>
+
+<h4 id="o-que-fazer-quando-o-upstream-não-informa-corretamente-o-ano-do-copyright">O que fazer quando o upstream não informa corretamente o ano do copyright?</h4>
+
+<p>Se o upstream não informar o ano nas notas de copyright do código fonte então
+será necessário documentar isso de alguma forma, as opções são (1) fazer um
+comentário como feito no
+<a href="https://salsa.debian.org/perl-team/modules/packages/liblog-dispatch-config-perl/blob/debian/1.04-1/debian/copyright">liblog-dispatch-config-perl/debian/copyright</a>
+ou (2) utilizar o padrão <a href="http://perl-team.pages.debian.net/copyright.html#Berne_Convention">Berne Convention Comment</a>.</p>
+
+<p>(1) liblog-dispatch-config-perl:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Comment</span><span class="pi">:</span> <span class="na">Rationale from the author was</span><span class="pi">:</span>
+  <span class="s">All of my modules available at http://search.cpan.org/~miyagawa/ with the</span>
+  <span class="s">statement "AUTHOR</span><span class="pi">:</span> <span class="s">Tatsuhiko Miyagawa" are, unless otherwise noted,</span>
+  <span class="s">Copyright (c) Tatsuhiko Miyagawa.</span>
+</code></pre></div></div>
+
+<p>(2) Berne Convention:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Comment</span><span class="pi">:</span> <span class="s">The upstream distribution does not contain an explicit statement of</span>
+ <span class="s">copyright ownership. Pursuant to the Berne Convention for the Protection of</span>
+ <span class="s">Literary and Artistic Works, it is assumed that all content is copyright by</span>
+ <span class="s">its respective authors unless otherwise stated.</span>
+</code></pre></div></div>
+
+<p>Eu, geralmente, prefiro usar o comentário no formato <strong>Berne Convention</strong>.</p>
+
+<h3 id="debiancontrol">debian/control</h3>
+
+<p>Escolher uma boa descrição é fundamental, deve-se levar um bom tempo nisso,
+tanto para a descrição curta, quanto para a descrição longa do pacote.</p>
+
+<p>Consulte a <a href="https://www.debian.org/doc/debian-policy/ch-binary.html#s-descriptions">política para descrição de pacotes</a> no manual
+de políticas do Debian para mais detalhes sobre como descrever os pacotes de
+forma adequada. A descrição curta deve, usualmente, iniciar com letra minúscula
+e deve ser uma “noum phrase” (substantivo). No caso do pacote <code class="highlighter-rouge">Devel::FindPerl</code>
+alterei a descrição gerada pelo <code class="highlighter-rouge">dh-make-perl</code> para o seguinte.</p>
+
+<h4 id="single-line-synopsis">single line synopsis:</h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Description</span><span class="pi">:</span> <span class="s">Perl module to find the path to the currently running perl</span>
+</code></pre></div></div>
+
+<p>Usei descrição curta iniciando com maiúscula por se tratar de um nome próprio
+neste caso, a linguagem de programação é Perl e não perl, perl é o
+interpretador.</p>
+
+<h4 id="extended-description">extended description:</h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="s">The Devel::FindPerl module tries to find the path to the currently running</span>
+ <span class="s">perl. It implements a function to try (really really hard) to find the path to</span>
+ <span class="s">the perl running your program and another function to test if the perl in</span>
+ <span class="s">`$path` is the same perl as the currently running one.</span>
+ <span class="s">.</span>
+ <span class="s">SECURITY ALERT</span><span class="pi">:</span> <span class="s">This module by default does things that are not particularly</span>
+ <span class="s">secure (run programs based on external input).</span>
+</code></pre></div></div>
+
+<h3 id="debianchangelog">debian/changelog</h3>
+
+<p>Deve ser informado no arquivo <code class="highlighter-rouge">debian/changelog</code> uma mensagem referenciando o
+fechamendo de um bug do tipo <a href="https://wiki.debian.org/ITP">ITP</a> e o pacote deve ser indicado como
+<code class="highlighter-rouge">unstable</code>, isto significa que os pacotes sempre entram na distribuição
+<code class="highlighter-rouge">unstable</code>, a partir disso segue seu fluxo até chegar na versão <code class="highlighter-rouge">stable</code>,
+passando pela <code class="highlighter-rouge">testing</code>.</p>
+
+<h4 id="reportar-bug-do-tipo-itp-com-reportbug">Reportar bug do tipo ITP com reportbug</h4>
+
+<p><code class="highlighter-rouge">reportbug</code> é uma ferramenta de linha de comando para reportar bugs do sistema
+Debian. Ao empacotar um software é importante registrar que temos a intenção de
+empacotar este software para que a comunidade Debian tenha conhecimento de que
+alguém está trabalhando nisso e assim evitar re-trabalho e sobreposição, um
+pseudo-pacote chamado <code class="highlighter-rouge">wnpp</code> (<a href="https://wiki.debian.org/WNPP">Work-Needing and Prospective Packages</a>)
+é utilizado para concentrar os bugreports relativos a novos pacotes.</p>
+
+<p>Os bugs reportados no pseudo-pacote <code class="highlighter-rouge">wnpp</code> recebem tags indicando o tipo do
+“bug”, neste caso queremos reportar um bug indicando que estamos trabalhando
+(ou iremos trabalhar) num novo pacote, a tag para isso é a <strong>ITP</strong> (Intent To
+Package), consulte a <a href="https://wiki.debian.org/reportbug">documentação oficial do <code class="highlighter-rouge">reportbug</code></a> para
+saber como configurá-lo e execute o seguinte comando para registrar um bug do
+tipo ITP.</p>
+
+<pre class="terminal">
+<code>
+reportbug wnpp
+</code>
+</pre>
+
+<p>Selecione <em>1 ITP</em>, informe o nome do pacote como <em>libdevel-findperl-perl</em>, informe a
+descrição do pacote, use a mesma descrição curta utilizada no <code class="highlighter-rouge">debian/control</code>.
+Após isso o <em>reportbug</em> abrirá um editor de texto com o template da mensagem de
+bug a ser enviada, adicione as seguintes informações:</p>
+
+<ol>
+  <li>versão do pacote = <em>0.015</em></li>
+  <li>nome do upstream = <em>Leon Timmermans <a href="mailto:leont@cpan.org">leont@cpan.org</a>, Randy Sims <a href="mailto:randys@thepierianspring.org">randys@thepierianspring.org</a></em></li>
+  <li>url do upstream = <em>https://metacpan.org/release/Devel-FindPerl</em></li>
+  <li>licença = <em>Artistic or GPL-1+</em></li>
+  <li>linguagem = <em>Perl</em></li>
+  <li>inclua a descrição longa (use o mesmo do arquivo <code class="highlighter-rouge">debian/control</code>) no corpo da mensagem</li>
+</ol>
+
+<p>Apague as mensagens adicionadas pelo template do reportbug, salve e feche o
+arquivo para retornar ao reportbug, ele solicitará confirmação para o envio do
+email ao sistema de bugs do Debian, responda <code class="highlighter-rouge">Y</code>. No exemplo seguido aqui
+para o pacote <code class="highlighter-rouge">Devel::FindPerl</code> a mensagem do reportbug ficou da seguinte
+forma.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Subject: ITP: libdevel-findperl-perl -- Perl module to find the path to the currently running perl
+Package: wnpp
+Owner: Joenio Costa &lt;joenio@joenio.me&gt;
+Severity: wishlist
+
+* Package name    : libdevel-findperl-perl
+  Version         : 0.015
+  Upstream Author : Leon Timmermans &lt;leont@cpan.org&gt;
+                    Randy Sims &lt;randys@thepierianspring.org&gt;
+* URL             : https://metacpan.org/release/Devel-FindPerl
+* License         : Artistic or GPL-1+
+  Programming Lang: Perl
+  Description     : Perl module to find the path to the currently running perl
+
+The Devel::FindPerl module tries to find the path to the currently running
+perl. It implements a function to try (really really hard) to find the path to
+the perl running your program and another function to test if the perl in
+`$path` is the same perl as the currently running one.
+
+SECURITY ALERT: This module by default does things that are not particularly
+secure (run programs based on external input).
+</code></pre></div></div>
+
+<p>Verifique a mensagem nos servidores do Debian, você deve receber uma
+cópia do email, esta mensagem contém o número do bug, adicione o número do bug
+no arquivo <code class="highlighter-rouge">debian/changelog</code> com a mensagem “(Closes #&lt;numero do bug&gt;)”, veja
+como ficou o changelog do <code class="highlighter-rouge">libdevel-findperl-perl</code>.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>libdevel-findperl-perl (0.015-1) unstable; urgency=low
+
+  * Initial release. (Closes #928632)
+
+ -- Joenio Costa &lt;joenio@joenio.me&gt;  Tue, 7 May 2019 12:21:30 -0300
+</code></pre></div></div>
+
+<p>A mensagem automática com o número do bug ITP criado para o pacote <code class="highlighter-rouge">libdevel-findperl-perl</code> recebida dos servidores do Debian foi a seguinte.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Subject: Bug#928632: Acknowledgement (ITP: libdevel-findperl-perl -- Perl module to find the path to the currently running perl)
+
+Thank you for filing a new Bug report with Debian.
+
+You can follow progress on this Bug here: 928632: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=928632.
+
+This is an automatically generated reply to let you know your message
+has been received.
+
+Your message is being forwarded to the package maintainers and other
+interested parties for their attention; they will reply in due course.
+
+As you requested using X-Debbugs-CC, your message was also forwarded to
+  debian-devel@lists.debian.org
+(after having been given a Bug report number, if it did not have one).
+
+Your message has been sent to the package maintainer(s):
+ wnpp@debian.org
+
+If you wish to submit further information on this problem, please
+send it to 928632@bugs.debian.org.
+
+Please do not send mail to owner@bugs.debian.org unless you wish
+to report a problem with the Bug-tracking system.
+
+-- 
+928632: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=928632
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+</code></pre></div></div>
+
+<h4 id="atenção-sobre-dependendências-declaradas-no-debiancontrol">Atenção sobre dependendências declaradas no <code class="highlighter-rouge">debian/control</code></h4>
+
+<p>Não se deve incluir dependencias para os pacotes <code class="highlighter-rouge">perl-modules</code> ou <code class="highlighter-rouge">perl-base</code>,
+apenas para <code class="highlighter-rouge">perl</code>, lembrar que <code class="highlighter-rouge">perl</code> é fornecido por <code class="highlighter-rouge">${perl:Depends}</code>.</p>
+
+<p>Verifique a versão das dependências, nem sempre as sugestões dos
+desenvolvedores no <code class="highlighter-rouge">Makefile.PL</code> está correta, ou pode ocorrer do Debian não
+possuir versão mais antiga que as versões no <code class="highlighter-rouge">Makefile.PL</code>.</p>
+
+<p>Neste ponto já temos o pacote minimamente pronto, vamos testar e usar o
+<code class="highlighter-rouge">lintian</code> para debugar possíveis problemas.</p>
+
+<h2 id="gerar-o-pacote-e-verificar-a-conformidade-com-lintian">Gerar o pacote e verificar a conformidade com lintian</h2>
+
+<p>Commite as mudanças realizadas nos arquivos em <code class="highlighter-rouge">debian/</code> e use o
+<code class="highlighter-rouge">git-buildpackage</code> para gerar o pacote.</p>
+
+<pre class="terminal">
+<code>
+gbp buildpackage -us -uc
+</code>
+</pre>
+
+<p>As flags <code class="highlighter-rouge">-us</code> e <code class="highlighter-rouge">-uc</code> informam ao processo de build para não assinar o
+pacote ao final do processo, usamos estas flags apenas enquanto estamos
+testando, ao final quando for o momento de submeter o pacote ao Debian iremos
+gerar o pacote e assinar ele com o GnuPG.</p>
+
+<p>O <code class="highlighter-rouge">lintian</code> encontrou alguns problemas no empacotamento do módulo <code class="highlighter-rouge">Devel::FindPerl</code>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Now running lintian libdevel-findperl-perl_0.015-1_amd64.changes ...
+W: libdevel-findperl-perl: new-package-should-close-itp-bug
+E: libdevel-findperl-perl: possible-missing-colon-in-closes Closes #928632
+W: libdevel-findperl-perl: spelling-error-in-description really really (duplicate word) really
+</code></pre></div></div>
+
+<p>Dois dos três problemas relatados pelo <code class="highlighter-rouge">lintian</code> indica que faltou adicionar
+dois pontos (<code class="highlighter-rouge">:</code>) após a palavra <em>Closes</em>, o diff da mudança necessária para
+resolver esse problema é o seguinte.</p>
+
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh">diff --git a/debian/changelog b/debian/changelog
+index 914b680..8e8e6f6 100644
+</span><span class="gd">--- a/debian/changelog
+</span><span class="gi">+++ b/debian/changelog
+</span><span class="gu">@@ -1,5 +1,5 @@
+</span> libdevel-findperl-perl (0.015-1) unstable; urgency=low
+ 
+<span class="gd">-  * Initial release. (Closes #928632)
+</span><span class="gi">+  * Initial release. (Closes: #928632)
+</span> 
+  -- Joenio Costa &lt;joenio@joenio.me&gt;  Tue, 7 May 2019 12:21:30 -0300
+</code></pre></div></div>
+
+<p>O terceiro warning do <code class="highlighter-rouge">lintian</code> <em>spelling-error-in-description</em> é um falso
+positivo pois a palavra <em>really</em> duplicada está assim de propósito, a descrição
+do upstream usa essa forma para enfatizar a mensagem, usei a mesma descrição
+do upstream, neste caso podemos criar um arquivo no pacote para fazer o
+<code class="highlighter-rouge">lintian</code> não mais reclamar desse falso warning, para isso usamos o <code class="highlighter-rouge">lintian</code>
+<a href="https://lintian.debian.org/manual/section-2.4.html"><em>Override</em></a> criando o arquivo
+<code class="highlighter-rouge">debian/libdevel-findperl-perl.lintian-overrides</code> com o seguinte conteúdo.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># The package long description duplicate the word "really" on purpose</span>
+<span class="na">libdevel-findperl-perl binary</span><span class="pi">:</span> <span class="s">spelling-error-in-description</span>
+</code></pre></div></div>
+
+<p>Após corrigir os <em>warnings</em> do <code class="highlighter-rouge">lintian</code> vamos re-gerar o pacote e verificar
+novamente usando a flag <code class="highlighter-rouge">-I</code> para obter mensagens mais descritivas do lintian.
+Commite as mudanças realizadas no código do pacote (arquivo em <code class="highlighter-rouge">debian/</code>),
+execute novamente <code class="highlighter-rouge">gbp buildpackage -us -uc</code> e rode o <code class="highlighter-rouge">lintian</code>.</p>
+
+<pre class="terminal">
+<code>
+lintian -I
+</code>
+</pre>
+
+<p>Uma vez que temos uma versão inicial do pacote pronta é interessante publicar
+em algum repositório para testar a instalação com o <code class="highlighter-rouge">APT</code>, claro que é possível
+instalar o pacote localmente usando o <code class="highlighter-rouge">dpkg</code> diretamente.</p>
+
+<h2 id="publicar-o-pacote-em-repositório-não-oficial">Publicar o pacote em repositório (não-oficial)</h2>
+
+<p>Veja no post <a href="/aprenda-a-criar-repositorios-de-pacotes-debian">Aprenda a criar repositórios de pacotes
+Debian</a> como criar seu próprio
+repositório de pacotes Debian usando <code class="highlighter-rouge">dput</code> + <code class="highlighter-rouge">mini-dinstall</code> + <code class="highlighter-rouge">nginx</code>. É
+necessário gerar o pacote novamente sem o uso das flags <code class="highlighter-rouge">-us</code> e <code class="highlighter-rouge">-uc</code> para
+assinar o pacote com <a href="https://www.gnupg.org">GnuPG</a>, o upload para o repositório via <code class="highlighter-rouge">dput</code> requer
+que o pacote esteja assinado.</p>
+
+<p>Irei publicar no repositório <a href="http://debian.joenio.me">http://debian.joenio.me</a>
+usando o <code class="highlighter-rouge">dput</code> para testar a publicação do pacote e na sequência testar a
+instalação via APT. O <code class="highlighter-rouge">dput</code> aceita como parâmetro o arquivo <code class="highlighter-rouge">.changes</code> do
+pacote, para o pacote <code class="highlighter-rouge">libdevel-findperl-perl</code> vamos executar o seguinte.</p>
+
+<pre class="terminal">
+<code>
+dput debian.joenio.me ../libdevel-findperl-perl_0.015-1_amd64.changes
+</code>
+</pre>
+
+<p>Altere o endereço do repositório <code class="highlighter-rouge">debian.joenio.me</code> pelo seu próprio
+repositório ou por qualquer outro repositório onde você tem permissão de
+escrita. Teste a instalação do pacote e garanta que ele instala corretamente,
+caso encontre problemas resolva e só então submeta o pacote ao Debian. É uma
+boa prática testar também a construção do pacote num ambiente <code class="highlighter-rouge">chroot</code> limpo.</p>
+
+<h2 id="construir-o-pacote-num-ambiente-chroot-isolado">Construir o pacote num ambiente chroot isolado</h2>
+
+<p>Existem diversas ferramentas para criar um ambiente Debian limpo voltado para
+construção de pacotes, geralmente usando <code class="highlighter-rouge">chroot</code>, entre os mais comuns estão o
+<code class="highlighter-rouge">sbuild</code>, <code class="highlighter-rouge">pbuilder</code> e <code class="highlighter-rouge">cowbuilder</code>. Aqui vou mostrar o uso do <code class="highlighter-rouge">pbuilder</code> por
+ser o que costumo utilizar no meu fluxo de empacotamento, execute os comandos
+abaixo a partir do diretório do pacote.</p>
+
+<pre class="terminal">
+<code>
+sudo pbuilder create
+sudo pbuilder update
+pdebuild
+</code>
+</pre>
+
+<p>O <code class="highlighter-rouge">git-buildpackage</code> oferece um wrapper para o <code class="highlighter-rouge">pdebuild</code>, para usar ele e
+evitar alertas a respeito dos arquivos binários existentes no diretório <code class="highlighter-rouge">.git</code>
+basta executar o <code class="highlighter-rouge">pdebuild</code> da seguinte forma:</p>
+
+<pre class="terminal">
+<code>
+BUILDER=pbuilder git-pbuilder
+</code>
+</pre>
+
+<p>Passe a opção <code class="highlighter-rouge">--force-sign</code> para assinar os arquivos do pacote, se desejar
+informar um mirror alternativo passe o parâmetro <code class="highlighter-rouge">--othermirror "deb
+http://local/mirror stable main"</code>.</p>
+
+<h2 id="fazer-upload-do-pacote-no-repositório-do-grupo-debian-perl">Fazer upload do pacote no repositório do grupo Debian Perl</h2>
+
+<p>É necessário solicitar acesso ao <a href="https://salsa.debian.org/perl-team">Salsa do time Perl do Debian</a>
+enviando um email com uma curta apresentação pessoal para o seguinte email <a href="mailto:debian-perl@lists.debian.org">debian-perl@lists.debian.org</a>.
+Após ter acesso ao repositório do grupo Perl é hora de fazer upload do pacote
+no repositório do grupo, mas antes faça uma revisão final no pacote:</p>
+
+<ul>
+  <li>Verifique se o status do pacote em <code class="highlighter-rouge">debian/changelog</code> foi alterado de UNRELEASED para unstable</li>
+  <li>Garanta que há uma mensagem <code class="highlighter-rouge">(Closes: #NNNNNN)</code> no <code class="highlighter-rouge">debian/changelog</code> indicando o número do bug ITP</li>
+  <li>Verifique a versão correta de “Standards-Version:”, aqui a versão utilizada foi 4.3.0</li>
+  <li>Use o formato correto no arquivo <code class="highlighter-rouge">debian/copyright</code>, atualmente usar <a href="https://dep-team.pages.debian.net/deps/dep5/">DEP-5</a></li>
+  <li>Verificar o COPYRIGHT de cada arquivo (usar grep ou ack) para buscar a quem pertence o copyright de cada arquivo</li>
+</ul>
+
+<p>Feito as verificações finais, use o comando abaixo para criar e configurar um
+novo projeto no Salsa, e subir o repositório local do nosso novo pacote <code class="highlighter-rouge">libdevel-findperl-perl</code>.</p>
+
+<pre class="terminal">
+<code>
+dpt salsa pushrepo
+</code>
+</pre>
+
+<div class="alert alert-warning">
+  <p><strong>Atenção!</strong>
+<em>
+Lembre de registrar um token em
+<a href="https://salsa.debian.org/profile/personal_access_tokens">https://salsa.debian.org/profile/personal_access_tokens</a>
+e defina este token na variável de ambiente <code class="highlighter-rouge">DPT_SALSA_PRIVATE_TOKEN</code> para que
+o <code class="highlighter-rouge">dpt</code> tenha acesso de escrita no servidor Salsa.
+</em></p>
+</div>
+
+<p>Para saber mais detalhes de como fazer upload do seu pacote veja a documentação
+<a href="http://perl-team.pages.debian.net/git.html#pushing_to_salsa.debian.org">pushing to salsa.debian.org</a>, além do token é necessário
+também fazer upload de sua chave ssh no Salsa, ele é uma instância do Gitlab,
+então basta acessar sua conta ir em preferências e configurar uma chave ssh por
+lá.</p>
+
+<p>Algum tempo após o upload o pacote entra no <a href="http://pet.debian.net/pkg-perl/pet.cgi">PET</a> (Package Entropy Tracker),
+mas apenas caso nenhum revisor solicite alterações mudando o status em
+<code class="highlighter-rouge">debian/changelog</code> para <code class="highlighter-rouge">UNRELEASED</code>. Além disso, alguns pacotes marcados na
+whitelist são executados contra o <a href="https://perl-team.pages.debian.net/autopkgtest.html">autopkgtest</a> no servidor CI do Debian e
+podem ser consultados em <a href="http://ci.debian.net">ci.debian.net</a>.</p>
+
+<p>O módulo <code class="highlighter-rouge">Devel::FindPerl</code> empacotado para <code class="highlighter-rouge">libdevel-findperl-perl</code> durante a escrita
+deste post foi submetido ao repositório do Debian Perl Group e pode ser visualizado em:</p>
+
+<ul>
+  <li><a href="https://salsa.debian.org/perl-team/modules/packages/libdevel-findperl-perl">https://salsa.debian.org/perl-team/modules/packages/libdevel-findperl-perl</a></li>
+</ul>
+
+
+        </article>
+          <footer class="post-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES * * */
+      var disqus_shortname = 'joenio';
+      var disqus_url = 'http://joenio.me/empacotando-modulos-perl-no-debian/index.html';
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+    </noscript>
+  </footer>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+
+  <div class="wrap">
+
+    <div class="column">
+      <p id="sobre">
+        <a href="/sobre">
+        Joenio Marques da Costa (a.k.a. djalgoritmo)
+        Engenheiro de Software,
+        mestre em Ciência da Computação,
+        desenvolvedor e militante do movimento de software livre,
+        DJ, músico experimental, live coder.
+        </a>
+      </p>
+
+      <hr/>
+
+      <p id="rss">
+        <a type="application/rss+xml" href="/feed.xml">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="rss-icon-svg" id="RSSicon" viewBox="0 0 256 256">
+          <defs><linearGradient x1="0.085" y1="0.085" x2="0.915" y2="0.915" id="RSSg">
+          <stop offset="0.0" stop-color="#E3702D"/><stop offset="0.1071" stop-color="#EA7D31"/>
+          <stop offset="0.3503" stop-color="#F69537"/><stop offset="0.5" stop-color="#FB9E3A"/>
+          <stop offset="0.7016" stop-color="#EA7C31"/><stop offset="0.8866" stop-color="#DE642B"/>
+          <stop offset="1.0" stop-color="#D95B29"/></linearGradient></defs>
+          <rect width="256" height="256" rx="55" ry="55" x="0" y="0" fill="#CC5D15"/>
+          <rect width="246" height="246" rx="50" ry="50" x="5" y="5" fill="#F49C52"/>
+          <rect width="236" height="236" rx="47" ry="47" x="10" y="10" fill="url(#RSSg)"/>
+          <circle cx="68" cy="189" r="24" fill="#FFF"/>
+          <path d="M160 213h-34a82 82 0 0 0 -82 -82v-34a116 116 0 0 1 116 116z" fill="#FFF"/>
+          <path d="M184 213A140 140 0 0 0 44 73 V 38a175 175 0 0 1 175 175z" fill="#FFF"/>
+        </svg>
+        <span class="rss-subscribe">RSS</span>
+        </a>
+      </p>
+
+    </div>
+  </div>
+
+</footer>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31348806-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>

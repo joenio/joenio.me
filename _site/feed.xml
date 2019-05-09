@@ -5,9 +5,513 @@
     <description></description>
     <link>http://joenio.me/</link>
     <atom:link href="http://joenio.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 23 Apr 2019 22:17:21 -0300</pubDate>
-    <lastBuildDate>Tue, 23 Apr 2019 22:17:21 -0300</lastBuildDate>
+    <pubDate>Thu, 09 May 2019 00:06:42 -0300</pubDate>
+    <lastBuildDate>Thu, 09 May 2019 00:06:42 -0300</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>Empacotando módulos Perl no Debian</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/files/clone-trooper-e-wall-e-pacotes-perl.jpg&quot; alt=&quot;descricao imagem aqui&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Neste post irei demonstrar como criar pacotes para o sistema operacional livre
+&lt;a href=&quot;http://debian.org&quot;&gt;Debian&lt;/a&gt; &lt;a href=&quot;http://www.kernel.org&quot;&gt;GNU/Linux&lt;/a&gt;, submeter esses pacotes ao projeto oficial,
+resolver e documentar questões sobre licenças, e uma série de outras
+informações relacionadas ao processo de empacotamento Debian, especialmente
+sobre o empacotamento de &lt;a href=&quot;http://metacpan.org&quot;&gt;módulos&lt;/a&gt; &lt;a href=&quot;http://perl.org&quot;&gt;Perl&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;O Debian é um sistema operacional &lt;a href=&quot;http://debian.org/intro/free&quot;&gt;livre&lt;/a&gt; criado e mantido por um grupo
+independente de desenvolvedores espalhados ao redor do mundo, o projeto foi
+iniciado em 1993 e tem sido desenvolvido abertamente desde então, sempre
+seguindo o espírito livre do &lt;a href=&quot;http://www.gnu.org&quot;&gt;projeto GNU&lt;/a&gt;. O sistema de gerenciamento de
+pacotes Debian, chamado &lt;a href=&quot;http://pt.wikipedia.org/wiki/Advanced_Packaging_Tool&quot;&gt;APT&lt;/a&gt;, foi criado originalmente pelos
+desenvolvedores do projeto e conta hoje com 51 mil pacotes em seus
+&lt;a href=&quot;http://www.debian.org/releases/stable/amd64/release-notes/ch-whats-new.pt-br.html#newdistro&quot;&gt;repositórios&lt;/a&gt; oficiais.&lt;/p&gt;
+
+&lt;p&gt;A enorme quantidade de pacotes disponíveis torna extremamente simples
+pesquisar, instalar, atualizar ou remover qualquer software em seu computador,
+seja desktop, servidor ou qualquer outra &lt;a href=&quot;http://www.debian.org/ports&quot;&gt;plataforma suportada pelo
+Debian&lt;/a&gt;. Contribuir com o empacotamento de novos projetos de
+software ou com a manutenção dos pacotes existentes é uma forma muito simples e
+útil de melhorar a qualidade geral deste sistema operacional universal.&lt;/p&gt;
+
+&lt;p&gt;Vamos lá! Os exemplos relatados aqui serão com o módulo &lt;a href=&quot;http://metacpan.org/pod/Devel::FindPerl&quot;&gt;Devel::FindPerl&lt;/a&gt;, empacotado durante a escrita deste post e que até a data de
+publicação ainda não estava empacotado no Debian.&lt;/p&gt;
+
+&lt;h2 id=&quot;instalar-as-dependências-para-empacotamento&quot;&gt;Instalar as dependências para empacotamento&lt;/h2&gt;
+
+&lt;p&gt;Primeiro, antes de tudo, é necessário utilizar alguma versão do Debian,
+&lt;em&gt;stable&lt;/em&gt;, &lt;em&gt;testing&lt;/em&gt;, ou &lt;em&gt;unstable&lt;/em&gt; e ter os seguintes pacotes instalados.&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+apt install devscripts debhelper git-buildpackage pkg-perl-tools
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Consulte o &lt;a href=&quot;http://perl-team.pages.debian.net/git.html&quot;&gt;guia do Debian Perl Group sobre uso do Git&lt;/a&gt; para mais
+detalhes sobre os pacotes necessários. Instale também o &lt;code class=&quot;highlighter-rouge&quot;&gt;apt-file&lt;/code&gt; e atualize a
+sua base de dados para que o &lt;code class=&quot;highlighter-rouge&quot;&gt;dh-make-perl&lt;/code&gt; possa descobrir qual pacote é de
+qual módulo.&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+apt install apt-file
+apt-file update
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Assim é possível descobrir quando um certo módulo Perl já está empacotado no
+Debian, execute o comando abaixo para descobrir se o módulo &lt;a href=&quot;http://metacpan.org/pod/Devel::FindPerl&quot;&gt;Devel::FindPerl&lt;/a&gt; está empacotado e qual é o nome do pacote em caso afirmativo.&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+dh-make-perl locate Devel::FindPerl
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Até o momento da escrita deste post o módulo &lt;code class=&quot;highlighter-rouge&quot;&gt;Devel::FindPerl&lt;/code&gt; não está
+empacotado no Debian então o &lt;code class=&quot;highlighter-rouge&quot;&gt;dh-make-perl&lt;/code&gt; reporta o seguinte.&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+== dh-make-perl 0.95 ==
+Using cached Contents from Sun Jul 16 19:21:00 2017
+Devel::FindPerl is not found in any Debian package
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;criar-a-versão-inicial-do-pacote&quot;&gt;Criar a versão inicial do pacote&lt;/h2&gt;
+
+&lt;p&gt;Infome ao Git quem você é para que o &lt;code class=&quot;highlighter-rouge&quot;&gt;dh-make-perl&lt;/code&gt; gere o template
+inicial do pacote com as informações corretas.&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+git config --global user.email &quot;you@example.com&quot;
+git config --global user.name &quot;Your Name&quot;
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Crie também as variáveis de ambiente abaixo com seu nome e email, isso ajuda o
+&lt;code class=&quot;highlighter-rouge&quot;&gt;dh-make-perl&lt;/code&gt; a criar os arquivos do pacote em &lt;code class=&quot;highlighter-rouge&quot;&gt;debian/&lt;/code&gt; com seus dados
+corretamente.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;EMAIL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;you@example.com
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DEBFULLNAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Your Name&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Crie a versão inicial do pacote.&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+dh-make-perl --pkg-perl --cpan Devel::FindPerl
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;div class=&quot;alert alert-warning&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Atenção!&lt;/strong&gt;
+&lt;em&gt;Se o &lt;code class=&quot;highlighter-rouge&quot;&gt;cpan&lt;/code&gt; nunca foi utilizado execute-o antes do &lt;code class=&quot;highlighter-rouge&quot;&gt;dh-make-perl&lt;/code&gt; para que
+sejam criadas as configurações básicas.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;O &lt;code class=&quot;highlighter-rouge&quot;&gt;dh-make-perl&lt;/code&gt; criará um repositório Git local com a cópia da última versão
+do módulo &lt;code class=&quot;highlighter-rouge&quot;&gt;Devel::FindPerl&lt;/code&gt; já com os arquivos necessários para o pacote
+Debian, o nome dado ao pacote será &lt;code class=&quot;highlighter-rouge&quot;&gt;libdevel-findperl-perl&lt;/code&gt;, este é o padrão
+definido pela &lt;a href=&quot;http://perl-team.pages.debian.net/policy.html#Package_Naming_Policy&quot;&gt;política de nomes para pacotes&lt;/a&gt; do &lt;em&gt;Debian Perl
+Group&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;correções-básicas-no-template-inicial&quot;&gt;Correções básicas no template inicial&lt;/h2&gt;
+
+&lt;p&gt;O template inicial do pacote criado pelo &lt;code class=&quot;highlighter-rouge&quot;&gt;dh-make-perl&lt;/code&gt; é bom mas não é
+ideal, muitas alterações são necessárias até o pacote estar pronto para entrar nos
+repositórios oficiais do projeto Debian, geralmente é necessário
+alterar ao menos os seguintes arquivos:&lt;/p&gt;
+
+&lt;h3 id=&quot;debiancopyright&quot;&gt;debian/copyright&lt;/h3&gt;
+
+&lt;p&gt;Adicionar o ano em cada linha do copyright, exemplo:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Files: debian/*
+Copyright: 2006, Florian Ragwitz &amp;lt;rafl@debian.org&amp;gt;
+ 2008-2014, gregor herrmann &amp;lt;gregoa@debian.org&amp;gt;
+ 2008, Damyan Ivanov &amp;lt;dmn@debian.org&amp;gt;
+License: Artistic or GPL-1+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Remover &lt;strong&gt;DISCLAIMER&lt;/strong&gt; do copyright adicionado pelo &lt;code class=&quot;highlighter-rouge&quot;&gt;dh-make-perl&lt;/code&gt;
+automaticamente.&lt;/p&gt;
+
+&lt;h4 id=&quot;o-que-fazer-quando-o-upstream-não-informa-corretamente-o-ano-do-copyright&quot;&gt;O que fazer quando o upstream não informa corretamente o ano do copyright?&lt;/h4&gt;
+
+&lt;p&gt;Se o upstream não informar o ano nas notas de copyright do código fonte então
+será necessário documentar isso de alguma forma, as opções são (1) fazer um
+comentário como feito no
+&lt;a href=&quot;https://salsa.debian.org/perl-team/modules/packages/liblog-dispatch-config-perl/blob/debian/1.04-1/debian/copyright&quot;&gt;liblog-dispatch-config-perl/debian/copyright&lt;/a&gt;
+ou (2) utilizar o padrão &lt;a href=&quot;http://perl-team.pages.debian.net/copyright.html#Berne_Convention&quot;&gt;Berne Convention Comment&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;(1) liblog-dispatch-config-perl:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;Comment&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Rationale from the author was&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;All of my modules available at http://search.cpan.org/~miyagawa/ with the&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;statement &quot;AUTHOR&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Tatsuhiko Miyagawa&quot; are, unless otherwise noted,&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;Copyright (c) Tatsuhiko Miyagawa.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;(2) Berne Convention:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;Comment&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;The upstream distribution does not contain an explicit statement of&lt;/span&gt;
+ &lt;span class=&quot;s&quot;&gt;copyright ownership. Pursuant to the Berne Convention for the Protection of&lt;/span&gt;
+ &lt;span class=&quot;s&quot;&gt;Literary and Artistic Works, it is assumed that all content is copyright by&lt;/span&gt;
+ &lt;span class=&quot;s&quot;&gt;its respective authors unless otherwise stated.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Eu, geralmente, prefiro usar o comentário no formato &lt;strong&gt;Berne Convention&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;debiancontrol&quot;&gt;debian/control&lt;/h3&gt;
+
+&lt;p&gt;Escolher uma boa descrição é fundamental, deve-se levar um bom tempo nisso,
+tanto para a descrição curta, quanto para a descrição longa do pacote.&lt;/p&gt;
+
+&lt;p&gt;Consulte a &lt;a href=&quot;https://www.debian.org/doc/debian-policy/ch-binary.html#s-descriptions&quot;&gt;política para descrição de pacotes&lt;/a&gt; no manual
+de políticas do Debian para mais detalhes sobre como descrever os pacotes de
+forma adequada. A descrição curta deve, usualmente, iniciar com letra minúscula
+e deve ser uma “noum phrase” (substantivo). No caso do pacote &lt;code class=&quot;highlighter-rouge&quot;&gt;Devel::FindPerl&lt;/code&gt;
+alterei a descrição gerada pelo &lt;code class=&quot;highlighter-rouge&quot;&gt;dh-make-perl&lt;/code&gt; para o seguinte.&lt;/p&gt;
+
+&lt;h4 id=&quot;single-line-synopsis&quot;&gt;single line synopsis:&lt;/h4&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;Description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Perl module to find the path to the currently running perl&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Usei descrição curta iniciando com maiúscula por se tratar de um nome próprio
+neste caso, a linguagem de programação é Perl e não perl, perl é o
+interpretador.&lt;/p&gt;
+
+&lt;h4 id=&quot;extended-description&quot;&gt;extended description:&lt;/h4&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;s&quot;&gt;The Devel::FindPerl module tries to find the path to the currently running&lt;/span&gt;
+ &lt;span class=&quot;s&quot;&gt;perl. It implements a function to try (really really hard) to find the path to&lt;/span&gt;
+ &lt;span class=&quot;s&quot;&gt;the perl running your program and another function to test if the perl in&lt;/span&gt;
+ &lt;span class=&quot;s&quot;&gt;`$path` is the same perl as the currently running one.&lt;/span&gt;
+ &lt;span class=&quot;s&quot;&gt;.&lt;/span&gt;
+ &lt;span class=&quot;s&quot;&gt;SECURITY ALERT&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;This module by default does things that are not particularly&lt;/span&gt;
+ &lt;span class=&quot;s&quot;&gt;secure (run programs based on external input).&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;debianchangelog&quot;&gt;debian/changelog&lt;/h3&gt;
+
+&lt;p&gt;Deve ser informado no arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;debian/changelog&lt;/code&gt; uma mensagem referenciando o
+fechamendo de um bug do tipo &lt;a href=&quot;https://wiki.debian.org/ITP&quot;&gt;ITP&lt;/a&gt; e o pacote deve ser indicado como
+&lt;code class=&quot;highlighter-rouge&quot;&gt;unstable&lt;/code&gt;, isto significa que os pacotes sempre entram na distribuição
+&lt;code class=&quot;highlighter-rouge&quot;&gt;unstable&lt;/code&gt;, a partir disso segue seu fluxo até chegar na versão &lt;code class=&quot;highlighter-rouge&quot;&gt;stable&lt;/code&gt;,
+passando pela &lt;code class=&quot;highlighter-rouge&quot;&gt;testing&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;reportar-bug-do-tipo-itp-com-reportbug&quot;&gt;Reportar bug do tipo ITP com reportbug&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;reportbug&lt;/code&gt; é uma ferramenta de linha de comando para reportar bugs do sistema
+Debian. Ao empacotar um software é importante registrar que temos a intenção de
+empacotar este software para que a comunidade Debian tenha conhecimento de que
+alguém está trabalhando nisso e assim evitar re-trabalho e sobreposição, um
+pseudo-pacote chamado &lt;code class=&quot;highlighter-rouge&quot;&gt;wnpp&lt;/code&gt; (&lt;a href=&quot;https://wiki.debian.org/WNPP&quot;&gt;Work-Needing and Prospective Packages&lt;/a&gt;)
+é utilizado para concentrar os bugreports relativos a novos pacotes.&lt;/p&gt;
+
+&lt;p&gt;Os bugs reportados no pseudo-pacote &lt;code class=&quot;highlighter-rouge&quot;&gt;wnpp&lt;/code&gt; recebem tags indicando o tipo do
+“bug”, neste caso queremos reportar um bug indicando que estamos trabalhando
+(ou iremos trabalhar) num novo pacote, a tag para isso é a &lt;strong&gt;ITP&lt;/strong&gt; (Intent To
+Package), consulte a &lt;a href=&quot;https://wiki.debian.org/reportbug&quot;&gt;documentação oficial do &lt;code class=&quot;highlighter-rouge&quot;&gt;reportbug&lt;/code&gt;&lt;/a&gt; para
+saber como configurá-lo e execute o seguinte comando para registrar um bug do
+tipo ITP.&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+reportbug wnpp
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Selecione &lt;em&gt;1 ITP&lt;/em&gt;, informe o nome do pacote como &lt;em&gt;libdevel-findperl-perl&lt;/em&gt;, informe a
+descrição do pacote, use a mesma descrição curta utilizada no &lt;code class=&quot;highlighter-rouge&quot;&gt;debian/control&lt;/code&gt;.
+Após isso o &lt;em&gt;reportbug&lt;/em&gt; abrirá um editor de texto com o template da mensagem de
+bug a ser enviada, adicione as seguintes informações:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;versão do pacote = &lt;em&gt;0.015&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;nome do upstream = &lt;em&gt;Leon Timmermans &lt;a href=&quot;mailto:leont@cpan.org&quot;&gt;leont@cpan.org&lt;/a&gt;, Randy Sims &lt;a href=&quot;mailto:randys@thepierianspring.org&quot;&gt;randys@thepierianspring.org&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;url do upstream = &lt;em&gt;https://metacpan.org/release/Devel-FindPerl&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;licença = &lt;em&gt;Artistic or GPL-1+&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;linguagem = &lt;em&gt;Perl&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;inclua a descrição longa (use o mesmo do arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;debian/control&lt;/code&gt;) no corpo da mensagem&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Apague as mensagens adicionadas pelo template do reportbug, salve e feche o
+arquivo para retornar ao reportbug, ele solicitará confirmação para o envio do
+email ao sistema de bugs do Debian, responda &lt;code class=&quot;highlighter-rouge&quot;&gt;Y&lt;/code&gt;. No exemplo seguido aqui
+para o pacote &lt;code class=&quot;highlighter-rouge&quot;&gt;Devel::FindPerl&lt;/code&gt; a mensagem do reportbug ficou da seguinte
+forma.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Subject: ITP: libdevel-findperl-perl -- Perl module to find the path to the currently running perl
+Package: wnpp
+Owner: Joenio Costa &amp;lt;joenio@joenio.me&amp;gt;
+Severity: wishlist
+
+* Package name    : libdevel-findperl-perl
+  Version         : 0.015
+  Upstream Author : Leon Timmermans &amp;lt;leont@cpan.org&amp;gt;
+                    Randy Sims &amp;lt;randys@thepierianspring.org&amp;gt;
+* URL             : https://metacpan.org/release/Devel-FindPerl
+* License         : Artistic or GPL-1+
+  Programming Lang: Perl
+  Description     : Perl module to find the path to the currently running perl
+
+The Devel::FindPerl module tries to find the path to the currently running
+perl. It implements a function to try (really really hard) to find the path to
+the perl running your program and another function to test if the perl in
+`$path` is the same perl as the currently running one.
+
+SECURITY ALERT: This module by default does things that are not particularly
+secure (run programs based on external input).
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Verifique a mensagem nos servidores do Debian, você deve receber uma
+cópia do email, esta mensagem contém o número do bug, adicione o número do bug
+no arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;debian/changelog&lt;/code&gt; com a mensagem “(Closes #&amp;lt;numero do bug&amp;gt;)”, veja
+como ficou o changelog do &lt;code class=&quot;highlighter-rouge&quot;&gt;libdevel-findperl-perl&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;libdevel-findperl-perl (0.015-1) unstable; urgency=low
+
+  * Initial release. (Closes #928632)
+
+ -- Joenio Costa &amp;lt;joenio@joenio.me&amp;gt;  Tue, 7 May 2019 12:21:30 -0300
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A mensagem automática com o número do bug ITP criado para o pacote &lt;code class=&quot;highlighter-rouge&quot;&gt;libdevel-findperl-perl&lt;/code&gt; recebida dos servidores do Debian foi a seguinte.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Subject: Bug#928632: Acknowledgement (ITP: libdevel-findperl-perl -- Perl module to find the path to the currently running perl)
+
+Thank you for filing a new Bug report with Debian.
+
+You can follow progress on this Bug here: 928632: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=928632.
+
+This is an automatically generated reply to let you know your message
+has been received.
+
+Your message is being forwarded to the package maintainers and other
+interested parties for their attention; they will reply in due course.
+
+As you requested using X-Debbugs-CC, your message was also forwarded to
+  debian-devel@lists.debian.org
+(after having been given a Bug report number, if it did not have one).
+
+Your message has been sent to the package maintainer(s):
+ wnpp@debian.org
+
+If you wish to submit further information on this problem, please
+send it to 928632@bugs.debian.org.
+
+Please do not send mail to owner@bugs.debian.org unless you wish
+to report a problem with the Bug-tracking system.
+
+-- 
+928632: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=928632
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;atenção-sobre-dependendências-declaradas-no-debiancontrol&quot;&gt;Atenção sobre dependendências declaradas no &lt;code class=&quot;highlighter-rouge&quot;&gt;debian/control&lt;/code&gt;&lt;/h4&gt;
+
+&lt;p&gt;Não se deve incluir dependencias para os pacotes &lt;code class=&quot;highlighter-rouge&quot;&gt;perl-modules&lt;/code&gt; ou &lt;code class=&quot;highlighter-rouge&quot;&gt;perl-base&lt;/code&gt;,
+apenas para &lt;code class=&quot;highlighter-rouge&quot;&gt;perl&lt;/code&gt;, lembrar que &lt;code class=&quot;highlighter-rouge&quot;&gt;perl&lt;/code&gt; é fornecido por &lt;code class=&quot;highlighter-rouge&quot;&gt;${perl:Depends}&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Verifique a versão das dependências, nem sempre as sugestões dos
+desenvolvedores no &lt;code class=&quot;highlighter-rouge&quot;&gt;Makefile.PL&lt;/code&gt; está correta, ou pode ocorrer do Debian não
+possuir versão mais antiga que as versões no &lt;code class=&quot;highlighter-rouge&quot;&gt;Makefile.PL&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Neste ponto já temos o pacote minimamente pronto, vamos testar e usar o
+&lt;code class=&quot;highlighter-rouge&quot;&gt;lintian&lt;/code&gt; para debugar possíveis problemas.&lt;/p&gt;
+
+&lt;h2 id=&quot;gerar-o-pacote-e-verificar-a-conformidade-com-lintian&quot;&gt;Gerar o pacote e verificar a conformidade com lintian&lt;/h2&gt;
+
+&lt;p&gt;Commite as mudanças realizadas nos arquivos em &lt;code class=&quot;highlighter-rouge&quot;&gt;debian/&lt;/code&gt; e use o
+&lt;code class=&quot;highlighter-rouge&quot;&gt;git-buildpackage&lt;/code&gt; para gerar o pacote.&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+gbp buildpackage -us -uc
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;As flags &lt;code class=&quot;highlighter-rouge&quot;&gt;-us&lt;/code&gt; e &lt;code class=&quot;highlighter-rouge&quot;&gt;-uc&lt;/code&gt; informam ao processo de build para não assinar o
+pacote ao final do processo, usamos estas flags apenas enquanto estamos
+testando, ao final quando for o momento de submeter o pacote ao Debian iremos
+gerar o pacote e assinar ele com o GnuPG.&lt;/p&gt;
+
+&lt;p&gt;O &lt;code class=&quot;highlighter-rouge&quot;&gt;lintian&lt;/code&gt; encontrou alguns problemas no empacotamento do módulo &lt;code class=&quot;highlighter-rouge&quot;&gt;Devel::FindPerl&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Now running lintian libdevel-findperl-perl_0.015-1_amd64.changes ...
+W: libdevel-findperl-perl: new-package-should-close-itp-bug
+E: libdevel-findperl-perl: possible-missing-colon-in-closes Closes #928632
+W: libdevel-findperl-perl: spelling-error-in-description really really (duplicate word) really
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Dois dos três problemas relatados pelo &lt;code class=&quot;highlighter-rouge&quot;&gt;lintian&lt;/code&gt; indica que faltou adicionar
+dois pontos (&lt;code class=&quot;highlighter-rouge&quot;&gt;:&lt;/code&gt;) após a palavra &lt;em&gt;Closes&lt;/em&gt;, o diff da mudança necessária para
+resolver esse problema é o seguinte.&lt;/p&gt;
+
+&lt;div class=&quot;language-diff highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gh&quot;&gt;diff --git a/debian/changelog b/debian/changelog
+index 914b680..8e8e6f6 100644
+&lt;/span&gt;&lt;span class=&quot;gd&quot;&gt;--- a/debian/changelog
+&lt;/span&gt;&lt;span class=&quot;gi&quot;&gt;+++ b/debian/changelog
+&lt;/span&gt;&lt;span class=&quot;gu&quot;&gt;@@ -1,5 +1,5 @@
+&lt;/span&gt; libdevel-findperl-perl (0.015-1) unstable; urgency=low
+ 
+&lt;span class=&quot;gd&quot;&gt;-  * Initial release. (Closes #928632)
+&lt;/span&gt;&lt;span class=&quot;gi&quot;&gt;+  * Initial release. (Closes: #928632)
+&lt;/span&gt; 
+  -- Joenio Costa &amp;lt;joenio@joenio.me&amp;gt;  Tue, 7 May 2019 12:21:30 -0300
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;O terceiro warning do &lt;code class=&quot;highlighter-rouge&quot;&gt;lintian&lt;/code&gt; &lt;em&gt;spelling-error-in-description&lt;/em&gt; é um falso
+positivo pois a palavra &lt;em&gt;really&lt;/em&gt; duplicada está assim de propósito, a descrição
+do upstream usa essa forma para enfatizar a mensagem, usei a mesma descrição
+do upstream, neste caso podemos criar um arquivo no pacote para fazer o
+&lt;code class=&quot;highlighter-rouge&quot;&gt;lintian&lt;/code&gt; não mais reclamar desse falso warning, para isso usamos o &lt;code class=&quot;highlighter-rouge&quot;&gt;lintian&lt;/code&gt;
+&lt;a href=&quot;https://lintian.debian.org/manual/section-2.4.html&quot;&gt;&lt;em&gt;Override&lt;/em&gt;&lt;/a&gt; criando o arquivo
+&lt;code class=&quot;highlighter-rouge&quot;&gt;debian/libdevel-findperl-perl.lintian-overrides&lt;/code&gt; com o seguinte conteúdo.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# The package long description duplicate the word &quot;really&quot; on purpose&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;libdevel-findperl-perl binary&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;spelling-error-in-description&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Após corrigir os &lt;em&gt;warnings&lt;/em&gt; do &lt;code class=&quot;highlighter-rouge&quot;&gt;lintian&lt;/code&gt; vamos re-gerar o pacote e verificar
+novamente usando a flag &lt;code class=&quot;highlighter-rouge&quot;&gt;-I&lt;/code&gt; para obter mensagens mais descritivas do lintian.
+Commite as mudanças realizadas no código do pacote (arquivo em &lt;code class=&quot;highlighter-rouge&quot;&gt;debian/&lt;/code&gt;),
+execute novamente &lt;code class=&quot;highlighter-rouge&quot;&gt;gbp buildpackage -us -uc&lt;/code&gt; e rode o &lt;code class=&quot;highlighter-rouge&quot;&gt;lintian&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+lintian -I
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Uma vez que temos uma versão inicial do pacote pronta é interessante publicar
+em algum repositório para testar a instalação com o &lt;code class=&quot;highlighter-rouge&quot;&gt;APT&lt;/code&gt;, claro que é possível
+instalar o pacote localmente usando o &lt;code class=&quot;highlighter-rouge&quot;&gt;dpkg&lt;/code&gt; diretamente.&lt;/p&gt;
+
+&lt;h2 id=&quot;publicar-o-pacote-em-repositório-não-oficial&quot;&gt;Publicar o pacote em repositório (não-oficial)&lt;/h2&gt;
+
+&lt;p&gt;Veja no post &lt;a href=&quot;/aprenda-a-criar-repositorios-de-pacotes-debian&quot;&gt;Aprenda a criar repositórios de pacotes
+Debian&lt;/a&gt; como criar seu próprio
+repositório de pacotes Debian usando &lt;code class=&quot;highlighter-rouge&quot;&gt;dput&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;mini-dinstall&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;nginx&lt;/code&gt;. É
+necessário gerar o pacote novamente sem o uso das flags &lt;code class=&quot;highlighter-rouge&quot;&gt;-us&lt;/code&gt; e &lt;code class=&quot;highlighter-rouge&quot;&gt;-uc&lt;/code&gt; para
+assinar o pacote com &lt;a href=&quot;https://www.gnupg.org&quot;&gt;GnuPG&lt;/a&gt;, o upload para o repositório via &lt;code class=&quot;highlighter-rouge&quot;&gt;dput&lt;/code&gt; requer
+que o pacote esteja assinado.&lt;/p&gt;
+
+&lt;p&gt;Irei publicar no repositório &lt;a href=&quot;http://debian.joenio.me&quot;&gt;http://debian.joenio.me&lt;/a&gt;
+usando o &lt;code class=&quot;highlighter-rouge&quot;&gt;dput&lt;/code&gt; para testar a publicação do pacote e na sequência testar a
+instalação via APT. O &lt;code class=&quot;highlighter-rouge&quot;&gt;dput&lt;/code&gt; aceita como parâmetro o arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.changes&lt;/code&gt; do
+pacote, para o pacote &lt;code class=&quot;highlighter-rouge&quot;&gt;libdevel-findperl-perl&lt;/code&gt; vamos executar o seguinte.&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+dput debian.joenio.me ../libdevel-findperl-perl_0.015-1_amd64.changes
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Altere o endereço do repositório &lt;code class=&quot;highlighter-rouge&quot;&gt;debian.joenio.me&lt;/code&gt; pelo seu próprio
+repositório ou por qualquer outro repositório onde você tem permissão de
+escrita. Teste a instalação do pacote e garanta que ele instala corretamente,
+caso encontre problemas resolva e só então submeta o pacote ao Debian. É uma
+boa prática testar também a construção do pacote num ambiente &lt;code class=&quot;highlighter-rouge&quot;&gt;chroot&lt;/code&gt; limpo.&lt;/p&gt;
+
+&lt;h2 id=&quot;construir-o-pacote-num-ambiente-chroot-isolado&quot;&gt;Construir o pacote num ambiente chroot isolado&lt;/h2&gt;
+
+&lt;p&gt;Existem diversas ferramentas para criar um ambiente Debian limpo voltado para
+construção de pacotes, geralmente usando &lt;code class=&quot;highlighter-rouge&quot;&gt;chroot&lt;/code&gt;, entre os mais comuns estão o
+&lt;code class=&quot;highlighter-rouge&quot;&gt;sbuild&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;pbuilder&lt;/code&gt; e &lt;code class=&quot;highlighter-rouge&quot;&gt;cowbuilder&lt;/code&gt;. Aqui vou mostrar o uso do &lt;code class=&quot;highlighter-rouge&quot;&gt;pbuilder&lt;/code&gt; por
+ser o que costumo utilizar no meu fluxo de empacotamento, execute os comandos
+abaixo a partir do diretório do pacote.&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+sudo pbuilder create
+sudo pbuilder update
+pdebuild
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;O &lt;code class=&quot;highlighter-rouge&quot;&gt;git-buildpackage&lt;/code&gt; oferece um wrapper para o &lt;code class=&quot;highlighter-rouge&quot;&gt;pdebuild&lt;/code&gt;, para usar ele e
+evitar alertas a respeito dos arquivos binários existentes no diretório &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt;
+basta executar o &lt;code class=&quot;highlighter-rouge&quot;&gt;pdebuild&lt;/code&gt; da seguinte forma:&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+BUILDER=pbuilder git-pbuilder
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Passe a opção &lt;code class=&quot;highlighter-rouge&quot;&gt;--force-sign&lt;/code&gt; para assinar os arquivos do pacote, se desejar
+informar um mirror alternativo passe o parâmetro &lt;code class=&quot;highlighter-rouge&quot;&gt;--othermirror &quot;deb
+http://local/mirror stable main&quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;fazer-upload-do-pacote-no-repositório-do-grupo-debian-perl&quot;&gt;Fazer upload do pacote no repositório do grupo Debian Perl&lt;/h2&gt;
+
+&lt;p&gt;É necessário solicitar acesso ao &lt;a href=&quot;https://salsa.debian.org/perl-team&quot;&gt;Salsa do time Perl do Debian&lt;/a&gt;
+enviando um email com uma curta apresentação pessoal para o seguinte email &lt;a href=&quot;mailto:debian-perl@lists.debian.org&quot;&gt;debian-perl@lists.debian.org&lt;/a&gt;.
+Após ter acesso ao repositório do grupo Perl é hora de fazer upload do pacote
+no repositório do grupo, mas antes faça uma revisão final no pacote:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Verifique se o status do pacote em &lt;code class=&quot;highlighter-rouge&quot;&gt;debian/changelog&lt;/code&gt; foi alterado de UNRELEASED para unstable&lt;/li&gt;
+  &lt;li&gt;Garanta que há uma mensagem &lt;code class=&quot;highlighter-rouge&quot;&gt;(Closes: #NNNNNN)&lt;/code&gt; no &lt;code class=&quot;highlighter-rouge&quot;&gt;debian/changelog&lt;/code&gt; indicando o número do bug ITP&lt;/li&gt;
+  &lt;li&gt;Verifique a versão correta de “Standards-Version:”, aqui a versão utilizada foi 4.3.0&lt;/li&gt;
+  &lt;li&gt;Use o formato correto no arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;debian/copyright&lt;/code&gt;, atualmente usar &lt;a href=&quot;https://dep-team.pages.debian.net/deps/dep5/&quot;&gt;DEP-5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Verificar o COPYRIGHT de cada arquivo (usar grep ou ack) para buscar a quem pertence o copyright de cada arquivo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Feito as verificações finais, use o comando abaixo para criar e configurar um
+novo projeto no Salsa, e subir o repositório local do nosso novo pacote &lt;code class=&quot;highlighter-rouge&quot;&gt;libdevel-findperl-perl&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre class=&quot;terminal&quot;&gt;
+&lt;code&gt;
+dpt salsa pushrepo
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;div class=&quot;alert alert-warning&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Atenção!&lt;/strong&gt;
+&lt;em&gt;
+Lembre de registrar um token em
+&lt;a href=&quot;https://salsa.debian.org/profile/personal_access_tokens&quot;&gt;https://salsa.debian.org/profile/personal_access_tokens&lt;/a&gt;
+e defina este token na variável de ambiente &lt;code class=&quot;highlighter-rouge&quot;&gt;DPT_SALSA_PRIVATE_TOKEN&lt;/code&gt; para que
+o &lt;code class=&quot;highlighter-rouge&quot;&gt;dpt&lt;/code&gt; tenha acesso de escrita no servidor Salsa.
+&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Para saber mais detalhes de como fazer upload do seu pacote veja a documentação
+&lt;a href=&quot;http://perl-team.pages.debian.net/git.html#pushing_to_salsa.debian.org&quot;&gt;pushing to salsa.debian.org&lt;/a&gt;, além do token é necessário
+também fazer upload de sua chave ssh no Salsa, ele é uma instância do Gitlab,
+então basta acessar sua conta ir em preferências e configurar uma chave ssh por
+lá.&lt;/p&gt;
+
+&lt;p&gt;Algum tempo após o upload o pacote entra no &lt;a href=&quot;http://pet.debian.net/pkg-perl/pet.cgi&quot;&gt;PET&lt;/a&gt; (Package Entropy Tracker),
+mas apenas caso nenhum revisor solicite alterações mudando o status em
+&lt;code class=&quot;highlighter-rouge&quot;&gt;debian/changelog&lt;/code&gt; para &lt;code class=&quot;highlighter-rouge&quot;&gt;UNRELEASED&lt;/code&gt;. Além disso, alguns pacotes marcados na
+whitelist são executados contra o &lt;a href=&quot;https://perl-team.pages.debian.net/autopkgtest.html&quot;&gt;autopkgtest&lt;/a&gt; no servidor CI do Debian e
+podem ser consultados em &lt;a href=&quot;http://ci.debian.net&quot;&gt;ci.debian.net&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;O módulo &lt;code class=&quot;highlighter-rouge&quot;&gt;Devel::FindPerl&lt;/code&gt; empacotado para &lt;code class=&quot;highlighter-rouge&quot;&gt;libdevel-findperl-perl&lt;/code&gt; durante a escrita
+deste post foi submetido ao repositório do Debian Perl Group e pode ser visualizado em:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://salsa.debian.org/perl-team/modules/packages/libdevel-findperl-perl&quot;&gt;https://salsa.debian.org/perl-team/modules/packages/libdevel-findperl-perl&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Wed, 08 May 2019 00:00:00 -0300</pubDate>
+        <link>http://joenio.me/empacotando-modulos-perl-no-debian/index.html</link>
+        <guid isPermaLink="true">http://joenio.me/empacotando-modulos-perl-no-debian/index.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Edição de imagem e vídeo com Software Livre</title>
@@ -1769,169 +2273,6 @@ para o setup descrito aqui neste post.&lt;/p&gt;
         <pubDate>Mon, 29 Jun 2015 00:00:00 -0300</pubDate>
         <link>http://joenio.me/aprenda-a-criar-repositorios-de-pacotes-debian/index.html</link>
         <guid isPermaLink="true">http://joenio.me/aprenda-a-criar-repositorios-de-pacotes-debian/index.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Embarque na viagem das cooperativas do ano</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/files/post-viagem-premio-cooperativas.jpg&quot; alt=&quot;Desenho intercâmbio cooperativista&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Em Novembro de 2014 a Colivre, cooperativa de tecnologias livres, empresa na
-qual sou sócio &lt;a href=&quot;http://softwarelivre.org/colivre/blog/colivre-e-vencedora-do-9o-premio-cooperativa-do-ano-na-categoria-inovacao-e-tecnologia&quot;&gt;ganhou o prêmio de cooperativa do
-ano&lt;/a&gt;
-2014 na categoria de &lt;strong&gt;Inovação e Tecnologia&lt;/strong&gt;, este prêmio nos deu o direito a uma
-&lt;a href=&quot;http://softwarelivre.org/colivre/blog/colivre-participa-de-viagem-dos-vencedores-do-9o-premio-cooperativa-do-ano&quot;&gt;viagem de integração&lt;/a&gt;
-entre as cooperativas vencedoras, nesta
-viagem a Colivre foi representada por mim e &lt;a href=&quot;http://softwarelivre.org/dani&quot;&gt;Daniela
-Feitosa&lt;/a&gt;, neste post faço um breve relato
-desta viagem.&lt;/p&gt;
-
-&lt;p&gt;No dia 24 de Março chegamos a Brasília, lá visitamos a
-&lt;a href=&quot;http://ocb.org.br&quot;&gt;OCB&lt;/a&gt;, fomos recepcionados por Fernanda Belisário e Gabriela
-Prado, elas nos deram boas-vindas e convidaram para assistir a uma
-palestra de &lt;a href=&quot;http://www.martha.com.br&quot;&gt;Martha Gabriel&lt;/a&gt; sobre &lt;a href=&quot;http://twitter.com/joenio/status/580462562610950144&quot;&gt;estratégia de
-marketing&lt;/a&gt;, Marta falou da importância
-de cuidar da sua marca, pegadas digitais, sombra e diversos outros conceitos de
-marketing.&lt;/p&gt;
-
-&lt;div class=&quot;full-width&quot;&gt;
-  &lt;p&gt;&lt;img src=&quot;http://pbs.twimg.com/media/CA43lYZWoAIfRdf.jpg:large&quot; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;No mesmo dia, à noite, houve o &lt;a href=&quot;http://www.ocergs.coop.br/comunicacao/noticias/2101-movimento-cooperativista-lanca-agenda-institucional&quot;&gt;lançamento da Agenda Institucional do
-Cooperativismo&lt;/a&gt;
-2015 com a presença de representantes da Ocergs-Sescoop/RS, sistema OCB,
-senadores, deputados, presidentes e superintendentes de unidades estaduais.  A
-agenda apresenta as principais demandas do sistema cooperativo Brasileiro aos
-poderes Legislativo, Executivo e Judiciário para o ano de 2015.&lt;/p&gt;
-
-&lt;!-- https://twitter.com/joenio/status/580517899670036481 --&gt;
-
-&lt;div class=&quot;full-width&quot;&gt;
-  &lt;p&gt;&lt;img src=&quot;http://pbs.twimg.com/media/CA5p5ouWAAAk6cw.jpg:large&quot; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;No dia 25, já em Porto Alegre, visitamos a &lt;a href=&quot;http://escoop.edu.br&quot;&gt;Escoop&lt;/a&gt; - Faculdade de Tecnologia
-do Cooperativismo, lá ouvimos uma bela apresentação do senhor presidente do
-Sistema Ocergs-Sescoop/RS, Vergilio Perius, explicou sobre o sistema
-cooperativista, explanou sobre o surgimento das cooperativas no Brasil e nos
-ensinou bastante sobre os &lt;a href=&quot;http://pt.wikipedia.org/wiki/Princ%C3%ADpios_cooperativos&quot;&gt;7 princípios do
-cooperativismo&lt;/a&gt;,
-dando destaque especial a importância da intercooperação.&lt;/p&gt;
-
-&lt;p&gt;Em seguida o coordenador Derli Schmidt detalhou o funcionamento e a missão da
-escola, mostrando os cursos disponíveis e a metodologia de ensino altamente
-preocupada com a qualidade do ensino, com um viés acadêmico,
-preocupada em produzir conhecimento inédito e de qualidade sobre cooperativismo
-no Brasil. Nossa visita foi &lt;a href=&quot;http://www.ocergs.coop.br/comunicacao/noticias/2100-sistema-recebe-comitiva-de-vencedoras-do-premio-cooperativo-do-ano&quot;&gt;noticiada no site da Ocergs/RS&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;full-width&quot;&gt;
-  &lt;p&gt;&lt;img src=&quot;/files/visita-escoop-rs.jpg&quot; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;No dia seguinte, 26 de Março, visitamos a &lt;a href=&quot;http://www.sicredipioneira.com.br&quot;&gt;Sicredi
-Pioneira&lt;/a&gt;, fomos recebidos pelo senhor Mário
-José Konzen, vice-presidente da cooperativa, ele nos falou sobre o início do sistema
-Sicredi e a força do movimento cooperativista na cidade de Nova
-Petrópolis/RS, a &lt;em&gt;“Capital Nacional do Cooperativismo”&lt;/em&gt;.  Citou detalhes do
-&lt;a href=&quot;http://www.auniaofazavida.com.br&quot;&gt;programa “A união faz a vida”&lt;/a&gt;, uma
-iniciativa do Sicredi com o objetivo de promover práticas de educação focadas nos
-princípios da cooperação e cidadania.&lt;/p&gt;
-
-&lt;div class=&quot;full-width&quot;&gt;
-  &lt;p&gt;&lt;img src=&quot;/files/mario-konzen-sicredi-rs.jpg&quot; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Em seguida, Mário Konza, nos convidou a conhecer a
-&lt;a href=&quot;http://cooebompa.blogspot.com.br&quot;&gt;Cooebompa&lt;/a&gt;, uma cooperativa escolar formada
-por alunos da &lt;a href=&quot;http://www.escolabompastor.com.br&quot;&gt;Escola Bom Pastor&lt;/a&gt;, uma
-iniciativa interessantíssima que deixou todos os representantes das
-cooperativas campeâs com os olhos brilhando de emoção. Tivemos a oportunidade
-de assistir a Assembléia Geral Ordinária e ver um show de organização e
-determinação! O professor e coordernador do projeto, Everaldo Marini, faz um
-belo trabalho e merece todo o apoio possível para continuar com o projeto.&lt;/p&gt;
-
-&lt;div class=&quot;full-width&quot;&gt;
-  &lt;p&gt;&lt;img src=&quot;/files/visita-cooebompa.jpg&quot; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Da lá seguimos ao Memorial &lt;a href=&quot;https://pt.wikipedia.org/wiki/Theodor_Amstad&quot;&gt;Padre
-Amstad&lt;/a&gt;, o senhor Mário nos falou
-da vida desde padre, criador do sistema de crédito cooperativo no Brasil.&lt;/p&gt;
-
-&lt;div class=&quot;full-width&quot;&gt;
-  &lt;p&gt;&lt;img src=&quot;/files/memorial-padre-amstad.jpg&quot; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Na sequência visitamos a &lt;a href=&quot;http://www.pia.com.br&quot;&gt;Cooperativa Piá&lt;/a&gt;, uma
-cooperativa agropecuária de leite e frutas, o presidente, Gilberto Kny, relatou
-a história da cooperativa e destacou a preocupação com os seus associados, em
-sua maioria pequenos produtores. A nossa comitiva experimentou alguns dos
-produtos da Piá, como iogurte e leite achocolatado, todos acharam uma delícia,
-infelizmente não pude experimentar já que não consumo leite ou derivados.  A
-Piá bem que poderia produzir algo à base de soja ou alguma alternativa ao
-leite.&lt;/p&gt;
-
-&lt;div class=&quot;full-width&quot;&gt;
-  &lt;p&gt;&lt;img src=&quot;/files/visita-cooperativa-pia.jpg&quot; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Saindo da Cooperativa Piá fomos conhecer um dos produtores associados,
-conhecemos a fazenda “Sítio do Leite”, eles produzem leite e dizem que fazer
-parte da cooperativa facilita a vida pois não precisam se preocupar com a venda
-já que a Piá garante a compra de toda a produção.&lt;/p&gt;
-
-&lt;div class=&quot;full-width&quot;&gt;
-  &lt;p&gt;&lt;img src=&quot;/files/fazenda-leite-pia.jpg&quot; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Dia seguinte, 27 de Março, último dia de viagem, visitamos o CAS, Centro
-Admistrativo Sicredi, vimos o funcionamento da cooperativa, seus princípios e
-valores, conhecemos a Biblioteca do sistema e o Datacenter. O Datacenter
-ocupa um andar inteiro do prédio e tem uma infraestrutura impressionante,
-mantida inteiramente pela equipe do Sicredi.&lt;/p&gt;
-
-&lt;div class=&quot;full-width&quot;&gt;
-  &lt;p&gt;&lt;img src=&quot;/files/joenio-visita-sicredi.jpg&quot; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Ainda no Sicredi, seguimos para um almoço em grupo e partimos para o aeroporto
-de volta para casa chegando ao fim desta viagem ao mundo cooperativista na
-presença de ótimas pessoas, dedicadas a criar um mundo melhor, mais humano,
-mais justo, mais cooperativo.&lt;/p&gt;
-
-&lt;p&gt;Deixo um agradecimento especial ao sistema
-&lt;a href=&quot;http://www.brasilcooperativo.coop.br&quot;&gt;OCB&lt;/a&gt; pela ótima organização do evento e
-pelo convite, Belmira Oliveira, Fernanda Belisário, Gabriela Prado, Igor
-Vianna, Patricia Resende e Sheila Malta Santos.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Muito obrigado!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Agradeço também a todos os membros da nossa comitiva, representantes das
-cooperativas campeâs, foram momentos de muito aprendizado:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Leonel Fernandes e Celio Humberto da &lt;a href=&quot;http://www.coopatos.com.br&quot;&gt;Coopatos&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Amauri Weber e Michael Bueno da &lt;a href=&quot;http://www.sicredivaledopiquiriabcd.com.br&quot;&gt;Sicredi Vale do Piquiri&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Shirley Rodrigues e Ana Paula Ramos da &lt;a href=&quot;http://www.querubimsaude.com.br&quot;&gt;Querubim Saúde&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Édio Signor e Daniel Cremonese da &lt;a href=&quot;http://www.coopercarga.com.br&quot;&gt;Coopercarga&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Irinaldo Barreto e Márcio Antônio da &lt;a href=&quot;http://www.coopertransc.com.br&quot;&gt;Coopertransc&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Um agradecimento especial a Sheila Malta Santos (OCB) pela imagem utilizada no
-título deste post, este desenhado foi criado por ela durante o vôo de ida ao
-evento.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Valeu Sheila, ficou muito bom!&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Sun, 29 Mar 2015 00:00:00 -0300</pubDate>
-        <link>http://joenio.me/embarque-na-viagem-das-cooperativas-do-ano/index.html</link>
-        <guid isPermaLink="true">http://joenio.me/embarque-na-viagem-das-cooperativas-do-ano/index.html</guid>
         
         
       </item>
