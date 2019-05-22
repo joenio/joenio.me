@@ -26,7 +26,7 @@ aguardar 1 semana pra renovar limite de upload semanal
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PL0m643bOkK1IZr9RFLsDMAfPnR0T_mWXo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## helloworld.tidal visual-music album PeerTube
+## helloworld.tidal visual-music album on PeerTube
 
 <!-- https://peertube.social/my-account/video-playlists/d1c132f2-d41f-4259-90d1-2030015768e1 -->
 <iframe width="560" height="315" sandbox="allow-same-origin allow-scripts" src="https://peertube.social/videos/embed/77528af5-54fe-4004-b4fb-c9fe1594cbbe" frameborder="0" allowfullscreen></iframe>
