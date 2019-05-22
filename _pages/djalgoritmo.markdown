@@ -14,6 +14,6 @@ laboratórios de arte + tecnologia.
 * [Instagram](https://instagram.com/djalgoritmo)
 * [SoundCloud](http://soundcloud.com/joenio)
 * [Bandcamp](https://djalgoritmo.bandcamp.com)
-* [Twitter](https://twitter/joenio)
+* [Twitter](https://twitter.com/joenio)
 * [Atari 2600 Vídeo Remix](/atari-2600-video-remix)
 * [helloworld.tidal album](/helloworld.tidal)
