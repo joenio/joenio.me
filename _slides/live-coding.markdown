@@ -86,12 +86,37 @@ emission of a succession of repetitive conditionals".
 
 <section>
 
-### Ferramentas
+### Ferramentas e linguagens
 
 * SuperCollider
-* SonicPI
+* Sonic PI
 * TidalCycles
+* FoxDot
+* Hydra
+* ORCA
+* ChucK
+* Pure Data
 
+</section>
+
+
+<section>
+<img src="/files/supercollider.svg" width="30%" style="vertical-align: middle" /> <span style="font-size:2em">SuperCollider</span>
+
+[supercollider.github.io](https://supercollider.github.io)
+</section>
+
+<section>
+SuperCollider is an audio server, programming language, and IDE for sound synthesis and algorithmic composition.
+
+[supercollider.github.io](https://supercollider.github.io)
+</section>
+
+<section>
+SuperCollider: <br/>
+`scsynth + sclang + scide`
+
+<img src="/files/supercollider-structureEn.png" width="70%"/>
 </section>
 
 <section>
@@ -122,7 +147,32 @@ SuperCollider implementation of the Dirt sampler for the Tidal programming langu
 </section>
 
 <section>
+# Install
 
+`apt install supercollider`
+
+ou: [supercollider.github.io/download](https://supercollider.github.io/download)
+</section>
+
+<section>
+<img src="/files/jack-logo.png" width="80%" />
+</section>
+
+<section data-background-image="/files/Radioge.JPG">
+`scide`
+
+<img src="/files/scide-screenshot.png" />
+</section>
+
+<section>
+# Install
+
+TidalCycles
+
+[tidalcycles.org/index.php/Installation](https://tidalcycles.org/index.php/Installation)
+</section>
+
+<section>
 ### What is a Cycle?
 
 A cycle is the main “loop” of time in Tidal.
@@ -130,10 +180,12 @@ The cycle repeats forever in the background.
 
 The cycle’s duration always stays the same unless you modify it with `cps`.
 By default, there is one cycle per second.
-
 </section>
 
 <section>
+Atom + tidalcycles plugin
+
+<img src="/files/atom-tidal-screenshot.png" />
 </section>
 
 <section data-background="#c4a000" data-background-transition="slide">
