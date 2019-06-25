@@ -160,15 +160,15 @@ onde o observador é também parte do sistema
 </section>
 
 <section>
-sujeito x objeto
+#### sujeito x objeto
 
-filosofia e ciência ocidentais são duslística
+filosofia e ciência ocidentais são dualística
 
 em oposição a abordagem não-dualística do oriente
 </section>
 
 <section>
-ao incluir máquinas no sistema, elas não apenas ampliam os humanos individualmente, mas elas também ampliam a complexidade do sistema como um todo
+ao incluir máquinas no sistema, elas não apenas ampliam os humanos individualmente, mas também ampliam a complexidade do sistema como um todo
 </section>
 
 <section>
@@ -214,5 +214,20 @@ A camada cultural do sistema é a área com maior potencial de uma correção fu
 </section>
 
 <section>
-Mais do que o suficiente é muito
+# Mais do que o suficiente é muito
+</section>
+
+<section data-background="#c4a000" data-background-transition="slide">
+<section>
+{% include slides_obrigado.html %}
+</section>
+<section>
+### Histórico de apresentações
+
+<small>Onde e quando esta apresentação foi realizada</small>
+
+<ul style="font-size: 24px">
+  <li>27 de Jun 2019, UnB Darcy - Brasília, apresentação na disciplina Arte e Tecnologia 3 do curso de pós-graduação IDA</li>
+</ul>
+</section>
 </section>
