@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Electronic Experimental Music with Debian | Joenio Marques da Costa</title>
+  <meta name="author" content="Joenio Costa" />
+  <link rel="stylesheet" href="/javascript/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="/javascript/reveal.js/css/theme/serif.css" id="theme">
+  
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="/javascript/reveal.js/lib/css/zenburn.css">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '/javascript/reveal.js/css/print/pdf.css' : '/javascript/reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="/javascript/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/css/revealjs.css">
+</head>
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section data-background="/files/ardour-screenshot.png">
+  <h2 class="box-green" style="text-shadow: 0px 0px 15px green; color: white">Electronic Experimental Music with Debian</h2>
+</section>
+
+<section>
+  <!-- música eletrônica é toda música criada por equipamentos e instrumentos eletrônicos -->
+  <p>electronic music is music made by electronic equipments</p>
+
+  <!-- desenvolve-se especialmente após a música concreta com Pierre Schaeffer na França -->
+  <p>electronic music is a results of the concrete music started by Pierre Schaeffer on France</p>
+
+  <!-- a música concreta inaugura uma forma de produção com sons gravados, fragmentos, edições -->
+  <p>concrete music starts a new form of music creation by sounds recorded</p>
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>in detriment to electronic music we
+ have the acoustic music made with
+ acoustic instruments
+schaeffer did research and experiments
+ with sound recording and editing
+concrete music is a kind of electronic
+ music based on recorded sounds
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section>
+  <!-- o conceito de música eletrônica evolui associada a música pop se distanciando da música concreta -->
+  <p>the electronic music concept evolved apart from the experiments (eg. concrete music) and was captured by the pop music as we know today</p>
+
+  <!-- em algum momento cria-se o conceito de música eletroacústica para designar e reconectar .... -->
+  <p>at some point researchers, musicians and experimentalists on electronic music adopted the term electroacoust music</p>
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>today eletronic music is sinonym of
+ pop eletronic music but in the past
+ eletronic music was a kind of
+ experimental music
+electroacoustic music is a umbrella
+ concept including many movements,
+ mainly from France and German
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section>
+  <!-- então nesta palestra eu estou falando sempre da perspectiva de um músico eletroacústico, explorando especialmente o software para pesquisas e experimentações com sons -->
+  <p>here at this talk I was speaking from the perspective of an experimentalist on electroacoustic music, focusing on the software tools and the potential of Debian and free software in general</p>
+</section>
+
+<section>
+  <!-- dou início com duas definições básicas que dão praticamente o base de tudo que tenho pesquisado e experimentado nesta área -->
+  <p>before start, I want to define some important concepts</p>
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>this are fundamental concepts to
+ understand where this tools are
+ in, among so many options we have
+ nowadays
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section>
+  <!-- conceito 1: samples e conceito 2: sintetizadores, ambos criações das pesquisa do campo da eletroacústica -->
+  <h2 id="sample">Sample</h2>
+
+  <p>–</p>
+
+  <h2 id="synthesizer">Synthesizer</h2>
+
+  <p>–</p>
+
+  <audio src="/files/everything.wav" controls="">
+  <a href="/files/everything.wav">everything.wav</a>
+</audio>
+  <audio src="/files/pitfall-ouro.wav" controls="">
+  <a href="/files/pitfall-ouro.wav">pitfall-ouro.wav</a>
+</audio>
+  <audio src="/files/water-to-glass.wav" controls="">
+  <a href="/files/water-to-glass.wav">water-to-glass.wav</a>
+</audio>
+
+  <!-- samples: são gravaçoes, arquivos de áudio (colocar exemplos de dois ou três sons no slide e dar play na apresentação) -->
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>samples are used nowadays in almost
+ kind of pop music, hip hop is a
+ key exemple
+
+! play samples
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section data-background="/files/buchla_100_NYU.jpg">
+  <!-- sintetizadores: são equipamentos (ou software) capazes de gerar sons artificialmente (embutir algum synth no navegador e dar play para testar / ou usar algum synth no desktop - talvez seja melhor local no desktop) -->
+  <div class="box-gray">
+    <h3 style="color: white">synthesizers are instruments able to generate all kind of sound</h3>
+  </div>
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sinthesizer is able to generate
+ sounds like "traditional" instruments
+ like electronic guitar, bass, pianos,
+ flautes, etc
+or concrete sounds as cow sound, cat,
+ dog, cars, engines, human voices, etc
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section>
+  <!-- os sintetizadores estão intimanente relacionados ao surgimento e evolução dos osciladores -->
+  <p>synthesizers are strong related with the oscilators evolution</p>
+
+  <!-- osciladores são componentes eletrônicos capazes de gerar sinais eletrônicos periódicos, possuem diversas aplicações, como gerar sinais de rádio por exemplo -->
+  <p><img src="/files/integrierter-quarzoszillator.jpg" /><img src="/files/waveforms.svg" width="36%" /></p>
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>oscilators are electronic pieces
+ able to generate electronic signals
+ periodically and can be applied in
+ a variaty of situations, like
+ generate clock for computers, radio
+ signals, and so on
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section data-background="/files/yamaha-dx7.jpg">
+  <!-- além do oscilador, outros componentes básicos fazem parte de praticamente qualquer sintetizador: amplificador, filtro, envelope e LFO -->
+  <div class="box-gray">
+    <h4 style="color: white">Amplifier <br />– <br />Filter <br />– <br />Envelope <br />– <br />LFO</h4>
+  </div>
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>but synthesizers are composed not
+ only by oscilators, almost any
+ synth is constructed usind some
+ combination of aplifiers, filters,
+ envelopes and oscilators
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section>
+  <h2 id="first-analog-synthesizers">first analog synthesizers</h2>
+
+  <!-- os primeiros sintetizadores originalmente surgiram os sintetizadores analógicos, surgiram em paralelo: -->
+
+  <p><img src="/files/buchla-100_NYU.jpg" width="45%" /> <img src="/files/moog-synthesizer_1964_NY.jpg" width="45%" /></p>
+
+  <p>Buchla 100 (1965) and Moog Synthesizer (1964)</p>
+
+  <!--
+(1) Buchla & Associates, Berkeley, California em 1965 criou o "Buchla 100 series Modular Electronic Music System"
+    Em 1967 Morton Subotnick compôs o álbum "Silver Apples Of The Moon" inteiramente composto no Buchla 100
+
+(2) Robert Moog, Cornell, NY em 1964 vendeu seu primeiro protótipo "Moog synthesizer"
+    Em 1968 Wendy Carlos lança o álbum "Switched-On Bach" com músicas Johann Sebastian Bach tocadas por ele num Moog
+-->
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>the first synthesizers were the analog
+ ones, and the two key inventions this
+ time was Buhcla 100 and Moog Synthesizer
+ from 1965 and 1964 respenclty, research
+ and experiments before the release of
+ these two models started in paralell
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section>
+  <!-- a partir da disseminação destes sintetizadores surgiram uma infinidade de produtos, chegando aos sintetizadors em software, ou softsynth -->
+  <p>since these first analog synthesizers many others products were created, including:</p>
+
+  <h2 id="softsynth">softsynth</h2>
+
+  <!-- dada esta introdução apresento alguns sintetizadores (softsynth) existentes no debian e ferramentas relacionadas a manipulação sonora e musical, gravação, edição e outras ferramentas -->
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>softsynths are synthesizers implemented
+ in software form, they have the same
+ principles of any other synth and we
+ have so many options in Debian
+but before start to see some softsynths
+ is necessary to know a little about
+ jack
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section>
+  <!-- antes é necessário apresentar o Jack pois a maioria das ferramentas dependem dele. -->
+  <p><img src="/files/jack-logo.png" width="80%" /></p>
+
+  <p>JACK (JACK Audio Connection Kit) provides a basic infrastructure for audio applications to communicate with each other and with audio hardware</p>
+
+  <!-- eu penso no JACK como os pipes do unix mas para áudio -->
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jack is like the unix pipes applied to
+ audio sources
+jack also supports midi communication,
+ then is possible to connect software
+ os even hardware using jack
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<!--
+apresentar dois softsynths:
+amsynth
+setBfree
+-->
+
+<section data-background="/files/screenshots/amsynth.png">
+  <div class="box-green" style="color: white">
+    <h1 style="text-shadow: 0px 0px 15px red; color: white">amsynth</h1>
+
+    <p>software synthesizers with dual oscilators</p>
+
+    <p><a href="http://amsynth.github.io">http://amsynth.github.io</a></p>
+  </div>
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>amsynth is an easy-to-use software
+ synth with a classic subtractive
+ synthesizer topology
+
+! run amsynth and do some noise
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section data-background="/files/setbfree.png">
+  <div class="box-green" style="color: white">
+    <h1 style="text-shadow: 0px 0px 15px red; color: white">setBfree</h1>
+
+    <p>tonewheel organ</p>
+
+    <p><a href="http://setbfree.org">http://setbfree.org</a></p>
+  </div>
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tonewheel is a kind of electromechanical
+ organ like Hammond Organ created in
+ 1935 by Laurens Hammond
+
+! run setbfree and make noise
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section data-background="/files/screenshots/padthv1.png">
+  <div class="box-green" style="color: white">
+    <h1 style="text-shadow: 0px 0px 15px red; color: white">padthv1</h1>
+
+    <p>old-school polyphonic additive synthesizer</p>
+
+    <p><a href="https://padthv1.sourceforge.io">https://padthv1.sourceforge.io</a></p>
+  </div>
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>polyphonic synth is able to play
+ multiple notes at once, monophonic
+ synth can play one single note at time
+additive synths operate by the combination
+ of multiple wave types at different
+ frequencies, is how filter operates
+! run qjackctl and padthv1
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section data-background="/files/screenshots/drumkv1.png">
+  <div class="box-green" style="color: white">
+    <h1 style="text-shadow: 0px 0px 15px red; color: white">drumkv1</h1>
+
+    <p>old-school drum-kit sampler</p>
+
+    <p><a href="https://drumkv1.sourceforge.io">https://drumkv1.sourceforge.io</a></p>
+  </div>
+
+  <!-- apresentar o drumkv1 e falar dele como um mix entre o uso de samples + sintetizador -->
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>drumkv1 is a mixing samples and
+ synthesizer, it is possible to load
+ a set of files, apply filters,
+ effects, then controls using midi
+! run drumkv1 and qjackctl
+(dont forget configure jack audio
+output)
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section>
+  <!-- muitos softsynths livres estão disponívels no debian, alguns exemplos: -->
+  <p>there is so many softsynths packaged into Debian</p>
+
+  <ul>
+    <li>samplv1</li>
+    <li>synthv1</li>
+    <li>fluidsynth</li>
+    <li>yoshimi</li>
+    <li>zynaddsubfx</li>
+    <li>horgand</li>
+  </ul>
+
+  <p>a good source for free libre softsynth is <a href="https://wiki.linuxaudio.org">https://wiki.linuxaudio.org</a></p>
+</section>
+
+<section data-background="/files/hydrogen.png">
+  <div class="box-green">
+    <h3 style="color: white">Hydrogen</h3>
+    <!-- http://bestanimations.com/Music/Instruments/Percussion/Drums/drums-animated-gif-12.gif -->
+
+    <p><img src="/files/drums-animated-gif-12.gif" /></p>
+
+    <!-- além dos synths ferramentas interessantes são máquinas de bateria como o Hydrogen -->
+
+    <p><a href="http://hydrogen-music.org">http://hydrogen-music.org</a></p>
+  </div>
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>! run hydrogen and open some
+ sample file
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section>
+
+  <!-- é possível ainda integrar com instrumentos "tradicionais" e substituir os tradicionais pedais e pedaleiras por efeitos em software, como no caso do Guitarrix e Rakarrack -->
+  <h1 id="effects">Effects</h1>
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rakarrack is a richly featured
+ multi-effects processor emulating
+ a guitar effects pedalboard
+guitarix is a virtual guitar amplifier
+ for Linux running on jack
+both are quite similar
+</code></pre></div>    </div>
+  </aside>
+
+  <ul>
+    <li>Rakarrack: <a href="http://rakarrack.sourceforge.net">http://rakarrack.sourceforge.net</a></li>
+    <li>Guitarrix: <a href="http://guitarix.org">http://guitarix.org</a></li>
+  </ul>
+</section>
+
+<section>
+  <h1 id="lmms">LMMS</h1>
+
+  <p>LMMS is a sound generation system, synthesizer, beat/baseline editor and MIDI
+control system which can power an entire home studio</p>
+
+  <p><a href="http://lmms.io">http://lmms.io</a>
+<!-- mostrar o lmms e abrir um exemplo /usr/share/lmms/projects/Demos/Thomasso-AxeFromThe80s.mmpz --></p>
+
+  <!-- com o LMMS é possível compor músicas usando sequenciadores, sintetizadores, samples, controladores MIDI e uma infinidade de outros recursos integrados num único ambiente -->
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lmms is a kind of integrated
+ environment to work with synths,
+ sequencers, samples, midis and
+ so on...
+! run lmms and open sample file
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section>
+  <h1 id="ladspa">LADSPA</h1>
+
+  <h3 id="linux-audio-developers-simple-plugin">Linux Audio Developers Simple Plugin</h3>
+
+  <!-- ambos, softsynth, amplificaadores, processador de efeitos, quando instalados no Debian se tornam disponíveis como plugins LADSPA -->
+
+  <!-- assim é possível intercambiar efeitos, aplificadores e sintetizadores entre diversos ambientes distintos, é possível utilizar os efeitos do Guitarrix dentro do LMMS por exemplo -->
+  <p><a href="https://www.ladspa.org">https://www.ladspa.org</a></p>
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>almost tools when installed
+ are available on Debian system
+ as LADSPA plugin, that way is
+ possible to interchange among
+ tools and environments
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section>
+  <h1 id="ardour">Ardour</h1>
+
+  <p>for instance is possible to load Amsynth on Ardour using that LADSPA plugin feature</p>
+
+  <!-- ou mesmo aplicar efeitos durante uma gravação utilizando o DAW Ardour por exmeplo -->
+  <p><a href="https://www.ardour.org">https://www.ardour.org</a></p>
+
+  <!-- DAW: Digital Audio Workstation (ou, de forma abreviada, DAW) — em português: "estação de trabalho de áudio digital" — é um sequenciador que tem a finalidade de gravar, editar e tocar áudio digital. -->
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ardour is a DAW (Digital Audio
+ Workstation) and environment to
+ record, edit or play live integrating
+ many tools (as plugins)
+! run ardour and load some plugin
+ (Category -&gt; Spatial -&gt; setBfree)
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section>
+  <!-- dessa forma, com a capacidade de comunicação provida pelo jack, com o intercambio dos plugins LADSPA (e outros), é possível tratar o desktop Debian como um ambiente "integrado" para produção sonora e musical, substituindo (em alguma medida) os tradicionais e dominantes produtos proprietários, como Ableton, FL Studio, Bitwig e outros. -->
+  <p>LADSPA + Jack + <br /> lots of synths, effects and tools makes</p>
+
+  <h1 id="debian">Debian</h1>
+  <h2 id="a-very-flexible-integrated-audio-environment">a very flexible integrated audio environment</h2>
+
+  <!-- mas se você gosta de desenvolvimento, programaçao, código, algoritmos, então a melgor forma de integrar tudo isto é através de live coding -->
+</section>
+
+<!--
+mas antes de mostrar live coding irei utilizar o edição digital de áudio Audacity para transformar um sample a ser utilizado no live coding
+
+* Audacity
+* sox (linha de comando)
+-->
+
+<section data-background="/files/9sbYZGea-210x110.png" style="color:white">
+  <h1 style="color:white">Live Coding</h1>
+
+  <p>a new direction in electronic music and video: live coders expose and rewire
+the innards of software while it generates improvised music and/or visuals</p>
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>but if you like to write code
+ maybe you will have fun doing
+ live coding
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section>
+  <h2 id="live-coding-languages">Live Coding languages</h2>
+
+  <ul>
+    <li>SuperCollider</li>
+    <li>Sonic Pi (Ruby based)</li>
+    <li>TidalCycles (Haskell based)</li>
+    <li>FoxDot (Python based)</li>
+    <li>ChucK</li>
+    <li>Gibber (JavaScript based)</li>
+    <li>see <a href="https://github.com/toplap/awesome-livecoding">https://github.com/toplap/awesome-livecoding</a></li>
+  </ul>
+</section>
+
+<section data-background="black">
+  <!-- (neste ponto da palestra faço uma pequena performance com TidalCycles de 10 minutos no máximo + projectM?) -->
+
+  <!-- (usar o free software song editado pelo Audacity como sample) -->
+  <p><img src="/files/tidalcycles-id-mono.png" /></p>
+</section>
+
+<section>
+  <!-- para quem interesse em participar de eventos de live coding deve procurar a Algorave na sua cidade -->
+
+  <h2 id="httpalgoravecom"><a href="http://algorave.com">http://algorave.com</a></h2>
+
+  <aside class="notes">
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if you have interest on see live
+ codinf performances look for algorave
+ on your city at algorave.com
+</code></pre></div>    </div>
+  </aside>
+</section>
+
+<section>
+  <p>thank you!</p>
+
+  <p>questions?</p>
+
+  <p>slides available at http://joenio.me/electronic-music-with-debian</p>
+</section>
+
+<!--
+
+<section>
+caso você seja DJ e queira usar o Debian em suas performances pode ainda utilizar o Mixxx
+
+* Mixxx
+
+ou o ???? (nome do projeto Sam Hartman DPL)
+</section>
+
+<section>
+a música acústica e a música eletrônica dão origem a música eletro-acústica, ganha força no século XX
+
+música concreta (Pierre Schaeffer, França) trabalha com gravações e transformações, samples, loops em fitas magnéticas
+
+música eletrônica (Herbert Eimert, Studio for Electronic Music, Alemanha)
+
+os sons produzidos analogicamente (acustica)
+com a evolução da tecnologia tornou-se possível produzir sons artificialmente (sintetizador)
+osciladores são a base dos sintetizadores
+
+sons gravados podem ser usados como raiz, música concreta, música eletrônica (usar anotações do meu caderno)
+</section>
+
+<section>
+* Calf
+* sooperlooper
+* lingot
+* din
+* espeak
+* festival
+* csound
+* faust
+* puredata
+* vkeybd
+</section>
+
+-->
+
+    </div>
+  </div>
+  <script src="/javascript/reveal.js/lib/js/head.min.js"></script>
+  <script src="/javascript/reveal.js/js/reveal.js"></script>
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      slideNumber: 'c/t',
+      history: true,
+      center: true,
+      fragments: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      // Optional reveal.js plugins
+      dependencies: [
+        { src: '/javascript/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: '/javascript/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: '/javascript/reveal.js/plugin/zoom-js/zoom.js', async: true },
+        { src: '/javascript/reveal.js/plugin/notes/notes.js', async: true }
+      ]
+    });
+  </script>
+</body>
+</html>

@@ -15,7 +15,7 @@ theme: serif
 ---
 
 <section data-background="/files/ardour-screenshot.png">
-  <h1 class="box-green" style="text-shadow: 0px 0px 15px red">Electronic Experimental Music with Debian</h1>
+  <h2 class="box-green" style="text-shadow: 0px 0px 15px green; color: white">Electronic Experimental Music with Debian</h2>
 </section>
 
 <section>
@@ -199,6 +199,7 @@ since these first analog synthesizers many others products were created, includi
 
 <section>
 <!-- antes é necessário apresentar o Jack pois a maioria das ferramentas dependem dele. -->
+<img src="/files/jack-logo.png" width="80%" />
 
 JACK (JACK Audio Connection Kit) provides a basic infrastructure for audio applications to communicate with each other and with audio hardware
 
@@ -213,28 +214,94 @@ JACK (JACK Audio Connection Kit) provides a basic infrastructure for audio appli
   </aside>
 </section>
 
-<section>
+<!--
 apresentar dois softsynths:
-
 amsynth
-
 setBfree
-</section>
+-->
 
 <section data-background="/files/screenshots/amsynth.png">
-<div class="box-green">
-<h1 style="text-shadow: 0px 0px 15px red">amsynth</h1>
+<div class="box-green" style="color: white">
+<h1 style="text-shadow: 0px 0px 15px red; color: white">amsynth</h1>
 
-software sintetizador com oscilador duplo
+software synthesizers with dual oscilators
 
 [http://amsynth.github.io](http://amsynth.github.io)
 </div>
+
+  <aside class="notes">
+    amsynth is an easy-to-use software
+     synth with a classic subtractive
+     synthesizer topology
+
+    ! run amsynth and do some noise
+  </aside>
+</section>
+
+<section data-background="/files/setbfree.png">
+<div class="box-green" style="color: white">
+<h1 style="text-shadow: 0px 0px 15px red; color: white">setBfree</h1>
+
+tonewheel organ
+
+[http://setbfree.org](http://setbfree.org)
+</div>
+
+  <aside class="notes">
+    tonewheel is a kind of electromechanical
+     organ like Hammond Organ created in
+     1935 by Laurens Hammond
+
+    ! run setbfree and make noise
+  </aside>
+</section>
+
+<section data-background="/files/screenshots/padthv1.png">
+<div class="box-green" style="color: white">
+<h1 style="text-shadow: 0px 0px 15px red; color: white">padthv1</h1>
+
+old-school polyphonic additive synthesizer
+
+[https://padthv1.sourceforge.io](https://padthv1.sourceforge.io)
+</div>
+
+  <aside class="notes">
+    polyphonic synth is able to play
+     multiple notes at once, monophonic
+     synth can play one single note at time
+    additive synths operate by the combination
+     of multiple wave types at different
+     frequencies, is how filter operates
+    ! run qjackctl and padthv1
+  </aside>
+</section>
+
+
+<section data-background="/files/screenshots/drumkv1.png">
+<div class="box-green" style="color: white">
+<h1 style="text-shadow: 0px 0px 15px red; color: white">drumkv1</h1>
+
+old-school drum-kit sampler
+
+[https://drumkv1.sourceforge.io](https://drumkv1.sourceforge.io)
+</div>
+
+<!-- apresentar o drumkv1 e falar dele como um mix entre o uso de samples + sintetizador -->
+
+  <aside class="notes">
+    drumkv1 is a mixing samples and
+     synthesizer, it is possible to load
+     a set of files, apply filters,
+     effects, then controls using midi
+    ! run drumkv1 and qjackctl
+    (dont forget configure jack audio
+    output)
+  </aside>
 </section>
 
 <section>
-apresentar o drumkv1 e falar dele como um mix entre o uso de samples + sintetizador
-
-muitos softsynths livres estão disponívels no debian, alguns exemplos:
+<!-- muitos softsynths livres estão disponívels no debian, alguns exemplos: -->
+there is so many softsynths packaged into Debian
 
 * samplv1
 * synthv1
@@ -243,106 +310,174 @@ muitos softsynths livres estão disponívels no debian, alguns exemplos:
 * zynaddsubfx
 * horgand
 
-uma boa fonte é: https://wiki.linuxaudio.org
+a good source for free libre softsynth is [https://wiki.linuxaudio.org](https://wiki.linuxaudio.org)
 </section>
 
-<section data-background="/files/screenshots/padthv1.png">
+<section data-background="/files/hydrogen.png">
 <div class="box-green">
-<h1 style="text-shadow: 0px 0px 15px red">padthv1</h1>
+<h3 style="color: white">Hydrogen</h3>
+<!-- http://bestanimations.com/Music/Instruments/Percussion/Drums/drums-animated-gif-12.gif -->
 
-old-school polyphonic additive synthesizer
+<img src="/files/drums-animated-gif-12.gif" />
 
-[https://padthv1.sourceforge.io](https://padthv1.sourceforge.io)
+<!-- além dos synths ferramentas interessantes são máquinas de bateria como o Hydrogen -->
+
+[http://hydrogen-music.org](http://hydrogen-music.org)
 </div>
-</section>
 
-<section data-background="/files/screenshots/drumkv1.png">
-<div class="box-green">
-<h1 style="text-shadow: 0px 0px 15px red">drumkv1</h1>
-
-old-school drum-kit sampler
-
-[https://drumkv1.sourceforge.io](https://drumkv1.sourceforge.io)
-</div>
+  <aside class="notes">
+    ! run hydrogen and open some
+     sample file
+  </aside>
 </section>
 
 <section>
-além dos synths ferramentas interessantes são máquinas de bateria como o Hydrogen
 
-* Hydrogen
+<!-- é possível ainda integrar com instrumentos "tradicionais" e substituir os tradicionais pedais e pedaleiras por efeitos em software, como no caso do Guitarrix e Rakarrack -->
+# Effects
+
+  <aside class="notes">
+    rakarrack is a richly featured
+     multi-effects processor emulating
+     a guitar effects pedalboard
+    guitarix is a virtual guitar amplifier
+     for Linux running on jack
+    both are quite similar
+  </aside>
+
+* Rakarrack: [http://rakarrack.sourceforge.net](http://rakarrack.sourceforge.net)
+* Guitarrix: [http://guitarix.org](http://guitarix.org)
 </section>
 
 <section>
-os ambientes como LMMS:
+# LMMS
 
-* LMMS
+LMMS is a sound generation system, synthesizer, beat/baseline editor and MIDI
+control system which can power an entire home studio
 
-LMMS is a sound generation system, synthesizer, beat/baseline editor and MIDI control system which can power an entire home studio
+[http://lmms.io](http://lmms.io)
+<!-- mostrar o lmms e abrir um exemplo /usr/share/lmms/projects/Demos/Thomasso-AxeFromThe80s.mmpz -->
 
-mostrar o lmms e abrir um exemplo /usr/share/lmms/projects/Demos/Thomasso-AxeFromThe80s.mmpz
+<!-- com o LMMS é possível compor músicas usando sequenciadores, sintetizadores, samples, controladores MIDI e uma infinidade de outros recursos integrados num único ambiente -->
 
-com o LMMS é possível compor músicas usando sequenciadores, sintetizadores, samples, controladores MIDI e uma infinidade de outros recursos integrados num único ambiente
+  <aside class="notes">
+    lmms is a kind of integrated
+     environment to work with synths,
+     sequencers, samples, midis and
+     so on...
+    ! run lmms and open sample file
+  </aside>
 </section>
 
 <section>
-é possível ainda integrar com instrumentos "tradicionais" e substituir os tradicionais pedais e pedaleiras por efeitos em software, como no caso do Guitarrix e Rakarrack
+# LADSPA
 
-* rakarrack: is a richly featured multi-effects processor emulating a guitar effects pedalboard
-* guitarrix: guitarix is a virtual guitar amplifier for Linux running on Jack Audio Connection Kit
+### Linux Audio Developers Simple Plugin
+
+<!-- ambos, softsynth, amplificaadores, processador de efeitos, quando instalados no Debian se tornam disponíveis como plugins LADSPA -->
+
+<!-- assim é possível intercambiar efeitos, aplificadores e sintetizadores entre diversos ambientes distintos, é possível utilizar os efeitos do Guitarrix dentro do LMMS por exemplo -->
+[https://www.ladspa.org](https://www.ladspa.org)
+
+  <aside class="notes">
+    almost tools when installed
+     are available on Debian system
+     as LADSPA plugin, that way is
+     possible to interchange among
+     tools and environments
+  </aside>
 </section>
 
 <section>
-ambos, softsynth, amplificaadores, processador de efeitos, quando instalados no Debian se tornam disponíveis como plugins LADSPA
+# Ardour
 
-LADSPA é um acrônimo para Linux Audio Developers Simple Plugin
+for instance is possible to load Amsynth on Ardour using that LADSPA plugin feature
 
-assim é possível intercambiar efeitos, aplificadores e sintetizadores entre diversos ambientes distintos, é possível utilizar os efeitos do Guitarrix dentro do LMMS por exemplo
+<!-- ou mesmo aplicar efeitos durante uma gravação utilizando o DAW Ardour por exmeplo -->
+[https://www.ardour.org](https://www.ardour.org)
+
+<!-- DAW: Digital Audio Workstation (ou, de forma abreviada, DAW) — em português: "estação de trabalho de áudio digital" — é um sequenciador que tem a finalidade de gravar, editar e tocar áudio digital. -->
+
+  <aside class="notes">
+    ardour is a DAW (Digital Audio
+     Workstation) and environment to
+     record, edit or play live integrating
+     many tools (as plugins)
+    ! run ardour and load some plugin
+     (Category -> Spatial -> setBfree)
+  </aside>
 </section>
 
 <section>
-ou mesmo aplicar efeitos durante uma gravação utilizando o DAW Ardour por exmeplo
+<!-- dessa forma, com a capacidade de comunicação provida pelo jack, com o intercambio dos plugins LADSPA (e outros), é possível tratar o desktop Debian como um ambiente "integrado" para produção sonora e musical, substituindo (em alguma medida) os tradicionais e dominantes produtos proprietários, como Ableton, FL Studio, Bitwig e outros. -->
+LADSPA + Jack + <br/> lots of synths, effects and tools makes
 
-* Ardour
+# Debian
+## a very flexible integrated audio environment
 
-DAW: Digital Audio Workstation (ou, de forma abreviada, DAW) — em português: "estação de trabalho de áudio digital" — é um sequenciador que tem a finalidade de gravar, editar e tocar áudio digital.
+<!-- mas se você gosta de desenvolvimento, programaçao, código, algoritmos, então a melgor forma de integrar tudo isto é através de live coding -->
 </section>
 
-<section>
-dessa forma, com a capacidade de comunicação provida pelo jack, com o intercambio dos plugins LADSPA (e outros), é possível tratar o desktop Debian como um ambiente "integrado" para produção sonora e musical, substituindo (em alguma medida) os tradicionais e dominantes produtos proprietários, como Ableton, FL Studio, Bitwig e outros.
-
-mas se você gosta de desenvolvimento, programaçao, código, algoritmos, então a melgor forma de integrar tudo isto é através de live coding
-</section>
-
-<section>
+<!--
 mas antes de mostrar live coding irei utilizar o edição digital de áudio Audacity para transformar um sample a ser utilizado no live coding
 
 * Audacity
 * sox (linha de comando)
+-->
+
+<section data-background="/files/9sbYZGea-210x110.png" style="color:white">
+<h1 style="color:white">Live Coding</h1>
+
+a new direction in electronic music and video: live coders expose and rewire
+the innards of software while it generates improvised music and/or visuals
+
+  <aside class="notes">
+    but if you like to write code
+     maybe you will have fun doing
+     live coding
+  </aside>
 </section>
 
 <section>
-live coding:
-
-Live coding is a new direction in electronic music and video: live coders
-expose and rewire the innards of software while it generates improvised music
-and/or visuals.
+## Live Coding languages
 
 * SuperCollider
 * Sonic Pi (Ruby based)
 * TidalCycles (Haskell based)
 * FoxDot (Python based)
-* ++++ algumas dúzias +++
+* ChucK
+* Gibber (JavaScript based)
+* see [https://github.com/toplap/awesome-livecoding](https://github.com/toplap/awesome-livecoding)
+</section>
+
+<section data-background="black">
+<!-- (neste ponto da palestra faço uma pequena performance com TidalCycles de 10 minutos no máximo + projectM?) -->
+
+<!-- (usar o free software song editado pelo Audacity como sample) -->
+<img src="/files/tidalcycles-id-mono.png" />
 </section>
 
 <section>
-(neste ponto da palestra faço uma pequena performance com TidalCycles de 10 minutos no máximo + projectM?)
+<!-- para quem interesse em participar de eventos de live coding deve procurar a Algorave na sua cidade -->
 
-(usar o free software song editado pelo Audacity como sample)
+## [http://algorave.com](http://algorave.com)
+
+  <aside class="notes">
+    if you have interest on see live
+     codinf performances look for algorave
+     on your city at algorave.com
+  </aside>
 </section>
 
 <section>
-para quem interesse em participar de eventos de live coding deve procurar a Algorave na sua cidade
+thank you!
+
+questions?
+
+slides available at http://joenio.me/electronic-music-with-debian
 </section>
+
+<!--
 
 <section>
 caso você seja DJ e queira usar o Debian em suas performances pode ainda utilizar o Mixxx
@@ -351,11 +486,6 @@ caso você seja DJ e queira usar o Debian em suas performances pode ainda utiliz
 
 ou o ???? (nome do projeto Sam Hartman DPL)
 </section>
-
-<section>
-</section>
-
-<!--
 
 <section>
 a música acústica e a música eletrônica dão origem a música eletro-acústica, ganha força no século XX
