@@ -474,7 +474,7 @@ thank you!
 
 questions?
 
-slides available at http://joenio.me/electronic-music-with-debian
+slides available at:<br/>http://joenio.me/electronic-music-with-debian
 </section>
 
 <!--
@@ -515,3 +515,18 @@ sons gravados podem ser usados como raiz, música concreta, música eletrônica 
 </section>
 
 -->
+
+<section data-background="#c4a000" data-background-transition="slide">
+<section>
+{% include slides_obrigado.html %}
+</section>
+<section>
+### Histórico de apresentações
+
+<small>Onde e quando esta apresentação foi realizada</small>
+
+<ul style="font-size: 24px">
+  <li>25 de Jul 2019, UTFPR - Curitiba, DebConf19</li>
+</ul>
+</section>
+</section>
