@@ -18,3 +18,7 @@ laboratórios de arte + tecnologia.
 * [Atari 2600 Vídeo Remix](/atari-2600-video-remix)
 * [helloworld.tidal album](/helloworld.tidal)
 * [}bio{borgs - album 2019](/bioborgs)
+* [Las Plantas Sagradas Y La Rosa Negra: Composiciones Para Oferendas (Collaborative Fusion Orchestra)](/las-plantas-sagradas)
+* Membro do [BSBLOrk](http://bsblork.gitlab.io)
+* Membro fundador do [Nômade Lab](http://nomadelab.gitlab.io)
+* Colaborador do [MediaLab/UnB](http://medialab.unb.br)
