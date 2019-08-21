@@ -4,18 +4,22 @@ title: Atari 2600 Vídeo Remix
 
 `autor:djalgoritmo` | `ano:2019`
 
-A obra é composta de três vídeos-remix com aproximadamente 2 minutos cada, com
-trechos dos jogos Pitfall!, Enduro e River Raid mixados com imagens e vídeos
-que remetem a Brasília em sua época de construção e primeiros anos da cidade,
-os vídeos possuem trilha sonora produzida com samples (amostras) de sons dos
-próprios jogos composta com programação algorítmica e live coding.
+A obra é composta de um conjunto de vídeos-remix com aproximadamente 1 minuto e
+40 segundos cada vídeo, contendo trechos dos jogos como Pitfall!, Enduro e
+River Raid mixados com imagens e vídeos que remetem a cidades Brasileiras em
+seus primeiros anos de existência e construção, os vídeos possuem trilha sonora
+produzida com samples (amostras) de sons dos próprios jogos composta com
+programação algorítmica e live coding.
 
-[Colabore financiando o trabalho de djalgoritmo](#financie-o-trabalho-artístico-de-djalgoritmo).
+## Brasília
 
-## Vídeo 1: brasilia-pitfall (remix)
+Brasília em sua época de construção e primeiros anos da cidade, anos 50 e 60,
+remixada com os jogos Pitfall!, Enduro e River Raid.
+
+### Vídeo 1: brasilia-pitfall (remix)
 
 <video width="500" controls>
-  <source src="http://download.joenio.me/djalgoritmo/brasilia-pitfall.mp4" type="video/mp4">
+  <source src="http://download.joenio.me/djalgoritmo/atari-2600-video-remix/brasilia-pitfall.mp4" type="video/mp4">
   Seu navegador não suporta a tag vídeo.
 </video> 
 
@@ -27,10 +31,10 @@ As imagens utilizadas no vídeo remix são parte do acervo público nacional e
 dizem respeito a momentos da construção de Brasília entre os anos de 1956 a
 1960 [[2]][2] [[3]][3] [[4]][4] [[5]][5].
 
-## Vídeo 2: brasilia-enduro (remix)
+### Vídeo 2: brasilia-enduro (remix)
 
 <video width="500" controls>
-  <source src="http://download.joenio.me/djalgoritmo/brasilia-enduro.mp4" type="video/mp4">
+  <source src="http://download.joenio.me/djalgoritmo/atari-2600-video-remix/brasilia-enduro.mp4" type="video/mp4">
   Seu navegador não suporta a tag vídeo.
 </video> 
 
@@ -43,10 +47,10 @@ de automibilismo "1000 KM DE BRASÍLIA" realizada em 1962 na cidade de
 Brasília, considerada uma das provas mais tradicionais do automobilismo
 Brasileiro [[7]][7].
 
-## Vídeo 3: brasilia-riverraid (remix)
+### Vídeo 3: brasilia-riverraid (remix)
 
 <video width="500" controls>
-  <source src="http://download.joenio.me/djalgoritmo/brasilia-riverraid.mp4" type="video/mp4">
+  <source src="http://download.joenio.me/djalgoritmo/atari-2600-video-remix/brasilia-riverraid.mp4" type="video/mp4">
   Seu navegador não suporta a tag vídeo.
 </video> 
 
@@ -58,6 +62,54 @@ de cópias, sem contar cópias não autorizadas e cartuchos com vários jogos [[
 As fotos de Brasília utilizadas na construção deste vídeo retratam locais
 característicos da cidade numa visão aérea, entre as décadas de 50 e 60. As
 imagens são em sua maioria do Arquivo Público do DF [[9]][9].
+
+## Salvador
+
+Salvador em seus primeiros registros fotográficos incluindo pontos históricos
+da cidade como o Antigo Convento das Mercês em 1862, Elevador Lacerda em 1875,
+Corredor da Vitória em 1925 e o Porto da Barra em 1930, entre outros registros,
+os jogos remixados com Salvador são Keystone Kapers, Pac-Man e MegaMania.
+
+### Vídeo 4: salvador-keystonekapers (remix)
+
+<video width="500" controls>
+  <source src="http://download.joenio.me/djalgoritmo/atari-2600-video-remix/salvador-keystonekapers.mp4" type="video/mp4">
+  Seu navegador não suporta a tag vídeo.
+</video> 
+
+Keystone Kapers é um jogo da plataform Atari 2600 publicado pela Activision em
+1983, o jogo é baseado na série de filmes do cinema mudo Keystone Cops de Mack
+Sennett, no Brasil, foi um dos jogos mais famosos do Atari e era conhecido como
+o jogo do "Polícia e Ladrão" [[10]][10].
+
+Fotos do projeto Guia Geográfico - Salvador Antiga [[13]][13].
+
+### Vídeo 5: salvador-megamania (remix)
+
+<video width="500" controls>
+  <source src="http://download.joenio.me/djalgoritmo/atari-2600-video-remix/salvador-megamania.mp4" type="video/mp4">
+  Seu navegador não suporta a tag vídeo.
+</video> 
+
+MegaMania é um dos mais conhecidos jogos de tiro para o Atari 2600, lançado
+pela Activision em 1982 [[11]][11].
+
+Fotos do projeto Guia Geográfico - Salvador Antiga [[13]][13].
+
+### Vídeo 6: salvador-pacman (remix)
+
+<video width="500" controls>
+  <source src="http://download.joenio.me/djalgoritmo/atari-2600-video-remix/salvador-pacman.mp4" type="video/mp4">
+  Seu navegador não suporta a tag vídeo.
+</video> 
+
+Pac-Man é um jogo eletrônico desenvolvido e publicado pela Atari em Março de
+1982, para a plataforma Atari 2600, baseado no famoso fliperama homônimo da
+Namco, o jogo vendeu 7 milhões de cópias, se tornando o jogo mais vendido do
+Atari 2600, assim como o jogo de console mais vendido da história até a época
+[[12]][12].
+
+Os vídeos são registros do carnaval de Salvador de 1974.
 
 ## Agradecimentos
 
@@ -145,13 +197,6 @@ iniciado.
   <legend>Fundo TV de tubo Sony</legend>
 </figure>
 
-## Financie o trabalho artístico de djalgoritmo
-
-Contribua no link abaixo através de transferência bancária Nubank do
-djalgoritmo (a.k.a. Joenio Marques da Costa):
-
-* [https://nubank.com.br/pagar/7z7a/SOq9YIYhey](https://nubank.com.br/pagar/7z7a/SOq9YIYhey)
-
 [1]: https://pt.wikipedia.org/wiki/Pitfall!
 [2]: https://www.archdaily.com.br/br/01-81125/brasilia-em-construcao-por-marcel-gautherot/81125_81127
 [3]: https://casavogue.globo.com/MostrasExpos/Fotografia/noticia/2015/10/fotos-ineditas-retratam-construcao-de-brasilia.html
@@ -161,6 +206,10 @@ djalgoritmo (a.k.a. Joenio Marques da Costa):
 [7]: http://retrovisoronline.blogspot.com/2011/03/historia-dos-1000-km-de-brasilia.html
 [8]: https://pt.wikipedia.org/wiki/River_Raid
 [9]: https://noticias.uol.com.br/album/100415brasilia50_album.jhtm#fotoNav=20
+[10]: https://pt.wikipedia.org/wiki/Keystone_Kapers
+[11]: https://pt.wikipedia.org/wiki/Megamania
+[12]: https://pt.wikipedia.org/wiki/Pac-Man_(Atari_2600)
+[13]: http://www.salvador-antiga.com
 [arquibrasilia]: https://arquibrasilia.com
 [calango]: http://calango.club
 [debian]: http://debian.org
