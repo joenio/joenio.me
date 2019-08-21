@@ -32,7 +32,7 @@ que aceitaram o desafio de definir as melhores práticas de software.
 </section>
 
 <section>
-Em seu artigo, apresentado no ICSE 2018, Brian Randell faz uma revisão
+Neste artigo, apresentado no ICSE 2018, Brian Randell faz uma revisão
 histórica da Engenharia de Software partindo dessas duas edições da NATO.
 
 <img src="/files/randell-paper.png" />
@@ -198,7 +198,7 @@ Pearson (2016) 810 pp. [ISBN 13:978-1-292-09613-1].
 Quando o termo "Engenharia de Software" foi introduzido muitos
 fizeram uma pergunta simples:
 
-**"De que forma "Engenharia de Software é diferente de Programação?"**
+**"De que forma Engenharia de Software é diferente de Programação?"**
 
 </section>
 
