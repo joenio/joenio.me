@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'HankenBook';
+  src: url('HankenBook.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PfennigMedium';
+  src: url('PfennigMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Base */
 /* ----------------------------------------------------------*/
 
