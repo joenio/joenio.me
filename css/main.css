@@ -542,3 +542,7 @@ figure pre {
 strong {
   font-weight: bold;
 }
+
+.highlight {
+  font-size: 18px;
+}
