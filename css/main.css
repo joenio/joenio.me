@@ -546,3 +546,7 @@ strong {
 .highlight {
   font-size: 18px;
 }
+
+iframe.bioborgs-soundcloud {
+  width: 100%;
+}
