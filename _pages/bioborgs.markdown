@@ -2,7 +2,6 @@
 title: "}bio{borgs - album 2019"
 ---
 
-
 ![bioborgs album cover 01](/files/bioborgs/bioborgs-album-01-cover.jpg)
 
 Num futuro distante, no ano de 1984, a vigilância em massa é realizada pelo aplicativo **O Grande Irmão versão 2.1**, instalado voluntariamente pelos usuários Android e iOS em seus próprios TelefonesInteligentes (_nota de rodapé: não há relato estatisticamente relevante de usuários de Windows Phone neste cenário histórico_). O uso exponencial de TelefonesInteligentes com o aplicativo O Grande Irmão deu início a uma guerra sem fim entre o virtual e o real, entre a realidade e a ficção, as fakenews, os memes e as correntes de WhatsApp tomaram o lugar das descobertas científicas; o resultado foi a quase total aniquilação de toda a inteligência terrestre.
@@ -49,7 +48,6 @@ Staff Creativo: <span class='alert-info'>**Gandha Leite Jr.**</span>
 
 Dionysian Industrial Complex e Alien Monastery Records
 
-
 Brasília, Julho 2019
 
 </div>
@@ -61,3 +59,9 @@ Brasília, Julho 2019
 <iframe class="bioborgs-soundcloud" width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/244582492&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 
 [https://biophillick.com/BIOBORGS](https://biophillick.com/BIOBORGS)
+
+### Código-fonte e samples
+
+* [https://gitlab.com/djalgoritmo/biophillick-bioborgs][gitlab]
+
+[gitlab]: https://gitlab.com/djalgoritmo/biophillick-bioborgs
