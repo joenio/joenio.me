@@ -21,6 +21,9 @@ O encontro do Replicante <span class='alert-warning'>**Biophillick**</span> e se
 <iframe class="youtube" src="https://www.youtube.com/embed/WHMFY7Qhycg?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ![bioborgs album cover 02](/files/bioborgs/bioborgs-album-02-biophillick.jpg)
+
+<iframe class="bandcamp-embed" style="border: 0; width: 100%; height: 241px;" width="100%" src="https://bandcamp.com/EmbeddedPlayer/album=3730393152/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless></iframe>
+
 ![bioborgs album cover 03](/files/bioborgs/bioborgs-album-03-eufraktus.jpg)
 ![bioborgs album cover 04](/files/bioborgs/bioborgs-album-04-djalgoritmo.jpg)
 
@@ -58,7 +61,10 @@ Brasília, Julho 2019
 
 <iframe class="bioborgs-soundcloud" width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/244582492&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 
-[https://biophillick.com/BIOBORGS](https://biophillick.com/BIOBORGS)
+* [https://biophillick.com/BIOBORGS](https://biophillick.com/BIOBORGS)
+* [http://dionysian-industrial-complex.net/cplx-11-eufraktus-biophillick-djalgoritmo-bioborgs](http://dionysian-industrial-complex.net/cplx-11-eufraktus-biophillick-djalgoritmo-bioborgs)
+
+<iframe class="youtube" src="https://www.youtube.com/embed/qZdwoVdajCk?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ### Código-fonte e samples
 

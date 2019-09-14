@@ -371,6 +371,10 @@ iframe.youtube {
   height: 450px;
 }
 
+iframe.bandcamp-embed {
+  padding: 0 6%;
+}
+
 /* media queries */
 /* ----------------------------------------------------------*/
 
@@ -386,6 +390,10 @@ iframe.youtube {
 
   img {
     max-width: 100%;
+  }
+
+  iframe.bandcamp-embed {
+    padding: 0 3%;
   }
 
 }
@@ -425,12 +433,19 @@ iframe {
     height: 280px;
   }
 
+  iframe.bandcamp-embed {
+    padding: 0 2%;
+  }
+
 }
 
 @media screen and (max-width: 500px) {
   iframe.youtube {
     width: auto;
     height: auto;
+  }
+  iframe.bandcamp-embed {
+    padding: 0 1%;
   }
 }
 
