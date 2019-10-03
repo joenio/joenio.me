@@ -23,4 +23,5 @@ layout: page
 * [50 anos de Engenharia de Software](/50-anos-de-engenharia-de-software)
 * [Shell Script](/shell-script)
 * [Música Eletrônica com Debian](/musica-eletronica-com-debian)
+* [Electronic Music with Debian](/electronic-music-with-debian)
 * [Resisting Reduction, A Manifesto](/resisting-reduction-manifesto)
