@@ -78,11 +78,17 @@ backgroundTransition: slide
 </section>
 
 <section data-background-image="/files/demoart-visualmusic/farbrausch-debris_1.png">
-## Motivações
-
-#### "Como extrair novos efeitos do computador?"
---
-#### "Como representar a música visualmente?"
+#### Motivações
+<table><tr>
+  <td style="text-align:center">
+    <img style="box-shadow:0 0 30px green; border-radius:5px; float:left" src="/files/giphy-computer-80s.gif" />
+    <strong style="text-shadow:2px 2px 1px black, 3px 3px 3px green">Como extrair novos efeitos do computador?</strong>
+  </td>
+  <td style="text-align:center">
+    <img style="box-shadow:0 0 30px blue; border-radius:5px; float:right" src="/files/ocular_organ.jpg" />
+    <strong style="text-shadow:2px 2px 1px black, 3px 3px 3px blue">Como representar a música visualmente?</strong>
+  </td>
+</tr></table>
 </section>
 
 <section data-background-image="/files/demoart-visualmusic/joaopedrooliveira-petals_1.png">
@@ -122,10 +128,11 @@ backgroundTransition: slide
 </section>
 
 <section data-background-image="/files/demoart-visualmusic/normanmclaren-blinkityblank.png">
-### Conclusões
-* Ambos são pouco conhecidos no Brasil
-* Quase nenhuma referência acadêmica sobre Demo Art
-* Oportunidade de entrelaçamento entre Demo Art e Visual Music
+## Conclusões
+
+#### 1. Ambos são pouco conhecidos no Brasil e no Mundo
+#### 2. Quase nenhuma referência acadêmica sobre Demo Art
+#### 3. Oportunidade de entrelaçamento entre Demo Art e Visual Music
 </section>
 
 <section data-background="#c4a000" data-background-transition="slide">
