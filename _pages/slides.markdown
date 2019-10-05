@@ -25,3 +25,4 @@ layout: page
 * [Música Eletrônica com Debian](/musica-eletronica-com-debian)
 * [Electronic Music with Debian](/electronic-music-with-debian)
 * [Resisting Reduction, A Manifesto](/resisting-reduction-manifesto)
+* [Demo Art e Visual Music em perspectiva](/demoart-visualmusic)
