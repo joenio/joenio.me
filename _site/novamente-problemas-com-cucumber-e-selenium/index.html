@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Novamente, problemas com Cucumber e Selenium | Joenio Marques da Costa</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <link rel="canonical" href="http://joenio.me/novamente-problemas-com-cucumber-e-selenium/">
+    <link rel="alternate" type="application/rss+xml" title="Joenio Marques da Costa | Feed" href="/feed.xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+  <body>
+  <header class="site-header">
+  <div class="wrap">
+    <a class="site-title" href="/">Joenio Marques da Costa</a>
+  </div>
+</header>
+
+
+  <div class="page-content">
+    <div class="wrap">
+      <div class="post">
+        <header class="post-header">
+          <h1>Novamente, problemas com Cucumber e Selenium</h1>
+          <p class="meta">
+May 6, 2010
+</p>
+
+        </header>
+        <article class="post-content">
+        <p><img src="/files/softwarelivre-brasil-post-image.png" alt="software livre brasil logo" /></p>
+
+<div class="alert alert-warning">
+  <p>Post originalmente feito na rede SoftwareLivre Brasil. Fonte:<br />
+http://softwarelivre.org/joenio/blog/novamente-problemas-com-cucumber-e-selenium</p>
+</div>
+
+<p>Mais uma vez a dupla Cucumber e Selenium deu problema:</p>
+
+<pre>joenio@case ~/s/noosfero&gt; cucumber -p selenium features/edit_block_of_links.feature 
+Using the selenium profile...
+Feature: edit_block_of_links
+  As a profile owner
+  I want to edit a block of links
+
+  Background:                           # features/edit_block_of_links.feature:5
+==&gt; Waiting for Selenium RC server on port 4444... 
+
+==&gt; Failed to boot the Selenium RC server... exiting!
+</pre>
+
+<p>Aparentemente o <strong>selenium-server</strong> não incia corretamente,
+desconfiei do Java, removi e reinstalei todos os pacotes referente a ele mas
+não resolveu.</p>
+
+<p>Executei o selenium-server <em>“na mão”</em>, ele inicia normalmente mas não
+consigo conectar nele.</p>
+
+<pre>joenio@case ~/.g/r/1/g/w/vendor&gt; java -jar selenium-server.jar 
+10:22:01.457 INFO - Java: Sun Microsystems Inc. 16.3-b01
+10:22:01.458 INFO - OS: Linux 2.6.32-4-686 i386
+10:22:01.474 INFO - v1.0.1 [2696], with Core v@VERSION@ [@REVISION@]
+10:22:01.592 INFO - Version Jetty/5.1.x
+10:22:01.594 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+10:22:01.597 INFO - Started HttpContext[/selenium-server,/selenium-server]
+10:22:01.597 INFO - Started HttpContext[/,/]
+10:22:01.603 INFO - Started SocketListener on 0.0.0.0:4444
+10:22:01.603 INFO - Started org.mortbay.jetty.Server@3a6727
+</pre>
+
+<p>O estranho é que o o servidor esté rodando na porta 4444 e ainda assim não
+consigo conectar, fiz este mesmo teste em uma máquina com Debian Lenny (estou
+usando Debian Sid) e funcionou perfeitamente.</p>
+
+<p>Coincidência ou não comecei a ter problemas também com o site do Banco do
+Brasil, ao tentar acessar minha conta recebo o erro abaixo:</p>
+
+<p><em><strong>Problemas na instalação do Módulo de Segurança</strong></em></p>
+
+<p>Como já estava desconfiado do Java fiz um teste acessando a URL abaixo e
+recebi um <em>calltrace</em> enorme daqueles que só o Java dá pra gente.</p>
+
+<ul>
+<li><a href="http://www.java.com/en/download/help/testvm.xml"> http://www.java.com/en/download/help/testvm.xml</a></li>
+</ul>
+<p>Pesquisando no Google encontrei alguns <em>bugs</em> relatados no Debian com proposta de <em>workaround</em> para contornar o problema:</p>
+<ul>
+<li><a href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=561693">http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=561693</a></li>
+<li><a href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=560238">http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=560238</a></li>
+</ul>
+
+<p>A solução proposta pelo pessoal do Debian nos <em>bugs</em> acima é a
+seguinte:</p>
+
+<p>Abra o arquivo <em>/etc/sysctl.d/bindv6only.conf</em> e sete
+<em>net.ipv6.bindv6only=0</em>, reinicie o <em>procfs</em> com <em>invoke-rc.d
+procps restart</em>.</p>
+
+<p>Pra mim esta solução funcionou perfeitamente e resolveu meus probremas tanto
+com Selenium quando com Banco do Brasil.</p>
+
+        </article>
+          <footer class="post-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES * * */
+      var disqus_shortname = 'joenio';
+      var disqus_url = 'http://joenio.me/novamente-problemas-com-cucumber-e-selenium/index.html';
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+    </noscript>
+  </footer>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+
+  <div class="wrap">
+
+    <div class="column">
+      <p id="sobre">
+        <a href="/sobre">
+        Joenio Marques da Costa (a.k.a. djalgoritmo)
+        Engenheiro de Software,
+        mestre em Ciência da Computação,
+        desenvolvedor e militante do movimento de software livre,
+        DJ, músico experimental, live coder.
+        </a>
+      </p>
+
+      <hr/>
+
+      <p id="rss">
+        <a type="application/rss+xml" href="/feed.xml">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="rss-icon-svg" id="RSSicon" viewBox="0 0 256 256">
+          <defs><linearGradient x1="0.085" y1="0.085" x2="0.915" y2="0.915" id="RSSg">
+          <stop offset="0.0" stop-color="#E3702D"/><stop offset="0.1071" stop-color="#EA7D31"/>
+          <stop offset="0.3503" stop-color="#F69537"/><stop offset="0.5" stop-color="#FB9E3A"/>
+          <stop offset="0.7016" stop-color="#EA7C31"/><stop offset="0.8866" stop-color="#DE642B"/>
+          <stop offset="1.0" stop-color="#D95B29"/></linearGradient></defs>
+          <rect width="256" height="256" rx="55" ry="55" x="0" y="0" fill="#CC5D15"/>
+          <rect width="246" height="246" rx="50" ry="50" x="5" y="5" fill="#F49C52"/>
+          <rect width="236" height="236" rx="47" ry="47" x="10" y="10" fill="url(#RSSg)"/>
+          <circle cx="68" cy="189" r="24" fill="#FFF"/>
+          <path d="M160 213h-34a82 82 0 0 0 -82 -82v-34a116 116 0 0 1 116 116z" fill="#FFF"/>
+          <path d="M184 213A140 140 0 0 0 44 73 V 38a175 175 0 0 1 175 175z" fill="#FFF"/>
+        </svg>
+        <span class="rss-subscribe">RSS</span>
+        </a>
+      </p>
+
+    </div>
+  </div>
+
+</footer>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31348806-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>

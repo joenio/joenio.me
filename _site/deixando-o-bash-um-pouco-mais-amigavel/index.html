@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Deixando o bash um pouco mais amigável | Joenio Marques da Costa</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <link rel="canonical" href="http://joenio.me/deixando-o-bash-um-pouco-mais-amigavel/">
+    <link rel="alternate" type="application/rss+xml" title="Joenio Marques da Costa | Feed" href="/feed.xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+  <body>
+  <header class="site-header">
+  <div class="wrap">
+    <a class="site-title" href="/">Joenio Marques da Costa</a>
+  </div>
+</header>
+
+
+  <div class="page-content">
+    <div class="wrap">
+      <div class="post">
+        <header class="post-header">
+          <h1>Deixando o bash um pouco mais amigável</h1>
+          <p class="meta">
+Jul 29, 2010
+</p>
+
+        </header>
+        <article class="post-content">
+        <p><img src="/files/softwarelivre-brasil-post-image.png" alt="software livre brasil logo" /></p>
+
+<div class="alert alert-warning">
+  <p>Post originalmente feito na rede SoftwareLivre Brasil. Fonte:<br />
+http://softwarelivre.org/joenio/blog/deixando-o-bash-um-pouco-mais-amigavel</p>
+</div>
+
+<p><img src="http://softwarelivre.org/articles/0023/4433/terminal.png?1280533142" alt="Terminal" style="float: left; margin: 0 5px 5px 0;" /></p>
+
+<p><span style="font-size: xx-small;"> </span></p>
+
+<p>Sempre utilizei o <a href="http://www.gnu.org/software/bash/">bash</a> como shell padrão, mas pelo pouco tempo que utilizei o <a href="http://fishshell.org/">fish</a> me acostumei com um recurso que me faz falta no bash: <strong>O histórico.</strong></p>
+
+<p>Fui buscar uma forma de melhorar o histórico do bash e encontrei uma <a href="http://www.dicas-l.com.br/arquivo/bash_history.php">dica</a> muito fácil para aumentar o tamanho dele. Basta adicionar as linhas abaixo ao seu <strong>.bashrc</strong> para aumentar o histórco de 500 (padrão) para 5000:</p>
+
+<pre>export HISTSIZE=5000<br />export HISTFILESIZE=$HISTSIZE</pre>
+
+<p>Continuei lendo a <a href="http://www.gnu.org/software/bash/manual/bashref.html#Readline-Interaction">documentação</a> do bash e descobri mais algumas configurações interessantes para ele (na verdade para o readline), basta adicionar ao arquivo <strong>.inputrc</strong> as linhas abaixo:</p>
+
+<pre>set completion-ignore-case on</pre>
+
+<p><span style="font-size: small;">Para ignorar maiúsculas e minúsculas ao completar.</span></p>
+
+<pre>set match-hidden-files off<br /></pre>
+
+<p>Para ignorar arquivos ocultos ao completar nomes de arquivos e diretórios.</p>
+
+        </article>
+          <footer class="post-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES * * */
+      var disqus_shortname = 'joenio';
+      var disqus_url = 'http://joenio.me/deixando-o-bash-um-pouco-mais-amigavel/index.html';
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+    </noscript>
+  </footer>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+
+  <div class="wrap">
+
+    <div class="column">
+      <p id="sobre">
+        <a href="/sobre">
+        Joenio Marques da Costa (a.k.a. djalgoritmo)
+        Engenheiro de Software,
+        mestre em Ciência da Computação,
+        desenvolvedor e militante do movimento de software livre,
+        DJ, músico experimental, live coder.
+        </a>
+      </p>
+
+      <hr/>
+
+      <p id="rss">
+        <a type="application/rss+xml" href="/feed.xml">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="rss-icon-svg" id="RSSicon" viewBox="0 0 256 256">
+          <defs><linearGradient x1="0.085" y1="0.085" x2="0.915" y2="0.915" id="RSSg">
+          <stop offset="0.0" stop-color="#E3702D"/><stop offset="0.1071" stop-color="#EA7D31"/>
+          <stop offset="0.3503" stop-color="#F69537"/><stop offset="0.5" stop-color="#FB9E3A"/>
+          <stop offset="0.7016" stop-color="#EA7C31"/><stop offset="0.8866" stop-color="#DE642B"/>
+          <stop offset="1.0" stop-color="#D95B29"/></linearGradient></defs>
+          <rect width="256" height="256" rx="55" ry="55" x="0" y="0" fill="#CC5D15"/>
+          <rect width="246" height="246" rx="50" ry="50" x="5" y="5" fill="#F49C52"/>
+          <rect width="236" height="236" rx="47" ry="47" x="10" y="10" fill="url(#RSSg)"/>
+          <circle cx="68" cy="189" r="24" fill="#FFF"/>
+          <path d="M160 213h-34a82 82 0 0 0 -82 -82v-34a116 116 0 0 1 116 116z" fill="#FFF"/>
+          <path d="M184 213A140 140 0 0 0 44 73 V 38a175 175 0 0 1 175 175z" fill="#FFF"/>
+        </svg>
+        <span class="rss-subscribe">RSS</span>
+        </a>
+      </p>
+
+    </div>
+  </div>
+
+</footer>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31348806-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>
