@@ -3,9 +3,10 @@ title: Las Plantas Sagradas Y La Rosa Negra - Composiciones Para Oferendas (Coll
 ---
 
 Compilação colaborativa coordenada e organizada por [INGRID][] lançada no
-Bandcamp em 25 Outubro 2019, disponível também no Soundcloud, links abaixo.
+Bandcamp em 26 Setembro 2019, disponível também no Soundcloud, links abaixo.
 
 * [https://soundcloud.com/ingr_d/sets/las-plantas-sagradas-y-la-rosa](https://soundcloud.com/ingr_d/sets/las-plantas-sagradas-y-la-rosa)
+* [https://ingrd.bandcamp.com/album/las-plantas-sagradas-y-la-rosa-negra-composiciones-para-oferendas-ingrids-collaborative-fusion-orchestra](https://ingrd.bandcamp.com/album/las-plantas-sagradas-y-la-rosa-negra-composiciones-para-oferendas-ingrids-collaborative-fusion-orchestra)
 
 Neste álbum colaborei com uma canção usando TidalCycles -- `[djalgoritmo]
 Composición para oferenda n.25 (feat INGRID)` -- totalmente composta com 1 único
