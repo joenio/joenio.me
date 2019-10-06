@@ -22,3 +22,4 @@ laboratórios de arte + tecnologia.
 * Membro do [BSBLOrk](http://bsblork.gitlab.io)
 * Membro fundador do [Nômade Lab](http://nomadelab.gitlab.io)
 * Colaborador do [MediaLab/UnB](http://medialab.unb.br)
+* [Brasília Mapping Festival #SmartCities](/bmf-2019)
