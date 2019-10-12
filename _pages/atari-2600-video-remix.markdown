@@ -43,7 +43,7 @@ o console Atari 2600. Foi um dos últimos sucessos do Atari antes da
 crise na indústria eletrônica entre 1983 e 1984 [[6]][6].
 
 Os vídeos utilizados em conjunto com o jogo são registros da prova
-de automibilismo "1000 KM DE BRASÍLIA" realizada em 1962 na cidade de
+de automobilismo "1000 KM DE BRASÍLIA" realizada em 1962 na cidade de
 Brasília, considerada uma das provas mais tradicionais do automobilismo
 Brasileiro [[7]][7].
 
