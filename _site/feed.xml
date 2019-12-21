@@ -5,9 +5,196 @@
     <description></description>
     <link>http://joenio.me/</link>
     <atom:link href="http://joenio.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 05 Oct 2019 17:07:45 -0300</pubDate>
-    <lastBuildDate>Sat, 05 Oct 2019 17:07:45 -0300</lastBuildDate>
+    <pubDate>Sat, 21 Dec 2019 01:53:20 -0300</pubDate>
+    <lastBuildDate>Sat, 21 Dec 2019 01:53:20 -0300</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>Retrospectiva 2019 - arte, ciência e tecnologia</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/files/djalgoritmo-retrato-por-biophillick.jpg&quot; alt=&quot;descricao imagem aqui&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;O retrato acima foi um presente feito pelo amigo e grande artista
+&lt;a href=&quot;https://biophillick.com/&quot;&gt;Biophillick&lt;/a&gt;, talvez o melhor presente que eu poderia receber no ano,
+Biophillick muito obrigado! Lindo presente e ao mesmo tempo muito simbólico,
+ele sintetiza bastante minhas experiências e produções realizadas no ano de
+2019.&lt;/p&gt;
+
+&lt;p&gt;“2019” (na verdade, desde agosto de 2018) eu adotei o pseudônimo artístico
+&lt;a href=&quot;/djalgoritmo&quot;&gt;djalgoritmo&lt;/a&gt; e iniciei uma maior dedicação a arte, ciência e
+tecnologia. Incluindo estudo da música eletroacústica, live coding, construção
+de instrumentos com Arduíno, vídeo arte, experimentos com net art, visual
+music, performances, e pesquisas sobre demoscene.&lt;/p&gt;
+
+&lt;p&gt;Faço abaixo um resumo da minha produção neste ano, tanto em participação com
+grupos e coletivos, quanto individualmente.&lt;/p&gt;
+
+&lt;h3 id=&quot;orquestra-de-laptops-de-brasília-bsblork&quot;&gt;Orquestra de Laptops de Brasília (BSBLOrk)&lt;/h3&gt;
+
+&lt;p&gt;Ainda em 2018 após iniciar &lt;a href=&quot;/helloworld.tidal&quot;&gt;experimentos com live coding&lt;/a&gt; e
+realizar algumas performances fui convidado pelo &lt;a href=&quot;https://facebook.com/eufrasio.prates&quot;&gt;Eufrasio Prates&lt;/a&gt;
+para compor a &lt;a href=&quot;http://bsblork.org&quot;&gt;BSBLOrk&lt;/a&gt;, um coletivo de música digital e interativa
+experimental, com a orquestra gravei um álbum (a ser lançado em breve) e
+participei das seguintes apresentações:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Abertura da exposição “VOA BRASÍLIA” na Galeria ArquiBrasília em Abril de 2019 &lt;br /&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=5HNeUZLF1cE&quot;&gt;vídeo 1&lt;/a&gt; - &lt;a href=&quot;https://www.youtube.com/watch?v=VcYSAyvXmFA&quot;&gt;vídeo 2&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/BwQvUdFlnCQ/&quot;&gt;foto&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Performance KronUs sobre a obra Enantiodromia de Milton Marques na Alfinete Galeria em Novembro de 2019 &lt;br /&gt;&lt;a href=&quot;https://www.instagram.com/p/B490o0PFQ5C/?utm_source=ig_web_copy_link&quot;&gt;fotos&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Exposição Cosmotecnia na noite de encerramento da XII International Whitehead Conference na Galeria Toca’55 em Setembro de 2019 &lt;br /&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=N0voYBkMM5c&quot;&gt;vídeo 1&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/B2QKWdUlnpd/&quot;&gt;vídeo 2&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/B48vPGjl57X/&quot;&gt;vídeo 3&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/B45AUEel8Jv/&quot;&gt;imagem&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Apresentação no Brasilia Mapping Festival 2019 no Museu Nacional da República em Julho de 2019 &lt;br /&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=AKBWlCtbkHM&quot;&gt;vídeo&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/BzuGnrold0I/&quot;&gt;foto&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;nômade-lab&quot;&gt;Nômade Lab&lt;/h3&gt;
+
+&lt;p&gt;Em Março de 2019 formei junto aos amigos do &lt;a href=&quot;http://medialab.unb.br/&quot;&gt;MediaLab UnB&lt;/a&gt; o grupo
+&lt;a href=&quot;[https://nomadelab.gitlab.io/]&quot;&gt;Nômade Lab&lt;/a&gt;, um grupo de de arte sonoro-visual com foco em
+improvisação ao vivo mesclando sons e imagens criados através de computadores,
+&lt;a href=&quot;https://www.instagram.com/p/B4-ibh6FxtT/&quot;&gt;gravamos um álbum&lt;/a&gt; (em processo de
+edição e mixagem) a ser lançado em Março de 2020 no aniversário de 1 ano do grupo,
+com o Nómade Lab participei das seguinte apresentações:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Colônia de Férias 2019 MediaLab UnB no IDA em Março 2019&lt;/li&gt;
+  &lt;li&gt;Instalação Interfaces Computacionais Afetivas no Sesc Gama em Março 2019 &lt;br /&gt;&lt;a href=&quot;https://www.instagram.com/p/Bvc4AblFAgb/&quot;&gt;imagem&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/BvnngO3Fws-/&quot;&gt;vídeo 1&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/Bvrl2zrn7vp/&quot;&gt;vídeo 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Apresentação na Feira do Fuga no Lago Sul em Maio 2019&lt;/li&gt;
+  &lt;li&gt;Performance na Galeria MixMídia ArquiBrasilia na 112 Asa Norte em Maio 2019&lt;/li&gt;
+  &lt;li&gt;Participação da Feira Geek no Sesc 504 Asa Sul em Junho 2019&lt;/li&gt;
+  &lt;li&gt;Galeria deCurators na 412 Asa Norte em Junho 2019 &lt;br /&gt;&lt;a href=&quot;https://www.instagram.com/p/ByDJW7CByy7/&quot;&gt;imagem&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Sarau do III Fia (Fórum Internacional sobre Amazônia) na praça Chico Mendes UnB em Junho 2019&lt;/li&gt;
+  &lt;li&gt;Campus Party Brasília CPBSB3 com bancada Dumond no estádio Mané Garrincha em Junho 2019 &lt;br /&gt;&lt;a href=&quot;https://www.instagram.com/p/BzBOdlElKEc/&quot;&gt;vídeo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Brasília Mapping Festival 2019 no Museu da República em Brasília em Julho 2019&lt;/li&gt;
+  &lt;li&gt;Rebel Veggie Bar no Guará/DF em Agosto 2019 &lt;br /&gt;&lt;a href=&quot;https://www.instagram.com/p/B1hUKveFB_x/&quot;&gt;imagem&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Encerramento do VIII COMA - Coletivo em Artes Visuais - na Galeria Espaço Piloto UnB Darcy em Setembro 2019 &lt;br /&gt;&lt;a href=&quot;https://www.instagram.com/p/B3DgszrFEQo/&quot;&gt;vídeo&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/B29QAOmFkmO/&quot;&gt;imagem&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Coquetel de abertura #18.ART Brasil no Museu da República/Brasília em Outubro 2019 &lt;br /&gt;&lt;a href=&quot;https://www.instagram.com/p/B3FhijgFroK/&quot;&gt;imagem&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Encerramento da Jornada Acadêmica do curso de Sistemas de Informação da Unieuro campus Águas Claras em Outubro 2019&lt;/li&gt;
+  &lt;li&gt;Feira do Fuga no Lago Sul em Dezembro 2019&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;bioborgs&quot;&gt;}bio{borgs&lt;/h2&gt;
+
+&lt;p&gt;Em Junho de 2019 gravei o álbum &lt;a href=&quot;/bioborgs&quot;&gt;}bio{borgs&lt;/a&gt; em colaboração com
+Biophillick e euFraktus, um álbum de música eletrônica technoxamanica lançado
+pelo selo &lt;a href=&quot;http://dionysian-industrial-complex.net/cplx-11-eufraktus-biophillick-djalgoritmo-bioborgs/&quot;&gt;Dionysian Industrial Complex&lt;/a&gt;, a partir deste trabalho
+participei das seguinte apresentações:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Brasilia Mapping Festival em Julho de 2019 &lt;br /&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=XhtVpAWo32g&quot;&gt;vídeo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Galeria deCurators em Dezembro de 2019 &lt;br /&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=spVCXpSITus&quot;&gt;vídeo 1&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/B5y2AzwF2d1/&quot;&gt;vídeo 2&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/B5s4t4rFhzn/&quot;&gt;imagem&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/B51W2qphr7j/&quot;&gt;foto 1&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/B5y-UpLBDbd/&quot;&gt;foto 2&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/B5y6qd5B8h0/&quot;&gt;foto 3&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/B5y9bR_hoQi/&quot;&gt;foto 4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Performance no Espaço Toca’55 em Setembro de 2019 &lt;br /&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=IWwBdptHEsQ&quot;&gt;vídeo 1&lt;/a&gt; - &lt;a href=&quot;https://www.youtube.com/watch?v=qZdwoVdajCk&quot;&gt;vídeo 2&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/B2QBb3bl8HH/&quot;&gt;vídeo 3&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/B2Qa_n_h-eo/&quot;&gt;vídeo 4&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/B2QGT3YhMWl/&quot;&gt;foto&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;cerimônia-ancestral-mexicana-de-cacau-no-memorial-dos-povos-indígenas&quot;&gt;Cerimônia Ancestral Mexicana de Cacau no Memorial dos Povos Indígenas&lt;/h3&gt;
+
+&lt;p&gt;À convide do Biophillick participei da performance abaixo:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Cerimônia Ancestral Mexicana de Cacau no Memorial dos Povos Indigenas em Novembro de 2019 &lt;br /&gt;&lt;a href=&quot;https://www.instagram.com/p/B4XsSXAh6Kb/&quot;&gt;foto&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/B4TFxKHlKwl/&quot;&gt;imagem&lt;/a&gt; - &lt;a href=&quot;https://www.youtube.com/watch?v=Sr3PMVwzHic&quot;&gt;vídeo&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;toplap15&quot;&gt;TOPLAP15&lt;/h3&gt;
+
+&lt;p&gt;Fiz parte da performance online no streaming de &lt;a href=&quot;https://toplap.org/wearefifteen/&quot;&gt;aniversário de 15 anos da
+comunidade internacional de live coding TOPLAP&lt;/a&gt; em Fevereiro de 2019.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;TOPLAP15 live performance by djalgoritmo from Brasília, Brazil &lt;br /&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=WVLjYBC8V2Q&quot;&gt;vídeo&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;música-interativa&quot;&gt;Música Interativa&lt;/h3&gt;
+
+&lt;p&gt;Durante todo o ano estive envolvido no projeto &lt;a href=&quot;https://www.youtube.com/watch?v=dW4vSJCfpl0&quot;&gt;Música
+Interativa&lt;/a&gt; liderado pelo amigo
+&lt;a href=&quot;https://www.facebook.com/deivilk&quot;&gt;Deivi Kuhn&lt;/a&gt;, neste projeto desenvolvemos formas de interação do
+público com a banda &lt;a href=&quot;https://www.facebook.com/mariasabinabandabrasilia&quot;&gt;Maria Sabina &amp;amp; a Pêia&lt;/a&gt;, uma banda brasiliense
+que mistura um cavaquinho feminino com sons psicodélicos passeando do rock ao
+carnaval.&lt;/p&gt;
+
+&lt;p&gt;Neste projeto desenvolvi, e continuo evoluindo, o &lt;a href=&quot;https://gitlab.com/musica-interativa/teremim-aoristo&quot;&gt;Teremim
+Aoristo&lt;/a&gt;, um instrumento com Arduíno, sensor de distância
+HC-SR04 e SuperCollider para síntese de som.  O Teremim foi posto em prática
+nos seguintes shows da banda Maria Sabina &amp;amp; a Pêia:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Ensaio aberto no Zepellim Guará 2 em Novembro de 2019 &lt;br /&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=FDpENkn8VGU&quot;&gt;vídeo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Show de encerramento do projeto no Canteiro Central em Novembro de 2019 &lt;br /&gt;&lt;a href=&quot;https://www.instagram.com/p/B5qwB4hFyGh/&quot;&gt;foto 1&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/B5tIAhxD1vIaJUmJZu16C-62VUIBMpydIdFnWo0/&quot;&gt;foto 2&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/p/B5NuoA_FFKw/&quot;&gt;foto 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;música-quântica&quot;&gt;Música Quântica&lt;/h3&gt;
+
+&lt;p&gt;Com o desenvolvimento do Teremim Aoristo no projeto Música Interativa fui
+convidado a participar do ensaio e encerramento do evento de Música Quântica
+realizada na UnB na escola de Música.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Concerto final de encerramento do II Seminário Internacional de Música Quântica no auditório de música da UnB em Novembro de 2019 &lt;br /&gt;&lt;a href=&quot;https://www.instagram.com/p/B5dLweUlpQk/&quot;&gt;vídeo 1&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/tv/B5dy5MElOWa/&quot;&gt;vídeo 2&lt;/a&gt; - &lt;a href=&quot;https://www.instagram.com/tv/B5gjSa7FiX7/&quot;&gt;vídeo 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;las-plantas-sagradas-y-la-rosa-negra&quot;&gt;Las Plantas Sagradas Y La Rosa Negra&lt;/h3&gt;
+
+&lt;p&gt;Em setembro de 2019 compus uma música para a Compilação colaborativa coordenada
+e organizada por &lt;a href=&quot;https://soundcloud.com/ingr_d&quot;&gt;INGRID&lt;/a&gt; lançada no Bandcamp.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ingrd.bandcamp.com/album/las-plantas-sagradas-y-la-rosa-negra-composiciones-para-oferendas-ingrids-collaborative-fusion-orchestra&quot;&gt;Las Plantas Sagradas Y La Rosa Negra: Composiciones Para Oferendas (INGRID’s Collaborative Fusion Orchestra)&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;atari-2600-video-remix&quot;&gt;Atari 2600 Video Remix&lt;/h3&gt;
+
+&lt;p&gt;Além das participações até aqui mencionadas, produzi também a obra &lt;a href=&quot;/atari-2600-video-remix&quot;&gt;Atari 2600 Vídeo
+Remix&lt;/a&gt; com uma apresentação pública.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Apresentação da obra Atari 2600 Vídeo Remix no Brasília Mapping Festival 2019 (com participação da BSBLOrk) em Julho de 2019 &lt;br /&gt; &lt;a href=&quot;https://www.youtube.com/watch?v=rT_rGQVahoA&quot;&gt;vídeo&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;dj&quot;&gt;DJ&lt;/h3&gt;
+
+&lt;p&gt;Participei também de 2 apresentações como DJ usando software livre &lt;a href=&quot;https://mixxx.org/&quot;&gt;Mixxx&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;La Pauta edição especial Michael Jackson no Sindicato dos Jornalistas em Agosto de 2018&lt;/li&gt;
+  &lt;li&gt;La Pauta edição especial David Bowie no Sindicato dos Jornalistas em Abril de 2019&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;outras-atividades-do-ano-de-2019&quot;&gt;Outras atividades do ano de 2019&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Palestra DebConf sobre música eletrônica experimental com software livre &lt;br /&gt;&lt;a href=&quot;https://www.instagram.com/p/B2DgRVBFeS4/&quot;&gt;vídeo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Apresentação sobre LiveCoding no Calango Hacker Clube &lt;br /&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=mXW13ccuMIo&quot;&gt;vídeo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Neste ano também iniciei contato e colaboração com o grupo CLiC da Argentina&lt;/li&gt;
+  &lt;li&gt;Oficina de TidalCycles na semana universitária UnB&lt;/li&gt;
+  &lt;li&gt;Oficina de TidalCycles na Unieuro Águas Claras&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;demoscene&quot;&gt;Demoscene&lt;/h3&gt;
+
+&lt;p&gt;Além dos estudos sobre música e pesquisas sobre live coding, iniciei neste ano
+pesquisas sobre demoscene, neste meio tempo publiquei 1 artigo e estou
+finalizando um segundo.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Artigo apresentado no #18.ART Brasil: Demo Art e Visual Music em perspectiva.&lt;/li&gt;
+  &lt;li&gt;Segundo artigo sobre demoscene ainda não publicado&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Foram ao todo 29 performances musicais e artísticas, uma média de 2
+apresentações e meia por mês, 1 música, 2 álbuns, 7 vídeos e 2 artigos. 2019
+foi um ano muito bom, o contexto local em Brasília está muito aquecido, muitos
+artistas, pesquisadores e interessados em música, arte, ciência e tecnologia, é
+muito enriquecedor estar imerso em meio a tantas pessoas maravilhosas, Phil
+Jones, Lorena Ferrera, Jacksson Marinho, Leandro Muñoz, Eufrasio Prates,
+Biophillick, INGRID, Artur Cabral, Alexandre rANGEL, Deivi Kuhn, Prahlada
+Hargreaves, Nicácia, Ghales, Anésio Neto, Kiko Barreto, Krishna Passos,
+professora Suzete Venturelli, professor Antenor Ferreira.&lt;/p&gt;
+
+&lt;p&gt;Sou muito grato e muito feliz por estar perto e ter a amizade de tanta boa! &amp;lt;3&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 20 Dec 2019 00:00:00 -0300</pubDate>
+        <link>http://joenio.me/retrospectiva-2019/index.html</link>
+        <guid isPermaLink="true">http://joenio.me/retrospectiva-2019/index.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Empacotando módulos Perl no Debian</title>
@@ -2006,273 +2193,6 @@ eu subi uma nova versão do pacote Debian do &lt;code class=&quot;highlighter-ro
         <pubDate>Sat, 15 Aug 2015 00:00:00 -0300</pubDate>
         <link>http://joenio.me/como-adicionar-virtualhost-aos-logs-do-varnish/index.html</link>
         <guid isPermaLink="true">http://joenio.me/como-adicionar-virtualhost-aos-logs-do-varnish/index.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Aprenda a criar repositórios de pacotes Debian</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/files/clone-trooper-e-wall-e-pacotes.jpg&quot; alt=&quot;Clone trooper e wall-e empilhando pacotes&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Neste post irei mostrar como configurar um repositório de pacotes &lt;a href=&quot;http://debian.org&quot;&gt;Debian&lt;/a&gt;
-GNU/Linux usando &lt;strong&gt;dput&lt;/strong&gt; + &lt;strong&gt;mini-dinstall&lt;/strong&gt; + &lt;strong&gt;nginx&lt;/strong&gt;. O Debian é um
-sistema operacional &lt;a href=&quot;http://debian.org/intro/free&quot;&gt;livre&lt;/a&gt; criado e mantido por um grupo independente de
-desenvolvedores espalhados pelo mundo, o projeto foi iniciado em 1993 e tem
-sido desenvolvido abertamente desde então sempre seguindo o espírito do
-&lt;a href=&quot;http://www.gnu.org&quot;&gt;projeto GNU&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Uma das características mais interessantes do Debian é o seu &lt;a href=&quot;http://pt.wikipedia.org/wiki/Sistema_gestor_de_pacotes&quot;&gt;sistema de
-gerenciamento de pacotes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Um sistema de gerenciamento de pacotes é uma coleção de ferramentas que
-oferece um método automático para instalar, atualizar, configurar e remover
-pacotes de um sistema operacional. É tipicamente usado em sistemas
-operacionais tipo Unix, que consistem de centenas de pacotes distintos, para
-facilitar a identificação, instalação e atualização” (fonte: Wikipédia)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;O sistema de gerenciamento de pacotes Debian chamado &lt;a href=&quot;http://pt.wikipedia.org/wiki/Advanced_Packaging_Tool&quot;&gt;APT&lt;/a&gt; foi criado
-originalmente pelos desenvolvedores do projeto e lançado pela primeira vez em 9
-Março de 1999 no Debian 2.1 (&lt;em&gt;Slink&lt;/em&gt;) e conta hoje com um total de 44893 pacotes
-(&lt;strong&gt;44 mil !!!&lt;/strong&gt;) em seus &lt;a href=&quot;http://pt.wikipedia.org/wiki/Repositório&quot;&gt;repositórios&lt;/a&gt; oficiais. Esta enorme
-quantidade de softwares disponíveis nos repositórios oficiais do projeto torna
-extremamente simple pesquisar, instalar, atualizar ou remover qualquer coisa do
-computador.&lt;/p&gt;
-
-&lt;p&gt;Os pacotes disponibilizados nos repositórios oficiais do Debian passam por um
-rígido controle de qualidade liderado pelos desenvolvedores oficiais do projeto
-e aberto à contribuição de qualquer pessoa. Então se você está empacotando algo
-veja o &lt;a href=&quot;http://www.debian.org/doc/manuals/maint-guide&quot;&gt;Guia do Novo Mantenedor Debian&lt;/a&gt; para saber como incluir
-isso nos repositórios oficiais.&lt;/p&gt;
-
-&lt;p&gt;Mas se isso não for possível ou se você não puder esperar o pacote entrar no
-Debian seja por qual motivo for, então a solução será criar um repositório
-pessoal ou &lt;em&gt;Private Package Archive (PPA)&lt;/em&gt;. É isto que será descrito aqui a partir
-de uma solução proposta inicialmente por &lt;em&gt;Stefano Zacchiroli&lt;/em&gt; em seu blog no post
-&lt;a href=&quot;http://upsilon.cc/~zack/blog/posts/2009/04/howto:_uploading_to_people.d.o_using_dput&quot;&gt;howto: uploading to people.d.o using dput&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;alert alert-warning&quot;&gt;
-  &lt;p&gt;&lt;strong&gt;Atenção!&lt;/strong&gt;
-&lt;em&gt;Todas as instruções a seguir são baseadas em meu próprio ambiente, isto
-inclui nomes de usuários, domínios, diretórios, etc. Você deve adaptar estas
-informações com base em sua realidade.&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;configurando-o-servidor-para-receber-pacotes&quot;&gt;Configurando o servidor para receber pacotes&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Sistema Operacional: &lt;strong&gt;Debian Wheezy&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;Domínio: &lt;strong&gt;debian.joenio.me&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Acesse o servidor via &lt;code class=&quot;highlighter-rouge&quot;&gt;SSH&lt;/code&gt; e instale o &lt;code class=&quot;highlighter-rouge&quot;&gt;mini-dinstall&lt;/code&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;mini-dinstall is a tool for installing Debian packages into a personal APT
-repository&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre class=&quot;terminal&quot;&gt;
-&lt;code&gt;
-# apt-get install mini-dinstall
-&lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;p&gt;Crie o diretório onde os pacotes serão copiados:&lt;/p&gt;
-
-&lt;pre class=&quot;terminal&quot;&gt;
-&lt;code&gt;
-$ mkdir -p ~/debian.joenio.me/mini-dinstall/incoming
-&lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;p&gt;Crie o arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.mini-dinstall.conf&lt;/code&gt;:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;
-  &lt;pre&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span class=&quot;nn&quot;&gt;[DEFAULT]&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;mail_on_success&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;false&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;incoming_permissions&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0750&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;architectures&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;all, i386, amd64&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;archive_style&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;flat&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;dynamic_reindex&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;archivedir&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/home/joenio/debian.joenio.me/&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;generate_release&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;release_label&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Joenio&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;release_description&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Unofficial Debian packages maintained by Joenio Costa&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;verify_sigs&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/figure&gt;
-
-&lt;h2 id=&quot;preparando-a-estação-de-trabalho-para-enviar-pacotes&quot;&gt;Preparando a estação de trabalho para enviar pacotes&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Sistema Operacional: &lt;strong&gt;Debian Testing&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Instale o &lt;code class=&quot;highlighter-rouge&quot;&gt;dput&lt;/code&gt; em seu computador:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;dput allows you to put one or more Debian packages into the archive&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre class=&quot;terminal&quot;&gt;
-&lt;code&gt;
-# apt-get install dput
-&lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;p&gt;Exporte sua chave pública &lt;code class=&quot;highlighter-rouge&quot;&gt;GnuPG&lt;/code&gt; para para o arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;signing.asc&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre class=&quot;terminal&quot;&gt;
-&lt;code&gt;
-$ gpg --armor --output signing.asc --export D5609CBE
-&lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;div class=&quot;alert alert-warning&quot;&gt;
-  &lt;p&gt;&lt;strong&gt;D5609CBE&lt;/strong&gt; é a minha chave, substitua este valor pelo
-identificador da sua própria chave.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Copie o arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;signing.asc&lt;/code&gt; para o servidor:&lt;/p&gt;
-
-&lt;pre class=&quot;terminal&quot;&gt;
-&lt;code&gt;
-$ scp signing.asc debian.joenio.me:~/debian.joenio.me/
-&lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;p&gt;Crie arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.dput.cf&lt;/code&gt; em seu &lt;code class=&quot;highlighter-rouge&quot;&gt;$HOME&lt;/code&gt;:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;
-  &lt;pre&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span class=&quot;nn&quot;&gt;[debian.joenio.me]&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;fqdn&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;debian.joenio.me&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;method&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;scp&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;login&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;*&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;incoming&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;~/debian.joenio.me/mini-dinstall/incoming&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;allow_unsigned_uploads&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;post_upload_command&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ssh debian.joenio.me mini-dinstall -b &amp;amp;&amp;amp; sign-remote --no-batch debian.joenio.me:debian.joenio.me/unstable/Release&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Os pacotes serão assinados com a chave &lt;code class=&quot;highlighter-rouge&quot;&gt;GnuPG&lt;/code&gt; ao serem enviados pelo &lt;code class=&quot;highlighter-rouge&quot;&gt;dput&lt;/code&gt; ao
-servidor. Isso será feito pelo script &lt;code class=&quot;highlighter-rouge&quot;&gt;sign-remote&lt;/code&gt; disponível
-&lt;a href=&quot;http://github.com/joenio/sign-remote/blob/master/sign-remote&quot;&gt;aqui&lt;/a&gt;. Copie este arquivo em seu computador e adicione a
-localização dele ao &lt;code class=&quot;highlighter-rouge&quot;&gt;$PATH&lt;/code&gt;, se não sabe do que estou falando &lt;a href=&quot;https://wiki.debian.net/EnvironmentVariables&quot;&gt;leia
-isso&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;O &lt;code class=&quot;highlighter-rouge&quot;&gt;dput&lt;/code&gt; irá reclamar se a distribuição do pacote não for &lt;strong&gt;unstable&lt;/strong&gt;, isto é
-definido no arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;changelog&lt;/code&gt; do pacote, veja o capítulo 4 &lt;em&gt;Required files
-under the debian directory&lt;/em&gt; no &lt;a href=&quot;http://www.debian.org/doc/manuals/maint-guide&quot;&gt;Guia do Novo Mantenedor Debian&lt;/a&gt;
-para entender como fazer isso.&lt;/p&gt;
-
-&lt;p&gt;Bem, aqui já temos tudo pronto para fazer &lt;em&gt;upload&lt;/em&gt; dos nossos pacotes ao
-servidor, basta executar o seguinte comando:&lt;/p&gt;
-
-&lt;pre class=&quot;terminal&quot;&gt;
-&lt;code&gt;
-$ dput debian.joenio.me &amp;lt;pacote&amp;gt;.changes
-&lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;p&gt;Isto irá copiar o pacote &lt;em&gt;.deb&lt;/em&gt; e o arquivo &lt;em&gt;.changes&lt;/em&gt; dele, irá atualizar os
-arquivos &lt;em&gt;Sources&lt;/em&gt; e &lt;em&gt;Packages&lt;/em&gt; com as informações do pacote e irá assinar o
-arquivo &lt;em&gt;Release&lt;/em&gt; com a chave pública &lt;code class=&quot;highlighter-rouge&quot;&gt;GnuPG&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;disponibilizando-acesso-ao-repositório-publicamente&quot;&gt;Disponibilizando acesso ao repositório publicamente&lt;/h2&gt;
-
-&lt;p&gt;Até aqui já temos um repositório com pacotes hospedados, mas sem acesso público
-aos pacotes ninguém poderá utilizá-lo. Para resolver isto vamos configurar
-acesso via &lt;code class=&quot;highlighter-rouge&quot;&gt;HTTP&lt;/code&gt; usando o servidor web &lt;a href=&quot;http://nginx.org&quot;&gt;Nginx&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Instale o &lt;code class=&quot;highlighter-rouge&quot;&gt;Nginx&lt;/code&gt; no servidor:&lt;/p&gt;
-
-&lt;pre class=&quot;terminal&quot;&gt;
-&lt;code&gt;
-# apt-get install nginx
-&lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;p&gt;Crie o arquivo de configuração &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx/sites-available/debian.joenio.me&lt;/code&gt;:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;
-  &lt;pre&gt;&lt;code class=&quot;language-nginx&quot; data-lang=&quot;nginx&quot;&gt;&lt;span class=&quot;k&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kn&quot;&gt;server_name&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;debian.joenio.me&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;kn&quot;&gt;access_log&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;/var/log/nginx/debian.joenio.me.access.log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;kn&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kn&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;/home/joenio/debian.joenio.me&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kn&quot;&gt;autoindex&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Habilite o arquivo de configuração e reinicie o serviço:&lt;/p&gt;
-
-&lt;pre class=&quot;terminal&quot;&gt;
-&lt;code&gt;
-# cd /etc/nginx/sites-enabled/
-# ln -s /etc/nginx/sites-available/debian.joenio.me
-# service nginx restart
-&lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;p&gt;Com o &lt;code class=&quot;highlighter-rouge&quot;&gt;Nginx&lt;/code&gt; configurado e rodando já temos o repositório e seus pacotes
-disponíveis no seguinte endereço:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://debian.joenio.me&quot;&gt;http://debian.joenio.me&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;testando-o-repositório-e-instalando-pacotes&quot;&gt;Testando o repositório e instalando pacotes&lt;/h2&gt;
-
-&lt;p&gt;Para usar este repositorio adicione as seguintes entradas no
-&lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/apt/sources.list&lt;/code&gt; do computador local:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;
-  &lt;pre&gt;&lt;code class=&quot;language-sourceslist&quot; data-lang=&quot;sourceslist&quot;&gt;deb http://debian.joenio.me unstable/
-deb-src http://debian.joenio.me unstable/&lt;/code&gt;&lt;/pre&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Adicione a chave de assinatura ao banco de dados de segurança do &lt;code class=&quot;highlighter-rouge&quot;&gt;APT&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre class=&quot;terminal&quot;&gt;
-&lt;code&gt;
-# wget -O - http://debian.joenio.me/signing.asc | apt-key add -
-&lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;p&gt;Atualize a lista de pacotes e teste a instalação de algum pacote disponível no
-repositório:&lt;/p&gt;
-
-&lt;pre class=&quot;terminal&quot;&gt;
-&lt;code&gt;
-# apt-get update
-# apt-get install &amp;lt;pacote&amp;gt;
-&lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;p&gt;Pronto, temos o nosso próprio repositório de pacotes Debian disponível
-publicamente. Você pode agora publicar qualquer pacote que esteja criando e
-divulgar o endereço do repositório para que outros usuários Debian possam
-instalar os seus pacotes mais facilmente.&lt;/p&gt;
-
-&lt;p&gt;Na wiki do Debian em &lt;a href=&quot;http://wiki.debian.org/HowToSetupADebianRepository&quot;&gt;How to setup a Debian repository&lt;/a&gt; tem uma lista de
-ferramentas para configuração de repositórios Debian, não usei a maioria das
-ferramentas listadas lá, mas dentre elas o &lt;a href=&quot;http://www.aptly.info&quot;&gt;aptly&lt;/a&gt; parece uma boa opção
-para criar repositório pessoal de pacotes Debian e pode ser uma boa alternativa
-para o setup descrito aqui neste post.&lt;/p&gt;
-
-&lt;div class=&quot;alert alert-info&quot;&gt;
-  &lt;p&gt;&lt;strong&gt;Sobre a foto no título deste post:&lt;/strong&gt;
-&lt;em&gt;Os cubos (pacotes) de papel utilizados na imagem foram feitos seguindo o tutorial
-&lt;a href=&quot;http://pt.wikihow.com/Fazer-um-Cubo-de-Origami&quot;&gt;
-“Como Fazer um Cubo de Origami”
-&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-</description>
-        <pubDate>Mon, 29 Jun 2015 00:00:00 -0300</pubDate>
-        <link>http://joenio.me/aprenda-a-criar-repositorios-de-pacotes-debian/index.html</link>
-        <guid isPermaLink="true">http://joenio.me/aprenda-a-criar-repositorios-de-pacotes-debian/index.html</guid>
         
         
       </item>
