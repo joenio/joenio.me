@@ -162,7 +162,7 @@ Sou muito grato e muito feliz por estar perto e ter a amizade de tanta boa! <3
 
 [biophillick]: https://biophillick.com/
 [bsblork]: http://bsblork.org
-[nomadelab]: [https://nomadelab.gitlab.io/]
+[nomadelab]: https://nomadelab.gitlab.io/
 [dionysian]: http://dionysian-industrial-complex.net/cplx-11-eufraktus-biophillick-djalgoritmo-bioborgs/
 [toplap15]: https://toplap.org/wearefifteen/
 [mariasabina]: https://www.facebook.com/mariasabinabandabrasilia
