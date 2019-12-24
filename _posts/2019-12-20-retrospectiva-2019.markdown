@@ -33,8 +33,8 @@ experimental, com a orquestra gravei um álbum (a ser lançado em breve) e
 participei das seguintes apresentações:
 
 1. Abertura da exposição "VOA BRASÍLIA" na Galeria ArquiBrasília em Abril de 2019 <br/>[vídeo 1](https://www.youtube.com/watch?v=5HNeUZLF1cE) - [vídeo 2](https://www.youtube.com/watch?v=VcYSAyvXmFA) - [foto](https://www.instagram.com/p/BwQvUdFlnCQ/)
-1. Performance KronUs sobre a obra Enantiodromia de Milton Marques na Alfinete Galeria em Novembro de 2019 <br/>[fotos](https://www.instagram.com/p/B490o0PFQ5C/?utm_source=ig_web_copy_link)
-1. Exposição Cosmotecnia na noite de encerramento da XII International Whitehead Conference na Galeria Toca'55 em Setembro de 2019 <br/>[vídeo 1](https://www.youtube.com/watch?v=N0voYBkMM5c) - [vídeo 2](https://www.instagram.com/p/B2QKWdUlnpd/) - [vídeo 3](https://www.instagram.com/p/B48vPGjl57X/) - [imagem](https://www.instagram.com/p/B45AUEel8Jv/)
+1. Performance KronUs sobre a obra Enantiodromia de Milton Marques na Alfinete Galeria em Novembro de 2019 <br/>[fotos](https://www.instagram.com/p/B490o0PFQ5C/?utm_source=ig_web_copy_link) - [vídeo](https://www.instagram.com/p/B48vPGjl57X/) - [imagem](https://www.instagram.com/p/B45AUEel8Jv/)
+1. Exposição Cosmotecnia na noite de encerramento da XII International Whitehead Conference na Galeria Toca'55 em Setembro de 2019 <br/>[vídeo 1](https://www.youtube.com/watch?v=N0voYBkMM5c) - [vídeo 2](https://www.instagram.com/p/B2QKWdUlnpd/)
 1. Apresentação no Brasilia Mapping Festival 2019 no Museu Nacional da República em Julho de 2019 <br/>[vídeo](https://www.youtube.com/watch?v=AKBWlCtbkHM) - [foto](https://www.instagram.com/p/BzuGnrold0I/)
 
 ### Nômade Lab
@@ -46,19 +46,19 @@ improvisação ao vivo mesclando sons e imagens criados através de computadores
 edição e mixagem) a ser lançado em Março de 2020 no aniversário de 1 ano do grupo,
 com o Nómade Lab participei das seguinte apresentações:
 
-1. Colônia de Férias 2019 MediaLab UnB no IDA em Março 2019
-1. Instalação Interfaces Computacionais Afetivas no Sesc Gama em Março 2019 <br/>[imagem](https://www.instagram.com/p/Bvc4AblFAgb/) - [vídeo 1](https://www.instagram.com/p/BvnngO3Fws-/) - [vídeo 2](https://www.instagram.com/p/Bvrl2zrn7vp/)
-1. Apresentação na Feira do Fuga no Lago Sul em Maio 2019
-1. Performance na Galeria MixMídia ArquiBrasilia na 112 Asa Norte em Maio 2019
-1. Participação da Feira Geek no Sesc 504 Asa Sul em Junho 2019
-1. Galeria deCurators na 412 Asa Norte em Junho 2019 <br/>[imagem](https://www.instagram.com/p/ByDJW7CByy7/)
+1. Colônia de Férias 2019 MediaLab UnB no IDA em Março 2019 <br/>[imagem](https://www.instagram.com/p/Bt6gdEPlwy5/) - [fotos](https://www.instagram.com/p/BuCySiZlxSt/) - [vídeo 1](https://www.instagram.com/p/BuM6OKPFQ8w/) - [vídeo 2](https://www.youtube.com/watch?v=zcnVSOKOjII)
+1. Instalação Interfaces Computacionais Afetivas no Sesc Gama em Março 2019 <br/>[imagem](https://www.instagram.com/p/Bvc4AblFAgb/) - [vídeo 1](https://www.instagram.com/p/BvnngO3Fws-/) - [vídeo 2](https://www.instagram.com/p/Bvrl2zrn7vp/) - [fotos](https://www.instagram.com/p/BwKzISlFng1/)
+1. Apresentação na Feira do Fuga no Lago Sul em Maio 2019 <br/>[foto](https://www.instagram.com/p/BxD-r0JFsWI/)
+1. Performance na Galeria MixMídia ArquiBrasilia na 112 Asa Norte em Maio 2019 <br/>[foto](https://www.instagram.com/p/ByJqnryFvmz/) - [imagem](https://www.instagram.com/p/ByDJW7CByy7/)
+1. Participação da Feira Geek no Sesc 504 Asa Sul em Junho 2019 <br/>[imagem 1](https://www.instagram.com/p/Bx21eH9FNFX/) - [imagem 2](https://www.instagram.com/p/ByI8f36l_rK/) - [vídeo 1](https://www.instagram.com/p/ByLthKil0in/) - [vídeo 2](https://www.instagram.com/p/ByLjqrTlAxeZ4O3VkIezdkYzk4WYc9DTOIftfE0/) - [vídeo 3](https://www.instagram.com/p/ByLirIzlrdcruM4fJnAFGCw5pEyfT43ZH4PIE00/)
+1. Galeria deCurators na 412 Asa Norte em Junho 2019 <br/>
 1. Sarau do III Fia (Fórum Internacional sobre Amazônia) na praça Chico Mendes UnB em Junho 2019
 1. Campus Party Brasília CPBSB3 com bancada Dumond no estádio Mané Garrincha em Junho 2019 <br/>[vídeo](https://www.instagram.com/p/BzBOdlElKEc/)
-1. Brasília Mapping Festival 2019 no Museu da República em Brasília em Julho 2019
+1. Brasília Mapping Festival 2019 no Museu da República em Brasília em Julho 2019 <br/>[foto 1](https://www.instagram.com/p/Bzmr8p1FHk7/)
 1. Rebel Veggie Bar no Guará/DF em Agosto 2019 <br/>[imagem](https://www.instagram.com/p/B1hUKveFB_x/)
 1. Encerramento do VIII COMA - Coletivo em Artes Visuais - na Galeria Espaço Piloto UnB Darcy em Setembro 2019 <br/>[vídeo](https://www.instagram.com/p/B3DgszrFEQo/) - [imagem](https://www.instagram.com/p/B29QAOmFkmO/)
 1. Coquetel de abertura #18.ART Brasil no Museu da República/Brasília em Outubro 2019 <br/>[imagem](https://www.instagram.com/p/B3FhijgFroK/)
-1. Encerramento da Jornada Acadêmica do curso de Sistemas de Informação da Unieuro campus Águas Claras em Outubro 2019
+1. Encerramento da Jornada Acadêmica do curso de Sistemas de Informação da Unieuro campus Águas Claras em Outubro 2019 <br/>[vídeo](https://www.instagram.com/p/B37VlTCHUJd/)
 1. Feira do Fuga no Lago Sul em Dezembro 2019
 
 ## }bio{borgs
