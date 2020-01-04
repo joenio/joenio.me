@@ -565,3 +565,7 @@ strong {
 iframe.bioborgs-soundcloud {
   width: 100%;
 }
+
+.sobre li {
+  list-style: none;
+}

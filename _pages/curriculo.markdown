@@ -1,5 +1,5 @@
 ---
-title: Currículo
+title: "Currículo: Joenio Marques da Costa"
 ---
 
 Engenheiro de software,
@@ -19,6 +19,7 @@ análise estática,
 e métricas de código fonte.
 
 Afiliado a
+[Universidade de Brasília](https://unb.br) (UnB),
 [Cooperativa de Trabalho em Tecnologias Livres](http://colivre.coop.br) (Colivre),
 [Laboratório Avançado de Produção, Pesquisa & Inovação em Software](https://lappis.rocks) (LAPPIS),
 [Laboratório de Pesquisa em Arte Computacional](http://medialab.unb.br) (MediaLab/UnB) e
