@@ -196,6 +196,8 @@ Participação do encontro "Oficina sobre os princípios para uma rede social" d
 
 ## 2018
 
+* Publicação de trabalho acadêmico completo no [XXXII Simpósio Brasileiro de Engenharia de Software](http://cbsoft2018.icmc.usp.br/#/sbes) (SBES) realizado em São Carlos, São Paulo, Brasil com o título: [On the sustainability of academic software: the case of static analysis tools](https://doi.org/10.1145/3266237.3266243).
+
 * Performances de arte com música eletrônica e Live Coding na Galeria DeCurators, Brasília, DF, Brasil em [Performance Sonora Ciclo Curare](https://www.youtube.com/watch?v=B7tBh2AzdKE) colaborando com Philip Jones e Eufrasio Prates na exposição Objetos-poema de Luciana Ferreira.
 
 * Apresentação como DJ no evento "La Pauta edição especial Michael Jackson", ["La Pauta edição Freddie Mercury"](https://fr-ca.facebook.com/events/378889122855345) e "La Pauta edição David Bowie" realizados no Sindicato dos Jornalistas, Brasília, DF, Brasil.
