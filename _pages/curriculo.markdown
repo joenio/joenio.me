@@ -200,11 +200,11 @@ Participação do encontro "Oficina sobre os princípios para uma rede social" d
 
 * Performances de arte com música eletrônica e Live Coding na Galeria DeCurators, Brasília, DF, Brasil em [Performance Sonora Ciclo Curare](https://www.youtube.com/watch?v=B7tBh2AzdKE) colaborando com Philip Jones e Eufrasio Prates na exposição Objetos-poema de Luciana Ferreira.
 
-* Apresentação como DJ no evento "La Pauta edição especial Michael Jackson", ["La Pauta edição Freddie Mercury"](https://fr-ca.facebook.com/events/378889122855345) e "La Pauta edição David Bowie" realizados no Sindicato dos Jornalistas, Brasília, DF, Brasil.
+* Apresentação como DJ no evento [La Pauta edição especial Michael Jackson](https://www.facebook.com/events/217880179063575/), [La Pauta edição Freddie Mercury](https://www.facebook.com/events/378889122855345) e [La Pauta edição David Bowie](https://www.facebook.com/events/2353637744884453/) realizados no Sindicato dos Jornalistas, Brasília, DF, Brasil.
 
 * Organizei e coordenei a [Oficina de edição de imagem e vídeo com software livre](/edicao-de-imagem-e-video-com-software-livre) no Calango Hacker Clube, Brasília, DF.
 
-* Participei e organizei o evento "Hackathon de programação musical e Live Coding" durante o #17.ART no Anexo do Museu Nacional, Brasília, DF, Brasil em colaboração com o laboratório Lappis, MediaLab UnB e Calango Hacker Clube.
+* Participei e organizei o evento [Hackathon de programação musical e Live Coding](https://www.facebook.com/medialabunb/photos/a.266813103774890/554461135010084/) durante o #17.ART no Anexo do Museu Nacional, Brasília, DF, Brasil em colaboração com o laboratório Lappis, MediaLab UnB e Calango Hacker Clube.
 
 * Professor voluntário na Universidade de Brasília (UnB) unidade Gama no curso de Engenharia de Software ministrando a disciplina Manutenção e Evolução de Software (MES) e auxiliando na disciplina Gerência de Configuração e Evolução de Software (GCES).
 
@@ -224,9 +224,9 @@ Participação do encontro "Oficina sobre os princípios para uma rede social" d
 
 ## 2019
 
-* Organização do evento "Colônia de Férias MediaLab (Laboratório Aberto) UnB Brasília 2019" junto a pesquisadores do laboratório MediaLab do Instituto de Artes Visuais.
+* Organização do evento [Colônia de Férias MediaLab (Laboratório Aberto) UnB Brasília 2019](https://www.facebook.com/events/621269571665790/) junto a pesquisadores do laboratório MediaLab do Instituto de Artes Visuais.
 
-* Composição e lançamendo do álbum de música experimental ["}bio{borgs"](/bio-borgs) e produção do vídeo oficial do álbum, em parceiria com Biophillick e Eufrasio Prates.
+* Composição e lançamendo do álbum de música experimental ["}bio{borgs"](/bioborgs) e produção do vídeo oficial do álbum, em parceiria com Biophillick e Eufrasio Prates.
 
 * Obra de arte visual de vídeo remix [Atari 2600 Vídeo Remix](/atari-2600-video-remix), envolvendo animação, colagens, edição e produção sonora.
 
@@ -234,7 +234,7 @@ Participação do encontro "Oficina sobre os princípios para uma rede social" d
 
 * Participação na conferência internacional de desenvolvedores Debian [DebConf 19](https://debconf19.debconf.org) com apresentação da palestra [Electronic Experimental Music with Debian](https://debconf19.debconf.org/talks/87-electronic-experimental-music-with-debian).
 
-* Performance e instalação "INTERFACES COMPUTACIONAIS AFETIVAS" com o Medialab UnB no Sesc DF, Gama, DF, Brasil, onde realizei performance com a linguagem de programação musical TidalCycles e o dispositivo [Teremim Aoristo](https://gitlab.com/musica-interativa/teremim-aoristo).
+* Performance e instalação [INTERFACES COMPUTACIONAIS AFETIVAS](https://www.facebook.com/events/1928004933992860/) com o Medialab UnB no Sesc DF, Gama, DF, Brasil, onde realizei performance com a linguagem de programação musical TidalCycles e o dispositivo [Teremim Aoristo](https://gitlab.com/musica-interativa/teremim-aoristo).
 
 * Performance com a [Orquestra de Laptops de Brasília](http://bsblork.org) (BSBLOrk) na abertura da exposição "VOA BRASÍLIA" realizada na Galeria ArquiBrasília, Brasília, DF, Brasil e exposição de trabalho de vídeo-remix [Atari 2600 Vídeo Remix](/atari-2600-video-remix).
 
