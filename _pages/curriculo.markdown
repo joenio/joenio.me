@@ -236,7 +236,7 @@ Participação do encontro "Oficina sobre os princípios para uma rede social" d
 
 * Performance e instalação "INTERFACES COMPUTACIONAIS AFETIVAS" com o Medialab UnB no Sesc DF, Gama, DF, Brasil, onde realizei performance com a linguagem de programação musical TidalCycles e o dispositivo [Teremim Aoristo](https://gitlab.com/musica-interativa/teremim-aoristo).
 
-* Performance com a [Orquestra de Laptops de Brasília](http://bsblork.org) (BSBLOrk) na abertura da exposição "VOA BRASÍLIA" realizada na Galeria ArquiBrasília, Brasília, DF, Brasil e exposição de trabalho de vídeo-remix "Atari 2600 Vídeo Remix".
+* Performance com a [Orquestra de Laptops de Brasília](http://bsblork.org) (BSBLOrk) na abertura da exposição "VOA BRASÍLIA" realizada na Galeria ArquiBrasília, Brasília, DF, Brasil e exposição de trabalho de vídeo-remix [Atari 2600 Vídeo Remix](/atari-2600-video-remix).
 
 * Lançamento do álbum de música eletrônica experimental de Live Coding com TidalCycles e visual music [helloworld.tidal](http://joenio.me/helloworld.tidal).
 
