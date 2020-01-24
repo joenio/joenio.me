@@ -44,7 +44,7 @@ Em Março de 2019 formei junto aos amigos do [MediaLab UnB][medialab] o grupo
 improvisação ao vivo mesclando sons e imagens criados através de computadores,
 [gravamos um álbum](https://www.instagram.com/p/B4-ibh6FxtT/) (em processo de
 edição e mixagem) a ser lançado em Março de 2020 no aniversário de 1 ano do grupo,
-com o Nómade Lab participei das seguinte apresentações:
+com o Nômade Lab participei das seguinte apresentações:
 
 1. Colônia de Férias 2019 MediaLab UnB no IDA em Março 2019 <br/>[imagem](https://www.instagram.com/p/Bt6gdEPlwy5/) - [fotos](https://www.instagram.com/p/BuCySiZlxSt/) - [vídeo 1](https://www.instagram.com/p/BuM6OKPFQ8w/) - [vídeo 2](https://www.youtube.com/watch?v=zcnVSOKOjII)
 1. Instalação Interfaces Computacionais Afetivas no Sesc Gama em Março 2019 <br/>[imagem](https://www.instagram.com/p/Bvc4AblFAgb/) - [vídeo 1](https://www.instagram.com/p/BvnngO3Fws-/) - [vídeo 2](https://www.instagram.com/p/Bvrl2zrn7vp/) - [fotos](https://www.instagram.com/p/BwKzISlFng1/)
@@ -145,7 +145,7 @@ Além dos estudos sobre música e pesquisas sobre live coding, iniciei neste ano
 pesquisas sobre demoscene, neste meio tempo publiquei 1 artigo e estou
 finalizando um segundo.
 
-1. Artigo apresentado no #18.ART Brasil: Demo Art e Visual Music em perspectiva.
+1. Artigo apresentado no #18.ART Brasil: Demo Art e Visual Music em perspectiva. <br/>[preprint (pdf)](https://doi.org/10.31219/osf.io/48wfp) - [código-fonte (LaTeX)](https://gitlab.com/joenio/demoart-visualmusic)
 1. Segundo artigo sobre demoscene ainda não publicado
 
 Foram ao todo 29 performances musicais e artísticas, uma média de 2
