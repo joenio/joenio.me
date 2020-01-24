@@ -4,22 +4,20 @@ title: "Sobre: Joenio Marques da Costa"
 Engenheiro de Software, ativista e desenvolvedor de
 software livre, mestre em Ciência da Computação, com interesse em pesquisas
 sobre software acadêmico, sustentabilidade de software, qualidade de software,
-evolução de software, tecnologia social, arte e tecnologia, música eletrônica
-e live coding.
+evolução de software, tecnologia social, arte e tecnologia, música eletrônica,
+live coding e arduino. Veja o currículo completo e detalhado [aqui](/curriculo)
+ou o trabalho sobre artes em [djalgoritmo](/djalgoritmo).
 
-<img class="photo-profile" src="/files/joenio-profile.jpg"/>
-
-Além de trabalhar profissionalmente com ciência da computação possui grande
-interesse em arte, música e suas relações com tecnologia, realiza pesquisas,
-palestras e performances com live coding usando especialmente a linguagem de
-programação TidalCycles, SuperCollider e a plataforma Arduino.
-
-### Contatos, redes sociais e currículo:
+## Contatos e redes sociais
 <section class="sobre">
 * Email: <a href="mailto:joenio@joenio.me">joenio@joenio.me</a>
 * Twitter: <a href="https://twitter.com/joenio">https://twitter.com/joenio</a>
 * Mastodon: <a href="https://mastodon.social/@joenio">https://mastodon.social/@joenio</a>
 * GitHub: <a href="https://github.com/joenio">https://github.com/joenio</a>
 * GitLab: <a href="https://gitlab.com/joenio">https://gitlab.com/joenio</a>
-* Currículo: [{{ site.url }}/curriculo](/curriculo)
+* YouTube: [https://www.youtube.com/channel/UC190_sCiYfgqRveTMtBcdpQ](https://www.youtube.com/channel/UC190_sCiYfgqRveTMtBcdpQ)
+* Instagram: [https://instagram.com/djalgoritmo](https://instagram.com/djalgoritmo)
+* SoundCloud: [http://soundcloud.com/joenio](http://soundcloud.com/joenio)
+* Bandcamp: [https://djalgoritmo.bandcamp.com](https://djalgoritmo.bandcamp.com)
+* Audius: [https://audius.co/joenio](https://audius.co/joenio)
 </section>
